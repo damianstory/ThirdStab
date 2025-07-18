@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm update:*)",
+      "Bash(cat:*)",
+      "Bash(ls:*)",
+      "Bash(~/.claude/local/node_modules/.bin/claude --version)",
+      "Bash(echo $SHELL)",
+      "Bash(bunx degit:*)",
+      "Bash(npx degit:*)",
+      "Bash(bun install:*)",
+      "Bash(npm install)",
+      "Bash(export BUN_INSTALL=\"$HOME/.bun\")",
+      "Bash(export PATH=\"$BUN_INSTALL/bin:$PATH\")",
+      "Bash(bun:*)",
+      "Bash(rm:*)",
+      "Bash(find:*)",
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(curl:*)",
+      "Bash(pkill:*)",
+      "Bash(true)",
+      "Bash(kill:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm run:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm install:*)",
+      "Bash(sudo lsof:*)",
+      "Bash(node:*)",
+      "Bash(npm:*)",
+      "Bash(NODE_OPTIONS=\"--inspect\" npm run dev)",
+      "Bash(ping:*)",
+      "Bash(claude doctor)",
+      "Bash(PORT=3001 npm run dev)",
+      "Bash(HOST=0.0.0.0 PORT=3000 npm run dev)",
+      "Bash(npx next dev:*)",
+      "Bash(timeout 10 npm run dev)"
+    ],
+    "deny": []
+  }
+}
