@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +20,15 @@ export default function Header() {
     e.preventDefault();
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const headerHeight = 64; // Height of fixed header
+      const additionalOffset = 24; // Extra breathing room (24px)
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerHeight - additionalOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
       setIsMenuOpen(false);
     }
   };
@@ -30,18 +37,13 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-white shadow-md z-50">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Desktop Layout - Three Sections */}
-        <div className="hidden md:grid md:grid-cols-3 items-center h-16">
+        <div className="hidden xl:grid xl:grid-cols-3 items-center h-16">
           {/* Left Section - myBlueprint Logo */}
           <div className="flex items-center">
             <Link href="/" className="inline-block">
-              <Image
-                src="https://via.placeholder.com/150x40/0092ff/ffffff?text=myBlueprint"
-                alt="myBlueprint Logo"
-                width={150}
-                height={40}
-                className="h-10 w-auto object-contain"
-                priority
-              />
+              <div className="bg-primary-600 text-white px-4 py-1.5 rounded-md text-sm font-semibold flex items-center h-9">
+                myBlueprint
+              </div>
             </Link>
           </div>
 
@@ -64,31 +66,21 @@ export default function Header() {
           {/* Right Section - Industry Immersion Series Logo */}
           <div className="flex items-center justify-end">
             <Link href="/" className="inline-block">
-              <Image
-                src="https://via.placeholder.com/200x40/0092ff/ffffff?text=Industry+Immersion"
-                alt="Industry Immersion Series Logo"
-                width={200}
-                height={40}
-                className="h-10 w-auto object-contain"
-                priority
-              />
+              <div className="bg-primary-700 text-white px-4 py-1.5 rounded-md text-sm font-semibold whitespace-nowrap flex items-center h-9">
+                Industry Immersion Series
+              </div>
             </Link>
           </div>
         </div>
 
         {/* Mobile Layout - Three Sections */}
-        <div className="md:hidden flex items-center justify-between h-14 sm:h-16">
+        <div className="xl:hidden flex items-center justify-between h-14 sm:h-16">
           {/* Left - myBlueprint Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="inline-block">
-              <Image
-                src="https://via.placeholder.com/150x40/0092ff/ffffff?text=myBlueprint"
-                alt="myBlueprint Logo"
-                width={100}
-                height={30}
-                className="h-8 sm:h-9 w-auto object-contain"
-                priority
-              />
+              <div className="bg-primary-600 text-white px-3 py-1 rounded text-xs font-semibold flex items-center h-7">
+                myBlueprint
+              </div>
             </Link>
           </div>
 
@@ -136,20 +128,16 @@ export default function Header() {
           {/* Right - Industry Immersion Series Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="inline-block">
-              <Image
-                src="https://via.placeholder.com/200x40/0092ff/ffffff?text=Industry+Immersion"
-                alt="Industry Immersion Series Logo"
-                width={120}
-                height={30}
-                className="h-8 sm:h-9 w-auto object-contain"
-                priority
-              />
+              <div className="bg-primary-700 text-white px-3 py-1 rounded text-xs font-semibold flex items-center h-7">
+                <span className="hidden xs:inline">Industry Immersion</span>
+                <span className="xs:hidden">IIS</span>
+              </div>
             </Link>
           </div>
         </div>
 
         {/* Mobile menu */}
-        <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden`}>
+        <div className={`${isMenuOpen ? 'block' : 'hidden'} xl:hidden`}>
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navigation.map((item) => (
               <a

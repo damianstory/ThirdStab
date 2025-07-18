@@ -126,8 +126,12 @@ export default function Timeline() {
                 <div key={index} className="relative">
                   {/* Year Indicator */}
                   {showYear && (
-                    <div className="text-primary-600 font-semibold text-sm lg:text-base mb-4 lg:mb-6 lg:text-center">
-                      {item.year}
+                    <div className="relative z-20">
+                      <div className="text-primary-600 font-semibold text-sm lg:text-base mb-4 lg:mb-6 lg:text-center">
+                        <span className="bg-gray-50 px-4 py-1 relative z-20">
+                          {item.year}
+                        </span>
+                      </div>
                     </div>
                   )}
                   
