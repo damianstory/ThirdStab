@@ -95,7 +95,7 @@ export default function Timeline() {
   let currentYear = "";
 
   return (
-    <section id="timeline" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="timeline" className="pt-24 pb-16 px-4 md:px-12 bg-white">
       <div className="container mx-auto max-w-6xl">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -111,19 +111,19 @@ export default function Timeline() {
         {/* Timeline Container */}
         <div className="relative">
           {/* Central Timeline Line - Desktop Only */}
-          <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gray-300 -translate-x-1/2"></div>
+          <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-blue-100 -translate-x-1/2"></div>
           
           {/* Left Timeline Line - Mobile/Tablet */}
-          <div className="lg:hidden absolute left-6 top-0 bottom-0 w-0.5 bg-gray-300"></div>
+          <div className="lg:hidden absolute left-6 top-0 bottom-0 w-px bg-blue-100"></div>
 
           {/* Timeline Items */}
-          <div className="space-y-12 lg:space-y-16">
+          <div className="space-y-0">
             {timelineData.map((item, index) => {
               const showYear = item.year !== currentYear;
               currentYear = item.year;
               
               return (
-                <div key={index} className="relative">
+                <div key={index} className="relative mb-16">
                   {/* Year Indicator */}
                   {showYear && (
                     <div className="relative z-20">
@@ -142,51 +142,48 @@ export default function Timeline() {
                     ${item.position === 'left' ? 'lg:flex-row-reverse' : 'lg:flex-row'}
                   `}>
                     {/* Timeline Dot */}
-                    <div className="absolute left-6 lg:left-1/2 w-4 h-4 bg-[#0092ff] rounded-full -translate-x-1/2 z-10 ring-4 ring-gray-50"></div>
+                    <div className="absolute left-6 lg:left-1/2 w-6 h-6 bg-[#0092ff] rounded-full -translate-x-1/2 z-10 border-4 border-white"></div>
                     
                     {/* Spacer for desktop */}
                     <div className="hidden lg:block w-1/2"></div>
                     
                     {/* Content Card */}
                     <div className={`
-                      ml-16 lg:ml-0 lg:w-1/2
-                      ${item.position === 'left' ? 'lg:pr-12' : 'lg:pl-12'}
+                      ml-16 lg:ml-0 lg:w-5/12
+                      ${item.position === 'left' ? 'lg:pr-8' : 'lg:pl-8'}
                     `}>
-                      <div className={`
-                        bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200
-                        ${item.status === 'confirmed' 
-                          ? 'border-l-4 border-[#0092ff]' 
-                          : 'border-l-4 border-dashed border-gray-300'
-                        }
-                      `}>
-                        {/* Month */}
-                        <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                      <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                        {/* Year Label */}
+                        <div className="text-[#0092ff] font-semibold mb-2">
+                          {item.year}
+                        </div>
+                        
+                        {/* Month Name */}
+                        <h3 className="text-xl font-bold mb-2">
                           {item.month}
                         </h3>
                         
-                        {/* Title */}
-                        <p className={`
-                          text-base lg:text-lg font-semibold mb-1
-                          ${item.status === 'confirmed' ? 'text-gray-900' : 'text-gray-500'}
-                        `}>
+                        {/* Activity Title */}
+                        <h4 className="text-lg font-semibold mb-2">
                           {item.title}
-                        </p>
+                        </h4>
                         
-                        {/* Industry */}
-                        <p className={`
-                          text-sm mb-3
-                          ${item.status === 'confirmed' ? 'text-[#0092ff]' : 'text-gray-400'}
-                        `}>
+                        {/* Industry Label */}
+                        <p className="text-gray-500 text-sm mb-2">
                           Industry: {item.industry}
                         </p>
                         
-                        {/* Description */}
-                        <p className={`
-                          text-lg
-                          ${item.status === 'confirmed' ? 'text-gray-600' : 'text-gray-400'}
-                        `}>
+                        {/* Description Text */}
+                        <p className="text-gray-600">
                           {item.description}
                         </p>
+                        
+                        {/* Status Text */}
+                        {item.status === 'tba' && (
+                          <p className="text-yellow-600 text-sm mt-2 italic">
+                            Sponsor to be confirmed
+                          </p>
+                        )}
                       </div>
                     </div>
                   </div>

@@ -38,15 +38,15 @@ export default function Incentives() {
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <span className="text-[#0092ff] mr-2">•</span>
-                  <span className="text-lg text-gray-700">20 microgrants awarded each month</span>
+                  <span className="text-gray-700">20 microgrants awarded each month</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#0092ff] mr-2">•</span>
-                  <span className="text-lg text-gray-700">$500 per student recipient</span>
+                  <span className="text-gray-700">$500 per student recipient</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#0092ff] mr-2">•</span>
-                  <span className="text-lg text-gray-700">Assessed against activity specific rubric</span>
+                  <span className="text-gray-700">Assessed against activity specific rubric</span>
                 </li>
               </ul>
             </div>
@@ -57,7 +57,7 @@ export default function Incentives() {
             <span className="text-[#0092ff] font-semibold mb-2 block">02</span>
             <h3 className="text-2xl font-bold mb-3 text-gray-900">Series Completion Incentive</h3>
             <p className="text-lg text-gray-600 mb-6">
-              Students who complete all (8) monthly activities are eligible for separate series completion incentives.
+              Students who complete all 8 monthly activities are eligible for separate series completion incentives.
             </p>
             
             <div className="bg-purple-50 p-6 rounded-xl">
@@ -73,15 +73,15 @@ export default function Incentives() {
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <span className="text-purple-600 mr-2">•</span>
-                  <span className="text-lg text-gray-700">Must complete all eight monthly activities</span>
+                  <span className="text-gray-700">Must complete all 8 monthly activities</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-purple-600 mr-2">•</span>
-                  <span className="text-lg text-gray-700">Winners will be randomly chosen</span>
+                  <span className="text-gray-700">Winners will be randomly chosen</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-purple-600 mr-2">•</span>
-                  <span className="text-lg text-gray-700">Multiple different incentives available</span>
+                  <span className="text-gray-700">Multiple different incentives available</span>
                 </li>
               </ul>
             </div>
@@ -108,15 +108,15 @@ export default function Incentives() {
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2">•</span>
-                  <span className="text-lg text-gray-700">Monthly prizes for educators on the mailing list</span>
+                  <span className="text-gray-700">Monthly prizes for educators on the mailing list</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2">•</span>
-                  <span className="text-lg text-gray-700">Winners will be randomly chosen</span>
+                  <span className="text-gray-700">Winners will be randomly chosen</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2">•</span>
-                  <span className="text-lg text-gray-700">Sign up with your school email to be eligible.</span>
+                  <span className="text-gray-700">Sign up with your school email to be eligible.</span>
                 </li>
               </ul>
             </div>
@@ -143,15 +143,15 @@ export default function Incentives() {
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <span className="text-amber-600 mr-2">•</span>
-                  <span className="text-lg text-gray-700">Requires 100+ student participants from your school</span>
+                  <span className="text-gray-700">Requires 100+ student participants from your school</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-amber-600 mr-2">•</span>
-                  <span className="text-lg text-gray-700">Those students must each complete all monthly activities</span>
+                  <span className="text-gray-700">Who must each complete all 8 monthly activities</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-amber-600 mr-2">•</span>
-                  <span className="text-lg text-gray-700">More students participating = more chances to win</span>
+                  <span className="text-gray-700">More students participating = more chances to win</span>
                 </li>
               </ul>
             </div>

@@ -104,7 +104,7 @@ export default function FAQ() {
                       : 'opacity-0 transform -translate-y-2 h-0 overflow-hidden'
                   }`}
                 >
-                  <div className="relative max-w-[85%] sm:max-w-[75%] bg-primary-50 rounded-2xl rounded-bl-sm px-5 py-4">
+                  <div className="relative max-w-[85%] sm:max-w-[75%] bg-blue-50 rounded-2xl rounded-bl-sm px-5 py-4">
                     <p className="text-lg font-medium text-gray-900">
                       {faq.answer}
                     </p>

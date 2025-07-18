@@ -35,7 +35,8 @@
       "Bash(HOST=0.0.0.0 PORT=3000 npm run dev)",
       "Bash(npx next dev:*)",
       "Bash(timeout 10 npm run dev)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "mcp__ide__getDiagnostics"
     ],
     "deny": []
   }
