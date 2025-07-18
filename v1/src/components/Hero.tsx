@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import EmailForm from './EmailForm';
 import { InfiniteSlider } from './ui/infinite-slider';
+import AnimatedBackground from './AnimatedBackground';
 
 // Company logos data
 const companies = [
@@ -39,14 +40,10 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 relative overflow-hidden flex flex-col px-4 sm:px-6 lg:px-8 pt-24">
-      {/* Background decoration */}
+    <section className="min-h-screen relative overflow-hidden flex flex-col px-4 sm:px-6 lg:px-8 pt-24">
+      {/* Animated WebGL Background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 w-full h-full opacity-30">
-          <div className="absolute w-96 h-96 rounded-full bg-blue-500/20 blur-3xl top-[20%] left-[10%] animate-pulse" />
-          <div className="absolute w-96 h-96 rounded-full bg-blue-500/10 blur-3xl bottom-[20%] right-[10%] animate-pulse" style={{animationDelay: '2s'}} />
-          <div className="absolute w-64 h-64 rounded-full bg-blue-500/15 blur-2xl top-[40%] left-[50%] animate-pulse" style={{animationDelay: '4s'}} />
-        </div>
+        <AnimatedBackground />
       </div>
 
       {/* Main content wrapper - takes up available space */}
