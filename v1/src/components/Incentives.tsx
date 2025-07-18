@@ -21,7 +21,7 @@ export default function Incentives() {
           <div className="bg-white p-8 rounded-xl shadow-md">
             <span className="text-[#0092ff] font-semibold mb-2 block">01</span>
             <h3 className="text-2xl font-bold mb-3 text-gray-900">Monthly Student Microgrants</h3>
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="text-base text-gray-600 mb-6">
               We award microgrants of $500 each to 20 students who submit outstanding work for that month's industry challenge.
             </p>
             
@@ -56,7 +56,7 @@ export default function Incentives() {
           <div className="bg-white p-8 rounded-xl shadow-md">
             <span className="text-[#0092ff] font-semibold mb-2 block">02</span>
             <h3 className="text-2xl font-bold mb-3 text-gray-900">Series Completion Incentive</h3>
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="text-base text-gray-600 mb-6">
               Students who complete all 8 monthly activities are eligible for separate series completion incentives.
             </p>
             
@@ -91,7 +91,7 @@ export default function Incentives() {
           <div className="bg-white p-8 rounded-xl shadow-md">
             <span className="text-[#0092ff] font-semibold mb-2 block">03</span>
             <h3 className="text-2xl font-bold mb-3 text-gray-900">Educator-Level Incentives</h3>
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="text-base text-gray-600 mb-6">
               Educators on the Industry Immersion Series mailing list can win prizes designed to support your classroom, and make you smile!
             </p>
             
@@ -126,7 +126,7 @@ export default function Incentives() {
           <div className="bg-white p-8 rounded-xl shadow-md">
             <span className="text-[#0092ff] font-semibold mb-2 block">04</span>
             <h3 className="text-2xl font-bold mb-3 text-gray-900">School-Level Incentive</h3>
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="text-base text-gray-600 mb-6">
               Schools with 100+ students who complete all monthly activities are entered to win some legit school-level prizes.
             </p>
             

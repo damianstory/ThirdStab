@@ -56,12 +56,21 @@ export default function Hero() {
               <div className={`space-y-6 transition-all duration-1000 ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                 {/* Headings */}
                 <div className="space-y-4">
-                  <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-gray-900">
-                    Discover Your Future Through{' '}
-                    <span className="text-[#0092ff]">Industry Immersion</span>
+                  <h1 className="text-5xl md:text-6xl font-bold mb-4 leading-tight">
+                    <span 
+                      className="bg-gradient-to-r from-[#0070cc] via-[#00b4ff] to-[#0070cc] bg-clip-text text-transparent"
+                      style={{
+                        backgroundSize: '200% 200%',
+                        animation: 'gradient-animation 3s ease-in-out infinite'
+                      }}
+                    >
+                      Industry Immersion Series
+                    </span>
                   </h1>
                   <p className="text-xl text-gray-600 leading-relaxed">
-                    Join monthly skill-building challenges designed by leading Canadian companies. Build real skills, explore careers, and win microgrants.
+                    $100,000+ in micro grants and incentives available to grade 7-12 students across North America.
+                    <br />
+                    <span className="text-lg">Launching this October, 2025.</span>
                   </p>
                 </div>
 
