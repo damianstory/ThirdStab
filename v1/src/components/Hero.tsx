@@ -56,13 +56,13 @@ export default function Hero() {
               <div className={`space-y-6 transition-all duration-1000 ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                 {/* Headings */}
                 <div className="space-y-4">
-                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
+                  <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-gray-900">
                     Discover Your Future Through{' '}
-                    <span className="text-blue-600">Industry Immersion</span>
+                    <span className="text-[#0092ff]">Industry Immersion</span>
                   </h1>
-                  <h2 className="text-lg sm:text-xl text-gray-600 leading-relaxed">
+                  <p className="text-xl text-gray-600 leading-relaxed">
                     Join monthly skill-building challenges designed by leading Canadian companies. Build real skills, explore careers, and win microgrants.
-                  </h2>
+                  </p>
                 </div>
 
                 {/* Email Capture Form */}

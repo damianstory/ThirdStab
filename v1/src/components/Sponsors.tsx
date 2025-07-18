@@ -26,21 +26,21 @@ export default function Sponsors() {
   ]
 
   return (
-    <section id="sponsors" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section id="sponsors" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="container mx-auto max-w-6xl">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Our <span className="text-[#0092ff]">Participating</span> Sponsors
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Let's celebrate these industry leaders collaborating with students to help them develop real-world skills 👏
           </p>
         </div>
 
         {/* Monthly Activity Sponsors */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">
+          <h3 className="text-2xl font-bold text-gray-900 text-center mb-3">
             Monthly Activity Sponsors
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
@@ -56,7 +56,7 @@ export default function Sponsors() {
 
         {/* Incentive Sponsors */}
         <div>
-          <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">
+          <h3 className="text-2xl font-bold text-gray-900 text-center mb-3">
             Incentive Sponsors
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">

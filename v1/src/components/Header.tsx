@@ -11,8 +11,8 @@ export default function Header() {
     { name: 'Why Micro Grants?', href: '#why-micro-grants' },
     { name: 'Timeline', href: '#timeline' },
     { name: 'Incentives', href: '#incentives' },
-    { name: 'FAQ', href: '#faq' },
     { name: 'Sponsors', href: '#sponsors' },
+    { name: 'FAQ', href: '#faq' },
     { name: 'Stay Informed', href: '#stay-informed' },
   ];
 
@@ -35,27 +35,27 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 w-full bg-white shadow-md z-50">
-      <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="w-full px-4 sm:px-6 lg:px-8">
         {/* Desktop Layout - Three Sections */}
-        <div className="hidden xl:grid xl:grid-cols-3 items-center h-16">
+        <div className="hidden xl:grid xl:grid-cols-[auto_1fr_auto] items-center h-16">
           {/* Left Section - myBlueprint Logo */}
           <div className="flex items-center">
             <Link href="/" className="inline-block">
-              <div className="bg-primary-600 text-white px-4 py-1.5 rounded-md text-sm font-semibold flex items-center h-9">
+              <div className="bg-[#0092ff] text-white px-4 py-1.5 rounded-md text-sm font-semibold flex items-center h-9">
                 myBlueprint
               </div>
             </Link>
           </div>
 
           {/* Center Section - Navigation */}
-          <div className="flex items-center justify-center">
-            <div className="flex items-baseline space-x-3 lg:space-x-4">
+          <div className="flex items-center justify-center overflow-visible">
+            <div className="flex items-baseline space-x-1 xl:space-x-2">
               {navigation.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
                   onClick={(e) => scrollToSection(e, item.href)}
-                  className="text-gray-700 hover:text-primary-600 px-2 lg:px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 whitespace-nowrap"
+                  className="text-gray-700 hover:text-[#0092ff] px-1 xl:px-2 py-2 rounded-md text-xs xl:text-sm font-medium transition-colors duration-200 whitespace-nowrap cursor-pointer"
                 >
                   {item.name}
                 </a>
@@ -66,7 +66,7 @@ export default function Header() {
           {/* Right Section - Industry Immersion Series Logo */}
           <div className="flex items-center justify-end">
             <Link href="/" className="inline-block">
-              <div className="bg-primary-700 text-white px-4 py-1.5 rounded-md text-sm font-semibold whitespace-nowrap flex items-center h-9">
+              <div className="bg-[#0082e6] text-white px-4 py-1.5 rounded-md text-sm font-semibold whitespace-nowrap flex items-center h-9">
                 Industry Immersion Series
               </div>
             </Link>
@@ -78,7 +78,7 @@ export default function Header() {
           {/* Left - myBlueprint Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="inline-block">
-              <div className="bg-primary-600 text-white px-3 py-1 rounded text-xs font-semibold flex items-center h-7">
+              <div className="bg-[#0092ff] text-white px-3 py-1 rounded text-xs font-semibold flex items-center h-7">
                 myBlueprint
               </div>
             </Link>
@@ -88,7 +88,7 @@ export default function Header() {
           <div className="flex-shrink-0">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 min-w-[44px] min-h-[44px]"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-[#0092ff] hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#0092ff] min-w-[44px] min-h-[44px]"
               aria-expanded={isMenuOpen}
             >
               <span className="sr-only">Open main menu</span>
@@ -128,7 +128,7 @@ export default function Header() {
           {/* Right - Industry Immersion Series Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="inline-block">
-              <div className="bg-primary-700 text-white px-3 py-1 rounded text-xs font-semibold flex items-center h-7">
+              <div className="bg-[#0082e6] text-white px-3 py-1 rounded text-xs font-semibold flex items-center h-7">
                 <span className="hidden xs:inline">Industry Immersion</span>
                 <span className="xs:hidden">IIS</span>
               </div>
@@ -144,7 +144,7 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 onClick={(e) => scrollToSection(e, item.href)}
-                className="text-gray-700 hover:text-primary-600 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-50 min-h-[44px] flex items-center"
+                className="text-gray-700 hover:text-[#0092ff] block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-50 min-h-[44px] flex items-center"
               >
                 {item.name}
               </a>

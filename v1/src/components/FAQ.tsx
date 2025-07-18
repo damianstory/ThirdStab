@@ -61,10 +61,10 @@ export default function FAQ() {
     <section id="faq" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Got questions? We've got answers! Here's everything you need to know about the Industry Immersion Series.
           </p>
         </div>
@@ -79,10 +79,10 @@ export default function FAQ() {
                 <div className="flex justify-end">
                   <button
                     onClick={() => toggleAccordion(index)}
-                    className="relative max-w-[85%] sm:max-w-[75%] bg-gray-200 rounded-2xl rounded-br-sm px-5 py-3 text-left hover:bg-gray-300 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                    className="relative max-w-[85%] sm:max-w-[75%] bg-gray-200 rounded-2xl rounded-br-sm px-5 py-3 text-left hover:bg-gray-300 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#0092ff] focus:ring-offset-2"
                     aria-expanded={openIndex === index}
                   >
-                    <span className="block text-base sm:text-lg font-medium text-gray-900">
+                    <span className="block text-lg font-medium text-gray-900">
                       {faq.question}
                     </span>
                     {/* Chat bubble tail */}
@@ -105,7 +105,7 @@ export default function FAQ() {
                   }`}
                 >
                   <div className="relative max-w-[85%] sm:max-w-[75%] bg-primary-50 rounded-2xl rounded-bl-sm px-5 py-4">
-                    <p className="text-base sm:text-lg font-medium text-gray-900">
+                    <p className="text-lg font-medium text-gray-900">
                       {faq.answer}
                     </p>
                     {/* Chat bubble tail */}

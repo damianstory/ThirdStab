@@ -6,10 +6,10 @@ export default function StayInformed() {
       <div className="container mx-auto max-w-4xl">
         <div className="bg-white rounded-2xl shadow-xl p-8 sm:p-12">
           <div className="text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Stay Informed
             </h2>
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               Be the first to know when applications open. Get exclusive updates about 
               new industry partners, success stories, and program expansions.
             </p>

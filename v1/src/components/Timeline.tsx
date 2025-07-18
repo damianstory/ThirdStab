@@ -95,14 +95,14 @@ export default function Timeline() {
   let currentYear = "";
 
   return (
-    <section id="timeline" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section id="timeline" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="container mx-auto max-w-6xl">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Activity <span className="text-primary-600">Timeline</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Activity <span className="text-[#0092ff]">Timeline</span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Each month will have a different activity sponsored by a different industry partner. 
             Sign up to be the first to find out who they are 👀
           </p>
@@ -127,8 +127,8 @@ export default function Timeline() {
                   {/* Year Indicator */}
                   {showYear && (
                     <div className="relative z-20">
-                      <div className="text-primary-600 font-semibold text-sm lg:text-base mb-4 lg:mb-6 lg:text-center">
-                        <span className="bg-gray-50 px-4 py-1 relative z-20">
+                      <div className="text-[#0092ff] font-semibold text-sm lg:text-base mb-4 lg:mb-6 lg:text-center">
+                        <span className="bg-white px-4 py-1 relative z-20">
                           {item.year}
                         </span>
                       </div>
@@ -142,7 +142,7 @@ export default function Timeline() {
                     ${item.position === 'left' ? 'lg:flex-row-reverse' : 'lg:flex-row'}
                   `}>
                     {/* Timeline Dot */}
-                    <div className="absolute left-6 lg:left-1/2 w-4 h-4 bg-primary-600 rounded-full -translate-x-1/2 z-10 ring-4 ring-gray-50"></div>
+                    <div className="absolute left-6 lg:left-1/2 w-4 h-4 bg-[#0092ff] rounded-full -translate-x-1/2 z-10 ring-4 ring-gray-50"></div>
                     
                     {/* Spacer for desktop */}
                     <div className="hidden lg:block w-1/2"></div>
@@ -155,12 +155,12 @@ export default function Timeline() {
                       <div className={`
                         bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200
                         ${item.status === 'confirmed' 
-                          ? 'border-l-4 border-primary-600' 
+                          ? 'border-l-4 border-[#0092ff]' 
                           : 'border-l-4 border-dashed border-gray-300'
                         }
                       `}>
                         {/* Month */}
-                        <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2">
+                        <h3 className="text-2xl font-bold text-gray-900 mb-3">
                           {item.month}
                         </h3>
                         
@@ -175,14 +175,14 @@ export default function Timeline() {
                         {/* Industry */}
                         <p className={`
                           text-sm mb-3
-                          ${item.status === 'confirmed' ? 'text-primary-600' : 'text-gray-400'}
+                          ${item.status === 'confirmed' ? 'text-[#0092ff]' : 'text-gray-400'}
                         `}>
                           Industry: {item.industry}
                         </p>
                         
                         {/* Description */}
                         <p className={`
-                          text-base
+                          text-lg
                           ${item.status === 'confirmed' ? 'text-gray-600' : 'text-gray-400'}
                         `}>
                           {item.description}
@@ -198,12 +198,12 @@ export default function Timeline() {
 
         {/* CTA Section */}
         <div className="text-center mt-16">
-          <p className="text-gray-600 mb-6 text-lg">
+          <p className="text-xl text-gray-600 mb-6">
             Ready to discover which amazing companies are sponsoring each month?
           </p>
           <a
             href="#stay-informed"
-            className="inline-block bg-primary-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-primary-700 transition-colors duration-200 text-base"
+            className="inline-block bg-[#0092ff] text-white px-8 py-4 rounded-lg font-medium hover:bg-[#0082e6] transition-colors duration-200 text-base"
           >
             Be the First to Know
           </a>
