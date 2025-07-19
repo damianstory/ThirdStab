@@ -71,13 +71,13 @@ export default function EmailForm({
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder={placeholder}
-          className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent min-h-[44px]"
+          className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0092ff] focus:border-transparent min-h-[44px] shadow-lg"
           disabled={status === 'loading'}
         />
         <button
           type="submit"
           disabled={status === 'loading'}
-          className="px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 min-h-[44px]"
+          className="px-6 py-3 bg-[#0092ff] text-white font-medium rounded-lg hover:bg-[#0080e6] focus:outline-none focus:ring-2 focus:ring-[#0092ff] focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 min-h-[44px] shadow-lg"
         >
           {status === 'loading' ? 'Subscribing...' : buttonText}
         </button>

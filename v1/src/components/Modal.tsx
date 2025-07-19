@@ -85,13 +85,6 @@ export default function Modal({ isOpen, onClose, children, className = '' }: Mod
         tabIndex={-1}
         onKeyDown={handleKeyDown}
       >
-        <button
-          onClick={onClose}
-          className="absolute -top-2 -right-2 z-10 rounded-full bg-white p-2 shadow-lg hover:bg-gray-100 transition-colors"
-          aria-label="Close modal"
-        >
-          <X className="h-5 w-5 text-gray-600" />
-        </button>
         {children}
       </div>
     </div>

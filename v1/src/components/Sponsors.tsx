@@ -34,7 +34,7 @@ export default function Sponsors() {
             Our Participating <span className="text-[#0092ff]">Sponsors</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Let's celebrate these industry leaders collaborating with students to help them develop real-world skills 👏
+            Let's celebrate these industry leaders collaborating with students to help them develop real-world skills 🤝
           </p>
         </div>
 
@@ -70,12 +70,22 @@ export default function Sponsors() {
             ))}
             {/* Become a Sponsor CTA */}
             <div className="sm:col-span-2 lg:col-span-1 flex items-center">
-              <a
-                href="mailto:partners@industryimmersion.ca"
+              <button
+                onClick={() => {
+                  window.dispatchEvent(new CustomEvent('openFAQ', { detail: { index: 7 } }));
+                  setTimeout(() => {
+                    const faqSection = document.getElementById('faq');
+                    if (faqSection) {
+                      const rect = faqSection.getBoundingClientRect();
+                      const offset = window.pageYOffset + rect.bottom - window.innerHeight + 50;
+                      window.scrollTo({ top: offset, behavior: 'smooth' });
+                    }
+                  }, 100);
+                }}
                 className="w-full bg-[#0092ff] text-white font-medium py-4 px-6 rounded-xl hover:bg-[#0082e6] transition-colors text-center shadow-md hover:shadow-lg"
               >
                 Become<br />a Sponsor
-              </a>
+              </button>
             </div>
           </div>
         </div>

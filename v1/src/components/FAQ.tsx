@@ -1,55 +1,69 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 interface FAQItem {
   question: string;
   answer: string;
 }
 
-export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+interface FAQProps {
+  initialOpenIndex?: number | null;
+}
+
+export default function FAQ({ initialOpenIndex = null }: FAQProps) {
+  const [openIndex, setOpenIndex] = useState<number | null>(initialOpenIndex);
+
+  useEffect(() => {
+    if (initialOpenIndex !== null) {
+      setOpenIndex(initialOpenIndex);
+    }
+  }, [initialOpenIndex]);
+
+  useEffect(() => {
+    const handleOpenFAQ = (event: CustomEvent) => {
+      setOpenIndex(event.detail.index);
+    };
+
+    window.addEventListener('openFAQ', handleOpenFAQ as EventListener);
+
+    return () => {
+      window.removeEventListener('openFAQ', handleOpenFAQ as EventListener);
+    };
+  }, []);
 
   const faqs: FAQItem[] = [
     {
-      question: "What exactly is the Industry Immersion Series?",
-      answer: "Think of it as a monthly challenge where real companies give you cool projects to work on! Each month, a different industry partner creates a skill-building activity that helps you learn what it's actually like to work in their field. Plus, you can win money for participating! 💰"
+      question: "What grade levels can participate?",
+      answer: "The program is available to all students across grades 7-12."
     },
     {
-      question: "How much money can I actually win?",
-      answer: "Each month, 20 students win $500 microgrants - that's $10,000 given away every month! If you complete all 8 monthly activities, you're eligible for even more prizes. And the best part? It's completely free to participate."
+      question: "Does my school need to be licensing myBlueprint?",
+      answer: "No. Any grade 7-12 student across North America can participate."
     },
     {
-      question: "Do I need any special skills or experience?",
-      answer: "Nope! These activities are designed for students in grades 7-12, regardless of your experience level. The whole point is to LEARN new skills, not to already have them. Companies want to see your creativity and effort, not perfection."
+      question: "When does the program launch?",
+      answer: "The first monthly activity is launching in October 2025. A landing page will be created for each month that explains the activity and how students can participate. Join the mailing list below to be the first to know."
     },
     {
-      question: "How much time do I need to spend on each activity?",
-      answer: "Most activities are designed to take a few hours spread over the month. You can work on them in your spare time, on weekends, or even as part of a school project if your teacher is cool with it. No all-nighters required! 😴"
+      question: "What types of industries are participating?",
+      answer: "We've tried to ensure there's a diverse group of industries available for students to learn about. We'll be announcing specifics soon. To be one of the first to know, join the mailing list below."
     },
     {
-      question: "Is this program safe for students?",
-      answer: "Absolutely! All industry partners are vetted companies, and student submissions are handled through secure Google Forms. We never share personal student information with sponsors - only the work they choose to submit."
+      question: "Are there incentives for educators as well?",
+      answer: "Yes :) Monthly giveaways for educators who join the mailing list, and school prizes for schools with a lot of student participation."
     },
     {
-      question: "Are there any costs for schools or students?",
-      answer: "Zero costs! This program is completely free for students, educators, and schools. Our industry sponsors cover all program costs because they believe in investing in student development."
+      question: "What data is being collected?",
+      answer: "myBlueprint will collect the names and emails of students when they submit their monthly activities. This information will not be shared with any third parties. Industry partners will receive anonymized data on the number of students who participated in their activity."
     },
     {
-      question: "How do I submit my completed work?",
-      answer: "Each activity comes with a Google Form link for submission. Just follow the instructions provided with each month's challenge - it's super straightforward!"
+      question: "What is myBlueprint?",
+      answer: "myBlueprint is a trusted partner to almost 300 school boards across Canada, helping to empower every student to thrive and succeed in education, career, and life."
     },
     {
-      question: "When will I find out if I won a microgrant?",
-      answer: "Winners are typically announced within 2-3 weeks after each month's submission deadline. All participants will be notified via email whether they won or not."
-    },
-    {
-      question: "Can students from any province participate?",
-      answer: "Yes! This program is open to all Canadian students in grades 7-12, regardless of which province or territory they're in."
-    },
-    {
-      question: "Who are the industry sponsors?",
-      answer: "We're working with amazing companies across different industries! The first people to find out which companies are participating will be those on our mailing list. Sign up to be in the know! 👀"
+      question: "How can my company get involved?",
+      answer: "Email our Director, Special Projects at damian.matheson@myblueprint.ca"
     }
   ];
 

@@ -68,9 +68,10 @@ export default function Hero() {
                     </span>
                   </h1>
                   <p className="text-xl text-gray-600 leading-relaxed">
-                    $100,000+ in micro grants and incentives available to grade 7-12 students across North America.
-                    <br />
-                    <span className="text-lg">Launching this October, 2025.</span>
+                    $100,000+ in micro grants and incentives available to grade 7-12 students (and their educators) across North America.
+                  </p>
+                  <p className="text-lg text-gray-600">
+                    The first activity launches this October. Join the mailing list so you and your students are the first to know how to get involved.
                   </p>
                 </div>
 
@@ -80,7 +81,7 @@ export default function Hero() {
                     placeholder="Enter your email address"
                     buttonText="Get Started"
                     source="hero"
-                    className="shadow-lg"
+                    className=""
                   />
                 </div>
               </div>
@@ -130,22 +131,13 @@ export default function Hero() {
                   </div>
                 </div>
                 
-                {/* Hero Image Placeholder */}
-                <div className="relative z-10 bg-gradient-to-br from-gray-200 to-gray-300 rounded-2xl lg:rounded-3xl h-[400px] lg:h-[500px] flex items-center justify-center shadow-2xl">
-                  <div className="text-center text-gray-500">
-                    <svg 
-                      className="w-20 h-20 mx-auto mb-4"
-                      fill="none" 
-                      stroke="currentColor" 
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                    >
-                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                      <circle cx="8.5" cy="8.5" r="1.5" />
-                      <polyline points="21 15 16 10 5 21" />
-                    </svg>
-                    <p className="text-lg font-medium">Student Image Coming Soon</p>
-                  </div>
+                {/* Hero Image */}
+                <div className="relative z-10 rounded-2xl lg:rounded-3xl h-[400px] lg:h-[500px] overflow-hidden shadow-2xl">
+                  <img
+                    src="https://i.imgur.com/tJvD84G.png"
+                    alt="Industry Immersion Series Hero"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>

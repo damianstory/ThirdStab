@@ -7,11 +7,10 @@ export default function StayInformed() {
         <div className="bg-white rounded-2xl shadow-xl p-8 sm:p-12">
           <div className="text-center">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Stay Informed
+              Stay <span className="text-[#0092ff]">Informed</span>
             </h2>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Be the first to know when applications open. Get exclusive updates about 
-              new industry partners, success stories, and program expansions.
+            We'll only email you with the specifics about what you and your students need to know to take advantage of each month's industry sponsored skill building opportunity.
             </p>
 
             <div className="max-w-md mx-auto mb-8">

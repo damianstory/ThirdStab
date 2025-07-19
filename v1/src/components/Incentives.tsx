@@ -10,8 +10,7 @@ export default function Incentives() {
             Incentives
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Not just for students.<br />
-            Educators and schools are also eligible for participation prizes.
+            Not just for students. Educators and schools are also eligible for incentives 👏
           </p>
         </div>
 
