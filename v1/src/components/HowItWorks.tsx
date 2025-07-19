@@ -45,10 +45,12 @@ export default function HowItWorks() {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 lg:items-stretch">
           {/* Image placeholder */}
           <div className="w-full lg:w-2/5 flex-shrink-0">
-            <div className="bg-gray-200 rounded-lg h-full min-h-[300px] flex items-center justify-center">
-              <p className="text-gray-500 text-center px-4">
-                [Illustration: Students working on various industry challenges]
-              </p>
+            <div className="bg-gray-100 rounded-lg h-full min-h-[300px] overflow-hidden">
+              <img 
+                src="https://i.imgur.com/wJlROXV.png"
+                alt="Students working on various industry challenges"
+                className="w-full h-full object-cover object-center"
+              />
             </div>
           </div>
 
