@@ -3,36 +3,30 @@
 import { useState } from 'react';
 
 export default function HowItWorks() {
-  const [openSteps, setOpenSteps] = useState<number[]>([]); // All steps closed by default
+  const [openStep, setOpenStep] = useState<number | null>(null); // Only one step can be open at a time
 
   const steps = [
     {
-      title: "Monthly Industry Challenges Released",
-      brief: "Each month, a new industry sponsor releases a skill-building challenge",
-      details: "Challenges are designed by industry professionals to teach real-world skills relevant to their field"
+      title: "Monthly Challenges Released",
+      details: "Each month, a new industry partner releases a skill-building challenge designed to introduce students to occupations and opportunities in their industry."
     },
     {
       title: "Students Complete Activities",
-      brief: "Students work on challenges individually or in groups during the month",
-      details: "Activities include research, creative projects, problem-solving tasks, and skill demonstrations"
+      details: "Students individually work on the challenge, developing awareness of industry opportunities, relevant skills, post-secondary pathways, and more."
     },
     {
-      title: "Submit Your Work",
-      brief: "Students submit completed work via Google Forms by the monthly deadline",
-      details: "Submissions are reviewed by industry professionals and educators for quality and creativity"
+      title: "Submission Process",
+      details: "Completed work is submitted and assessed against a rubric for review by the selection committee. Twenty submissions will selected each month."
     },
     {
-      title: "Winners Receive Microgrants",
-      brief: "Selected students receive $500 microgrants and recognition",
-      details: "20 winners chosen monthly, with additional prizes for completion and participation milestones"
+      title: "Winners Selected & Rewarded",
+      details: "Outstanding submissions receive micro grants and recognition from industry partners. $10,000 in micro grants are awarded EACH month, with extra particpation incentives available in June."
     }
   ];
 
   const toggleStep = (index: number) => {
-    setOpenSteps(prev => 
-      prev.includes(index) 
-        ? prev.filter(i => i !== index)
-        : [...prev, index]
+    setOpenStep(prev => 
+      prev === index ? null : index
     );
   };
 
@@ -41,10 +35,10 @@ export default function HowItWorks() {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            How It Works
+            How It <span className="text-[#0092ff]">Works</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From monthly challenges to skill development, here's how students participate in our industry immersion program.
+          Connecting students to careers through self-directed, incentive driven skill building and industry awareness activities.
           </p>
         </div>
 
@@ -65,18 +59,17 @@ export default function HowItWorks() {
                 <button
                   onClick={() => toggleStep(index)}
                   className="w-full py-6 flex items-start justify-between text-left hover:bg-gray-50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#0092ff] focus:ring-offset-2"
-                  aria-expanded={openSteps.includes(index)}
+                  aria-expanded={openStep === index}
                   aria-controls={`step-${index}-content`}
                 >
                   <div className="flex-1 pr-4">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                      Step {index + 1}: {step.title}
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">
+                      {step.title}
                     </h3>
-                    <p className="text-lg text-gray-600">{step.brief}</p>
                   </div>
                   <svg
                     className={`w-6 h-6 text-gray-400 flex-shrink-0 transform transition-transform duration-300 ${
-                      openSteps.includes(index) ? 'rotate-180' : ''
+                      openStep === index ? 'rotate-180' : ''
                     }`}
                     fill="none"
                     stroke="currentColor"
@@ -89,11 +82,11 @@ export default function HowItWorks() {
                 <div
                   id={`step-${index}-content`}
                   className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    openSteps.includes(index) ? 'max-h-40' : 'max-h-0'
+                    openStep === index ? 'max-h-40' : 'max-h-0'
                   }`}
                 >
-                  <div className="px-6 pb-6">
-                    <p className="text-lg text-gray-600">{step.details}</p>
+                  <div className="pb-6">
+                    <p className="text-base text-[#374151]">{step.details}</p>
                   </div>
                 </div>
               </div>

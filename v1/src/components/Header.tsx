@@ -37,13 +37,15 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-white shadow-md z-50">
       <nav className="w-full px-4 sm:px-6 lg:px-8">
         {/* Desktop Layout - Three Sections */}
-        <div className="hidden xl:grid xl:grid-cols-[auto_1fr_auto] items-center h-16">
+        <div className="hidden xl:grid xl:grid-cols-[auto_1fr_auto] items-center h-16 pt-1">
           {/* Left Section - myBlueprint Logo */}
           <div className="flex items-center">
             <Link href="/" className="inline-block">
-              <div className="bg-[#0092ff] text-white px-4 py-1.5 rounded-md text-sm font-semibold flex items-center h-9">
-                myBlueprint
-              </div>
+              <img 
+                src="https://i.imgur.com/lVesOAU.png" 
+                alt="myBlueprint" 
+                className="h-9"
+              />
             </Link>
           </div>
 
@@ -66,21 +68,25 @@ export default function Header() {
           {/* Right Section - Industry Immersion Series Logo */}
           <div className="flex items-center justify-end">
             <Link href="/" className="inline-block">
-              <div className="bg-[#0082e6] text-white px-4 py-1.5 rounded-md text-sm font-semibold whitespace-nowrap flex items-center h-9">
-                Industry Immersion Series
-              </div>
+              <img 
+                src="https://i.imgur.com/oFmdCeW.png" 
+                alt="Industry Immersion Series" 
+                className="h-9"
+              />
             </Link>
           </div>
         </div>
 
         {/* Mobile Layout - Three Sections */}
-        <div className="xl:hidden flex items-center justify-between h-14 sm:h-16">
+        <div className="xl:hidden flex items-center justify-between h-14 sm:h-16 pt-1">
           {/* Left - myBlueprint Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="inline-block">
-              <div className="bg-[#0092ff] text-white px-3 py-1 rounded text-xs font-semibold flex items-center h-7">
-                myBlueprint
-              </div>
+              <img 
+                src="https://i.imgur.com/lVesOAU.png" 
+                alt="myBlueprint" 
+                className="h-7"
+              />
             </Link>
           </div>
 
@@ -126,12 +132,13 @@ export default function Header() {
           </div>
 
           {/* Right - Industry Immersion Series Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="inline-block">
-              <div className="bg-[#0082e6] text-white px-3 py-1 rounded text-xs font-semibold flex items-center h-7">
-                <span className="hidden xs:inline">Industry Immersion</span>
-                <span className="xs:hidden">IIS</span>
-              </div>
+              <img 
+                src="https://i.imgur.com/oFmdCeW.png" 
+                alt="Industry Immersion Series" 
+                className="h-7"
+              />
             </Link>
           </div>
         </div>

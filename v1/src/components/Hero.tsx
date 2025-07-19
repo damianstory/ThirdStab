@@ -7,14 +7,14 @@ import AnimatedBackground from './AnimatedBackground';
 
 // Company logos data
 const companies = [
-  { name: 'TechCorp', logo: 'https://via.placeholder.com/150x60/e5e7eb/6b7280?text=TechCorp' },
-  { name: 'InnovateLab', logo: 'https://via.placeholder.com/150x60/e5e7eb/6b7280?text=InnovateLab' },
-  { name: 'FutureWorks', logo: 'https://via.placeholder.com/150x60/e5e7eb/6b7280?text=FutureWorks' },
-  { name: 'DigitalPro', logo: 'https://via.placeholder.com/150x60/e5e7eb/6b7280?text=DigitalPro' },
-  { name: 'CodeMasters', logo: 'https://via.placeholder.com/150x60/e5e7eb/6b7280?text=CodeMasters' },
-  { name: 'DataDrive', logo: 'https://via.placeholder.com/150x60/e5e7eb/6b7280?text=DataDrive' },
-  { name: 'CloudNext', logo: 'https://via.placeholder.com/150x60/e5e7eb/6b7280?text=CloudNext' },
-  { name: 'AIVentures', logo: 'https://via.placeholder.com/150x60/e5e7eb/6b7280?text=AIVentures' },
+  { name: 'Industry Immersion Series', logo: 'https://i.imgur.com/oFmdCeW.png' },
+  { name: 'myBlueprint', logo: 'https://i.imgur.com/lVesOAU.png' },
+  { name: 'Industry Immersion Series', logo: 'https://i.imgur.com/oFmdCeW.png' },
+  { name: 'myBlueprint', logo: 'https://i.imgur.com/lVesOAU.png' },
+  { name: 'Industry Immersion Series', logo: 'https://i.imgur.com/oFmdCeW.png' },
+  { name: 'myBlueprint', logo: 'https://i.imgur.com/lVesOAU.png' },
+  { name: 'Industry Immersion Series', logo: 'https://i.imgur.com/oFmdCeW.png' },
+  { name: 'myBlueprint', logo: 'https://i.imgur.com/lVesOAU.png' },
 ];
 
 export default function Hero() {
@@ -161,7 +161,7 @@ export default function Hero() {
             {companies.map((company) => (
               <div
                 key={company.name}
-                className="flex items-center justify-center h-16 lg:h-20 px-8 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                className="flex items-center justify-center h-12 lg:h-15 px-8 opacity-60 hover:opacity-100 transition-all duration-300"
               >
                 <img
                   src={company.logo}

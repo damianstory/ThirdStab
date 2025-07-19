@@ -22,10 +22,6 @@
     min-height: 44px;
   }
   
-  /* Focus styles for accessibility */
-  *:focus {
-    @apply outline-none ring-2 ring-primary-500 ring-offset-2;
-  }
   
   /* Container with responsive padding */
   .container {

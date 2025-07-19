@@ -62,7 +62,7 @@ export default function FAQ() {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Frequently Asked Questions
+            Frequently Asked <span className="text-[#0092ff]">Questions</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Got questions? We've got answers! Here's everything you need to know about the Industry Immersion Series.
@@ -76,7 +76,7 @@ export default function FAQ() {
                 className="space-y-4"
               >
                 {/* Question Bubble */}
-                <div className="flex justify-end">
+                <div className="flex justify-start">
                   <button
                     onClick={() => toggleAccordion(index)}
                     className="relative max-w-[85%] sm:max-w-[75%] bg-gray-200 rounded-2xl rounded-br-sm px-5 py-3 text-left hover:bg-gray-300 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#0092ff] focus:ring-offset-2"
@@ -98,7 +98,7 @@ export default function FAQ() {
                 
                 {/* Answer Bubble */}
                 <div
-                  className={`flex justify-start transition-all duration-300 ${
+                  className={`flex justify-end transition-all duration-300 ${
                     openIndex === index 
                       ? 'opacity-100 transform translate-y-0' 
                       : 'opacity-0 transform -translate-y-2 h-0 overflow-hidden'
