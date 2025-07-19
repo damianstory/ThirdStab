@@ -60,7 +60,7 @@ export default function HowItWorks() {
               <div key={index} className={`${index < steps.length - 1 ? 'border-b border-gray-200' : ''}`}>
                 <button
                   onClick={() => toggleStep(index)}
-                  className="w-full py-6 flex items-start justify-between text-left hover:bg-gray-50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#0092ff] focus:ring-offset-2"
+                  className="w-full py-6 flex items-start justify-between text-left hover:bg-gray-50 transition-colors duration-200 focus:outline-none"
                   aria-expanded={openStep === index}
                   aria-controls={`step-${index}-content`}
                 >
