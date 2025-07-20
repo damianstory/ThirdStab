@@ -30,24 +30,16 @@ export default function Sponsors() {
           />
         </div>
 
-        {/* Become a Sponsor CTA */}
+        {/* View All Sponsors CTA */}
         <div className="flex justify-center mt-8 sm:mt-10 md:mt-12">
-          <button
-            onClick={() => {
-              window.dispatchEvent(new CustomEvent('openFAQ', { detail: { index: 7 } }));
-              setTimeout(() => {
-                const faqSection = document.getElementById('faq');
-                if (faqSection) {
-                  const rect = faqSection.getBoundingClientRect();
-                  const offset = window.pageYOffset + rect.bottom - window.innerHeight + 50;
-                  window.scrollTo({ top: offset, behavior: 'smooth' });
-                }
-              }, 100);
-            }}
+          <a
+            href="https://myblueprint.ca/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#0092ff] text-white font-semibold py-3 px-6 sm:py-4 sm:px-8 rounded-xl hover:bg-[#0082e6] transition-colors text-center shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-200 text-sm sm:text-base"
           >
-            Become a Sponsor
-          </button>
+            View All Sponsors
+          </a>
         </div>
       </div>
 

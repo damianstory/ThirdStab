@@ -45,9 +45,9 @@ export default function HowItWorks() {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 lg:items-stretch">
           {/* Image placeholder */}
           <div className="w-full lg:w-2/5 flex-shrink-0">
-            <div className="bg-gray-100 rounded-lg h-full min-h-[300px] overflow-hidden">
+            <div className="bg-gray-100 rounded-lg h-[400px] lg:h-[500px] overflow-hidden">
               <img 
-                src="https://i.imgur.com/uha29PZ.png"
+                src="https://i.imgur.com/W7DuhTW.jpeg"
                 alt="Students working on various industry challenges"
                 className="w-full h-full object-cover object-center"
               />
@@ -55,7 +55,7 @@ export default function HowItWorks() {
           </div>
 
           {/* Accordion */}
-          <div className="w-full lg:w-3/5">
+          <div className="w-full lg:w-3/5 flex flex-col justify-center">
             {steps.map((step, index) => (
               <div key={index} className={`${index < steps.length - 1 ? 'border-b border-gray-200' : ''}`}>
                 <button

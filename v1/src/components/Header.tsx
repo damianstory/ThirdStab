@@ -25,7 +25,7 @@ export default function Header() {
     const element = document.querySelector(href);
     if (element) {
       const headerHeight = 64; // Height of fixed header
-      const additionalOffset = 40; // Extra breathing room (reduced by half)
+      const additionalOffset = 10; // Extra breathing room (reduced by half)
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerHeight - additionalOffset;
 

@@ -193,18 +193,6 @@ export default function Timeline() {
           </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          <p className="text-xl text-gray-600 mb-6">
-            Ready to discover which amazing companies are sponsoring each month?
-          </p>
-          <a
-            href="#stay-informed"
-            className="inline-block bg-[#0092ff] text-white px-8 py-4 rounded-lg font-medium hover:bg-[#0082e6] transition-colors duration-200 text-base"
-          >
-            Be the First to Know
-          </a>
-        </div>
       </div>
     </section>
   );
