@@ -4,6 +4,7 @@ import HowItWorks from '@/components/HowItWorks';
 import WhyMicroGrants from '@/components/WhyMicroGrants';
 import Timeline from '@/components/Timeline';
 import Incentives from '@/components/Incentives';
+import IncentivePartners from '@/components/IncentivePartners';
 import Sponsors from '@/components/Sponsors';
 import FAQ from '@/components/FAQ';
 import StayInformed from '@/components/StayInformed';
@@ -19,6 +20,7 @@ export default function Home() {
         <WhyMicroGrants />
         <Timeline />
         <Incentives />
+        <IncentivePartners />
         <Sponsors />
         <FAQ />
         <StayInformed />

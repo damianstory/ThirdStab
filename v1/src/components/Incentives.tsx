@@ -1,6 +1,11 @@
 import { DollarSign, Trophy, User, GraduationCap } from 'lucide-react';
+import { getLimitedSponsorsByType } from '../data/sponsors';
 
 export default function Incentives() {
+  const studentSponsors = getLimitedSponsorsByType('student', 3);
+  const completionSponsors = getLimitedSponsorsByType('completion', 3);
+  const educatorSponsors = getLimitedSponsorsByType('educator', 3);
+  const schoolSponsors = getLimitedSponsorsByType('school', 3);
   return (
     <section id="incentives" className="pt-24 pb-16 px-4 md:px-12 bg-gray-50">
       <div className="max-w-6xl mx-auto">
@@ -49,6 +54,26 @@ export default function Incentives() {
                 </li>
               </ul>
             </div>
+            
+            {/* Sponsor Section */}
+            <div className="mt-6 pt-6 border-t border-gray-200">
+              <p className="text-sm text-gray-500 mb-3">Sponsored by</p>
+              <div className="flex items-center gap-4 flex-wrap">
+                {studentSponsors.sponsors.map((sponsor) => (
+                  <img 
+                    key={sponsor.id}
+                    src={sponsor.logo} 
+                    alt={sponsor.name}
+                    className="h-8 object-contain"
+                  />
+                ))}
+                {studentSponsors.hasMore && (
+                  <span className="text-sm text-gray-500">
+                    +{studentSponsors.totalCount - 3} more
+                  </span>
+                )}
+              </div>
+            </div>
           </div>
 
           {/* Card 02: Series Completion Incentive */}
@@ -83,6 +108,26 @@ export default function Incentives() {
                   <span className="text-gray-700">Multiple different incentives available</span>
                 </li>
               </ul>
+            </div>
+            
+            {/* Sponsor Section */}
+            <div className="mt-6 pt-6 border-t border-gray-200">
+              <p className="text-sm text-gray-500 mb-3">Sponsored by</p>
+              <div className="flex items-center gap-4 flex-wrap">
+                {completionSponsors.sponsors.map((sponsor) => (
+                  <img 
+                    key={sponsor.id}
+                    src={sponsor.logo} 
+                    alt={sponsor.name}
+                    className="h-8 object-contain"
+                  />
+                ))}
+                {completionSponsors.hasMore && (
+                  <span className="text-sm text-gray-500">
+                    +{completionSponsors.totalCount - 3} more
+                  </span>
+                )}
+              </div>
             </div>
           </div>
 
@@ -119,6 +164,26 @@ export default function Incentives() {
                 </li>
               </ul>
             </div>
+            
+            {/* Sponsor Section */}
+            <div className="mt-6 pt-6 border-t border-gray-200">
+              <p className="text-sm text-gray-500 mb-3">Sponsored by</p>
+              <div className="flex items-center gap-4 flex-wrap">
+                {educatorSponsors.sponsors.map((sponsor) => (
+                  <img 
+                    key={sponsor.id}
+                    src={sponsor.logo} 
+                    alt={sponsor.name}
+                    className="h-8 object-contain"
+                  />
+                ))}
+                {educatorSponsors.hasMore && (
+                  <span className="text-sm text-gray-500">
+                    +{educatorSponsors.totalCount - 3} more
+                  </span>
+                )}
+              </div>
+            </div>
           </div>
 
           {/* Card 04: School-Level Incentive */}
@@ -153,6 +218,26 @@ export default function Incentives() {
                   <span className="text-gray-700">More students participating = more chances to win</span>
                 </li>
               </ul>
+            </div>
+            
+            {/* Sponsor Section */}
+            <div className="mt-6 pt-6 border-t border-gray-200">
+              <p className="text-sm text-gray-500 mb-3">Sponsored by</p>
+              <div className="flex items-center gap-4 flex-wrap">
+                {schoolSponsors.sponsors.map((sponsor) => (
+                  <img 
+                    key={sponsor.id}
+                    src={sponsor.logo} 
+                    alt={sponsor.name}
+                    className="h-8 object-contain"
+                  />
+                ))}
+                {schoolSponsors.hasMore && (
+                  <span className="text-sm text-gray-500">
+                    +{schoolSponsors.totalCount - 3} more
+                  </span>
+                )}
+              </div>
             </div>
           </div>
         </div>
