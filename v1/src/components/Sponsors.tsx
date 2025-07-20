@@ -12,7 +12,7 @@ export default function Sponsors() {
     <section id="sponsors" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="container mx-auto max-w-6xl">
         {/* Section Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-3">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Our Participating <span className="text-[#0092ff]">Sponsors</span>
           </h2>
@@ -22,7 +22,7 @@ export default function Sponsors() {
         </div>
 
         {/* Sponsor Carousel */}
-        <div className="mb-8 sm:mb-10 md:mb-12">
+        <div className="mb-2 sm:mb-3 md:mb-4">
           <CircularSponsorCarousel 
             sponsors={carouselSponsors}
             autoplay={true}

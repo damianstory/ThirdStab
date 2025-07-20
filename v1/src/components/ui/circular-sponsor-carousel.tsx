@@ -113,7 +113,8 @@ export const CircularSponsorCarousel = ({
         zIndex: 3,
         opacity: 1,
         pointerEvents: "auto" as const,
-        transform: `translate3d(0px, 0px, 0px) scale(1) rotateY(0deg)`,
+        transform: `translate(-50%, -50%) translate3d(0px, 0px, 0px) scale(1) rotateY(0deg)`,
+        transformOrigin: 'center center',
         transition: "all 0.8s cubic-bezier(.4,2,.3,1)",
       };
     }
@@ -122,7 +123,8 @@ export const CircularSponsorCarousel = ({
         zIndex: 2,
         opacity: 0.8,
         pointerEvents: "auto" as const,
-        transform: `translate3d(-${gap}px, -${maxStickUp}px, -100px) scale(0.75) rotateY(25deg)`,
+        transform: `translate(-50%, -50%) translate3d(-${gap}px, -${maxStickUp}px, -100px) scale(0.75) rotateY(25deg)`,
+        transformOrigin: 'center center',
         transition: "all 0.8s cubic-bezier(.4,2,.3,1)",
       };
     }
@@ -131,7 +133,8 @@ export const CircularSponsorCarousel = ({
         zIndex: 2,
         opacity: 0.8,
         pointerEvents: "auto" as const,
-        transform: `translate3d(${gap}px, -${maxStickUp}px, -100px) scale(0.75) rotateY(-25deg)`,
+        transform: `translate(-50%, -50%) translate3d(${gap}px, -${maxStickUp}px, -100px) scale(0.75) rotateY(-25deg)`,
+        transformOrigin: 'center center',
         transition: "all 0.8s cubic-bezier(.4,2,.3,1)",
       };
     }
@@ -140,7 +143,7 @@ export const CircularSponsorCarousel = ({
       zIndex: 1,
       opacity: 0,
       pointerEvents: "none" as const,
-      transform: `translate3d(0px, 0px, -200px) scale(0.5)`,
+      transform: `translate(-50%, -50%) translate3d(0px, 0px, -200px) scale(0.5)`,
       transition: "all 0.8s cubic-bezier(.4,2,.3,1)",
     };
   }
@@ -159,7 +162,7 @@ export const CircularSponsorCarousel = ({
   };
 
   return (
-    <div className="w-full max-w-[1456px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="w-full max-w-[1456px] mx-auto py-8">
       <div className="relative">
         {/* Cards Container */}
         <div 
@@ -185,14 +188,12 @@ export const CircularSponsorCarousel = ({
                   ...getCardStyle(index),
                   top: '50%',
                   left: '50%',
-                  marginTop: '-160px',
-                  marginLeft: '-140px',
                   transformStyle: 'preserve-3d'
                 }}
                 onClick={() => onCardClick && onCardClick(sponsor)}
               >
                 {/* Type Pill */}
-                <div className="absolute top-4 right-4 z-10">
+                <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10">
                   <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium ${currentStyle.pill}`}>
                     {currentStyle.label}
                   </span>
@@ -204,7 +205,7 @@ export const CircularSponsorCarousel = ({
                     <img
                       src={sponsor.logo}
                       alt={`${sponsor.name} logo`}
-                      className="max-w-full max-h-[140px] object-contain"
+                      className="max-w-full max-h-[105px] object-contain"
                       onError={() => setImageError({...imageError, [sponsor.id]: true})}
                     />
                   ) : (
