@@ -18,7 +18,7 @@ interface SponsorCarouselProps {
 export function SponsorCarousel({
   children,
   gap = 24,
-  duration = 30,
+  duration = 6,
   durationOnHover,
   direction = 'horizontal',
   reverse = false,

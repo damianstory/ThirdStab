@@ -71,7 +71,7 @@ export const CircularSponsorCarousel = ({
     if (autoplay) {
       autoplayIntervalRef.current = setInterval(() => {
         setActiveIndex((prev) => (prev + 1) % sponsorsLength);
-      }, 5000);
+      }, 2000);
     }
     return () => {
       if (autoplayIntervalRef.current) clearInterval(autoplayIntervalRef.current);
