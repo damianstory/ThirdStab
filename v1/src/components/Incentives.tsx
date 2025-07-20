@@ -1,8 +1,11 @@
+"use client";
+
 import { DollarSign, Trophy, User, GraduationCap } from 'lucide-react';
 import { getLimitedSponsorsByType } from '../data/sponsors';
+import SponsorAvatarGroup from './SponsorAvatarGroup';
 
 export default function Incentives() {
-  const studentSponsors = getLimitedSponsorsByType('student', 3);
+  const studentSponsors = getLimitedSponsorsByType('student', 8);
   const completionSponsors = getLimitedSponsorsByType('completion', 3);
   const educatorSponsors = getLimitedSponsorsByType('educator', 3);
   const schoolSponsors = getLimitedSponsorsByType('school', 3);
@@ -58,20 +61,12 @@ export default function Incentives() {
             {/* Sponsor Section */}
             <div className="mt-6 pt-6 border-t border-gray-200">
               <p className="text-sm text-gray-500 mb-3">Sponsored by</p>
-              <div className="flex items-center gap-4 flex-wrap">
-                {studentSponsors.sponsors.map((sponsor) => (
-                  <img 
-                    key={sponsor.id}
-                    src={sponsor.logo} 
-                    alt={sponsor.name}
-                    className="h-8 object-contain"
-                  />
-                ))}
-                {studentSponsors.hasMore && (
-                  <span className="text-sm text-gray-500">
-                    +{studentSponsors.totalCount - 3} more
-                  </span>
-                )}
+              <div className="flex justify-start">
+                <SponsorAvatarGroup 
+                  sponsors={studentSponsors.sponsors}
+                  maxVisible={8}
+                  size="sm"
+                />
               </div>
             </div>
           </div>
@@ -113,20 +108,12 @@ export default function Incentives() {
             {/* Sponsor Section */}
             <div className="mt-6 pt-6 border-t border-gray-200">
               <p className="text-sm text-gray-500 mb-3">Sponsored by</p>
-              <div className="flex items-center gap-4 flex-wrap">
-                {completionSponsors.sponsors.map((sponsor) => (
-                  <img 
-                    key={sponsor.id}
-                    src={sponsor.logo} 
-                    alt={sponsor.name}
-                    className="h-8 object-contain"
-                  />
-                ))}
-                {completionSponsors.hasMore && (
-                  <span className="text-sm text-gray-500">
-                    +{completionSponsors.totalCount - 3} more
-                  </span>
-                )}
+              <div className="flex justify-start">
+                <SponsorAvatarGroup 
+                  sponsors={completionSponsors.sponsors}
+                  maxVisible={3}
+                  size="sm"
+                />
               </div>
             </div>
           </div>
@@ -168,20 +155,12 @@ export default function Incentives() {
             {/* Sponsor Section */}
             <div className="mt-6 pt-6 border-t border-gray-200">
               <p className="text-sm text-gray-500 mb-3">Sponsored by</p>
-              <div className="flex items-center gap-4 flex-wrap">
-                {educatorSponsors.sponsors.map((sponsor) => (
-                  <img 
-                    key={sponsor.id}
-                    src={sponsor.logo} 
-                    alt={sponsor.name}
-                    className="h-8 object-contain"
-                  />
-                ))}
-                {educatorSponsors.hasMore && (
-                  <span className="text-sm text-gray-500">
-                    +{educatorSponsors.totalCount - 3} more
-                  </span>
-                )}
+              <div className="flex justify-start">
+                <SponsorAvatarGroup 
+                  sponsors={educatorSponsors.sponsors}
+                  maxVisible={3}
+                  size="sm"
+                />
               </div>
             </div>
           </div>
@@ -223,20 +202,12 @@ export default function Incentives() {
             {/* Sponsor Section */}
             <div className="mt-6 pt-6 border-t border-gray-200">
               <p className="text-sm text-gray-500 mb-3">Sponsored by</p>
-              <div className="flex items-center gap-4 flex-wrap">
-                {schoolSponsors.sponsors.map((sponsor) => (
-                  <img 
-                    key={sponsor.id}
-                    src={sponsor.logo} 
-                    alt={sponsor.name}
-                    className="h-8 object-contain"
-                  />
-                ))}
-                {schoolSponsors.hasMore && (
-                  <span className="text-sm text-gray-500">
-                    +{schoolSponsors.totalCount - 3} more
-                  </span>
-                )}
+              <div className="flex justify-start">
+                <SponsorAvatarGroup 
+                  sponsors={schoolSponsors.sponsors}
+                  maxVisible={3}
+                  size="sm"
+                />
               </div>
             </div>
           </div>

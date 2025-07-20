@@ -112,10 +112,10 @@ export default function FAQ({ initialOpenIndex = null }: FAQProps) {
                 
                 {/* Answer Bubble */}
                 <div
-                  className={`flex justify-end transition-all duration-300 ${
+                  className={`flex justify-end transition-all duration-300 ease-in-out ${
                     openIndex === index 
-                      ? 'opacity-100 transform translate-y-0' 
-                      : 'opacity-0 transform -translate-y-2 h-0 overflow-hidden'
+                      ? 'opacity-100 max-h-96 transform translate-y-0' 
+                      : 'opacity-0 max-h-0 transform -translate-y-2 overflow-hidden'
                   }`}
                 >
                   <div className="relative max-w-[85%] sm:max-w-[75%] bg-blue-50 rounded-2xl rounded-bl-sm px-5 py-4">

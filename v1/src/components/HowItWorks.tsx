@@ -47,7 +47,7 @@ export default function HowItWorks() {
           <div className="w-full lg:w-2/5 flex-shrink-0">
             <div className="bg-gray-100 rounded-lg h-full min-h-[300px] overflow-hidden">
               <img 
-                src="https://i.imgur.com/wJlROXV.png"
+                src="https://i.imgur.com/uha29PZ.png"
                 alt="Students working on various industry challenges"
                 className="w-full h-full object-cover object-center"
               />
@@ -84,7 +84,7 @@ export default function HowItWorks() {
                 <div
                   id={`step-${index}-content`}
                   className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    openStep === index ? 'max-h-40' : 'max-h-0'
+                    openStep === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                   }`}
                 >
                   <div className="pb-6">

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function Header() {
@@ -18,10 +18,14 @@ export default function Header() {
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
+    
+    // Ensure we're in the browser
+    if (typeof window === 'undefined') return;
+    
     const element = document.querySelector(href);
     if (element) {
       const headerHeight = 64; // Height of fixed header
-      const additionalOffset = 24; // Extra breathing room (24px)
+      const additionalOffset = 40; // Extra breathing room (reduced by half)
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerHeight - additionalOffset;
 

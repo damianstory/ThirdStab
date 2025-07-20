@@ -1,6 +1,5 @@
 'use client';
 
-import { useEffect, useState } from 'react';
 import EmailForm from './EmailForm';
 import { InfiniteSlider } from './ui/infinite-slider';
 import AnimatedBackground from './AnimatedBackground';
@@ -18,11 +17,6 @@ const companies = [
 ];
 
 export default function Hero() {
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
 
   return (
     <section className="overflow-x-hidden">
@@ -36,7 +30,7 @@ export default function Hero() {
           <div 
             className="absolute inset-0 bg-cover bg-no-repeat opacity-40 md:opacity-50 hero-bg-mobile md:hero-bg-desktop"
             style={{
-              backgroundImage: 'url(https://i.imgur.com/tJvD84G.png)',
+              backgroundImage: 'url(https://i.imgur.com/SuM0AUf.jpeg)',
             }}
           />
           
@@ -53,7 +47,7 @@ export default function Hero() {
         {/* Content layer */}
         <div className="relative z-10 mx-auto flex max-w-7xl flex-col px-6 lg:block lg:px-12">
           <div className="mx-auto max-w-lg text-center lg:ml-0 lg:max-w-full lg:text-left">
-            <h1 className={`mt-8 max-w-2xl text-balance text-5xl md:text-6xl lg:mt-16 xl:text-7xl font-bold transition-all duration-1000 ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <h1 className="mt-8 max-w-2xl text-balance text-5xl md:text-6xl lg:mt-16 xl:text-7xl font-bold animate-fade-in-up">
               <span 
                 className="bg-gradient-to-r from-[#0070cc] via-[#00b4ff] to-[#0070cc] bg-clip-text text-transparent"
                 style={{
@@ -64,15 +58,15 @@ export default function Hero() {
                 Industry Immersion Series
               </span>
             </h1>
-            <p className={`mt-8 max-w-2xl text-balance text-lg text-gray-700 transition-all duration-1000 delay-100 ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <p className="mt-8 max-w-2xl text-balance text-lg text-gray-700 animate-fade-in-up animation-delay-100">
               $100,000+ in micro grants and incentives available to grade 7-12 students (and their educators) across North America.
             </p>
-            <p className={`mt-4 max-w-2xl text-balance text-lg text-gray-700 transition-all duration-1000 delay-150 ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <p className="mt-4 max-w-2xl text-balance text-lg text-gray-700 animate-fade-in-up animation-delay-150">
               The first activity launches this October. Join the mailing list so you and your students are the first to know how to get involved.
             </p>
 
             {/* Email Capture Form */}
-            <div className={`mt-12 max-w-md transition-all duration-1000 delay-300 ${isMounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <div className="mt-12 max-w-md animate-fade-in-up animation-delay-300">
               <EmailForm 
                 placeholder="Enter your email address"
                 buttonText="Get Started"
@@ -86,7 +80,7 @@ export default function Hero() {
 
       {/* Sponsors Section */}
       <section className="bg-white pb-2">
-        <div className={`relative w-full transition-all duration-1000 delay-700 ${isMounted ? 'opacity-100' : 'opacity-0'}`}>
+        <div className="relative w-full animate-fade-in animation-delay-700">
           <div className="relative py-6">
             <InfiniteSlider gap={40} duration={30}>
               {companies.map((company) => (

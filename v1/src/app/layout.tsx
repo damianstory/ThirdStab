@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Industry Immersion Series - Empowering Canadian Students",
+  title: "Industry Immersion Series by myBlueprint",
   description: "Discover career opportunities through industry partnerships. Micro grants, mentorship, and real-world experience for Canadian students grades 7-12.",
   keywords: "industry immersion, canadian students, micro grants, career exploration, mentorship",
   openGraph: {
@@ -22,7 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
   );
 }

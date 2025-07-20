@@ -49,6 +49,30 @@ export const sponsors: Sponsor[] = [
     contribution: 'Arts & design challenge sponsorship',
     amount: '$500/month'
   },
+  {
+    id: '16',
+    name: 'Digital Innovation Labs',
+    logo: 'https://via.placeholder.com/150x50?text=Digital+Labs',
+    incentiveType: 'student',
+    contribution: 'Technology innovation challenges',
+    amount: '$1,500/month'
+  },
+  {
+    id: '17',
+    name: 'Green Energy Partners',
+    logo: 'https://via.placeholder.com/150x50?text=Green+Energy',
+    incentiveType: 'student',
+    contribution: 'Sustainability and renewable energy projects',
+    amount: '$1,000/month'
+  },
+  {
+    id: '18',
+    name: 'Manufacturing Excellence',
+    logo: 'https://via.placeholder.com/150x50?text=Manufacturing',
+    incentiveType: 'student',
+    contribution: 'Advanced manufacturing skill development',
+    amount: '$1,000/month'
+  },
 
   // Series Completion Partners
   {
