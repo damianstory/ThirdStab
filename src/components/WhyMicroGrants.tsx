@@ -51,8 +51,8 @@ export default function WhyMicroGrants() {
             <div className="w-full max-w-[280px] lg:max-w-[320px] bg-gray-100 rounded-xl overflow-hidden aspect-[9/16]">
               <div className="relative w-full h-full">
                 <iframe 
-                  src="https://www.youtube.com/embed/qEogEfRqnXM" 
-                  title="Why Micro Grants?"
+                  src="https://www.youtube.com/embed/87uU-eFE4_E" 
+                  title="Why Micro Grants??"
                   className="absolute inset-0 w-full h-full"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
