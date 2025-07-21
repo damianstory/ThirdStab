@@ -6,14 +6,14 @@ import AnimatedBackground from './AnimatedBackground';
 
 // Company logos data
 const companies = [
-  { name: 'Industry Immersion Series', logo: '/industry-immersion-logo.png' },
-  { name: 'myBlueprint', logo: '/myblueprint-logo.png' },
-  { name: 'Industry Immersion Series', logo: '/industry-immersion-logo.png' },
-  { name: 'myBlueprint', logo: '/myblueprint-logo.png' },
-  { name: 'Industry Immersion Series', logo: '/industry-immersion-logo.png' },
-  { name: 'myBlueprint', logo: '/myblueprint-logo.png' },
-  { name: 'Industry Immersion Series', logo: '/industry-immersion-logo.png' },
-  { name: 'myBlueprint', logo: '/myblueprint-logo.png' },
+  { name: 'Logo 1', logo: '/logo1.gif' },
+  { name: 'Logo 2', logo: '/logo2.jpeg' },
+  { name: 'Logo 3', logo: '/logo3.png' },
+  { name: 'Logo 4', logo: '/logo4.png' },
+  { name: 'Logo 5', logo: '/logo5.png' },
+  { name: 'Logo 6', logo: '/logo6.jpeg' },
+  { name: 'Logo 7', logo: '/logo7.png' },
+  { name: 'Logo 8', logo: '/logo8.png' },
 ];
 
 export default function Hero() {
@@ -92,7 +92,12 @@ export default function Hero() {
                     src={company.logo}
                     alt={`${company.name} logo`}
                     className={`w-auto object-contain opacity-60 hover:opacity-100 transition-all duration-300 ${
-                      company.name === 'Industry Immersion Series' ? 'h-16 lg:h-20' : 'h-full'
+                      company.logo === '/logo1.gif' ? 'h-[4.375rem] lg:h-[5.25rem]' :
+                      company.logo === '/logo2.jpeg' ? 'h-[4.375rem] lg:h-[5.25rem]' :
+                      company.logo === '/logo3.png' ? 'h-[2.625rem] lg:h-[3.1875rem]' :
+                      company.logo === '/logo5.png' ? 'h-[3.85rem] lg:h-[4.675rem]' :
+                      company.logo === '/logo7.png' ? 'h-[1.925rem] lg:h-[2.2rem]' : 
+                      company.logo === '/logo8.png' ? 'h-[2.625rem] lg:h-[3.1875rem]' : 'h-full'
                     }`}
                   />
                 </div>

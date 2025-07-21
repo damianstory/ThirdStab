@@ -6,47 +6,26 @@
   - Local:        http://localhost:3000
 
  ✓ Starting...
- ✓ Ready in 993ms
+ ✓ Ready in 1120ms
  ○ Compiling / ...
- ✓ Compiled / in 2.2s (550 modules)
- HEAD / 200 in 2313ms
- ✓ Compiled in 114ms (273 modules)
- GET / 200 in 99ms
- ✓ Compiled in 288ms (541 modules)
- ✓ Compiled in 128ms (541 modules)
- ✓ Compiled in 121ms (541 modules)
- GET / 200 in 88ms
- ✓ Compiled in 250ms (541 modules)
- ✓ Compiled in 151ms (541 modules)
- ✓ Compiled in 122ms (541 modules)
- ⨯ ./src/components/FAQ.tsx
-Error: 
-  [31mx[0m Unexpected token `section`. Expected jsx identifier
-    ,-[[36;1;4m/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/v1/src/components/FAQ.tsx[0m:58:1]
- [2m58[0m |   };
- [2m59[0m | 
- [2m60[0m |   return (
- [2m61[0m |     <section id="faq" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-    : [31;1m     ^^^^^^^[0m
- [2m62[0m |       <div className="container mx-auto max-w-4xl">
- [2m63[0m |         <div className="text-center mb-12">
- [2m64[0m |           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-    `----
-
-Caused by:
-    Syntax Error
-
-Import trace for requested module:
-./src/components/FAQ.tsx
-./src/app/page.tsx
- ✓ Compiled in 139ms (541 modules)
- GET / 200 in 124ms
- ✓ Compiled /_not-found in 80ms (530 modules)
- GET /_next/static/css/app/layout.css?v=1752781075977 404 in 136ms
- GET /_next/static/chunks/main-app.js?v=1752781075977 404 in 129ms
- GET /_next/static/chunks/app-pages-internals.js 404 in 128ms
- GET / 200 in 59ms
- GET /_next/static/css/app/layout.css?v=1752781080219 404 in 21ms
- GET /_next/static/chunks/main-app.js?v=1752781080219 404 in 20ms
- GET /_next/static/chunks/app-pages-internals.js 404 in 20ms
-[?25h
+ ✓ Compiled / in 2.1s (1393 modules)
+ ✓ Compiled in 379ms (695 modules)
+ GET / 200 in 2556ms
+ GET / 200 in 44ms
+ ✓ Compiled in 325ms (1384 modules)
+ ✓ Compiled in 186ms (1384 modules)
+ ✓ Compiled in 366ms (1384 modules)
+ ✓ Compiled in 303ms (1384 modules)
+ ✓ Compiled in 144ms (1384 modules)
+ ✓ Compiled in 269ms (1384 modules)
+ GET / 200 in 115ms
+ ✓ Compiled in 313ms (1384 modules)
+ ✓ Compiled in 244ms (1384 modules)
+ ✓ Compiled in 324ms (1384 modules)
+ GET / 200 in 128ms
+ ✓ Compiled in 257ms (1384 modules)
+ ✓ Compiled in 152ms (1384 modules)
+ ✓ Compiled in 167ms (1384 modules)
+ ✓ Compiled in 283ms (1384 modules)
+ ✓ Compiled in 336ms (1384 modules)
+ ✓ Compiled in 337ms (1384 modules)
