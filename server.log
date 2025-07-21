@@ -1,0 +1,50 @@
+
+> nextjs-starter@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.7
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 962ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2.3s (1393 modules)
+ HEAD / 200 in 2507ms
+ ✓ Compiled in 237ms (695 modules)
+ GET / 200 in 82ms
+ GET / 200 in 42ms
+ GET / 200 in 49ms
+ ✓ Compiled in 385ms (1384 modules)
+ ✓ Compiled in 321ms (1384 modules)
+ GET / 200 in 104ms
+ ✓ Compiled in 286ms (1384 modules)
+ ✓ Compiled in 317ms (1384 modules)
+ ✓ Compiled in 231ms (1384 modules)
+ GET / 200 in 101ms
+ ✓ Compiled in 676ms (1384 modules)
+ GET / 200 in 95ms
+ GET / 200 in 49ms
+ ✓ Compiled in 242ms (1384 modules)
+ ✓ Compiled in 752ms (1384 modules)
+ ✓ Compiled in 805ms (1384 modules)
+ ✓ Compiled in 241ms (1384 modules)
+ ✓ Compiled in 211ms (1384 modules)
+ GET / 200 in 137ms
+ GET / 200 in 47ms
+ ✓ Compiled in 409ms (1384 modules)
+ GET / 200 in 110ms
+ ✓ Compiled in 270ms (1384 modules)
+ ✓ Compiled in 231ms (1384 modules)
+ ✓ Compiled in 362ms (1384 modules)
+ ✓ Compiled in 204ms (1384 modules)
+ ✓ Compiled in 237ms (1384 modules)
+ GET / 200 in 115ms
+ ✓ Compiled in 230ms (1384 modules)
+ ✓ Compiled in 151ms (1384 modules)
+ ✓ Compiled in 275ms (1384 modules)
+ ✓ Compiled in 199ms (1370 modules)
+ ✓ Compiled in 130ms (1370 modules)
+ GET / 200 in 153ms
+ GET / 200 in 43ms
+ ✓ Compiled in 463ms (1384 modules)
+ ✓ Compiled in 233ms (1384 modules)

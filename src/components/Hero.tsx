@@ -6,14 +6,14 @@ import AnimatedBackground from './AnimatedBackground';
 
 // Company logos data
 const companies = [
-  { name: 'Industry Immersion Series', logo: 'https://i.imgur.com/oFmdCeW.png' },
-  { name: 'myBlueprint', logo: 'https://i.imgur.com/lVesOAU.png' },
-  { name: 'Industry Immersion Series', logo: 'https://i.imgur.com/oFmdCeW.png' },
-  { name: 'myBlueprint', logo: 'https://i.imgur.com/lVesOAU.png' },
-  { name: 'Industry Immersion Series', logo: 'https://i.imgur.com/oFmdCeW.png' },
-  { name: 'myBlueprint', logo: 'https://i.imgur.com/lVesOAU.png' },
-  { name: 'Industry Immersion Series', logo: 'https://i.imgur.com/oFmdCeW.png' },
-  { name: 'myBlueprint', logo: 'https://i.imgur.com/lVesOAU.png' },
+  { name: 'Industry Immersion Series', logo: '/industry-immersion-logo.png' },
+  { name: 'myBlueprint', logo: '/myblueprint-logo.png' },
+  { name: 'Industry Immersion Series', logo: '/industry-immersion-logo.png' },
+  { name: 'myBlueprint', logo: '/myblueprint-logo.png' },
+  { name: 'Industry Immersion Series', logo: '/industry-immersion-logo.png' },
+  { name: 'myBlueprint', logo: '/myblueprint-logo.png' },
+  { name: 'Industry Immersion Series', logo: '/industry-immersion-logo.png' },
+  { name: 'myBlueprint', logo: '/myblueprint-logo.png' },
 ];
 
 export default function Hero() {
@@ -30,7 +30,7 @@ export default function Hero() {
           <div 
             className="absolute inset-0 bg-cover bg-no-repeat opacity-40 md:opacity-50 hero-bg-mobile md:hero-bg-desktop"
             style={{
-              backgroundImage: 'url(https://i.imgur.com/SuM0AUf.jpeg)',
+              backgroundImage: 'url(/hero-background.jpeg)',
             }}
           />
           
@@ -81,17 +81,19 @@ export default function Hero() {
       {/* Sponsors Section */}
       <section className="bg-white pb-2">
         <div className="relative w-full animate-fade-in animation-delay-700">
-          <div className="relative py-6">
+          <div className="relative py-8">
             <InfiniteSlider gap={40} duration={30}>
               {companies.map((company) => (
                 <div
                   key={company.name}
-                  className="flex items-center justify-center h-12 lg:h-15 px-8"
+                  className="flex items-center justify-center h-14 lg:h-17 px-8"
                 >
                   <img
                     src={company.logo}
                     alt={`${company.name} logo`}
-                    className="h-full w-auto object-contain opacity-60 hover:opacity-100 transition-all duration-300"
+                    className={`w-auto object-contain opacity-60 hover:opacity-100 transition-all duration-300 ${
+                      company.name === 'Industry Immersion Series' ? 'h-16 lg:h-20' : 'h-full'
+                    }`}
                   />
                 </div>
               ))}

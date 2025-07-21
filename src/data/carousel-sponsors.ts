@@ -7,8 +7,7 @@ export interface CarouselSponsor {
 }
 
 const logos = [
-  'https://i.imgur.com/oFmdCeW.png', // Industry Immersion Series
-  'https://i.imgur.com/lVesOAU.png', // myBlueprint
+  'https://i.imgur.com/mQptCyT.png', // Placeholder logo
 ];
 
 export const carouselSponsors: CarouselSponsor[] = [
@@ -23,7 +22,7 @@ export const carouselSponsors: CarouselSponsor[] = [
   {
     id: 'a2',
     name: 'BuildWorks Co.',
-    logo: logos[1],
+    logo: logos[0],
     type: 'activity',
     month: 'November 2025'
   },
@@ -37,7 +36,7 @@ export const carouselSponsors: CarouselSponsor[] = [
   {
     id: 'a4',
     name: 'AgriTech Solutions',
-    logo: logos[1],
+    logo: logos[0],
     type: 'activity',
     month: 'January 2026'
   },
@@ -51,7 +50,7 @@ export const carouselSponsors: CarouselSponsor[] = [
   {
     id: 'a6',
     name: 'Digital Innovation Labs',
-    logo: logos[1],
+    logo: logos[0],
     type: 'activity',
     month: 'March 2026'
   },
@@ -65,7 +64,7 @@ export const carouselSponsors: CarouselSponsor[] = [
   {
     id: 'a8',
     name: 'Manufacturing Excellence',
-    logo: logos[1],
+    logo: logos[0],
     type: 'activity',
     month: 'May 2026'
   },
@@ -79,7 +78,7 @@ export const carouselSponsors: CarouselSponsor[] = [
   {
     id: 'i2',
     name: 'Career Pathways Network',
-    logo: logos[1],
+    logo: logos[0],
     type: 'incentive'
   },
   {
@@ -91,7 +90,7 @@ export const carouselSponsors: CarouselSponsor[] = [
   {
     id: 'i4',
     name: 'TeachTech Resources',
-    logo: logos[1],
+    logo: logos[0],
     type: 'incentive'
   },
   {
@@ -103,7 +102,7 @@ export const carouselSponsors: CarouselSponsor[] = [
   {
     id: 'i6',
     name: 'Innovation in Education',
-    logo: logos[1],
+    logo: logos[0],
     type: 'incentive'
   },
   {

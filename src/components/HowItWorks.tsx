@@ -47,7 +47,7 @@ export default function HowItWorks() {
           <div className="w-full lg:w-2/5 flex-shrink-0">
             <div className="bg-gray-100 rounded-lg h-[400px] lg:h-[500px] overflow-hidden">
               <img 
-                src="https://i.imgur.com/W7DuhTW.jpeg"
+                src="/how-it-works-image.jpeg"
                 alt="Students working on various industry challenges"
                 className="w-full h-full object-cover object-center"
               />

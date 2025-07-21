@@ -8,6 +8,7 @@ import React, {
 } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 interface SponsorCard {
   id: string;
@@ -44,15 +45,23 @@ export const CircularSponsorCarousel = ({
   const [hoverNext, setHoverNext] = useState(false);
   const [containerWidth, setContainerWidth] = useState(1200);
   const [imageError, setImageError] = useState<{[key: string]: boolean}>({});
+  const [isMounted, setIsMounted] = useState(false);
 
   const carouselContainerRef = useRef<HTMLDivElement>(null);
   const autoplayIntervalRef = useRef<NodeJS.Timeout | null>(null);
 
   const sponsorsLength = useMemo(() => sponsors.length, [sponsors]);
+
+  // Client-side mounting guard
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
   
 
   // Responsive gap calculation
   useEffect(() => {
+    if (!isMounted) return;
+    
     function handleResize() {
       if (carouselContainerRef.current) {
         const width = carouselContainerRef.current.offsetWidth;
@@ -64,22 +73,25 @@ export const CircularSponsorCarousel = ({
     setTimeout(handleResize, 100);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [isMounted]);
 
   // Autoplay
   useEffect(() => {
-    if (autoplay) {
-      autoplayIntervalRef.current = setInterval(() => {
-        setActiveIndex((prev) => (prev + 1) % sponsorsLength);
-      }, 2000);
-    }
+    if (!isMounted || !autoplay) return;
+    
+    autoplayIntervalRef.current = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % sponsorsLength);
+    }, 2000);
+    
     return () => {
       if (autoplayIntervalRef.current) clearInterval(autoplayIntervalRef.current);
     };
-  }, [autoplay, sponsorsLength]);
+  }, [isMounted, autoplay, sponsorsLength]);
 
   // Keyboard navigation
   useEffect(() => {
+    if (!isMounted) return;
+    
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === "ArrowLeft") handlePrev();
       if (e.key === "ArrowRight") handleNext();
@@ -87,7 +99,7 @@ export const CircularSponsorCarousel = ({
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
     // eslint-disable-next-line
-  }, [activeIndex, sponsorsLength]);
+  }, [isMounted, activeIndex, sponsorsLength]);
 
   // Navigation handlers
   const handleNext = useCallback(() => {
@@ -161,6 +173,19 @@ export const CircularSponsorCarousel = ({
     }
   };
 
+  // Prevent hydration mismatch by not rendering until mounted
+  if (!isMounted) {
+    return (
+      <div className="w-full max-w-[1456px] mx-auto py-8">
+        <div className="relative">
+          <div className="relative h-[340px] sm:h-[380px] md:h-[420px] lg:h-[460px] w-full flex items-center justify-center">
+            <div className="animate-pulse">Loading...</div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="w-full max-w-[1456px] mx-auto py-8">
       <div className="relative">
@@ -202,12 +227,15 @@ export const CircularSponsorCarousel = ({
                 {/* Logo Container */}
                 <div className="flex-1 flex items-center justify-center px-4 py-8">
                   {!imageError[sponsor.id] ? (
-                    <img
-                      src={sponsor.logo}
-                      alt={`${sponsor.name} logo`}
-                      className="max-w-full max-h-[105px] object-contain"
-                      onError={() => setImageError({...imageError, [sponsor.id]: true})}
-                    />
+                    <div className="relative w-full h-[105px]">
+                      <Image
+                        src={sponsor.logo}
+                        alt={`${sponsor.name} logo`}
+                        fill
+                        className="object-contain"
+                        onError={() => setImageError({...imageError, [sponsor.id]: true})}
+                      />
+                    </div>
                   ) : (
                     <div className="text-gray-400 text-center">
                       <div className="text-5xl mb-2">🏢</div>

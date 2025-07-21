@@ -46,7 +46,7 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/" className="inline-block">
               <img 
-                src="https://i.imgur.com/lVesOAU.png" 
+                src="/myblueprint-logo.png" 
                 alt="myBlueprint" 
                 className="h-9"
               />
@@ -73,9 +73,9 @@ export default function Header() {
           <div className="flex items-center justify-end">
             <Link href="/" className="inline-block">
               <img 
-                src="https://i.imgur.com/oFmdCeW.png" 
+                src="/industry-immersion-logo.png" 
                 alt="Industry Immersion Series" 
-                className="h-9"
+                className="h-11 -mt-1"
               />
             </Link>
           </div>
@@ -87,7 +87,7 @@ export default function Header() {
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="inline-block">
               <img 
-                src="https://i.imgur.com/lVesOAU.png" 
+                src="/myblueprint-logo.png" 
                 alt="myBlueprint" 
                 className="h-7"
               />
@@ -139,9 +139,9 @@ export default function Header() {
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="inline-block">
               <img 
-                src="https://i.imgur.com/oFmdCeW.png" 
+                src="/industry-immersion-logo.png" 
                 alt="Industry Immersion Series" 
-                className="h-7"
+                className="h-9 -mt-1"
               />
             </Link>
           </div>
