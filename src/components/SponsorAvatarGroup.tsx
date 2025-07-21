@@ -22,7 +22,7 @@ export default function SponsorAvatarGroup({
     id: index + 1,
     name: sponsor.name,
     designation: sponsor.contribution || 'Sponsor',
-    image: 'https://i.imgur.com/H8aWe1S.png'
+    image: sponsor.logo || 'https://i.imgur.com/H8aWe1S.png'
   }));
 
   return (

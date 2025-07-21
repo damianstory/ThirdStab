@@ -91,10 +91,10 @@ export const sponsors: Sponsor[] = [
   },
   {
     id: '8',
-    name: 'Workforce Ready',
-    logo: 'https://via.placeholder.com/150x50?text=Workforce+Ready',
+    name: 'Your Company',
+    logo: 'https://i.imgur.com/Cr2B9G6.png',
     incentiveType: 'completion',
-    contribution: 'Job shadow experiences and internship connections',
+    contribution: 'Get in touch to get involved',
   },
 
   // Educator Prize Partners
@@ -107,10 +107,10 @@ export const sponsors: Sponsor[] = [
   },
   {
     id: '10',
-    name: 'Educator Excellence Fund',
-    logo: 'https://via.placeholder.com/150x50?text=Ed+Excellence',
+    name: 'Your Company',
+    logo: 'https://i.imgur.com/Cr2B9G6.png',
     incentiveType: 'educator',
-    contribution: 'Classroom supply grants for participating teachers',
+    contribution: 'Get in touch to get involved',
     amount: '$500 grants'
   },
   {
@@ -146,10 +146,10 @@ export const sponsors: Sponsor[] = [
   },
   {
     id: '15',
-    name: 'Future Leaders Fund',
-    logo: 'https://via.placeholder.com/150x50?text=Future+Leaders',
+    name: 'Your Company',
+    logo: 'https://i.imgur.com/Cr2B9G6.png',
     incentiveType: 'school',
-    contribution: 'Career center enhancements and resources',
+    contribution: 'Get in touch to get involved',
   }
 ];
 

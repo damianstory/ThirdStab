@@ -66,8 +66,8 @@ export default function SponsorCarouselCard({
             className={`${
               logo === 'https://i.imgur.com/nCuNSzS.png' 
                 ? 'w-[200px] h-[200px] object-contain scale-150' 
-                : logo === 'https://i.imgur.com/FuCZJaX.png'
-                  ? 'max-w-full max-h-[100px] sm:max-h-[125px] md:max-h-[150px] object-contain scale-125'
+                : logo === 'https://i.imgur.com/Cr2B9G6.png'
+                  ? 'max-w-full max-h-[100px] sm:max-h-[125px] md:max-h-[150px] object-contain scale-[1.875]'
                   : 'max-w-full max-h-[80px] sm:max-h-[100px] md:max-h-[120px] object-contain'
             }`}
             onError={() => setImageError(true)}

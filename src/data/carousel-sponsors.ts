@@ -102,7 +102,7 @@ export const carouselSponsors: CarouselSponsor[] = [
   {
     id: 'i6',
     name: 'Your Company',
-    logo: 'https://i.imgur.com/FuCZJaX.png',
+    logo: 'https://i.imgur.com/Cr2B9G6.png',
     type: 'incentive'
   }
 ];

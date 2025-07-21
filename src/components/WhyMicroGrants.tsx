@@ -48,7 +48,7 @@ export default function WhyMicroGrants() {
 
           {/* Video - right column */}
           <div className="flex justify-center lg:justify-end">
-            <div className="w-full max-w-[280px] lg:max-w-[320px] bg-gray-100 rounded-xl overflow-hidden aspect-[9/16]">
+            <div className="w-full max-w-[280px] lg:max-w-[320px] bg-gray-100 rounded-xl overflow-hidden aspect-[3/4]">
               <div className="relative w-full h-full">
                 <iframe 
                   src="https://www.youtube.com/embed/87uU-eFE4_E" 
