@@ -82,3 +82,10 @@
  ✓ Compiled in 290ms (1596 modules)
  ✓ Compiled in 283ms (880 modules)
  ✓ Compiled in 122ms (880 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development/0.pack.gz_' -> '/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development/0.pack.gz'
+ ✓ Compiled in 250ms (1596 modules)
+ ✓ Compiled in 280ms (1596 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/server-development/3.pack.gz_' -> '/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/server-development/3.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development/0.pack.gz_' -> '/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development/0.pack.gz'
+ ✓ Compiled in 140ms (1596 modules)
+ ✓ Compiled in 125ms (880 modules)

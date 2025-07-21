@@ -71,44 +71,38 @@ export const carouselSponsors: CarouselSponsor[] = [
   // Incentive Sponsors (7)
   {
     id: 'i1',
-    name: 'FutureSkills Foundation',
-    logo: logos[0],
+    name: 'Series Completion',
+    logo: 'https://i.imgur.com/Iqym2KC.png',
     type: 'incentive'
   },
   {
     id: 'i2',
-    name: 'Career Pathways Network',
-    logo: logos[0],
+    name: 'School-Level',
+    logo: 'https://i.imgur.com/cKycLKq.png',
     type: 'incentive'
   },
   {
     id: 'i3',
-    name: 'Workforce Ready',
-    logo: logos[0],
+    name: 'Educator-Level',
+    logo: 'https://i.imgur.com/I4Tt3U4.png',
     type: 'incentive'
   },
   {
     id: 'i4',
-    name: 'TeachTech Resources',
-    logo: logos[0],
+    name: 'Series Completion',
+    logo: 'https://i.imgur.com/hpkZO4a.png',
     type: 'incentive'
   },
   {
     id: 'i5',
-    name: 'Educator Excellence Fund',
-    logo: logos[0],
+    name: 'School-Level',
+    logo: 'https://i.imgur.com/ZZxAxLI.png',
     type: 'incentive'
   },
   {
     id: 'i6',
-    name: 'Innovation in Education',
-    logo: logos[0],
-    type: 'incentive'
-  },
-  {
-    id: 'i7',
-    name: 'STEM Leaders Coalition',
-    logo: logos[0],
+    name: 'Your Company',
+    logo: 'https://i.imgur.com/FuCZJaX.png',
     type: 'incentive'
   }
 ];
