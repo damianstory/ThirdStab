@@ -227,7 +227,19 @@ export const CircularSponsorCarousel = ({
                 {/* Logo Container */}
                 <div className="flex-1 flex items-center justify-center px-4 py-8">
                   {!imageError[sponsor.id] ? (
-                    <div className="relative w-full h-[105px]">
+                    <div className={`relative w-full ${
+                      sponsor.type === 'activity' ? (() => {
+                        switch (sponsor.logo) {
+                          case '/logo1.gif': return 'h-[131px]'; // 25% bigger
+                          case '/logo2.jpeg': return 'h-[131px]'; // 25% bigger
+                          case '/logo3.png': return 'h-[79px]'; // 25% smaller
+                          case '/logo5.png': return 'h-[115px]'; // 10% bigger
+                          case '/logo7.png': return 'h-[58px]'; // 45% smaller (was 50% smaller, made 10% bigger)
+                          case '/logo8.png': return 'h-[79px]'; // 25% smaller
+                          default: return 'h-[105px]'; // default size
+                        }
+                      })() : 'h-[105px]' // default for incentive sponsors
+                    }`}>
                       <Image
                         src={sponsor.logo}
                         alt={`${sponsor.name} logo`}
@@ -246,8 +258,10 @@ export const CircularSponsorCarousel = ({
 
                 {/* Sponsor Info */}
                 <div className="border-t pt-4 mt-auto text-center">
-                  <h3 className="font-semibold text-gray-900 text-lg mb-1">{sponsor.name}</h3>
-                  {sponsor.month && (
+                  <h3 className="font-semibold text-gray-900 text-lg mb-1">
+                    {sponsor.type === 'activity' ? sponsor.month : sponsor.name}
+                  </h3>
+                  {sponsor.type === 'incentive' && sponsor.month && (
                     <p className="text-sm text-gray-600">{sponsor.month}</p>
                   )}
                 </div>

@@ -7,7 +7,7 @@ export interface CarouselSponsor {
 }
 
 const logos = [
-  'https://i.imgur.com/mQptCyT.png', // Placeholder logo
+  'https://i.imgur.com/mQptCyT.png', // Placeholder logo for incentive sponsors
 ];
 
 export const carouselSponsors: CarouselSponsor[] = [
@@ -15,56 +15,56 @@ export const carouselSponsors: CarouselSponsor[] = [
   {
     id: 'a1',
     name: 'TechCorp Industries',
-    logo: logos[0],
+    logo: '/logo1.gif',
     type: 'activity',
     month: 'October 2025'
   },
   {
     id: 'a2',
     name: 'BuildWorks Co.',
-    logo: logos[0],
+    logo: '/logo2.jpeg',
     type: 'activity',
     month: 'November 2025'
   },
   {
     id: 'a3',
     name: 'HealthFirst Partners',
-    logo: logos[0],
+    logo: '/logo3.png',
     type: 'activity',
     month: 'December 2025'
   },
   {
     id: 'a4',
     name: 'AgriTech Solutions',
-    logo: logos[0],
+    logo: '/logo4.png',
     type: 'activity',
     month: 'January 2026'
   },
   {
     id: 'a5',
     name: 'Creative Studios Inc.',
-    logo: logos[0],
+    logo: '/logo5.png',
     type: 'activity',
     month: 'February 2026'
   },
   {
     id: 'a6',
     name: 'Digital Innovation Labs',
-    logo: logos[0],
+    logo: '/logo6.jpeg',
     type: 'activity',
     month: 'March 2026'
   },
   {
     id: 'a7',
     name: 'Green Energy Partners',
-    logo: logos[0],
+    logo: '/logo7.png',
     type: 'activity',
     month: 'April 2026'
   },
   {
     id: 'a8',
     name: 'Manufacturing Excellence',
-    logo: logos[0],
+    logo: '/logo8.png',
     type: 'activity',
     month: 'May 2026'
   },

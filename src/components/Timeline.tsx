@@ -5,7 +5,7 @@ export default function Timeline() {
       month: "September",
       title: "Promotional Month",
       industry: "myBlueprint",
-      description: "We'll use this month to welcome students back to school and make sure they know what's coming.",
+      description: "We'll use this month to welcome students back to school and make sure they know how to participate in the program.",
       status: "confirmed",
       position: "left"
     },
