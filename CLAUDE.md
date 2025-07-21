@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a Next.js 14 application for the "Industry Immersion Series by myBlueprint" - a platform for Canadian students (grades 7-12) to discover career opportunities through industry partnerships, micro grants, and mentorship programs.
 
-**Main application directory**: `/v1/` (all development happens in this subdirectory)
+**Main application directory**: Root directory (all development happens in the root)
 
 **Architecture**:
 - **Frontend**: React/Next.js with TypeScript, using App Router
@@ -19,9 +19,6 @@ This is a Next.js 14 application for the "Industry Immersion Series by myBluepri
 ## Development Commands
 
 ```bash
-# Navigate to the main application directory first
-cd v1
-
 # Install dependencies
 npm install
 
