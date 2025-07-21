@@ -54,12 +54,20 @@ export default function SponsorCarouselCard({
       </div>
 
       {/* Logo Container */}
-      <div className="flex-1 flex items-center justify-center px-2 py-4 sm:px-3 sm:py-6 md:px-4 md:py-8">
+      <div className={`flex-1 flex items-center justify-center ${
+        logo === 'https://i.imgur.com/nCuNSzS.png' 
+          ? 'px-1 py-2 sm:px-2 sm:py-4 md:px-2 md:py-6' 
+          : 'px-2 py-4 sm:px-3 sm:py-6 md:px-4 md:py-8'
+      }`}>
         {!imageError ? (
           <img
             src={logo}
             alt={`${name} logo`}
-            className="max-w-full max-h-[80px] sm:max-h-[100px] md:max-h-[120px] object-contain"
+            className={`${
+              logo === 'https://i.imgur.com/nCuNSzS.png' 
+                ? 'w-[200px] h-[200px] object-contain scale-150' 
+                : 'max-w-full max-h-[80px] sm:max-h-[100px] md:max-h-[120px] object-contain'
+            }`}
             onError={() => setImageError(true)}
           />
         ) : (

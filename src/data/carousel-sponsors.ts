@@ -64,7 +64,7 @@ export const carouselSponsors: CarouselSponsor[] = [
   {
     id: 'a8',
     name: 'Manufacturing Excellence',
-    logo: '/logo8.png',
+    logo: 'https://i.imgur.com/nCuNSzS.png',
     type: 'activity',
     month: 'May 2026'
   },

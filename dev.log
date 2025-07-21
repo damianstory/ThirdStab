@@ -46,3 +46,39 @@
  ✓ Compiled in 1075ms (1384 modules)
  ✓ Compiled in 313ms (1384 modules)
  ✓ Compiled in 222ms (1384 modules)
+ GET / 200 in 181ms
+ ✓ Compiled in 516ms (1370 modules)
+ GET / 200 in 104ms
+ ✓ Compiled in 132ms (1370 modules)
+ ✓ Compiled in 113ms (1370 modules)
+ ✓ Compiled in 152ms (695 modules)
+ GET / 200 in 70ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/server-development/0.pack.gz_' -> '/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/server-development/0.pack.gz'
+ ✓ Compiled in 124ms (695 modules)
+ ✓ Compiled /_not-found in 159ms (1373 modules)
+ GET /_next/static/webpack/9bd067e173884266.webpack.hot-update.json 404 in 189ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 40ms
+ ✓ Compiled in 90ms (697 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid stored block lengths
+ ✓ Compiled in 106ms (695 modules)
+ GET / 200 in 38ms
+ ✓ Compiled in 105ms (695 modules)
+ GET / 200 in 51ms
+ ✓ Compiled in 89ms (695 modules)
+ GET / 200 in 41ms
+ ✓ Compiled /_not-found in 150ms (1373 modules)
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 678ms (1599 modules)
+ GET / 404 in 933ms
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from /Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ✓ Compiled in 224ms (880 modules)
+ ✓ Compiled in 209ms (880 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development/0.pack.gz_' -> '/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development/0.pack.gz'
+ ✓ Compiled in 336ms (1596 modules)
+ ✓ Compiled in 171ms (880 modules)
+ ✓ Compiled in 141ms (880 modules)
+ ✓ Compiled in 89ms (880 modules)
+ ✓ Compiled in 290ms (1596 modules)
+ ✓ Compiled in 283ms (880 modules)
+ ✓ Compiled in 122ms (880 modules)
