@@ -81,7 +81,7 @@ export default function Modal({ isOpen, onClose, children, className = '' }: Mod
     >
       <div
         ref={modalRef}
-        className="relative w-full max-w-md animate-modalSlideIn"
+        className="relative w-full max-w-md animate-modalSlideIn focus:outline-none"
         tabIndex={-1}
         onKeyDown={handleKeyDown}
       >

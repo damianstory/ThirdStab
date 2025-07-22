@@ -66,6 +66,7 @@ export default function Incentives() {
                   sponsors={studentSponsors.sponsors}
                   maxVisible={8}
                   size="sm"
+                  isStudentSponsors={true}
                 />
               </div>
             </div>
@@ -113,6 +114,7 @@ export default function Incentives() {
                   sponsors={completionSponsors.sponsors}
                   maxVisible={3}
                   size="sm"
+                  isCompletionSponsors={true}
                 />
               </div>
             </div>
@@ -160,6 +162,7 @@ export default function Incentives() {
                   sponsors={educatorSponsors.sponsors}
                   maxVisible={2}
                   size="sm"
+                  isEducatorSponsors={true}
                 />
               </div>
             </div>
@@ -207,6 +210,7 @@ export default function Incentives() {
                   sponsors={schoolSponsors.sponsors}
                   maxVisible={3}
                   size="sm"
+                  isSchoolSponsors={true}
                 />
               </div>
             </div>

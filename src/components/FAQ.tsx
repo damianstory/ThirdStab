@@ -93,7 +93,7 @@ export default function FAQ({ initialOpenIndex = null }: FAQProps) {
                 <div className="flex justify-start">
                   <button
                     onClick={() => toggleAccordion(index)}
-                    className="relative max-w-[85%] sm:max-w-[75%] bg-gray-200 rounded-2xl rounded-br-sm px-5 py-3 text-left hover:bg-gray-300 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#0092ff] focus:ring-offset-2"
+                    className="relative max-w-[85%] sm:max-w-[75%] bg-gray-200 rounded-2xl rounded-br-sm px-5 py-3 text-left hover:bg-gray-300 transition-colors duration-200 focus:outline-none"
                     aria-expanded={openIndex === index}
                   >
                     <span className="block text-lg font-medium text-gray-900">
