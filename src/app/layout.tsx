@@ -10,8 +10,16 @@ export const metadata: Metadata = {
   keywords: "industry immersion, canadian students, micro grants, career exploration, mentorship",
   openGraph: {
     title: "Industry Immersion Series",
-    description: "Empowering Canadian students grades 7-12 with real-world industry experience",
+    description: "Bringing Industry Into The Classroom One Activity At A Time",
     type: "website",
+    images: [
+      {
+        url: "https://i.imgur.com/Op4S0Z1.png",
+        width: 1200,
+        height: 630,
+        alt: "Industry Immersion Series",
+      },
+    ],
   },
 };
 

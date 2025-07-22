@@ -123,20 +123,19 @@ export default function Timeline() {
               currentYear = item.year;
               
               return (
-                <div key={index} className="relative mb-16">
-                  {/* Year Indicator */}
-                  {showYear && (
-                    <div className="relative z-20">
-                      <div className="text-[#0092ff] font-semibold text-sm lg:text-base mb-4 lg:mb-6 lg:text-center">
-                        <span className="bg-white px-4 py-1 relative z-20">
-                          {item.year}
-                        </span>
-                      </div>
+                <>
+                  {/* Year Indicator - Only on tablet/desktop */}
+                  {showYear && index > 0 && (
+                    <div className="relative z-20 hidden md:block text-center mb-4 lg:mb-6">
+                      <span className="bg-white px-4 py-1 text-[#0092ff] font-semibold text-sm lg:text-base">
+                        {item.year}
+                      </span>
                     </div>
                   )}
                   
-                  {/* Timeline Item Container */}
-                  <div className={`
+                  <div key={index} className="relative mb-8 md:mb-12 lg:mb-16">
+                    {/* Timeline Item Container */}
+                    <div className={`
                     flex items-center
                     lg:justify-between
                     ${item.position === 'left' ? 'lg:flex-row-reverse' : 'lg:flex-row'}
@@ -182,6 +181,7 @@ export default function Timeline() {
                     </div>
                   </div>
                 </div>
+                </>
               );
             })}
           </div>

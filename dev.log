@@ -436,3 +436,16 @@ TypeError: fetch failed
 <w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid code lengths set
  GET / 200 in 116ms
 <w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development/0.pack.gz_' -> '/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development/0.pack.gz'
+ ✓ Compiled in 289ms (1610 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid code lengths set
+ ✓ Compiled /_not-found in 184ms (1599 modules)
+ GET / 404 in 237ms
+ GET /_next/static/css/app/layout.css?v=1753215586263 404 in 86ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 84ms
+ GET /_next/static/chunks/main-app.js?v=1753215586263 404 in 86ms
+ GET / 404 in 30ms
+ GET / 404 in 33ms
+ GET /_next/static/css/app/layout.css?v=1753215602842 404 in 32ms
+ GET /_next/static/chunks/main-app.js?v=1753215602842 404 in 31ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 30ms
+[?25h
