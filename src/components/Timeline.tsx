@@ -4,7 +4,7 @@ export default function Timeline() {
       year: "2025",
       month: "September",
       title: "Promotional Month",
-      industry: "myBlueprint",
+      industry: "",
       description: "We'll use this month to welcome students back to school and make sure they know how to participate in the program.",
       status: "confirmed",
       position: "left"
@@ -12,81 +12,81 @@ export default function Timeline() {
     {
       year: "2025",
       month: "October",
-      title: "Sign up to find out",
-      industry: "Industry TBA",
-      description: "You thought you could inspect element your way to seeing out partners? Go apply!",
+      title: "Mining Industry Human Resources Council",
+      industry: "Incentive: $10,000 in micro grants",
+      description: "Activity Details: Join the mailing list to be the first to find out   👀",
       status: "tba",
       position: "right"
     },
     {
       year: "2025",
       month: "November",
-      title: "Sign up to find out",
-      industry: "Industry TBA",
-      description: "You thought you could inspect element your way to seeing out partners? Go apply!",
+      title: "Mydoh",
+      industry: "Incentive: $10,000 in micro grants",
+      description: "Activity Details: Join the mailing list to be the first to find out   👀",
       status: "tba",
       position: "left"
     },
     {
       year: "2025",
       month: "December",
-      title: "Sign up to find out",
-      industry: "Industry TBA",
-      description: "You thought you could inspect element your way to seeing out partners? Go apply!",
+      title: "myBlueprint",
+      industry: "Incentive: $10,000 in micro grants",
+      description: "Activity Details: Join the mailing list to be the first to find out   👀",
       status: "tba",
       position: "right"
     },
     {
       year: "2026",
       month: "January",
-      title: "Sign up to find out",
-      industry: "Industry TBA",
-      description: "You thought you could inspect element your way to seeing out partners? Go apply!",
+      title: "NAV CANADA",
+      industry: "Incentive: $10,000 in micro grants",
+      description: "Activity Details: Join the mailing list to be the first to find out   👀",
       status: "tba",
       position: "left"
     },
     {
       year: "2026",
       month: "February",
-      title: "Sign up to find out",
-      industry: "Industry TBA",
-      description: "You thought you could inspect element your way to seeing out partners? Go apply!",
+      title: "Zurich Canada",
+      industry: "Incentive: $10,000 in micro grants",
+      description: "Activity Details: Join the mailing list to be the first to find out   👀",
       status: "tba",
       position: "right"
     },
     {
       year: "2026",
       month: "March",
-      title: "Sign up to find out",
-      industry: "Industry TBA",
-      description: "You thought you could inspect element your way to seeing out partners? Go apply!",
+      title: "H&R Block Canada",
+      industry: "Incentive: $10,000 in micro grants",
+      description: "Activity Details: Join the mailing list to be the first to find out   👀",
       status: "tba",
       position: "left"
     },
     {
       year: "2026",
       month: "April",
-      title: "Sign up to find out",
-      industry: "Industry TBA",
-      description: "You thought you could inspect element your way to seeing out partners? Go apply!",
+      title: "Tourism HR Canada",
+      industry: "Incentive: $10,000 in micro grants",
+      description: "Activity Details: Join the mailing list to be the first to find out   👀",
       status: "tba",
       position: "right"
     },
     {
       year: "2026",
       month: "May",
-      title: "Sign up to find out",
-      industry: "Industry TBA",
-      description: "You thought you could inspect element your way to seeing out partners? Go apply!",
+      title: "Heating, Refrigeration and Air Conditioning Institute of Canada",
+      industry: "Incentive: $10,000 in micro grants",
+      description: "Activity Details: Join the mailing list to be the first to find out   👀",
       status: "tba",
       position: "left"
     },
     {
       year: "2026",
       month: "June",
-      title: "Sign up to find out",
-      industry: "Industry TBA",
-      description: "You thought you could inspect element your way to seeing out partners? Go apply!",
+      title: "Incentive Distribution",
+      industry: "",
+      description: "We'll use this time to distribute any final school-level and series completion incentives.",
       status: "tba",
       position: "right"
     }
@@ -170,7 +170,7 @@ export default function Timeline() {
                         
                         {/* Industry Label */}
                         <p className="text-gray-500 text-sm mb-2">
-                          Industry: {item.industry}
+                          {item.industry}
                         </p>
                         
                         {/* Description Text */}
@@ -178,12 +178,6 @@ export default function Timeline() {
                           {item.description}
                         </p>
                         
-                        {/* Status Text */}
-                        {item.status === 'tba' && (
-                          <p className="text-yellow-600 text-sm mt-2 italic">
-                            Sponsor to be confirmed
-                          </p>
-                        )}
                       </div>
                     </div>
                   </div>

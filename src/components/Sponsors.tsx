@@ -26,7 +26,8 @@ export default function Sponsors() {
           <CircularSponsorCarousel 
             sponsors={carouselSponsors}
             autoplay={true}
-            onCardClick={() => setIsModalOpen(true)}
+            // Modal functionality disabled - cards now link directly to sponsor page
+            // onCardClick={() => setIsModalOpen(true)}
           />
         </div>
 

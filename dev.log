@@ -388,3 +388,51 @@ TypeError: fetch failed
 <w> [webpack.cache.PackFileCacheStrategy] Restoring pack from /Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
  ✓ Compiled in 323ms (1610 modules)
 <w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid code lengths set
+ ✓ Compiled in 561ms (1610 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid code lengths set
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development/1.pack.gz_' -> '/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development/1.pack.gz'
+ ✓ Compiled in 337ms (1610 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid code lengths set
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from /Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ✓ Compiled in 295ms (1610 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid code lengths set
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from /Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ✓ Compiled in 323ms (1610 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid code lengths set
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from /Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ✓ Compiled in 342ms (1610 modules)
+ ✓ Compiled in 167ms (1610 modules)
+ ✓ Compiled in 187ms (1610 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid code lengths set
+ ✓ Compiled in 371ms (1610 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid code lengths set
+ ✓ Compiled in 451ms (1610 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid code lengths set
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from /Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ✓ Compiled in 359ms (1610 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid code lengths set
+ ✓ Compiled in 249ms (1610 modules)
+ GET / 200 in 103ms
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from /Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ✓ Compiled /_not-found in 370ms (1599 modules)
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /_next/static/webpack/d2826a41caec8401.webpack.hot-update.json 404 in 194ms
+ GET / 200 in 124ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid code lengths set
+ GET / 200 in 57ms
+ GET / 200 in 52ms
+ GET / 200 in 72ms
+ GET / 200 in 55ms
+ GET / 200 in 40ms
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from /Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ✓ Compiled in 409ms (1610 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid code lengths set
+ ✓ Compiled in 461ms (1610 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid code lengths set
+ ✓ Compiled in 396ms (1610 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid code lengths set
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development/0.pack.gz_' -> '/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development/0.pack.gz'
+ ✓ Compiled in 281ms (1610 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid code lengths set
+ GET / 200 in 116ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development/0.pack.gz_' -> '/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab/.next/cache/webpack/client-development/0.pack.gz'

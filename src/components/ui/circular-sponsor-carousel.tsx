@@ -215,7 +215,12 @@ export const CircularSponsorCarousel = ({
                   left: '50%',
                   transformStyle: 'preserve-3d'
                 }}
-                onClick={() => onCardClick && onCardClick(sponsor)}
+                onClick={() => {
+                  // Navigate to the same link as "View All Sponsors" button
+                  window.open('https://myblueprint.ca/', '_blank', 'noopener,noreferrer');
+                  // Keep onCardClick for backward compatibility but don't call it
+                  // onCardClick && onCardClick(sponsor);
+                }}
               >
                 {/* Type Pill */}
                 <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10">
