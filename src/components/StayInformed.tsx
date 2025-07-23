@@ -16,7 +16,7 @@ export default function StayInformed() {
             <div className="max-w-md mx-auto mb-8">
               <EmailForm 
                 placeholder="Enter your email address"
-                buttonText="Join Waitlist"
+                buttonText="Sign Up"
                 source="stay-informed"
               />
             </div>

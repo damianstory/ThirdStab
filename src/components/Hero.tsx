@@ -69,7 +69,7 @@ export default function Hero() {
             <div className="mt-12 max-w-md animate-fade-in-up animation-delay-300">
               <EmailForm 
                 placeholder="Enter your email address"
-                buttonText="Get Started"
+                buttonText="Sign Up"
                 source="hero"
                 className=""
               />

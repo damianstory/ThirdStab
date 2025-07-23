@@ -20,7 +20,7 @@ export default function HowItWorks() {
     },
     {
       title: "Winners Selected & Rewarded",
-      details: "Outstanding submissions receive micro grants and recognition from industry partners. $10,000 in micro grants are awarded EACH month, with extra particpation incentives available in June."
+      details: "Outstanding submissions receive micro grants and recognition from industry partners. $10,000 in micro grants are awarded EACH month, with extra particpation incentives available for students, educators, and schools."
     }
   ];
 
