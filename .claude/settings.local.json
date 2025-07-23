@@ -37,7 +37,8 @@
       "Bash(timeout 10 npm run dev)",
       "Bash(grep:*)",
       "mcp__ide__getDiagnostics",
-      "Bash(npx:*)"
+      "Bash(npx:*)",
+      "WebFetch(domain:www.zoho.com)"
     ],
     "deny": []
   }
