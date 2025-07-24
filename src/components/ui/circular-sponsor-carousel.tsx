@@ -217,7 +217,7 @@ export const CircularSponsorCarousel = ({
                 }}
                 onClick={() => {
                   // Navigate to the same link as "View All Sponsors" button
-                  window.open('https://myblueprint.ca/', '_blank', 'noopener,noreferrer');
+                  window.open('https://www.notion.so/Industry-Immersion-Series-Sponsors-23af4a4d79df801ba06eebcd7035537d?source=copy_link', '_blank', 'noopener,noreferrer');
                   // Keep onCardClick for backward compatibility but don't call it
                   // onCardClick && onCardClick(sponsor);
                 }}
