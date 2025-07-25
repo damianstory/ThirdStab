@@ -93,10 +93,10 @@ export default function FAQ({ initialOpenIndex = null }: FAQProps) {
                 <div className="flex justify-start">
                   <button
                     onClick={() => toggleAccordion(index)}
-                    className="relative max-w-[85%] sm:max-w-[75%] bg-gray-200 rounded-2xl rounded-br-sm px-5 py-3 text-left hover:bg-gray-300 transition-colors duration-200 focus:outline-none"
+                    className="relative max-w-[85%] sm:max-w-[75%] bg-[#0092ff] rounded-2xl rounded-br-sm px-5 py-3 text-left hover:bg-[#0082e6] transition-colors duration-200 focus:outline-none shadow-sm"
                     aria-expanded={openIndex === index}
                   >
-                    <span className="block text-lg font-medium text-gray-900">
+                    <span className="block text-lg font-medium text-white">
                       {faq.question}
                     </span>
                     {/* Chat bubble tail */}
@@ -104,7 +104,7 @@ export default function FAQ({ initialOpenIndex = null }: FAQProps) {
                          style={{
                            borderStyle: 'solid',
                            borderWidth: '8px 0 0 8px',
-                           borderColor: 'transparent transparent transparent rgb(229 231 235)'
+                           borderColor: 'transparent transparent transparent #0092ff'
                          }}
                     />
                   </button>
@@ -118,7 +118,7 @@ export default function FAQ({ initialOpenIndex = null }: FAQProps) {
                       : 'opacity-0 max-h-0 transform -translate-y-2 overflow-hidden'
                   }`}
                 >
-                  <div className="relative max-w-[85%] sm:max-w-[75%] bg-blue-50 rounded-2xl rounded-bl-sm px-5 py-4">
+                  <div className="relative max-w-[85%] sm:max-w-[75%] bg-gray-200 rounded-2xl rounded-bl-sm px-5 py-4">
                     <p className="text-lg font-medium text-gray-900">
                       {faq.answer}
                     </p>
@@ -127,7 +127,7 @@ export default function FAQ({ initialOpenIndex = null }: FAQProps) {
                          style={{
                            borderStyle: 'solid',
                            borderWidth: '8px 8px 0 0',
-                           borderColor: 'rgb(240 249 255) transparent transparent transparent'
+                           borderColor: 'rgb(229 231 235) transparent transparent transparent'
                          }}
                     />
                   </div>

@@ -2,19 +2,9 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Project Structure
+## Project Overview
 
 This is a Next.js 14 application for the "Industry Immersion Series by myBlueprint" - a platform for Canadian students (grades 7-12) to discover career opportunities through industry partnerships, micro grants, and mentorship programs.
-
-**Main application directory**: Root directory (all development happens in the root)
-
-**Architecture**:
-- **Frontend**: React/Next.js with TypeScript, using App Router
-- **Styling**: Tailwind CSS with Shadcn UI components
-- **Animation**: Framer Motion for page transitions and interactions
-- **3D Graphics**: OGL library for WebGL background animations
-- **Icons**: Lucide React and React Icons
-- **Email Capture**: Simple API route for newsletter signups
 
 ## Development Commands
 
@@ -35,84 +25,113 @@ npm run start
 npm run lint
 ```
 
-## Code Architecture
+## High-Level Architecture
 
-**Page Structure**: Single-page application with component-based sections:
-- Header (navigation)
-- Hero (landing section with animated background)
-- HowItWorks, WhyMicroGrants, Timeline (information sections)
-- Incentives/Sponsors (partner showcase with carousels)
-- FAQ, StayInformed (user engagement)
-- Footer
+### Technology Stack
+- **Framework**: Next.js 14 with App Router and TypeScript
+- **Styling**: Tailwind CSS with Shadcn UI components (new-york style)
+- **Animation**: Framer Motion for page transitions
+- **3D Graphics**: OGL library for WebGL hero background
+- **State Management**: URL parameters with 'nuqs' library
+- **Email Integration**: Zoho Campaigns API with OAuth 2.0
 
-**Key Components**:
-- `Sponsors.tsx` + `IncentivePartners.tsx`: Display sponsor information with carousels
-- `SponsorAvatarGroup.tsx`: Shows limited sponsor previews with overflow indicators
-- `CircularSponsorCarousel.tsx` (in ui/): Animated sponsor logo carousel
-- `EmailForm.tsx`: Newsletter signup with validation
-- `AnimatedBackground.tsx`: WebGL-based hero background using OGL
+### Application Structure
 
-**Data Management**:
-- `src/data/sponsors.ts`: Complete sponsor database with categorization by incentive type
-- `src/data/carousel-sponsors.ts`: Specific sponsor data for carousel displays
-- Helper functions for sponsor filtering and pagination
+Single-page application with component-based sections:
+1. **Header** - Navigation bar
+2. **Hero** - Landing section with animated WebGL background
+3. **Content Sections** - HowItWorks, WhyMicroGrants, Timeline
+4. **Sponsor Showcases** - Incentives and Sponsors with interactive carousels
+5. **Engagement** - FAQ and StayInformed (newsletter signup)
+6. **Footer**
 
-**API Routes**:
-- `/api/email-capture`: POST endpoint for email newsletter signups (currently logs to console, ready for external service integration)
+### Key Architectural Patterns
+
+**Server Components First**: Minimize 'use client' directives, favoring React Server Components for better performance.
+
+**Sponsor Management System**:
+- Centralized sponsor data in `src/data/sponsors.ts`
+- Four sponsor categories: student, completion, educator, school
+- Helper functions for filtering and pagination
+- Separate carousel data in `src/data/carousel-sponsors.ts`
+
+**Email Capture System**:
+- OAuth 2.0 integration with Zoho Campaigns
+- Automatic token refresh mechanism
+- Fallback logging if external service fails
+- Source tracking for analytics
+
+**Component Architecture**:
+```
+src/
+├── app/
+│   ├── api/
+│   │   ├── auth/callback/     # OAuth callback handler
+│   │   └── email-capture/     # Newsletter signup with Zoho integration
+│   └── page.tsx              # Main application page
+├── components/
+│   ├── ui/                   # Reusable UI components
+│   │   ├── circular-sponsor-carousel.tsx
+│   │   ├── infinite-slider.tsx
+│   │   └── [other UI components]
+│   └── [section components]  # Page sections (Hero, Sponsors, etc.)
+└── data/
+    ├── sponsors.ts           # Complete sponsor database
+    └── carousel-sponsors.ts  # Carousel-specific sponsor data
+```
 
 ## Code Style Guidelines
 
-**From .cursorrules**:
-- Use TypeScript for all code; prefer interfaces over types
-- Functional programming patterns; avoid classes
-- Use descriptive variable names with auxiliary verbs (isLoading, hasError)
-- Favor named exports for components
-- Use "function" keyword for pure functions
-- Implement early returns and guard clauses
-- Minimize 'use client' - favor React Server Components
-- Use Shadcn UI, Radix, and Tailwind for styling
-- Mobile-first responsive design approach
+From `.cursorrules`:
+- Use TypeScript with interfaces (not types)
+- Functional programming patterns (no classes)
+- Descriptive variable names with auxiliary verbs (isLoading, hasError)
+- Named exports for components
+- "function" keyword for pure functions
+- Early returns and guard clauses
+- Mobile-first responsive design
 
 **Component Structure**:
-```
-- Exported component
-- Subcomponents
-- Helper functions
-- Static content
-- Type definitions
-```
+1. Exported component
+2. Subcomponents
+3. Helper functions
+4. Static content
+5. Type definitions
 
 **Directory Naming**: lowercase with dashes (e.g., `auth-wizard`)
 
-## Sponsor System
+## Environment Variables
 
-The application features a comprehensive sponsor management system:
+Required for Zoho Campaigns integration:
+- `ZOHO_CAMPAIGNS_CLIENT_ID`
+- `ZOHO_CAMPAIGNS_CLIENT_SECRET`
+- `ZOHO_CAMPAIGNS_REFRESH_TOKEN`
+- `ZOHO_CAMPAIGNS_LIST_KEY`
 
-**Sponsor Categories**:
-- `student`: Monthly microgrant providers for various challenges
-- `completion`: Series completion incentive partners
-- `educator`: Professional development and classroom resources
-- `school`: School-wide recognition and technology upgrades
+## Important Implementation Details
 
-**Helper Functions** (in `sponsors.ts`):
-- `getSponsorsByType()`: Filter sponsors by category
-- `getLimitedSponsorsByType()`: Paginated sponsor retrieval with metadata
+**Sponsor Display Logic**:
+- `CircularSponsorCarousel`: 3D carousel with automatic rotation
+- Click handlers navigate to Notion sponsor page
+- Custom sizing for specific sponsor logos
+- Type-based styling (activity vs incentive sponsors)
 
-## Email Integration
+**Email Capture Flow**:
+1. Form submission to `/api/email-capture`
+2. OAuth token refresh from Zoho
+3. Bulk subscriber API call
+4. Fallback logging on failure
+5. User-friendly error messages
 
-The email capture system is set up for easy integration with external services:
-- Validation for email format and required fields
-- Ready for database storage and email service integration
-- Source tracking for analytics (tracks where signup originated)
-- Error handling with user-friendly messages
+**Performance Considerations**:
+- Server Components by default
+- Dynamic imports for non-critical components
+- Optimized images with Next.js Image component
+- Suspense boundaries for async components
 
-## UI Components
+## Testing
 
-**Custom Components** (in `src/components/ui/`):
-- `circular-sponsor-carousel.tsx`: Animated rotating sponsor display
-- `infinite-slider.tsx`: Continuous scrolling content
-- `sponsor-carousel.tsx`: Standard sponsor showcase
-- `shape-landing-hero.tsx`: Geometric background shapes
-- `avatar-group.tsx`: Grouped avatar display with overflow handling
-
-**Shadcn Configuration**: Uses "new-york" style with CSS variables, neutral base color, RSC support enabled.
+Currently no testing framework is configured. When implementing tests, consider:
+- Jest or Vitest for unit tests
+- React Testing Library for component tests
+- Playwright or Cypress for E2E tests
