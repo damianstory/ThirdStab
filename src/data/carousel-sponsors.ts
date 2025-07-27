@@ -7,7 +7,7 @@ export interface CarouselSponsor {
 }
 
 const logos = [
-  'https://i.imgur.com/mQptCyT.png', // Placeholder logo for incentive sponsors
+  '/images/placeholder-incentive.png', // Placeholder logo for incentive sponsors
 ];
 
 export const carouselSponsors: CarouselSponsor[] = [
@@ -64,7 +64,7 @@ export const carouselSponsors: CarouselSponsor[] = [
   {
     id: 'a8',
     name: 'Manufacturing Excellence',
-    logo: 'https://i.imgur.com/nCuNSzS.png',
+    logo: '/images/manufacturing-excellence.png',
     type: 'activity',
     month: 'May 2026'
   },
@@ -72,37 +72,37 @@ export const carouselSponsors: CarouselSponsor[] = [
   {
     id: 'i1',
     name: 'Series Completion',
-    logo: 'https://i.imgur.com/Iqym2KC.png',
+    logo: '/images/series-completion-1.png',
     type: 'incentive'
   },
   {
     id: 'i2',
     name: 'School-Level',
-    logo: 'https://i.imgur.com/cKycLKq.png',
+    logo: '/images/school-level-1.png',
     type: 'incentive'
   },
   {
     id: 'i3',
     name: 'Educator-Level',
-    logo: 'https://i.imgur.com/I4Tt3U4.png',
+    logo: '/images/educator-level.png',
     type: 'incentive'
   },
   {
     id: 'i4',
     name: 'Series Completion',
-    logo: 'https://i.imgur.com/hpkZO4a.png',
+    logo: '/images/series-completion-2.png',
     type: 'incentive'
   },
   {
     id: 'i5',
     name: 'School-Level',
-    logo: 'https://i.imgur.com/ZZxAxLI.png',
+    logo: '/images/school-level-2.png',
     type: 'incentive'
   },
   {
     id: 'i6',
     name: 'Your Company',
-    logo: 'https://i.imgur.com/Cr2B9G6.png',
+    logo: '/images/your-company-carousel.png',
     type: 'incentive'
   }
 ];

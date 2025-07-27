@@ -27,21 +27,21 @@ export default function SponsorAvatarGroup({
 }: SponsorAvatarGroupProps) {
   // Transform sponsor data to match the AvatarItem interface
   const avatarItems = sponsors.map((sponsor, index) => {
-    let imageUrl = sponsor.logo || 'https://i.imgur.com/H8aWe1S.png';
+    let imageUrl = sponsor.logo || '/images/avatar-default.png';
     let name = sponsor.name;
     let designation = sponsor.contribution || 'Sponsor';
     
     // Replace specific images and text for student sponsors
     if (isStudentSponsors && index < 8) {
       const customImages = [
-        'https://i.imgur.com/drvople.png',    // Avatar 1
-        'https://i.imgur.com/d0woLhT.png',    // Avatar 2
-        'https://i.imgur.com/5LyeXPx.png',    // Avatar 3
-        sponsor.logo || 'https://i.imgur.com/H8aWe1S.png', // Avatar 4 - keep original
-        'https://i.imgur.com/ACZNXKu.png',    // Avatar 5
-        'https://i.imgur.com/xNtPmLx.png',    // Avatar 6
-        'https://i.imgur.com/JiyD4VO.png',    // Avatar 7
-        'https://i.imgur.com/qGJAjd0.png'     // Avatar 8
+        '/images/avatar-1.png',    // Avatar 1
+        '/images/avatar-2.png',    // Avatar 2
+        '/images/avatar-3.png',    // Avatar 3
+        sponsor.logo || '/images/avatar-default.png', // Avatar 4 - keep original
+        '/images/avatar-5.png',    // Avatar 5
+        '/images/avatar-6.png',    // Avatar 6
+        '/images/avatar-7.png',    // Avatar 7
+        '/images/avatar-8.png'     // Avatar 8
       ];
       
       const customTitles = [

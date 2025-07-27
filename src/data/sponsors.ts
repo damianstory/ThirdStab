@@ -36,7 +36,7 @@ export const sponsors: Sponsor[] = [
   {
     id: '4',
     name: 'NAV CANADA',
-    logo: 'https://i.imgur.com/ov7BCR3.png',
+    logo: '/images/nav-canada.png',
     incentiveType: 'student',
     contribution: 'Activity: January 2026',
     amount: '$1,000/month'
@@ -78,21 +78,21 @@ export const sponsors: Sponsor[] = [
   {
     id: '6',
     name: 'FutureSkills Foundation',
-    logo: 'https://i.imgur.com/Kasr1qf.png',
+    logo: '/images/futureskills-foundation.png',
     incentiveType: 'completion',
     contribution: 'Completion certificates and portfolio reviews',
   },
   {
     id: '7',
     name: 'Career Pathways Network',
-    logo: 'https://i.imgur.com/9zruie6.png',
+    logo: '/images/career-pathways-network.png',
     incentiveType: 'completion',
     contribution: 'Industry mentorship opportunities for completers',
   },
   {
     id: '8',
     name: 'Your Company',
-    logo: 'https://i.imgur.com/YLr3fny.png',
+    logo: '/images/your-company.png',
     incentiveType: 'completion',
     contribution: 'Get in touch to get involved',
   },
@@ -101,14 +101,14 @@ export const sponsors: Sponsor[] = [
   {
     id: '9',
     name: 'TeachTech Resources',
-    logo: 'https://i.imgur.com/N7or0Sk.png',
+    logo: '/images/teachtech-resources.png',
     incentiveType: 'educator',
     contribution: 'Professional development courses and materials',
   },
   {
     id: '10',
     name: 'Your Company',
-    logo: 'https://i.imgur.com/YLr3fny.png',
+    logo: '/images/your-company.png',
     incentiveType: 'educator',
     contribution: 'Get in touch to get involved',
     amount: '$500 grants'
@@ -132,14 +132,14 @@ export const sponsors: Sponsor[] = [
   {
     id: '13',
     name: 'Community Champions',
-    logo: 'https://i.imgur.com/ZLkRWT7.png',
+    logo: '/images/community-champions.png',
     incentiveType: 'school',
     contribution: 'School-wide celebration events and recognition',
   },
   {
     id: '14',
     name: 'Education Partners Alliance',
-    logo: 'https://i.imgur.com/i7Z0Mlc.png',
+    logo: '/images/education-partners-alliance.png',
     incentiveType: 'school',
     contribution: 'Technology upgrades for winning schools',
     amount: '$5,000 value'
@@ -147,7 +147,7 @@ export const sponsors: Sponsor[] = [
   {
     id: '15',
     name: 'Your Company',
-    logo: 'https://i.imgur.com/YLr3fny.png',
+    logo: '/images/your-company.png',
     incentiveType: 'school',
     contribution: 'Get in touch to get involved',
   }

@@ -55,7 +55,7 @@ export default function SponsorCarouselCard({
 
       {/* Logo Container */}
       <div className={`flex-1 flex items-center justify-center ${
-        logo === 'https://i.imgur.com/nCuNSzS.png' 
+        logo === '/images/manufacturing-excellence.png' 
           ? 'px-1 py-2 sm:px-2 sm:py-4 md:px-2 md:py-6' 
           : 'px-2 py-4 sm:px-3 sm:py-6 md:px-4 md:py-8'
       }`}>
@@ -64,9 +64,9 @@ export default function SponsorCarouselCard({
             src={logo}
             alt={`${name} logo`}
             className={`${
-              logo === 'https://i.imgur.com/nCuNSzS.png' 
+              logo === '/images/manufacturing-excellence.png' 
                 ? 'w-[200px] h-[200px] object-contain scale-150' 
-                : logo === 'https://i.imgur.com/Cr2B9G6.png'
+                : logo === '/images/your-company-carousel.png'
                   ? 'max-w-full max-h-[100px] sm:max-h-[125px] md:max-h-[150px] object-contain scale-[1.875]'
                   : 'max-w-full max-h-[80px] sm:max-h-[100px] md:max-h-[120px] object-contain'
             }`}

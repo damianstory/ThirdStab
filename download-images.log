@@ -1,0 +1,58 @@
+=== Image Download Script Started: Sun Jul 27 11:47:29 EDT 2025 ===
+Created directory: public/images
+[2025-07-27 11:47:29] [INFO] Found 0 images to process
+[2025-07-27 11:47:29] [INFO] Script completed. Downloaded: 0, Skipped: 0, Failed: 0
+=== Image Download Script Started: Sun Jul 27 11:48:13 EDT 2025 ===
+[2025-07-27 11:48:13] [INFO] Found 0 images to process
+[2025-07-27 11:48:13] [INFO] Script completed. Downloaded: 0, Skipped: 0, Failed: 0
+=== Image Download Script Started: Sun Jul 27 11:49:23 EDT 2025 ===
+[2025-07-27 11:49:23] [INFO] Found 24 images to process
+[2025-07-27 11:49:23] [INFO] Downloading: nav-canada.png from https://i.imgur.com/ov7BCR3.png
+[2025-07-27 11:49:24] [SUCCESS] Downloaded successfully: nav-canada.png (attempt 1)
+[2025-07-27 11:49:24] [INFO] Downloading: futureskills-foundation.png from https://i.imgur.com/Kasr1qf.png
+[2025-07-27 11:49:24] [SUCCESS] Downloaded successfully: futureskills-foundation.png (attempt 1)
+[2025-07-27 11:49:24] [INFO] Downloading: career-pathways-network.png from https://i.imgur.com/9zruie6.png
+[2025-07-27 11:49:24] [SUCCESS] Downloaded successfully: career-pathways-network.png (attempt 1)
+[2025-07-27 11:49:24] [INFO] Downloading: your-company.png from https://i.imgur.com/YLr3fny.png
+[2025-07-27 11:49:24] [SUCCESS] Downloaded successfully: your-company.png (attempt 1)
+[2025-07-27 11:49:24] [INFO] Downloading: teachtech-resources.png from https://i.imgur.com/N7or0Sk.png
+[2025-07-27 11:49:24] [SUCCESS] Downloaded successfully: teachtech-resources.png (attempt 1)
+[2025-07-27 11:49:24] [INFO] Downloading: community-champions.png from https://i.imgur.com/ZLkRWT7.png
+[2025-07-27 11:49:24] [SUCCESS] Downloaded successfully: community-champions.png (attempt 1)
+[2025-07-27 11:49:24] [INFO] Downloading: education-partners-alliance.png from https://i.imgur.com/i7Z0Mlc.png
+[2025-07-27 11:49:24] [SUCCESS] Downloaded successfully: education-partners-alliance.png (attempt 1)
+[2025-07-27 11:49:24] [INFO] Downloading: placeholder-incentive.png from https://i.imgur.com/mQptCyT.png
+[2025-07-27 11:49:24] [SUCCESS] Downloaded successfully: placeholder-incentive.png (attempt 1)
+[2025-07-27 11:49:24] [INFO] Downloading: manufacturing-excellence.png from https://i.imgur.com/nCuNSzS.png
+[2025-07-27 11:49:24] [SUCCESS] Downloaded successfully: manufacturing-excellence.png (attempt 1)
+[2025-07-27 11:49:24] [INFO] Downloading: series-completion-1.png from https://i.imgur.com/Iqym2KC.png
+[2025-07-27 11:49:24] [SUCCESS] Downloaded successfully: series-completion-1.png (attempt 1)
+[2025-07-27 11:49:24] [INFO] Downloading: school-level-1.png from https://i.imgur.com/cKycLKq.png
+[2025-07-27 11:49:25] [SUCCESS] Downloaded successfully: school-level-1.png (attempt 1)
+[2025-07-27 11:49:25] [INFO] Downloading: educator-level.png from https://i.imgur.com/I4Tt3U4.png
+[2025-07-27 11:49:25] [SUCCESS] Downloaded successfully: educator-level.png (attempt 1)
+[2025-07-27 11:49:25] [INFO] Downloading: series-completion-2.png from https://i.imgur.com/hpkZO4a.png
+[2025-07-27 11:49:25] [SUCCESS] Downloaded successfully: series-completion-2.png (attempt 1)
+[2025-07-27 11:49:25] [INFO] Downloading: school-level-2.png from https://i.imgur.com/ZZxAxLI.png
+[2025-07-27 11:49:25] [SUCCESS] Downloaded successfully: school-level-2.png (attempt 1)
+[2025-07-27 11:49:25] [INFO] Downloading: your-company-carousel.png from https://i.imgur.com/Cr2B9G6.png
+[2025-07-27 11:49:25] [SUCCESS] Downloaded successfully: your-company-carousel.png (attempt 1)
+[2025-07-27 11:49:25] [INFO] Downloading: avatar-default.png from https://i.imgur.com/H8aWe1S.png
+[2025-07-27 11:49:26] [SUCCESS] Downloaded successfully: avatar-default.png (attempt 1)
+[2025-07-27 11:49:26] [INFO] Downloading: avatar-1.png from https://i.imgur.com/drvople.png
+[2025-07-27 11:49:26] [SUCCESS] Downloaded successfully: avatar-1.png (attempt 1)
+[2025-07-27 11:49:26] [INFO] Downloading: avatar-2.png from https://i.imgur.com/d0woLhT.png
+[2025-07-27 11:49:26] [SUCCESS] Downloaded successfully: avatar-2.png (attempt 1)
+[2025-07-27 11:49:26] [INFO] Downloading: avatar-3.png from https://i.imgur.com/5LyeXPx.png
+[2025-07-27 11:49:26] [SUCCESS] Downloaded successfully: avatar-3.png (attempt 1)
+[2025-07-27 11:49:26] [INFO] Downloading: avatar-5.png from https://i.imgur.com/ACZNXKu.png
+[2025-07-27 11:49:26] [SUCCESS] Downloaded successfully: avatar-5.png (attempt 1)
+[2025-07-27 11:49:26] [INFO] Downloading: avatar-6.png from https://i.imgur.com/xNtPmLx.png
+[2025-07-27 11:49:26] [SUCCESS] Downloaded successfully: avatar-6.png (attempt 1)
+[2025-07-27 11:49:26] [INFO] Downloading: avatar-7.png from https://i.imgur.com/JiyD4VO.png
+[2025-07-27 11:49:26] [SUCCESS] Downloaded successfully: avatar-7.png (attempt 1)
+[2025-07-27 11:49:26] [INFO] Downloading: avatar-8.png from https://i.imgur.com/qGJAjd0.png
+[2025-07-27 11:49:26] [SUCCESS] Downloaded successfully: avatar-8.png (attempt 1)
+[2025-07-27 11:49:26] [INFO] Downloading: meta-preview.png from https://i.imgur.com/Op4S0Z1.png
+[2025-07-27 11:49:26] [SUCCESS] Downloaded successfully: meta-preview.png (attempt 1)
+[2025-07-27 11:49:26] [INFO] Script completed. Downloaded: 0, Skipped: 24, Failed: 0
