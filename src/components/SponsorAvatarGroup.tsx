@@ -35,7 +35,7 @@ export default function SponsorAvatarGroup({
     if (isStudentSponsors && index < 8) {
       const customImages = [
         '/images/avatar-1.png',    // Avatar 1
-        '/images/avatar-2.png',    // Avatar 2
+        '/images/avatar-question.png',    // Avatar 2 - question mark
         '/images/avatar-3.png',    // Avatar 3
         sponsor.logo || '/images/avatar-default.png', // Avatar 4 - keep original
         '/images/avatar-5.png',    // Avatar 5
@@ -46,7 +46,7 @@ export default function SponsorAvatarGroup({
       
       const customTitles = [
         'Mining Industry Human Resources Council',
-        'Mydoh',
+        'Coming Soon',
         'myBlueprint',
         sponsor.name, // Avatar 4 - keep original
         'Zurich Canada',

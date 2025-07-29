@@ -21,7 +21,7 @@ export default function Timeline() {
     {
       year: "2025",
       month: "November",
-      title: "Mydoh",
+      title: "Coming Soon",
       industry: "Incentive: $10,000 in micro grants",
       description: "Activity Details: Join the mailing list to be the first to find out   👀",
       status: "tba",

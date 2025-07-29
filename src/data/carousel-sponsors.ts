@@ -21,8 +21,8 @@ export const carouselSponsors: CarouselSponsor[] = [
   },
   {
     id: 'a2',
-    name: 'BuildWorks Co.',
-    logo: '/logo2.jpeg',
+    name: 'Coming Soon',
+    logo: '/images/avatar-2.png',
     type: 'activity',
     month: 'November 2025'
   },
