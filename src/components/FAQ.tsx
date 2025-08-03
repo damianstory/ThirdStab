@@ -75,10 +75,10 @@ export default function FAQ({ initialOpenIndex = null }: FAQProps) {
     <section id="faq" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="brand-h2 text-navy mb-4">
             Frequently Asked <span className="text-[#0092ff]">Questions</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-neutral4 max-w-2xl mx-auto">
             Got questions? We've got answers! Here's everything you need to know about the Industry Immersion Series.
           </p>
         </div>
@@ -119,7 +119,7 @@ export default function FAQ({ initialOpenIndex = null }: FAQProps) {
                   }`}
                 >
                   <div className="relative max-w-[85%] sm:max-w-[75%] bg-gray-200 rounded-2xl rounded-bl-sm px-5 py-4">
-                    <p className="text-lg font-medium text-gray-900">
+                    <p className="brand-body1 font-medium text-navy">
                       {faq.answer}
                     </p>
                     {/* Chat bubble tail */}

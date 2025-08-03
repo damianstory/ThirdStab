@@ -29,10 +29,10 @@ npm run lint
 
 ### Technology Stack
 - **Framework**: Next.js 14 with App Router and TypeScript
-- **Styling**: Tailwind CSS with Shadcn UI components (new-york style)
-- **Animation**: Framer Motion for page transitions
+- **Styling**: Tailwind CSS with custom brand typography utilities and Open Sans font
+- **Animation**: Framer Motion for page transitions, CSS transforms for 3D effects
 - **3D Graphics**: OGL library for WebGL hero background
-- **State Management**: URL parameters with 'nuqs' library
+- **State Management**: Local React state (useState/useEffect), no global state management
 - **Email Integration**: Zoho Campaigns API with OAuth 2.0
 
 ### Application Structure
@@ -49,11 +49,11 @@ Single-page application with component-based sections:
 
 **Server Components First**: Minimize 'use client' directives, favoring React Server Components for better performance.
 
-**Sponsor Management System**:
-- Centralized sponsor data in `src/data/sponsors.ts`
-- Four sponsor categories: student, completion, educator, school
-- Helper functions for filtering and pagination
-- Separate carousel data in `src/data/carousel-sponsors.ts`
+**Dual Sponsor Management System**:
+- **Main Sponsors**: Centralized in `src/data/sponsors.ts` with four categories (student, completion, educator, school)
+- **Carousel Sponsors**: Separate data in `src/data/carousel-sponsors.ts` optimized for 3D carousel display
+- Helper functions: `getSponsorsByType()`, `getLimitedSponsorsByType()` for data filtering
+- Different sponsor types serve different UI components and use cases
 
 **Email Capture System**:
 - OAuth 2.0 integration with Zoho Campaigns
@@ -83,13 +83,15 @@ src/
 ## Code Style Guidelines
 
 From `.cursorrules`:
-- Use TypeScript with interfaces (not types)
+- Use TypeScript with interfaces (not types); avoid enums, use maps instead
 - Functional programming patterns (no classes)
 - Descriptive variable names with auxiliary verbs (isLoading, hasError)
 - Named exports for components
 - "function" keyword for pure functions
 - Early returns and guard clauses
-- Mobile-first responsive design
+- Mobile-first responsive design with Tailwind CSS
+- Minimize 'use client' - favor React Server Components (RSC)
+- Use Zod for form validation, model expected errors as return values
 
 **Component Structure**:
 1. Exported component
@@ -108,26 +110,45 @@ Required for Zoho Campaigns integration:
 - `ZOHO_CAMPAIGNS_REFRESH_TOKEN`
 - `ZOHO_CAMPAIGNS_LIST_KEY`
 
+## Brand Design System
+
+**Typography Scale** (added to `globals.css`):
+- `brand-h1` through `brand-h4`: Primary headings with Open Sans font
+- `brand-subheader`, `brand-body1`, `brand-body2`: Content text styles
+- Mobile-responsive typography with breakpoint adjustments
+
+**Color Palette** (in `tailwind.config.ts`):
+- `navy` (#22224C): Primary headers and important text
+- `brandBlue` (#0092ff): CTAs and accent elements
+- `lightBlue`, `offWhite`: Background variations
+- `neutral1-6`: Text color hierarchy from light to dark
+
 ## Important Implementation Details
 
-**Sponsor Display Logic**:
-- `CircularSponsorCarousel`: 3D carousel with automatic rotation
-- Click handlers navigate to Notion sponsor page
-- Custom sizing for specific sponsor logos
-- Type-based styling (activity vs incentive sponsors)
+**3D Sponsor Carousel**:
+- `CircularSponsorCarousel`: CSS transforms with perspective for 3D effect
+- Automatic rotation with pause on hover
+- Click handlers navigate directly to Notion sponsor page
+- Custom logo sizing for specific sponsors
 
-**Email Capture Flow**:
-1. Form submission to `/api/email-capture`
-2. OAuth token refresh from Zoho
-3. Bulk subscriber API call
-4. Fallback logging on failure
-5. User-friendly error messages
+**Email Capture System**:
+1. Reusable `EmailForm` component with source attribution
+2. Form submission to `/api/email-capture`
+3. OAuth token refresh from Zoho Campaigns
+4. Bulk subscriber API call with error handling
+5. Fallback logging and user-friendly error messages
 
-**Performance Considerations**:
-- Server Components by default
-- Dynamic imports for non-critical components
-- Optimized images with Next.js Image component
-- Suspense boundaries for async components
+**Animation Layers**:
+- WebGL animated background (OGL library) in Hero section
+- Framer Motion for component transitions
+- CSS animations for gradients and fade-ins
+- Infinite logo slider with gradient edge masks
+
+**Performance Patterns**:
+- Server Components by default (client components only for interactivity)
+- Local state management (no global state)
+- Static data with helper functions for filtering
+- Mobile-first responsive design
 
 ## Testing
 

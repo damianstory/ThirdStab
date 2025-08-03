@@ -5,11 +5,11 @@ export default function WhyMicroGrants() {
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8 lg:gap-12 items-stretch">
           {/* Text content - left column */}
           <div className="h-full flex flex-col justify-between">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center lg:text-left">
+            <h2 className="brand-h2 text-navy mb-4 text-center lg:text-left">
               Why <span className="text-[#0092ff]">Micro Grants?</span>
             </h2>
             
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            <p className="brand-body1 text-neutral5 mb-6 leading-relaxed">
               In 2025, students no longer need to wait for permission to start developing industry relevant 
               skills outside of the classroom. What they often need is a little more support and a few more 
               resources. Industry sponsored micro grants can remove both of those constraints, while 
@@ -22,9 +22,9 @@ export default function WhyMicroGrants() {
               </h3>
               <div className="space-y-4">
                 <ul className="list-disc list-inside space-y-2">
-                  <li className="text-md text-gray-700">Not every student is headed to college or university</li>
-                  <li className="text-md text-gray-700">Not every role requires them to</li>
-                  <li className="text-md text-gray-700">
+                  <li className="text-md text-neutral5">Not every student is headed to college or university</li>
+                  <li className="text-md text-neutral5">Not every role requires them to</li>
+                  <li className="text-md text-neutral5">
                     And for those that are, micro grants can help fund projects that allow them to develop 
                     the skills now that will make their applications stand out that much more
                   </li>
@@ -33,7 +33,7 @@ export default function WhyMicroGrants() {
             </div>
 
             {/* Student testimonial */}
-            <blockquote className="italic text-gray-600 border-l-4 border-[#0092ff] pl-4 mb-8">
+            <blockquote className="italic text-neutral4 border-l-4 border-[#0092ff] pl-4 mb-8">
               <p className="leading-relaxed">
                 "Good morning, Mr. Matheson. I had a lot of fun with the micro grant contest, so I decided to take your 
                 recommendation and apply for Basecamp. Thank you so much for giving me the opportunity to 

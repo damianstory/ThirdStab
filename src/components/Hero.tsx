@@ -47,7 +47,7 @@ export default function Hero() {
         {/* Content layer */}
         <div className="relative z-10 w-full flex min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex-col items-center justify-center px-6 lg:px-20">
           <div className="mx-auto max-w-lg text-center lg:mx-0 lg:max-w-xl lg:text-left lg:mr-auto">
-            <h1 className="max-w-2xl text-balance text-5xl md:text-6xl xl:text-7xl font-bold animate-fade-in-up">
+            <h1 className="max-w-2xl text-balance brand-h1 animate-fade-in-up">
               <span 
                 className="bg-gradient-to-r from-[#0070cc] via-[#00b4ff] to-[#0070cc] bg-clip-text text-transparent"
                 style={{
@@ -58,11 +58,10 @@ export default function Hero() {
                 Industry Immersion Series
               </span>
             </h1>
-            <p className="mt-8 max-w-2xl text-balance text-lg text-gray-700 animate-fade-in-up animation-delay-100">
+            <p className="mt-8 max-w-2xl text-balance brand-body1 text-neutral5 animate-fade-in-up animation-delay-100">
               $100,000+ in micro grants and incentives available to grade 7-12 students (and their educators) across North America.
-            </p>
-            <p className="mt-4 max-w-2xl text-balance text-lg text-gray-700 animate-fade-in-up animation-delay-150">
-              The first activity launches this October. Join the mailing list so you and your students are the first to know how to get involved.
+              <br /><br />
+              The first activity launches this October. Join the mailing list so you and your students are the first to know how to <br />get involved.
             </p>
 
             {/* Email Capture Form */}

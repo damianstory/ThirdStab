@@ -13,10 +13,10 @@ export default function Sponsors() {
       <div className="container mx-auto max-w-6xl">
         {/* Section Header */}
         <div className="text-center mb-3">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="brand-h2 text-navy mb-4">
             Our Participating <span className="text-[#0092ff]">Sponsors</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-neutral4 max-w-3xl mx-auto">
             Let's celebrate these industry leaders collaborating with students to help them develop real-world skills 🤝
           </p>
         </div>

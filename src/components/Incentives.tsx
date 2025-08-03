@@ -14,10 +14,10 @@ export default function Incentives() {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="brand-h2 text-navy mb-4">
             Incentives
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-neutral4 max-w-3xl mx-auto">
             Not just for students. Educators and schools are eligible for incentives too 👏
           </p>
         </div>
@@ -27,8 +27,8 @@ export default function Incentives() {
           {/* Card 01: Monthly Student Microgrants */}
           <div className="bg-white p-8 rounded-xl shadow-md">
             <span className="text-[#0092ff] font-semibold mb-2 block">01</span>
-            <h3 className="text-2xl font-bold mb-3 text-gray-900">Monthly Student Microgrants</h3>
-            <p className="text-base text-gray-600 mb-6">
+            <h3 className="brand-h4 mb-3 text-navy">Monthly Student Microgrants</h3>
+            <p className="brand-body2 text-neutral4 mb-6">
               We award microgrants of $500 each to 20 students who submit outstanding work for that month's industry challenge.
             </p>
             
@@ -39,21 +39,21 @@ export default function Incentives() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">Total Monthly Distribution</p>
-                  <p className="text-xl font-bold text-gray-900">$10,000 Every Month</p>
+                  <p className="text-xl font-bold text-navy">$10,000 Every Month</p>
                 </div>
               </div>
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <span className="text-[#0092ff] mr-2">•</span>
-                  <span className="text-gray-700">20 microgrants awarded each month</span>
+                  <span className="text-neutral5">20 microgrants awarded each month</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#0092ff] mr-2">•</span>
-                  <span className="text-gray-700">$500 per student recipient</span>
+                  <span className="text-neutral5">$500 per student recipient</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#0092ff] mr-2">•</span>
-                  <span className="text-gray-700">Assessed against activity specific rubric</span>
+                  <span className="text-neutral5">Assessed against activity specific rubric</span>
                 </li>
               </ul>
             </div>
@@ -75,8 +75,8 @@ export default function Incentives() {
           {/* Card 02: Series Completion Incentive */}
           <div className="bg-white p-8 rounded-xl shadow-md">
             <span className="text-[#0092ff] font-semibold mb-2 block">02</span>
-            <h3 className="text-2xl font-bold mb-3 text-gray-900">Series Completion Incentive</h3>
-            <p className="text-base text-gray-600 mb-6">
+            <h3 className="brand-h4 mb-3 text-navy">Series Completion Incentive</h3>
+            <p className="brand-body2 text-neutral4 mb-6">
               Students who complete all 8 monthly activities are eligible for separate series completion incentives.
             </p>
             
@@ -87,21 +87,21 @@ export default function Incentives() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">Effort Rewarded</p>
-                  <p className="text-xl font-bold text-gray-900">More Chances to Win</p>
+                  <p className="text-xl font-bold text-navy">More Chances to Win</p>
                 </div>
               </div>
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <span className="text-purple-600 mr-2">•</span>
-                  <span className="text-gray-700">Must complete all 8 monthly activities</span>
+                  <span className="text-neutral5">Must complete all 8 monthly activities</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-purple-600 mr-2">•</span>
-                  <span className="text-gray-700">Winners will be randomly chosen</span>
+                  <span className="text-neutral5">Winners will be randomly chosen</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-purple-600 mr-2">•</span>
-                  <span className="text-gray-700">Multiple different incentives available</span>
+                  <span className="text-neutral5">Multiple different incentives available</span>
                 </li>
               </ul>
             </div>
@@ -123,8 +123,8 @@ export default function Incentives() {
           {/* Card 03: Educator-Level Incentives */}
           <div className="bg-white p-8 rounded-xl shadow-md">
             <span className="text-[#0092ff] font-semibold mb-2 block">03</span>
-            <h3 className="text-2xl font-bold mb-3 text-gray-900">Educator-Level Incentives</h3>
-            <p className="text-base text-gray-600 mb-6">
+            <h3 className="brand-h4 mb-3 text-navy">Educator-Level Incentives</h3>
+            <p className="brand-body2 text-neutral4 mb-6">
               Educators on the Industry Immersion Series mailing list can win prizes designed to support your classroom, and make you smile!
             </p>
             
@@ -135,21 +135,21 @@ export default function Incentives() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">Why Should Students Have All The Fun?</p>
-                  <p className="text-xl font-bold text-gray-900">Educator Incentive</p>
+                  <p className="text-xl font-bold text-navy">Educator Incentive</p>
                 </div>
               </div>
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2">•</span>
-                  <span className="text-gray-700">Monthly prizes for educators on the mailing list</span>
+                  <span className="text-neutral5">Monthly prizes for educators on the mailing list</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2">•</span>
-                  <span className="text-gray-700">Winners will be randomly chosen</span>
+                  <span className="text-neutral5">Winners will be randomly chosen</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-600 mr-2">•</span>
-                  <span className="text-gray-700">Sign up with your school email to be eligible.</span>
+                  <span className="text-neutral5">Sign up with your school email to be eligible.</span>
                 </li>
               </ul>
             </div>
@@ -171,8 +171,8 @@ export default function Incentives() {
           {/* Card 04: School-Level Incentive */}
           <div className="bg-white p-8 rounded-xl shadow-md">
             <span className="text-[#0092ff] font-semibold mb-2 block">04</span>
-            <h3 className="text-2xl font-bold mb-3 text-gray-900">School-Level Incentive</h3>
-            <p className="text-base text-gray-600 mb-6">
+            <h3 className="brand-h4 mb-3 text-navy">School-Level Incentive</h3>
+            <p className="brand-body2 text-neutral4 mb-6">
               Schools with 100+ students who complete all monthly activities are entered to win some legit school-level prizes.
             </p>
             
@@ -183,21 +183,21 @@ export default function Incentives() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">Building Incentive</p>
-                  <p className="text-xl font-bold text-gray-900">Recognition Award</p>
+                  <p className="text-xl font-bold text-navy">Recognition Award</p>
                 </div>
               </div>
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <span className="text-amber-600 mr-2">•</span>
-                  <span className="text-gray-700">Requires 100+ student participants from your school</span>
+                  <span className="text-neutral5">Requires 100+ student participants from your school</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-amber-600 mr-2">•</span>
-                  <span className="text-gray-700">Who must each complete all 8 monthly activities</span>
+                  <span className="text-neutral5">Who must each complete all 8 monthly activities</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-amber-600 mr-2">•</span>
-                  <span className="text-gray-700">More students participating = more chances to win</span>
+                  <span className="text-neutral5">More students participating = more chances to win</span>
                 </li>
               </ul>
             </div>

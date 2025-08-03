@@ -34,10 +34,10 @@ export default function HowItWorks() {
     <section id="how-it-works" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="brand-h2 text-navy mb-4">
             How It <span className="text-[#0092ff]">Works</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-neutral4 max-w-3xl mx-auto">
           Connecting students to careers through self-directed, incentive driven skill building and industry awareness activities.
           </p>
         </div>
@@ -65,7 +65,7 @@ export default function HowItWorks() {
                   aria-controls={`step-${index}-content`}
                 >
                   <div className="flex-1 pr-4">
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">
+                    <h3 className="brand-h4 text-navy mb-4">
                       {step.title}
                     </h3>
                   </div>
@@ -88,7 +88,7 @@ export default function HowItWorks() {
                   }`}
                 >
                   <div className="pb-6">
-                    <p className="text-base text-[#374151]">{step.details}</p>
+                    <p className="brand-body2 text-neutral5">{step.details}</p>
                   </div>
                 </div>
               </div>

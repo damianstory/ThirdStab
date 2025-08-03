@@ -99,12 +99,12 @@ export default function Timeline() {
       <div className="container mx-auto max-w-6xl">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="brand-h2 text-navy mb-4">
             Activity <span className="text-[#0092ff]">Timeline</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-neutral4 max-w-3xl mx-auto">
             Each month will have a different activity sponsored by a different industry partner. 
-            Sign up to be the first to find out who they are 👀
+            Sign up to be the first to find out what they are 👀
           </p>
         </div>
 
@@ -173,7 +173,7 @@ export default function Timeline() {
                         </p>
                         
                         {/* Description Text */}
-                        <p className="text-gray-600">
+                        <p className="text-neutral4">
                           {item.description}
                         </p>
                         
