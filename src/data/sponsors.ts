@@ -101,7 +101,7 @@ export const sponsors: Sponsor[] = [
   {
     id: '9',
     name: 'TeachTech Resources',
-    logo: '/images/teachtech-resources.png',
+    logo: '/images/sparkpath-logo.png',
     incentiveType: 'educator',
     contribution: 'Professional development courses and materials',
   },

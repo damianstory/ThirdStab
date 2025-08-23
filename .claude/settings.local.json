@@ -38,7 +38,8 @@
       "Bash(grep:*)",
       "mcp__ide__getDiagnostics",
       "Bash(npx:*)",
-      "WebFetch(domain:www.zoho.com)"
+      "WebFetch(domain:www.zoho.com)",
+      "Bash(env)"
     ],
     "deny": []
   }
