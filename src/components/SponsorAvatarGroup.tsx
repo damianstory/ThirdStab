@@ -74,7 +74,7 @@ export default function SponsorAvatarGroup({
     // Replace text for completion sponsors
     if (isCompletionSponsors && index < 2) {
       const completionTitles = [
-        'SHAD Canada',
+        'Shad Canada',
         'JobSpark'
       ];
       
