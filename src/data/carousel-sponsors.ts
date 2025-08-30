@@ -14,8 +14,8 @@ export const carouselSponsors: CarouselSponsor[] = [
   // Activity Sponsors (8)
   {
     id: 'a1',
-    name: 'TechCorp Industries',
-    logo: '/logo1.gif',
+    name: 'MiHR',
+    logo: '/images/mihr-logo.jpg',
     type: 'activity',
     month: 'October 2025'
   },

@@ -68,7 +68,9 @@ export default function SponsorCarouselCard({
                 ? 'w-[200px] h-[200px] object-contain scale-150' 
                 : logo === '/images/your-company-carousel.png'
                   ? 'max-w-full max-h-[100px] sm:max-h-[125px] md:max-h-[150px] object-contain scale-[1.875]'
-                  : 'max-w-full max-h-[80px] sm:max-h-[100px] md:max-h-[120px] object-contain'
+                  : logo === '/images/mihr-logo.jpg'
+                    ? 'max-w-full max-h-[120px] sm:max-h-[150px] md:max-h-[180px] object-contain scale-150'
+                    : 'max-w-full max-h-[80px] sm:max-h-[100px] md:max-h-[120px] object-contain'
             }`}
             onError={() => setImageError(true)}
           />
