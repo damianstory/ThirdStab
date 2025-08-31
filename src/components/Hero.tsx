@@ -13,7 +13,7 @@ const companies = [
   { name: 'Logo 5', logo: '/logo5.png' },
   { name: 'Logo 6', logo: '/logo6.jpeg' },
   { name: 'Logo 7', logo: '/logo7.png' },
-  { name: 'Logo 8', logo: '/logo8.png' },
+  { name: 'HVACR Career Connections', logo: '/hvacr-career-connections.png' },
 ];
 
 export default function Hero() {
@@ -59,7 +59,7 @@ export default function Hero() {
               </span>
             </h1>
             <p className="mt-8 max-w-2xl text-balance brand-body1 text-neutral5 animate-fade-in-up animation-delay-100">
-              $100,000+ in micro grants and incentives available to grade 7-12 students (and their educators) across North America.
+              $100,000+ in micro grants and incentives available to grade 7-12 students (and their educators) across Canada.
               <br /><br />
               The first activity launches this October. Join the mailing list so you and your students are the first to know how to <br />get involved.
             </p>
@@ -91,12 +91,12 @@ export default function Hero() {
                     src={company.logo}
                     alt={`${company.name} logo`}
                     className={`w-auto object-contain opacity-60 hover:opacity-100 transition-all duration-300 ${
-                      company.logo === '/logo1.gif' ? 'h-[4.375rem] lg:h-[5.25rem]' :
+                      company.logo === '/logo1.gif' ? 'h-[5.47rem] lg:h-[6.56rem]' :
                       company.logo === '/images/avatar-2.png' ? 'h-[4.375rem] lg:h-[5.25rem]' :
                       company.logo === '/logo3.png' ? 'h-[2.625rem] lg:h-[3.1875rem]' :
                       company.logo === '/logo5.png' ? 'h-[3.85rem] lg:h-[4.675rem]' :
-                      company.logo === '/logo7.png' ? 'h-[1.925rem] lg:h-[2.2rem]' : 
-                      company.logo === '/logo8.png' ? 'h-[2.625rem] lg:h-[3.1875rem]' : 'h-full'
+                      company.logo === '/logo7.png' ? 'h-[2.41rem] lg:h-[2.75rem]' : 
+                      company.logo === '/hvacr-career-connections.png' ? 'h-[1.97rem] lg:h-[2.39rem]' : 'h-full'
                     }`}
                   />
                 </div>

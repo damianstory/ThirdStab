@@ -39,7 +39,7 @@ export default function FAQ({ initialOpenIndex = null }: FAQProps) {
     },
     {
       question: "Does my school need to be licensing myBlueprint?",
-      answer: "No. Any grade 7-12 student across North America can participate."
+      answer: "No. Any grade 7-12 student across Canada can participate. Schools in the US licensing SpacesEDU are also welcome to participate."
     },
     {
       question: "When does the program launch?",

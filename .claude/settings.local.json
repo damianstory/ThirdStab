@@ -39,7 +39,8 @@
       "mcp__ide__getDiagnostics",
       "Bash(npx:*)",
       "WebFetch(domain:www.zoho.com)",
-      "Bash(env)"
+      "Bash(env)",
+      "Read(/Users/damianmatheson/Desktop/Industry Immersion Series imgs/Company Logos/**)"
     ],
     "deny": []
   }

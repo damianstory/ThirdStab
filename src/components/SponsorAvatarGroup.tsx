@@ -41,7 +41,7 @@ export default function SponsorAvatarGroup({
         '/images/avatar-5.png',    // Avatar 5
         '/images/avatar-6.png',    // Avatar 6
         '/images/avatar-7.png',    // Avatar 7
-        '/images/avatar-8.png'     // Avatar 8
+        '/images/career-hrai-logo.jpg'     // Avatar 8
       ];
       
       const customTitles = [
