@@ -92,6 +92,10 @@ From `.cursorrules`:
 - Mobile-first responsive design with Tailwind CSS
 - Minimize 'use client' - favor React Server Components (RSC)
 - Use Zod for form validation, model expected errors as return values
+- Use Shadcn UI, Radix, and Tailwind Aria for components and styling
+- Wrap client components in Suspense with fallback
+- Use dynamic loading for non-critical components
+- Optimize images: use WebP format, include size data, implement lazy loading
 
 **Component Structure**:
 1. Exported component
@@ -101,6 +105,11 @@ From `.cursorrules`:
 5. Type definitions
 
 **Directory Naming**: lowercase with dashes (e.g., `auth-wizard`)
+
+**Performance Optimization**:
+- Optimize Web Vitals (LCP, CLS, FID)
+- Limit 'use client' usage to Web API access in small components only
+- Avoid 'use client' for data fetching or state management
 
 ## Environment Variables
 
@@ -149,6 +158,17 @@ Required for Zoho Campaigns integration:
 - Local state management (no global state)
 - Static data with helper functions for filtering
 - Mobile-first responsive design
+
+## Development Workflow
+
+**Standard Development Process**:
+1. Think through the problem and read relevant codebase files
+2. Create a plan with actionable todo items using TodoWrite tool
+3. Check in with user for plan verification before starting work
+4. Work through todo items, marking them complete as you go
+5. Provide high-level explanations of changes at each step
+6. Keep changes simple - minimize code impact and avoid complex modifications
+7. Add review section summarizing all changes made
 
 ## Testing
 
