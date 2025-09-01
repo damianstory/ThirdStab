@@ -9,14 +9,20 @@ export default function Header() {
   const navigation = [
     { name: 'How It Works', href: '#how-it-works' },
     { name: 'Why Micro Grants?', href: '#why-micro-grants' },
-    { name: 'Timeline', href: '#timeline' },
+    { name: 'Activities', href: '#timeline' },
     { name: 'Incentives', href: '#incentives' },
     { name: 'Sponsors', href: '#sponsors' },
     { name: 'FAQ', href: '#faq' },
     { name: 'Stay Informed', href: '#stay-informed' },
   ];
 
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    // If it's a direct route (not an anchor), don't prevent default
+    if (!href.startsWith('#')) {
+      setIsMenuOpen(false);
+      return;
+    }
+    
     e.preventDefault();
     
     // Ensure we're in the browser
@@ -60,7 +66,7 @@ export default function Header() {
                 <a
                   key={item.name}
                   href={item.href}
-                  onClick={(e) => scrollToSection(e, item.href)}
+                  onClick={(e) => handleNavClick(e, item.href)}
                   className="text-gray-700 hover:text-[#0092ff] px-1 xl:px-2 py-2 rounded-md text-xs xl:text-sm font-medium transition-colors duration-200 whitespace-nowrap cursor-pointer"
                 >
                   {item.name}
@@ -154,7 +160,7 @@ export default function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                onClick={(e) => scrollToSection(e, item.href)}
+                onClick={(e) => handleNavClick(e, item.href)}
                 className="text-gray-700 hover:text-[#0092ff] block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-50 min-h-[44px] flex items-center"
               >
                 {item.name}
