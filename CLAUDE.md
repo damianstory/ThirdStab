@@ -83,19 +83,18 @@ src/
 ## Code Style Guidelines
 
 From `.cursorrules`:
-- Use TypeScript with interfaces (not types); avoid enums, use maps instead
-- Functional programming patterns (no classes)
-- Descriptive variable names with auxiliary verbs (isLoading, hasError)
-- Named exports for components
-- "function" keyword for pure functions
-- Early returns and guard clauses
-- Mobile-first responsive design with Tailwind CSS
-- Minimize 'use client' - favor React Server Components (RSC)
-- Use Zod for form validation, model expected errors as return values
-- Use Shadcn UI, Radix, and Tailwind Aria for components and styling
-- Wrap client components in Suspense with fallback
-- Use dynamic loading for non-critical components
-- Optimize images: use WebP format, include size data, implement lazy loading
+- **TypeScript**: Use interfaces over types; avoid enums, use maps instead
+- **Programming Style**: Functional and declarative patterns; avoid classes
+- **Naming**: Descriptive variable names with auxiliary verbs (isLoading, hasError)
+- **Components**: Named exports; use "function" keyword for pure functions
+- **Error Handling**: Early returns and guard clauses; prioritize error handling
+- **Forms**: Use Zod for validation; model expected errors as return values
+- **UI Framework**: Shadcn UI, Radix, and Tailwind Aria for components
+- **Styling**: Mobile-first responsive design with Tailwind CSS
+- **State Management**: Use 'nuqs' for URL search parameter state management
+- **Performance**: Minimize 'use client' - favor React Server Components (RSC)
+- **Client Components**: Wrap in Suspense with fallback; use dynamic loading for non-critical components
+- **Images**: Use WebP format, include size data, implement lazy loading
 
 **Component Structure**:
 1. Exported component
@@ -110,6 +109,7 @@ From `.cursorrules`:
 - Optimize Web Vitals (LCP, CLS, FID)
 - Limit 'use client' usage to Web API access in small components only
 - Avoid 'use client' for data fetching or state management
+- Follow Next.js docs for Data Fetching, Rendering, and Routing
 
 ## Environment Variables
 
@@ -146,6 +146,13 @@ Required for Zoho Campaigns integration:
 3. OAuth token refresh from Zoho Campaigns
 4. Bulk subscriber API call with error handling
 5. Fallback logging and user-friendly error messages
+
+**Timeline Activity System**:
+- `Timeline` component renders monthly activities from `activities.ts`
+- `TimelineCard` handles both promotional and sponsored activity cards
+- Special rendering logic for September 2025 promotional month
+- Custom button text and spacing for promotional cards
+- Line break handling with `whitespace-pre-line` CSS class
 
 **Animation Layers**:
 - WebGL animated background (OGL library) in Hero section
