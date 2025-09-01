@@ -3,6 +3,7 @@ import { activities, validActivityMonths, getActivityBySlug, type ActivityPageDa
 import { octoberActivity } from '@/data/activity-pages/october';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import StayInformed from '@/components/StayInformed';
 import ActivityHero from '@/components/activity/ActivityHero';
 import VideoAndExplainer from '@/components/activity/VideoAndExplainer';
 import ActivityDetailAndRubric from '@/components/activity/ActivityDetailAndRubric';
@@ -142,6 +143,7 @@ export default function ActivityPage({ params }: ActivityPageProps) {
             </div>
           </div>
         </section>
+        <StayInformed />
       </main>
       <Footer />
     </>

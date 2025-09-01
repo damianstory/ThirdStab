@@ -45,16 +45,16 @@ export const octoberActivity: ActivityPageData = {
         content: 'Grades 7-12 students across Canada'
       },
       {
-        label: 'Submission Deadline',
-        content: 'October 31, 2025 at 11:59 PM EST'
-      },
-      {
         label: 'Total Incentives',
         content: '$10,000 in micro grants'
       },
       {
         label: 'Individual Awards',
         content: '20 winners × $500 each'
+      },
+      {
+        label: 'Submission Deadline',
+        content: 'October 31, 2025 at 11:59 PM EST'
       },
     ]
   },

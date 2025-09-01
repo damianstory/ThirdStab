@@ -2,9 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const navigation = [
     { name: 'How It Works', href: '#how-it-works' },
@@ -20,6 +22,13 @@ export default function Header() {
     // If it's a direct route (not an anchor), don't prevent default
     if (!href.startsWith('#')) {
       setIsMenuOpen(false);
+      return;
+    }
+    
+    // If we're not on the home page, navigate to home page with the hash
+    if (pathname !== '/') {
+      setIsMenuOpen(false);
+      window.location.href = `/${href}`;
       return;
     }
     
