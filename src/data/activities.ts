@@ -231,3 +231,87 @@ export function getActiveActivity(): Activity | null {
 export function formatIncentive(incentive: Activity['incentive']): string {
   return `${incentive.count} x $${incentive.individual} microgrants`;
 }
+
+// Extended interface for full activity page content
+export interface ActivityPageData extends Activity {
+  // Hero Section
+  hero: {
+    backgroundImage?: string;
+    tagline: string;
+    introText: string;
+  };
+  
+  // Video Section
+  video: {
+    embedUrl: string;
+    title: string;
+    description: string;
+  };
+  
+  // Explainer Table/Timeline
+  explainer: {
+    title: string;
+    rows: Array<{
+      label: string;
+      content: string;
+    }>;
+  };
+  
+  // Activity Detail & Rubric
+  activityDetail: {
+    description: string;
+    requirements: string[];
+    deliverables: string[];
+  };
+  
+  rubric: {
+    criteria: Array<{
+      category: string;
+      weight: number;
+      description: string;
+    }>;
+    totalPoints: number;
+  };
+  
+  // Submission
+  submission: {
+    googleFormUrl: string;
+    deadline: Date;
+    instructions: string;
+  };
+  
+  // FAQs
+  faqs: Array<{
+    question: string;
+    answer: string;
+  }>;
+  
+  // Resources
+  resources: Array<{
+    title: string;
+    description: string;
+    url: string;
+    type: 'pdf' | 'video' | 'link' | 'article';
+    thumbnail?: string;
+  }>;
+  
+  // Meta/SEO
+  meta: {
+    title: string;
+    description: string;
+    ogImage: string;
+  };
+}
+
+// Valid activity months for routing
+export const validActivityMonths = ['october', 'november', 'december', 'january', 'february', 'march', 'april', 'may'];
+
+// Helper function to get activity by slug
+export function getActivityBySlug(slug: string): Activity | null {
+  return activities.find(activity => activity.slug.toLowerCase() === slug.toLowerCase()) ?? null;
+}
+
+// Helper function to check if month is valid for routing
+export function isValidActivityMonth(month: string): boolean {
+  return validActivityMonths.includes(month.toLowerCase());
+}

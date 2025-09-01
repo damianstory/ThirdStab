@@ -173,6 +173,48 @@
     }
   }
   
+  /* Activity Hero Background Utilities */
+  .activity-hero-bg {
+    background-image: url('/activity-hero-mining.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .activity-hero-bg-mobile {
+    background-position: center top;
+  }
+
+  .activity-hero-bg-desktop {
+    background-position: 60% center;
+  }
+
+  @media (min-width: 1280px) {
+    .activity-hero-bg-desktop {
+      background-position: 65% center;
+    }
+  }
+
+  /* Activity Hero Gradient Overlays */
+  .activity-hero-gradient-mobile {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.92) 0%,
+      rgba(255, 255, 255, 0.88) 40%,
+      rgba(255, 255, 255, 0.85) 100%
+    );
+  }
+
+  .activity-hero-gradient-desktop {
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.90) 35%,
+      rgba(255, 255, 255, 0.75) 50%,
+      rgba(255, 255, 255, 0.40) 75%,
+      transparent 100%
+    );
+  }
+
   /* Respect reduced motion preferences */
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {

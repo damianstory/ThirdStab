@@ -1,6 +1,8 @@
 'use client';
 
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import { validActivityMonths } from '@/data/activities';
 
 interface TimelineItem {
   year: string;
@@ -23,9 +25,13 @@ interface TimelineCardProps {
 }
 
 export default function TimelineCard({ item, onComingSoonClick }: TimelineCardProps) {
+  const router = useRouter();
   const isActive = item.status === 'confirmed';
   const isComingSoon = item.status === 'tba';
   const isEnabled = item.status === 'confirmed';
+  
+  // Check if this activity has a dedicated page
+  const hasActivityPage = item.sponsor && validActivityMonths.includes(item.month.toLowerCase());
 
   // Consistent logo sizing for all logos
   const getLogoSize = () => {
@@ -86,8 +92,11 @@ export default function TimelineCard({ item, onComingSoonClick }: TimelineCardPr
           requestAnimationFrame(smoothScroll);
         }
       }
+    } else if (hasActivityPage) {
+      // Navigate to individual activity page
+      router.push(`/${item.month.toLowerCase()}`);
     }
-    // No navigation for confirmed timeline items - they are informational
+    // For confirmed promotional items without activity pages, no action
   };
 
   const handleButtonClick = (e: React.MouseEvent) => {
@@ -102,6 +111,10 @@ export default function TimelineCard({ item, onComingSoonClick }: TimelineCardPr
         // Special case for September promotional month
         if (item.isPromotional && item.month === 'September' && item.year === '2025') {
           return 'Why We\'re Doing This';
+        }
+        // If it has an activity page, show "View Activity"
+        if (hasActivityPage) {
+          return 'View Activity';
         }
         return 'Learn More';
       case 'tba':
