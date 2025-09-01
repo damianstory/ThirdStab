@@ -10,6 +10,9 @@ export default function StayInformed() {
               Stay <span className="text-[#0092ff]">Informed</span>
             </h2>
             <p className="text-xl text-neutral4 mb-8 max-w-2xl mx-auto">
+            Want to be the first to find out which activities you and your students can participate in? Sign up below.
+            <br />
+            <br />
             We'll only email you with the specifics about what you and your students need to know to take advantage of each month's industry sponsored skill building opportunity.
             </p>
 
