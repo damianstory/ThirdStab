@@ -48,7 +48,7 @@ export default function SponsorResources({ activity }: SponsorResourcesProps) {
   };
 
   return (
-    <section className="py-16 lg:py-20 px-4 md:px-12 bg-white">
+    <section className="py-16 lg:py-20 px-4 md:px-12 bg-[#F8FAFB]">
       <div className="container mx-auto max-w-6xl">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -61,7 +61,7 @@ export default function SponsorResources({ activity }: SponsorResourcesProps) {
         </div>
 
         {/* Resources Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 grid-rows-[1fr] auto-rows-fr">
           {activity.resources.map((resource, index) => {
             const typeConfig = resourceTypeConfig[resource.type];
             
@@ -69,7 +69,7 @@ export default function SponsorResources({ activity }: SponsorResourcesProps) {
               <div
                 key={index}
                 onClick={() => handleResourceClick(resource.url)}
-                className="bg-white border border-neutral2 rounded-xl p-6 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:border-[#0092ff] group"
+                className="bg-white border border-neutral2 rounded-xl p-6 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:border-[#0092ff] group h-full flex flex-col"
               >
                 {/* Resource Icon */}
                 <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${typeConfig.color} group-hover:scale-110 transition-transform duration-200`}>
@@ -82,7 +82,7 @@ export default function SponsorResources({ activity }: SponsorResourcesProps) {
                 </h3>
                 
                 {/* Resource Description */}
-                <p className="brand-body2 text-neutral-500 leading-relaxed mb-4">
+                <p className="brand-body2 text-neutral-500 leading-relaxed mb-4 flex-1 line-clamp-3">
                   {resource.description}
                 </p>
                 

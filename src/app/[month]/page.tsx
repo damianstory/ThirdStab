@@ -96,8 +96,8 @@ export default function ActivityPage({ params }: ActivityPageProps) {
           <ActivityHero activity={activityPageData} />
           <VideoAndExplainer activity={activityPageData} />
           <ActivityDetailAndRubric activity={activityPageData} />
-          <ActivityFAQ activity={activityPageData} />
           <SponsorResources activity={activityPageData} />
+          <ActivityFAQ activity={activityPageData} />
           <IncentivesAndNavigation currentActivity={activityPageData} />
         </main>
         <Footer />

@@ -41,7 +41,8 @@
       "WebFetch(domain:www.zoho.com)",
       "Bash(env)",
       "Read(/Users/damianmatheson/Desktop/Industry Immersion Series imgs/Company Logos/**)",
-      "Read(/Users/damianmatheson/Desktop/Industry Immersion Series imgs/MiHR Landing Page/**)"
+      "Read(/Users/damianmatheson/Desktop/Industry Immersion Series imgs/MiHR Landing Page/**)",
+      "WebFetch(domain:21st.dev)"
     ],
     "deny": []
   }

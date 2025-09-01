@@ -15,7 +15,7 @@ export default function ActivityFAQ({ activity }: ActivityFAQProps) {
   };
 
   return (
-    <section className="py-16 lg:py-20 px-4 md:px-12 bg-[#F8FAFB]">
+    <section className="py-16 lg:py-20 px-4 md:px-12 bg-white">
       <div className="container mx-auto max-w-4xl">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -36,7 +36,7 @@ export default function ActivityFAQ({ activity }: ActivityFAQProps) {
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-[#0092ff] focus:ring-opacity-50 rounded-xl"
+                className="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none rounded-xl"
                 aria-expanded={openIndex === index}
               >
                 <span className="brand-body1 font-medium text-[#22224C] pr-4">
