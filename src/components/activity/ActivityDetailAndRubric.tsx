@@ -18,27 +18,27 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
   const steps = [
     {
       title: "Step 1 - Career Spotlight",
-      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      details: "Start by identifying a specific role within the mining industry, for example: Environmental Scientist, Mining Engineer, Data Analyst, Technical Services Specialist, etc. There are MANY to choose from.\n\nYou can use the MiHR Resources below, and/or do your own research, but you need to be able to cite your sources.\n\nImportant: Select one specific role. Research it.\n\n<strong>Then explain what someone in that role is generally responsible for on a day to day basis.</strong>"
     },
     {
       title: "Step 2 - Skills Focus", 
-      details: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt."
+      details: "<strong>Highlight 2-3 skills or competencies that are required in that role.</strong>\n\nThese could be transferable or durable skills like critical thinking, and/or more specific technical skills that are unique to the role."
     },
     {
       title: "Step 3 - Pathways to Work",
-      details: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."
+      details: "<strong>Explain the potential post-secondary pathways and training options required to work in that position.</strong>\n\nFor example, does that role require an apprenticeship, college or university level education? Are there specific certifications that are required?"
     },
     {
       title: "Step 4 - Sustainability Focus",
-      details: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi."
+      details: "<strong>Describe specific actions the mining industry is taking as part of their commitment to sustainability and its importance to reaching Canada's environmental goals.</strong>\n\nFor example, integration of renewable energy and eco-friendly equipment, strategic investments in northern infrastructure, and strong collaboration with Indigenous communities to advance responsible land management and nature-positive goals, etc."
     },
     {
       title: "Step 5 - Future Outlook",
-      details: "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat."
+      details: "MiHR's research shows 80,000 new workers are needed in the industry by 2030.\n\n<strong>Explain the outlook for the role you have identified. Where are the jobs in Canada? Is there a higher demand for it in one part of the country than another?</strong>"
     },
     {
       title: "Step 6 - Submit",
-      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+      details: "<strong>Take the research you have just completed in steps 1-5 and use it to create a 60-90 second video.</strong>\n\nHow you choose to structure your video is up to you.\n\n• Vertical vs. horizontal? Up to you.\n• Talking head vs. all animations? Up to you.\n• Background music? Up to you.\n\nThe only requirements are that it addresses each of the 5 steps above, and we're able to click a link to watch it - everything else is - up to you.\n\n20 submissions who score the highest on the rubric will receive $500 cash.\n\n📝 View the full rubric here.\n\n➡️ Submit your video before the end of the day on October 31st here."
     }
   ];
 
@@ -60,9 +60,10 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
             
             {/* Description */}
             <div className="mb-8">
-              <p className="brand-body1 text-neutral-500 leading-relaxed mb-6">
-                {activity.activityDetail.description}
-              </p>
+              <p 
+                className="brand-body1 text-neutral-500 leading-relaxed mb-6"
+                dangerouslySetInnerHTML={{ __html: activity.activityDetail.description }}
+              />
             </div>
             
             {/* Accordion Steps */}
@@ -95,11 +96,14 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
                   <div
                     id={`step-${index}-content`}
                     className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                      openStep === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      openStep === index ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
                     }`}
                   >
                     <div className="pb-6">
-                      <p className="brand-body2 text-neutral-500">{step.details}</p>
+                      <p 
+                        className="brand-body2 text-neutral-500 whitespace-pre-line"
+                        dangerouslySetInnerHTML={{ __html: step.details }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -110,7 +114,7 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
           {/* How this Works and Rubric - Right Column (1/3 width) */}
           <div className="lg:col-span-1">
             {/* How this Works */}
-            <div className="bg-gradient-to-b from-[#F8FAFB] to-white border-2 border-[#0092ff] rounded-2xl p-6 lg:p-8 mb-8 lg:mt-16">
+            <div className="bg-gradient-to-b from-[#F8FAFB] to-white border-2 border-[#0092ff] rounded-2xl p-6 lg:p-8 mb-8 lg:mt-20">
               <button
                 onClick={() => setShowVideoModal(true)}
                 className="w-full px-6 py-4 rounded-lg font-semibold text-lg transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200 hover:-translate-y-1 hover:shadow-lg active:scale-95"
@@ -120,7 +124,7 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
             </div>
             
             {/* Rubric */}
-            <div className="bg-white border border-neutral2 rounded-xl overflow-hidden mt-8 lg:mt-36">
+            <div className="bg-white border border-neutral2 rounded-xl overflow-hidden mt-8 lg:mt-32">
               <div className="bg-[#0092ff] text-white px-4 py-3">
                 <h3 className="font-semibold text-lg">Evaluation Rubric</h3>
                 <p className="text-sm opacity-90">Total: {activity.rubric.totalPoints} points</p>
