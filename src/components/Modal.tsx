@@ -8,9 +8,10 @@ interface ModalProps {
   onClose: () => void
   children: React.ReactNode
   className?: string
+  contentClassName?: string
 }
 
-export default function Modal({ isOpen, onClose, children, className = '' }: ModalProps) {
+export default function Modal({ isOpen, onClose, children, className = '', contentClassName = '' }: ModalProps) {
   const modalRef = useRef<HTMLDivElement>(null)
   const previousActiveElement = useRef<HTMLElement | null>(null)
 
@@ -81,7 +82,7 @@ export default function Modal({ isOpen, onClose, children, className = '' }: Mod
     >
       <div
         ref={modalRef}
-        className="relative w-full max-w-md animate-modalSlideIn focus:outline-none"
+        className={`relative w-full ${contentClassName || 'max-w-md'} animate-modalSlideIn focus:outline-none`}
         tabIndex={-1}
         onKeyDown={handleKeyDown}
       >

@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import { ActivityPageData, getCurrentStatus } from '@/data/activities';
+import Modal from '@/components/Modal';
+import { X } from 'lucide-react';
 
 interface ActivityDetailAndRubricProps {
   activity: ActivityPageData;
@@ -11,6 +13,7 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
   const currentStatus = getCurrentStatus(activity.month, activity.year);
   const isActive = currentStatus === 'active';
   const [openStep, setOpenStep] = useState<number | null>(null);
+  const [showVideoModal, setShowVideoModal] = useState(false);
 
   const steps = [
     {
@@ -32,6 +35,10 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
     {
       title: "Step 5 - Future Outlook",
       details: "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat."
+    },
+    {
+      title: "Step 6 - Submit",
+      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
     }
   ];
 
@@ -100,34 +107,20 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
             </div>
           </div>
           
-          {/* Rubric and Submission - Right Column (1/3 width) */}
+          {/* How this Works and Rubric - Right Column (1/3 width) */}
           <div className="lg:col-span-1">
-            {/* Submission Area */}
-            <div className="bg-gradient-to-b from-[#F8FAFB] to-white border-2 border-[#0092ff] rounded-2xl p-6 lg:p-8 mb-8">
-              
-              {/* Submit Button */}
+            {/* How this Works */}
+            <div className="bg-gradient-to-b from-[#F8FAFB] to-white border-2 border-[#0092ff] rounded-2xl p-6 lg:p-8 mb-8 lg:mt-16">
               <button
-                onClick={() => window.open(activity.submission.googleFormUrl, '_blank')}
-                disabled={!isActive}
-                className={`
-                  w-full px-6 py-4 rounded-lg font-semibold text-lg transition-all duration-200 mb-4
-                  ${isActive 
-                    ? 'bg-[#0092ff] text-white hover:bg-[#0080e6] hover:-translate-y-1 hover:shadow-lg active:scale-95' 
-                    : 'bg-gray-300 text-gray-500 cursor-not-allowed opacity-60'
-                  }
-                `}
+                onClick={() => setShowVideoModal(true)}
+                className="w-full px-6 py-4 rounded-lg font-semibold text-lg transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200 hover:-translate-y-1 hover:shadow-lg active:scale-95"
               >
-                {isActive ? 'Submit Your Activity' : 'Submissions Not Open'}
+                How this Works
               </button>
-              
-              {/* Submission Instructions */}
-              <p className="text-sm text-neutral-500 text-center">
-                {activity.submission.instructions}
-              </p>
             </div>
             
             {/* Rubric */}
-            <div className="bg-white border border-neutral2 rounded-xl overflow-hidden">
+            <div className="bg-white border border-neutral2 rounded-xl overflow-hidden mt-8 lg:mt-36">
               <div className="bg-[#0092ff] text-white px-4 py-3">
                 <h3 className="font-semibold text-lg">Evaluation Rubric</h3>
                 <p className="text-sm opacity-90">Total: {activity.rubric.totalPoints} points</p>
@@ -154,6 +147,28 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
           </div>
         </div>
       </div>
+
+      {/* Video Modal */}
+      {showVideoModal && (
+        <Modal
+          isOpen={showVideoModal}
+          onClose={() => setShowVideoModal(false)}
+          contentClassName="max-w-4xl"
+        >
+          <div className="bg-white rounded-2xl overflow-hidden relative">
+            {/* YouTube embed */}
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                src={activity.video.embedUrl}
+                title={activity.video.title}
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </Modal>
+      )}
     </section>
   );
 }
