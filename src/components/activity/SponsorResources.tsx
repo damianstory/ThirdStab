@@ -69,7 +69,7 @@ export default function SponsorResources({ activity }: SponsorResourcesProps) {
                 </h3>
                 
                 {/* Resource Description */}
-                <p className="brand-body2 text-neutral-500 leading-relaxed mb-4 flex-1 line-clamp-3">
+                <p className="brand-body2 text-neutral-500 leading-relaxed mb-4 flex-1 line-clamp-3 whitespace-pre-line">
                   {resource.description}
                 </p>
                 

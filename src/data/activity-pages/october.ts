@@ -138,37 +138,37 @@ export const octoberActivity: ActivityPageData = {
   resources: [
     {
       title: 'Take a Quiz',
-      description: 'Take a Quiz',
+      description: 'Whatever your education level, find a career that suits you.',
       url: 'https://miningneedsyou.ca/#take-a-quiz',
       type: 'link'
     },
     {
-      title: 'Career Seeker Dashboard',
-      description: 'Career Seeker Dashboard',
+      title: 'Career Seeker',
+      description: 'A central hub designed to help you explore, plan, and advance your future in Canada\'s mining industry.',
       url: 'https://miningneedsyou.ca/mining-career-seeker-dashboard',
       type: 'link'
     },
     {
       title: 'Career Videos',
-      description: 'Career Videos',
+      description: 'Different videos about mining careers. Like Netflix for mining.',
       url: 'https://mihr.ca/resources/?resource-type=video&resource-category=careers',
       type: 'video'
     },
     {
       title: 'Workforce Map',
-      description: 'Workforce Map',
+      description: 'This data visualization tool offers you a comprehensive look into evolving workforce needs.',
       url: 'https://analytics.mihr.ca/map/en/0/labour_force/total/Economic%20regions/total/1/Default',
       type: 'link'
     },
     {
       title: 'MiHR Resources',
-      description: 'MiHR Resources',
+      description: 'All of MiHR\'s resources.\nAll in one place.',
       url: 'https://mihr.ca/resources/?resource-category=national-outlook',
       type: 'link'
     },
     {
       title: 'Mining Needs You Career Resources',
-      description: 'Mining Needs You Career Resources',
+      description: 'Find out where you can get started, based on your skills and interests.',
       url: 'https://miningneedsyou.ca/resources/',
       type: 'link'
     }
