@@ -137,40 +137,40 @@ export const octoberActivity: ActivityPageData = {
   
   resources: [
     {
-      title: 'Mining Careers Guide',
-      description: 'Comprehensive overview of career paths in the Canadian mining industry',
-      url: 'https://mihr.ca/careers',
-      type: 'pdf'
-    },
-    {
-      title: 'Sustainable Mining Practices',
-      description: 'Learn about environmental stewardship in modern mining operations',
-      url: 'https://mihr.ca/sustainability',
-      type: 'article'
-    },
-    {
-      title: 'Mining Technology Innovations',
-      description: 'Discover cutting-edge technologies transforming the mining industry',
-      url: 'https://mihr.ca/innovation',
-      type: 'video'
-    },
-    {
-      title: 'Education Pathways',
-      description: 'Find programs and schools that can prepare you for a mining career',
-      url: 'https://mihr.ca/education',
+      title: 'Take a Quiz',
+      description: 'Take a Quiz',
+      url: 'https://miningneedsyou.ca/#take-a-quiz',
       type: 'link'
     },
     {
-      title: 'Safety in Mining',
-      description: 'Understanding safety protocols and careers in mine safety',
-      url: 'https://mihr.ca/safety',
-      type: 'pdf'
+      title: 'Career Seeker Dashboard',
+      description: 'Career Seeker Dashboard',
+      url: 'https://miningneedsyou.ca/mining-career-seeker-dashboard',
+      type: 'link'
     },
     {
-      title: 'Women in Mining',
-      description: 'Stories and opportunities for women in the mining industry',
-      url: 'https://mihr.ca/women-in-mining',
-      type: 'article'
+      title: 'Career Videos',
+      description: 'Career Videos',
+      url: 'https://mihr.ca/resources/?resource-type=video&resource-category=careers',
+      type: 'video'
+    },
+    {
+      title: 'Workforce Map',
+      description: 'Workforce Map',
+      url: 'https://analytics.mihr.ca/map/en/0/labour_force/total/Economic%20regions/total/1/Default',
+      type: 'link'
+    },
+    {
+      title: 'MiHR Resources',
+      description: 'MiHR Resources',
+      url: 'https://mihr.ca/resources/?resource-category=national-outlook',
+      type: 'link'
+    },
+    {
+      title: 'Mining Needs You Career Resources',
+      description: 'Mining Needs You Career Resources',
+      url: 'https://miningneedsyou.ca/resources/',
+      type: 'link'
     }
   ],
   

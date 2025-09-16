@@ -1,5 +1,6 @@
 'use client';
 
+import { ExternalLink, FileText, Video, File, Globe } from 'lucide-react';
 import { ActivityPageData } from '@/data/activities';
 
 interface SponsorResourcesProps {
@@ -9,35 +10,19 @@ interface SponsorResourcesProps {
 // Resource type icons and colors
 const resourceTypeConfig = {
   pdf: {
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
-      </svg>
-    ),
+    icon: <File size={24} />,
     color: 'text-red-500 bg-red-50'
   },
   video: {
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M17,10.5V7A1,1 0 0,0 16,6H4A1,1 0 0,0 3,7V17A1,1 0 0,0 4,18H16A1,1 0 0,0 17,17V13.5L21,17.5V6.5L17,10.5Z" />
-      </svg>
-    ),
+    icon: <Video size={24} />,
     color: 'text-purple-500 bg-purple-50'
   },
   article: {
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M14,17H7V15H14M17,13H7V11H17M17,9H7V7H17M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z" />
-      </svg>
-    ),
+    icon: <FileText size={24} />,
     color: 'text-green-500 bg-green-50'
   },
   link: {
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M10.59,13.41C11,13.8 11,14.4 10.59,14.81C10.2,15.2 9.6,15.2 9.19,14.81L7.77,13.39C7,12.61 7,11.35 7.77,10.58L10.58,7.77C11.35,7 12.61,7 13.39,7.77L14.8,9.19C15.2,9.6 15.2,10.2 14.8,10.61C14.4,11 13.8,11 13.39,10.61L12,9.19C11.61,8.8 10.99,8.8 10.61,9.19L8.81,11C8.4,11.39 8.4,12 8.81,12.39L10.59,13.41M13.41,9.19C13.8,8.8 14.4,8.8 14.81,9.19C15.2,9.6 15.2,10.2 14.81,10.61L13.39,12C13,12.39 13,12.99 13.39,13.39L14.8,14.8C15.2,15.2 15.8,15.2 16.2,14.8C16.6,14.4 16.6,13.8 16.2,13.39L15.8,13C16.57,12.2 16.57,10.94 15.8,10.17L13.39,7.77C12.61,7 11.35,7 10.58,7.77L9.19,9.19C8.8,9.6 8.8,10.2 9.19,10.61C9.6,11 10.2,11 10.61,10.61L12,9.19C12.39,8.8 13,8.8 13.41,9.19Z" />
-      </svg>
-    ),
+    icon: <ExternalLink size={24} />,
     color: 'text-blue-500 bg-blue-50'
   }
 };
@@ -64,6 +49,8 @@ export default function SponsorResources({ activity }: SponsorResourcesProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 grid-rows-[1fr] auto-rows-fr">
           {activity.resources.map((resource, index) => {
             const typeConfig = resourceTypeConfig[resource.type];
+            // Special case for Workforce Map - use Globe icon
+            const icon = resource.title === 'Workforce Map' ? <Globe size={24} /> : typeConfig.icon;
             
             return (
               <div
@@ -73,7 +60,7 @@ export default function SponsorResources({ activity }: SponsorResourcesProps) {
               >
                 {/* Resource Icon */}
                 <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${typeConfig.color} group-hover:scale-110 transition-transform duration-200`}>
-                  {typeConfig.icon}
+                  {icon}
                 </div>
                 
                 {/* Resource Title */}
