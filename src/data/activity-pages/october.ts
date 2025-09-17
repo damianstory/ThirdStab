@@ -60,7 +60,7 @@ export const octoberActivity: ActivityPageData = {
   },
   
   activityDetail: {
-    description: 'The mining industry is at the forefront of technological innovation, environmental stewardship, and sustainable resource development. <strong>This challenge invites students to explore the diverse career pathways in mining</strong>, from traditional underground operations to modern data analytics and environmental sciences.',
+    description: 'The mining industry is at the forefront of technological innovation, environmental stewardship, and sustainable resource development.<br/><br/><strong>This challenge invites students to explore the diverse career pathways in mining</strong>, from traditional underground operations to modern data analytics and environmental sciences.',
     requirements: [
       'Research a specific mining career that interests you',
       'Create a presentation or infographic about your chosen career',

@@ -34,11 +34,16 @@ npm run lint
 - **3D Graphics**: OGL library for WebGL hero background
 - **State Management**: Local React state (useState/useEffect), no global state management
 - **Email Integration**: Zoho Campaigns API with OAuth 2.0
+- **Icons**: Lucide React and React Icons libraries
 
 ### Application Structure
 
-Single-page application with component-based sections:
-1. **Header** - Navigation bar
+**Dual-Mode Application Architecture**:
+1. **Landing Page Mode** (`/`) - Single-page application with component-based sections
+2. **Activity Pages Mode** (`/[month]`) - Dynamic monthly activity detail pages
+
+**Landing Page Sections**:
+1. **Header** - Navigation bar with conditional routing logic
 2. **Hero** - Landing section with animated WebGL background
 3. **Content Sections** - HowItWorks, WhyMicroGrants, Timeline
 4. **Sponsor Showcases** - Incentives and Sponsors with interactive carousels
@@ -48,6 +53,13 @@ Single-page application with component-based sections:
 ### Key Architectural Patterns
 
 **Server Components First**: Minimize 'use client' directives, favoring React Server Components for better performance.
+
+**Dynamic Activity System**:
+- **Base Activities**: Core activity data in `src/data/activities.ts` with status calculation logic
+- **Extended Activity Pages**: Full page content in `src/data/activity-pages/[month].ts` using `ActivityPageData` interface
+- **Dynamic Routing**: `/[month]` pages with static generation for valid activity months
+- **Conditional Rendering**: Full template for complete activity data, fallback template for basic activities
+- **Status Management**: Real-time activity status calculation (`coming-soon`, `active`, `ongoing`) based on current date
 
 **Dual Sponsor Management System**:
 - **Main Sponsors**: Centralized in `src/data/sponsors.ts` with four categories (student, completion, educator, school)
@@ -68,14 +80,26 @@ src/
 │   ├── api/
 │   │   ├── auth/callback/     # OAuth callback handler
 │   │   └── email-capture/     # Newsletter signup with Zoho integration
-│   └── page.tsx              # Main application page
+│   ├── [month]/              # Dynamic activity pages
+│   │   └── page.tsx          # Activity page with conditional rendering
+│   └── page.tsx              # Main landing page
 ├── components/
+│   ├── activity/             # Activity page components
+│   │   ├── ActivityHero.tsx
+│   │   ├── VideoAndExplainer.tsx
+│   │   ├── ActivityDetailAndRubric.tsx
+│   │   ├── ActivityFAQ.tsx
+│   │   ├── SponsorResources.tsx
+│   │   └── IncentivesAndNavigation.tsx
 │   ├── ui/                   # Reusable UI components
 │   │   ├── circular-sponsor-carousel.tsx
 │   │   ├── infinite-slider.tsx
 │   │   └── [other UI components]
-│   └── [section components]  # Page sections (Hero, Sponsors, etc.)
+│   └── [section components]  # Landing page sections
 └── data/
+    ├── activities.ts         # Core activity data and helper functions
+    ├── activity-pages/       # Extended activity page content
+    │   └── october.ts        # Full October activity page data
     ├── sponsors.ts           # Complete sponsor database
     └── carousel-sponsors.ts  # Carousel-specific sponsor data
 ```
@@ -154,6 +178,21 @@ Required for Zoho Campaigns integration:
 - Custom button text and spacing for promotional cards
 - Line break handling with `whitespace-pre-line` CSS class
 
+**Activity Page Template System**:
+- `ActivityDetailAndRubric`: Interactive accordion component with step-by-step activity instructions
+- `VideoAndExplainer`: Video embed with challenge overview table format
+- `ActivityHero`: Dynamic hero section with sponsor branding and taglines
+- `ActivityFAQ`: Expandable FAQ section with activity-specific questions
+- `SponsorResources`: Resource gallery with categorized links (videos, PDFs, articles)
+- `IncentivesAndNavigation`: Cross-activity navigation with incentive highlighting
+
+**Data Architecture for Activities**:
+- Base `Activity` interface for core timeline data (8 activities from Oct 2025 - May 2026)
+- Extended `ActivityPageData` interface for full page content (hero, video, rubric, FAQs, resources)
+- Dynamic status calculation: `getCurrentStatus()` determines if activity is `coming-soon`, `active`, or `ongoing`
+- Static generation for all valid activity months with metadata optimization
+- Graceful fallback rendering for activities without full page data
+
 **Animation Layers**:
 - WebGL animated background (OGL library) in Hero section
 - Framer Motion for component transitions
@@ -168,7 +207,7 @@ Required for Zoho Campaigns integration:
 
 ## Development Workflow
 
-**Standard Development Process**:
+**Standard Development Process** (from `.claude/CLAUDE.md`):
 1. Think through the problem and read relevant codebase files
 2. Create a plan with actionable todo items using TodoWrite tool
 3. Check in with user for plan verification before starting work
@@ -176,6 +215,13 @@ Required for Zoho Campaigns integration:
 5. Provide high-level explanations of changes at each step
 6. Keep changes simple - minimize code impact and avoid complex modifications
 7. Add review section summarizing all changes made
+
+**Key Development Principles**:
+- **Simplicity First**: Every change should impact as little code as possible
+- **Plan Before Execute**: Always create and verify plans before starting work
+- **Progressive Disclosure**: Provide high-level explanations at each step
+- **Prefer Editing**: Always prefer editing existing files over creating new ones
+- **No Proactive Documentation**: Never create documentation files unless explicitly requested
 
 ## Testing
 

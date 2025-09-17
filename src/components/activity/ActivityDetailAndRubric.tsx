@@ -38,7 +38,7 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
     },
     {
       title: "Step 6 - Submit",
-      details: "<strong>Take the research you have just completed in steps 1-5 and use it to create a 60-90 second video.</strong>\n\nHow you choose to structure your video is up to you.\n\n• Vertical vs. horizontal? Up to you.\n• Talking head vs. all animations? Up to you.\n• Background music? Up to you.\n\nThe only requirements are that it addresses each of the 5 steps above, and we're able to click a link to watch it - everything else is - up to you.\n\n20 submissions who score the highest on the rubric will receive $500 cash.\n\n📝 View the full rubric here.\n\n➡️ Submit your video before the end of the day on October 31st here."
+      details: "<strong>Take the research you have just completed in steps 1-5 and use it to create a 60-90 second video.</strong>\n\nHow you choose to structure your video is up to you.\n\n• Vertical vs. horizontal? Up to you.\n• Talking head vs. all animations? Up to you.\n• Documentary style vs. tiktok style? Up to you.\n\nThe only requirements are that it addresses each of the 5 steps above, and we're able to click a link to watch it - everything else is - up to you.\n\n20 submissions who score the highest on the rubric will EACH receive $500 cash.\n\n📝 View the full rubric here.\n\n➡️ Submit your video before the end of the day on October 31st here."
     }
   ];
 
