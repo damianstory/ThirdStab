@@ -72,15 +72,19 @@ export default function SponsorAvatarGroup({
     }
     
     // Replace text for completion sponsors
-    if (isCompletionSponsors && index < 2) {
+    if (isCompletionSponsors && index < 4) {
       const completionTitles = [
         'Shad Canada',
-        'JobSpark'
+        'JobSpark',
+        'AdmissionPrep',
+        'Straight Up Health'
       ];
       
       const completionDesignations = [
         '5x Entrance Scholarships',
-        '30x Access Codes'
+        '30x Access Codes',
+        '5x Program Sponsorships (full ride)',
+        'Young Opportunity Leaders Organization (3 full rides available)'
       ];
       
       name = completionTitles[index];
@@ -102,17 +106,29 @@ export default function SponsorAvatarGroup({
     }
     
     // Replace text for school sponsors
-    if (isSchoolSponsors && index < 2) {
+    if (isSchoolSponsors && index < 4) {
+      const schoolImages = [
+        sponsor.logo || '/images/avatar-default.png', // Avatar 1 - keep original
+        sponsor.logo || '/images/avatar-default.png', // Avatar 2 - keep original  
+        sponsor.logo || '/images/avatar-default.png', // Avatar 3 - keep original
+        '/images/avatar-question.png' // Avatar 4 - question mark
+      ];
+      
       const schoolTitles = [
         'Milwaukee Tools',
-        'Trade-Finder'
+        'Trade-Finder',
+        'SpacesEDU',
+        'Your Company'
       ];
       
       const schoolDesignations = [
         '$10,000 worth of Milwaukee Tools',
-        'Free Annual License (Ontario Only)'
+        'Free Annual License (Ontario Only)',
+        'Free SpacesEDU Pro school-wide license (2 available)',
+        'Get in touch to get involved'
       ];
       
+      imageUrl = schoolImages[index];
       name = schoolTitles[index];
       designation = schoolDesignations[index];
     }

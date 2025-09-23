@@ -6,9 +6,9 @@ import SponsorAvatarGroup from './SponsorAvatarGroup';
 
 export default function Incentives() {
   const studentSponsors = getLimitedSponsorsByType('student', 8);
-  const completionSponsors = getLimitedSponsorsByType('completion', 3);
+  const completionSponsors = getLimitedSponsorsByType('completion', 4);
   const educatorSponsors = getLimitedSponsorsByType('educator', 2);
-  const schoolSponsors = getLimitedSponsorsByType('school', 3);
+  const schoolSponsors = getLimitedSponsorsByType('school', 4);
   return (
     <section id="incentives" className="pt-24 pb-16 px-4 md:px-12 bg-gray-50">
       <div className="max-w-6xl mx-auto">
@@ -112,7 +112,7 @@ export default function Incentives() {
               <div className="flex justify-start">
                 <SponsorAvatarGroup 
                   sponsors={completionSponsors.sponsors}
-                  maxVisible={3}
+                  maxVisible={4}
                   size="sm"
                   isCompletionSponsors={true}
                 />
@@ -208,7 +208,7 @@ export default function Incentives() {
               <div className="flex justify-start">
                 <SponsorAvatarGroup 
                   sponsors={schoolSponsors.sponsors}
-                  maxVisible={3}
+                  maxVisible={4}
                   size="sm"
                   isSchoolSponsors={true}
                 />

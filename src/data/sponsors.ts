@@ -90,6 +90,20 @@ export const sponsors: Sponsor[] = [
     contribution: 'Industry mentorship opportunities for completers',
   },
   {
+    id: '21',
+    name: 'AdmissionPrep',
+    logo: '/images/admissionprep-logo.png',
+    incentiveType: 'completion',
+    contribution: '5x Program Sponsorships',
+  },
+  {
+    id: '20',
+    name: 'Straight Up Health',
+    logo: '/images/yolo-logo.png',
+    incentiveType: 'completion',
+    contribution: 'Young Opportunity Leaders Organization (3 full rides available)',
+  },
+  {
     id: '8',
     name: 'Your Company',
     logo: '/images/your-company.png',
@@ -143,6 +157,13 @@ export const sponsors: Sponsor[] = [
     incentiveType: 'school',
     contribution: 'Technology upgrades for winning schools',
     amount: '$5,000 value'
+  },
+  {
+    id: '19',
+    name: 'SpacesEDU',
+    logo: '/images/spacesEDU-logo.png',
+    incentiveType: 'school',
+    contribution: 'Free SpacesEDU Pro school-wide license (2 available)',
   },
   {
     id: '15',
