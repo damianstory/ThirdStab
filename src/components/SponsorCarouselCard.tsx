@@ -57,7 +57,9 @@ export default function SponsorCarouselCard({
       <div className={`flex-1 flex items-center justify-center ${
         logo === '/images/manufacturing-excellence.png' 
           ? 'px-1 py-2 sm:px-2 sm:py-4 md:px-2 md:py-6' 
-          : 'px-2 py-4 sm:px-3 sm:py-6 md:px-4 md:py-8'
+          : logo === '/images/trade-finder-final.png'
+            ? 'px-1 py-1 sm:px-1 sm:py-1 md:px-1 md:py-1'
+            : 'px-2 py-4 sm:px-3 sm:py-6 md:px-4 md:py-8'
       }`}>
         {!imageError ? (
           <img
@@ -70,7 +72,9 @@ export default function SponsorCarouselCard({
                   ? 'max-w-full max-h-[100px] sm:max-h-[125px] md:max-h-[150px] object-contain scale-[1.875]'
                   : logo === '/images/mihr-logo.jpg'
                     ? 'max-w-full max-h-[120px] sm:max-h-[150px] md:max-h-[180px] object-contain scale-150'
-                    : 'max-w-full max-h-[80px] sm:max-h-[100px] md:max-h-[120px] object-contain'
+                    : logo === '/images/trade-finder-final.png'
+                      ? 'w-[1200px] h-[400px] object-contain'
+                      : 'max-w-full max-h-[80px] sm:max-h-[100px] md:max-h-[120px] object-contain'
             }`}
             onError={() => setImageError(true)}
           />

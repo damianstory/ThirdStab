@@ -166,6 +166,20 @@ export const sponsors: Sponsor[] = [
     contribution: 'Free SpacesEDU Pro school-wide license (2 available)',
   },
   {
+    id: '22',
+    name: 'Trade Finder',
+    logo: '/images/trade-finder-logo.png',
+    incentiveType: 'school',
+    contribution: 'Free Annual License (Ontario Only)',
+  },
+  {
+    id: '23',
+    name: 'Milwaukee Tools',
+    logo: '/images/milwaukee-tools-logo.png',
+    incentiveType: 'school',
+    contribution: '$10,000 worth of Milwaukee Tools',
+  },
+  {
     id: '15',
     name: 'Your Company',
     logo: '/images/your-company.png',

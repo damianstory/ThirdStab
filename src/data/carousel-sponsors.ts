@@ -96,13 +96,31 @@ export const carouselSponsors: CarouselSponsor[] = [
   {
     id: 'i5',
     name: 'School-Level',
-    logo: '/images/school-level-2.png',
+    logo: '/images/trade-finder-final.png',
     type: 'incentive'
   },
   {
     id: 'i6',
     name: 'Your Company',
     logo: '/images/your-company-carousel.png',
+    type: 'incentive'
+  },
+  {
+    id: 'i7',
+    name: 'School-Level',
+    logo: '/images/spacesEDU-full-logo.png',
+    type: 'incentive'
+  },
+  {
+    id: 'i8',
+    name: 'Series Completion',
+    logo: '/images/straight-up-health-logo.png',
+    type: 'incentive'
+  },
+  {
+    id: 'i9',
+    name: 'Series Completion',
+    logo: '/images/admissionprep-full-logo.png',
     type: 'incentive'
   }
 ];
