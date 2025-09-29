@@ -38,7 +38,7 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
     },
     {
       title: "Step 6 - Submit",
-      details: "<strong>Take the research you have just completed in steps 1-5 and use it to create a 60-90 second video.</strong>\n\nHow you choose to structure your video is up to you.\n\n• Vertical vs. horizontal? Up to you.\n• Talking head vs. all animations? Up to you.\n• Documentary style vs. tiktok style? Up to you.\n\nThe only requirements are that it addresses each of the 5 steps above, and we're able to click a link to watch it - everything else is - up to you.\n\n20 submissions who score the highest on the rubric will EACH receive $500 cash.\n\n📝 View the full rubric here.\n\n➡️ Submit your video before the end of the day on October 31st here."
+      details: "<strong>Take the research you have just completed in steps 1-5 and use it to create a 60-90 second video.</strong>\n\nHow you choose to structure your video is up to you.\n\n• Vertical vs. horizontal? Up to you.\n• Talking head vs. all animations? Up to you.\n• Documentary style vs. tiktok style? Up to you.\n\nThe only requirements are that it addresses each of the 5 steps above, and we're able to click a link to watch it - everything else is - up to you.\n\n20 submissions who score the highest on the rubric will EACH receive $500 cash.\n\n📝 <a href='https://claude.ai/public/artifacts/a9e7a244-0594-4771-8b98-d876121df6c9' target='_blank' rel='noopener noreferrer' class='text-[#0092ff] hover:text-blue-700 underline'>View Detailed Evaluation Rubric Here</a>\n\n➡️ Submit your video before the end of the day on October 31st here."
     }
   ];
 
@@ -126,24 +126,39 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
             {/* Rubric */}
             <div className="bg-white border border-neutral2 rounded-xl overflow-hidden mt-8 lg:mt-32">
               <div className="bg-[#0092ff] text-white px-4 py-3">
-                <h3 className="font-semibold text-lg">Evaluation Rubric</h3>
+                <h3 className="font-semibold text-lg">Evaluation Rubric Summary</h3>
                 <p className="text-sm opacity-90">Total: {activity.rubric.totalPoints} points</p>
               </div>
               
               <div className="divide-y divide-neutral2">
                 {activity.rubric.criteria.map((criterion, index) => (
                   <div key={index} className="p-4">
-                    <div className="flex justify-between items-start mb-2">
-                      <h4 className="font-medium text-[#22224C] text-sm">
-                        {criterion.category}
-                      </h4>
-                      <span className="text-[#0092ff] font-semibold text-sm ml-2">
-                        {criterion.weight}%
-                      </span>
-                    </div>
-                    <p className="text-xs text-neutral-500 leading-relaxed">
-                      {criterion.description}
-                    </p>
+                    {(criterion as any).isLink ? (
+                      <div className="text-center">
+                        <a 
+                          href={(criterion as any).url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[#0092ff] hover:text-blue-700 font-medium text-sm underline"
+                        >
+                          {criterion.category}
+                        </a>
+                      </div>
+                    ) : (
+                      <>
+                        <div className="flex justify-between items-start mb-2">
+                          <h4 className="font-medium text-[#22224C] text-sm">
+                            {criterion.category}
+                          </h4>
+                          <span className="text-[#0092ff] font-semibold text-sm ml-2">
+                            {criterion.weight}%
+                          </span>
+                        </div>
+                        <p className="text-xs text-neutral-500 leading-relaxed">
+                          {criterion.description}
+                        </p>
+                      </>
+                    )}
                   </div>
                 ))}
               </div>

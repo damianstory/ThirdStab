@@ -78,29 +78,31 @@ export const octoberActivity: ActivityPageData = {
   rubric: {
     criteria: [
       {
-        category: 'Research Quality',
-        weight: 30,
-        description: 'Depth and accuracy of career information gathered'
+        category: 'Content & Accuracy',
+        weight: 40,
+        description: 'Comprehensive coverage of all 5 required steps with accurate, detailed information'
       },
       {
-        category: 'Presentation',
-        weight: 25,
-        description: 'Clarity and creativity of deliverable format'
-      },
-      {
-        category: 'Sustainability Focus',
+        category: 'Research & Citations',
         weight: 20,
-        description: 'Understanding of environmental and sustainable practices'
+        description: 'Quality sources properly cited throughout the video presentation'
       },
       {
-        category: 'Personal Reflection',
-        weight: 15,
-        description: 'Thoughtful analysis of personal career interests'
+        category: 'Engagement & Creativity',
+        weight: 20,
+        description: 'Compelling delivery that maintains viewer interest through creative presentation'
       },
       {
-        category: 'Sources & Citations',
-        weight: 10,
-        description: 'Quality and proper citation of research sources'
+        category: 'Communication & Clarity',
+        weight: 20,
+        description: 'Clear audio/visuals with logical organization, smooth flow, and meets 60-90 second requirement'
+      },
+      {
+        category: 'View Detailed Evaluation Rubric Here',
+        weight: 0,
+        description: '',
+        isLink: true,
+        url: 'https://claude.ai/public/artifacts/a9e7a244-0594-4771-8b98-d876121df6c9'
       }
     ],
     totalPoints: 100
