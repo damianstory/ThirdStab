@@ -269,6 +269,8 @@ export interface ActivityPageData extends Activity {
       category: string;
       weight: number;
       description: string;
+      isLink?: boolean;
+      url?: string;
     }>;
     totalPoints: number;
   };
