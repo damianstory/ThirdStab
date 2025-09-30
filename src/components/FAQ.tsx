@@ -5,6 +5,10 @@ import { useState, useEffect } from 'react';
 interface FAQItem {
   question: string;
   answer: string;
+  link?: {
+    text: string;
+    url: string;
+  };
 }
 
 interface FAQProps {
@@ -34,36 +38,64 @@ export default function FAQ({ initialOpenIndex = null }: FAQProps) {
 
   const faqs: FAQItem[] = [
     {
+      question: "How does this program work?",
+      answer: "Excluding September and June, each month of this school year is being sponsored by a different company or industry association. And by sponsoring that month, we're creating an opt-in activity that will allow students to develop a skill and or learn about careers in that industry for them to complete on their own, or as part of a class activity. Each month's activity is a little bit different, but the idea is that students will complete the activity, submit the evidence of completion, and be assessed against an individual rubric for that activity, with 20 students earning a microgrant of $500."
+    },
+    {
+      question: "Is this only open to myBlueprint users?",
+      answer: "No. Any student across Canada is welcome, and encouraged to participate."
+    },
+    {
       question: "What grade levels can participate?",
-      answer: "The program is available to all students across grades 7-12."
+      answer: "These activities have been designed for students across grades 7-12."
     },
     {
-      question: "Does my school need to be licensing myBlueprint?",
-      answer: "No. Any grade 7-12 student across Canada can participate. Schools in the US licensing SpacesEDU are also welcome to participate."
+      question: "What if a student misses a month? Can they still complete the activity?",
+      answer: "Students can still submit the activity after that month's deadline has passed. They won't be eligible for that month's pool of micro grants, but can still complete activities so that they are eligible for the Series Completion incentives."
     },
     {
-      question: "When does the program launch?",
-      answer: "The first monthly activity is launching in October 2025. A landing page will be created for each month that explains the activity and how students can participate. Join the mailing list below to be the first to know."
+      question: "How will students access these challenges?",
+      answer: "There will be a banner at the top of a student's myBlueprint account once logged in where they can click to access the Industry Immersion Series website and access all open challenges. You can also bookmark this page you're on for easy reference."
     },
     {
-      question: "What types of industries are participating?",
-      answer: "We've tried to ensure there's a diverse group of industries available for students to learn about. We'll be announcing specifics soon. To be one of the first to know, join the mailing list below."
+      question: "When do the monthly challenges go live?",
+      answer: "On the 1st of every month."
     },
     {
-      question: "Are there incentives for educators as well?",
-      answer: "Yes :) Monthly giveaways for educators who join the mailing list, and school prizes for schools with a lot of student participation."
+      question: "As a student, can I get credit from my teacher for completing these?",
+      answer: "Maybe. You should definitely ask your teachers. Be specific about the activity, what you're being asked to complete, and why you think you should get credit for it."
     },
     {
-      question: "What data is being collected?",
-      answer: "myBlueprint will collect the names and emails of students when they submit their monthly activities. This information will not be shared with any third parties. Industry partners will receive anonymized data on the number of students who participated in their activity."
+      question: "Why micro grants as an incentive?",
+      answer: "The majority of education related money available to young people today is reserved for scholarships. Scholarships are great, but not every student is going to post-secondary and not every role requires it. This money can help students build skills today that will put them in a better position to accomplish their goals, regardless of which direction they're interested in pursuing, including post-secondary."
     },
     {
-      question: "What is myBlueprint?",
-      answer: "myBlueprint is a trusted partner to almost 300 school boards across Canada, helping to empower every student to thrive and succeed in education, career, and life."
+      question: "How (and when) are the twenty monthly successful submissions selected?",
+      answer: "Individual monthly activities are assessed against a rubric specific to that month's challenge. Our goal is to be able to announce the successful submissions by the midpoint of the following month."
     },
     {
-      question: "How can my company get involved?",
-      answer: "Email our Director, Special Projects at damian.matheson@myblueprint.ca"
+      question: "How will students receive the funds?",
+      answer: "The easiest method is by e-transfer, whether to a student's account or their parent/guardian. However, other methods may be needed and can be explored on a case-by-case basis."
+    },
+    {
+      question: "What can students use the funds for?",
+      answer: "We will encourage students to use the money to put toward skill development and career exploration related activities. For example, buying parts or equipment for a project they want to build, or attending an industry conference. However, it will be up to the students' own discretion as to how they use their funds."
+    },
+    {
+      question: "Will teachers be able to see who has submitted an entry?",
+      answer: "Teachers won't be able to see through their myBlueprint account which students have submitted activities or not. However, we will create reports that will be shared with your myBlueprint lead at the school board level who can share specifics with you upon request."
+    },
+    {
+      question: "Are there incentives for educators as well, or just students?",
+      answer: "There are definitely incentives for educators as well, both the Educator Level incentive and School Level incentive."
+    },
+    {
+      question: "What data is being collected and by who?",
+      answer: "myBlueprint is solely responsible for running the Industry Immersion Series. Meaning that only myBlueprint collects any information related to this Series. No personally identifiable information is being shared with any 3rd parties.",
+      link: {
+        text: "Click here to see more.",
+        url: "https://docs.google.com/document/d/1rHxZ4QntHN0fo7rqi7uKeDQakupNtE3KtT8p3lFPur4/edit?tab=t.3u8jw6o1fsyf"
+      }
     }
   ];
 
@@ -119,9 +151,22 @@ export default function FAQ({ initialOpenIndex = null }: FAQProps) {
                   }`}
                 >
                   <div className="relative max-w-[85%] sm:max-w-[75%] bg-gray-200 rounded-2xl rounded-bl-sm px-5 py-4">
-                    <p className="brand-body1 font-medium text-navy">
+                    <div className="brand-body1 font-medium text-navy whitespace-pre-line">
                       {faq.answer}
-                    </p>
+                      {faq.link && (
+                        <>
+                          {'\n\n'}
+                          <a
+                            href={faq.link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[#0092ff] hover:underline"
+                          >
+                            {faq.link.text}
+                          </a>
+                        </>
+                      )}
+                    </div>
                     {/* Chat bubble tail */}
                     <div className="absolute bottom-0 left-0 w-0 h-0 transform -translate-x-1/2 translate-y-full"
                          style={{
