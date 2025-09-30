@@ -64,15 +64,16 @@ export default function ActivityFAQ({ activity }: ActivityFAQProps) {
               {/* Answer */}
               <div
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                  openIndex === index 
-                    ? 'max-h-96 opacity-100' 
+                  openIndex === index
+                    ? 'max-h-96 opacity-100'
                     : 'max-h-0 opacity-0'
                 }`}
               >
                 <div className="px-6 pb-5">
-                  <p className="brand-body2 text-neutral-500 leading-relaxed">
-                    {faq.answer}
-                  </p>
+                  <div
+                    className="brand-body2 text-neutral-500 leading-relaxed whitespace-pre-line"
+                    dangerouslySetInnerHTML={{ __html: faq.answer }}
+                  />
                 </div>
               </div>
             </div>

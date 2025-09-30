@@ -23,7 +23,7 @@ export const octoberActivity: ActivityPageData = {
   // Extended page content
   hero: {
     tagline: 'Discover Your Future in Mining',
-    introText: `From underground operations to cutting-edge technology, the mining industry offers diverse career paths that power our modern world. Join MiHR to explore opportunities in one of Canada's most essential industries.`
+    introText: `From underground operations to cutting-edge technology, the mining industry offers diverse career paths that power our modern world. Join the Mining Industry Human Resources Council (MiHR) to explore opportunities in one of Canada's most essential industries.`
   },
   
   video: {
@@ -116,24 +116,70 @@ export const octoberActivity: ActivityPageData = {
   
   faqs: [
     {
-      question: 'What mining careers can I research?',
-      answer: 'You can explore any career in the mining industry, including: mining engineers, geologists, environmental scientists, heavy equipment operators, safety specialists, data analysts, metallurgists, and mine planners.'
+      question: 'How does this October Activity challenge work?',
+      answer: 'Carefully read the Activity Details steps 1-5 to understand what is being asked of you in this activity. You can also watch the How this Works video for a detailed overview.'
     },
     {
-      question: 'Can I work in a group?',
-      answer: `This is an individual challenge. Each student must submit their own unique research and presentation, but you're encouraged to discuss ideas with classmates and teachers.`
+      question: 'What am I actually being asked to submit?',
+      answer: `You're being asked to submit a 60 to 90 second video highlighting the research you did from steps 1 through 5 in this specific activity. It's important that the video you create is shared as a clickable link, not something that we need to download, and that you've made sure that the sharing settings are set up in a way that we have access to view the video. It's a good idea to test this before submitting.`
     },
     {
-      question: 'What format should my presentation be?',
-      answer: 'You can choose between a 3-5 minute video presentation or a detailed infographic. Both formats should cover all the required elements outlined in the deliverables section.'
+      question: 'Can I submit more than one video?',
+      answer: `Yes, you can complete the activity multiple times for different roles within the mining industry, though students can only win one micro grant per activity. We'd encourage you to focus on quality, not quantity.`
     },
     {
-      question: 'How will winners be selected?',
-      answer: 'Submissions will be evaluated by MiHR industry professionals using the provided rubric. Winners will be selected based on research quality, presentation clarity, and understanding of sustainable mining practices.'
+      question: 'Is there a preferred style for the video?',
+      answer: `No, it's whatever feels authentic and engaging to you. It can be a Tik Tok style video with lots of different cuts and background music or more documentary style - whatever you will enjoy making more, and clearly communicates the requested information from steps 1-5.`
     },
     {
-      question: 'When will results be announced?',
-      answer: 'Winners will be announced in the first week of November 2025. All participants will receive participation certificates, and winners will be contacted directly about their micro grants.'
+      question: 'Does it matter what tool I use to make the video?',
+      answer: `Nope, it doesn't matter at all what tool you use. There are lots of free tools available to make videos today. Check with your school to see what they already have access to. For example, Canva is a great tool to be able to create videos with.`
+    },
+    {
+      question: 'What skills will I be developing by doing this activity?',
+      answer: `Lots of skills like research, critical thinking, communication, content creation, and many others. It would be a good idea to add the completed video to your myBlueprint portfolio and reflect on what skills you feel like you've developed as part of completing this activity.`
+    },
+    {
+      question: 'Who is reviewing the submissions?',
+      answer: `Submissions will be reviewed by a team of representatives from myBlueprint. We may, if needed, collaborate with representatives from MiHR.`
+    },
+    {
+      question: 'Can students submit their videos in French?',
+      answer: `All videos for this activity will need to be reviewed in English, so if a student wants to submit in French, we ask they include English subtitles in the video.`
+    },
+    {
+      question: 'How (and when) are the twenty monthly successful submissions selected?',
+      answer: `Depending on the volume of submissions, we plan to have selected, and be able to announce winners by the midpoint of the following month. So for example, with this activity, we hope to be able to announce the October winners by mid-November.`
+    },
+    {
+      question: 'Should I add these submissions to my portfolio in myBlueprint?',
+      answer: `Yeah, that's a great idea, along with a reflection of what you learned from doing this activity and what you found interesting. As a heads up, we'll also be asking students to submit evidence of their completed activities through a myBlueprint portfolio if you plan on applying for one of the Series Completion incentives at the end of the year.`
+    },
+    {
+      question: 'Do I need to do this in class, or can I just do this on my own?',
+      answer: `You can absolutely complete this activity on your own. That being said, you should absolutely communicate with your teachers (and parents) that you're doing this and see if you can potentially earn credit for the work that you're doing for this activity.`
+    },
+    {
+      question: 'Can I do this as a group project?',
+      answer: `The October challenge has been designed as an individual activity.`
+    },
+    {
+      question: 'Can I still submit the activity after the October 31st deadline?',
+      answer: `Yes, you can still submit monthly activities after the deadline. However, any activity submitted after the deadline is not eligible for that month's pool of micro grants. It still makes sense to complete them even after the deadline so that you can potentially earn one of the Series Completion incentives. Those only require all activities to be completed, not necessarily completed within the month of the activity.`
+    },
+    {
+      question: 'Will teachers be able to see who has submitted an entry?',
+      answer: `Teachers won't be able to see through myBlueprint which students have submitted activities or not. However, we will create reports that will be shared with your myBlueprint lead at the school board level who can share specifics with you upon request.`
+    },
+    {
+      question: 'What data is being collected and by who?',
+      answer: `myBlueprint is solely responsible for running the Industry Immersion Series.
+
+Meaning that only myBlueprint is collecting any information related to this Series. No personally identifiable information is being shared with any 3rd parties.
+
+We will publish de-identified (anonymous summary data) information to provide updates on how the Series is going. For example, the number of activity submissions received for each month, which province they're coming from, and communicate with our school board partners about school-specific participation.
+
+<a href="https://docs.google.com/document/d/1rHxZ4QntHN0fo7rqi7uKeDQakupNtE3KtT8p3lFPur4/edit?tab=t.0" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Click here to see the questions students are being asked</a> to answer when they submit their completed activity.`
     }
   ],
   
