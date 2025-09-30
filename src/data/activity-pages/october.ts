@@ -66,7 +66,8 @@ export const octoberActivity: ActivityPageData = {
       'Create a presentation or infographic about your chosen career',
       'Include information about education requirements, day-to-day tasks, and career progression',
       'Explain how this career contributes to sustainable mining practices',
-      'Submit your work through the provided Google Form'
+      'Submit your work through the provided Google Form',
+      '<a href="https://www.surveymonkey.com/r/K2W32NQ" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Submit your video before the end of the day on October 31st here.</a>'
     ],
     deliverables: [
       'A 3-5 minute presentation video OR a detailed infographic',
