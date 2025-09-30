@@ -117,9 +117,9 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
             <div className="bg-gradient-to-b from-[#F8FAFB] to-white border-2 border-[#0092ff] rounded-2xl p-6 lg:p-8 mb-8 lg:mt-20">
               <button
                 onClick={() => setShowVideoModal(true)}
-                className="w-full px-6 py-4 rounded-lg font-semibold text-lg transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200 hover:-translate-y-1 hover:shadow-lg active:scale-95"
+                className="w-full px-6 py-4 rounded-lg font-semibold text-lg transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200 hover:-translate-y-1 hover:shadow-lg active:scale-95 whitespace-nowrap"
               >
-                How this Works
+                Watch: How this Works
               </button>
             </div>
             

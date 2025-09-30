@@ -27,10 +27,10 @@ export const octoberActivity: ActivityPageData = {
   },
   
   video: {
-    embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ', // Placeholder URL
+    embedUrl: 'https://www.youtube.com/embed/JYiO_gkFqWM',
     title: 'Mining Needs You',
-    description: `Mining is essential to our way of life today and the world we want to create tomorrow. 
-    With careers above and underground, in the field, in minerals processing and metallurgy facilities, laboratories, and offices – there’s a place for you in mining.`
+    description: `Mining is essential to our way of life today and the world we want to create tomorrow.
+    With careers above and underground, in the field, in minerals processing and metallurgy facilities, laboratories, and offices – there's a place for you in mining.`
   },
   
   explainer: {
