@@ -16,7 +16,7 @@ export default function HowItWorks() {
     },
     {
       title: "Submission Process",
-      details: "Completed work is submitted and assessed against a rubric for review by the selection committee. Twenty submissions will selected each month."
+      details: "Completed work is submitted and assessed against a rubric for review by the selection committee. Twenty submissions will be selected each month."
     },
     {
       title: "Winners Selected & Rewarded",

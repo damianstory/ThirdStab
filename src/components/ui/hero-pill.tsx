@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
+import { trackButtonClick } from "@/lib/analytics"
 
 interface HeroPillProps {
   href: string
@@ -19,6 +20,14 @@ export function HeroPill({
   className,
   isExternal = false,
 }: HeroPillProps) {
+  // Handle click tracking
+  const handleClick = () => {
+    trackButtonClick(
+      'Announcement Banner',
+      `Header - ${announcement}`
+    );
+  };
+
   const content = (
     <>
       <div className={cn(
@@ -54,6 +63,7 @@ export function HeroPill({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={handleClick}
         className={cn(
           "flex w-auto items-center space-x-2 rounded-full",
           "bg-lightBlue/50 ring-1 ring-brandBlue/30",
@@ -77,6 +87,7 @@ export function HeroPill({
     >
       <Link
         href={href}
+        onClick={handleClick}
         className={cn(
           "flex w-auto items-center space-x-2 rounded-full",
           "bg-lightBlue/50 ring-1 ring-brandBlue/30",
