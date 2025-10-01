@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { trackFAQ } from '@/lib/analytics';
 
 interface FAQItem {
   question: string;
@@ -100,7 +101,16 @@ export default function FAQ({ initialOpenIndex = null }: FAQProps) {
   ];
 
   const toggleAccordion = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
+    const isCurrentlyOpen = openIndex === index;
+    const newState = isCurrentlyOpen ? null : index;
+
+    // Track the FAQ interaction
+    trackFAQ(
+      faqs[index].question,
+      isCurrentlyOpen ? 'collapse' : 'expand'
+    );
+
+    setOpenIndex(newState);
   };
 
   return (
@@ -141,12 +151,12 @@ export default function FAQ({ initialOpenIndex = null }: FAQProps) {
                     />
                   </button>
                 </div>
-                
+
                 {/* Answer Bubble */}
                 <div
                   className={`flex justify-end transition-all duration-300 ease-in-out ${
-                    openIndex === index 
-                      ? 'opacity-100 max-h-96 transform translate-y-0' 
+                    openIndex === index
+                      ? 'opacity-100 max-h-96 transform translate-y-0'
                       : 'opacity-0 max-h-0 transform -translate-y-2 overflow-hidden'
                   }`}
                 >

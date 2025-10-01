@@ -9,6 +9,7 @@ import React, {
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { trackButtonClick } from "@/lib/analytics";
 
 interface SponsorCard {
   id: string;
@@ -56,12 +57,12 @@ export const CircularSponsorCarousel = ({
   useEffect(() => {
     setIsMounted(true);
   }, []);
-  
+
 
   // Responsive gap calculation
   useEffect(() => {
     if (!isMounted) return;
-    
+
     function handleResize() {
       if (carouselContainerRef.current) {
         const width = carouselContainerRef.current.offsetWidth;
@@ -78,11 +79,11 @@ export const CircularSponsorCarousel = ({
   // Autoplay
   useEffect(() => {
     if (!isMounted || !autoplay) return;
-    
+
     autoplayIntervalRef.current = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % sponsorsLength);
     }, 2000);
-    
+
     return () => {
       if (autoplayIntervalRef.current) clearInterval(autoplayIntervalRef.current);
     };
@@ -91,7 +92,7 @@ export const CircularSponsorCarousel = ({
   // Keyboard navigation
   useEffect(() => {
     if (!isMounted) return;
-    
+
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === "ArrowLeft") handlePrev();
       if (e.key === "ArrowRight") handleNext();
@@ -106,7 +107,7 @@ export const CircularSponsorCarousel = ({
     setActiveIndex((prev) => (prev + 1) % sponsorsLength);
     if (autoplayIntervalRef.current) clearInterval(autoplayIntervalRef.current);
   }, [sponsorsLength]);
-  
+
   const handlePrev = useCallback(() => {
     setActiveIndex((prev) => (prev - 1 + sponsorsLength) % sponsorsLength);
     if (autoplayIntervalRef.current) clearInterval(autoplayIntervalRef.current);
@@ -119,7 +120,7 @@ export const CircularSponsorCarousel = ({
     const isActive = index === activeIndex;
     const isLeft = (activeIndex - 1 + sponsorsLength) % sponsorsLength === index;
     const isRight = (activeIndex + 1) % sponsorsLength === index;
-    
+
     if (isActive) {
       return {
         zIndex: 3,
@@ -173,6 +174,18 @@ export const CircularSponsorCarousel = ({
     }
   };
 
+  // Handle sponsor card click with tracking
+  const handleSponsorClick = (sponsor: SponsorCard) => {
+    // Track the sponsor card click
+    trackButtonClick(
+      `Sponsor Card - ${sponsor.name}`,
+      `Carousel - ${sponsor.type} - ${sponsor.month || 'No Month'}`
+    );
+
+    // Navigate to the Notion page
+    window.open('https://www.notion.so/Industry-Immersion-Series-Sponsors-23af4a4d79df801ba06eebcd7035537d?source=copy_link', '_blank', 'noopener,noreferrer');
+  };
+
   // Prevent hydration mismatch by not rendering until mounted
   if (!isMounted) {
     return (
@@ -190,10 +203,10 @@ export const CircularSponsorCarousel = ({
     <div className="w-full max-w-[1456px] mx-auto py-8">
       <div className="relative">
         {/* Cards Container */}
-        <div 
+        <div
           ref={carouselContainerRef}
           className="relative h-[340px] sm:h-[380px] md:h-[420px] lg:h-[460px] w-full"
-          style={{ 
+          style={{
             perspective: '1200px',
             transformStyle: 'preserve-3d'
           }}
@@ -215,12 +228,7 @@ export const CircularSponsorCarousel = ({
                   left: '50%',
                   transformStyle: 'preserve-3d'
                 }}
-                onClick={() => {
-                  // Navigate to the same link as "View All Sponsors" button
-                  window.open('https://www.notion.so/Industry-Immersion-Series-Sponsors-23af4a4d79df801ba06eebcd7035537d?source=copy_link', '_blank', 'noopener,noreferrer');
-                  // Keep onCardClick for backward compatibility but don't call it
-                  // onCardClick && onCardClick(sponsor);
-                }}
+                onClick={() => handleSponsorClick(sponsor)}
               >
                 {/* Type Pill */}
                 <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10">

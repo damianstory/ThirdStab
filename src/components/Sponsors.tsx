@@ -4,9 +4,18 @@ import { useState } from 'react'
 import SecretModal from './SecretModal'
 import CircularSponsorCarousel from './ui/circular-sponsor-carousel'
 import { carouselSponsors } from '@/data/carousel-sponsors'
+import { trackButtonClick } from '@/lib/analytics'
 
 export default function Sponsors() {
   const [isModalOpen, setIsModalOpen] = useState(false)
+
+  // Handle View All Sponsors button click
+  const handleViewAllClick = () => {
+    trackButtonClick(
+      'View All Sponsors/Incentives',
+      'Sponsors Section - CTA Button'
+    );
+  };
 
   return (
     <section id="sponsors" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
@@ -23,7 +32,7 @@ export default function Sponsors() {
 
         {/* Sponsor Carousel */}
         <div className="mb-2 sm:mb-3 md:mb-4">
-          <CircularSponsorCarousel 
+          <CircularSponsorCarousel
             sponsors={carouselSponsors}
             autoplay={true}
             // Modal functionality disabled - cards now link directly to sponsor page
@@ -37,6 +46,7 @@ export default function Sponsors() {
             href="https://www.notion.so/Industry-Immersion-Series-Sponsors-23af4a4d79df801ba06eebcd7035537d?source=copy_link"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={handleViewAllClick}
             className="bg-[#0092ff] text-white font-semibold py-3 px-6 sm:py-4 sm:px-8 rounded-xl hover:bg-[#0082e6] transition-colors text-center shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-200 text-sm sm:text-base"
           >
             View All Sponsors/Incentives
@@ -45,9 +55,9 @@ export default function Sponsors() {
       </div>
 
       {/* Secret Modal */}
-      <SecretModal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
+      <SecretModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
       />
     </section>
   )
