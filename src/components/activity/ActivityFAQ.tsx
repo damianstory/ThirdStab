@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { ActivityPageData } from '@/data/activities';
+import { trackFAQ } from '@/lib/analytics';
 
 interface ActivityFAQProps {
   activity: ActivityPageData;
@@ -11,7 +12,16 @@ export default function ActivityFAQ({ activity }: ActivityFAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
+    const isCurrentlyOpen = openIndex === index;
+    const newState = isCurrentlyOpen ? null : index;
+
+    // Track the FAQ interaction
+    trackFAQ(
+      activity.faqs[index].question,
+      isCurrentlyOpen ? 'collapse' : 'expand'
+    );
+
+    setOpenIndex(newState);
   };
 
   return (
@@ -60,7 +70,7 @@ export default function ActivityFAQ({ activity }: ActivityFAQProps) {
                   </svg>
                 </span>
               </button>
-              
+
               {/* Answer */}
               <div
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${

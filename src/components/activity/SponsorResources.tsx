@@ -2,6 +2,7 @@
 
 import { ExternalLink, FileText, Video, File, Globe } from 'lucide-react';
 import { ActivityPageData } from '@/data/activities';
+import { trackButtonClick } from '@/lib/analytics';
 
 interface SponsorResourcesProps {
   activity: ActivityPageData;
@@ -28,7 +29,14 @@ const resourceTypeConfig = {
 };
 
 export default function SponsorResources({ activity }: SponsorResourcesProps) {
-  const handleResourceClick = (url: string) => {
+  const handleResourceClick = (url: string, title: string, type: string) => {
+    // Track the resource click
+    trackButtonClick(
+      `Resource - ${title}`,
+      `${activity.month} Activity - ${type}`
+    );
+
+    // Open the resource
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
@@ -51,28 +59,28 @@ export default function SponsorResources({ activity }: SponsorResourcesProps) {
             const typeConfig = resourceTypeConfig[resource.type];
             // Special case for Workforce Map - use Globe icon
             const icon = resource.title === 'Workforce Map' ? <Globe size={24} /> : typeConfig.icon;
-            
+
             return (
               <div
                 key={index}
-                onClick={() => handleResourceClick(resource.url)}
+                onClick={() => handleResourceClick(resource.url, resource.title, resource.type)}
                 className="bg-white border border-neutral2 rounded-xl p-6 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:border-[#0092ff] group h-full flex flex-col"
               >
                 {/* Resource Icon */}
                 <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${typeConfig.color} group-hover:scale-110 transition-transform duration-200`}>
                   {icon}
                 </div>
-                
+
                 {/* Resource Title */}
                 <h3 className="brand-h4 text-[#22224C] mb-3 leading-tight">
                   {resource.title}
                 </h3>
-                
+
                 {/* Resource Description */}
                 <p className="brand-body2 text-neutral-500 leading-relaxed mb-4 flex-1 line-clamp-3 whitespace-pre-line">
                   {resource.description}
                 </p>
-                
+
                 {/* Resource Link */}
                 <div className="flex items-center text-[#0092ff] font-medium text-sm group-hover:underline">
                   <span className="mr-2">

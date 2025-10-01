@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { ActivityPageData, getCurrentStatus } from '@/data/activities';
 import Modal from '@/components/Modal';
 import { X } from 'lucide-react';
+import { trackExternalLink } from '@/lib/analytics';
 
 interface ActivityDetailAndRubricProps {
   activity: ActivityPageData;
@@ -15,13 +16,33 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
   const [openStep, setOpenStep] = useState<number | null>(null);
   const [showVideoModal, setShowVideoModal] = useState(false);
 
+  // Track rubric link clicks
+  const handleRubricClick = (location: string, e: React.MouseEvent) => {
+    e.preventDefault();
+    trackExternalLink(
+      'https://claude.ai/public/artifacts/a9e7a244-0594-4771-8b98-d876121df6c9',
+      `View Detailed Rubric - ${location} - ${activity.month}`
+    );
+    window.open('https://claude.ai/public/artifacts/a9e7a244-0594-4771-8b98-d876121df6c9', '_blank', 'noopener,noreferrer');
+  };
+
+  // Track submission link clicks
+  const handleSubmissionClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    trackExternalLink(
+      'https://www.surveymonkey.com/r/K2W32NQ',
+      `Submit Activity - Step 6 - ${activity.month}`
+    );
+    window.open('https://www.surveymonkey.com/r/K2W32NQ', '_blank', 'noopener,noreferrer');
+  };
+
   const steps = [
     {
       title: "Step 1 - Career Spotlight",
       details: "Start by identifying a specific role within the mining industry, for example: Environmental Scientist, Mining Engineer, Data Analyst, Technical Services Specialist, etc. There are MANY to choose from.\n\nYou can use the MiHR Resources below, and/or do your own research, but you need to be able to cite your sources.\n\nImportant: Select one specific role. Research it.\n\n<strong>Then explain what someone in that role is generally responsible for on a day to day basis.</strong>"
     },
     {
-      title: "Step 2 - Skills Focus", 
+      title: "Step 2 - Skills Focus",
       details: "<strong>Highlight 2-3 skills or competencies that are required in that role.</strong>\n\nThese could be transferable or durable skills like critical thinking, and/or more specific technical skills that are unique to the role."
     },
     {
@@ -38,16 +59,17 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
     },
     {
       title: "Step 6 - Submit",
-      details: "<strong>Take the research you have just completed in steps 1-5 and use it to create a 60-90 second video.</strong>\n\nHow you choose to structure your video is up to you.\n\n• Vertical vs. horizontal? Up to you.\n• Talking head vs. all animations? Up to you.\n• Documentary style vs. tiktok style? Up to you.\n\nThe only requirements are that it addresses each of the 5 steps above, and we're able to click a link to watch it - everything else is - up to you.\n\n20 submissions who score the highest on the rubric will EACH receive $500 cash.\n\n📝 <a href='https://claude.ai/public/artifacts/a9e7a244-0594-4771-8b98-d876121df6c9' target='_blank' rel='noopener noreferrer' class='text-[#0092ff] hover:text-blue-700 underline'>View Detailed Evaluation Rubric Here</a>\n\n➡️ <a href='https://www.surveymonkey.com/r/K2W32NQ' target='_blank' rel='noopener noreferrer' class='text-[#0092ff] hover:text-blue-700 underline'>Submit your video before the end of the day on October 31st here.</a>"
+      details: "<strong>Take the research you have just completed in steps 1-5 and use it to create a 60-90 second video.</strong>\n\nHow you choose to structure your video is up to you.\n\n• Vertical vs. horizontal? Up to you.\n• Talking head vs. all animations? Up to you.\n• Documentary style vs. tiktok style? Up to you.\n\nThe only requirements are that it addresses each of the 5 steps above, and we're able to click a link to watch it - everything else is - up to you.\n\n20 submissions who score the highest on the rubric will EACH receive $500 cash.",
+      hasLinks: true // Flag to render custom links
     }
   ];
 
   const toggleStep = (index: number) => {
-    setOpenStep(prev => 
+    setOpenStep(prev =>
       prev === index ? null : index
     );
   };
-  
+
   return (
     <section className="py-16 lg:py-20 px-4 md:px-12 bg-white">
       <div className="container mx-auto max-w-6xl">
@@ -57,15 +79,15 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
             <h2 className="brand-h2 text-[#22224C] mb-6">
               Activity Details
             </h2>
-            
+
             {/* Description */}
             <div className="mb-8">
-              <p 
+              <p
                 className="brand-body1 text-neutral-500 leading-relaxed mb-6"
                 dangerouslySetInnerHTML={{ __html: activity.activityDetail.description }}
               />
             </div>
-            
+
             {/* Accordion Steps */}
             <div>
               {steps.map((step, index) => (
@@ -92,7 +114,7 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
-                  
+
                   <div
                     id={`step-${index}-content`}
                     className={`overflow-hidden transition-all duration-300 ease-in-out ${
@@ -100,17 +122,48 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
                     }`}
                   >
                     <div className="pb-6">
-                      <p 
-                        className="brand-body2 text-neutral-500 whitespace-pre-line"
-                        dangerouslySetInnerHTML={{ __html: step.details }}
-                      />
+                      {/* Special rendering for Step 6 with tracked links */}
+                      {(step as any).hasLinks ? (
+                        <div className="brand-body2 text-neutral-500 whitespace-pre-line">
+                          <p dangerouslySetInnerHTML={{ __html: step.details }} />
+
+                          <p className="mt-4">
+                            📝 <a
+                              href="https://claude.ai/public/artifacts/a9e7a244-0594-4771-8b98-d876121df6c9"
+                              onClick={(e) => handleRubricClick('Step 6', e)}
+                              className="text-[#0092ff] hover:text-blue-700 underline"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              View Detailed Evaluation Rubric Here
+                            </a>
+                          </p>
+
+                          <p className="mt-2">
+                            ➡️ <a
+                              href="https://www.surveymonkey.com/r/K2W32NQ"
+                              onClick={handleSubmissionClick}
+                              className="text-[#0092ff] hover:text-blue-700 underline"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Submit your video before the end of the day on October 31st here.
+                            </a>
+                          </p>
+                        </div>
+                      ) : (
+                        <p
+                          className="brand-body2 text-neutral-500 whitespace-pre-line"
+                          dangerouslySetInnerHTML={{ __html: step.details }}
+                        />
+                      )}
                     </div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          
+
           {/* How this Works and Rubric - Right Column (1/3 width) */}
           <div className="lg:col-span-1">
             {/* How this Works */}
@@ -122,23 +175,24 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
                 Watch: How this Works
               </button>
             </div>
-            
+
             {/* Rubric */}
             <div className="bg-white border border-neutral2 rounded-xl overflow-hidden mt-8 lg:mt-32">
               <div className="bg-[#0092ff] text-white px-4 py-3">
                 <h3 className="font-semibold text-lg">Evaluation Rubric Summary</h3>
                 <p className="text-sm opacity-90">Total: {activity.rubric.totalPoints} points</p>
               </div>
-              
+
               <div className="divide-y divide-neutral2">
                 {activity.rubric.criteria.map((criterion, index) => (
                   <div key={index} className="p-4">
                     {(criterion as any).isLink ? (
                       <div className="text-center">
-                        <a 
-                          href={(criterion as any).url}
+                        <a
+                          href="https://claude.ai/public/artifacts/a9e7a244-0594-4771-8b98-d876121df6c9"
                           target="_blank"
                           rel="noopener noreferrer"
+                          onClick={(e) => handleRubricClick('Rubric Card', e)}
                           className="text-[#0092ff] hover:text-blue-700 font-medium text-sm underline"
                         >
                           {criterion.category}
