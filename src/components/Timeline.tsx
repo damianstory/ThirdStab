@@ -23,7 +23,7 @@ export default function Timeline() {
       title: activity.title,
       industry: "Incentive: $10,000 in micro grants",
       description: activity.description,
-      status: "tba",
+      status: activity.month === "October" ? "confirmed" : "tba",
       sponsor: activity.sponsor
     })),
     // Incentive distribution month (no sponsor)
