@@ -44,7 +44,7 @@ export const activities: Activity[] = [
     month: 'November',
     year: '2025',
     title: 'Skills/Compétences Canada',
-    description: 'Explore Canada\'s Skills for Success. Nine skills that can set workers up for success with work, learning, and life – no matter where they live or what job they pursue.',
+    description: 'Explore Canada\'s Skills for Success: nine skills that can set workers up for success with work, learning, and life – no matter where they live or what job they pursue.',
     sponsor: {
       name: 'Skills Competences Canada',
       logo: '/logo2.png',
