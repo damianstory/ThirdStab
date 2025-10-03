@@ -46,9 +46,9 @@ export default function Hero() {
 
         {/* Content layer */}
         <div className="relative z-10 w-full flex min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex-col items-center justify-center px-6 lg:px-20">
-          <div className="mx-auto max-w-lg text-center lg:mx-0 lg:max-w-xl lg:text-left lg:mr-auto">
+          <div className="mx-auto max-w-lg text-center lg:mx-0 lg:max-w-xl lg:text-left lg:mr-auto md:-mt-12 lg:-mt-16">
             <h1 className="max-w-2xl text-balance brand-h1 animate-fade-in-up">
-              <span 
+              <span
                 className="bg-gradient-to-r from-[#0070cc] via-[#00b4ff] to-[#0070cc] bg-clip-text text-transparent"
                 style={{
                   backgroundSize: '200% 200%',
@@ -60,13 +60,17 @@ export default function Hero() {
             </h1>
             <p className="mt-8 max-w-2xl text-balance brand-body1 text-neutral5 animate-fade-in-up animation-delay-100">
               $100,000+ in micro grants and incentives available to grade 7-12 students (and their educators) across Canada.
-              <br /><br />
-              The first activity launches this October. Join the mailing list so you and your students are the first to know how to <br />get involved.
+            </p>
+            <p className="mt-6 max-w-2xl text-balance brand-body1 text-neutral5 animate-fade-in-up animation-delay-100">
+              <span className="font-bold">The first activity is now live!</span> Scroll down to learn more about the program, and view open activities.
+            </p>
+            <p className="mt-6 max-w-2xl text-balance brand-body1 text-neutral5 animate-fade-in-up animation-delay-100">
+              Join the mailing list so you and your students are the first to know how to get involved.
             </p>
 
             {/* Email Capture Form */}
             <div className="mt-12 max-w-md animate-fade-in-up animation-delay-300">
-              <EmailForm 
+              <EmailForm
                 placeholder="Enter your email address"
                 buttonText="Sign Up"
                 source="hero"

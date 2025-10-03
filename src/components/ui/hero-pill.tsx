@@ -6,11 +6,12 @@ import { cn } from "@/lib/utils"
 import { trackButtonClick } from "@/lib/analytics"
 
 interface HeroPillProps {
-  href: string
+  href?: string
   label: string
   announcement?: string
   className?: string
   isExternal?: boolean
+  onClick?: () => void
 }
 
 export function HeroPill({
@@ -19,13 +20,19 @@ export function HeroPill({
   announcement = "📣 Announcement",
   className,
   isExternal = false,
+  onClick,
 }: HeroPillProps) {
-  // Handle click tracking
+  // Handle click tracking and custom onClick
   const handleClick = () => {
     trackButtonClick(
       'Announcement Banner',
       `Header - ${announcement}`
     );
+
+    // Call custom onClick if provided
+    if (onClick) {
+      onClick();
+    }
   };
 
   const content = (
@@ -49,7 +56,7 @@ export function HeroPill({
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M8.78141 5.33312L5.20541 1.75712L6.14808 0.814453L11.3334 5.99979L6.14808 11.1851L5.20541 10.2425L8.78141 6.66645H0.666748V5.33312H8.78141Z"
+          d="M5.33312 8.78141L1.75712 5.20541L0.814453 6.14808L5.99979 11.3334L11.1851 6.14808L10.2425 5.20541L6.66645 8.78141V0.666748H5.33312V8.78141Z"
           fill="currentColor"
           className="text-navy"
         />
@@ -57,7 +64,28 @@ export function HeroPill({
     </>
   );
 
-  if (isExternal) {
+  // If onClick is provided without href, render as button
+  if (onClick && !href) {
+    return (
+      <motion.button
+        onClick={handleClick}
+        className={cn(
+          "flex w-auto items-center space-x-2 rounded-full",
+          "bg-lightBlue/50 ring-1 ring-brandBlue/30",
+          "px-3 py-2 whitespace-pre hover:bg-lightBlue/70 transition-colors",
+          "cursor-pointer",
+          className
+        )}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        {content}
+      </motion.button>
+    );
+  }
+
+  if (isExternal && href) {
     return (
       <motion.a
         href={href}
@@ -86,7 +114,7 @@ export function HeroPill({
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <Link
-        href={href}
+        href={href!}
         onClick={handleClick}
         className={cn(
           "flex w-auto items-center space-x-2 rounded-full",

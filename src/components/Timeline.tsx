@@ -60,6 +60,7 @@ export default function Timeline() {
           {timelineData.map((item, index) => (
             <div
               key={index}
+              id={item.month === "October" && item.year === "2025" ? "october-activity-card" : undefined}
               className="animate-fade-in-up"
               style={{
                 animationDelay: `${index * 0.1}s`
