@@ -46,9 +46,9 @@ export const activities: Activity[] = [
     title: 'Industry Partner Coming Soon',
     description: 'This one is a secret for now. To be the first to find out, join the Industry Immersion Series mailing list by clikcing Stay Informed at the top top of the page.',
     sponsor: {
-      name: 'Coming Soon',
-      logo: '/images/avatar-2.png',
-      logoType: 'square'
+      name: 'Skills Competences Canada',
+      logo: '/logo2.png',
+      logoType: 'wide'
     },
     incentive: {
       total: 10000,

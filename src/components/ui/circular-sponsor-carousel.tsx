@@ -245,6 +245,7 @@ export const CircularSponsorCarousel = ({
                         switch (sponsor.logo) {
                           case '/logo1.gif': return 'h-[131px]'; // 25% bigger
                           case '/logo2.jpeg': return 'h-[131px]'; // 25% bigger
+                          case '/logo2.png': return 'h-[84px]'; // Skills Competences Canada - 20% smaller
                           case '/logo3.png': return 'h-[79px]'; // 25% smaller
                           case '/logo5.png': return 'h-[115px]'; // 10% bigger
                           case '/logo7.png': return 'h-[58px]'; // 45% smaller (was 50% smaller, made 10% bigger)

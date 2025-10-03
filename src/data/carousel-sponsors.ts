@@ -21,8 +21,8 @@ export const carouselSponsors: CarouselSponsor[] = [
   },
   {
     id: 'a2',
-    name: 'Coming Soon',
-    logo: '/images/avatar-2.png',
+    name: 'Skills Competences Canada',
+    logo: '/logo2.png',
     type: 'activity',
     month: 'November 2025'
   },
