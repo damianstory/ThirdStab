@@ -43,8 +43,8 @@ export const activities: Activity[] = [
     id: '2',
     month: 'November',
     year: '2025',
-    title: 'Industry Partner Coming Soon',
-    description: 'This one is a secret for now. To be the first to find out, join the Industry Immersion Series mailing list by clikcing Stay Informed at the top top of the page.',
+    title: 'Skills/Compétences Canada',
+    description: 'Explore Canada\'s Skills for Success. Nine skills that can set workers up for success with work, learning, and life – no matter where they live or what job they pursue.',
     sponsor: {
       name: 'Skills Competences Canada',
       logo: '/logo2.png',
