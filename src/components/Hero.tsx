@@ -62,10 +62,10 @@ export default function Hero() {
               $100,000+ in micro grants and incentives available to grade 7-12 students (and their educators) across Canada.
             </p>
             <p className="mt-6 max-w-2xl text-balance brand-body1 text-neutral5 animate-fade-in-up animation-delay-100">
-              <span className="font-bold">The first activity is now live!</span> Scroll down to learn more about the program, and view open activities.
+              <span className="font-bold">The first activity is now live! Scroll down </span> to learn how the program works, and view open activities.
             </p>
             <p className="mt-6 max-w-2xl text-balance brand-body1 text-neutral5 animate-fade-in-up animation-delay-100">
-              Join the mailing list so you and your students are the first to know how to get involved.
+              And join the mailing list so you and your students are the first to know how to get involved.
             </p>
 
             {/* Email Capture Form */}

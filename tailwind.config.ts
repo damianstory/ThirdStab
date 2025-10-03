@@ -45,6 +45,7 @@ const config: Config = {
         fadeIn: 'fadeIn 300ms ease-out',
         modalSlideIn: 'modalSlideIn 300ms ease-out',
         blob: 'blob 7s infinite',
+        'gradient-shift': 'gradient-shift 3s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -67,6 +68,14 @@ const config: Config = {
           },
           '100%': {
             transform: 'translate(0px, 0px) scale(1)',
+          },
+        },
+        'gradient-shift': {
+          '0%, 100%': {
+            backgroundPosition: '0% 50%'
+          },
+          '50%': {
+            backgroundPosition: '100% 50%'
           },
         },
       },

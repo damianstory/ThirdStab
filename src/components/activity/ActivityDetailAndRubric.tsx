@@ -139,17 +139,14 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
                             </a>
                           </p>
 
-                          <p className="mt-2">
-                            ➡️ <a
-                              href="https://www.surveymonkey.com/r/K2W32NQ"
+                          <div className="mt-12 flex justify-center">
+                            <button
                               onClick={handleSubmissionClick}
-                              className="text-[#0092ff] hover:text-blue-700 underline"
-                              target="_blank"
-                              rel="noopener noreferrer"
+                              className="gradient-submit-button"
                             >
-                              Submit your video before the end of the day on October 31st here.
-                            </a>
-                          </p>
+                              🚀 Submit Your Video
+                            </button>
+                          </div>
                         </div>
                       ) : (
                         <p
