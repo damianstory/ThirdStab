@@ -59,7 +59,7 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
     },
     {
       title: "Step 6 - Submit",
-      details: "<strong>Take the research you have just completed in steps 1-5 and use it to create a 60-90 second video.</strong>\n\nHow you choose to structure your video is up to you.\n\n• Vertical vs. horizontal? Up to you.\n• Talking head vs. all animations? Up to you.\n• Documentary style vs. tiktok style? Up to you.\n\nThe only requirements are that it addresses each of the 5 steps above, and we're able to click a link to watch it - everything else is - up to you.\n\nScore 75 or higher on the rubric, and you'll be entered into the pool of students who will then be randomly selected to earn one of twenty micro grants.\n\nSomebody has to win. Why not you? Why not now?",
+      details: "<strong>Take the research you have just completed in steps 1-5 and use it to create a 60-90 second video.</strong>\n\nHow you choose to structure your video is up to you.\n\n• Vertical vs. horizontal? Up to you.\n• Talking head vs. all animations? Up to you.\n• Documentary style vs. tiktok style? Up to you.\n\nThe only requirements are that it addresses each of the 5 steps above, and we're able to click a link to watch it - everything else is - up to you.\n\nScore 75/100 or higher on the rubric, and you'll be entered into the pool of students who will then be randomly selected to earn one of twenty micro grants.\n\nSomebody has to win. Why not you? Why not now?",
       hasLinks: true // Flag to render custom links
     }
   ];
