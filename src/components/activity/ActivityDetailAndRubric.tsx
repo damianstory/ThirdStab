@@ -20,10 +20,10 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
   const handleRubricClick = (location: string, e: React.MouseEvent) => {
     e.preventDefault();
     trackExternalLink(
-      'https://claude.ai/public/artifacts/a9e7a244-0594-4771-8b98-d876121df6c9',
+      'https://claude.ai/public/artifacts/a00eb95e-7d81-4043-a3c5-781a040b4e05',
       `View Detailed Rubric - ${location} - ${activity.month}`
     );
-    window.open('https://claude.ai/public/artifacts/a9e7a244-0594-4771-8b98-d876121df6c9', '_blank', 'noopener,noreferrer');
+    window.open('https://claude.ai/public/artifacts/a00eb95e-7d81-4043-a3c5-781a040b4e05', '_blank', 'noopener,noreferrer');
   };
 
   // Track submission link clicks
@@ -129,7 +129,7 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
 
                           <p className="mt-4">
                             📝 <a
-                              href="https://claude.ai/public/artifacts/a9e7a244-0594-4771-8b98-d876121df6c9"
+                              href="https://claude.ai/public/artifacts/a00eb95e-7d81-4043-a3c5-781a040b4e05"
                               onClick={(e) => handleRubricClick('Step 6', e)}
                               className="text-[#0092ff] hover:text-blue-700 underline"
                               target="_blank"
@@ -186,7 +186,7 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
                     {(criterion as any).isLink ? (
                       <div className="text-center">
                         <a
-                          href="https://claude.ai/public/artifacts/a9e7a244-0594-4771-8b98-d876121df6c9"
+                          href="https://claude.ai/public/artifacts/a00eb95e-7d81-4043-a3c5-781a040b4e05"
                           target="_blank"
                           rel="noopener noreferrer"
                           onClick={(e) => handleRubricClick('Rubric Card', e)}

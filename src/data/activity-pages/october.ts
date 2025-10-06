@@ -103,7 +103,7 @@ export const octoberActivity: ActivityPageData = {
         weight: 0,
         description: '',
         isLink: true,
-        url: 'https://claude.ai/public/artifacts/a9e7a244-0594-4771-8b98-d876121df6c9'
+        url: 'https://claude.ai/public/artifacts/a00eb95e-7d81-4043-a3c5-781a040b4e05'
       }
     ],
     totalPoints: 100
