@@ -76,7 +76,7 @@ export const sponsors: Sponsor[] = [
   {
     id: '19',
     name: 'Jack.org',
-    logo: '/images/jack-logo.png',
+    logo: '/images/jack-org-faviconV2.png',
     incentiveType: 'student',
     contribution: 'Placeholder text',
     amount: 'TBD'

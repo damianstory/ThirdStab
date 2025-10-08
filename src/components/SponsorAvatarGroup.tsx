@@ -42,7 +42,7 @@ export default function SponsorAvatarGroup({
         '/images/avatar-6.png',    // Avatar 6
         '/images/avatar-7.png',    // Avatar 7
         '/images/career-hrai-logo.jpg',     // Avatar 8
-        '/images/jack-logo.png'    // Avatar 9
+        '/images/jack-org-faviconV2.png'    // Avatar 9
       ];
 
       const customTitles = [
