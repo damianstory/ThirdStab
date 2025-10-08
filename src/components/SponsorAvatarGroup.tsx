@@ -32,29 +32,31 @@ export default function SponsorAvatarGroup({
     let designation = sponsor.contribution || 'Sponsor';
     
     // Replace specific images and text for student sponsors
-    if (isStudentSponsors && index < 8) {
+    if (isStudentSponsors && index < 9) {
       const customImages = [
         '/images/avatar-1.png',    // Avatar 1
-        '/images/avatar-question.png',    // Avatar 2 - question mark
+        '/images/skillscanada-hand.png',    // Avatar 2 - Skills Canada
         '/images/avatar-3.png',    // Avatar 3
         sponsor.logo || '/images/avatar-default.png', // Avatar 4 - keep original
         '/images/avatar-5.png',    // Avatar 5
         '/images/avatar-6.png',    // Avatar 6
         '/images/avatar-7.png',    // Avatar 7
-        '/images/career-hrai-logo.jpg'     // Avatar 8
+        '/images/career-hrai-logo.jpg',     // Avatar 8
+        '/images/jack-logo.png'    // Avatar 9
       ];
-      
+
       const customTitles = [
         'Mining Industry Human Resources Council',
-        'Coming Soon',
+        'Skills/Compétences Canada',
         'myBlueprint',
         sponsor.name, // Avatar 4 - keep original
         'Zurich Canada',
         'H&R Block Canada',
         'Tourism HR Canada',
-        'Heating, Refrigeration and Air Conditioning Institute of Canada'
+        'Heating, Refrigeration and Air Conditioning Institute of Canada',
+        'Jack.org'
       ];
-      
+
       const customDesignations = [
         'Activity: October 2025',
         'Activity: November 2025',
@@ -63,7 +65,8 @@ export default function SponsorAvatarGroup({
         'Activity: February 2026',
         'Activity: March 2026',
         'Activity: April 2026',
-        'Activity: May 2026'
+        'Activity: May-1 2026',
+        'Activity: May-2 2026'
       ];
       
       imageUrl = customImages[index];

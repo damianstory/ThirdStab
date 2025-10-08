@@ -6,16 +6,6 @@ import { activities } from '@/data/activities';
 export default function Timeline() {
   // Create enhanced timeline data with sponsor information from activities
   const timelineData = [
-    // Promotional month (no sponsor)
-    {
-      year: "2025",
-      month: "September",
-      title: "Promotional Month",
-      industry: "",
-      description: "We'll use this month to welcome students & staff back to school and make sure they know how to participate in the program.\n\nClick the button below to learn more about why we're doing this, and what you need to do to get started.",
-      status: "confirmed",
-      isPromotional: true
-    },
     // Activities with sponsors (mapped from activities.ts)
     ...activities.map(activity => ({
       year: activity.year,
@@ -32,7 +22,7 @@ export default function Timeline() {
       month: "June",
       title: "Final Incentive Distribution",
       industry: "",
-      description: "We'll use this time to distribute any final school-level and series completion incentives.",
+      description: "We'll use this time to distribute any final school-level and series completion incentives. Celebrate your achievements and get recognized for participating in the Industry Immersion Series throughout the year.",
       status: "tba",
       isPromotional: true
     }

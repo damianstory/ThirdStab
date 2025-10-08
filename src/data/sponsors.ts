@@ -19,10 +19,10 @@ export const sponsors: Sponsor[] = [
   },
   {
     id: '2',
-    name: 'BuildWorks Co.',
-    logo: 'https://via.placeholder.com/150x50?text=BuildWorks',
+    name: 'Skills/Compétences Canada',
+    logo: '/images/skillscanada-hand.png',
     incentiveType: 'student',
-    contribution: 'Construction & trades challenge prizes',
+    contribution: 'Activity: November 2025',
     amount: '$1,500/month'
   },
   {
@@ -72,6 +72,14 @@ export const sponsors: Sponsor[] = [
     incentiveType: 'student',
     contribution: 'Advanced manufacturing skill development',
     amount: '$1,000/month'
+  },
+  {
+    id: '19',
+    name: 'Jack.org',
+    logo: '/images/jack-logo.png',
+    incentiveType: 'student',
+    contribution: 'Placeholder text',
+    amount: 'TBD'
   },
 
   // Series Completion Partners

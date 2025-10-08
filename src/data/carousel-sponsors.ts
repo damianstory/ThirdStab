@@ -68,6 +68,13 @@ export const carouselSponsors: CarouselSponsor[] = [
     type: 'activity',
     month: 'May 2026'
   },
+  {
+    id: 'a9',
+    name: 'Jack.org',
+    logo: '/images/jack-logo.png',
+    type: 'activity',
+    month: 'May 2026'
+  },
   // Incentive Sponsors (7)
   {
     id: 'i1',

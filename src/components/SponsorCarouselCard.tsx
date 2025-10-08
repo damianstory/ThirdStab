@@ -66,15 +66,17 @@ export default function SponsorCarouselCard({
             src={logo}
             alt={`${name} logo`}
             className={`${
-              logo === '/images/manufacturing-excellence.png' 
-                ? 'w-[200px] h-[200px] object-contain scale-150' 
+              logo === '/images/manufacturing-excellence.png'
+                ? 'w-[200px] h-[200px] object-contain scale-150'
                 : logo === '/images/your-company-carousel.png'
                   ? 'max-w-full max-h-[100px] sm:max-h-[125px] md:max-h-[150px] object-contain scale-[1.875]'
                   : logo === '/images/mihr-logo.jpg'
                     ? 'max-w-full max-h-[120px] sm:max-h-[150px] md:max-h-[180px] object-contain scale-150'
                     : logo === '/images/trade-finder-final.png'
                       ? 'w-[1200px] h-[400px] object-contain'
-                      : 'max-w-full max-h-[80px] sm:max-h-[100px] md:max-h-[120px] object-contain'
+                      : logo === '/images/jack-logo.png'
+                        ? 'max-w-full max-h-[60px] sm:max-h-[75px] md:max-h-[90px] object-contain'
+                        : 'max-w-full max-h-[80px] sm:max-h-[100px] md:max-h-[120px] object-contain'
             }`}
             onError={() => setImageError(true)}
           />

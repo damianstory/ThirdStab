@@ -63,6 +63,10 @@ export default function FAQ({ initialOpenIndex = null }: FAQProps) {
       answer: "On the 1st of every month."
     },
     {
+      question: "What is meant by May-1 and May-2?",
+      answer: "There are two separate activities to complete in May! Students can complete both. All 9 activities will need to be completed to apply for the Series Completion incentives."
+    },
+    {
       question: "As a student, can I get credit from my teacher for completing these?",
       answer: "Maybe. You should definitely ask your teachers. Be specific about the activity, what you're being asked to complete, and why you think you should get credit for it."
     },

@@ -14,6 +14,7 @@ const companies = [
   { name: 'Logo 6', logo: '/logo6.jpeg' },
   { name: 'Logo 7', logo: '/logo7.png' },
   { name: 'HVACR Career Connections', logo: '/hvacr-career-connections.png' },
+  { name: 'Jack', logo: '/jack-logo.png' },
 ];
 
 export default function Hero() {
@@ -100,7 +101,8 @@ export default function Hero() {
                       company.logo === '/logo3.png' ? 'h-[2.625rem] lg:h-[3.1875rem]' :
                       company.logo === '/logo5.png' ? 'h-[3.85rem] lg:h-[4.675rem]' :
                       company.logo === '/logo7.png' ? 'h-[2.41rem] lg:h-[2.75rem]' :
-                      company.logo === '/hvacr-career-connections.png' ? 'h-[1.97rem] lg:h-[2.39rem]' : 'h-full'
+                      company.logo === '/hvacr-career-connections.png' ? 'h-[1.97rem] lg:h-[2.39rem]' :
+                      company.logo === '/jack-logo.png' ? 'h-[2.36rem] lg:h-[2.84rem]' : 'h-full'
                     }`}
                   />
                 </div>

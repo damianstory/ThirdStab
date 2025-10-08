@@ -155,10 +155,10 @@ export const activities: Activity[] = [
   },
   {
     id: '8',
-    month: 'May',
+    month: 'May-1',
     year: '2026',
     title: 'HVACR Industry Challenge',
-    description: 'HVACR is more than just tools and ductwork—it’s a high‑paying, in‑demand trade with paths into design, engineering, sales, green tech, even owning your own business.',
+    description: 'HVACR is more than just tools and ductwork - it\'s a high-paying, in-demand trade with paths into design, engineering, sales, green tech, even owning your own business.',
     sponsor: {
       name: 'HRAI',
       logo: '/hvacr-career-connections.png',
@@ -171,17 +171,39 @@ export const activities: Activity[] = [
     },
     status: 'coming-soon',
     slug: 'may'
+  },
+  {
+    id: '9',
+    month: 'May-2',
+    year: '2026',
+    title: 'Be There Certificate Challenge',
+    description: 'Learn to support someone struggling with their mental health through this online course created by Jack.org in partnership with Born This Way Foundation.',
+    sponsor: {
+      name: 'Jack.org',
+      logo: '/jack-logo.png',
+      logoType: 'wide'
+    },
+    incentive: {
+      total: 10000,
+      individual: 500,
+      count: 20
+    },
+    status: 'coming-soon',
+    slug: 'may-2'
   }
 ];
 
 // Helper function to get month number from month name
 function getMonthNumber(monthName: string): number {
+  // Remove any suffix like "-1" or "-2" from the month name
+  const cleanMonthName = monthName.split('-')[0];
+
   const months = {
     'January': 0, 'February': 1, 'March': 2, 'April': 3,
     'May': 4, 'June': 5, 'July': 6, 'August': 7,
     'September': 8, 'October': 9, 'November': 10, 'December': 11
   };
-  return months[monthName as keyof typeof months] ?? 0;
+  return months[cleanMonthName as keyof typeof months] ?? 0;
 }
 
 // Helper function to determine activity status based on current date

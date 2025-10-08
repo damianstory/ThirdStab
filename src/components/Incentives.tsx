@@ -5,7 +5,7 @@ import { getLimitedSponsorsByType } from '../data/sponsors';
 import SponsorAvatarGroup from './SponsorAvatarGroup';
 
 export default function Incentives() {
-  const studentSponsors = getLimitedSponsorsByType('student', 8);
+  const studentSponsors = getLimitedSponsorsByType('student', 9);
   const completionSponsors = getLimitedSponsorsByType('completion', 4);
   const educatorSponsors = getLimitedSponsorsByType('educator', 2);
   const schoolSponsors = getLimitedSponsorsByType('school', 4);
@@ -62,9 +62,9 @@ export default function Incentives() {
             <div className="mt-6 pt-6 border-t border-gray-200">
               <p className="text-sm text-gray-500 mb-3">Sponsored by</p>
               <div className="flex justify-start">
-                <SponsorAvatarGroup 
+                <SponsorAvatarGroup
                   sponsors={studentSponsors.sponsors}
-                  maxVisible={8}
+                  maxVisible={9}
                   size="sm"
                   isStudentSponsors={true}
                 />
@@ -77,7 +77,7 @@ export default function Incentives() {
             <span className="text-[#0092ff] font-semibold mb-2 block">02</span>
             <h3 className="brand-h4 mb-3 text-navy">Series Completion Incentive</h3>
             <p className="brand-body2 text-neutral4 mb-6">
-              Students who complete all 8 monthly activities are eligible for separate series completion incentives.
+              Students who complete all 9 monthly activities are eligible for separate series completion incentives.
             </p>
             
             <div className="bg-purple-50 p-6 rounded-xl">
@@ -93,7 +93,7 @@ export default function Incentives() {
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <span className="text-purple-600 mr-2">•</span>
-                  <span className="text-neutral5">Must complete all 8 monthly activities</span>
+                  <span className="text-neutral5">Must complete all 9 monthly activities</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-purple-600 mr-2">•</span>
