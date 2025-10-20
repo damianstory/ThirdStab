@@ -62,11 +62,11 @@ export const activities: Activity[] = [
     id: '3',
     month: 'December',
     year: '2025',
-    title: 'myBlueprint Community Improvement Challenge',
-    description: 'Have an idea to improve your community? Your school, your neighbourhood, your town or city? myBlueprint can help you bring your idea to life. No idea is too big or too small.',
+    title: 'thinkAG Career Exploration Challenge',
+    description: 'Explore Canada\'s agriculture sector in this challenge as you increase your awareness and cultivate curiousity in agriculture and food careers across the country.',
     sponsor: {
-      name: 'myBlueprint',
-      logo: '/logo3.png',
+      name: 'thinkAG',
+      logo: '/thinkag-logo.png',
       logoType: 'wide'
     },
     incentive: {

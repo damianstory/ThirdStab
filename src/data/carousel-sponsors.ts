@@ -28,8 +28,8 @@ export const carouselSponsors: CarouselSponsor[] = [
   },
   {
     id: 'a3',
-    name: 'HealthFirst Partners',
-    logo: '/logo3.png',
+    name: 'thinkAG',
+    logo: '/thinkag-logo.png',
     type: 'activity',
     month: 'December 2025'
   },

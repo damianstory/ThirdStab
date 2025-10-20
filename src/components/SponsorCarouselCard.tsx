@@ -76,7 +76,9 @@ export default function SponsorCarouselCard({
                       ? 'w-[1200px] h-[400px] object-contain'
                       : logo === '/images/jack-logo.png'
                         ? 'max-w-full max-h-[60px] sm:max-h-[75px] md:max-h-[90px] object-contain'
-                        : 'max-w-full max-h-[80px] sm:max-h-[100px] md:max-h-[120px] object-contain'
+                        : logo === '/thinkag-logo.png'
+                          ? 'max-w-full max-h-[64px] sm:max-h-[80px] md:max-h-[96px] object-contain'
+                          : 'max-w-full max-h-[80px] sm:max-h-[100px] md:max-h-[120px] object-contain'
             }`}
             onError={() => setImageError(true)}
           />

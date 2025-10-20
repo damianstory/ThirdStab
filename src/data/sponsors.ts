@@ -27,11 +27,11 @@ export const sponsors: Sponsor[] = [
   },
   {
     id: '3',
-    name: 'HealthFirst Partners',
-    logo: 'https://via.placeholder.com/150x50?text=HealthFirst',
+    name: 'thinkAG',
+    logo: '/images/thinkag-favicon.png',
     incentiveType: 'student',
-    contribution: 'Healthcare career exploration grants',
-    amount: '$1,000/month'
+    contribution: 'Activity: December 2025',
+    amount: '$10,000'
   },
   {
     id: '4',

@@ -36,7 +36,7 @@ export default function SponsorAvatarGroup({
       const customImages = [
         '/images/avatar-1.png',    // Avatar 1
         '/images/skillscanada-hand.png',    // Avatar 2 - Skills Canada
-        '/images/avatar-3.png',    // Avatar 3
+        '/images/thinkag-favicon.png',    // Avatar 3 - thinkAG
         sponsor.logo || '/images/avatar-default.png', // Avatar 4 - keep original
         '/images/avatar-5.png',    // Avatar 5
         '/images/avatar-6.png',    // Avatar 6
@@ -48,7 +48,7 @@ export default function SponsorAvatarGroup({
       const customTitles = [
         'Mining Industry Human Resources Council',
         'Skills/Compétences Canada',
-        'myBlueprint',
+        'thinkAG',
         sponsor.name, // Avatar 4 - keep original
         'Zurich Canada',
         'H&R Block Canada',
