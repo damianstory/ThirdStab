@@ -29,7 +29,7 @@ export default function Incentives() {
             <span className="text-[#0092ff] font-semibold mb-2 block">01</span>
             <h3 className="brand-h4 mb-3 text-navy">Monthly Student Microgrants</h3>
             <p className="brand-body2 text-neutral4 mb-6">
-              We award microgrants of $500 each to 20 students who submit outstanding work for that month's industry challenge.
+              We award microgrants of $500 each to 20 students who submit outstanding work for that month&apos;s industry challenge.
             </p>
             
             <div className="bg-blue-50 p-6 rounded-xl">

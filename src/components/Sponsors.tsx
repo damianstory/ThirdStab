@@ -26,7 +26,7 @@ export default function Sponsors() {
             Our Participating <span className="text-[#0092ff]">Sponsors</span>
           </h2>
           <p className="text-xl text-neutral4 max-w-3xl mx-auto">
-            Let's celebrate these industry leaders collaborating with students to help them develop real-world skills 🤝
+            Let&apos;s celebrate these industry leaders collaborating with students to help them develop real-world skills 🤝
           </p>
         </div>
 

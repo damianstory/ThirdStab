@@ -13,7 +13,7 @@ export default function StayInformed() {
             Want to be the first to find out which activities you and your students can participate in? Sign up below.
             <br />
             <br />
-            We'll only email you with the specifics about what you and your students need to know to take advantage of each month's industry sponsored skill building opportunity.
+            We&apos;ll only email you with the specifics about what you and your students need to know to take advantage of each month&apos;s industry sponsored skill building opportunity.
             </p>
 
             <div className="max-w-md mx-auto mb-8">

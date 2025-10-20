@@ -35,10 +35,10 @@ export default function WhyMicroGrants() {
             {/* Student testimonial */}
             <blockquote className="italic text-neutral4 border-l-4 border-[#0092ff] pl-4 mb-8">
               <p className="leading-relaxed">
-                "Good morning, Mr. Matheson. I had a lot of fun with the micro grant contest, so I decided to take your 
-                recommendation and apply for Basecamp. Thank you so much for giving me the opportunity to 
-                develop the skills and confidence I need to thrive in a place like Basecamp. I'm really excited to see 
-                what this summer has in store for me."
+                &ldquo;Good morning, Mr. Matheson. I had a lot of fun with the micro grant contest, so I decided to take your
+                recommendation and apply for Basecamp. Thank you so much for giving me the opportunity to
+                develop the skills and confidence I need to thrive in a place like Basecamp. I&apos;m really excited to see
+                what this summer has in store for me.&rdquo;
               </p>
               <cite className="mt-2 font-semibold not-italic block">
                 — Student from micro grant pilot with DMZ

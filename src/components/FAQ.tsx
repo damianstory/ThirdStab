@@ -125,7 +125,7 @@ export default function FAQ({ initialOpenIndex = null }: FAQProps) {
             Frequently Asked <span className="text-[#0092ff]">Questions</span>
           </h2>
           <p className="text-xl text-neutral4 max-w-2xl mx-auto">
-            Got questions? We've got answers! Here's everything you need to know about the Industry Immersion Series.
+            Got questions? We&apos;ve got answers! Here&apos;s everything you need to know about the Industry Immersion Series.
           </p>
         </div>
 

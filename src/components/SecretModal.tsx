@@ -22,7 +22,7 @@ export default function SecretModal({ isOpen, onClose }: SecretModalProps) {
         {/* Modal content */}
         <div className="p-6 sm:p-8">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-900 text-center mb-2">
-            It's a secret...for now
+            It&apos;s a secret...for now
           </h2>
           
           {/* Incentive tag placeholder */}
