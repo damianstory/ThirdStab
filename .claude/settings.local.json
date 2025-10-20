@@ -43,7 +43,10 @@
       "Read(/Users/damianmatheson/Desktop/Industry Immersion Series imgs/Company Logos/**)",
       "Read(/Users/damianmatheson/Desktop/Industry Immersion Series imgs/MiHR Landing Page/**)",
       "WebFetch(domain:21st.dev)",
-      "Read(//Users/damianmatheson/Desktop/Industry Immersion Series imgs/Company Logos/**)"
+      "Read(//Users/damianmatheson/Desktop/Industry Immersion Series imgs/Company Logos/**)",
+      "Bash(git add .eslintrc.json package.json package-lock.json src/components/FAQ.tsx src/components/Incentives.tsx src/components/SecretModal.tsx src/components/Sponsors.tsx src/components/StayInformed.tsx src/components/WhyMicroGrants.tsx)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nFix ESLint errors and add linting configuration\n\n- Add ESLint configuration with Next.js core-web-vitals preset\n- Add typecheck script to package.json for CI/CD\n- Install compatible ESLint dependencies (v8 for Next.js 14)\n- Fix unescaped quote entities in multiple components (use &apos;, &ldquo;, &rdquo;)\n- All ESLint errors now resolved, only warnings remain\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push)"
     ],
     "deny": []
   }
