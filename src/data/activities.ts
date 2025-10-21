@@ -62,7 +62,7 @@ export const activities: Activity[] = [
     id: '3',
     month: 'December',
     year: '2025',
-    title: 'thinkAG Career Exploration Challenge',
+    title: 'Agriculture Career Exploration Challenge',
     description: 'Explore Canada\'s agriculture sector in this challenge as you increase your awareness and cultivate curiousity in agriculture and food careers across the country.',
     sponsor: {
       name: 'thinkAG',
