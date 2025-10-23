@@ -68,28 +68,28 @@ export const novemberActivity: ActivityPageData = {
     description: 'Skills for Success are the foundation for building a successful career and life. These nine essential skills help Canadians adapt to change, solve problems, and thrive in any workplace.<br/><br/><strong>This challenge invites students to explore the Skills for Success framework</strong> and demonstrate how these skills apply to real-world scenarios in their chosen career paths.',
     steps: [
       {
-        title: "Step 1 - Choose Your Skill",
-        details: "Select one of Canada's nine Skills for Success to focus on:\n\n• Adaptability\n• Collaboration\n• Communication\n• Creativity & Innovation\n• Digital\n• Numeracy\n• Problem Solving\n• Reading\n• Writing\n\n<strong>Pick the skill that interests you most or that you want to develop further.</strong>"
+        title: "Step 1: Choose Your Activity",
+        details: "Explore the Activities in the section below. Read through them carefully to know what is being asked of you. Then pick the one that you're most excited about. Complete the activity. You can do this individually on your own, or as an activity you do in class with your teacher." 
       },
       {
-        title: "Step 2 - Research the Skill",
-        details: "<strong>Research your chosen skill and explain what it means in a professional context.</strong>\n\nUse the Skills for Success resources provided below to understand:\n• What this skill involves\n• Why it's important in the workplace\n• How it's used across different careers"
+        title: "Step 2: Research Your Trade or Career",
+        details: "Find out what it's really like to work in the trade or career connected to your activity. What does someone in this job do all day? What are their main tasks? Do they work regular 9 to 5 hours, or do they work shifts, weekends, or seasonal schedules? Where do they work? Is it indoors, outdoors, or both? Include any special requirements like physical strength, technical skills, or safety gear."
       },
       {
-        title: "Step 3 - Career Connection",
-        details: "<strong>Identify a specific career or industry where this skill is essential.</strong>\n\nExplain:\n• How professionals in this field use the skill daily\n• Real-world examples or scenarios\n• What happens when this skill is missing or underdeveloped"
+        title: "Step 3: Identify Three Essential Skills for Success",
+        details: "Look at the official 9 Skills for Success (Reading, Writing, Numeracy, Digital Skills, Thinking, Oral Communication, Working with Others, Adaptability, and Creativity & Innovation). Pick THREE that are most important for your chosen trade. Don't just name them. Give specific examples of how workers actually use each skill on the job. Make it real and practical!"
       },
       {
-        title: "Step 4 - Personal Development",
-        details: "<strong>Reflect on your own skill level and create a development plan.</strong>\n\n• How would you rate yourself on this skill currently?\n• What opportunities do you have to practice it (school, work, hobbies)?\n• What specific actions can you take to improve?"
+        title: "Step 4: Map Your Education and Training Pathway",
+        details: "How do you actually get into this career? Research the education and training required. Is it an apprenticeship where you learn while working? Is it a Red Seal trade recognized across Canada? What college or training programs exist? How long does training take? Where can you get this training in Canada? What courses should you take in high school to prepare?"
       },
       {
-        title: "Step 5 - Future Impact",
-        details: "<strong>Explain how developing this skill will benefit your future career and life goals.</strong>\n\nConsider:\n• How this skill connects to your career interests\n• The transferability of this skill across different jobs\n• Its importance in Canada's evolving workforce"
+        title: "Step 5: Explore Career Opportunities Across Canada",
+        details: "Where are the jobs? Research which provinces or cities have the most opportunities in your chosen field. Is this career growing or shrinking? What's causing the demand (like baby boomers retiring or new technology creating jobs)? Use real data to show why someone should consider this career path and where they might need to move to find work."
       },
       {
-        title: "Step 6 - Submit",
-        details: "<strong>Take the research and reflection you completed in steps 1-5 and create a 60-90 second video.</strong>\n\nHow you structure your video is up to you:\n\n• Vertical vs. horizontal? Up to you.\n• Talking head vs. animations? Up to you.\n• Formal vs. creative style? Up to you.\n\nThe only requirements are that it addresses each of the 5 steps above, and we're able to click a link to watch it.\n\nScore 75/100 or higher on the rubric, and you'll be entered into the pool for one of twenty micro grants.\n\nSomebody has to win. Why not you?"
+        title: "Step 6: Submit Your Activity Video",
+        details: "Make a 60 to 90 second video showing you doing your chosen activity while sharing what you learned. Actually demonstrate the hands-on skill, then connect it to the Skills for Success you researched. Explain why this trade matters and what surprised you about this career path. Be creative with your format but make sure we can watch it through a shareable link. Show us your skills in action!"
       }
     ]
   },
