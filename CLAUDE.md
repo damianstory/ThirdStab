@@ -178,20 +178,61 @@ Required for Zoho Campaigns integration:
 - Custom button text and spacing for promotional cards
 - Line break handling with `whitespace-pre-line` CSS class
 
-**Activity Page Template System**:
-- `ActivityDetailAndRubric`: Interactive accordion component with step-by-step activity instructions
-- `VideoAndExplainer`: Video embed with challenge overview table format
-- `ActivityHero`: Dynamic hero section with sponsor branding and taglines
-- `ActivityFAQ`: Expandable FAQ section with activity-specific questions
-- `SponsorResources`: Resource gallery with categorized links (videos, PDFs, articles)
-- `IncentivesAndNavigation`: Cross-activity navigation with incentive highlighting
+**Activity Page Template System** (Fully Reusable):
+
+All activity pages follow a consistent template structure with 6 main components. Each component is 100% data-driven with no hardcoded content:
+
+1. **ActivityHero**: Dynamic background images, taglines, and intro text per activity
+2. **VideoAndExplainer**: Two separate videos per activity
+   - Challenge Overview video (main educational content)
+   - "How this Works" video (instructional/tutorial)
+3. **ActivityDetailAndRubric**: Step-by-step activity instructions
+   - Fully dynamic steps defined in data (not hardcoded)
+   - Last step automatically renders submission button and rubric link
+   - All URLs (submission, rubric) come from activity data
+4. **SponsorResources**: Resource gallery with categorized links (videos, PDFs, articles)
+5. **ActivityFAQ**: Expandable FAQ section with activity-specific questions
+6. **IncentivesAndNavigation**: Cross-activity navigation with incentive highlighting
 
 **Data Architecture for Activities**:
-- Base `Activity` interface for core timeline data (8 activities from Oct 2025 - May 2026)
-- Extended `ActivityPageData` interface for full page content (hero, video, rubric, FAQs, resources)
-- Dynamic status calculation: `getCurrentStatus()` determines if activity is `coming-soon`, `active`, or `ongoing`
-- Static generation for all valid activity months with metadata optimization
-- Graceful fallback rendering for activities without full page data
+
+Two-tier system for maximum flexibility:
+
+- **Base `Activity` interface** (`src/data/activities.ts`):
+  - Core timeline data for all 8 activities (Oct 2025 - May 2026)
+  - Used by Timeline component on landing page
+  - Contains: id, month, year, title, description, sponsor, incentive, slug
+
+- **Extended `ActivityPageData` interface** (`src/data/activities.ts`):
+  - Full page content for complete activity pages
+  - Extends `Activity` with additional sections:
+    - `hero`: backgroundImage, tagline, introText
+    - `video`: Challenge Overview video details
+    - `howThisWorksVideo`: Separate instructional video (optional)
+    - `explainer`: Challenge Overview table data
+    - `activityDetail`: description + steps array (fully customizable per activity)
+    - `rubric`: criteria array + detailedRubricUrl
+    - `submission`: url, deadline, instructions
+    - `faqs`: question/answer pairs
+    - `resources`: links with type categorization
+    - `meta`: SEO/OG metadata
+
+- **Activity Page Data Files** (`src/data/activity-pages/[month].ts`):
+  - Each month has its own data file (e.g., `october.ts`, `november.ts`)
+  - Export `[month]Activity` object implementing `ActivityPageData`
+  - Imported in `src/app/[month]/page.tsx` via `getActivityPageData()` function
+
+**Adding a New Activity Page**:
+
+1. Create `src/data/activity-pages/[month].ts` following `ActivityPageData` interface
+2. Add import in `src/app/[month]/page.tsx`
+3. Add case to `getActivityPageData()` function
+4. Ensure month slug is in `validActivityMonths` array
+5. All components automatically render with new data - no code changes needed!
+
+**Dynamic Status Calculation**:
+- `getCurrentStatus()` automatically determines if activity is `coming-soon`, `active`, or `ongoing` based on current date
+- Used for badge colors, button states, and conditional rendering throughout the app
 
 **Animation Layers**:
 - WebGL animated background (OGL library) in Hero section

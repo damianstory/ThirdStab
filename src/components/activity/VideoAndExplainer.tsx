@@ -21,8 +21,8 @@ export default function VideoAndExplainer({ activity }: VideoAndExplainerProps) 
             {/* Video Embed Container */}
             <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg">
               <iframe
-                src="https://www.youtube.com/embed/WevQbV6TLv8"
-                title="Mining Needs You"
+                src={activity.video.embedUrl}
+                title={activity.video.title}
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"

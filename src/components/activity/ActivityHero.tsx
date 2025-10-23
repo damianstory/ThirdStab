@@ -5,11 +5,17 @@ interface ActivityHeroProps {
 }
 
 export default function ActivityHero({ activity }: ActivityHeroProps) {
+  // Determine background image - use activity-specific or fallback to default
+  const backgroundImage = activity.hero.backgroundImage || '/activity-hero-mining.webp';
+
   return (
     <section className="relative min-h-[500px] md:min-h-[600px] lg:min-h-[700px] overflow-hidden">
       {/* Background Image Layer */}
-      <div className="absolute inset-0 activity-hero-bg activity-hero-bg-mobile md:activity-hero-bg-desktop" />
-      
+      <div
+        className="absolute inset-0 activity-hero-bg-mobile md:activity-hero-bg-desktop bg-cover bg-no-repeat"
+        style={{ backgroundImage: `url('${backgroundImage}')` }}
+      />
+
       {/* Gradient Overlay Layer */}
       <div className="absolute inset-0 activity-hero-gradient-mobile md:activity-hero-gradient-desktop" />
       

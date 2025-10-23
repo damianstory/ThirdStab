@@ -269,6 +269,12 @@ export interface ActivityPageData extends Activity {
     title: string;
     description: string;
   };
+
+  // How this Works Video (separate from Challenge Overview video)
+  howThisWorksVideo?: {
+    embedUrl: string;
+    title: string;
+  };
   
   // Explainer Table/Timeline
   explainer: {
@@ -282,10 +288,12 @@ export interface ActivityPageData extends Activity {
   // Activity Detail & Rubric
   activityDetail: {
     description: string;
-    requirements: string[];
-    deliverables: string[];
+    steps: Array<{
+      title: string;
+      details: string;
+    }>;
   };
-  
+
   rubric: {
     criteria: Array<{
       category: string;
@@ -295,11 +303,12 @@ export interface ActivityPageData extends Activity {
       url?: string;
     }>;
     totalPoints: number;
+    detailedRubricUrl?: string; // URL to full detailed rubric
   };
-  
+
   // Submission
   submission: {
-    googleFormUrl: string;
+    url: string; // Submission form/survey URL
     deadline: Date;
     instructions: string;
   };

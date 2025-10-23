@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { activities, validActivityMonths, getActivityBySlug, type ActivityPageData } from '@/data/activities';
 import { octoberActivity } from '@/data/activity-pages/october';
+import { novemberActivity } from '@/data/activity-pages/november';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import StayInformed from '@/components/StayInformed';
@@ -19,11 +20,17 @@ interface ActivityPageProps {
 
 // Get activity page data by slug
 function getActivityPageData(slug: string): ActivityPageData | null {
-  // For now, only October has full page data
-  if (slug.toLowerCase() === 'october') {
+  const slugLower = slug.toLowerCase();
+
+  // Return full page data for months that have it
+  if (slugLower === 'october') {
     return octoberActivity;
   }
-  
+
+  if (slugLower === 'november') {
+    return novemberActivity;
+  }
+
   // For other months, return null (will show basic activity info)
   return null;
 }

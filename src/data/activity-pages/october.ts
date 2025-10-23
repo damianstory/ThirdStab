@@ -27,10 +27,15 @@ export const octoberActivity: ActivityPageData = {
   },
   
   video: {
-    embedUrl: 'https://www.youtube.com/embed/JYiO_gkFqWM',
+    embedUrl: 'https://www.youtube.com/embed/WevQbV6TLv8',
     title: 'Mining Needs You',
     description: `Mining is essential to our way of life today and the world we want to create tomorrow.
     With careers above and underground, in the field, in minerals processing and metallurgy facilities, laboratories, and offices – there's a place for you in mining.`
+  },
+
+  howThisWorksVideo: {
+    embedUrl: 'https://www.youtube.com/embed/JYiO_gkFqWM',
+    title: 'How this Works - October Challenge'
   },
   
   explainer: {
@@ -61,18 +66,31 @@ export const octoberActivity: ActivityPageData = {
   
   activityDetail: {
     description: 'The mining industry is at the forefront of technological innovation, environmental stewardship, and sustainable resource development.<br/><br/><strong>This challenge invites students to explore the diverse career pathways in mining</strong>, from traditional underground operations to modern data analytics and environmental sciences.',
-    requirements: [
-      'Research a specific mining career that interests you',
-      'Create a presentation or infographic about your chosen career',
-      'Include information about education requirements, day-to-day tasks, and career progression',
-      'Explain how this career contributes to sustainable mining practices',
-      'Submit your work through the provided Google Form',
-      '<a href="https://www.surveymonkey.com/r/K2W32NQ" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Submit your video before the end of the day on October 31st here.</a>'
-    ],
-    deliverables: [
-      'A 3-5 minute presentation video OR a detailed infographic',
-      'Written reflection (300-500 words) on why this career appeals to you',
-      'List of sources used in your research (minimum 3 credible sources)'
+    steps: [
+      {
+        title: "Step 1 - Career Spotlight",
+        details: "Start by identifying a specific role within the mining industry, for example: Environmental Scientist, Mining Engineer, Data Analyst, Technical Services Specialist, etc. There are MANY to choose from.\n\nYou can use the MiHR Resources below, and/or do your own research, but you need to be able to cite your sources.\n\nImportant: Select one specific role. Research it.\n\n<strong>Then explain what someone in that role is generally responsible for on a day to day basis.</strong>"
+      },
+      {
+        title: "Step 2 - Skills Focus",
+        details: "<strong>Highlight 2-3 skills or competencies that are required in that role.</strong>\n\nThese could be transferable or durable skills like critical thinking, and/or more specific technical skills that are unique to the role."
+      },
+      {
+        title: "Step 3 - Pathways to Work",
+        details: "<strong>Explain the potential post-secondary pathways and training options required to work in that position.</strong>\n\nFor example, does that role require an apprenticeship, college or university level education? Are there specific certifications that are required?"
+      },
+      {
+        title: "Step 4 - Sustainability Focus",
+        details: "<strong>Describe specific actions the mining industry is taking as part of their commitment to sustainability and its importance to reaching Canada's environmental goals.</strong>\n\nFor example, integration of renewable energy and eco-friendly equipment, strategic investments in northern infrastructure, and strong collaboration with Indigenous communities to advance responsible land management and nature-positive goals, etc."
+      },
+      {
+        title: "Step 5 - Future Outlook",
+        details: "MiHR's research shows 80,000 new workers are needed in the industry by 2030.\n\n<strong>Explain the outlook for the role you have identified. Where are the jobs in Canada? Is there a higher demand for it in one part of the country than another?</strong>"
+      },
+      {
+        title: "Step 6 - Submit",
+        details: "<strong>Take the research you have just completed in steps 1-5 and use it to create a 60-90 second video.</strong>\n\nHow you choose to structure your video is up to you.\n\n• Vertical vs. horizontal? Up to you.\n• Talking head vs. all animations? Up to you.\n• Documentary style vs. tiktok style? Up to you.\n\nThe only requirements are that it addresses each of the 5 steps above, and we're able to click a link to watch it - everything else is - up to you.\n\nScore 75/100 or higher on the rubric, and you'll be entered into the pool of students who will then be randomly selected to earn one of twenty micro grants.\n\nSomebody has to win. Why not you? Why not now?"
+      }
     ]
   },
   
@@ -106,11 +124,12 @@ export const octoberActivity: ActivityPageData = {
         url: 'https://claude.ai/public/artifacts/a00eb95e-7d81-4043-a3c5-781a040b4e05'
       }
     ],
-    totalPoints: 100
+    totalPoints: 100,
+    detailedRubricUrl: 'https://claude.ai/public/artifacts/a00eb95e-7d81-4043-a3c5-781a040b4e05'
   },
   
   submission: {
-    googleFormUrl: 'https://forms.google.com/placeholder-october-form',
+    url: 'https://www.surveymonkey.com/r/K2W32NQ',
     deadline: new Date('2025-10-31T23:59:59-05:00'),
     instructions: 'Submit your completed presentation or infographic along with your written reflection through the Google Form. Ensure all files are properly named with your name and school.'
   },
