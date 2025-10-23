@@ -25,7 +25,7 @@ export default function ActivityFAQ({ activity }: ActivityFAQProps) {
   };
 
   return (
-    <section className="py-16 lg:py-20 px-4 md:px-12 bg-white">
+    <section className="py-16 lg:py-20 px-4 md:px-12 bg-[#F8FAFB]">
       <div className="container mx-auto max-w-4xl">
         {/* Section Header */}
         <div className="text-center mb-12">

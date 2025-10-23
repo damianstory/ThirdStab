@@ -10,6 +10,7 @@ import VideoAndExplainer from '@/components/activity/VideoAndExplainer';
 import ActivityDetailAndRubric from '@/components/activity/ActivityDetailAndRubric';
 import ActivityFAQ from '@/components/activity/ActivityFAQ';
 import SponsorResources from '@/components/activity/SponsorResources';
+import SkillsForSuccess from '@/components/activity/SkillsForSuccess';
 import IncentivesAndNavigation from '@/components/activity/IncentivesAndNavigation';
 
 interface ActivityPageProps {
@@ -105,6 +106,7 @@ export default function ActivityPage({ params }: ActivityPageProps) {
           <VideoAndExplainer activity={activityPageData} />
           <ActivityDetailAndRubric activity={activityPageData} />
           <SponsorResources activity={activityPageData} />
+          {activityPageData.month === 'November' && <SkillsForSuccess activity={activityPageData} />}
           <ActivityFAQ activity={activityPageData} />
           <IncentivesAndNavigation currentActivity={activityPageData} />
         </main>
