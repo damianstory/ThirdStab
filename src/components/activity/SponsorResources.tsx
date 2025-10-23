@@ -46,20 +46,16 @@ export default function SponsorResources({ activity }: SponsorResourcesProps) {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="brand-h2 text-[#22224C] mb-4">
-            {activity.sponsor.name} Resources
+            Choose Your Activity
           </h2>
           <p className="brand-body1 text-neutral-500">
-            Resources to help you succeed in this challenge
+            You can complete multiple activities if you want. But one per submission.
           </p>
         </div>
 
         {/* Resources Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 grid-rows-[1fr] auto-rows-fr">
           {activity.resources.map((resource, index) => {
-            const typeConfig = resourceTypeConfig[resource.type];
-            // Special case for Workforce Map - use Globe icon
-            const icon = resource.title === 'Workforce Map' ? <Globe size={24} /> : typeConfig.icon;
-
             return (
               <div
                 key={index}
@@ -67,8 +63,8 @@ export default function SponsorResources({ activity }: SponsorResourcesProps) {
                 className="bg-white border border-neutral2 rounded-xl p-6 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:border-[#0092ff] group h-full flex flex-col"
               >
                 {/* Resource Icon */}
-                <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${typeConfig.color} group-hover:scale-110 transition-transform duration-200`}>
-                  {icon}
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 text-blue-500 bg-blue-50 group-hover:scale-110 transition-transform duration-200">
+                  <ExternalLink size={24} />
                 </div>
 
                 {/* Resource Title */}

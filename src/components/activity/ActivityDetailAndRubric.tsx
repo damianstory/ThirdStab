@@ -56,7 +56,7 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
           {/* Activity Detail - Left Column (2/3 width) */}
           <div className="lg:col-span-2">
             <h2 className="brand-h2 text-[#22224C] mb-6">
-              Activity Details
+              Challenge Details
             </h2>
 
             {/* Description */}

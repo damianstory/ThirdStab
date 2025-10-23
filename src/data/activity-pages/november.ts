@@ -24,7 +24,7 @@ export const novemberActivity: ActivityPageData = {
   hero: {
     backgroundImage: '/november-hero.jpg',
     tagline: 'Build Your Skills for Success',
-    introText: `Canada's Skills for Success framework identifies nine essential skills that help you thrive in work, learning, and life. Join Skills Competences Canada to explore these foundational competencies and discover how they can unlock opportunities in any career path you choose.`
+    introText: `Canada's Skills for Success framework identifies nine essential skills that help you thrive in work, learning, and life. Join Skills/Compétences Canada to explore these foundational competencies and discover how they can unlock opportunities in any career path you choose.`
   },
 
   video: {
@@ -205,39 +205,39 @@ We will publish de-identified (anonymous summary data) information to provide up
 
   resources: [
     {
-      title: 'Skills for Success Framework',
-      description: 'Learn about all nine Skills for Success and how they support career development.',
-      url: 'https://www.canada.ca/en/services/jobs/training/initiatives/skills-success.html',
+      title: 'Activity 1',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      url: '#',
       type: 'link'
     },
     {
-      title: 'Explore Career Paths',
-      description: 'Discover how Skills for Success apply to different careers and industries.',
-      url: 'https://www.skillscompetencescanada.com/',
+      title: 'Activity 2',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      url: '#',
       type: 'link'
     },
     {
-      title: 'Skills Assessment Tools',
-      description: 'Self-assessment resources to help you identify your current skill levels.',
-      url: 'https://www.canada.ca/en/services/jobs/training.html',
+      title: 'Activity 3',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      url: '#',
       type: 'link'
     },
     {
-      title: 'Video Library',
-      description: 'Watch videos showcasing Skills for Success in action across various careers.',
-      url: 'https://www.skillscompetencescanada.com/resources',
-      type: 'video'
-    },
-    {
-      title: 'Skill Development Resources',
-      description: 'Find tools and activities to help you build your Skills for Success.',
-      url: 'https://www.canada.ca/en/services/jobs/training/initiatives/skills-success/tools.html',
+      title: 'Activity 4',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      url: '#',
       type: 'link'
     },
     {
-      title: 'Educator Resources',
-      description: 'Resources for teachers and educators to integrate Skills for Success into curriculum.',
-      url: 'https://www.skillscompetencescanada.com/educators',
+      title: 'Activity 5',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      url: '#',
+      type: 'link'
+    },
+    {
+      title: 'Activity 6',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      url: '#',
       type: 'link'
     }
   ],
