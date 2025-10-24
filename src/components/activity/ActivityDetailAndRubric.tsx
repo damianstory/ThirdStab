@@ -151,7 +151,7 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
             </div>
 
             {/* Rubric */}
-            <div className="bg-white border border-neutral2 rounded-xl overflow-hidden mt-8 lg:mt-32">
+            <div className="bg-white border border-neutral2 rounded-xl overflow-hidden mt-8 lg:mt-8">
               <div className="bg-[#0092ff] text-white px-4 py-3">
                 <h3 className="font-semibold text-lg">Evaluation Rubric Summary</h3>
                 <p className="text-sm opacity-90">Total: {activity.rubric.totalPoints} points</p>

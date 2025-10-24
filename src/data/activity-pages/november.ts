@@ -30,7 +30,7 @@ export const novemberActivity: ActivityPageData = {
   video: {
     embedUrl: 'https://www.youtube.com/embed/MkBwR2LC6Mo',
     title: 'Skills for Success Overview',
-    description: `Explore Canada's Skills for Success: nine skills that can set workers up for success with work, learning, and life – no matter where they live or what job they pursue. Learn about adaptability, collaboration, communication, creativity and innovation, digital skills, numeracy, problem solving, reading, and writing.`
+    description: `Explore Canada's Skills for Success: nine skills that can set workers up for success with work, learning, and life – no matter where they live or what job they pursue. Scroll down to learn how they're being used across careers in skilled trades and technology.`
   },
 
   howThisWorksVideo: {
@@ -97,35 +97,35 @@ export const novemberActivity: ActivityPageData = {
   rubric: {
     criteria: [
       {
-        category: 'Content & Accuracy',
-        weight: 40,
-        description: 'Comprehensive coverage of the chosen skill with accurate, detailed information about its real-world applications'
+        category: 'Activity Completion & Evidence',
+        weight: 25,
+        description: 'Activity clearly completed with strong visual/verbal evidence. Shows enthusiasm and genuine engagement with hands-on task. Process and/or results clearly demonstrated.'
       },
       {
-        category: 'Research & Citations',
-        weight: 20,
-        description: 'Quality sources properly cited throughout the presentation with credible references'
+        category: 'Career Research Depth',
+        weight: 25,
+        description: 'Full and specific coverage: Daily tasks, work environment, schedule specifics. Detailed education pathway (specific programs/schools). Clear job outlook with provincial data. Strong connection made between activity and career(s).'
       },
       {
-        category: 'Engagement & Creativity',
-        weight: 20,
-        description: 'Compelling delivery that maintains viewer interest through creative presentation and clear examples'
+        category: 'Skills for Success Application',
+        weight: 25,
+        description: 'Three Skills for Success clearly identified from official framework. Specific, realistic job examples for each skill. Examples directly connect to actual daily tasks and responsibilities.'
       },
       {
-        category: 'Communication & Clarity',
-        weight: 20,
-        description: 'Clear audio/visuals with logical organization, smooth flow, and effective communication of key concepts'
+        category: 'Sources & Citations',
+        weight: 25,
+        description: '2+ credible sources clearly cited for job outlook data. Uses authoritative sources (Job Bank, StatsCan, industry associations). Clear attribution (e.g., "According to Job Bank...").'
       },
       {
         category: 'View Detailed Evaluation Rubric Here',
         weight: 0,
         description: '',
         isLink: true,
-        url: 'https://claude.ai/public/artifacts/placeholder-november-rubric'
+        url: 'https://claude.ai/public/artifacts/c2bdfafa-8329-4ada-be93-ab0b98caa98d'
       }
     ],
     totalPoints: 100,
-    detailedRubricUrl: 'https://claude.ai/public/artifacts/placeholder-november-rubric'
+    detailedRubricUrl: 'https://claude.ai/public/artifacts/c2bdfafa-8329-4ada-be93-ab0b98caa98d'
   },
 
   submission: {
