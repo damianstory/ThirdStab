@@ -78,9 +78,10 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
                     aria-controls={`step-${index}-content`}
                   >
                     <div className="flex-1 pr-4">
-                      <h3 className="brand-h4 text-[#22224C] mb-4">
-                        {step.title}
-                      </h3>
+                      <h3
+                        className="brand-h4 text-[#22224C] mb-4"
+                        dangerouslySetInnerHTML={{ __html: step.title }}
+                      />
                     </div>
                     <svg
                       className={`w-6 h-6 text-gray-400 flex-shrink-0 transform transition-transform duration-300 ${
@@ -106,21 +107,16 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
                         <div className="brand-body2 text-neutral-500 whitespace-pre-line">
                           <p dangerouslySetInnerHTML={{ __html: step.details }} />
 
-                          {activity.rubric.detailedRubricUrl && (
-                            <p className="mt-4">
-                              📝 <a
-                                href={activity.rubric.detailedRubricUrl}
+                          <div className="mt-12 flex flex-col items-center gap-6">
+                            {activity.rubric.detailedRubricUrl && (
+                              <button
                                 onClick={(e) => handleRubricClick('Step 6', e)}
-                                className="text-[#0092ff] hover:text-blue-700 underline"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                className="gradient-rubric-button"
                               >
-                                View Detailed Evaluation Rubric Here
-                              </a>
-                            </p>
-                          )}
+                                📝 Evaluation Rubric
+                              </button>
+                            )}
 
-                          <div className="mt-12 flex justify-center">
                             <button
                               onClick={handleSubmissionClick}
                               className="gradient-submit-button"

@@ -65,31 +65,31 @@ export const novemberActivity: ActivityPageData = {
   },
 
   activityDetail: {
-    description: 'Skills for Success are the foundation for building a successful career and life. These nine essential skills help Canadians adapt to change, solve problems, and thrive in any workplace.<br/><br/><strong>This challenge invites students to explore the Skills for Success framework</strong> and demonstrate how these skills apply to real-world scenarios in their chosen career paths.',
+    description: 'Skills for Success are the foundation for building a successful career and life. These nine essential skills help Canadians adapt to change, solve problems, and thrive in any workplace.<br/><br/><strong>This challenge invites students to explore the Skills for Success framework</strong> and demonstrate how these skills apply to real-world scenarios across career paths of interest.',
     steps: [
       {
         title: "Step 1: Choose Your Activity",
-        details: "Explore the Activities in the section below. Read through them carefully to know what is being asked of you. Then pick the one that you're most excited about. Complete the activity. You can do this individually on your own, or as an activity you do in class with your teacher." 
+        details: "Explore the Activities in the <em>Choose Your Activity</em> section below 👇 \n\n Read through them carefully to know what is being asked of you.\n\n <strong>Pick the one that you're most excited about. Complete the activity.</strong>\n\nYou can do this individually on your own, or as an activity you do in class with your teacher.\n\nAfter you complete the activity, you're ready to move on to Step 2."
       },
       {
         title: "Step 2: Research Your Trade or Career",
-        details: "Find out what it's really like to work in the trade or career connected to your activity. What does someone in this job do all day? What are their main tasks? Do they work regular 9 to 5 hours, or do they work shifts, weekends, or seasonal schedules? Where do they work? Is it indoors, outdoors, or both? Include any special requirements like physical strength, technical skills, or safety gear."
+        details: "<strong>Research what it's really like to work in the trade or career connected to your activity.</strong>\n\nFor example:\n• What does someone in this job do all day?\n• What are their main tasks and responsibilities?\n• Do they work regular 9 to 5 hours, or do they work shifts, weekends, or seasonal schedules?\n• Where do they work? Is it indoors, outdoors, or both?\n• What types of projects do they work on?"
       },
       {
         title: "Step 3: Identify Three Essential Skills for Success",
-        details: "Look at the official 9 Skills for Success (Reading, Writing, Numeracy, Digital Skills, Thinking, Oral Communication, Working with Others, Adaptability, and Creativity & Innovation). Pick THREE that are most important for your chosen trade. Don't just name them. Give specific examples of how workers actually use each skill on the job. Make it real and practical!"
+        details: "Understand what the official 9 Skills for Success are and what they mean. You can learn more about them in the <em>Learn about the Skills for Success</em> section below 👇 \n\n <strong>Pick THREE that are most important for your chosen trade</strong>\n\n IMPORTANT: Don't just name them. <strong>Give specific examples</strong> of how workers actually use each skill on the job as part of what they do every day, and their work tasks & responsibilities."
       },
       {
         title: "Step 4: Map Your Education and Training Pathway",
-        details: "How do you actually get into this career? Research the education and training required. Is it an apprenticeship where you learn while working? Is it a Red Seal trade recognized across Canada? What college or training programs exist? How long does training take? Where can you get this training in Canada? What courses should you take in high school to prepare?"
+        details: "<strong>Research the education and training required for this role.</strong>\n\n• How do you actually get into this career?\n• Is it an apprenticeship where you learn while working?\n• Is it a Red Seal trade recognized across Canada?\n• What college or training programs exist?\n• How long does training take?\n• Where can you get this training in Canada?\n• What courses should you take in high school to prepare?\n\n<strong>Pro tip:</strong> Be specific. For example, instead of just saying 'a college program', mention a specific program and school."
       },
       {
         title: "Step 5: Explore Career Opportunities Across Canada",
-        details: "Where are the jobs? Research which provinces or cities have the most opportunities in your chosen field. Is this career growing or shrinking? What's causing the demand (like baby boomers retiring or new technology creating jobs)? Use real data to show why someone should consider this career path and where they might need to move to find work."
+        details: "<strong>Research where the job outlook for these types of roles. </strong>\n\n• Is this career in-demand?\n• How many types of these jobs are projected to be needed in your province/territory?\n• What's causing the demand (like people retiring or new technology creating jobs)?\n\n<strong>Cite your sources when speaking to this.</strong> You don't need to submit anything extra - just mention them in your submission.\n\nFor example, saying/showing something like any of the below would work great:\n\n• \"according to Job Bank...\"\n• \"the industry association website says...\"\n• \"StatsCan projects...\"\n• \"this report from Indeed says...\"\n• \"the myBlueprint occupation profile for this occupation mentions...\""
       },
       {
         title: "Step 6: Submit Your Activity Video",
-        details: "Make a 60 to 90 second video showing you doing your chosen activity while sharing what you learned. Actually demonstrate the hands-on skill, then connect it to the Skills for Success you researched. Explain why this trade matters and what surprised you about this career path. Be creative with your format but make sure we can watch it through a shareable link. Show us your skills in action!"
+        details: "<strong>Create a 60-90 second video showing what you did in the activity and what you learned from the research across Steps 1-5.</strong>\n\nHow you choose to structure your video is up to you.\n\n• Vertical vs. horizontal? Up to you.\n• Talking head vs. all animations? Up to you.\n• Documentary style vs. tiktok style? Up to you.\n\nThe only requirements are that it addresses each of the 5 steps above (including evidence of your completed activity), and we're able to click a link to watch it. Everything else is up to you.\n\n<strong>IMPORTANT: Make sure the video link has the proper sharing settings in place.</strong>\n\nFor example:\n• If you're using Google Drive, make sure someone outside of your organization can watch it.\n• If you're using Youtube, make sure it's not listed as Private. Unlisted works great though.\n• Make sure it's not something that requires us to log in.\n\n<strong>A great way to test this is by pasting your link into a Chrome Incognito window.</strong> If it works in there without requiring login, it should work for us too.\n\nIt's your responsibility to make sure we can view your work."
       }
     ]
   },

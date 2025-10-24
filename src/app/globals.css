@@ -215,6 +215,36 @@
     );
   }
 
+  /* Gradient Rubric Button */
+  .gradient-rubric-button {
+    @apply relative inline-flex items-center justify-center;
+    @apply px-8 py-4 rounded-xl;
+    @apply font-bold text-lg text-white;
+    @apply transition-all duration-300 ease-out;
+    @apply shadow-lg hover:shadow-2xl;
+    background: linear-gradient(135deg, #66B3FF 0%, #0092ff 50%, #0070cc 100%);
+    background-size: 200% 200%;
+  }
+
+  .gradient-rubric-button:hover {
+    @apply scale-105;
+    box-shadow: 0 0 30px rgba(102, 179, 255, 0.5);
+  }
+
+  .gradient-rubric-button:active {
+    @apply scale-95;
+  }
+
+  .gradient-rubric-button:focus-visible {
+    @apply outline-none ring-4 ring-brandBlue ring-opacity-50;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .gradient-rubric-button {
+      animation: gradient-shift 3s ease-in-out infinite;
+    }
+  }
+
   /* Gradient Submit Button */
   .gradient-submit-button {
     @apply relative inline-flex items-center justify-center;
