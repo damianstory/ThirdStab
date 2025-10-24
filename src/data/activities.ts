@@ -43,7 +43,7 @@ export const activities: Activity[] = [
     id: '2',
     month: 'November',
     year: '2025',
-    title: 'Skills for Success Challenge',
+    title: 'Skilled Career Exploration Challenge',
     description: 'Explore Canada\'s Skills for Success: nine skills that can set workers up for success with work, learning, and life – no matter where they live or what job they pursue.',
     sponsor: {
       name: 'Skills Competences Canada',

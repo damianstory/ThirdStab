@@ -5,7 +5,7 @@ export const novemberActivity: ActivityPageData = {
   id: '2',
   month: 'November',
   year: '2025',
-  title: 'Skills for Success Challenge',
+  title: 'Skilled Career Exploration Challenge',
   description: `Explore Canada's Skills for Success: nine skills that can set workers up for success with work, learning, and life – no matter where they live or what job they pursue.`,
   sponsor: {
     name: 'Skills Competences Canada',
@@ -181,7 +181,7 @@ export const novemberActivity: ActivityPageData = {
     },
     {
       question: 'Can I do this as a group project?',
-      answer: `The November challenge has been designed as an individual activity.`
+      answer: `The Skilled Career Exploration Challenge has been designed as an individual activity.`
     },
     {
       question: 'Can I still submit the activity after the November 30th deadline?',
@@ -243,7 +243,7 @@ We will publish de-identified (anonymous summary data) information to provide up
   ],
 
   meta: {
-    title: 'Skills for Success Challenge - November 2025',
+    title: 'Skilled Career Exploration Challenge - November 2025',
     description: 'Explore Canada\'s nine Skills for Success with Skills Competences Canada. Research essential workplace skills, create engaging presentations, and win micro grants.',
     ogImage: '/logo2.png'
   }
