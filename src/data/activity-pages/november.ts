@@ -104,7 +104,7 @@ export const novemberActivity: ActivityPageData = {
       {
         category: 'Career Research Depth',
         weight: 25,
-        description: 'Full and specific coverage: Daily tasks, work environment, schedule specifics. Detailed education pathway (specific programs/schools). Clear job outlook with provincial data. Strong connection made between activity and career(s).'
+        description: 'Full and specific coverage: Daily tasks, work environment, schedule specifics. Detailed education/training pathway. Clear job outlook with provincial data. Strong connection made between activity and career(s).'
       },
       {
         category: 'Skills for Success Application',
@@ -137,19 +137,19 @@ export const novemberActivity: ActivityPageData = {
   faqs: [
     {
       question: 'How does this November Activity challenge work?',
-      answer: 'Carefully read the Activity Details steps to understand what is being asked of you in this activity. You can also watch the Challenge Overview video for a detailed explanation of the Skills for Success framework.'
+      answer: 'Carefully read the Challenge Details steps to understand what is being asked of you in this activity. You can watch the How it Works video for a detailed overview of the the Skilled Career Exploration Challenge.'
     },
     {
       question: 'What am I actually being asked to submit?',
-      answer: `You're being asked to submit a 60 to 90 second video highlighting your research on one of the nine Skills for Success and how it applies to a career or industry. It's important that the video you create is shared as a clickable link, not something that we need to download, and that you've made sure that the sharing settings are set up in a way that we have access to view the video. It's a good idea to test this before submitting.`
+      answer: `You're being asked to submit a 60 to 90 second video that shows what you did in your chosen activity and what you learned from your research. Your video should cover: (1) evidence of your completed hands-on activity, (2) what it's like to work in the related trade/career, (3) three Skills for Success with specific job examples, (4) the education/training pathway, and (5) career opportunities across Canada. Make sure the video is shared as a clickable link with proper sharing settings so we can view it. Test it in an incognito browser window before submitting.`
     },
     {
       question: 'Can I submit more than one video?',
-      answer: `Yes, you can complete the activity multiple times focusing on different Skills for Success, though students can only win one micro grant per activity. We'd encourage you to focus on quality, not quantity.`
+      answer: `Yes, you can submit multiple times, but it must be a different activity completed each time, though students can only win one micro grant per month. We'd encourage you to focus on quality, not quantity.`
     },
     {
       question: 'Is there a preferred style for the video?',
-      answer: `No, it's whatever feels authentic and engaging to you. It can be a Tik Tok style video with lots of different cuts and background music or more documentary style - whatever you will enjoy making more, and clearly communicates the requested information about your chosen skill.`
+      answer: `No, it's whatever feels authentic and engaging to you. It can be a Tik Tok style video with lots of different cuts and background music or more documentary style - whatever you will enjoy making more. Just make sure to meet the requirements listed in each of the steps.`
     },
     {
       question: 'Does it matter what tool I use to make the video?',
@@ -161,11 +161,11 @@ export const novemberActivity: ActivityPageData = {
     },
     {
       question: 'Who is reviewing the submissions?',
-      answer: `Submissions will be reviewed by a team of representatives from myBlueprint. We may, if needed, collaborate with representatives from Skills Competences Canada.`
+      answer: `Submissions will be reviewed by a team of representatives from myBlueprint. We may, if needed, collaborate with representatives from Skills/Compétences Canada.`
     },
     {
       question: 'Can students submit their videos in French?',
-      answer: `All videos for this activity will need to be reviewed in English, so if a student wants to submit in French, we ask they include English subtitles in the video.`
+      answer: `Yes, videos will be accepted in either English or French.`
     },
     {
       question: 'How (and when) are the twenty monthly successful submissions selected?',
