@@ -47,7 +47,18 @@
       "Bash(git add .eslintrc.json package.json package-lock.json src/components/FAQ.tsx src/components/Incentives.tsx src/components/SecretModal.tsx src/components/Sponsors.tsx src/components/StayInformed.tsx src/components/WhyMicroGrants.tsx)",
       "Bash(git commit -m \"$(cat <<''EOF''\nFix ESLint errors and add linting configuration\n\n- Add ESLint configuration with Next.js core-web-vitals preset\n- Add typecheck script to package.json for CI/CD\n- Install compatible ESLint dependencies (v8 for Next.js 14)\n- Fix unescaped quote entities in multiple components (use &apos;, &ldquo;, &rdquo;)\n- All ESLint errors now resolved, only warnings remain\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
       "Bash(git push)",
-      "Read(//Users/damianmatheson/Desktop/Industry Immersion Series imgs/November_Skills Canada/**)"
+      "Read(//Users/damianmatheson/Desktop/Industry Immersion Series imgs/November_Skills Canada/**)",
+      "Bash(claude:*)",
+      "Read(//Users/damianmatheson/Library/Application Support/Cursor/User/**)",
+      "Skill(example-skills:skill-creator)",
+      "Read(//Users/damianmatheson/Desktop/ClaudeCode/LifeOS_Claude/Skills_Claude/**)",
+      "Bash(unzip:*)",
+      "Read(//tmp/frontend-aesthetics-extract/frontend-aesthetics/**)",
+      "Bash(python3:*)",
+      "Bash(chmod:*)",
+      "Read(//private/tmp/myb-brand-guide-extract/**)",
+      "Read(//tmp/myb-brand-guide-extract/myb-brand-guide/**)",
+      "Bash(tree:*)"
     ],
     "deny": []
   }

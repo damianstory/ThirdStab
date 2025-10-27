@@ -23,6 +23,9 @@ npm run start
 
 # Run linting
 npm run lint
+
+# Type checking
+npm run typecheck
 ```
 
 ## High-Level Architecture
@@ -99,7 +102,8 @@ src/
 └── data/
     ├── activities.ts         # Core activity data and helper functions
     ├── activity-pages/       # Extended activity page content
-    │   └── october.ts        # Full October activity page data
+    │   ├── october.ts        # Full October activity page data
+    │   └── november.ts       # Full November activity page data
     ├── sponsors.ts           # Complete sponsor database
     └── carousel-sponsors.ts  # Carousel-specific sponsor data
 ```
@@ -145,42 +149,79 @@ Required for Zoho Campaigns integration:
 
 ## Brand Design System
 
-**Typography Scale** (added to `globals.css`):
+### Custom Skills
+
+Two brand-specific skills are available in `.claude/skills/`:
+
+1. **frontend-aesthetics** - Aesthetic enhancement system
+   - Provides creative visual enhancement and design sophistication
+   - Distinctive typography recommendations (avoid Inter/Roboto)
+   - Sophisticated color palettes and gradients
+   - Micro-interactions and animation principles
+   - Framework-specific guidelines (Tailwind, shadcn/ui, React)
+
+2. **myb-brand-guide** - myBlueprint official brand guidelines
+   - Official color system and typography scale
+   - Component styling patterns (buttons, cards, forms)
+   - React/shadcn and Tailwind implementations
+   - Voice & tone guidelines for educational content
+
+**Using Skills Together**:
+```
+Apply myb-brand-guide and frontend-aesthetics:
+Create a landing page for the Industry Immersion Series
+```
+
+This combined approach ensures brand consistency while allowing creative, polished implementations.
+
+### Typography Scale
+
+Custom utilities in `globals.css`:
 - `brand-h1` through `brand-h4`: Primary headings with Open Sans font
 - `brand-subheader`, `brand-body1`, `brand-body2`: Content text styles
 - Mobile-responsive typography with breakpoint adjustments
 
-**Color Palette** (in `tailwind.config.ts`):
+### Color Palette
+
+In `tailwind.config.ts`:
 - `navy` (#22224C): Primary headers and important text
 - `brandBlue` (#0092ff): CTAs and accent elements
-- `lightBlue`, `offWhite`: Background variations
+- `lightBlue` (#C6E7FF), `offWhite` (#F6F6FF): Background variations
 - `neutral1-6`: Text color hierarchy from light to dark
+
+### Custom Animations
+
+Configured in `tailwind.config.ts`:
+- `fadeIn`: 300ms fade-in effect
+- `modalSlideIn`: Modal entrance animation
+- `blob`: Organic blob animation (7s infinite)
+- `gradient-shift`: Gradient background animation (3s infinite)
 
 ## Important Implementation Details
 
-**3D Sponsor Carousel**:
-- `CircularSponsorCarousel`: CSS transforms with perspective for 3D effect
+### 3D Sponsor Carousel
+- `CircularSponorCarousel`: CSS transforms with perspective for 3D effect
 - Automatic rotation with pause on hover
 - Click handlers navigate directly to Notion sponsor page
 - Custom logo sizing for specific sponsors
 
-**Email Capture System**:
+### Email Capture System
 1. Reusable `EmailForm` component with source attribution
 2. Form submission to `/api/email-capture`
 3. OAuth token refresh from Zoho Campaigns
 4. Bulk subscriber API call with error handling
 5. Fallback logging and user-friendly error messages
 
-**Timeline Activity System**:
+### Timeline Activity System
 - `Timeline` component renders monthly activities from `activities.ts`
 - `TimelineCard` handles both promotional and sponsored activity cards
 - Special rendering logic for September 2025 promotional month
 - Custom button text and spacing for promotional cards
 - Line break handling with `whitespace-pre-line` CSS class
 
-**Activity Page Template System** (Fully Reusable):
+### Activity Page Template System
 
-All activity pages follow a consistent template structure with 6 main components. Each component is 100% data-driven with no hardcoded content:
+**Fully Reusable Template**: All activity pages follow a consistent 6-component structure. Each component is 100% data-driven with no hardcoded content:
 
 1. **ActivityHero**: Dynamic background images, taglines, and intro text per activity
 2. **VideoAndExplainer**: Two separate videos per activity
@@ -194,35 +235,35 @@ All activity pages follow a consistent template structure with 6 main components
 5. **ActivityFAQ**: Expandable FAQ section with activity-specific questions
 6. **IncentivesAndNavigation**: Cross-activity navigation with incentive highlighting
 
-**Data Architecture for Activities**:
+### Data Architecture for Activities
 
-Two-tier system for maximum flexibility:
+**Two-tier system** for maximum flexibility:
 
-- **Base `Activity` interface** (`src/data/activities.ts`):
-  - Core timeline data for all 8 activities (Oct 2025 - May 2026)
-  - Used by Timeline component on landing page
-  - Contains: id, month, year, title, description, sponsor, incentive, slug
+**Base `Activity` interface** (`src/data/activities.ts`):
+- Core timeline data for all 8 activities (Oct 2025 - May 2026)
+- Used by Timeline component on landing page
+- Contains: id, month, year, title, description, sponsor, incentive, slug
 
-- **Extended `ActivityPageData` interface** (`src/data/activities.ts`):
-  - Full page content for complete activity pages
-  - Extends `Activity` with additional sections:
-    - `hero`: backgroundImage, tagline, introText
-    - `video`: Challenge Overview video details
-    - `howThisWorksVideo`: Separate instructional video (optional)
-    - `explainer`: Challenge Overview table data
-    - `activityDetail`: description + steps array (fully customizable per activity)
-    - `rubric`: criteria array + detailedRubricUrl
-    - `submission`: url, deadline, instructions
-    - `faqs`: question/answer pairs
-    - `resources`: links with type categorization
-    - `meta`: SEO/OG metadata
+**Extended `ActivityPageData` interface** (`src/data/activities.ts`):
+- Full page content for complete activity pages
+- Extends `Activity` with additional sections:
+  - `hero`: backgroundImage, tagline, introText
+  - `video`: Challenge Overview video details
+  - `howThisWorksVideo`: Separate instructional video (optional)
+  - `explainer`: Challenge Overview table data
+  - `activityDetail`: description + steps array (fully customizable per activity)
+  - `rubric`: criteria array + detailedRubricUrl
+  - `submission`: url, deadline, instructions
+  - `faqs`: question/answer pairs
+  - `resources`: links with type categorization
+  - `meta`: SEO/OG metadata
 
-- **Activity Page Data Files** (`src/data/activity-pages/[month].ts`):
-  - Each month has its own data file (e.g., `october.ts`, `november.ts`)
-  - Export `[month]Activity` object implementing `ActivityPageData`
-  - Imported in `src/app/[month]/page.tsx` via `getActivityPageData()` function
+**Activity Page Data Files** (`src/data/activity-pages/[month].ts`):
+- Each month has its own data file (e.g., `october.ts`, `november.ts`)
+- Export `[month]Activity` object implementing `ActivityPageData`
+- Imported in `src/app/[month]/page.tsx` via `getActivityPageData()` function
 
-**Adding a New Activity Page**:
+### Adding a New Activity Page
 
 1. Create `src/data/activity-pages/[month].ts` following `ActivityPageData` interface
 2. Add import in `src/app/[month]/page.tsx`
@@ -230,17 +271,17 @@ Two-tier system for maximum flexibility:
 4. Ensure month slug is in `validActivityMonths` array
 5. All components automatically render with new data - no code changes needed!
 
-**Dynamic Status Calculation**:
-- `getCurrentStatus()` automatically determines if activity is `coming-soon`, `active`, or `ongoing` based on current date
-- Used for badge colors, button states, and conditional rendering throughout the app
+### Dynamic Status Calculation
 
-**Animation Layers**:
+`getCurrentStatus()` automatically determines if activity is `coming-soon`, `active`, or `ongoing` based on current date. Used for badge colors, button states, and conditional rendering throughout the app.
+
+### Animation Layers
 - WebGL animated background (OGL library) in Hero section
 - Framer Motion for component transitions
 - CSS animations for gradients and fade-ins
 - Infinite logo slider with gradient edge masks
 
-**Performance Patterns**:
+### Performance Patterns
 - Server Components by default (client components only for interactivity)
 - Local state management (no global state)
 - Static data with helper functions for filtering
