@@ -3,6 +3,7 @@
 import EmailForm from './EmailForm';
 import { InfiniteSlider } from './ui/infinite-slider';
 import AnimatedBackground from './AnimatedBackground';
+import { HeroPill } from '@/components/ui/hero-pill';
 
 // Company logos data
 const companies = [
@@ -18,6 +19,41 @@ const companies = [
 ];
 
 export default function Hero() {
+  const handleScrollToOctober = () => {
+    const octoberCard = document.getElementById('october-activity-card');
+    if (octoberCard) {
+      const headerHeight = 64; // Height of fixed header
+      const extraOffset = 250; // Extra offset to show cards below
+      const elementPosition = octoberCard.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerHeight - extraOffset;
+
+      // Custom smooth scroll with easing
+      const startPosition = window.pageYOffset;
+      const distance = offsetPosition - startPosition;
+      const duration = 1800; // 1.8 seconds
+      let start: number | null = null;
+
+      const smoothScroll = (timestamp: number) => {
+        if (!start) start = timestamp;
+        const progress = timestamp - start;
+        const percentage = Math.min(progress / duration, 1);
+
+        // Ease-in-out cubic function for smooth animation
+        const ease = percentage < 0.5
+          ? 4 * percentage * percentage * percentage
+          : 1 - Math.pow(-2 * percentage + 2, 3) / 2;
+
+        window.scrollTo(0, startPosition + distance * ease);
+
+        if (progress < duration) {
+          requestAnimationFrame(smoothScroll);
+        }
+      };
+
+      requestAnimationFrame(smoothScroll);
+    }
+  };
+
   return (
     <section className="overflow-x-hidden">
       <div className="relative min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex flex-col">
@@ -45,8 +81,8 @@ export default function Hero() {
         </div>
 
         {/* Content layer */}
-        <div className="relative z-10 w-full flex min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex-col items-center justify-center px-6 lg:px-20">
-          <div className="mx-auto max-w-lg text-center lg:mx-0 lg:max-w-xl lg:text-left lg:mr-auto md:-mt-12 lg:-mt-16">
+        <div className="relative z-10 w-full flex min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex-col items-center justify-start px-6 lg:px-20 pt-24 md:pt-32 lg:pt-40">
+          <div className="mx-auto max-w-lg text-center lg:mx-0 lg:max-w-xl lg:text-left lg:mr-auto">
             <h1 className="max-w-2xl text-balance brand-h1 animate-fade-in-up">
               <span
                 className="bg-gradient-to-r from-[#0070cc] via-[#00b4ff] to-[#0070cc] bg-clip-text text-transparent"
@@ -77,6 +113,15 @@ export default function Hero() {
                 className=""
               />
             </div>
+
+            {/* Announcement Pill */}
+            <div className="mt-8 mb-24 md:mb-32 lg:mb-40 flex justify-center lg:justify-start animate-fade-in-up animation-delay-400">
+              <HeroPill
+                onClick={handleScrollToOctober}
+                label="Access it Here!"
+                announcement="🎉 October Activity is Now Live"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -84,7 +129,7 @@ export default function Hero() {
       {/* Sponsors Section */}
       <section className="bg-white pb-2">
         <div className="relative w-full animate-fade-in animation-delay-700">
-          <div className="relative py-8">
+          <div className="relative pt-0 pb-8">
             <InfiniteSlider gap={40} duration={30}>
               {companies.map((company) => (
                 <div
