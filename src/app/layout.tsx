@@ -3,6 +3,7 @@ import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { Suspense } from "react";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 
 const openSans = Open_Sans({ subsets: ["latin"] });
 
@@ -34,10 +35,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={openSans.className}>
-        <Suspense fallback={null}>
-          <GoogleAnalytics />
-        </Suspense>
-        {children}
+        <LanguageProvider>
+          <Suspense fallback={null}>
+            <GoogleAnalytics />
+          </Suspense>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

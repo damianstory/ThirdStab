@@ -1,0 +1,22 @@
+{
+  "header": {
+    "navigation": {
+      "howItWorks": "How It Works",
+      "whyMicroGrants": "Why Micro Grants?",
+      "activities": "Activities",
+      "incentives": "Incentives",
+      "sponsors": "Sponsors",
+      "faq": "FAQ",
+      "stayInformed": "Stay Informed"
+    },
+    "languageToggle": {
+      "english": "English",
+      "french": "French",
+      "ariaLabel": "Select language"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 myBlueprint. All rights reserved.",
+    "poweredBy": "Powered by myBlueprint"
+  }
+}

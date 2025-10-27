@@ -1,0 +1,22 @@
+{
+  "header": {
+    "navigation": {
+      "howItWorks": "Comment ça fonctionne",
+      "whyMicroGrants": "Pourquoi les micro-subventions?",
+      "activities": "Activités",
+      "incentives": "Incitatifs",
+      "sponsors": "Commanditaires",
+      "faq": "FAQ",
+      "stayInformed": "Restez informé"
+    },
+    "languageToggle": {
+      "english": "EN",
+      "french": "FR",
+      "ariaLabel": "Changer de langue"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 myBlueprint. Tous droits réservés.",
+    "poweredBy": "Propulsé par myBlueprint"
+  }
+}
