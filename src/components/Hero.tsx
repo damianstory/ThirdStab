@@ -81,7 +81,7 @@ export default function Hero() {
         </div>
 
         {/* Content layer */}
-        <div className="relative z-10 w-full flex min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex-col items-center justify-start px-6 lg:px-20 pt-24 md:pt-32 lg:pt-40">
+        <div className="relative z-10 w-full flex min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex-col items-center justify-start px-6 lg:px-20 pt-24 md:pt-32 lg:pt-32">
           <div className="mx-auto max-w-lg text-center lg:mx-0 lg:max-w-xl lg:text-left lg:mr-auto">
             <h1 className="max-w-2xl text-balance brand-h1 animate-fade-in-up">
               <span
@@ -115,7 +115,7 @@ export default function Hero() {
             </div>
 
             {/* Announcement Pill */}
-            <div className="mt-8 mb-24 md:mb-32 lg:mb-40 flex justify-center lg:justify-start animate-fade-in-up animation-delay-400">
+            <div className="mt-8 mb-24 md:mb-12 lg:mb-24 flex justify-center lg:justify-start animate-fade-in-up animation-delay-400">
               <HeroPill
                 onClick={handleScrollToOctober}
                 label="Access it Here!"
@@ -129,7 +129,7 @@ export default function Hero() {
       {/* Sponsors Section */}
       <section className="bg-white pb-2">
         <div className="relative w-full animate-fade-in animation-delay-700">
-          <div className="relative pt-0 pb-8">
+          <div className="relative pt-12 pb-8">
             <InfiniteSlider gap={40} duration={30}>
               {companies.map((company) => (
                 <div
