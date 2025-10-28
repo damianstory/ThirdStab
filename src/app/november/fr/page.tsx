@@ -46,7 +46,7 @@ export default async function NovemberActivityFrenchPage() {
         <VideoAndExplainer activity={novemberActivity} />
         <ActivityDetailAndRubric activity={novemberActivity} />
         <SponsorResources activity={novemberActivity} />
-        <SkillsForSuccess activity={novemberActivity} />
+        <SkillsForSuccess activity={novemberActivity} language="fr" />
         <ActivityFAQ activity={novemberActivity} />
         <IncentivesAndNavigation currentActivity={novemberActivity} />
       </main>

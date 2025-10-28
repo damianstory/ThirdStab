@@ -7,22 +7,42 @@ import Modal from '@/components/Modal';
 
 interface SkillsForSuccessProps {
   activity: ActivityPageData;
+  language?: 'en' | 'fr';
 }
 
-// Skills for Success data - ordered as requested
-const skills = [
-  { id: 1, name: 'Numeracy', videoUrl: 'https://www.youtube.com/embed/5vCKnP4YrVA', image: '/november-skills/numeracy_EN.jpg' },
-  { id: 2, name: 'Communication', videoUrl: 'https://www.youtube.com/embed/v7jnZ_6z_ng', image: '/november-skills/Communication_EN.jpg' },
-  { id: 3, name: 'Collaboration', videoUrl: 'https://www.youtube.com/embed/ptoDay-y-fI', image: '/november-skills/Collaboration.jpg' },
-  { id: 4, name: 'Problem Solving', videoUrl: 'https://www.youtube.com/embed/2B0q_QaPh3E', image: '/november-skills/ProblemSolving_EN.jpg' },
-  { id: 5, name: 'Writing', videoUrl: 'https://www.youtube.com/embed/CB5E_zXLNqo', image: '/november-skills/Writing_En.jpg' },
-  { id: 6, name: 'Adaptability', videoUrl: 'https://www.youtube.com/embed/9X0QCkBoC1Y', image: '/november-skills/Adaptability.jpg' },
-  { id: 7, name: 'Reading', videoUrl: 'https://www.youtube.com/embed/9Un60sYjtio', image: '/november-skills/Reading_EN.jpg' },
-  { id: 8, name: 'Creativity & Innovation', videoUrl: 'https://www.youtube.com/embed/kdvjgfqYc10', image: '/november-skills/CreativityInnovation.jpg' },
-  { id: 9, name: 'Digital Skills', videoUrl: 'https://www.youtube.com/embed/XO4o2pL4PWk', image: '/november-skills/DigitalSkills.jpg' },
-];
+// Helper function to get language-specific image path
+function getSkillImage(baseName: string, language: 'en' | 'fr' = 'en'): string {
+  const suffix = language === 'fr' ? '_FR' : '_EN';
+  // Handle different file extensions for different skills
+  const extensionMap: { [key: string]: string } = {
+    'numeracy': language === 'fr' ? '.jpg' : '.jpg',
+    'Communication': language === 'fr' ? '.png' : '.jpg',
+    'Collaboration': language === 'fr' ? '.jpg' : '.jpg',
+    'ProblemSolving': language === 'fr' ? '.jpg' : '.jpg',
+    'Writing': language === 'fr' ? '.png' : '.jpg',
+    'Adaptability': language === 'fr' ? '.jpg' : '.jpg',
+    'Reading': language === 'fr' ? '.jpeg' : '.jpg',
+    'CreativityInnovation': language === 'fr' ? '.jpg' : '.jpg',
+    'DigitalSkills': language === 'fr' ? '.jpg' : '.jpg',
+  };
 
-export default function SkillsForSuccess({ activity }: SkillsForSuccessProps) {
+  const extension = extensionMap[baseName] || '.jpg';
+  return `/november-skills/${baseName}${suffix}${extension}`;
+}
+
+export default function SkillsForSuccess({ activity, language = 'en' }: SkillsForSuccessProps) {
+  // Skills for Success data - ordered as requested, with language-aware images
+  const skills = [
+    { id: 1, name: 'Numeracy', videoUrl: 'https://www.youtube.com/embed/5vCKnP4YrVA', image: getSkillImage('numeracy', language) },
+    { id: 2, name: 'Communication', videoUrl: 'https://www.youtube.com/embed/v7jnZ_6z_ng', image: getSkillImage('Communication', language) },
+    { id: 3, name: 'Collaboration', videoUrl: 'https://www.youtube.com/embed/ptoDay-y-fI', image: getSkillImage('Collaboration', language) },
+    { id: 4, name: 'Problem Solving', videoUrl: 'https://www.youtube.com/embed/2B0q_QaPh3E', image: getSkillImage('ProblemSolving', language) },
+    { id: 5, name: 'Writing', videoUrl: 'https://www.youtube.com/embed/CB5E_zXLNqo', image: getSkillImage('Writing', language) },
+    { id: 6, name: 'Adaptability', videoUrl: 'https://www.youtube.com/embed/9X0QCkBoC1Y', image: getSkillImage('Adaptability', language) },
+    { id: 7, name: 'Reading', videoUrl: 'https://www.youtube.com/embed/9Un60sYjtio', image: getSkillImage('Reading', language) },
+    { id: 8, name: 'Creativity & Innovation', videoUrl: 'https://www.youtube.com/embed/kdvjgfqYc10', image: getSkillImage('CreativityInnovation', language) },
+    { id: 9, name: 'Digital Skills', videoUrl: 'https://www.youtube.com/embed/XO4o2pL4PWk', image: getSkillImage('DigitalSkills', language) },
+  ];
   const [showVideoModal, setShowVideoModal] = useState(false);
   const [selectedSkill, setSelectedSkill] = useState<typeof skills[0] | null>(null);
 
