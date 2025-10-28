@@ -10,6 +10,67 @@ interface SkillsForSuccessProps {
   language?: 'en' | 'fr';
 }
 
+// Helper function to get language-specific skill name
+function getSkillName(skillKey: string, language: 'en' | 'fr' = 'en'): string {
+  const skillNames: { [key: string]: { en: string; fr: string } } = {
+    'numeracy': { en: 'Numeracy', fr: 'Calcul' },
+    'communication': { en: 'Communication', fr: 'Communication' },
+    'collaboration': { en: 'Collaboration', fr: 'Collaboration' },
+    'problemSolving': { en: 'Problem Solving', fr: 'Résolution de problèmes' },
+    'writing': { en: 'Writing', fr: 'Rédaction' },
+    'adaptability': { en: 'Adaptability', fr: 'Adaptabilité' },
+    'reading': { en: 'Reading', fr: 'Lecture' },
+    'creativityInnovation': { en: 'Creativity & Innovation', fr: 'Créativité et innovation' },
+    'digitalSkills': { en: 'Digital Skills', fr: 'Compétences numériques' },
+  };
+
+  return skillNames[skillKey]?.[language] || skillNames[skillKey]?.en || skillKey;
+}
+
+// Helper function to get language-specific video URL
+function getSkillVideoUrl(skillKey: string, language: 'en' | 'fr' = 'en'): string {
+  const videoUrls: { [key: string]: { en: string; fr: string } } = {
+    'numeracy': {
+      en: 'https://www.youtube.com/embed/5vCKnP4YrVA',
+      fr: 'https://www.youtube.com/embed/8fDPj2u6lk8'
+    },
+    'communication': {
+      en: 'https://www.youtube.com/embed/v7jnZ_6z_ng',
+      fr: 'https://www.youtube.com/embed/tNIcVusEEfc'
+    },
+    'collaboration': {
+      en: 'https://www.youtube.com/embed/ptoDay-y-fI',
+      fr: 'https://www.youtube.com/embed/cMD7alXd-B0'
+    },
+    'problemSolving': {
+      en: 'https://www.youtube.com/embed/2B0q_QaPh3E',
+      fr: 'https://www.youtube.com/embed/huQC2s-8y84'
+    },
+    'writing': {
+      en: 'https://www.youtube.com/embed/CB5E_zXLNqo',
+      fr: 'https://www.youtube.com/embed/U5VBJQzOKz4'
+    },
+    'adaptability': {
+      en: 'https://www.youtube.com/embed/9X0QCkBoC1Y',
+      fr: 'https://www.youtube.com/embed/Mes63h60Z9Q'
+    },
+    'reading': {
+      en: 'https://www.youtube.com/embed/9Un60sYjtio',
+      fr: 'https://www.youtube.com/embed/q_2gYVVQc0Y'
+    },
+    'creativityInnovation': {
+      en: 'https://www.youtube.com/embed/kdvjgfqYc10',
+      fr: 'https://www.youtube.com/embed/WiGZ4Waz0mQ'
+    },
+    'digitalSkills': {
+      en: 'https://www.youtube.com/embed/XO4o2pL4PWk',
+      fr: 'https://www.youtube.com/embed/I5SiGtsuVc8'
+    },
+  };
+
+  return videoUrls[skillKey]?.[language] || videoUrls[skillKey]?.en || '#';
+}
+
 // Helper function to get language-specific image path
 function getSkillImage(baseName: string, language: 'en' | 'fr' = 'en'): string {
   const suffix = language === 'fr' ? '_FR' : '_EN';
@@ -31,17 +92,17 @@ function getSkillImage(baseName: string, language: 'en' | 'fr' = 'en'): string {
 }
 
 export default function SkillsForSuccess({ activity, language = 'en' }: SkillsForSuccessProps) {
-  // Skills for Success data - ordered as requested, with language-aware images
+  // Skills for Success data - ordered as requested, with language-aware images, names, and videos
   const skills = [
-    { id: 1, name: 'Numeracy', videoUrl: 'https://www.youtube.com/embed/5vCKnP4YrVA', image: getSkillImage('numeracy', language) },
-    { id: 2, name: 'Communication', videoUrl: 'https://www.youtube.com/embed/v7jnZ_6z_ng', image: getSkillImage('Communication', language) },
-    { id: 3, name: 'Collaboration', videoUrl: 'https://www.youtube.com/embed/ptoDay-y-fI', image: getSkillImage('Collaboration', language) },
-    { id: 4, name: 'Problem Solving', videoUrl: 'https://www.youtube.com/embed/2B0q_QaPh3E', image: getSkillImage('ProblemSolving', language) },
-    { id: 5, name: 'Writing', videoUrl: 'https://www.youtube.com/embed/CB5E_zXLNqo', image: getSkillImage('Writing', language) },
-    { id: 6, name: 'Adaptability', videoUrl: 'https://www.youtube.com/embed/9X0QCkBoC1Y', image: getSkillImage('Adaptability', language) },
-    { id: 7, name: 'Reading', videoUrl: 'https://www.youtube.com/embed/9Un60sYjtio', image: getSkillImage('Reading', language) },
-    { id: 8, name: 'Creativity & Innovation', videoUrl: 'https://www.youtube.com/embed/kdvjgfqYc10', image: getSkillImage('CreativityInnovation', language) },
-    { id: 9, name: 'Digital Skills', videoUrl: 'https://www.youtube.com/embed/XO4o2pL4PWk', image: getSkillImage('DigitalSkills', language) },
+    { id: 1, name: getSkillName('numeracy', language), videoUrl: getSkillVideoUrl('numeracy', language), image: getSkillImage('numeracy', language) },
+    { id: 2, name: getSkillName('communication', language), videoUrl: getSkillVideoUrl('communication', language), image: getSkillImage('Communication', language) },
+    { id: 3, name: getSkillName('collaboration', language), videoUrl: getSkillVideoUrl('collaboration', language), image: getSkillImage('Collaboration', language) },
+    { id: 4, name: getSkillName('problemSolving', language), videoUrl: getSkillVideoUrl('problemSolving', language), image: getSkillImage('ProblemSolving', language) },
+    { id: 5, name: getSkillName('writing', language), videoUrl: getSkillVideoUrl('writing', language), image: getSkillImage('Writing', language) },
+    { id: 6, name: getSkillName('adaptability', language), videoUrl: getSkillVideoUrl('adaptability', language), image: getSkillImage('Adaptability', language) },
+    { id: 7, name: getSkillName('reading', language), videoUrl: getSkillVideoUrl('reading', language), image: getSkillImage('Reading', language) },
+    { id: 8, name: getSkillName('creativityInnovation', language), videoUrl: getSkillVideoUrl('creativityInnovation', language), image: getSkillImage('CreativityInnovation', language) },
+    { id: 9, name: getSkillName('digitalSkills', language), videoUrl: getSkillVideoUrl('digitalSkills', language), image: getSkillImage('DigitalSkills', language) },
   ];
   const [showVideoModal, setShowVideoModal] = useState(false);
   const [selectedSkill, setSelectedSkill] = useState<typeof skills[0] | null>(null);
