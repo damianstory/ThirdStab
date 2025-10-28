@@ -58,7 +58,9 @@
       "Bash(chmod:*)",
       "Read(//private/tmp/myb-brand-guide-extract/**)",
       "Read(//tmp/myb-brand-guide-extract/myb-brand-guide/**)",
-      "Bash(tree:*)"
+      "Bash(tree:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": []
   }
