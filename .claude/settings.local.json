@@ -60,7 +60,11 @@
       "Read(//tmp/myb-brand-guide-extract/myb-brand-guide/**)",
       "Bash(tree:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(~/.claude/local/claude update)",
+      "Read(//Users/damianmatheson/.claude/local/**)",
+      "Read(//Users/damianmatheson/.claude/**)",
+      "Read(//private/tmp/**)"
     ],
     "deny": []
   }

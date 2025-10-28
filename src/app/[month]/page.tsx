@@ -1,7 +1,6 @@
 import { notFound } from 'next/navigation';
 import { activities, validActivityMonths, getActivityBySlug, type ActivityPageData } from '@/data/activities';
-import { octoberActivity } from '@/data/activity-pages/october';
-import { novemberActivity } from '@/data/activity-pages/november';
+import { getActivityPageData } from '@/data/activity-pages';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import StayInformed from '@/components/StayInformed';
@@ -19,23 +18,6 @@ interface ActivityPageProps {
   };
 }
 
-// Get activity page data by slug
-function getActivityPageData(slug: string): ActivityPageData | null {
-  const slugLower = slug.toLowerCase();
-
-  // Return full page data for months that have it
-  if (slugLower === 'october') {
-    return octoberActivity;
-  }
-
-  if (slugLower === 'november') {
-    return novemberActivity;
-  }
-
-  // For other months, return null (will show basic activity info)
-  return null;
-}
-
 // Generate static params for all valid months
 export async function generateStaticParams() {
   return validActivityMonths.map((month) => ({
@@ -46,29 +28,29 @@ export async function generateStaticParams() {
 // Generate metadata for each activity page
 export async function generateMetadata({ params }: ActivityPageProps) {
   const { month } = params;
-  
+
   // Validate month parameter
   if (!validActivityMonths.includes(month.toLowerCase())) {
     return {
       title: 'Activity Not Found',
     };
   }
-  
-  // Get full page data if available, otherwise use basic activity data
-  const activityPageData = getActivityPageData(month);
+
+  // Get full page data if available (English version for metadata), otherwise use basic activity data
+  const activityPageData = await getActivityPageData(month, 'en');
   const activity = activityPageData || getActivityBySlug(month);
-  
+
   if (!activity) {
     return {
       title: 'Activity Not Found',
     };
   }
-  
+
   // Use meta data if available, otherwise use basic activity info
   const title = activityPageData?.meta.title || `${activity.title} - Industry Immersion Series`;
   const description = activityPageData?.meta.description || activity.description;
   const ogImage = activityPageData?.meta.ogImage || activity.sponsor.logo;
-  
+
   return {
     title,
     description,
@@ -80,18 +62,18 @@ export async function generateMetadata({ params }: ActivityPageProps) {
   };
 }
 
-export default function ActivityPage({ params }: ActivityPageProps) {
+export default async function ActivityPage({ params }: ActivityPageProps) {
   const { month } = params;
-  
+
   // Validate month parameter
   if (!validActivityMonths.includes(month.toLowerCase())) {
     notFound();
   }
-  
-  // Get full page data if available, otherwise use basic activity data
-  const activityPageData = getActivityPageData(month);
+
+  // Get full page data if available (English version), otherwise use basic activity data
+  const activityPageData = await getActivityPageData(month, 'en');
   const activity = activityPageData || getActivityBySlug(month);
-  
+
   if (!activity) {
     notFound();
   }

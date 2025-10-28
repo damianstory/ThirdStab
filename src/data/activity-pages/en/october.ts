@@ -1,4 +1,4 @@
-import { ActivityPageData } from '../activities';
+import { ActivityPageData } from '../../activities';
 
 export const octoberActivity: ActivityPageData = {
   // Base activity information (from activities.ts)

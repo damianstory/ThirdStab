@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { novemberActivity } from '@/data/activity-pages/november';
+import { getActivityPageData } from '@/data/activity-pages';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ActivityHero from '@/components/activity/ActivityHero';
@@ -11,17 +11,33 @@ import SponsorResources from '@/components/activity/SponsorResources';
 import SkillsForSuccess from '@/components/activity/SkillsForSuccess';
 import IncentivesAndNavigation from '@/components/activity/IncentivesAndNavigation';
 
-export const metadata: Metadata = {
-  title: `${novemberActivity.title} - Série d'immersion industrielle`,
-  description: novemberActivity.description,
-  openGraph: {
+export async function generateMetadata(): Promise<Metadata> {
+  const novemberActivity = await getActivityPageData('november', 'fr');
+
+  if (!novemberActivity) {
+    return {
+      title: 'Activity Not Found',
+    };
+  }
+
+  return {
     title: `${novemberActivity.title} - Série d'immersion industrielle`,
     description: novemberActivity.description,
-    images: [novemberActivity.meta.ogImage],
-  },
-};
+    openGraph: {
+      title: `${novemberActivity.title} - Série d'immersion industrielle`,
+      description: novemberActivity.description,
+      images: [novemberActivity.meta.ogImage],
+    },
+  };
+}
 
-export default function NovemberActivityFrenchPage() {
+export default async function NovemberActivityFrenchPage() {
+  const novemberActivity = await getActivityPageData('november', 'fr');
+
+  if (!novemberActivity) {
+    notFound();
+  }
+
   return (
     <>
       <Header />
