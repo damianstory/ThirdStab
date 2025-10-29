@@ -130,7 +130,7 @@ export default function SkillsForSuccess({ activity, language = 'en' }: SkillsFo
             Learn about the Skills for Success
           </h2>
           <p className="brand-body1 text-neutral-500">
-            Explore the nine essential skills that help Canadians thrive in work, learning, and life
+            Explore the nine Skills for Success that help Canadians thrive in work, learning, and life.
           </p>
         </div>
 

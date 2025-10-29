@@ -23,14 +23,14 @@ export const novemberActivity: ActivityPageData = {
   // Extended page content
   hero: {
     backgroundImage: '/november-hero.jpg',
-    tagline: 'Build Your Skills for Success',
-    introText: `Canada's Skills for Success framework identifies nine essential skills that help you thrive in work, learning, and life. Join Skills/Compétences Canada to explore these foundational competencies and discover how they can unlock opportunities in any career path you choose.`
+    tagline: 'Build Your Foundation for Success',
+    introText: `From carpentry to hairstyling to graphic design, skilled trades and technology careers offer exciting opportunities for all. Join Skills/Compétences Canada to explore these careers and how the Skills for Success can help you thrive in these career paths.`
   },
 
   video: {
     embedUrl: 'https://www.youtube.com/embed/MkBwR2LC6Mo',
-    title: 'Skills for Success Overview',
-    description: `Explore Canada's Skills for Success: nine skills that can set workers up for success with work, learning, and life – no matter where they live or what job they pursue. Scroll down to learn how they're being used across careers in skilled trades and technology.`
+    title: 'Get hands on',
+    description: `Skilled careers are more in demand than ever. With over 700 000 skilled trade workers set to retire by 2030, Canada needs you! These careers are well-paying and have so much to offer. See how the Skills for Success are at the core of these careers.`
   },
 
   howThisWorksVideo: {
@@ -65,18 +65,18 @@ export const novemberActivity: ActivityPageData = {
   },
 
   activityDetail: {
-    description: 'Skills for Success are the foundation for building a successful career and life. These nine essential skills help Canadians adapt to change, solve problems, and thrive in any workplace.<br/><br/><strong>This challenge invites students to explore the Skills for Success framework</strong> and demonstrate how these skills apply to real-world scenarios across career paths of interest.',
+    description: 'Skilled trades and technologies are Canada\'s foundation. These rewarding careers are in-demand and well-paying and could be right for you! See how the nine Skills for Success, like creativity and innovation, problem-solving and adaptability can help you succeed in these careers.<br/><br/><strong>This challenge invites students to explore the</strong> world of skilled trades and technologies and demonstrate how the Skills for Success apply to these career paths.',
     steps: [
       {
         title: "Step 1: Choose Your Activity",
         details: "Explore the Activities in the <em>Choose Your Activity</em> section below 👇 \n\n Read through them carefully to know what is being asked of you.\n\n <strong>Pick the one that you're most excited about. Complete the activity.</strong>\n\nYou can do this individually on your own, or as an activity you do in class with your teacher.\n\nAfter you complete the activity, you're ready to move on to Step 2."
       },
       {
-        title: "Step 2: Research Your Trade or Career",
-        details: "<strong>Research what it's really like to work in the trade or career connected to your activity.</strong>\n\nFor example:\n• What does someone in this job do all day?\n• What are their main tasks and responsibilities?\n• Do they work regular 9 to 5 hours, or do they work shifts, weekends, or seasonal schedules?\n• Where do they work? Is it indoors, outdoors, or both?\n• What types of projects do they work on?"
+        title: "Step 2: Research Your Trade or Technology Career",
+        details: "<strong>Research what it's really like to work in the trade or technology connected to your activity.</strong>\n\nFor example:\n• What does someone in this job do all day?\n• What are their main tasks and responsibilities?\n• Do they work regular 9 to 5 hours, or do they work shifts, weekends, or seasonal schedules?\n• Where do they work? Is it indoors, outdoors, or both?\n• What types of projects do they work on?"
       },
       {
-        title: "Step 3: Identify Three Essential Skills for Success",
+        title: "Step 3: Identify Three Skills for Success",
         details: "Understand what the official 9 Skills for Success are and what they mean. You can learn more about them in the <em>Learn about the Skills for Success</em> section below 👇 \n\n <strong>Pick THREE that are most important for your chosen trade</strong>\n\n IMPORTANT: Don't just name them. <strong>Give specific examples</strong> of how workers actually use each skill on the job as part of what they do every day, and their work tasks & responsibilities."
       },
       {
@@ -137,7 +137,7 @@ export const novemberActivity: ActivityPageData = {
   faqs: [
     {
       question: 'How does this November Activity challenge work?',
-      answer: 'Carefully read the Challenge Details steps to understand what is being asked of you in this activity. You can watch the How it Works video for a detailed overview of the the Skilled Career Exploration Challenge.'
+      answer: 'Carefully read the Challenge Details steps to understand what is being asked of you in this activity. You can watch the How it Works video for a detailed overview of the Skilled Career Exploration Challenge.'
     },
     {
       question: 'What am I actually being asked to submit?',
@@ -169,7 +169,7 @@ export const novemberActivity: ActivityPageData = {
     },
     {
       question: 'How (and when) are the twenty monthly successful submissions selected?',
-      answer: `Depending on the volume of submissions, we plan to have selected, and be able to announce winners by the midpoint of the following month. So for example, with this activity, we hope to be able to announce the November winners by mid-December.`
+      answer: `Depending on the volume of submissions, we plan to have selected and be able to announce winners by the midpoint of the following month. For example, with this activity, we hope to be able to announce the November winners by mid-December.`
     },
     {
       question: 'Should I add these submissions to my portfolio in myBlueprint?',
@@ -193,13 +193,7 @@ export const novemberActivity: ActivityPageData = {
     },
     {
       question: 'What data is being collected and by who?',
-      answer: `myBlueprint is solely responsible for running the Industry Immersion Series.
-
-Meaning that only myBlueprint is collecting any information related to this Series. No personally identifiable information is being shared with any 3rd parties.
-
-We will publish de-identified (anonymous summary data) information to provide updates on how the Series is going. For example, the number of activity submissions received for each month, which province they're coming from, and communicate with our school board partners about school-specific participation.
-
-<a href="https://docs.google.com/document/d/1rHxZ4QntHN0fo7rqi7uKeDQakupNtE3KtT8p3lFPur4/edit?tab=t.0" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Click here to see the questions students are being asked</a> to answer when they submit their completed activity.`
+      answer: `myBlueprint is solely responsible for running the Industry Immersion Series. Meaning that only myBlueprint is collecting any information related to this Series. No personally identifiable information is being shared with any third parties. We will publish de-identified (anonymous summary data) information to provide updates on how the series is going. For example, the number of activity submissions received for each month, which province they're coming from, and communicate with our school board partners about school-specific participation. <a href="https://docs.google.com/document/d/1rHxZ4QntHN0fo7rqi7uKeDQakupNtE3KtT8p3lFPur4/edit?tab=t.0" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">[Click here to see the questions students are being asked]</a> to answer when they submit their completed activity.`
     }
   ],
 
