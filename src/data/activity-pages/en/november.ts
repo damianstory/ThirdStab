@@ -85,7 +85,7 @@ export const novemberActivity: ActivityPageData = {
       },
       {
         title: "Step 5: Explore Career Opportunities Across Canada",
-        details: "<strong>Research where the job outlook for these types of roles. </strong>\n\n• Is this career in-demand?\n• How many types of these jobs are projected to be needed in your province/territory?\n• What's causing the demand (like people retiring or new technology creating jobs)?\n\n<strong>Cite your sources when speaking to this.</strong> You don't need to submit anything extra - just mention them in your submission.\n\nFor example, saying/showing something like any of the below would work great:\n\n• \"according to Job Bank...\"\n• \"the industry association website says...\"\n• \"StatsCan projects...\"\n• \"this report from Indeed says...\"\n• \"the myBlueprint occupation profile for this occupation mentions...\""
+        details: "<strong>Research the job outlook for these types of roles. </strong>\n\n• Is this career in-demand?\n• How many types of these jobs are projected to be needed in your province/territory?\n• What's causing the demand (like people retiring or new technology creating jobs)?\n\n<strong>Cite your sources when speaking to this.</strong> You don't need to submit anything extra - just mention them in your submission.\n\nFor example, saying/showing something like any of the below would work great:\n\n• \"according to Job Bank...\"\n• \"the industry association website says...\"\n• \"StatsCan projects...\"\n• \"this report from Indeed says...\"\n• \"the myBlueprint occupation profile for this occupation mentions...\""
       },
       {
         title: "Step 6: Submit Your Activity Video",
@@ -199,40 +199,39 @@ export const novemberActivity: ActivityPageData = {
 
   resources: [
     {
-      title: 'Activity 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      title: 'Car Painting',
+      description: '',
       url: '#',
-      type: 'link'
+      type: 'pdf',
+      image: '/november-activities/car-painting.jpg'
     },
     {
-      title: 'Activity 2',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      title: 'Carpentry',
+      description: '',
       url: '#',
-      type: 'link'
+      type: 'pdf',
+      image: '/november-activities/carpentry.jpg'
     },
     {
-      title: 'Activity 3',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      title: 'CNC Machining',
+      description: '',
       url: '#',
-      type: 'link'
+      type: 'pdf',
+      image: '/november-activities/cnc-machining.jpg'
     },
     {
-      title: 'Activity 4',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      title: 'Cooking',
+      description: '',
       url: '#',
-      type: 'link'
+      type: 'pdf',
+      image: '/november-activities/cooking.jpg'
     },
     {
-      title: 'Activity 5',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      title: 'Graphic Design',
+      description: '',
       url: '#',
-      type: 'link'
-    },
-    {
-      title: 'Activity 6',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      url: '#',
-      type: 'link'
+      type: 'pdf',
+      image: '/november-activities/graphic-design.jpg'
     }
   ],
 

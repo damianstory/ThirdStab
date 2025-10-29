@@ -25,9 +25,8 @@ export const novemberActivity: ActivityPageData = {
 
   // Extended page content
   hero: {
-    // TODO: UPDATE THIS - November will have different images for French!
-    // When you receive the French hero image, update this path:
-    backgroundImage: '/november-hero-fr.jpg', // Change from '/november-hero.jpg' to French version
+    // Hero image is the same for both English and French
+    backgroundImage: '/november-hero.jpg',
     tagline: 'Build Your Skills for Success', // TODO: Translate to French
     introText: `Canada's Skills for Success framework identifies nine essential skills that help you thrive in work, learning, and life. Join Skills/Compétences Canada to explore these foundational competencies and discover how they can unlock opportunities in any career path you choose.` // TODO: Translate to French
   },
@@ -212,42 +211,40 @@ We will publish de-identified (anonymous summary data) information to provide up
   ],
 
   resources: [
-    // TODO: Update resource content and URLs to French equivalents when available
     {
-      title: 'Activity 1', // TODO: Replace with actual French resource title
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', // TODO: Replace with actual French description
-      url: '#', // TODO: Update to actual French resource URL
-      type: 'link'
+      title: 'Peinture de voiture',
+      description: '',
+      url: '#',
+      type: 'pdf',
+      image: '/november-activities/car-painting.jpg'
     },
     {
-      title: 'Activity 2', // TODO: Replace with actual French resource title
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', // TODO: Replace with actual French description
-      url: '#', // TODO: Update to actual French resource URL
-      type: 'link'
+      title: 'Menuiserie',
+      description: '',
+      url: '#',
+      type: 'pdf',
+      image: '/november-activities/carpentry.jpg'
     },
     {
-      title: 'Activity 3', // TODO: Replace with actual French resource title
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', // TODO: Replace with actual French description
-      url: '#', // TODO: Update to actual French resource URL
-      type: 'link'
+      title: 'Usinage CNC',
+      description: '',
+      url: '#',
+      type: 'pdf',
+      image: '/november-activities/cnc-machining.jpg'
     },
     {
-      title: 'Activity 4', // TODO: Replace with actual French resource title
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', // TODO: Replace with actual French description
-      url: '#', // TODO: Update to actual French resource URL
-      type: 'link'
+      title: 'Cuisine',
+      description: '',
+      url: '#',
+      type: 'pdf',
+      image: '/november-activities/cooking.jpg'
     },
     {
-      title: 'Activity 5', // TODO: Replace with actual French resource title
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', // TODO: Replace with actual French description
-      url: '#', // TODO: Update to actual French resource URL
-      type: 'link'
-    },
-    {
-      title: 'Activity 6', // TODO: Replace with actual French resource title
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', // TODO: Replace with actual French description
-      url: '#', // TODO: Update to actual French resource URL
-      type: 'link'
+      title: 'Conception graphique',
+      description: '',
+      url: '#',
+      type: 'pdf',
+      image: '/november-activities/graphic-design.jpg'
     }
   ],
 

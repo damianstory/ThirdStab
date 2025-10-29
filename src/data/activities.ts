@@ -326,6 +326,7 @@ export interface ActivityPageData extends Activity {
     url: string;
     type: 'pdf' | 'video' | 'link' | 'article';
     thumbnail?: string;
+    image?: string;
   }>;
   
   // Meta/SEO
