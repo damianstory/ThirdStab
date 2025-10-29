@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import StayInformed from '@/components/StayInformed';
 import ActivityHero from '@/components/activity/ActivityHero';
+import PromotionalBanner from '@/components/activity/PromotionalBanner';
 import VideoAndExplainer from '@/components/activity/VideoAndExplainer';
 import ActivityDetailAndRubric from '@/components/activity/ActivityDetailAndRubric';
 import ActivityFAQ from '@/components/activity/ActivityFAQ';
@@ -85,6 +86,9 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
         <Header />
         <main className="pt-16">
           <ActivityHero activity={activityPageData} />
+          {activityPageData.promotionalBanner && (
+            <PromotionalBanner banner={activityPageData.promotionalBanner} language="en" />
+          )}
           <VideoAndExplainer activity={activityPageData} />
           <ActivityDetailAndRubric activity={activityPageData} />
           <SponsorResources activity={activityPageData} />

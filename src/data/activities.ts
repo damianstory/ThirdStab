@@ -328,7 +328,20 @@ export interface ActivityPageData extends Activity {
     thumbnail?: string;
     image?: string;
   }>;
-  
+
+  // Promotional Banner (optional - for time-sensitive campaigns)
+  promotionalBanner?: {
+    imageEn: string;
+    imageFr: string;
+    altTextEn: string;
+    altTextFr: string;
+    link?: string;
+    displayDates?: {
+      start: Date;
+      end: Date;
+    };
+  };
+
   // Meta/SEO
   meta: {
     title: string;

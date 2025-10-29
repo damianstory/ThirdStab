@@ -235,6 +235,18 @@ export const novemberActivity: ActivityPageData = {
     }
   ],
 
+  promotionalBanner: {
+    imageEn: '/promotional-banners/nsttw-2025-en-upscaled.png',
+    imageFr: '/promotional-banners/nsttw-2025-fr.png',
+    altTextEn: 'National Skilled Trades and Technology Week - November 2 to 8, 2025',
+    altTextFr: 'Semaine nationale des métiers spécialisés et des technologies - 2 au 8 novembre 2025',
+    link: 'https://www.skillscompetencescanada.com/en/program/national-skilled-trade-and-technology-week/',
+    displayDates: {
+      start: new Date('2025-10-01T00:00:00-05:00'),
+      end: new Date('2025-11-30T23:59:59-05:00')
+    }
+  },
+
   meta: {
     title: 'Skilled Career Exploration Challenge - November 2025',
     description: 'Explore Canada\'s nine Skills for Success with Skills Competences Canada. Research essential workplace skills, create engaging presentations, and win micro grants.',
