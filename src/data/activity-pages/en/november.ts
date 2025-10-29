@@ -201,35 +201,35 @@ export const novemberActivity: ActivityPageData = {
     {
       title: 'Car Painting',
       description: '',
-      url: '#',
+      url: '/pdfs/november/SFS_MyBlueprint_CarPainting EN_web.pdf',
       type: 'pdf',
       image: '/november-activities/car-painting.jpg'
     },
     {
       title: 'Carpentry',
       description: '',
-      url: '#',
+      url: '/pdfs/november/SFS_MyBlueprint_Carpentry EN_web.pdf',
       type: 'pdf',
       image: '/november-activities/carpentry.jpg'
     },
     {
       title: 'CNC Machining',
       description: '',
-      url: '#',
+      url: '/pdfs/november/SFS_MyBlueprint_CNCMachining EN_web.pdf',
       type: 'pdf',
       image: '/november-activities/cnc-machining.jpg'
     },
     {
       title: 'Cooking',
       description: '',
-      url: '#',
+      url: '/pdfs/november/SFS_MyBlueprint_Cooking EN_web.pdf',
       type: 'pdf',
       image: '/november-activities/cooking.jpg'
     },
     {
       title: 'Graphic Design',
       description: '',
-      url: '#',
+      url: '/pdfs/november/SFS_MyBlueprint_GraphicDesign EN_web.pdf',
       type: 'pdf',
       image: '/november-activities/graphic-design.jpg'
     }
