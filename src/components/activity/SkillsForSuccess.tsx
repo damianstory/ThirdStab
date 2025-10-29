@@ -73,22 +73,39 @@ function getSkillVideoUrl(skillKey: string, language: 'en' | 'fr' = 'en'): strin
 
 // Helper function to get language-specific image path
 function getSkillImage(baseName: string, language: 'en' | 'fr' = 'en'): string {
-  const suffix = language === 'fr' ? '_FR' : '_EN';
-  // Handle different file extensions for different skills
-  const extensionMap: { [key: string]: string } = {
-    'numeracy': language === 'fr' ? '.jpg' : '.jpg',
-    'Communication': language === 'fr' ? '.png' : '.jpg',
-    'Collaboration': language === 'fr' ? '.jpg' : '.jpg',
-    'ProblemSolving': language === 'fr' ? '.jpg' : '.jpg',
-    'Writing': language === 'fr' ? '.png' : '.jpg',
-    'Adaptability': language === 'fr' ? '.jpg' : '.jpg',
-    'Reading': language === 'fr' ? '.jpeg' : '.jpg',
-    'CreativityInnovation': language === 'fr' ? '.jpg' : '.jpg',
-    'DigitalSkills': language === 'fr' ? '.jpg' : '.jpg',
+  // Explicit mapping for English filenames (handles inconsistent naming)
+  const englishFilenames: { [key: string]: string } = {
+    'numeracy': 'numeracy_EN.jpg',
+    'Communication': 'Communication_EN.jpg',
+    'Collaboration': 'Collaboration.jpg',
+    'ProblemSolving': 'ProblemSolving_EN.jpg',
+    'Writing': 'Writing_En.jpg',
+    'Adaptability': 'Adaptability.jpg',
+    'Reading': 'Reading_EN.jpg',
+    'CreativityInnovation': 'CreativityInnovation.jpg',
+    'DigitalSkills': 'DigitalSkills.jpg',
   };
 
-  const extension = extensionMap[baseName] || '.jpg';
-  return `/november-skills/${baseName}${suffix}${extension}`;
+  // For French, use systematic naming with _FR suffix
+  if (language === 'fr') {
+    const extensionMap: { [key: string]: string } = {
+      'numeracy': '.jpg',
+      'Communication': '.png',
+      'Collaboration': '.jpg',
+      'ProblemSolving': '.jpg',
+      'Writing': '.png',
+      'Adaptability': '.jpg',
+      'Reading': '.jpeg',
+      'CreativityInnovation': '.jpg',
+      'DigitalSkills': '.jpg',
+    };
+    const extension = extensionMap[baseName] || '.jpg';
+    return `/november-skills/${baseName}_FR${extension}`;
+  }
+
+  // For English, use explicit mapping to handle existing file inconsistencies
+  const filename = englishFilenames[baseName] || `${baseName}_EN.jpg`;
+  return `/november-skills/${filename}`;
 }
 
 export default function SkillsForSuccess({ activity, language = 'en' }: SkillsForSuccessProps) {
