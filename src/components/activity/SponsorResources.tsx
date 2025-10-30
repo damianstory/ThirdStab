@@ -73,7 +73,16 @@ export default function SponsorResources({ activity }: SponsorResourcesProps) {
                       <img
                         src={resource.image}
                         alt={resource.title}
-                        className="w-full h-full object-cover object-[center_30%] group-hover:scale-105 transition-transform duration-300"
+                        className={`w-full h-full object-cover ${
+                          resource.title === 'Cooking' || resource.title === 'Cuisine'
+                            ? 'object-[center_35%]'
+                            : 'object-[center_30%]'
+                        } group-hover:scale-105 transition-transform duration-300`}
+                        style={
+                          resource.title === 'Cooking' || resource.title === 'Cuisine'
+                            ? { filter: 'contrast(0.85) saturate(0.88) brightness(0.96)' }
+                            : undefined
+                        }
                       />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center">
@@ -106,7 +115,16 @@ export default function SponsorResources({ activity }: SponsorResourcesProps) {
                       <img
                         src={resource.image}
                         alt={resource.title}
-                        className="w-full h-full object-cover object-[center_30%] group-hover:scale-105 transition-transform duration-300"
+                        className={`w-full h-full object-cover ${
+                          resource.title === 'Cooking' || resource.title === 'Cuisine'
+                            ? 'object-[center_35%]'
+                            : 'object-[center_30%]'
+                        } group-hover:scale-105 transition-transform duration-300`}
+                        style={
+                          resource.title === 'Cooking' || resource.title === 'Cuisine'
+                            ? { filter: 'contrast(0.85) saturate(0.88) brightness(0.96)' }
+                            : undefined
+                        }
                       />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center">

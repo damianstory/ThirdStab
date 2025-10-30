@@ -64,7 +64,9 @@
       "Bash(~/.claude/local/claude update)",
       "Read(//Users/damianmatheson/.claude/local/**)",
       "Read(//Users/damianmatheson/.claude/**)",
-      "Read(//private/tmp/**)"
+      "Read(//private/tmp/**)",
+      "Bash(test:*)",
+      "Bash(git -C \"/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab\" status)"
     ],
     "deny": []
   }
