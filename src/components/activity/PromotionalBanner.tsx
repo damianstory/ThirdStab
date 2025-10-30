@@ -64,8 +64,8 @@ export default function PromotionalBanner({ banner, language }: PromotionalBanne
           <div className="border-t border-neutral1" />
 
           {/* Attribution Section */}
-          <div className="bg-offWhite px-4 py-4 md:px-6 md:py-5 lg:px-8 lg:py-6">
-            <p className="text-center text-neutral4 text-sm md:text-base leading-relaxed">
+          <div className="bg-[#F8FAFB] px-4 py-4 md:px-6 md:py-5 lg:px-8 lg:py-6">
+            <p className="text-center text-neutral4 text-sm md:text-base leading-relaxed font-bold">
               {language === 'en'
                 ? 'Complete November\'s Industry Immersion Series Activity as part of National Skilled Trade and Technology Week presented by Skills/Compétences Canada'
                 : 'Complétez l\'activité de la série Immersion industrielle de novembre dans le cadre de la Semaine nationale des métiers spécialisés et des technologies présentée par Compétences/Skills Canada'}
