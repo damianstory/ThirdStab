@@ -237,7 +237,7 @@ export const novemberActivity: ActivityPageData = {
 
   promotionalBanner: {
     imageEn: '/promotional-banners/nsttw-2025-en-upscaled.png',
-    imageFr: '/promotional-banners/nsttw-2025-fr.png',
+    imageFr: '/promotional-banners/nsttw-2025-fr-upscaled.png',
     altTextEn: 'National Skilled Trades and Technology Week - November 2 to 8, 2025',
     altTextFr: 'Semaine nationale des métiers spécialisés et des technologies - 2 au 8 novembre 2025',
     link: 'https://www.skillscompetencescanada.com/en/program/national-skilled-trade-and-technology-week/',

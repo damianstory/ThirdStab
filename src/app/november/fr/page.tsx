@@ -4,6 +4,7 @@ import { getActivityPageData } from '@/data/activity-pages';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ActivityHero from '@/components/activity/ActivityHero';
+import PromotionalBanner from '@/components/activity/PromotionalBanner';
 import VideoAndExplainer from '@/components/activity/VideoAndExplainer';
 import ActivityDetailAndRubric from '@/components/activity/ActivityDetailAndRubric';
 import ActivityFAQ from '@/components/activity/ActivityFAQ';
@@ -43,6 +44,9 @@ export default async function NovemberActivityFrenchPage() {
       <Header />
       <main className="pt-16">
         <ActivityHero activity={novemberActivity} />
+        {novemberActivity.promotionalBanner && (
+          <PromotionalBanner banner={novemberActivity.promotionalBanner} language="fr" />
+        )}
         <VideoAndExplainer activity={novemberActivity} />
         <ActivityDetailAndRubric activity={novemberActivity} />
         <SponsorResources activity={novemberActivity} />
