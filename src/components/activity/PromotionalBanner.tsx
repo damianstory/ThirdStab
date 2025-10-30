@@ -40,7 +40,7 @@ export default function PromotionalBanner({ banner, language }: PromotionalBanne
                 alt={altText}
                 className="w-full h-auto object-contain hover:scale-[1.01] transition-transform duration-300"
                 loading="eager"
-                style={{ maxHeight: '180px' }}
+                style={{ maxHeight: '135px' }}
               />
             </a>
           ) : (
@@ -49,7 +49,7 @@ export default function PromotionalBanner({ banner, language }: PromotionalBanne
               alt={altText}
               className="w-full h-auto object-contain"
               loading="eager"
-              style={{ maxHeight: '180px' }}
+              style={{ maxHeight: '135px' }}
             />
           )}
 
