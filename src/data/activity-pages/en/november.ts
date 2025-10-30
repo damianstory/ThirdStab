@@ -29,7 +29,7 @@ export const novemberActivity: ActivityPageData = {
 
   video: {
     embedUrl: 'https://www.youtube.com/embed/MkBwR2LC6Mo',
-    title: 'Get hands on',
+    title: 'Get Hands On',
     description: `Skilled careers are more in demand than ever. With over 700 000 skilled trade workers set to retire by 2030, Canada needs you! These careers are well-paying and have so much to offer. See how the Skills for Success are at the core of these careers.`
   },
 
