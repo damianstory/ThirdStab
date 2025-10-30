@@ -24,7 +24,7 @@ export const novemberActivity: ActivityPageData = {
   hero: {
     backgroundImage: '/november-hero.jpg',
     tagline: 'Build Your Foundation for Success',
-    introText: `From carpentry to hairstyling to graphic design, skilled trades and technology careers offer exciting opportunities for all. Join Skills/Compétences Canada to explore these careers and how the Skills for Success can help you thrive in these career paths.`
+    introText: `From carpentry to cooking to graphic design, skilled trades and technology careers offer exciting opportunities for all. Join Skills/Compétences Canada to explore these careers and how the Skills for Success can help you thrive in these career paths.`
   },
 
   video: {
@@ -236,7 +236,7 @@ export const novemberActivity: ActivityPageData = {
   ],
 
   promotionalBanner: {
-    imageEn: '/promotional-banners/nsttw-2025-en-upscaled.png',
+    imageEn: '/promotional-banners/nsttw-2025-en-new.png',
     imageFr: '/promotional-banners/nsttw-2025-fr.png',
     altTextEn: 'National Skilled Trades and Technology Week - November 2 to 8, 2025',
     altTextFr: 'Semaine nationale des métiers spécialisés et des technologies - 2 au 8 novembre 2025',

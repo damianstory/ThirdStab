@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { ActivityPageData } from '@/data/activities';
 
 interface PromotionalBannerProps {
@@ -35,21 +36,27 @@ export default function PromotionalBanner({ banner, language }: PromotionalBanne
               rel="noopener noreferrer"
               className="block"
             >
-              <img
+              <Image
                 src={image}
                 alt={altText}
+                width={2560}
+                height={800}
+                quality={100}
+                priority
                 className="w-full h-auto object-contain hover:scale-[1.01] transition-transform duration-300"
-                loading="eager"
-                style={{ maxHeight: '135px' }}
+                style={{ imageRendering: '-webkit-optimize-contrast' }}
               />
             </a>
           ) : (
-            <img
+            <Image
               src={image}
               alt={altText}
+              width={2560}
+              height={800}
+              quality={100}
+              priority
               className="w-full h-auto object-contain"
-              loading="eager"
-              style={{ maxHeight: '135px' }}
+              style={{ imageRendering: '-webkit-optimize-contrast' }}
             />
           )}
 

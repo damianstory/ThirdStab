@@ -51,15 +51,14 @@ export const CircularSponsorCarousel = ({
   const carouselContainerRef = useRef<HTMLDivElement>(null);
   const autoplayIntervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  const sponsorsLength = useMemo(() => sponsors.length, [sponsors]);
+  const sponsorsLength = useMemo(() => sponsors?.length || 0, [sponsors]);
 
   // Client-side mounting guard
   useEffect(() => {
     setIsMounted(true);
   }, []);
 
-
-  // Responsive gap calculation
+  // Responsive gap calculation - moved BEFORE early returns
   useEffect(() => {
     if (!isMounted) return;
 
@@ -76,7 +75,7 @@ export const CircularSponsorCarousel = ({
     return () => window.removeEventListener("resize", handleResize);
   }, [isMounted]);
 
-  // Autoplay
+  // Autoplay - moved BEFORE early returns
   useEffect(() => {
     if (!isMounted || !autoplay) return;
 
@@ -89,19 +88,6 @@ export const CircularSponsorCarousel = ({
     };
   }, [isMounted, autoplay, sponsorsLength]);
 
-  // Keyboard navigation
-  useEffect(() => {
-    if (!isMounted) return;
-
-    const handleKey = (e: KeyboardEvent) => {
-      if (e.key === "ArrowLeft") handlePrev();
-      if (e.key === "ArrowRight") handleNext();
-    };
-    window.addEventListener("keydown", handleKey);
-    return () => window.removeEventListener("keydown", handleKey);
-    // eslint-disable-next-line
-  }, [isMounted, activeIndex, sponsorsLength]);
-
   // Navigation handlers
   const handleNext = useCallback(() => {
     setActiveIndex((prev) => (prev + 1) % sponsorsLength);
@@ -112,6 +98,50 @@ export const CircularSponsorCarousel = ({
     setActiveIndex((prev) => (prev - 1 + sponsorsLength) % sponsorsLength);
     if (autoplayIntervalRef.current) clearInterval(autoplayIntervalRef.current);
   }, [sponsorsLength]);
+
+  // Keyboard navigation - moved BEFORE early returns
+  useEffect(() => {
+    if (!isMounted) return;
+
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "ArrowLeft") handlePrev();
+      if (e.key === "ArrowRight") handleNext();
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+    // eslint-disable-next-line
+  }, [isMounted, activeIndex, sponsorsLength, handlePrev, handleNext]);
+
+  // ALL HOOKS ARE NOW ABOVE - Early returns below
+
+  // Prevent hydration mismatch by not rendering until mounted
+  if (!isMounted) {
+    return (
+      <div className="w-full max-w-[1456px] mx-auto py-8">
+        <div className="relative">
+          <div className="relative h-[340px] sm:h-[380px] md:h-[420px] lg:h-[460px] w-full flex items-center justify-center">
+            <div className="flex flex-col items-center gap-4">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#0092ff]"></div>
+              <div className="text-neutral4 text-sm">Loading sponsors...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Early return if no sponsors (after mount check)
+  if (!sponsors || sponsors.length === 0) {
+    return (
+      <div className="w-full max-w-[1456px] mx-auto py-8">
+        <div className="relative">
+          <div className="relative h-[340px] sm:h-[380px] md:h-[420px] lg:h-[460px] w-full flex items-center justify-center">
+            <div className="text-neutral4 text-sm">No sponsors available</div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   // Compute transforms for each card
   function getCardStyle(index: number): React.CSSProperties {
@@ -185,19 +215,6 @@ export const CircularSponsorCarousel = ({
     // Navigate to the Notion page
     window.open('https://www.notion.so/Industry-Immersion-Series-Sponsors-23af4a4d79df801ba06eebcd7035537d?source=copy_link', '_blank', 'noopener,noreferrer');
   };
-
-  // Prevent hydration mismatch by not rendering until mounted
-  if (!isMounted) {
-    return (
-      <div className="w-full max-w-[1456px] mx-auto py-8">
-        <div className="relative">
-          <div className="relative h-[340px] sm:h-[380px] md:h-[420px] lg:h-[460px] w-full flex items-center justify-center">
-            <div className="animate-pulse">Loading...</div>
-          </div>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="w-full max-w-[1456px] mx-auto py-8">

@@ -24,7 +24,7 @@ export const novemberActivity: ActivityPageData = {
   hero: {
     backgroundImage: '/november-hero.jpg',
     tagline: 'Build Your Foundation for Success',
-    introText: `From carpentry to hairstyling to graphic design, skilled trades and technology careers offer exciting opportunities for all. Join Skills/Compétences Canada to explore these careers and how the Skills for Success can help you thrive in these career paths.`
+    introText: `From carpentry to cooking to graphic design, skilled trades and technology careers offer exciting opportunities for all. Join Skills/Compétences Canada to explore these careers and how the Skills for Success can help you thrive in these career paths.`
   },
 
   video: {

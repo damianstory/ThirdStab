@@ -66,7 +66,9 @@
       "Read(//Users/damianmatheson/.claude/**)",
       "Read(//private/tmp/**)",
       "Bash(test:*)",
-      "Bash(git -C \"/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab\" status)"
+      "Bash(git -C \"/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab\" status)",
+      "Bash(sips:*)",
+      "Bash(open:*)"
     ],
     "deny": []
   }
