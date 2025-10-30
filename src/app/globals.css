@@ -181,16 +181,16 @@
   }
 
   .activity-hero-bg-mobile {
-    background-position: center top;
+    background-position: 30% top;
   }
 
   .activity-hero-bg-desktop {
-    background-position: 60% center;
+    background-position: 35% center;
   }
 
   @media (min-width: 1280px) {
     .activity-hero-bg-desktop {
-      background-position: 65% center;
+      background-position: 40% center;
     }
   }
 
