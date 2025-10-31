@@ -91,7 +91,11 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
           )}
           <VideoAndExplainer activity={activityPageData} />
           <ActivityDetailAndRubric activity={activityPageData} />
-          <SponsorResources activity={activityPageData} />
+          <SponsorResources
+            activity={activityPageData}
+            resourcesTitle={activityPageData.resourcesTitle}
+            resourcesSubtitle={activityPageData.resourcesSubtitle}
+          />
           {activityPageData.month === 'November' && <SkillsForSuccess activity={activityPageData} language="en" />}
           <ActivityFAQ activity={activityPageData} />
           <IncentivesAndNavigation currentActivity={activityPageData} />

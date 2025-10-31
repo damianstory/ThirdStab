@@ -328,6 +328,8 @@ export interface ActivityPageData extends Activity {
     thumbnail?: string;
     image?: string;
   }>;
+  resourcesTitle?: string; // Optional custom title for Resources section
+  resourcesSubtitle?: string; // Optional custom subtitle for Resources section
 
   // Promotional Banner (optional - for time-sensitive campaigns)
   promotionalBanner?: {

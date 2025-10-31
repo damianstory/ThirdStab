@@ -241,6 +241,8 @@ We will publish de-identified (anonymous summary data) information to provide up
       type: 'link'
     }
   ],
+  resourcesTitle: 'MiHR Resources',
+  resourcesSubtitle: 'Explore these resources to support your activity research',
   
   meta: {
     title: 'Mining Industry Challenge - October 2025',

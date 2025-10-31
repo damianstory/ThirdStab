@@ -6,6 +6,8 @@ import { trackButtonClick } from '@/lib/analytics';
 
 interface SponsorResourcesProps {
   activity: ActivityPageData;
+  resourcesTitle?: string;
+  resourcesSubtitle?: string;
 }
 
 // Resource type icons and colors
@@ -28,7 +30,11 @@ const resourceTypeConfig = {
   }
 };
 
-export default function SponsorResources({ activity }: SponsorResourcesProps) {
+export default function SponsorResources({
+  activity,
+  resourcesTitle = "Choose Your Activity",
+  resourcesSubtitle = "You can complete multiple activities if you want. But one per submission."
+}: SponsorResourcesProps) {
   const handleResourceClick = (url: string, title: string, type: string) => {
     // Track the resource click
     trackButtonClick(
@@ -49,10 +55,10 @@ export default function SponsorResources({ activity }: SponsorResourcesProps) {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="brand-h2 text-[#22224C] mb-4">
-            Choose Your Activity
+            {resourcesTitle}
           </h2>
           <p className="brand-body1 text-neutral-500">
-            You can complete multiple activities if you want. But one per submission.
+            {resourcesSubtitle}
           </p>
         </div>
 
