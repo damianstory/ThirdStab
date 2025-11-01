@@ -199,14 +199,14 @@ export const novemberActivity: ActivityPageData = {
 
   resources: [
     {
-      title: 'Peinture de voiture',
+      title: 'Peinture automobile',
       description: '',
       url: '/pdfs/november/SFS_MyBlueprint_CarPainting FR_web.pdf',
       type: 'pdf',
       image: '/november-activities/car-painting.jpg'
     },
     {
-      title: 'Menuiserie',
+      title: 'Charpenterie',
       description: '',
       url: '/pdfs/november/SFS_MyBlueprint_Carpentry FR_web.pdf',
       type: 'pdf',
@@ -227,7 +227,7 @@ export const novemberActivity: ActivityPageData = {
       image: '/november-activities/cooking.jpg'
     },
     {
-      title: 'Conception graphique',
+      title: 'Infographie',
       description: '',
       url: '/pdfs/november/SFS_MyBlueprint_GraphicDesign FR_web.pdf',
       type: 'pdf',

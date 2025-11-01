@@ -8,6 +8,7 @@ interface SponsorResourcesProps {
   activity: ActivityPageData;
   resourcesTitle?: string;
   resourcesSubtitle?: string;
+  language?: 'en' | 'fr';
 }
 
 // Resource type icons and colors
@@ -32,9 +33,17 @@ const resourceTypeConfig = {
 
 export default function SponsorResources({
   activity,
-  resourcesTitle = "Choose Your Activity",
-  resourcesSubtitle = "You can complete multiple activities if you want. But one per submission."
+  resourcesTitle,
+  resourcesSubtitle,
+  language = 'en'
 }: SponsorResourcesProps) {
+  const defaultTitle = language === 'en' ? "Choose Your Activity" : "Choisissez votre activité";
+  const defaultSubtitle = language === 'en'
+    ? "You can complete multiple activities if you want. But one per submission."
+    : "Si vous le souhaitez, vous pouvez réaliser plusieurs activités. Mais une seule par soumission.";
+
+  const title = resourcesTitle || defaultTitle;
+  const subtitle = resourcesSubtitle || defaultSubtitle;
   const handleResourceClick = (url: string, title: string, type: string) => {
     // Track the resource click
     trackButtonClick(
@@ -55,10 +64,10 @@ export default function SponsorResources({
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="brand-h2 text-[#22224C] mb-4">
-            {resourcesTitle}
+            {title}
           </h2>
           <p className="brand-body1 text-neutral-500">
-            {resourcesSubtitle}
+            {subtitle}
           </p>
         </div>
 
