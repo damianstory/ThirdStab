@@ -121,13 +121,20 @@ export default function Hero({ language = 'en' }: HeroProps) {
 
         {/* Content layer */}
         <div className="relative z-10 w-full flex min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex-col items-center justify-start px-6 lg:px-20 pt-24 md:pt-32 lg:pt-32">
-          <div className="mx-auto max-w-lg text-center lg:mx-0 lg:max-w-xl lg:text-left lg:mr-auto">
-            <h1 className="max-w-2xl text-balance brand-h1 animate-fade-in-up">
+          <div className="mx-auto w-full max-w-lg text-center lg:mx-0 lg:max-w-xl lg:text-left lg:mr-auto">
+            <h1 className="w-full md:max-w-2xl brand-h1 animate-fade-in-up break-words hyphens-auto">
               <span
-                className="bg-gradient-to-r from-[#0070cc] via-[#00b4ff] to-[#0070cc] bg-clip-text text-transparent"
+                className="break-words"
                 style={{
+                  background: 'linear-gradient(to right, #0070cc, #00b4ff, #0070cc)',
                   backgroundSize: '200% 200%',
-                  animation: 'gradient-animation 3s ease-in-out infinite'
+                  backgroundClip: 'text',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  animation: 'gradient-animation 3s ease-in-out infinite',
+                  display: 'inline-block',
+                  wordBreak: 'break-word',
+                  overflowWrap: 'break-word'
                 }}
               >
                 {t.title}

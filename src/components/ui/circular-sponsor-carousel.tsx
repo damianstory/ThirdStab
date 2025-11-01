@@ -69,8 +69,10 @@ export const CircularSponsorCarousel = ({
 
   // Client-side mounting guard
   useEffect(() => {
+    console.log('[CircularSponsorCarousel] Mounting component...');
     setIsMounted(true);
-  }, []);
+    console.log('[CircularSponsorCarousel] Component mounted, sponsors:', sponsors?.length);
+  }, [sponsors]);
 
   // Responsive gap calculation - moved BEFORE early returns
   useEffect(() => {

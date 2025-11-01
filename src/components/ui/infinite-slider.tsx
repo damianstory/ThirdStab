@@ -35,8 +35,12 @@ export function InfiniteSlider({
 
     // Don't start animation until we have size measurements
     // Add small threshold to ensure we have a valid measurement
-    if (!size || size < 10) return;
+    if (!size || size < 10) {
+      console.log('[InfiniteSlider] Waiting for measurements...', { size, width, height });
+      return;
+    }
 
+    console.log('[InfiniteSlider] Starting animation with size:', size);
     const contentSize = size + gap;
     const from = reverse ? -contentSize / 2 : 0;
     const to = reverse ? 0 : -contentSize / 2;

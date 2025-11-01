@@ -39,11 +39,23 @@
   .brand-body1 { @apply text-xl leading-8 font-normal; }
   .brand-body2 { @apply text-base leading-7 font-normal; }
   
-  /* Mobile responsive versions */
+  /* Mobile responsive versions with fluid typography */
   @media (max-width: 768px) {
-    .brand-h1 { @apply text-[2rem] leading-[2.5rem]; }
-    .brand-h2 { @apply text-[1.75rem] leading-[2.25rem]; }
-    .brand-h3 { @apply text-[1.5rem] leading-[2rem]; }
+    .brand-h1 {
+      font-size: clamp(1.125rem, 4vw, 2rem);
+      line-height: clamp(1.625rem, 5vw, 2.5rem);
+      @apply break-words;
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+    .brand-h2 {
+      font-size: clamp(1.125rem, 4vw, 1.75rem);
+      line-height: clamp(1.625rem, 5vw, 2.25rem);
+    }
+    .brand-h3 {
+      font-size: clamp(1rem, 3.5vw, 1.5rem);
+      line-height: clamp(1.5rem, 4.5vw, 2rem);
+    }
   }
 
   /* Hide scrollbar for Chrome, Safari and Opera */
