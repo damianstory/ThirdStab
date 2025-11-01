@@ -5,7 +5,7 @@ export const novemberActivity: ActivityPageData = {
   id: '2',
   month: 'Novembre',
   year: '2025',
-  title: 'Défi&nbsp;d\'exploration<br/>des carrières<br/>spécialisées',
+  title: 'Défi&nbsp;d&apos;exploration<br/>des carrières<br/>spécialisées',
   description: `Explore Canada's Skills for Success: nine skills that can set workers up for success with work, learning, and life – no matter where they live or what job they pursue.`,
   sponsor: {
     name: 'Skills Competences Canada',
@@ -97,27 +97,27 @@ export const novemberActivity: ActivityPageData = {
   rubric: {
     criteria: [
       {
-        category: 'Activity Completion & Evidence',
+        category: 'Réalisation de l\'activité et preuves',
         weight: 25,
-        description: 'Activity clearly completed with strong visual/verbal evidence. Shows enthusiasm and genuine engagement with hands-on task. Process and/or results clearly demonstrated.'
+        description: 'Une activité clairement accomplie avec des preuves visuelles/verbales solides. Elle montre de l\'enthousiasme et un engagement sincère dans la tâche pratique. Le processus et/ou les résultats sont clairement démontrés.'
       },
       {
-        category: 'Career Research Depth',
+        category: 'Profondeur de la recherche sur les carrières',
         weight: 25,
-        description: 'Full and specific coverage: Daily tasks, work environment, schedule specifics. Detailed education/training pathway. Clear job outlook with provincial data. Strong connection made between activity and career(s).'
+        description: 'Résultats d\'un examen complet et spécifique : tâches quotidiennes, milieu de travail et détails relatifs à l\'horaire. Un parcours d\'éducation ou de formation détaillé. Des possibilités d\'emploi claires sous-tendues par des données provinciales. Un lien solide établi entre l\'activité et la ou les carrières.'
       },
       {
-        category: 'Skills for Success Application',
+        category: 'Application des Compétences pour réussir',
         weight: 25,
-        description: 'Three Skills for Success clearly identified from official framework. Specific, realistic job examples for each skill. Examples directly connect to actual daily tasks and responsibilities.'
+        description: 'Trois Compétences pour réussir ont été clairement déterminées dans le cadre officiel. Des exemples spécifiques propre à l\'emploi choisi et réalistes pour chaque compétence. Les exemples sont directement liés à de réelles tâches et responsabilités quotidiennes.'
       },
       {
-        category: 'Sources & Citations',
+        category: 'Sources et citations',
         weight: 25,
-        description: '2+ credible sources clearly cited for job outlook data. Uses authoritative sources (Job Bank, StatsCan, industry associations). Clear attribution (e.g., "According to Job Bank...").'
+        description: 'Au moins deux sources fiables sont clairement mentionnées pour les données sur les possibilités d\'emploi. Utilisation de sources dignes de foi (Guichet-Emplois, Statistique Canada, associations industrielles). Provenance des données clairement mentionnée (par exemple, « Selon Guichet-Emplois... »).'
       },
       {
-        category: 'View Detailed Evaluation Rubric Here',
+        category: 'Consultez la grille d\'évaluation détaillée ici',
         weight: 0,
         description: '',
         isLink: true,

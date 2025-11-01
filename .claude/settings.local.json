@@ -68,7 +68,8 @@
       "Bash(test:*)",
       "Bash(git -C \"/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab\" status)",
       "Bash(sips:*)",
-      "Bash(open:*)"
+      "Bash(open:*)",
+      "Bash(timeout 5 tail:*)"
     ],
     "deny": []
   }

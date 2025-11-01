@@ -145,17 +145,17 @@ export default function ActivityDetailAndRubric({ activity, language = 'en' }: A
             <div className="bg-gradient-to-b from-[#F8FAFB] to-white border-2 border-[#0092ff] rounded-2xl p-6 lg:p-8 mb-8 lg:mt-20">
               <button
                 onClick={() => setShowVideoModal(true)}
-                className="w-full px-6 py-4 rounded-lg font-semibold text-lg transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200 hover:-translate-y-1 hover:shadow-lg active:scale-95 whitespace-nowrap"
+                className="w-full px-6 py-4 rounded-lg font-semibold text-lg text-center leading-tight transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200 hover:-translate-y-1 hover:shadow-lg active:scale-95"
               >
-                Watch: How this Works
+                {language === 'en' ? 'Watch: How this Works' : 'Visionner : Comment cela fonctionne'}
               </button>
             </div>
 
             {/* Rubric */}
             <div className="bg-white border border-neutral2 rounded-xl overflow-hidden mt-8 lg:mt-8">
               <div className="bg-[#0092ff] text-white px-4 py-3">
-                <h3 className="font-semibold text-lg">Evaluation Rubric Summary</h3>
-                <p className="text-sm opacity-90">Total: {activity.rubric.totalPoints} points</p>
+                <h3 className="font-semibold text-lg">{language === 'en' ? 'Evaluation Rubric Summary' : 'Résumé de la grille d\'évaluation'}</h3>
+                <p className="text-sm opacity-90">{language === 'en' ? `Total: ${activity.rubric.totalPoints} points` : `Total : ${activity.rubric.totalPoints} points`}</p>
               </div>
 
               <div className="divide-y divide-neutral2">
