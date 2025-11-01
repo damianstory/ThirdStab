@@ -58,12 +58,12 @@ interface HeroProps {
 
 export default function Hero({ language = 'en' }: HeroProps) {
   const t = text[language];
-  const handleScrollToOctober = () => {
-    const octoberCard = document.getElementById('october-activity-card');
-    if (octoberCard) {
+  const handleScrollToNovember = () => {
+    const novemberCard = document.getElementById('november-activity-card');
+    if (novemberCard) {
       const headerHeight = 64; // Height of fixed header
       const extraOffset = 250; // Extra offset to show cards below
-      const elementPosition = octoberCard.getBoundingClientRect().top;
+      const elementPosition = novemberCard.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerHeight - extraOffset;
 
       // Custom smooth scroll with easing
@@ -163,7 +163,7 @@ export default function Hero({ language = 'en' }: HeroProps) {
             {/* Announcement Pill */}
             <div className="mt-8 mb-24 md:mb-12 lg:mb-24 flex justify-center lg:justify-start animate-fade-in-up animation-delay-400">
               <HeroPill
-                onClick={handleScrollToOctober}
+                onClick={handleScrollToNovember}
                 label={t.pill.label}
                 announcement={t.pill.announcement}
               />
