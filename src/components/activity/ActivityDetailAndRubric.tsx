@@ -8,9 +8,10 @@ import { trackExternalLink } from '@/lib/analytics';
 
 interface ActivityDetailAndRubricProps {
   activity: ActivityPageData;
+  language?: 'en' | 'fr';
 }
 
-export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndRubricProps) {
+export default function ActivityDetailAndRubric({ activity, language = 'en' }: ActivityDetailAndRubricProps) {
   const currentStatus = getCurrentStatus(activity.month, activity.year);
   const isActive = currentStatus === 'active';
   const [openStep, setOpenStep] = useState<number | null>(null);
@@ -56,7 +57,7 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
           {/* Activity Detail - Left Column (2/3 width) */}
           <div className="lg:col-span-2">
             <h2 className="brand-h2 text-[#22224C] mb-6">
-              Challenge Details
+              {language === 'en' ? 'Challenge Details' : 'Détails du défi'}
             </h2>
 
             {/* Description */}
@@ -98,7 +99,7 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
                   <div
                     id={`step-${index}-content`}
                     className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                      openStep === index ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+                      openStep === index ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'
                     }`}
                   >
                     <div className="pb-6">
@@ -113,7 +114,7 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
                                 onClick={(e) => handleRubricClick('Step 6', e)}
                                 className="gradient-rubric-button"
                               >
-                                📝 Evaluation Rubric
+                                📝 {language === 'en' ? 'Evaluation Rubric' : 'Grille d\'évaluation'}
                               </button>
                             )}
 
@@ -121,7 +122,7 @@ export default function ActivityDetailAndRubric({ activity }: ActivityDetailAndR
                               onClick={handleSubmissionClick}
                               className="gradient-submit-button"
                             >
-                              🚀 Submit Your Video
+                              🚀 {language === 'en' ? 'Submit Your Video' : 'Soumettez votre vidéo'}
                             </button>
                           </div>
                         </div>

@@ -29,8 +29,8 @@ export const novemberActivity: ActivityPageData = {
 
   video: {
     embedUrl: 'https://www.youtube.com/embed/MkBwR2LC6Mo',
-    title: 'Get hands on',
-    description: `Skilled careers are more in demand than ever. With over 700 000 skilled trade workers set to retire by 2030, Canada needs you! These careers are well-paying and have so much to offer. See how the Skills for Success are at the core of these careers.`
+    title: 'Lancez-vous!',
+    description: `Les carrières spécialisées sont plus demandées que jamais. Étant donné que plus de 700 000 travailleurs qualifiés vont prendre leur retraite d'ici 2030, le Canada a besoin de vous! Ces carrières sont bien rémunérées et ont beaucoup à offrir. Découvrez comment les Compétences pour réussir sont au centre de ces carrières.`
   },
 
   howThisWorksVideo: {
@@ -39,57 +39,57 @@ export const novemberActivity: ActivityPageData = {
   },
 
   explainer: {
-    title: 'Challenge Overview',
+    title: 'Aperçu du défi',
     rows: [
       {
-        label: 'Active Submission Period',
-        content: 'November 1-30, 2025'
+        label: 'Période de soumission active',
+        content: 'Du 1er au 30 novembre 2025'
       },
       {
-        label: 'Eligibility',
-        content: 'Grades 7-12 students across Canada'
+        label: 'Admissibilité',
+        content: 'Élèves de la 7e à la 12e année partout au Canada'
       },
       {
-        label: 'Total Incentives',
-        content: '$10,000 in micro grants'
+        label: 'Total des avantages incitatifs',
+        content: '10 000 $ en micro-subventions'
       },
       {
-        label: 'Individual Awards',
-        content: '20 winners × $500 each'
+        label: 'Récompenses individuelles',
+        content: '20 lauréats × 500 $ chacun'
       },
       {
-        label: 'Submission Deadline',
-        content: 'November 30, 2025 at 11:59 PM EST'
+        label: 'Date limite de soumission',
+        content: 'Le 30 novembre 2025, à 23 h 59 (HNE)'
       },
     ]
   },
 
   activityDetail: {
-    description: 'Skilled trades and technologies are Canada\'s foundation. These rewarding careers are in-demand and well-paying and could be right for you! See how the nine Skills for Success, like creativity and innovation, problem-solving and adaptability can help you succeed in these careers.<br/><br/><strong>This challenge invites students to explore the</strong> world of skilled trades and technologies and demonstrate how the Skills for Success apply to these career paths.',
+    description: 'Les métiers spécialisés et les technologies sont les fondements du Canada. Ces carrières gratifiantes sont très demandées et bien rémunérées. L\'une d\'entre elles pourrait vous convenir! Découvrez comment les neuf Compétences pour réussir, telles que la créativité et l\'innovation, la résolution de problèmes et l\'adaptabilité, peuvent vous aider à réussir dans ces carrières.<br/><br/><strong>Le défi invite les élèves à explorer l\'</strong>univers des métiers spécialisés et des technologies et à montrer comment les Compétences pour réussir s\'appliquent à ces parcours professionnels.',
     steps: [
       {
-        title: "Step 1: Choose Your Activity",
-        details: "Explore the Activities in the <em>Choose Your Activity</em> section below 👇 \n\n Read through them carefully to know what is being asked of you.\n\n <strong>Pick the one that you're most excited about. Complete the activity.</strong>\n\nYou can do this individually on your own, or as an activity you do in class with your teacher.\n\nAfter you complete the activity, you're ready to move on to Step 2."
+        title: "Étape 1 : Choisissez votre activité",
+        details: "Explorez les activités dans la section <em>Choisissez votre activité</em> (ci-dessous). \n\n Lisez-les attentivement pour bien comprendre ce qui vous est demandé.\n\n <strong>Choisissez l\'activité qui vous intéresse le plus, puis réalisez-la.</strong>\n\nVous pouvez réaliser l\'activité individuellement, c\'est-à-dire seul(e), ou en classe avec votre enseignant."
       },
       {
-        title: "Step 2: Research Your Trade or Technology Career",
-        details: "<strong>Research what it's really like to work in the trade or technology connected to your activity.</strong>\n\nFor example:\n• What does someone in this job do all day?\n• What are their main tasks and responsibilities?\n• Do they work regular 9 to 5 hours, or do they work shifts, weekends, or seasonal schedules?\n• Where do they work? Is it indoors, outdoors, or both?\n• What types of projects do they work on?"
+        title: "Étape 2 : Faites une recherche sur votre carrière du domaine des métiers ou des technologies",
+        details: "<strong>Renseignez-vous sur les types de travaux qui sont demandés dans le métier ou la technologie lié(e) à votre activité.</strong>\n\nPar exemple :\n• Quelles tâches accomplit une personne qui occupe ce poste toute la journée?\n• Quelles sont ses principales tâches et responsabilités?\n• Travaille-t-elle régulièrement de 9 h à 17 h, dans le cadre d\'une période de travail, la fin de semaine ou selon un horaire saisonnier?\n• Où travaille-t-elle? À l\'intérieur, à l\'extérieur ou les deux?\n• Quels types de projets réalise-t-elle?"
       },
       {
-        title: "Step 3: Identify Three Skills for Success",
-        details: "Understand what the official 9 Skills for Success are and what they mean. You can learn more about them in the <em>Learn about the Skills for Success</em> section below 👇 \n\n <strong>Pick THREE that are most important for your chosen trade</strong>\n\n IMPORTANT: Don't just name them. <strong>Give specific examples</strong> of how workers actually use each skill on the job as part of what they do every day, and their work tasks & responsibilities."
+        title: "Étape 3 : Choisissez trois Compétences pour réussir.",
+        details: "Examinez les 9 Compétences pour réussir officielles afin de comprendre leur signification. Vous pouvez en apprendre davantage sur chacune d\'elles dans la section <em>Découvrez les Compétences pour réussir</em> (ci-dessous). \n\n <strong>Choisissez les TROIS compétences qui sont les plus importantes dans le métier que vous avez choisi.</strong>\n\n IMPORTANT : Ne vous contentez pas de les nommer. <strong>Donnez des exemples précis de la manière dont est utilisée concrètement chacune des compétences par les travailleurs dans le cadre de leurs responsabilités et travaux quotidiens.</strong>"
       },
       {
-        title: "Step 4: Map Your Education and Training Pathway",
-        details: "<strong>Research the education and training required for this role.</strong>\n\n• How do you actually get into this career?\n• Is it an apprenticeship where you learn while working?\n• Is it a Red Seal trade recognized across Canada?\n• What college or training programs exist?\n• How long does training take?\n• Where can you get this training in Canada?\n• What courses should you take in high school to prepare?\n\n<strong>Pro tip:</strong> Be specific. For example, instead of just saying 'a college program', mention a specific program and school."
+        title: "Étape 4 : Tracez votre parcours d\'éducation et de formation",
+        details: "<strong>Renseignez-vous sur l\'éducation et la formation requises pour occuper ce poste.</strong>\n\n• Comment vous lancez-vous vraiment dans cette carrière?\n• S\'agit-il d\'un apprentissage où l\'on apprend tout en travaillant?\n• S\'agit-il d\'un métier comportant la mention Sceau rouge qui est reconnu partout au Canada?\n• Quels sont les programmes collégiaux ou de formation offerts?\n• Combien de temps dure la formation?\n• Où peut-on suivre cette formation au Canada?\n• Quels cours faut-il suivre au niveau secondaire pour se préparer?\n\n<strong>Conseil de pro :</strong> Soyez précis(e). Par exemple, au lieu de dire simplement « un programme collégial », mentionnez un programme et une école en particulier."
       },
       {
-        title: "Step 5: Explore Career Opportunities Across Canada",
-        details: "<strong>Research the job outlook for these types of roles. </strong>\n\n• Is this career in-demand?\n• How many types of these jobs are projected to be needed in your province/territory?\n• What's causing the demand (like people retiring or new technology creating jobs)?\n\n<strong>Cite your sources when speaking to this.</strong> You don't need to submit anything extra - just mention them in your submission.\n\nFor example, saying/showing something like any of the below would work great:\n\n• \"according to Job Bank...\"\n• \"the industry association website says...\"\n• \"StatsCan projects...\"\n• \"this report from Indeed says...\"\n• \"the myBlueprint occupation profile for this occupation mentions...\""
+        title: "Étape 5 : Explorez les possibilités de carrière qui existent au Canada.",
+        details: "<strong>Renseignez-vous sur les perspectives d\'emploi pour ces types de postes.</strong>\n\n• Cette carrière est-elle en demande?\n• Combien de postes de ce type sont disponibles dans votre province ou territoire?\n• Qu\'est-ce qui motive la demande (p. ex., les départs à la retraite ou les nouvelles technologies qui créent des emplois)?\n\n<strong>Citez vos sources lorsque vous abordez ce sujet.</strong> Vous n\'avez pas à soumettre des éléments supplémentaires : il vous suffit de les mentionner dans votre soumission.\n\nPar exemple, vous pouvez employer des expressions comme celles ci-dessous :\n\n• « selon Guichet-Emplois... »\n• « le site Web de l\'association industrielle indique que... »\n• « Statistique Canada prévoit... »\n• « ce rapport d\'Indeed indique que... »\n• « le profil de profession de myBlueprint pour ce poste indique que... »"
       },
       {
-        title: "Step 6: Submit Your Activity Video",
-        details: "<strong>Create a 60-90 second video showing what you did in the activity and what you learned from the research across Steps 1-5.</strong>\n\nHow you choose to structure your video is up to you.\n\n• Vertical vs. horizontal? Up to you.\n• Talking head vs. all animations? Up to you.\n• Documentary style vs. tiktok style? Up to you.\n\nThe only requirements are that it addresses each of the 5 steps above (including evidence of your completed activity), and we're able to click a link to watch it. Everything else is up to you.\n\n<strong>IMPORTANT: Make sure the video link has the proper sharing settings in place.</strong>\n\nFor example:\n• If you're using Google Drive, make sure someone outside of your organization can watch it.\n• If you're using Youtube, make sure it's not listed as Private. Unlisted works great though.\n• Make sure it's not something that requires us to log in.\n\n<strong>A great way to test this is by pasting your link into a Chrome Incognito window.</strong> If it works in there without requiring login, it should work for us too.\n\nIt's your responsibility to make sure we can view your work."
+        title: "Étape 6 : Soumettez votre vidéo d\'activité.",
+        details: "<strong>Réalisez une vidéo de 60 à 90 secondes qui montre ce que vous avez accompli dans le cadre de l\'activité et ce que vous avez appris grâce à la recherche effectuée aux étapes 1 à 5.</strong>\n\nVous êtes libre de choisir le type de structure de votre vidéo.\n\n• Verticale ou horizontale? À vous de décider.\n• Tête parlante ou animations? À vous de choisir.\n• Style : documentaire ou TikTok? À vous de choisir.\n\nLes seules exigences sont les suivantes : la vidéo doit aborder chacune des 5 étapes ci-dessus (y compris la preuve que vous avez terminé l\'activité), et nous devons pouvoir cliquer sur un lien pour la visionner. Tout le reste dépend de vous.\n\n<strong>IMPORTANT : Assurez-vous que le lien de la vidéo comprend les paramètres de partage appropriés.</strong>\n\nPar exemple :\n• Si vous utilisez Google Drive, assurez-vous que des personnes extérieures à votre organisation puissent la visionner;\n• Si vous utilisez Youtube, assurez-vous qu\'elle n\'est pas répertoriée comme privée. Les vidéos non répertoriées fonctionnent très bien;\n• Assurez-vous qu\'elle ne nécessite pas une ouverture de session.\n\n<strong>Pour vérifier cela, collez votre lien dans une fenêtre de navigation privée Chrome.</strong> Si la vidéo fonctionne sans devoir ouvrir une session, cela signifie que nous pourrons nous aussi la visionner.\n\nIl est de votre responsabilité de vous assurer que nous pouvons voir votre travail."
       }
     ]
   },
