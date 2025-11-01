@@ -9,9 +9,10 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const pathname = usePathname();
-  const { language, toggleLanguage, t } = useLanguageContext();
+  const { language, toggleLanguage, t, isLoading } = useLanguageContext();
 
-  const navigation = [
+  // Only build navigation array when translations are loaded
+  const navigation = isLoading ? [] : [
     { name: t('header.navigation.howItWorks'), href: '#how-it-works' },
     { name: t('header.navigation.whyMicroGrants'), href: '#why-micro-grants' },
     { name: t('header.navigation.activities'), href: '#timeline' },

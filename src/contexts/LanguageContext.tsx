@@ -36,31 +36,37 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     setLanguage(detectedLanguage);
   }, [pathname]);
 
-  // Load translations for current language
+  // Load translations for both languages on mount
   useEffect(() => {
     const loadTranslations = async () => {
       setIsLoading(true);
       try {
-        // Load all translation files for the current language
         const namespaces = ['common', 'home', 'activities', 'october', 'november'];
-        const loadedTranslations: { [namespace: string]: TranslationData } = {};
+        const languages: Language[] = ['en', 'fr'];
+        const allTranslations: Translations = {};
 
+        // Load all language-namespace combinations
         await Promise.all(
-          namespaces.map(async (namespace) => {
-            try {
-              const translation = await import(`@/translations/${language}/${namespace}.json`);
-              loadedTranslations[namespace] = translation.default;
-            } catch (error) {
-              console.warn(`Translation file not found: ${language}/${namespace}.json`);
-              loadedTranslations[namespace] = {};
-            }
-          })
+          languages.flatMap(lang =>
+            namespaces.map(async (namespace) => {
+              try {
+                const translation = await import(`@/translations/${lang}/${namespace}.json`);
+                if (!allTranslations[lang]) {
+                  allTranslations[lang] = {};
+                }
+                allTranslations[lang][namespace] = translation.default;
+              } catch (error) {
+                console.warn(`Translation file not found: ${lang}/${namespace}.json`);
+                if (!allTranslations[lang]) {
+                  allTranslations[lang] = {};
+                }
+                allTranslations[lang][namespace] = {};
+              }
+            })
+          )
         );
 
-        setTranslations((prev) => ({
-          ...prev,
-          [language]: loadedTranslations,
-        }));
+        setTranslations(allTranslations);
       } catch (error) {
         console.error('Error loading translations:', error);
       } finally {
@@ -69,11 +75,16 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     };
 
     loadTranslations();
-  }, [language]);
+  }, []); // Only run once on mount
 
   // Translation function with nested key support
   const t = useCallback(
     (key: string): string => {
+      // Return empty string if translations are still loading
+      if (isLoading) {
+        return '';
+      }
+
       // Key format: "namespace:path.to.key" or "path.to.key" (defaults to common namespace)
       const [namespaceOrKey, ...rest] = key.split(':');
       const namespace = rest.length > 0 ? namespaceOrKey : 'common';
@@ -111,7 +122,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       // Return the translation or the key itself if not found
       return typeof current === 'string' ? current : key;
     },
-    [language, translations]
+    [language, translations, isLoading]
   );
 
   // Toggle between English and French
