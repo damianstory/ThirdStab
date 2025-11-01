@@ -129,7 +129,7 @@ export const novemberActivity: ActivityPageData = {
   },
 
   submission: {
-    url: 'https://www.surveymonkey.com/r/PLACEHOLDER-NOVEMBER',
+    url: 'https://questionnaire.simplesurvey.com/f/s.aspx?s=7E9DD73A-F738-4261-8DC3-8661373130D7',
     deadline: new Date('2025-11-30T23:59:59-05:00'),
     instructions: 'Submit your completed presentation or infographic along with your written reflection through the Google Form. Ensure all files are properly named with your name and school.'
   },

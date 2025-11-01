@@ -21,6 +21,7 @@ interface TimelineItem {
   };
   isPromotional?: boolean;
   slug?: string;
+  strikethroughIndustry?: boolean;
 }
 
 // Localized text for buttons
@@ -223,7 +224,7 @@ export default function TimelineCard({ item, onComingSoonClick, language = 'en' 
             
             {/* Industry Label */}
             {item.industry && (
-              <p className="brand-body2 text-[#22224C] font-bold mb-3">
+              <p className={`brand-body2 text-[#22224C] font-bold mb-3 ${item.strikethroughIndustry ? 'line-through opacity-60' : ''}`}>
                 {item.industry}
               </p>
             )}
