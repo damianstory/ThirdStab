@@ -75,8 +75,11 @@ export default function IncentivesAndNavigation({ currentActivity, language = 'e
                             'bg-orange-100 text-orange-700'
                           }
                         `}>
-                          {status === 'active' ? 'Active' :
-                           status === 'ongoing' ? 'Ended' : 'Coming Soon'}
+                          {status === 'active'
+                            ? (language === 'en' ? 'Active' : 'Actif')
+                            : status === 'ongoing'
+                              ? (language === 'en' ? 'Ongoing' : 'En cours')
+                              : (language === 'en' ? 'Coming Soon' : 'À venir')}
                         </div>
                       </div>
                     </div>
