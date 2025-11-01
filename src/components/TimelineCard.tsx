@@ -20,14 +20,33 @@ interface TimelineItem {
     logoType: 'tall' | 'wide' | 'square';
   };
   isPromotional?: boolean;
+  slug?: string;
 }
+
+// Localized text for buttons
+const buttonText = {
+  en: {
+    viewActivity: 'View Activity',
+    comingSoon: 'Coming Soon',
+    learnMore: 'Learn More',
+    whyWeAreDoingThis: "Why We're Doing This"
+  },
+  fr: {
+    viewActivity: "Voir l'activité",
+    comingSoon: 'À venir',
+    learnMore: 'En savoir plus',
+    whyWeAreDoingThis: "Pourquoi nous faisons cela"
+  }
+};
 
 interface TimelineCardProps {
   item: TimelineItem;
   onComingSoonClick?: () => void;
+  language?: 'en' | 'fr';
 }
 
-export default function TimelineCard({ item, onComingSoonClick }: TimelineCardProps) {
+export default function TimelineCard({ item, onComingSoonClick, language = 'en' }: TimelineCardProps) {
+  const t = buttonText[language];
   const router = useRouter();
   const [showVideoModal, setShowVideoModal] = useState(false);
   const isActive = item.status === 'confirmed';
@@ -35,7 +54,8 @@ export default function TimelineCard({ item, onComingSoonClick }: TimelineCardPr
   const isEnabled = item.status === 'confirmed';
 
   // Check if this activity has a dedicated page
-  const hasActivityPage = item.sponsor && validActivityMonths.includes(item.month.toLowerCase());
+  // Use slug if available (for localization support), otherwise fall back to month
+  const hasActivityPage = item.sponsor && validActivityMonths.includes(item.slug || item.month.toLowerCase());
 
   // Check if this is the September promotional card that should show video
   const isSeptemberPromo = item.isPromotional && item.month === 'September' && item.year === '2025';
@@ -101,7 +121,10 @@ export default function TimelineCard({ item, onComingSoonClick }: TimelineCardPr
       }
     } else if (hasActivityPage) {
       // Navigate to individual activity page
-      router.push(`/${item.month.toLowerCase()}`);
+      // Use slug if available (for localization), otherwise fall back to month
+      const slug = item.slug || item.month.toLowerCase();
+      const path = language === 'fr' ? `/${slug}/fr` : `/${slug}`;
+      router.push(path);
     }
     // For confirmed promotional items without activity pages, no action
   };
@@ -124,16 +147,16 @@ export default function TimelineCard({ item, onComingSoonClick }: TimelineCardPr
       case 'confirmed':
         // Special case for September promotional month
         if (item.isPromotional && item.month === 'September' && item.year === '2025') {
-          return 'Why We\'re Doing This';
+          return t.whyWeAreDoingThis;
         }
         // If it has an activity page, show "View Activity"
         if (hasActivityPage) {
-          return 'View Activity';
+          return t.viewActivity;
         }
-        return 'Learn More';
+        return t.learnMore;
       case 'tba':
       default:
-        return 'Coming Soon';
+        return t.comingSoon;
     }
   };
 

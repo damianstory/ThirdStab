@@ -36,8 +36,8 @@ export default function FrenchHome() {
       <main className="pt-0">
         <Hero language="fr" />
         <HowItWorks language="fr" />
-        <WhyMicroGrants />
-        <Timeline />
+        <WhyMicroGrants language="fr" />
+        <Timeline language="fr" />
         <Incentives />
         <Sponsors />
         <FAQ />

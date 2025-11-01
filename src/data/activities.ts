@@ -364,3 +364,183 @@ export function getActivityBySlug(slug: string): Activity | null {
 export function isValidActivityMonth(month: string): boolean {
   return validActivityMonths.includes(month.toLowerCase());
 }
+
+// French translations for activities
+const activitiesFr: Activity[] = [
+  {
+    id: '1',
+    month: 'octobre',
+    year: '2025',
+    title: "Défi de l'industrie minière",
+    description: "Avec des carrières à la surface et sous terre, sur le terrain, dans les usines de traitement des minéraux et de métallurgie, les laboratoires et les bureaux — il y a une place pour vous dans le secteur minier.",
+    sponsor: {
+      name: 'MiHR',
+      logo: '/logo1.gif',
+      logoType: 'square'
+    },
+    incentive: {
+      total: 10000,
+      individual: 500,
+      count: 20
+    },
+    status: 'coming-soon',
+    slug: 'october'
+  },
+  {
+    id: '2',
+    month: 'novembre',
+    year: '2025',
+    title: "Défi d'exploration des métiers spécialisés",
+    description: "Découvrez les Compétences pour réussir du Canada : neuf compétences essentielles qui favorisent la réussite au travail, dans les études et dans la vie — peu importe où vous vivez ou le métier que vous exercez.",
+    sponsor: {
+      name: 'Skills Competences Canada',
+      logo: '/logo2.png',
+      logoType: 'wide'
+    },
+    incentive: {
+      total: 10000,
+      individual: 500,
+      count: 20
+    },
+    status: 'coming-soon',
+    slug: 'november'
+  },
+  {
+    id: '3',
+    month: 'décembre',
+    year: '2025',
+    title: "Défi d'exploration des carrières en agriculture",
+    description: "Explorez le secteur agricole canadien dans ce défi qui vous aidera à mieux connaître les carrières en agriculture et en agroalimentaire partout au pays.",
+    sponsor: {
+      name: 'thinkAG',
+      logo: '/thinkag-logo.png',
+      logoType: 'wide'
+    },
+    incentive: {
+      total: 10000,
+      individual: 500,
+      count: 20
+    },
+    status: 'coming-soon',
+    slug: 'december'
+  },
+  {
+    id: '4',
+    month: 'janvier',
+    year: '2026',
+    title: "Défi Au-delà des nuages",
+    description: "Chez NAV CANADA, nous transformons la gestion de l'espace aérien. Découvrez comment les professionnels du contrôle de la circulation aérienne et des services de vol assurent un transport aérien sécuritaire, efficace et agréable pour des millions de voyageurs.",
+    sponsor: {
+      name: 'NAV CANADA',
+      logo: '/logo4.png',
+      logoType: 'tall'
+    },
+    incentive: {
+      total: 10000,
+      individual: 500,
+      count: 20
+    },
+    status: 'coming-soon',
+    slug: 'january'
+  },
+  {
+    id: '5',
+    month: 'février',
+    year: '2026',
+    title: "Défi sur l'assurance climatique",
+    description: "Apprenez comment les professionnels de l'assurance sont des résolveurs de problèmes qui s'attaquent à de grands défis tels que les changements climatiques, les phénomènes météorologiques extrêmes et la sécurité des collectivités pour protéger les personnes et les communautés.",
+    sponsor: {
+      name: 'Zurich Canada',
+      logo: '/logo5.png',
+      logoType: 'wide'
+    },
+    incentive: {
+      total: 10000,
+      individual: 500,
+      count: 20
+    },
+    status: 'coming-soon',
+    slug: 'february'
+  },
+  {
+    id: '6',
+    month: 'mars',
+    year: '2026',
+    title: "Défi Comprends les impôts",
+    description: "On entend souvent dire qu'on devrait apprendre des compétences de la vie courante à l'école — comme comment faire ses impôts. Ce défi vous permettra de comprendre ce que sont les impôts, comment ils fonctionnent et pourquoi ils sont importants.",
+    sponsor: {
+      name: 'H&R Block Canada',
+      logo: '/logo6.jpeg',
+      logoType: 'wide'
+    },
+    incentive: {
+      total: 10000,
+      individual: 500,
+      count: 20
+    },
+    status: 'coming-soon',
+    slug: 'march'
+  },
+  {
+    id: '7',
+    month: 'avril',
+    year: '2026',
+    title: "Défi Tourisme et hospitalité",
+    description: "Explorez l'une des industries qui connaît la plus forte croissance au monde. Des entreprises locales uniques aux marques mondiales influentes, trouvez la carrière qui vous correspond et planifiez votre parcours pour y arriver.",
+    sponsor: {
+      name: 'Tourism HR Canada',
+      logo: '/logo7.png',
+      logoType: 'wide'
+    },
+    incentive: {
+      total: 10000,
+      individual: 500,
+      count: 20
+    },
+    status: 'coming-soon',
+    slug: 'april'
+  },
+  {
+    id: '8',
+    month: 'mai',
+    year: '2026',
+    title: "Défi de l'industrie CVC&R",
+    description: "Le domaine du chauffage, de la ventilation, de la climatisation et de la réfrigération (CVC) dépasse les simples outils et conduits. C'est un métier bien rémunéré et en forte demande, qui peut mener vers des carrières en conception, en ingénierie, en ventes, en technologies vertes, ou même la possibilité d'avoir sa propre entreprise.",
+    sponsor: {
+      name: 'HRAI',
+      logo: '/hvacr-career-connections.png',
+      logoType: 'wide'
+    },
+    incentive: {
+      total: 10000,
+      individual: 500,
+      count: 20
+    },
+    status: 'coming-soon',
+    slug: 'may'
+  },
+  {
+    id: '9',
+    month: 'mai',
+    year: '2026',
+    title: "Défi Certificat Sois présent",
+    description: "Apprenez à soutenir une personne qui vit des difficultés en santé mentale grâce à ce cours en ligne créé par Jack.org, en partenariat avec la Born This Way Foundation.",
+    sponsor: {
+      name: 'Jack.org',
+      logo: '/jack-logo.png',
+      logoType: 'wide'
+    },
+    incentive: {
+      total: 10000,
+      individual: 500,
+      count: 20
+    },
+    status: 'coming-soon',
+    slug: 'may-2'
+  }
+];
+
+// Helper function to get localized activities
+export function getActivities(language: 'en' | 'fr' = 'en'): Activity[] {
+  return language === 'fr' ? activitiesFr : activities;
+}
