@@ -3,9 +3,9 @@ import { ActivityPageData } from '../../activities';
 export const novemberActivity: ActivityPageData = {
   // Base activity information (from activities.ts)
   id: '2',
-  month: 'November',
+  month: 'Novembre',
   year: '2025',
-  title: 'Skilled Career Exploration Challenge',
+  title: 'Défi&nbsp;d\'exploration<br/>des carrières<br/>spécialisées',
   description: `Explore Canada's Skills for Success: nine skills that can set workers up for success with work, learning, and life – no matter where they live or what job they pursue.`,
   sponsor: {
     name: 'Skills Competences Canada',
@@ -23,8 +23,8 @@ export const novemberActivity: ActivityPageData = {
   // Extended page content
   hero: {
     backgroundImage: '/november-hero.jpg',
-    tagline: 'Build Your Foundation for Success',
-    introText: `From carpentry to cooking to graphic design, skilled trades and technology careers offer exciting opportunities for all. Join Skills/Compétences Canada to explore these careers and how the Skills for Success can help you thrive in these career paths.`
+    tagline: 'À toi de bâtir ton avenir!',
+    introText: `De la charpenterie à la cuisine en passant par l'infographie, les carrières des métiers spécialisés et des technologies offrent des possibilités passionnantes à tous. Joignez-vous à Skills/Compétences Canada pour explorer ces carrières et découvrir comment les Compétences pour réussir peuvent vous aider à prospérer dans ces domaines professionnels.`
   },
 
   video: {

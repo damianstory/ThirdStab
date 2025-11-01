@@ -28,9 +28,10 @@ export default function ActivityHero({ activity }: ActivityHeroProps) {
             </div>
             
             {/* Activity Title */}
-            <h1 className="brand-h1 text-[#22224C] mb-4 lg:mb-6 drop-shadow-sm">
-              {activity.title}
-            </h1>
+            <h1
+              className="brand-h1 text-[#22224C] mb-4 lg:mb-6 drop-shadow-sm"
+              dangerouslySetInnerHTML={{ __html: activity.title }}
+            />
             
             {/* Tagline */}
             <h2 className="brand-h3 text-neutral-600 mb-6 lg:mb-8 drop-shadow-sm">
