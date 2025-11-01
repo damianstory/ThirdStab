@@ -18,7 +18,46 @@ const companies = [
   { name: 'Jack', logo: '/jack-logo.png' },
 ];
 
-export default function Hero() {
+// Localized text content
+const text = {
+  en: {
+    title: 'Industry Immersion Series',
+    subtitle1: '$100,000+ in micro grants and incentives available to grade 7-12 students (and their educators) across Canada.',
+    subtitle2: {
+      bold: 'The first activity is now live! Scroll down ',
+      regular: 'to learn how the program works, and view open activities.'
+    },
+    subtitle3: 'And join the mailing list so you and your students are the first to know how to get involved.',
+    emailPlaceholder: 'Enter your email address',
+    signUpButton: 'Sign Up',
+    pill: {
+      announcement: '🎉 November Activity is Now Live',
+      label: 'Access it Here!'
+    }
+  },
+  fr: {
+    title: "Série d'immersion dans l'industrie",
+    subtitle1: "Plus de 100 000 $ en microbourses et incitatifs offerts aux élèves de la 7e à la 12e année (et à leurs éducateurs) partout au Canada.",
+    subtitle2: {
+      bold: "La première activité est maintenant en ligne ! Faites défiler la page ",
+      regular: "pour découvrir comment le fonctionnement du programme et consulter les activités offertes."
+    },
+    subtitle3: "Inscrivez-vous à la liste d'envoi pour être les premiers, vous et vos élèves, à savoir comment participer.",
+    emailPlaceholder: "Entrez votre adresse courriel",
+    signUpButton: "S'inscrire",
+    pill: {
+      announcement: "🎉 L'activité de novembre est maintenant en ligne",
+      label: "Cliquez ici pour y accéder !"
+    }
+  }
+};
+
+interface HeroProps {
+  language?: 'en' | 'fr';
+}
+
+export default function Hero({ language = 'en' }: HeroProps) {
+  const t = text[language];
   const handleScrollToOctober = () => {
     const octoberCard = document.getElementById('october-activity-card');
     if (octoberCard) {
@@ -91,24 +130,24 @@ export default function Hero() {
                   animation: 'gradient-animation 3s ease-in-out infinite'
                 }}
               >
-                Industry Immersion Series
+                {t.title}
               </span>
             </h1>
             <p className="mt-8 max-w-2xl text-balance brand-body1 text-neutral5 animate-fade-in-up animation-delay-100">
-              $100,000+ in micro grants and incentives available to grade 7-12 students (and their educators) across Canada.
+              {t.subtitle1}
             </p>
             <p className="mt-6 max-w-2xl text-balance brand-body1 text-neutral5 animate-fade-in-up animation-delay-100">
-              <span className="font-bold">The first activity is now live! Scroll down </span>to learn how the program works, and view open activities.
+              <span className="font-bold">{t.subtitle2.bold}</span>{t.subtitle2.regular}
             </p>
             <p className="mt-6 max-w-2xl text-balance brand-body1 text-neutral5 animate-fade-in-up animation-delay-100">
-              And join the mailing list so you and your students are the first to know how to get involved.
+              {t.subtitle3}
             </p>
 
             {/* Email Capture Form */}
             <div className="mt-12 max-w-md animate-fade-in-up animation-delay-300">
               <EmailForm
-                placeholder="Enter your email address"
-                buttonText="Sign Up"
+                placeholder={t.emailPlaceholder}
+                buttonText={t.signUpButton}
                 source="hero"
                 className=""
               />
@@ -118,8 +157,8 @@ export default function Hero() {
             <div className="mt-8 mb-24 md:mb-12 lg:mb-24 flex justify-center lg:justify-start animate-fade-in-up animation-delay-400">
               <HeroPill
                 onClick={handleScrollToOctober}
-                label="Access it Here!"
-                announcement="🎉 October Activity is Now Live"
+                label={t.pill.label}
+                announcement={t.pill.announcement}
               />
             </div>
           </div>

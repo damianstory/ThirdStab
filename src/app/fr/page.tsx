@@ -34,8 +34,8 @@ export default function FrenchHome() {
     <>
       <Header />
       <main className="pt-0">
-        <Hero />
-        <HowItWorks />
+        <Hero language="fr" />
+        <HowItWorks language="fr" />
         <WhyMicroGrants />
         <Timeline />
         <Incentives />
