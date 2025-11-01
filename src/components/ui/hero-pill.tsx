@@ -70,9 +70,9 @@ export function HeroPill({
       <motion.button
         onClick={handleClick}
         className={cn(
-          "flex w-auto items-center space-x-2 rounded-full",
+          "flex flex-col sm:flex-row w-auto items-center space-y-1.5 sm:space-y-0 sm:space-x-2 rounded-full",
           "bg-lightBlue/50 ring-1 ring-brandBlue/30",
-          "px-3 py-2 whitespace-pre hover:bg-lightBlue/70 transition-colors",
+          "px-3 py-2 hover:bg-lightBlue/70 transition-colors",
           "cursor-pointer",
           className
         )}
@@ -93,9 +93,9 @@ export function HeroPill({
         rel="noopener noreferrer"
         onClick={handleClick}
         className={cn(
-          "flex w-auto items-center space-x-2 rounded-full",
+          "flex flex-col sm:flex-row w-auto items-center space-y-1.5 sm:space-y-0 sm:space-x-2 rounded-full",
           "bg-lightBlue/50 ring-1 ring-brandBlue/30",
-          "px-3 py-2 whitespace-pre hover:bg-lightBlue/70 transition-colors",
+          "px-3 py-2 hover:bg-lightBlue/70 transition-colors",
           className
         )}
         initial={{ opacity: 0, y: -20 }}
@@ -117,9 +117,9 @@ export function HeroPill({
         href={href!}
         onClick={handleClick}
         className={cn(
-          "flex w-auto items-center space-x-2 rounded-full",
+          "flex flex-col sm:flex-row w-auto items-center space-y-1.5 sm:space-y-0 sm:space-x-2 rounded-full",
           "bg-lightBlue/50 ring-1 ring-brandBlue/30",
-          "px-3 py-2 whitespace-pre hover:bg-lightBlue/70 transition-colors",
+          "px-3 py-2 hover:bg-lightBlue/70 transition-colors",
           className
         )}
       >

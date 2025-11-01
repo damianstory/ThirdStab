@@ -3,7 +3,7 @@
 import EmailForm from './EmailForm';
 import { InfiniteSlider } from './ui/infinite-slider';
 import AnimatedBackground from './AnimatedBackground';
-import { HeroPill } from '@/components/ui/hero-pill';
+import { ActivityBadge } from '@/components/ui/activity-badge';
 
 // Company logos data
 const companies = [
@@ -30,10 +30,7 @@ const text = {
     subtitle3: 'And join the mailing list so you and your students are the first to know how to get involved.',
     emailPlaceholder: 'Enter your email address',
     signUpButton: 'Sign Up',
-    pill: {
-      announcement: '🎉 November Activity is Now Live',
-      label: 'Access it Here!'
-    }
+    badge: 'November Activity Live'
   },
   fr: {
     title: "Série d'immersion dans l'industrie",
@@ -45,10 +42,7 @@ const text = {
     subtitle3: "Inscrivez-vous à la liste d'envoi pour être les premiers, vous et vos élèves, à savoir comment participer.",
     emailPlaceholder: "Entrez votre adresse courriel",
     signUpButton: "S'inscrire",
-    pill: {
-      announcement: "🎉 L'activité de novembre est maintenant en ligne",
-      label: "Cliquez ici pour y accéder !"
-    }
+    badge: 'Activité de novembre en ligne'
   }
 };
 
@@ -160,12 +154,13 @@ export default function Hero({ language = 'en' }: HeroProps) {
               />
             </div>
 
-            {/* Announcement Pill */}
+            {/* Activity Badge */}
             <div className="mt-8 mb-24 md:mb-12 lg:mb-24 flex justify-center lg:justify-start animate-fade-in-up animation-delay-400">
-              <HeroPill
+              <ActivityBadge
+                expandedText={t.badge}
+                emoji="🎉"
                 onClick={handleScrollToNovember}
-                label={t.pill.label}
-                announcement={t.pill.announcement}
+                collapseDelay={6000}
               />
             </div>
           </div>

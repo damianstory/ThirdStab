@@ -69,7 +69,8 @@
       "Bash(git -C \"/Users/damianmatheson/Desktop/ClaudeCode/ThirdStab\" status)",
       "Bash(sips:*)",
       "Bash(open:*)",
-      "Bash(timeout 5 tail:*)"
+      "Bash(timeout 5 tail:*)",
+      "Skill(frontend-aesthetics)"
     ],
     "deny": []
   }
