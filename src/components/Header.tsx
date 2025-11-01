@@ -9,16 +9,16 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const pathname = usePathname();
-  const { language, toggleLanguage } = useLanguageContext();
+  const { language, toggleLanguage, t } = useLanguageContext();
 
   const navigation = [
-    { name: 'How It Works', href: '#how-it-works' },
-    { name: 'Why Micro Grants?', href: '#why-micro-grants' },
-    { name: 'Activities', href: '#timeline' },
-    { name: 'Incentives', href: '#incentives' },
-    { name: 'Sponsors', href: '#sponsors' },
-    { name: 'FAQ', href: '#faq' },
-    { name: 'Stay Informed', href: '#stay-informed' },
+    { name: t('header.navigation.howItWorks'), href: '#how-it-works' },
+    { name: t('header.navigation.whyMicroGrants'), href: '#why-micro-grants' },
+    { name: t('header.navigation.activities'), href: '#timeline' },
+    { name: t('header.navigation.incentives'), href: '#incentives' },
+    { name: t('header.navigation.sponsors'), href: '#sponsors' },
+    { name: t('header.navigation.faq'), href: '#faq' },
+    { name: t('header.navigation.stayInformed'), href: '#stay-informed' },
   ];
 
   // Determine the home path based on current language
