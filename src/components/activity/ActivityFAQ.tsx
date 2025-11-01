@@ -6,9 +6,10 @@ import { trackFAQ } from '@/lib/analytics';
 
 interface ActivityFAQProps {
   activity: ActivityPageData;
+  language?: 'en' | 'fr';
 }
 
-export default function ActivityFAQ({ activity }: ActivityFAQProps) {
+export default function ActivityFAQ({ activity, language = 'en' }: ActivityFAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
@@ -30,10 +31,12 @@ export default function ActivityFAQ({ activity }: ActivityFAQProps) {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="brand-h2 text-[#22224C] mb-4">
-            Frequently Asked Questions
+            {language === 'en' ? 'Frequently Asked Questions' : 'Foire aux questions'}
           </h2>
           <p className="brand-body1 text-neutral-500">
-            Get answers to common questions about this activity
+            {language === 'en'
+              ? 'Get answers to common questions about this activity'
+              : 'Obtenez des réponses à des questions courantes sur cette activité'}
           </p>
         </div>
 

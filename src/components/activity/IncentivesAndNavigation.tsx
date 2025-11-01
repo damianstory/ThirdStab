@@ -4,9 +4,10 @@ import { getActivitiesWithStatus, getCurrentStatus, ActivityPageData } from '@/d
 
 interface IncentivesAndNavigationProps {
   currentActivity: ActivityPageData;
+  language?: 'en' | 'fr';
 }
 
-export default function IncentivesAndNavigation({ currentActivity }: IncentivesAndNavigationProps) {
+export default function IncentivesAndNavigation({ currentActivity, language = 'en' }: IncentivesAndNavigationProps) {
   const activitiesWithStatus = getActivitiesWithStatus();
   
 
@@ -16,10 +17,10 @@ export default function IncentivesAndNavigation({ currentActivity }: IncentivesA
         {/* Activity Navigation Section */}
         <div className="text-center mb-12">
           <h2 className="brand-h2 text-[#22224C] mb-6">
-            Explore Other Activities
+            {language === 'en' ? 'Explore Other Activities' : 'Découvrez d\'autres activités'}
           </h2>
           <p className="brand-body1 text-neutral-500">
-            Navigate to other monthly challenges
+            {language === 'en' ? 'Navigate to other monthly challenges' : 'Accédez aux autres défis mensuels'}
           </p>
         </div>
         {/* Activity Grid */}

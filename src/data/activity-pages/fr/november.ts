@@ -136,64 +136,64 @@ export const novemberActivity: ActivityPageData = {
 
   faqs: [
     {
-      question: 'How does this November Activity challenge work?',
-      answer: 'Carefully read the Challenge Details steps to understand what is being asked of you in this activity. You can watch the How it Works video for a detailed overview of the Skilled Career Exploration Challenge.'
+      question: 'En quoi consiste le Défi d\'activité de novembre?',
+      answer: 'Lisez attentivement les étapes des Détails du défi pour comprendre ce qui vous est demandé dans le cadre de cette activité. Vous pouvez visionner la vidéo <em>Visionner : Comment cela fonctionne</em> pour obtenir un aperçu détaillé du Défi d\'exploration des carrières spécialisées.'
     },
     {
-      question: 'What am I actually being asked to submit?',
-      answer: `You're being asked to submit a 60 to 90 second video that shows what you did in your chosen activity and what you learned from your research. Your video should cover: (1) evidence of your completed hands-on activity, (2) what it's like to work in the related trade/career, (3) three Skills for Success with specific job examples, (4) the education/training pathway, and (5) career opportunities across Canada. Make sure the video is shared as a clickable link with proper sharing settings so we can view it. Test it in an incognito browser window before submitting.`
+      question: 'Qu\'est-ce que je dois soumettre exactement?',
+      answer: `Il vous est demandé de soumettre une vidéo de 60 à 90 secondes qui montre ce que vous avez fait dans le cadre de l\'activité que vous avez choisie et ce que vous avez appris de votre recherche. Votre vidéo devrait couvrir les points suivants : (1) une preuve de votre activité pratique terminée, (2) comment c\'est de travailler dans le métier ou la carrière associé(e), (3) trois Compétences pour réussir avec des exemples concrets liés au travail, (4) le parcours d\'éducation ou de formation et (5) les possibilités de carrière partout au Canada. Assurez-vous que la vidéo est partagée en tant que lien cliquable avec les paramètres de partage appropriés afin que nous puissions la visionner. Testez-la dans une fenêtre de navigateur de navigation privée avant de la soumettre.`
     },
     {
-      question: 'Can I submit more than one video?',
-      answer: `Yes, you can submit multiple times, but it must be a different activity completed each time, though students can only win one micro grant per month. We'd encourage you to focus on quality, not quantity.`
+      question: 'Puis-je soumettre plus d\'une vidéo?',
+      answer: `Oui, vous pouvez faire plusieurs soumissions, mais il doit s\'agir d\'une activité différente terminée chaque fois, bien que les élèves ne puissent gagner qu\'une seule micro-subvention par mois. Nous vous encourageons à privilégier la qualité, et non la quantité.`
     },
     {
-      question: 'Is there a preferred style for the video?',
-      answer: `No, it's whatever feels authentic and engaging to you. It can be a Tik Tok style video with lots of different cuts and background music or more documentary style - whatever you will enjoy making more. Just make sure to meet the requirements listed in each of the steps.`
+      question: 'Y a-t-il un style de vidéo privilégié?',
+      answer: `Non, peu importe tant que c\'est authentique et captivant pour vous. La vidéo peut adopter le style de TikTok, avec beaucoup de montages différents et de la musique de fond, ou adopter un style plus documentaire. Peu importe ce que vous préférez faire. Assurez-vous simplement de respecter les exigences énumérées dans chacune des étapes.`
     },
     {
-      question: 'Does it matter what tool I use to make the video?',
-      answer: `Nope, it doesn't matter at all what tool you use. There are lots of free tools available to make videos today. Check with your school to see what they already have access to. For example, Canva is a great tool to be able to create videos with.`
+      question: 'L\'outil utilisé pour réaliser la vidéo a-t-il de l\'importance?',
+      answer: `Non, l\'outil que vous utilisez n\'a aucune importance. De nombreux outils gratuits permettent de faire des vidéos aujourd\'hui. Vérifiez auprès de votre école à quels outils vous avez déjà accès. Par exemple, Canva est un excellent outil pour créer des vidéos.`
     },
     {
-      question: 'What skills will I be developing by doing this activity?',
-      answer: `Lots of skills like research, critical thinking, communication, content creation, and many others - including practicing the Skills for Success themselves! It would be a good idea to add the completed video to your myBlueprint portfolio and reflect on what skills you feel like you've developed as part of completing this activity.`
+      question: 'Quelles compétences vais-je développer en réalisant cette activité?',
+      answer: `De nombreuses compétences, comme la recherche, la pensée critique, la communication, la création de contenu et bien d\'autres, y compris la pratique des Compétences pour réussir elles-mêmes! Ce serait une bonne idée d\'ajouter la vidéo terminée à votre portfolio dans myBlueprint et de réfléchir aux compétences que vous avez le sentiment d\'avoir développées dans le cadre de cette activité.`
     },
     {
-      question: 'Who is reviewing the submissions?',
-      answer: `Submissions will be reviewed by a team of representatives from myBlueprint. We may, if needed, collaborate with representatives from Skills/Compétences Canada.`
+      question: 'Qui examine les soumissions?',
+      answer: `Les soumissions seront examinées par une équipe de représentants de myBlueprint. Nous pourrions, si besoin, collaborer avec des représentants de Skills/Compétences Canada.`
     },
     {
-      question: 'Can students submit their videos in French?',
-      answer: `Yes, videos will be accepted in either English or French.`
+      question: 'Les élèves peuvent-ils soumettre des vidéos en français?',
+      answer: `Oui, les vidéos seront acceptées en anglais ou en français.`
     },
     {
-      question: 'How (and when) are the twenty monthly successful submissions selected?',
-      answer: `Depending on the volume of submissions, we plan to have selected and be able to announce winners by the midpoint of the following month. For example, with this activity, we hope to be able to announce the November winners by mid-December.`
+      question: 'Comment (et quand) les vingt meilleures soumissions mensuelles sont-elles sélectionnées?',
+      answer: `En fonction du volume de soumissions, nous prévoyons avoir sélectionné et être en mesure d\'annoncer les gagnants d\'ici le milieu du mois suivant. Par exemple, pour cette activité, nous espérons être en mesure d\'annoncer les gagnants de novembre d\'ici la mi-décembre.`
     },
     {
-      question: 'Should I add these submissions to my portfolio in myBlueprint?',
-      answer: `Yeah, that's a great idea, along with a reflection of what you learned from doing this activity and what you found interesting. As a heads up, we'll also be asking students to submit evidence of their completed activities through a myBlueprint portfolio if you plan on applying for one of the Series Completion incentives at the end of the year.`
+      question: 'Devrais-je ajouter ces soumissions à mon portfolio dans myBlueprint?',
+      answer: `Oui, c\'est une excellente idée, accompagnée d\'une réflexion sur ce que vous avez appris en faisant cette activité et ce que vous avez trouvé intéressant. À titre indicatif, nous demanderons également aux élèves de soumettre une preuve de leurs activités terminées dans un portfolio de myBlueprint s\'ils prévoient postuler pour l\'un des avantages incitatifs liés à la Réalisation de la série à la fin de l\'année.`
     },
     {
-      question: 'Do I need to do this in class, or can I just do this on my own?',
-      answer: `You can absolutely complete this activity on your own. That being said, you should absolutely communicate with your teachers (and parents) that you're doing this and see if you can potentially earn credit for the work that you're doing for this activity.`
+      question: 'Dois-je faire cette activité en classe, ou puis-je la faire par moi-même?',
+      answer: `Vous pouvez tout à fait réaliser cette activité par vous-même. Cela étant dit, vous devriez absolument informer vos enseignants (et vos parents) que vous faites cela et voir s\'il est possible d\'obtenir des crédits pour le travail que vous faites pour cette activité.`
     },
     {
-      question: 'Can I do this as a group project?',
-      answer: `The Skilled Career Exploration Challenge has been designed as an individual activity.`
+      question: 'Puis-je faire cette activité en tant que projet de groupe?',
+      answer: `Le Défi d\'exploration des carrières spécialisées a été conçu comme une activité individuelle.`
     },
     {
-      question: 'Can I still submit the activity after the November 30th deadline?',
-      answer: `Yes, you can still submit monthly activities after the deadline. However, any activity submitted after the deadline is not eligible for that month's pool of micro grants. It still makes sense to complete them even after the deadline so that you can potentially earn one of the Series Completion incentives. Those only require all activities to be completed, not necessarily completed within the month of the activity.`
+      question: 'Puis-je quand même soumettre l\'activité après la date limite du 30 novembre?',
+      answer: `Oui, vous pouvez quand même soumettre des activités mensuelles après la date limite. Toutefois, toute activité soumise après la date limite n\'est pas admissible à la réserve de micro-subventions de ce mois-là. Il est tout de même logique de les réaliser, même après la date limite, afin de pouvoir obtenir l\'un des avantages incitatifs liés à la Réalisation de la série. Ceux-ci requièrent uniquement que toutes les activités soient terminées, pas nécessairement qu\'elles soient terminées dans le mois de l\'activité.`
     },
     {
-      question: 'Will teachers be able to see who has submitted an entry?',
-      answer: `Teachers won't be able to see through myBlueprint which students have submitted activities or not. However, we will create reports that will be shared with your myBlueprint lead at the school board level who can share specifics with you upon request.`
+      question: 'Les enseignants pourront-ils voir qui a soumis une inscription?',
+      answer: `Les enseignants ne pourront pas voir dans myBlueprint quels élèves ont soumis des activités ou pas. Cependant, nous créerons des rapports qui seront partagés avec votre responsable de myBlueprint au niveau du conseil scolaire qui pourra partager des détails précis avec vous sur demande.`
     },
     {
-      question: 'What data is being collected and by who?',
-      answer: `myBlueprint is solely responsible for running the Industry Immersion Series. Meaning that only myBlueprint is collecting any information related to this Series. No personally identifiable information is being shared with any third parties. We will publish de-identified (anonymous summary data) information to provide updates on how the series is going. For example, the number of activity submissions received for each month, which province they're coming from, and communicate with our school board partners about school-specific participation. <a href="https://docs.google.com/document/d/1rHxZ4QntHN0fo7rqi7uKeDQakupNtE3KtT8p3lFPur4/edit?tab=t.0" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">[Click here to see the questions students are being asked]</a> to answer when they submit their completed activity.`
+      question: 'Quelles données sont collectées et par qui?',
+      answer: `myBlueprint est l\'unique responsable de la réalisation de la Série d\'immersion industrielle, ce qui signifie que seul myBlueprint collecte toute information relative à cette série. Aucune information personnelle identifiable n\'est partagée avec des tiers. Nous publierons des informations sous forme de données synthétiques anonymisées pour fournir des mises à jour sur la façon dont la série se déroule. Par exemple, le nombre de soumissions d\'activités reçues pour chaque mois, leur province d\'origine, et nous communiquerons avec nos partenaires des conseils scolaires sur la participation spécifique à l\'école. <a href="https://docs.google.com/document/d/1rHxZ4QntHN0fo7rqi7uKeDQakupNtE3KtT8p3lFPur4/edit?tab=t.0" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">[Cliquez ici pour voir les questions auxquelles les élèves doivent répondre]</a> lorsqu\'ils soumettent leur activité terminée.`
     }
   ],
 

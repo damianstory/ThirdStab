@@ -144,10 +144,12 @@ export default function SkillsForSuccess({ activity, language = 'en' }: SkillsFo
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="brand-h2 text-[#22224C] mb-4">
-            Learn about the Skills for Success
+            {language === 'en' ? 'Learn about the Skills for Success' : 'Découvrez les Compétences pour réussir'}
           </h2>
           <p className="brand-body1 text-neutral-500">
-            Explore the nine Skills for Success that help Canadians thrive in work, learning, and life.
+            {language === 'en'
+              ? 'Explore the nine Skills for Success that help Canadians thrive in work, learning, and life.'
+              : 'Examinez les neuf Compétences pour réussir qui aident les Canadiens et les Canadiennes à s\'épanouir dans leur travail, leurs études et leur vie quotidienne.'}
           </p>
         </div>
 
