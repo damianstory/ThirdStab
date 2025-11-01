@@ -33,7 +33,7 @@ const text = {
     badge: 'November Activity Live'
   },
   fr: {
-    title: "Série d'immersion dans l'industrie",
+    title: <>Série <br className="hidden md:block" />d&apos;immersion <br className="hidden md:block" />dans l&apos;industrie</>,
     subtitle1: "Plus de 100 000 $ en microbourses et incitatifs offerts aux élèves de la 7e à la 12e année (et à leurs éducateurs) partout au Canada.",
     subtitle2: {
       bold: "La première activité est maintenant en ligne ! Faites défiler la page ",
@@ -126,7 +126,7 @@ export default function Hero({ language = 'en' }: HeroProps) {
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   animation: 'gradient-animation 3s ease-in-out infinite',
-                  display: 'inline-block',
+                  display: 'inline',
                   wordBreak: 'break-word',
                   overflowWrap: 'break-word'
                 }}
