@@ -2,33 +2,47 @@
 
 import { useState } from 'react'
 
+// Localized pill labels
+const pillLabels = {
+  en: {
+    activity: 'Activity Sponsor',
+    incentive: 'Incentive Sponsor'
+  },
+  fr: {
+    activity: 'Commanditaire d'activité',
+    incentive: 'Commanditaire de récompense'
+  }
+};
+
 interface SponsorCarouselCardProps {
   name: string
   logo: string
   type: 'activity' | 'incentive'
   month?: string
   onClick?: () => void
+  language?: 'en' | 'fr'
 }
 
-export default function SponsorCarouselCard({ 
-  name, 
-  logo, 
-  type, 
+export default function SponsorCarouselCard({
+  name,
+  logo,
+  type,
   month,
-  onClick 
+  onClick,
+  language = 'en'
 }: SponsorCarouselCardProps) {
   const [imageError, setImageError] = useState(false)
-  
+
   const typeStyles = {
     activity: {
       pill: 'bg-[#0092ff] text-white',
       border: 'border-[#0092ff]',
-      label: 'Activity Sponsor'
+      label: pillLabels[language].activity
     },
     incentive: {
       pill: 'bg-green-500 text-white',
       border: 'border-green-500',
-      label: 'Incentive Sponsor'
+      label: pillLabels[language].incentive
     }
   }
 
@@ -48,7 +62,7 @@ export default function SponsorCarouselCard({
     >
       {/* Type Pill */}
       <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10">
-        <span className={`inline-flex items-center px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium ${currentStyle.pill}`}>
+        <span className={`flex items-center justify-center px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-medium leading-none whitespace-nowrap ${currentStyle.pill}`}>
           {currentStyle.label}
         </span>
       </div>

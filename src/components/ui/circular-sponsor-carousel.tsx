@@ -23,7 +23,20 @@ interface CircularSponsorCarouselProps {
   sponsors: SponsorCard[];
   autoplay?: boolean;
   onCardClick?: (sponsor: SponsorCard) => void;
+  language?: 'en' | 'fr';
 }
+
+// Localized pill labels
+const pillLabels = {
+  en: {
+    activity: 'Activity Sponsor',
+    incentive: 'Incentive Sponsor'
+  },
+  fr: {
+    activity: "Commanditaire d'activité",
+    incentive: 'Commanditaire de récompense'
+  }
+};
 
 function calculateGap(width: number) {
   const minWidth = 768;
@@ -40,6 +53,7 @@ export const CircularSponsorCarousel = ({
   sponsors,
   autoplay = true,
   onCardClick,
+  language = 'en',
 }: CircularSponsorCarouselProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [hoverPrev, setHoverPrev] = useState(false);
@@ -195,12 +209,12 @@ export const CircularSponsorCarousel = ({
     activity: {
       pill: 'bg-[#0092ff] text-white',
       border: 'border-[#0092ff]',
-      label: 'Activity Sponsor'
+      label: pillLabels[language].activity
     },
     incentive: {
       pill: 'bg-green-500 text-white',
       border: 'border-green-500',
-      label: 'Incentive Sponsor'
+      label: pillLabels[language].incentive
     }
   };
 
@@ -249,7 +263,7 @@ export const CircularSponsorCarousel = ({
               >
                 {/* Type Pill */}
                 <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10">
-                  <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium ${currentStyle.pill}`}>
+                  <span className={`inline-flex items-center justify-center px-3 py-1 rounded-full text-xs font-medium leading-none whitespace-nowrap ${currentStyle.pill}`}>
                     {currentStyle.label}
                   </span>
                 </div>

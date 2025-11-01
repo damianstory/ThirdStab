@@ -39,7 +39,7 @@ export default function FrenchHome() {
         <WhyMicroGrants language="fr" />
         <Timeline language="fr" />
         <Incentives language="fr" />
-        <Sponsors />
+        <Sponsors language="fr" />
         <FAQ language="fr" />
         <StayInformed language="fr" />
       </main>

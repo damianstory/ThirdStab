@@ -6,7 +6,28 @@ import CircularSponsorCarousel from './ui/circular-sponsor-carousel'
 import { carouselSponsors } from '@/data/carousel-sponsors'
 import { trackButtonClick } from '@/lib/analytics'
 
-export default function Sponsors() {
+// Localized text content
+const text = {
+  en: {
+    heading: "Our Participating",
+    headingAccent: "Sponsors",
+    subheading: "Let's celebrate these industry leaders collaborating with students to help them develop real-world skills 🤝",
+    viewAllButton: "View All Sponsors/Incentives"
+  },
+  fr: {
+    heading: "Nos",
+    headingAccent: "commanditaires participants",
+    subheading: "Célébrons ces leaders de l'industrie qui collaborent avec les élèves pour les aider à développer des compétences concrètes 🤝",
+    viewAllButton: "Voir tous les commanditaires et récompenses"
+  }
+};
+
+interface SponsorsProps {
+  language?: 'en' | 'fr';
+}
+
+export default function Sponsors({ language = 'en' }: SponsorsProps) {
+  const t = text[language];
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   // Handle View All Sponsors button click
@@ -23,10 +44,10 @@ export default function Sponsors() {
         {/* Section Header */}
         <div className="text-center mb-3">
           <h2 className="brand-h2 text-navy mb-4">
-            Our Participating <span className="text-[#0092ff]">Sponsors</span>
+            {t.heading} <span className="text-[#0092ff]">{t.headingAccent}</span>
           </h2>
           <p className="text-xl text-neutral4 max-w-3xl mx-auto">
-            Let&apos;s celebrate these industry leaders collaborating with students to help them develop real-world skills 🤝
+            {t.subheading}
           </p>
         </div>
 
@@ -35,6 +56,7 @@ export default function Sponsors() {
           <CircularSponsorCarousel
             sponsors={carouselSponsors}
             autoplay={true}
+            language={language}
             // Modal functionality disabled - cards now link directly to sponsor page
             // onCardClick={() => setIsModalOpen(true)}
           />
@@ -49,7 +71,7 @@ export default function Sponsors() {
             onClick={handleViewAllClick}
             className="bg-[#0092ff] text-white font-semibold py-3 px-6 sm:py-4 sm:px-8 rounded-xl hover:bg-[#0082e6] transition-colors text-center shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-200 text-sm sm:text-base"
           >
-            View All Sponsors/Incentives
+            {t.viewAllButton}
           </a>
         </div>
       </div>
