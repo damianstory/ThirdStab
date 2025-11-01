@@ -21,11 +21,14 @@ export async function generateMetadata(): Promise<Metadata> {
     };
   }
 
+  // Use plain text title for metadata (no HTML entities)
+  const plainTitle = "Défi d'exploration des carrières spécialisées";
+
   return {
-    title: `${novemberActivity.title} - Série d'immersion industrielle`,
+    title: `${plainTitle} - Série d'immersion industrielle`,
     description: novemberActivity.description,
     openGraph: {
-      title: `${novemberActivity.title} - Série d'immersion industrielle`,
+      title: `${plainTitle} - Série d'immersion industrielle`,
       description: novemberActivity.description,
       images: [novemberActivity.meta.ogImage],
     },
