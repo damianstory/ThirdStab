@@ -9,8 +9,8 @@ const pillLabels = {
     incentive: 'Incentive Sponsor'
   },
   fr: {
-    activity: 'Commanditaire d'activité',
-    incentive: 'Commanditaire de récompense'
+    activity: "Commanditaire d'activité",
+    incentive: "Commanditaire de récompense"
   }
 };
 
