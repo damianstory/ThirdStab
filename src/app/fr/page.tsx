@@ -38,10 +38,10 @@ export default function FrenchHome() {
         <HowItWorks language="fr" />
         <WhyMicroGrants language="fr" />
         <Timeline language="fr" />
-        <Incentives />
+        <Incentives language="fr" />
         <Sponsors />
-        <FAQ />
-        <StayInformed />
+        <FAQ language="fr" />
+        <StayInformed language="fr" />
       </main>
       <Footer />
     </>
