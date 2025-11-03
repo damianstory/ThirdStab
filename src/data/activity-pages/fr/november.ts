@@ -28,7 +28,7 @@ export const novemberActivity: ActivityPageData = {
   },
 
   video: {
-    embedUrl: 'https://www.youtube.com/embed/MkBwR2LC6Mo',
+    embedUrl: 'https://www.youtube.com/embed/4Dgqjh-nGX4',
     title: 'Lancez-vous!',
     description: `Les carrières spécialisées sont plus demandées que jamais. Étant donné que plus de 700 000 travailleurs qualifiés vont prendre leur retraite d'ici 2030, le Canada a besoin de vous! Ces carrières sont bien rémunérées et ont beaucoup à offrir. Découvrez comment les Compétences pour réussir sont au centre de ces carrières.`
   },
