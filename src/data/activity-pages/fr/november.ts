@@ -34,7 +34,7 @@ export const novemberActivity: ActivityPageData = {
   },
 
   howThisWorksVideo: {
-    embedUrl: 'https://www.youtube.com/embed/MkBwR2LC6Mo',
+    embedUrl: 'https://www.youtube.com/embed/_G9Bx6qPi0g',
     title: 'How this Works - November Challenge'
   },
 
