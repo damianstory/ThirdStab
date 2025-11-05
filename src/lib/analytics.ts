@@ -117,3 +117,66 @@ export function trackExternalLink(url: string, linkText: string) {
     linkText,
   });
 }
+
+/**
+ * Track Skills for Success interactions
+ * @param skillName - Name of the skill clicked
+ * @param month - Activity month
+ */
+export function trackSkillsForSuccess(
+  skillName: string,
+  month: string
+) {
+  ReactGA.event({
+    category: 'Skills for Success',
+    action: 'skill_click',
+    label: `${skillName} - ${month}`,
+  });
+
+  console.log('GA4 Skills for Success tracked:', {
+    skillName,
+    month,
+  });
+}
+
+/**
+ * Track Choose Your Activity selections
+ * @param activityName - Name of the activity chosen
+ * @param month - Activity month
+ */
+export function trackActivitySelection(
+  activityName: string,
+  month: string
+) {
+  ReactGA.event({
+    category: 'Activity Selection',
+    action: 'activity_click',
+    label: `${activityName} - ${month}`,
+  });
+
+  console.log('GA4 Activity Selection tracked:', {
+    activityName,
+    month,
+  });
+}
+
+/**
+ * Track video engagement for Skills for Success
+ * @param skillName - Name of the skill video
+ * @param month - Activity month
+ */
+export function trackSkillVideoEngagement(
+  skillName: string,
+  month: string
+) {
+  ReactGA.event({
+    category: 'Skills Video',
+    action: 'video_open',
+    label: `${skillName} - ${month}`,
+  });
+
+  console.log('GA4 Skills Video tracked:', {
+    skillName,
+    month,
+  });
+}

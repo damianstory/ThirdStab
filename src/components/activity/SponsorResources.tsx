@@ -2,7 +2,7 @@
 
 import { ExternalLink, FileText, Video, File, Globe } from 'lucide-react';
 import { ActivityPageData } from '@/data/activities';
-import { trackButtonClick } from '@/lib/analytics';
+import { trackButtonClick, trackActivitySelection } from '@/lib/analytics';
 
 interface SponsorResourcesProps {
   activity: ActivityPageData;
@@ -45,7 +45,13 @@ export default function SponsorResources({
   const title = resourcesTitle || defaultTitle;
   const subtitle = resourcesSubtitle || defaultSubtitle;
   const handleResourceClick = (url: string, title: string, type: string) => {
-    // Track the resource click
+    // Track with the specific Activity Selection function
+    trackActivitySelection(
+      title,
+      activity.month
+    );
+
+    // Keep the existing general tracking as well for backwards compatibility
     trackButtonClick(
       `Resource - ${title}`,
       `${activity.month} Activity - ${type}`

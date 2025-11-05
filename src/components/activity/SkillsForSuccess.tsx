@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { ActivityPageData } from '@/data/activities';
-import { trackButtonClick } from '@/lib/analytics';
+import { trackButtonClick, trackSkillsForSuccess, trackSkillVideoEngagement } from '@/lib/analytics';
 import Modal from '@/components/Modal';
 
 interface SkillsForSuccessProps {
@@ -125,14 +125,18 @@ export default function SkillsForSuccess({ activity, language = 'en' }: SkillsFo
   const [selectedSkill, setSelectedSkill] = useState<typeof skills[0] | null>(null);
 
   const handleSkillClick = (skill: typeof skills[0]) => {
-    // Track the skill click
-    trackButtonClick(
-      `Skill - ${skill.name}`,
-      `${activity.month} Activity - Skills for Success`
+    // Track with the specific Skills for Success function
+    trackSkillsForSuccess(
+      skill.name,
+      activity.month
     );
 
-    // Open video popup modal if video URL exists
+    // If opening video, track video engagement too
     if (skill.videoUrl && skill.videoUrl !== '#') {
+      trackSkillVideoEngagement(
+        skill.name,
+        activity.month
+      );
       setSelectedSkill(skill);
       setShowVideoModal(true);
     }
