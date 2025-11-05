@@ -69,7 +69,7 @@ export const novemberActivity: ActivityPageData = {
     steps: [
       {
         title: "Step 1: Choose Your Activity",
-        details: "Explore the Activities in the <em>Choose Your Activity</em> section below 👇 \n\n Read through them carefully to know what is being asked of you.\n\n <strong>Pick the one that you're most excited about. Complete the activity.</strong>\n\nYou can do this individually on your own, or as an activity you do in class with your teacher.\n\nAfter you complete the activity, you're ready to move on to Step 2."
+        details: "Explore the Activities in the <em>Choose Your Activity</em> section below 👇 \n\n Read through them carefully to know what is being asked of you.\n\n <strong>Pick the one that you're most excited about. Complete the activity.</strong>\n\nYou can do this individually on your own, or as an activity you do in class with your teacher."
       },
       {
         title: "Step 2: Research Your Trade or Technology Career",
