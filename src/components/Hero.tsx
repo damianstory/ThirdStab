@@ -24,7 +24,7 @@ const text = {
     title: 'Industry Immersion Series',
     subtitle1: '$100,000+ in micro grants and incentives available to grade 7-12 students (and their educators) across Canada.',
     subtitle2: {
-      bold: 'The first activity is now live! Scroll down ',
+      bold: 'The November activity is now live! Scroll down ',
       regular: 'to learn how the program works, and view open activities.'
     },
     subtitle3: 'And join the mailing list so you and your students are the first to know how to get involved.',
