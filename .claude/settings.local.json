@@ -70,7 +70,12 @@
       "Bash(sips:*)",
       "Bash(open:*)",
       "Bash(timeout 5 tail:*)",
-      "Skill(frontend-aesthetics)"
+      "Skill(frontend-aesthetics)",
+      "WebFetch(domain:thinkag.ca)",
+      "WebFetch(domain:kareero.vrts.ca)",
+      "WebFetch(domain:aitcdashboard.ca)",
+      "WebFetch(domain:www.youtube.com)",
+      "WebFetch(domain:www.cabef.org)"
     ],
     "deny": []
   }

@@ -205,39 +205,39 @@ We will publish de-identified (anonymous summary data) information to provide up
 
   resources: [
     {
-      title: 'thinkAG Career Hub',
-      description: 'Explore career opportunities in agriculture and food systems.',
-      url: 'https://thinkag.ca/en-ca/',
+      title: 'thinkAG Career Explorer',
+      description: 'Interactive career exploration tool with 100+ agriculture careers filterable by interest and province.',
+      url: 'https://thinkag.ca/en-ca/explore-careers',
       type: 'link'
     },
     {
-      title: 'Agriculture Career Videos',
-      description: 'Watch videos about different careers in the agriculture sector.',
-      url: 'https://thinkag.ca/en-ca/',
+      title: 'Kareero Virtual Reality Game',
+      description: 'Interactive WebGL game for exploring agriculture careers through virtual reality.',
+      url: 'https://kareero.vrts.ca/webgl/',
+      type: 'link'
+    },
+    {
+      title: 'Agriculture Education Resource Matrix',
+      description: 'National database of 743+ curriculum resources for agriculture education across all grades.',
+      url: 'https://aitcdashboard.ca/resource_matrix/NATIONAL/',
+      type: 'link'
+    },
+    {
+      title: 'Labour Market Information Report',
+      description: 'Comprehensive 2024 report on agriculture workforce trends and employment projections.',
+      url: 'https://cahrc-ccrha.ca/sites/default/files/2024-02/CAHRC_LMI-Report_FEB_2024_EN%20%281%29.pdf',
+      type: 'pdf'
+    },
+    {
+      title: 'Agriculture Career Video Playlist',
+      description: 'YouTube playlist featuring diverse agriculture career profiles and industry insights.',
+      url: 'https://www.youtube.com/watch?v=mNvyfSGi1O4&list=PLsTAeu1pJ5ZwO4rJqjxIUTiHlE8--s0_j',
       type: 'video'
     },
     {
-      title: 'Farm to Table Careers',
-      description: 'Learn about the diverse pathways from production to consumption.',
-      url: 'https://thinkag.ca/en-ca/',
-      type: 'link'
-    },
-    {
-      title: 'Sustainable Agriculture Resources',
-      description: 'Discover innovative and sustainable farming practices.',
-      url: 'https://thinkag.ca/en-ca/',
-      type: 'link'
-    },
-    {
-      title: 'thinkAG Resources',
-      description: 'Access all thinkAG educational resources and career information.',
-      url: 'https://thinkag.ca/en-ca/',
-      type: 'link'
-    },
-    {
-      title: 'Food Systems & Innovation',
-      description: 'Explore how technology is transforming agriculture and food production.',
-      url: 'https://thinkag.ca/en-ca/',
+      title: 'CABEF Scholarships',
+      description: 'Seven $2,500 scholarships for students pursuing agriculture programs at Canadian institutions.',
+      url: 'https://www.cabef.org/scholarships/',
       type: 'link'
     }
   ],
