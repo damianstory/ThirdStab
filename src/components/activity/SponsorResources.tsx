@@ -192,9 +192,10 @@ export default function SponsorResources({
                   {/* Resource Link */}
                   <div className="flex items-center text-[#0092ff] font-medium text-sm group-hover:underline">
                     <span className="mr-2">
-                      {resource.type === 'pdf' ? 'Download' :
-                       resource.type === 'video' ? 'Watch' :
-                       resource.type === 'article' ? 'Read' : 'Visit'}
+                      {resource.buttonText ||
+                       (resource.type === 'pdf' ? 'Download' :
+                        resource.type === 'video' ? 'Watch' :
+                        resource.type === 'article' ? 'Read' : 'Visit')}
                     </span>
                     <svg
                       width="16"

@@ -211,22 +211,23 @@ We will publish de-identified (anonymous summary data) information to provide up
       type: 'link'
     },
     {
-      title: 'Kareero Virtual Reality Game',
-      description: 'Interactive WebGL game for exploring agriculture careers through virtual reality.',
+      title: 'Kareero Interest Assessment Game',
+      description: 'Interactive interest assessment that tracks your choices in a school gardening program to reveal your career interest areas and explore matching agriculture careers.',
       url: 'https://kareero.vrts.ca/webgl/',
-      type: 'link'
-    },
-    {
-      title: 'Agriculture Education Resource Matrix',
-      description: 'National database of 743+ curriculum resources for agriculture education across all grades.',
-      url: 'https://aitcdashboard.ca/resource_matrix/NATIONAL/',
       type: 'link'
     },
     {
       title: 'Labour Market Information Report',
       description: 'Comprehensive 2024 report on agriculture workforce trends and employment projections.',
       url: 'https://cahrc-ccrha.ca/sites/default/files/2024-02/CAHRC_LMI-Report_FEB_2024_EN%20%281%29.pdf',
-      type: 'pdf'
+      type: 'pdf',
+      buttonText: 'Visit'
+    },
+    {
+      title: 'Agriculture Education Resource Matrix',
+      description: 'National database of 743+ curriculum resources for agriculture education across all grades.',
+      url: 'https://aitcdashboard.ca/resource_matrix/NATIONAL/',
+      type: 'link'
     },
     {
       title: 'Agriculture Career Video Playlist',

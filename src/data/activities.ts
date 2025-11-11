@@ -327,6 +327,7 @@ export interface ActivityPageData extends Activity {
     type: 'pdf' | 'video' | 'link' | 'article';
     thumbnail?: string;
     image?: string;
+    buttonText?: string; // Optional custom button text
   }>;
   resourcesTitle?: string; // Optional custom title for Resources section
   resourcesSubtitle?: string; // Optional custom subtitle for Resources section
