@@ -208,38 +208,44 @@ We will publish de-identified (anonymous summary data) information to provide up
       title: 'thinkAG Career Explorer',
       description: 'Interactive career exploration tool with 100+ agriculture careers filterable by interest and province.',
       url: 'https://thinkag.ca/en-ca/explore-careers',
-      type: 'link'
+      type: 'link',
+      borderColor: '#FF8C42'
     },
     {
       title: 'Kareero Interest Assessment Game',
       description: 'Interactive interest assessment that tracks your choices in a school gardening program to reveal your career interest areas and explore matching agriculture careers.',
       url: 'https://kareero.vrts.ca/webgl/',
-      type: 'link'
+      type: 'link',
+      borderColor: '#FFD93D'
     },
     {
       title: 'Labour Market Information Report',
       description: 'Comprehensive 2024 report on agriculture workforce trends and employment projections.',
       url: 'https://cahrc-ccrha.ca/sites/default/files/2024-02/CAHRC_LMI-Report_FEB_2024_EN%20%281%29.pdf',
       type: 'pdf',
-      buttonText: 'Visit'
+      buttonText: 'Visit',
+      borderColor: '#8BC34A'
     },
     {
       title: 'Agriculture Career Video Playlist',
       description: 'YouTube playlist featuring diverse agriculture career profiles and industry insights.',
       url: 'https://www.youtube.com/watch?v=mNvyfSGi1O4&list=PLsTAeu1pJ5ZwO4rJqjxIUTiHlE8--s0_j',
-      type: 'video'
+      type: 'video',
+      borderColor: '#4CAF50'
     },
     {
       title: 'Agriculture Education Resource Matrix',
       description: 'National database of 743+ curriculum resources for agriculture education across all grades.',
       url: 'https://aitcdashboard.ca/resource_matrix/NATIONAL/',
-      type: 'link'
+      type: 'link',
+      borderColor: '#3F51B5'
     },
     {
       title: 'CABEF Scholarships',
       description: 'Seven $2,500 scholarships for students pursuing agriculture programs at Canadian institutions.',
       url: 'https://www.cabef.org/scholarships/',
-      type: 'link'
+      type: 'link',
+      borderColor: '#009688'
     }
   ],
   resourcesTitle: 'thinkAG Resources',

@@ -328,6 +328,7 @@ export interface ActivityPageData extends Activity {
     thumbnail?: string;
     image?: string;
     buttonText?: string; // Optional custom button text
+    borderColor?: string; // Optional custom border color for branding
   }>;
   resourcesTitle?: string; // Optional custom title for Resources section
   resourcesSubtitle?: string; // Optional custom subtitle for Resources section

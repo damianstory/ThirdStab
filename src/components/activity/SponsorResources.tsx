@@ -172,7 +172,10 @@ export default function SponsorResources({
                 <div
                   key={index}
                   onClick={() => handleResourceClick(resource.url, resource.title, resource.type)}
-                  className="bg-white border border-neutral2 rounded-xl p-6 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1 hover:border-[#0092ff] group h-full flex flex-col"
+                  className="bg-white rounded-xl p-6 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1 group h-full flex flex-col"
+                  style={{
+                    border: resource.borderColor ? `2px solid ${resource.borderColor}` : '1px solid rgb(var(--neutral2))'
+                  }}
                 >
                   {/* Resource Icon */}
                   <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 text-blue-500 bg-blue-50 group-hover:scale-110 transition-transform duration-200">
