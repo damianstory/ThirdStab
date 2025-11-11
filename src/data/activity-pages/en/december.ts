@@ -224,16 +224,16 @@ We will publish de-identified (anonymous summary data) information to provide up
       buttonText: 'Visit'
     },
     {
-      title: 'Agriculture Education Resource Matrix',
-      description: 'National database of 743+ curriculum resources for agriculture education across all grades.',
-      url: 'https://aitcdashboard.ca/resource_matrix/NATIONAL/',
-      type: 'link'
-    },
-    {
       title: 'Agriculture Career Video Playlist',
       description: 'YouTube playlist featuring diverse agriculture career profiles and industry insights.',
       url: 'https://www.youtube.com/watch?v=mNvyfSGi1O4&list=PLsTAeu1pJ5ZwO4rJqjxIUTiHlE8--s0_j',
       type: 'video'
+    },
+    {
+      title: 'Agriculture Education Resource Matrix',
+      description: 'National database of 743+ curriculum resources for agriculture education across all grades.',
+      url: 'https://aitcdashboard.ca/resource_matrix/NATIONAL/',
+      type: 'link'
     },
     {
       title: 'CABEF Scholarships',
