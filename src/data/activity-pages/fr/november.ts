@@ -243,7 +243,7 @@ export const novemberActivity: ActivityPageData = {
     link: 'https://www.skillscompetencescanada.com/fr/program/semaine-nationale-des-metiers-specialises-et-des-technologies/#',
     displayDates: {
       start: new Date('2025-10-01T00:00:00-05:00'),
-      end: new Date('2025-11-30T23:59:59-05:00')
+      end: new Date('2025-11-08T23:59:59-05:00') // Banner hidden after Nov 8 - change back to Nov 30 to restore
     }
   },
 
