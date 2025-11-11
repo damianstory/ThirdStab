@@ -24,11 +24,11 @@ export const decemberActivity: ActivityPageData = {
   hero: {
     backgroundImage: '/december-hero.jpg',
     tagline: 'Discover Your Future in Agriculture',
-    introText: `From farm to table, the agriculture and food systems sector offers diverse career paths that feed our communities and sustain our planet. Partner with thinkAG to explore opportunities in one of Canada's most vital industries.`
+    introText: `From farm to table, the agriculture and food systems sector offers diverse career paths that feed our communities and sustain our planet. Explore Canada's agriculture sector in this challenge as you increase your awareness and cultivate curiousity in agriculture and food careers across the country.`
   },
 
   video: {
-    embedUrl: 'https://www.youtube.com/embed/placeholder',
+    embedUrl: 'https://www.youtube.com/embed/ytH3dVcX50c',
     title: 'Careers in Agriculture',
     description: `Agriculture and food systems are essential to our communities and economy. With careers in farming, food science, agribusiness, research, technology, and sustainability – there's a place for you in agriculture.`
   },
