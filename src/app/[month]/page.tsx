@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { activities, validActivityMonths, getActivityBySlug, type ActivityPageData } from '@/data/activities';
 import { getActivityPageData } from '@/data/activity-pages';
-import Header from '@/components/Header';
+import ActivityHeader from '@/components/ActivityHeader';
 import Footer from '@/components/Footer';
 import StayInformed from '@/components/StayInformed';
 import ActivityHero from '@/components/activity/ActivityHero';
@@ -83,21 +83,27 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
   if (activityPageData) {
     return (
       <>
-        <Header />
+        <ActivityHeader />
         <main className="pt-16">
           <ActivityHero activity={activityPageData} />
           {activityPageData.promotionalBanner && (
             <PromotionalBanner banner={activityPageData.promotionalBanner} language="en" />
           )}
           <VideoAndExplainer activity={activityPageData} />
-          <ActivityDetailAndRubric activity={activityPageData} />
-          <SponsorResources
-            activity={activityPageData}
-            resourcesTitle={activityPageData.resourcesTitle}
-            resourcesSubtitle={activityPageData.resourcesSubtitle}
-          />
+          <div id="activity-details">
+            <ActivityDetailAndRubric activity={activityPageData} />
+          </div>
+          <div id="sponsor-resources">
+            <SponsorResources
+              activity={activityPageData}
+              resourcesTitle={activityPageData.resourcesTitle}
+              resourcesSubtitle={activityPageData.resourcesSubtitle}
+            />
+          </div>
           {activityPageData.month === 'November' && <SkillsForSuccess activity={activityPageData} language="en" />}
-          <ActivityFAQ activity={activityPageData} />
+          <div id="activity-faq">
+            <ActivityFAQ activity={activityPageData} />
+          </div>
           <IncentivesAndNavigation currentActivity={activityPageData} />
         </main>
         <Footer />
@@ -108,7 +114,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
   // Fallback for activities without full page data
   return (
     <>
-      <Header />
+      <ActivityHeader />
       <main className="pt-16">
         <section className="py-24 px-4 md:px-12 bg-white">
           <div className="container mx-auto max-w-6xl text-center">
@@ -123,7 +129,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                 {activity.description}
               </p>
             </div>
-            
+
             {/* Sponsor Logo */}
             <div className="flex justify-center mb-8">
               <div className="w-32 h-32 relative bg-gray-50 rounded-lg overflow-hidden">
@@ -134,7 +140,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
                 />
               </div>
             </div>
-            
+
             <div className="text-center">
               <p className="text-lg text-[#0092ff] font-semibold">
                 Coming Soon: Full Activity Details

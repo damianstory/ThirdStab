@@ -9,6 +9,12 @@
       "faq": "FAQ",
       "stayInformed": "Restez informés"
     },
+    "activityNavigation": {
+      "howToSubmit": "Quoi/Comment soumettre",
+      "resources": "Ressources",
+      "faq": "FAQ",
+      "submitChallenge": "Soumettre le défi"
+    },
     "languageToggle": {
       "english": "EN",
       "french": "FR",

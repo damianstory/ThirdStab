@@ -9,6 +9,12 @@
       "faq": "FAQ",
       "stayInformed": "Stay Informed"
     },
+    "activityNavigation": {
+      "howToSubmit": "What/How to Submit",
+      "resources": "Resources",
+      "faq": "FAQ",
+      "submitChallenge": "Submit Challenge"
+    },
     "languageToggle": {
       "english": "English",
       "french": "French",

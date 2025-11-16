@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getActivityPageData } from '@/data/activity-pages';
-import Header from '@/components/Header';
+import ActivityHeader from '@/components/ActivityHeader';
 import Footer from '@/components/Footer';
 import ActivityHero from '@/components/activity/ActivityHero';
 import VideoAndExplainer from '@/components/activity/VideoAndExplainer';
@@ -39,13 +39,19 @@ export default async function OctoberActivityFrenchPage() {
 
   return (
     <>
-      <Header />
+      <ActivityHeader />
       <main className="pt-16">
         <ActivityHero activity={octoberActivity} />
         <VideoAndExplainer activity={octoberActivity} />
-        <ActivityDetailAndRubric activity={octoberActivity} />
-        <SponsorResources activity={octoberActivity} />
-        <ActivityFAQ activity={octoberActivity} />
+        <div id="activity-details">
+          <ActivityDetailAndRubric activity={octoberActivity} />
+        </div>
+        <div id="sponsor-resources">
+          <SponsorResources activity={octoberActivity} />
+        </div>
+        <div id="activity-faq">
+          <ActivityFAQ activity={octoberActivity} />
+        </div>
         <IncentivesAndNavigation currentActivity={octoberActivity} />
       </main>
       <Footer />
