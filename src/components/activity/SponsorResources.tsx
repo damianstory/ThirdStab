@@ -172,28 +172,31 @@ export default function SponsorResources({
                 <div
                   key={index}
                   onClick={() => handleResourceClick(resource.url, resource.title, resource.type)}
-                  className="bg-white rounded-xl p-6 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1 group h-full flex flex-col"
+                  className="rounded-xl p-6 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1 group h-full flex flex-col"
                   style={{
-                    border: resource.borderColor ? `2px solid ${resource.borderColor}` : '1px solid rgb(var(--neutral2))'
+                    border: resource.borderColor ? `2px solid ${resource.borderColor}` : '1px solid rgb(var(--neutral2))',
+                    background: resource.borderColor
+                      ? `linear-gradient(135deg, ${resource.borderColor}${resource.borderColor?.toUpperCase() === '#FCDE3F' ? 'EE' : 'CC'} 0%, ${resource.borderColor}${resource.borderColor?.toUpperCase() === '#FCDE3F' ? 'CC' : '99'} 100%)`
+                      : 'white'
                   }}
                 >
                   {/* Resource Icon */}
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 text-blue-500 bg-blue-50 group-hover:scale-110 transition-transform duration-200">
+                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200 ${resource.borderColor ? 'text-white bg-white/20' : 'text-blue-500 bg-blue-50'}`}>
                     <ExternalLink size={24} />
                   </div>
 
                   {/* Resource Title */}
-                  <h3 className="brand-h4 text-[#22224C] mb-3 leading-tight">
+                  <h3 className={`brand-h4 mb-3 leading-tight ${resource.borderColor ? 'text-white' : 'text-[#22224C]'}`}>
                     {resource.title}
                   </h3>
 
                   {/* Resource Description */}
-                  <p className="brand-body2 text-neutral-500 leading-relaxed mb-4 flex-1 line-clamp-3 whitespace-pre-line">
+                  <p className={`brand-body2 leading-relaxed mb-4 flex-1 line-clamp-3 whitespace-pre-line ${resource.borderColor ? 'text-white/90' : 'text-neutral-500'}`}>
                     {resource.description}
                   </p>
 
                   {/* Resource Link */}
-                  <div className="flex items-center text-[#0092ff] font-medium text-sm group-hover:underline">
+                  <div className={`flex items-center font-medium text-sm group-hover:underline ${resource.borderColor ? 'text-white' : 'text-[#0092ff]'}`}>
                     <span className="mr-2">
                       {resource.buttonText ||
                        (resource.type === 'pdf' ? 'Download' :
