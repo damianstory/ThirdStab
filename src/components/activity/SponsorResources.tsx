@@ -191,7 +191,7 @@ export default function SponsorResources({
                   </h3>
 
                   {/* Resource Description */}
-                  <p className={`brand-body2 leading-relaxed mb-4 flex-1 line-clamp-3 whitespace-pre-line ${resource.borderColor ? 'text-white/90' : 'text-neutral-500'}`}>
+                  <p className={`brand-body2 leading-relaxed mb-4 flex-1 line-clamp-3 whitespace-pre-line ${resource.borderColor ? 'text-white/90 !font-bold' : 'text-neutral-500'}`}>
                     {resource.description}
                   </p>
 
