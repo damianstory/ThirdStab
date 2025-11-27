@@ -136,6 +136,16 @@ export const novemberActivity: ActivityPageData = {
 
   faqs: [
     {
+      question: 'What should I be including in my video for the November submission?',
+      answer: `Everything from the steps in one through five should be referenced in the video. You only have around 90 seconds total.
+
+So for the activity itself, be selective about what you want to include so that you can make sure that everything fits into those 90 seconds. The main thing we're looking for from the activity perspective is really just evidence that you have completed the activity.
+
+So it could be quick cutaway or a couple images or you talking about what you did and what you learned from doing the activity.
+
+Followed then by the research components in steps 2-5.`
+    },
+    {
       question: 'How does this November Activity challenge work?',
       answer: 'Carefully read the Challenge Details steps to understand what is being asked of you in this activity. You can watch the How it Works video for a detailed overview of the Skilled Career Exploration Challenge.'
     },
