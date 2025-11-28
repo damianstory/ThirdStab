@@ -76,7 +76,9 @@
       "WebFetch(domain:aitcdashboard.ca)",
       "WebFetch(domain:www.youtube.com)",
       "WebFetch(domain:www.cabef.org)",
-      "Bash(timeout 15 npm run dev:*)"
+      "Bash(timeout 15 npm run dev:*)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)"
     ],
     "deny": []
   }
