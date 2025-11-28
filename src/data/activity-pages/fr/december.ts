@@ -98,22 +98,22 @@ export const decemberActivity: ActivityPageData = {
     criteria: [
       {
         category: 'Content & Accuracy',
-        weight: 40,
+        weight: 25,
         description: 'Comprehensive coverage of all 5 required steps with accurate, detailed information'
       },
       {
         category: 'Research & Citations',
-        weight: 20,
+        weight: 25,
         description: 'Quality sources properly cited throughout the video presentation'
       },
       {
         category: 'Engagement & Creativity',
-        weight: 20,
+        weight: 25,
         description: 'Compelling delivery that maintains viewer interest through creative presentation'
       },
       {
         category: 'Communication & Clarity',
-        weight: 20,
+        weight: 25,
         description: 'Clear audio/visuals with logical organization, smooth flow, and meets 60-90 second requirement'
       },
       {
@@ -121,11 +121,11 @@ export const decemberActivity: ActivityPageData = {
         weight: 0,
         description: '',
         isLink: true,
-        url: 'https://claude.ai/public/artifacts/placeholder-december-rubric'
+        url: 'https://claude.ai/public/artifacts/8c960004-9c65-4eb5-bede-15e8a40b6b5b'
       }
     ],
     totalPoints: 100,
-    detailedRubricUrl: 'https://claude.ai/public/artifacts/placeholder-december-rubric'
+    detailedRubricUrl: 'https://claude.ai/public/artifacts/8c960004-9c65-4eb5-bede-15e8a40b6b5b'
   },
 
   submission: {
@@ -213,7 +213,7 @@ We will publish de-identified (anonymous summary data) information to provide up
     },
     {
       title: 'Kareero Interest Assessment Game',
-      description: 'Interactive interest assessment that tracks your choices in a school gardening program to reveal your career interest areas and explore matching agriculture careers.',
+      description: 'Interactive interest assessment that tracks your choices in a school gardening program.',
       url: 'https://kareero.vrts.ca/webgl/',
       type: 'link',
       borderColor: '#FCDE3F'
@@ -242,7 +242,7 @@ We will publish de-identified (anonymous summary data) information to provide up
     },
     {
       title: 'Bourses et opportunités thinkAG',
-      description: 'Guide complet des bourses agricoles, collèges et opportunités de carrière à travers le Canada pour les élèves du secondaire.',
+      description: 'Guide complet des bourses agricoles, collèges et opportunités de carrière à travers le Canada.',
       url: 'https://thinkag.ca/en-ca/scholarships',
       type: 'link',
       borderColor: '#01A9AB'

@@ -78,7 +78,8 @@
       "WebFetch(domain:www.cabef.org)",
       "Bash(timeout 15 npm run dev:*)",
       "Bash(git pull:*)",
-      "Bash(git stash:*)"
+      "Bash(git stash:*)",
+      "WebFetch(domain:claude.ai)"
     ],
     "deny": []
   }
