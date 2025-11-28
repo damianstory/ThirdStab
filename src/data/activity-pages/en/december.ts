@@ -24,7 +24,7 @@ export const decemberActivity: ActivityPageData = {
   hero: {
     backgroundImage: '/december-hero.jpg',
     tagline: 'Discover Your Future in Agriculture',
-    introText: `From farm to table, the agriculture and food systems sector offers diverse career paths that feed our communities and sustain our planet. Explore Canada's agriculture sector in this challenge as you increase your awareness and cultivate curiousity in agriculture and food careers across the country.`
+    introText: `From farm to table, the agriculture and food systems sector offers diverse career paths that feed our communities and sustain our planet. Explore Canada's agriculture sector in this challenge as you increase your awareness and cultivate  in agriculture and food careers across the country.`
   },
 
   video: {
@@ -252,8 +252,8 @@ We will publish de-identified (anonymous summary data) information to provide up
   resourcesSubtitle: 'Explore these resources to support your activity research',
 
   meta: {
-    title: 'Agriculture & Food Systems Challenge - December 2025',
+    title: 'Agriculture and Food Systems Challenge | myBlueprint Industry Immersion Series | December 2025',
     description: 'Explore diverse career opportunities in Canada\'s agriculture and food systems sector with thinkAG. Research agricultural careers, learn about sustainability, and win micro grants.',
-    ogImage: '/thinkag-logo.png'
+    ogImage: '/images/meta-preview.png'
   }
 };

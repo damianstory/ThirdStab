@@ -252,8 +252,8 @@ We will publish de-identified (anonymous summary data) information to provide up
   resourcesSubtitle: 'Explore these resources to support your activity research',
 
   meta: {
-    title: 'Agriculture & Food Systems Challenge - December 2025',
-    description: 'Explore diverse career opportunities in Canada\'s agriculture and food systems sector with thinkAG. Research agricultural careers, learn about sustainability, and win micro grants.',
-    ogImage: '/thinkag-logo.png'
+    title: 'Défi Agriculture et Systèmes Alimentaires | myBlueprint Industry Immersion Series | Décembre 2025',
+    description: 'Découvrez les diverses opportunités de carrière dans le secteur agricole et alimentaire du Canada avec thinkAG. Recherchez des carrières agricoles, apprenez sur la durabilité et gagnez des micro-subventions.',
+    ogImage: '/images/meta-preview.png'
   }
 };

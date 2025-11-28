@@ -8,7 +8,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://industryimmersion.ca'),
+  metadataBase: new URL('https://www.industryimmersionseries.ca'),
   title: "Industry Immersion Series by myBlueprint",
   description: "Discover career opportunities through industry partnerships. Micro grants, mentorship, and real-world experience for Canadian students grades 7-12.",
   keywords: "industry immersion, canadian students, micro grants, career exploration, mentorship",
