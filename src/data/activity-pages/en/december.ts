@@ -24,7 +24,7 @@ export const decemberActivity: ActivityPageData = {
   hero: {
     backgroundImage: '/december-hero.jpg',
     tagline: 'Discover Your Future in Agriculture',
-    introText: `From farm to table, the agriculture and food systems sector offers diverse career paths that feed our communities and sustain our planet. Explore Canada's agriculture sector in this challenge as you increase your awareness and cultivate  in agriculture and food careers across the country.`
+    introText: `From farm to table, the agriculture and food systems sector offers diverse career paths that feed our communities and sustain our planet. Explore Canada's agriculture sector in this challenge as you increase your awareness and cultivate curiosity in agriculture and food careers across the country.`
   },
 
   video: {
