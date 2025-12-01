@@ -129,7 +129,7 @@ export const decemberActivity: ActivityPageData = {
   },
 
   submission: {
-    url: 'https://www.surveymonkey.com/r/placeholder-december',
+    url: 'https://questionnaire.simplesurvey.com/f/s.aspx?s=081F9C05-6E4C-4C85-ADF1-7DCCEC1A2D84',
     deadline: new Date('2025-12-31T23:59:59-05:00'),
     instructions: 'Submit your completed video presentation through the form. Ensure your video link is properly shared with viewing permissions enabled.'
   },
