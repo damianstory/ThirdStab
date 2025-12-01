@@ -80,7 +80,7 @@ export default function Timeline({ language = 'en' }: TimelineProps) {
           {timelineData.map((item, index) => (
             <div
               key={index}
-              id={(item.month === "November" || item.month === "novembre") && item.year === "2025" ? "november-activity-card" : undefined}
+              id={(item.month === "December" || item.month === "décembre") && item.year === "2025" ? "december-activity-card" : undefined}
               className="animate-fade-in-up"
               style={{
                 animationDelay: `${index * 0.1}s`

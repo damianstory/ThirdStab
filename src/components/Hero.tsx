@@ -24,25 +24,25 @@ const text = {
     title: 'Industry Immersion Series',
     subtitle1: '$100,000+ in micro grants and incentives available to grade 7-12 students (and their educators) across Canada.',
     subtitle2: {
-      bold: 'The November activity is now live! Scroll down ',
+      bold: 'The December activity is now live! Scroll down ',
       regular: 'to learn how the program works, and view open activities.'
     },
     subtitle3: 'And join the mailing list so you and your students are the first to know how to get involved.',
     emailPlaceholder: 'Enter your email address',
     signUpButton: 'Sign Up',
-    badge: 'November Activity Live'
+    badge: 'December Activity Live'
   },
   fr: {
     title: <>Série <br className="hidden md:block" />d&apos;immersion <br className="hidden md:block" />dans l&apos;industrie</>,
     subtitle1: "Plus de 100 000 $ en microbourses et incitatifs offerts aux élèves de la 7e à la 12e année (et à leurs éducateurs) partout au Canada.",
     subtitle2: {
-      bold: "La première activité est maintenant en ligne ! Faites défiler la page ",
+      bold: "L'activité de décembre est maintenant en ligne ! Faites défiler la page ",
       regular: "pour découvrir comment le fonctionnement du programme et consulter les activités offertes."
     },
     subtitle3: "Inscrivez-vous à la liste d'envoi pour être les premiers, vous et vos élèves, à savoir comment participer.",
     emailPlaceholder: "Entrez votre adresse courriel",
     signUpButton: "S'inscrire",
-    badge: 'Activité de novembre en ligne'
+    badge: 'Activité de décembre en ligne'
   }
 };
 
@@ -52,12 +52,12 @@ interface HeroProps {
 
 export default function Hero({ language = 'en' }: HeroProps) {
   const t = text[language];
-  const handleScrollToNovember = () => {
-    const novemberCard = document.getElementById('november-activity-card');
-    if (novemberCard) {
+  const handleScrollToDecember = () => {
+    const decemberCard = document.getElementById('december-activity-card');
+    if (decemberCard) {
       const headerHeight = 64; // Height of fixed header
       const extraOffset = 250; // Extra offset to show cards below
-      const elementPosition = novemberCard.getBoundingClientRect().top;
+      const elementPosition = decemberCard.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerHeight - extraOffset;
 
       // Custom smooth scroll with easing
@@ -159,7 +159,7 @@ export default function Hero({ language = 'en' }: HeroProps) {
               <ActivityBadge
                 expandedText={t.badge}
                 emoji="🎉"
-                onClick={handleScrollToNovember}
+                onClick={handleScrollToDecember}
                 collapseDelay={6000}
               />
             </div>
