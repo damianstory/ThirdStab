@@ -42,7 +42,7 @@ export default function Timeline({ language = 'en' }: TimelineProps) {
       title: activity.title,
       industry: t.incentive,
       description: activity.description,
-      status: activity.month === "October" || activity.month === "octobre" || activity.month === "November" || activity.month === "novembre" ? "confirmed" : "tba",
+      status: activity.month === "October" || activity.month === "octobre" || activity.month === "November" || activity.month === "novembre" || activity.month === "December" || activity.month === "décembre" ? "confirmed" : "tba",
       sponsor: activity.sponsor,
       slug: activity.slug, // Pass through the slug for navigation
       strikethroughIndustry: activity.month === "October" || activity.month === "octobre" // Cross out micro grants for October
