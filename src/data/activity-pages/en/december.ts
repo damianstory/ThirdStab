@@ -34,8 +34,8 @@ export const decemberActivity: ActivityPageData = {
   },
 
   howThisWorksVideo: {
-    embedUrl: 'https://www.youtube.com/embed/JYiO_gkFqWM',
-    title: 'How this Works - December Challenge'
+    embedUrl: 'https://www.youtube.com/embed/o_hTLLYSi1g',
+    title: 'December Industry Immersion Series Activity | How this Works'
   },
 
   explainer: {
