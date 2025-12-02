@@ -28,14 +28,14 @@ export const shadSponsor: SponsorPageData = {
       'Soumettez les activités d\'octobre, novembre et décembre **avant le 5 janvier 2026**',
       'Indiquez votre intérêt à postuler pour l\'une des bourses d\'entrée au programme Shad Canada 2026',
       '7 janvier | Annonce des gagnants',
-      '23 janvier | Date limite pour les récipiendaires de compléter la portion contenu de la candidature SHAD',
+      '23 janvier | Date limite pour les récipiendaires de compléter la portion contenu de la candidature Shad',
       'Si sélectionné, continuez à compléter toutes les activités restantes de la série d\'immersion industrielle d\'ici la fin de l\'année scolaire'
     ],
     incentiveSteps: [
       'Soumettez les 9 activités d\'immersion industrielle **avant le 30 mai 2026**',
       'Votre participation est suivie automatiquement. Si vous êtes en 7e, 8e ou 9e année et que vous complétez les 9 activités mensuelles, vous serez automatiquement inscrit pour gagner une future bourse d\'entrée',
       'En juin 2026, un gagnant par niveau sera sélectionné',
-      'Votre bourse couvre un futur programme SHAD, pas 2026.'
+      'Votre bourse couvre un futur programme Shad, pas 2026.'
     ]
   },
 

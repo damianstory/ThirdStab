@@ -16,7 +16,7 @@ export const shadSponsor: SponsorPageData = {
   },
 
   about: {
-    description: 'Shad offers a suite of immersive programs designed to ignite curiosity, build confidence, and prepare students in Grades 10 and 11 to thrive in a fast-changing world.\n\nEvery Shad program follows a balanced design—blending hands-on STEAM and entrepreneurship projects, vibrant community-building experiences, and real-world design challenges. Beyond classroom-based projects, participants also take part in unforgettable excursions that spark discovery and showcase the wonders of Canada\'s nature and heritage.\n\nWhether you\'re looking to explore a new campus, connect face-to-face with peers, or challenge yourself digitally, every Shad program provides the same rigorous learning, collaborative problem-solving, and national network of like-minded youth.',
+    description: 'Shad offers a suite of immersive programs designed to ignite curiosity, build confidence, and prepare students in Grades 10 and 11 to thrive in a fast-changing world.\n\nEvery Shad program follows a balanced design—blending hands-on STEAM and entrepreneurship projects, vibrant community-building experiences, and real-world design challenges. Beyond classroom-based projects, participants also take part in unforgettable excursions that spark discovery and showcase the wonders of Canada\'s nature and heritage.\n\nWhat begins as one immersive summer month (live-in or virtual) becomes a lifelong network and a call to impact, igniting youth potential and creating lasting impact for Canada and the world.',
     industry: 'Education & Youth Development',
     website: 'https://www.shad.ca'
   },
@@ -25,17 +25,16 @@ export const shadSponsor: SponsorPageData = {
     description: 'As a Series Completion Partner, Shad Canada recognizes students who demonstrate exceptional commitment to career exploration throughout the Industry Immersion Series. Completing the full series shows the kind of initiative and curiosity that Shad looks for in their program applicants.',
     incentiveDescription: 'Shad Canada may offer priority consideration or special recognition for Industry Immersion Series completers who apply to their summer programs.',
     steps: [
-      'Submit the October, November & December activities **before January 5th, 2026**',
-      'Indicate your interest to apply for one of the Shad Canada 2026 Program Entrance Scholarships',
+      'Submit the October, November & December Industry Immersion Series activities AND indicate your interest to apply for one of the Shad Canada 2026 Program Entrance Scholarships **before January 5th, 2026**',
       'January 7th | Winners announced',
-      'January 23rd | Deadline for recipients to complete content portion of the SHAD application',
+      'January 23rd | Deadline for selected recipients to complete content portion of the Shad application',
       'If selected, continue completing all remaining Industry Immersion Series activities by school year-end'
     ],
     incentiveSteps: [
       'Submit all 9 Industry Immersion activities **before May 30, 2026**',
-      'Your participation is tracked automatically. If you are in grade 7, 8, 9 and you complete all 9 monthly activities, you will be automatically entered to win a future Entrance Scholarship',
+      'Your participation is tracked automatically. If you are in grade 7, 8, 9 and you complete all 9 monthly Industry Immersion Series activities, you will be automatically entered to win an Entrance Scholarship to a future Shad program',
       'In June 2026, one winner per grade will be selected',
-      'Your scholarship covers a future SHAD program, not 2026.'
+      'Your scholarship covers a future Shad program, not 2026.'
     ]
   },
 
@@ -91,11 +90,23 @@ export const shadSponsor: SponsorPageData = {
     },
     {
       question: 'Who can apply to Shad?',
-      answer: 'Shad accepts applications from students in grades 10 and 11 from across Canada. The program looks for curious, engaged students who want to make a difference in their communities and beyond.'
+      answer: 'Shad accepts applications from students in grades 10 and 11 from across Canada. The program looks for curious, engaged students who want to make a difference in their communities and beyond.\n\nWith a limited number of spots available every year, there is a selection process in place to determine participants. Our selection process examines more than academics. We look for potential: the spark of leadership, a willingness to collaborate, and the courage to think differently.'
     },
     {
       question: 'Can I apply now?',
       answer: 'Yes, applications are open now. You can apply now at: https://www.shad.ca/apply/\n\nYou can indicate in your application that you\'re also participating in the Industry Immersion Series incentive opportunity.\n\nApply before Dec. 15 for a chance to win a lunch with Shad CEO, Tim Jackson.'
+    },
+    {
+      question: 'What\'s the difference between the live-in and virtual program?',
+      answer: '<strong>Live-in:</strong>\n• Format: In-person, staying on a post-secondary campus 24/7\n• Duration: 27-days, July 5 – July 31, 2026 (24 hrs/day, 7 days a week)\n• Includes: Staying at a post-secondary campus, hands-on workshops, team projects, real campus life, off-campus field trips\n• Best for: Students who want the full immersive experience.\n\n<strong>Virtual:</strong>\n• Format: Online\n• Access: From anywhere in Canada (or even abroad), July 6 – July 31, 2025 (Monday – Friday only, 11 am – 5 pm ET)\n• Includes: Virtual workshops, lectures, group projects, guest speakers, virtual field trips\n• Best for: Students who require flexibility to stay local—whether balancing part-time work, supporting family, or pursuing elite-level athletics. A full immersive program right to your home.\n\nYou can learn more at: https://www.shad.ca/shad-programs/'
+    },
+    {
+      question: 'How much are these scholarships worth?',
+      answer: 'You can learn more about the fees, financial support, and what\'s included at: https://www.shad.ca/participate/'
+    },
+    {
+      question: 'How do I indicate interest in applying for one of the entrance scholarships?',
+      answer: 'Leave your name and school email here.\n\nWe\'ll also be adding this link to individual Industry Immersion Series activity pages.\n\nNote that we\'ll be communicating with you by email, so it\'s your responsibility to stay on top of communications so that you don\'t miss out on any important details.'
     },
     {
       question: 'Does completing the Industry Immersion Series help with Shad applications?',
