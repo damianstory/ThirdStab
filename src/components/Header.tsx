@@ -5,7 +5,11 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useLanguageContext } from '@/contexts/LanguageContext';
 
-export default function Header() {
+interface HeaderProps {
+  variant?: 'default' | 'sponsor';
+}
+
+export default function Header({ variant = 'default' }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const pathname = usePathname();
@@ -201,22 +205,28 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Center Section - Navigation + Language Dropdown */}
+          {/* Center Section - Navigation or Sponsor Title */}
           <div className="flex items-center justify-center overflow-visible">
-            <div className="flex items-baseline space-x-1 xl:space-x-2">
-              {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  onClick={(e) => handleNavClick(e, item.href)}
-                  className="text-gray-700 hover:text-[#0092ff] px-1 xl:px-2 py-2 rounded-md text-xs xl:text-sm font-medium transition-colors duration-200 whitespace-nowrap cursor-pointer"
-                >
-                  {item.name}
-                </a>
-              ))}
-              {/* Language Dropdown integrated into navigation */}
-              <LanguageDropdown />
-            </div>
+            {variant === 'sponsor' ? (
+              <span className="absolute left-1/2 -translate-x-1/2 text-gray-700 text-xs xl:text-sm font-medium whitespace-nowrap">
+                Industry Immersion Series Sponsor Profile
+              </span>
+            ) : (
+              <div className="flex items-baseline space-x-1 xl:space-x-2">
+                {navigation.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    onClick={(e) => handleNavClick(e, item.href)}
+                    className="text-gray-700 hover:text-[#0092ff] px-1 xl:px-2 py-2 rounded-md text-xs xl:text-sm font-medium transition-colors duration-200 whitespace-nowrap cursor-pointer"
+                  >
+                    {item.name}
+                  </a>
+                ))}
+                {/* Language Dropdown integrated into navigation */}
+                <LanguageDropdown />
+              </div>
+            )}
           </div>
 
           {/* Right Section - Industry Immersion Series Logo */}
@@ -244,45 +254,51 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Center - Mobile menu button */}
+          {/* Center - Mobile menu button or Sponsor Title */}
           <div className="flex-shrink-0">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-[#0092ff] hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#0092ff] min-w-[44px] min-h-[44px]"
-              aria-expanded={isMenuOpen}
-            >
-              <span className="sr-only">Open main menu</span>
-              {/* Hamburger icon */}
-              <svg
-                className={`${isMenuOpen ? 'hidden' : 'block'} h-6 w-6`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+            {variant === 'sponsor' ? (
+              <span className="text-gray-700 text-xs sm:text-sm font-medium text-center">
+                Sponsor Profile
+              </span>
+            ) : (
+              <button
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-[#0092ff] hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#0092ff] min-w-[44px] min-h-[44px]"
+                aria-expanded={isMenuOpen}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-              {/* Close icon */}
-              <svg
-                className={`${isMenuOpen ? 'block' : 'hidden'} h-6 w-6`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
+                <span className="sr-only">Open main menu</span>
+                {/* Hamburger icon */}
+                <svg
+                  className={`${isMenuOpen ? 'hidden' : 'block'} h-6 w-6`}
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+                {/* Close icon */}
+                <svg
+                  className={`${isMenuOpen ? 'block' : 'hidden'} h-6 w-6`}
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            )}
           </div>
 
           {/* Right - Industry Immersion Series Logo */}
@@ -297,24 +313,26 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Mobile menu */}
-        <div className={`${isMenuOpen ? 'block' : 'hidden'} xl:hidden`}>
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {/* Language Dropdown - Mobile */}
-            <MobileLanguageDropdown />
-            {/* Navigation Items */}
-            {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                onClick={(e) => handleNavClick(e, item.href)}
-                className="text-gray-700 hover:text-[#0092ff] block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-50 min-h-[44px] flex items-center"
-              >
-                {item.name}
-              </a>
-            ))}
+        {/* Mobile menu - only show for default variant */}
+        {variant !== 'sponsor' && (
+          <div className={`${isMenuOpen ? 'block' : 'hidden'} xl:hidden`}>
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              {/* Language Dropdown - Mobile */}
+              <MobileLanguageDropdown />
+              {/* Navigation Items */}
+              {navigation.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  onClick={(e) => handleNavClick(e, item.href)}
+                  className="text-gray-700 hover:text-[#0092ff] block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-50 min-h-[44px] flex items-center"
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </nav>
     </header>
   );

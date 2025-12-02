@@ -78,7 +78,7 @@ export default async function SponsorProfilePage({ params }: SponsorPageProps) {
 
   return (
     <>
-      <Header />
+      <Header variant="sponsor" />
       <main className="pt-16">
         <SponsorHero sponsor={sponsorPageData} language="en" />
         <SponsorAbout sponsor={sponsorPageData} language="en" />
