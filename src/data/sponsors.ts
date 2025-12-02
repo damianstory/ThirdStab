@@ -70,7 +70,7 @@ export interface SponsorPageData extends Sponsor {
 }
 
 // Valid sponsor slugs for routing (sponsors with full profile pages)
-export const validSponsorSlugs: string[] = ['shad-canada'];
+export const validSponsorSlugs: string[] = ['shad'];
 
 export const sponsors: Sponsor[] = [
   // Student Microgrant Partners

@@ -1,13 +1,13 @@
 import { SponsorPageData } from '../../sponsors';
 
-export const shadCanadaSponsor: SponsorPageData = {
+export const shadSponsor: SponsorPageData = {
   // Base sponsor information
   id: '24',
   name: 'Shad Canada',
   logo: '/images/sponsor-profiles/shad-canada.png',
   incentiveType: 'completion',
   contribution: 'Empowering young Canadians to become change-makers through STEAM education',
-  slug: 'shad-canada',
+  slug: 'shad',
 
   // Extended page content
   hero: {
