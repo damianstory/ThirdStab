@@ -27,7 +27,7 @@ export const shadSponsor: SponsorPageData = {
     steps: [
       'Soumettez les activités d\'octobre, novembre et décembre **avant le 5 janvier 2026**',
       'Indiquez votre intérêt à postuler pour l\'une des bourses d\'entrée au programme Shad Canada 2026',
-      '7 janvier | Annonce des gagnants',
+      '5 janvier | Annonce des gagnants',
       '23 janvier | Date limite pour les récipiendaires de compléter la portion contenu de la candidature Shad',
       'Si sélectionné, continuez à compléter toutes les activités restantes de la série d\'immersion industrielle d\'ici la fin de l\'année scolaire'
     ],
@@ -68,7 +68,7 @@ export const shadSponsor: SponsorPageData = {
   deadlines: [
     {
       label: 'Date limite 1: 10e, 11e année',
-      date: '7 janvier 2026'
+      date: '5 janvier 2026'
     },
     {
       label: 'Date limite 2: 7e, 8e, 9e année',

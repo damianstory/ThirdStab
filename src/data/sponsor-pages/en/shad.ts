@@ -26,7 +26,7 @@ export const shadSponsor: SponsorPageData = {
     incentiveDescription: 'Shad Canada may offer priority consideration or special recognition for Industry Immersion Series completers who apply to their summer programs.',
     steps: [
       'Submit the October, November & December Industry Immersion Series activities AND <a href="https://questionnaire.simplesurvey.com/f/s/shad-entrance-scholarships" target="_blank" rel="noopener noreferrer" class="text-brandBlue hover:underline">indicate your interest</a> to apply for one of the Shad Canada 2026 Program Entrance Scholarships **before January 5th, 2026**',
-      'January 7th | Winners announced',
+      'January 5th | Winners announced',
       'January 23rd | Deadline for selected recipients to complete content portion of the Shad application',
       'If selected, continue completing all remaining Industry Immersion Series activities by school year-end'
     ],
@@ -67,7 +67,7 @@ export const shadSponsor: SponsorPageData = {
   deadlines: [
     {
       label: 'Deadline 1: Grade 10, 11',
-      date: 'January 7th, 2026'
+      date: 'January 5th, 2026'
     },
     {
       label: 'Deadline 2: Grade 7, 8, 9',
