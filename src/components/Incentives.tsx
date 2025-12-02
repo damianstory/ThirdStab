@@ -116,7 +116,7 @@ interface IncentivesProps {
 
 export default function Incentives({ language = 'en' }: IncentivesProps) {
   const t = text[language];
-  const studentSponsors = getLimitedSponsorsByType('student', 9);
+  const activitySponsors = getLimitedSponsorsByType('activity', 9);
   const completionSponsors = getLimitedSponsorsByType('completion', 4);
   const educatorSponsors = getLimitedSponsorsByType('educator', 2);
   const schoolSponsors = getLimitedSponsorsByType('school', 4);
@@ -169,7 +169,7 @@ export default function Incentives({ language = 'en' }: IncentivesProps) {
               <p className="text-sm text-gray-500 mb-3">{t.sponsoredBy}</p>
               <div className="flex justify-start">
                 <SponsorAvatarGroup
-                  sponsors={studentSponsors.sponsors}
+                  sponsors={activitySponsors.sponsors}
                   maxVisible={9}
                   size="sm"
                   isStudentSponsors={true}

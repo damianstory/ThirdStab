@@ -9,21 +9,21 @@ interface SponsorsGridProps {
 
 const categoryLabels = {
   en: {
-    student: 'Student Microgrant Partners',
+    activity: 'Activity Sponsors',
     completion: 'Series Completion Partners',
     educator: 'Educator Prize Partners',
     school: 'School Recognition Partners'
   },
   fr: {
-    student: 'Partenaires de microgrants pour les etudiants',
+    activity: 'Commanditaires d\'activités',
     completion: 'Partenaires de la serie complete',
     educator: 'Partenaires de prix pour les enseignants',
     school: 'Partenaires de reconnaissance des ecoles'
   }
 };
 
-const categoryOrder: Array<'student' | 'completion' | 'educator' | 'school'> = [
-  'student',
+const categoryOrder: Array<'activity' | 'completion' | 'educator' | 'school'> = [
+  'activity',
   'completion',
   'educator',
   'school'

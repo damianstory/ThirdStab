@@ -4,16 +4,16 @@ import { getSponsorsByType } from '../data/sponsors';
 import { DollarSign, Trophy, User, GraduationCap } from 'lucide-react';
 
 export default function IncentivePartners() {
-  const studentSponsors = getSponsorsByType('student');
+  const activitySponsors = getSponsorsByType('activity');
   const completionSponsors = getSponsorsByType('completion');
   const educatorSponsors = getSponsorsByType('educator');
   const schoolSponsors = getSponsorsByType('school');
 
   const partnerCategories = [
     {
-      title: 'Student Microgrant Partners',
+      title: 'Activity Sponsors',
       icon: DollarSign,
-      sponsors: studentSponsors,
+      sponsors: activitySponsors,
       bgColor: 'bg-blue-50',
       iconBgColor: 'bg-[#0092ff]',
       borderColor: 'border-blue-200'
