@@ -7,6 +7,71 @@ export interface Sponsor {
   amount?: string;
 }
 
+// Extended interface for sponsor profile pages (similar to ActivityPageData)
+export interface SponsorPageData extends Sponsor {
+  slug: string;
+
+  hero: {
+    backgroundImage?: string;
+    tagline: string;
+    introText: string;
+  };
+
+  about: {
+    description: string;
+    industry: string;
+    website: string;
+  };
+
+  partnership: {
+    description: string;
+    activityMonth?: string;
+    incentiveDescription?: string;
+    steps?: string[];
+    incentiveSteps?: string[];
+  };
+
+  careerResources?: Array<{
+    title: string;
+    description: string;
+    url: string;
+    type: 'pdf' | 'video' | 'link' | 'article';
+    thumbnail?: string;
+  }>;
+
+  faqs?: Array<{
+    question: string;
+    answer: string;
+  }>;
+
+  // Sidebar cards for About section
+  incentiveCard?: {
+    label: string;
+    value: string;
+  };
+
+  deadlines?: Array<{
+    label: string;
+    date: string;
+  }>;
+
+  cta: {
+    primaryLabel: string;
+    primaryUrl: string;
+    secondaryLabel?: string;
+    secondaryUrl?: string;
+  };
+
+  meta: {
+    title: string;
+    description: string;
+    ogImage: string;
+  };
+}
+
+// Valid sponsor slugs for routing (sponsors with full profile pages)
+export const validSponsorSlugs: string[] = ['shad-canada'];
+
 export const sponsors: Sponsor[] = [
   // Student Microgrant Partners
   {
@@ -80,6 +145,15 @@ export const sponsors: Sponsor[] = [
     incentiveType: 'student',
     contribution: 'Placeholder text',
     amount: 'TBD'
+  },
+
+  // Series Completion Partners - Shad Canada
+  {
+    id: '24',
+    name: 'Shad Canada',
+    logo: '/images/sponsor-profiles/shad-canada.png',
+    incentiveType: 'completion',
+    contribution: 'Empowering young Canadians to become change-makers through STEAM education',
   },
 
   // Series Completion Partners
@@ -213,4 +287,24 @@ export function getLimitedSponsorsByType(type: 'student' | 'completion' | 'educa
     hasMore: allSponsors.length > limit,
     totalCount: allSponsors.length
   };
+}
+
+// Generate URL-safe slug from sponsor name
+export function generateSlug(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+}
+
+// Get sponsor by slug
+export function getSponsorBySlug(slug: string): Sponsor | null {
+  return sponsors.find(
+    sponsor => generateSlug(sponsor.name) === slug.toLowerCase()
+  ) ?? null;
+}
+
+// Check if slug has a full profile page
+export function hasFullProfile(slug: string): boolean {
+  return validSponsorSlugs.includes(slug.toLowerCase());
 }

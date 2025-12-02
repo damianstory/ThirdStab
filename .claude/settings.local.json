@@ -83,7 +83,10 @@
       "Bash(git fetch:*)",
       "Bash(git checkout:*)",
       "Bash(git merge:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "WebFetch(domain:lucide.dev)"
     ],
     "deny": []
   }
