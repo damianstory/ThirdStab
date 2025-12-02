@@ -41,7 +41,7 @@ export default function SponsorPartnership({ sponsor, language = 'en' }: Sponsor
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Logo and Title Row */}
         <div className="flex items-center gap-6 mb-8">
-          <div className="w-20 h-20 bg-lightBlue/30 rounded-xl flex items-center justify-center flex-shrink-0">
+          <div className="w-20 h-20 bg-white border border-gray-200 rounded-xl flex items-center justify-center flex-shrink-0">
             <Image
               src="/images/iis-logo.png"
               alt="Industry Immersion Series logo"
