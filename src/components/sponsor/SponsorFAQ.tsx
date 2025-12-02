@@ -10,8 +10,8 @@ interface SponsorFAQProps {
 
 // Helper function to render text with URLs as clickable links
 function renderAnswerWithLinks(text: string) {
-  // Replace URLs with anchor tags for dangerouslySetInnerHTML
-  const urlRegex = /(https?:\/\/[^\s]+)/g;
+  // Replace URLs with anchor tags, but skip URLs already in href attributes
+  const urlRegex = /(?<!href=["'])(https?:\/\/[^\s<"']+)/g;
   return text.replace(urlRegex, '<a href="$1" target="_blank" rel="noopener noreferrer" class="text-brandBlue hover:underline">$1</a>');
 }
 

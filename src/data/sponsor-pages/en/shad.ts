@@ -106,7 +106,7 @@ export const shadSponsor: SponsorPageData = {
     },
     {
       question: 'How do I indicate interest in applying for one of the entrance scholarships?',
-      answer: 'Leave your name and school email here.\n\nWe\'ll also be adding this link to individual Industry Immersion Series activity pages.\n\nNote that we\'ll be communicating with you by email, so it\'s your responsibility to stay on top of communications so that you don\'t miss out on any important details.'
+      answer: '<a href="https://questionnaire.simplesurvey.com/f/s/shad-entrance-scholarships" target="_blank" rel="noopener noreferrer" class="text-brandBlue hover:underline">Leave your name and school email here.</a>\n\nWe\'ll also be adding this link to individual Industry Immersion Series activity pages.\n\nNote that we\'ll be communicating with you by email, so it\'s your responsibility to stay on top of communications so that you don\'t miss out on any important details.'
     },
     {
       question: 'Does completing the Industry Immersion Series help with Shad applications?',
