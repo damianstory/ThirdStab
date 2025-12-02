@@ -22,14 +22,37 @@ const text = {
   }
 };
 
-// Helper function to render text with **bold** markdown syntax
+// Helper function to render text with **bold** markdown syntax and <a> tags
 function renderWithBold(text: string) {
-  const parts = text.split(/(\*\*[^*]+\*\*)/g);
-  return parts.map((part, i) => {
-    if (part.startsWith('**') && part.endsWith('**')) {
-      return <strong key={i} className="font-semibold">{part.slice(2, -2)}</strong>;
+  // First split by anchor tags, then by bold markers
+  const anchorRegex = /(<a[^>]+>.*?<\/a>)/g;
+  const anchorParts = text.split(anchorRegex);
+
+  return anchorParts.map((part, i) => {
+    // Check if this part is an anchor tag
+    const anchorMatch = part.match(/<a\s+href="([^"]+)"[^>]*>([^<]+)<\/a>/);
+    if (anchorMatch) {
+      return (
+        <a
+          key={`a-${i}`}
+          href={anchorMatch[1]}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-brandBlue hover:underline"
+        >
+          {anchorMatch[2]}
+        </a>
+      );
     }
-    return part;
+
+    // Handle bold markdown within non-anchor parts
+    const boldParts = part.split(/(\*\*[^*]+\*\*)/g);
+    return boldParts.map((boldPart, j) => {
+      if (boldPart.startsWith('**') && boldPart.endsWith('**')) {
+        return <strong key={`b-${i}-${j}`} className="font-semibold">{boldPart.slice(2, -2)}</strong>;
+      }
+      return boldPart;
+    });
   });
 }
 

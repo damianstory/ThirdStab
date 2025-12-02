@@ -25,7 +25,7 @@ export const shadSponsor: SponsorPageData = {
     description: 'As a Series Completion Partner, Shad Canada recognizes students who demonstrate exceptional commitment to career exploration throughout the Industry Immersion Series. Completing the full series shows the kind of initiative and curiosity that Shad looks for in their program applicants.',
     incentiveDescription: 'Shad Canada may offer priority consideration or special recognition for Industry Immersion Series completers who apply to their summer programs.',
     steps: [
-      'Submit the October, November & December Industry Immersion Series activities AND indicate your interest to apply for one of the Shad Canada 2026 Program Entrance Scholarships **before January 5th, 2026**',
+      'Submit the October, November & December Industry Immersion Series activities AND <a href="https://questionnaire.simplesurvey.com/f/s/shad-entrance-scholarships" target="_blank" rel="noopener noreferrer" class="text-brandBlue hover:underline">indicate your interest</a> to apply for one of the Shad Canada 2026 Program Entrance Scholarships **before January 5th, 2026**',
       'January 7th | Winners announced',
       'January 23rd | Deadline for selected recipients to complete content portion of the Shad application',
       'If selected, continue completing all remaining Industry Immersion Series activities by school year-end'
