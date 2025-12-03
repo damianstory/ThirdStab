@@ -75,40 +75,31 @@ export interface SponsorPageData extends Sponsor {
 export const validSponsorSlugs: string[] = ['shad'];
 
 // Category colors for visual differentiation
+// Gradients match the filter button colors in SponsorsGrid
 export const categoryColors: Record<Sponsor['incentiveType'], {
   border: string;
-  pillBg: string;
-  pillBgActive: string;
-  pillText: string;
-  pillTextActive: string;
+  gradient: string;
+  gradientStyle: { background: string }; // Inline style for gradient (avoids Tailwind purge issues)
 }> = {
   completion: {
-    border: 'border-l-purple-500',
-    pillBg: 'bg-purple-100',
-    pillBgActive: 'bg-purple-500',
-    pillText: 'text-purple-600',
-    pillTextActive: 'text-white',
+    border: 'border-l-brandBlue',
+    gradient: '', // Using inline style instead
+    gradientStyle: { background: 'linear-gradient(to bottom right, #C6E7FF, #E8F4FF)' },
   },
   educator: {
-    border: 'border-l-teal-500',
-    pillBg: 'bg-teal-100',
-    pillBgActive: 'bg-teal-500',
-    pillText: 'text-teal-600',
-    pillTextActive: 'text-white',
+    border: 'border-l-[#006BB3]',
+    gradient: '',
+    gradientStyle: { background: 'linear-gradient(to bottom right, #D4F0FF, #EAF7FF)' },
   },
   school: {
-    border: 'border-l-amber-500',
-    pillBg: 'bg-amber-100',
-    pillBgActive: 'bg-amber-500',
-    pillText: 'text-amber-600',
-    pillTextActive: 'text-white',
+    border: 'border-l-[#0077CC]',
+    gradient: '',
+    gradientStyle: { background: 'linear-gradient(to bottom right, #E0F4FF, #F0F9FF)' },
   },
   activity: {
     border: 'border-l-brandBlue',
-    pillBg: 'bg-blue-100',
-    pillBgActive: 'bg-brandBlue',
-    pillText: 'text-brandBlue',
-    pillTextActive: 'text-white',
+    gradient: '',
+    gradientStyle: { background: 'linear-gradient(to bottom right, #F0F8FF, #F8FCFF)' },
   },
 };
 

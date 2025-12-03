@@ -62,7 +62,7 @@ export default function SponsorCard({ sponsor, language = 'en' }: SponsorCardPro
   // Base card styles with group for hover coordination and colored left border
   const cardStyles = `
     group flex flex-col
-    bg-lightBlue/40 rounded-xl p-8
+    rounded-xl p-8
     border-2 border-transparent border-l-4 ${colors.border}
     hover:border-brandBlue hover:border-l-4 hover:${colors.border}
     hover:shadow-lg
@@ -73,14 +73,14 @@ export default function SponsorCard({ sponsor, language = 'en' }: SponsorCardPro
 
   if (linkPath) {
     return (
-      <Link href={linkPath} className={cardStyles}>
+      <Link href={linkPath} className={cardStyles} style={colors.gradientStyle}>
         {cardContent}
       </Link>
     );
   }
 
   return (
-    <div className={cardStyles}>
+    <div className={cardStyles} style={colors.gradientStyle}>
       {cardContent}
     </div>
   );

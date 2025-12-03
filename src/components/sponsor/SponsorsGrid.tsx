@@ -5,6 +5,26 @@ import { useSearchParams } from 'next/navigation';
 import { sponsors, categoryColors, categoryLabels, categoryOrder, Sponsor } from '@/data/sponsors';
 import SponsorCard from './SponsorCard';
 
+// Incentive type explainer content
+const incentiveExplainers: Record<Sponsor['incentiveType'], { title: string; description: string }> = {
+  completion: {
+    title: 'What is a Series Completion incentive?',
+    description: 'These are incentives students can apply for after completing all 9 monthly activities. Students don\'t have to complete all activities within their designated months to be able to apply for this, they just have to have all activities completed by the end of May.',
+  },
+  educator: {
+    title: 'What is an Educator-Level incentive?',
+    description: 'These are perks to encourage educators to join the Industry Immersion Series mailing list. Each month, we\'ll pick a random subscriber to win one of these prizes.',
+  },
+  school: {
+    title: 'What is a School-Level incentive?',
+    description: 'These are incentives that an entire school can win with enough participation. If your school has 100 or more students who have completed all 9 activities, you\'ll be eligible to apply for these incentives.',
+  },
+  activity: {
+    title: 'What is an Activity incentive?',
+    description: 'Each month, a new industry partner releases a skill-building challenge designed to introduce students to occupations and opportunities in their industry. Students individually work on the challenge, developing awareness of industry opportunities, relevant skills, post-secondary pathways, and more. Completed work is submitted and assessed against a rubric for review by the selection committee. Twenty submissions will be selected each month. Outstanding submissions receive micro grants and recognition from industry partners. $10,000 in micro grants (20 x $500) are awarded EACH month, with extra participation incentives available for students, educators, and schools.',
+  },
+};
+
 interface SponsorsGridProps {
   language?: 'en' | 'fr';
 }
@@ -108,6 +128,42 @@ export default function SponsorsGrid({ language = 'en' }: SponsorsGridProps) {
           No sponsors found in this category.
         </div>
       )}
+
+      {/* Incentive Type Explainer Section */}
+      <div className="mt-12 space-y-4">
+        {activeFilter === 'all' ? (
+          // Show all explainers when "All" is selected
+          categoryOrder.map((type) => {
+            const colors = categoryColors[type];
+            const explainer = incentiveExplainers[type];
+            return (
+              <div
+                key={type}
+                className={`rounded-xl p-6 border-l-4 ${colors.border}`}
+                style={colors.gradientStyle}
+              >
+                <h3 className="brand-h4 text-navy font-bold mb-2">{explainer.title}</h3>
+                <p className="brand-body2 text-neutral-600">{explainer.description}</p>
+              </div>
+            );
+          })
+        ) : (
+          // Show only the selected filter's explainer
+          (() => {
+            const colors = categoryColors[activeFilter];
+            const explainer = incentiveExplainers[activeFilter];
+            return (
+              <div
+                className={`rounded-xl p-6 border-l-4 ${colors.border}`}
+                style={colors.gradientStyle}
+              >
+                <h3 className="brand-h4 text-navy font-bold mb-2">{explainer.title}</h3>
+                <p className="brand-body2 text-neutral-600">{explainer.description}</p>
+              </div>
+            );
+          })()
+        )}
+      </div>
     </div>
   );
 }

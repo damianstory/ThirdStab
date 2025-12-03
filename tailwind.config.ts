@@ -7,6 +7,17 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    'bg-gradient-to-br',
+    'from-purple-50',
+    'to-purple-100/50',
+    'from-teal-50',
+    'to-teal-100/50',
+    'from-amber-50',
+    'to-amber-100/50',
+    'from-blue-50',
+    'to-lightBlue/40',
+  ],
   theme: {
     extend: {
       screens: {

@@ -26,9 +26,9 @@ export default function SponsorsPage() {
   return (
     <>
       <Header />
-      <main className="pt-24 pb-16">
+      <main className="pb-16">
         {/* Page Header */}
-        <section className="bg-gradient-to-br from-lightBlue/30 to-white py-16">
+        <section className="bg-gradient-to-br from-lightBlue/30 to-white pt-40 pb-16">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <h1 className="brand-h1 text-navy mb-4">
               Our Sponsors
