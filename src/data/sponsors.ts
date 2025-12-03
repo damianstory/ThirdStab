@@ -6,6 +6,7 @@ export interface Sponsor {
   incentiveType: 'activity' | 'completion' | 'educator' | 'school';
   contribution: string;
   amount?: string;
+  featured?: boolean;
 }
 
 // Extended interface for sponsor profile pages (similar to ActivityPageData)
@@ -72,6 +73,55 @@ export interface SponsorPageData extends Sponsor {
 
 // Valid sponsor slugs for routing (sponsors with full profile pages)
 export const validSponsorSlugs: string[] = ['shad'];
+
+// Category colors for visual differentiation
+export const categoryColors: Record<Sponsor['incentiveType'], {
+  border: string;
+  pillBg: string;
+  pillBgActive: string;
+  pillText: string;
+  pillTextActive: string;
+}> = {
+  completion: {
+    border: 'border-l-purple-500',
+    pillBg: 'bg-purple-100',
+    pillBgActive: 'bg-purple-500',
+    pillText: 'text-purple-600',
+    pillTextActive: 'text-white',
+  },
+  educator: {
+    border: 'border-l-teal-500',
+    pillBg: 'bg-teal-100',
+    pillBgActive: 'bg-teal-500',
+    pillText: 'text-teal-600',
+    pillTextActive: 'text-white',
+  },
+  school: {
+    border: 'border-l-amber-500',
+    pillBg: 'bg-amber-100',
+    pillBgActive: 'bg-amber-500',
+    pillText: 'text-amber-600',
+    pillTextActive: 'text-white',
+  },
+  activity: {
+    border: 'border-l-brandBlue',
+    pillBg: 'bg-blue-100',
+    pillBgActive: 'bg-brandBlue',
+    pillText: 'text-brandBlue',
+    pillTextActive: 'text-white',
+  },
+};
+
+// Category display labels
+export const categoryLabels: Record<Sponsor['incentiveType'], string> = {
+  completion: 'Series Completion',
+  educator: 'Educator',
+  school: 'School',
+  activity: 'Activity',
+};
+
+// Sort order for categories
+export const categoryOrder: Sponsor['incentiveType'][] = ['completion', 'educator', 'school', 'activity'];
 
 export const sponsors: Sponsor[] = [
   // Activity Sponsors
@@ -156,6 +206,7 @@ export const sponsors: Sponsor[] = [
     logo: '/images/sponsor-profiles/shad-canada.png',
     incentiveType: 'completion',
     contribution: '5x Entrance Scholarships to the 2026 (or beyond) Shad program',
+    featured: true,
   },
   {
     id: '10',

@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Sponsor, hasFullProfile } from '@/data/sponsors';
+import { Sponsor, hasFullProfile, categoryColors } from '@/data/sponsors';
 
 interface SponsorCardProps {
   sponsor: Sponsor;
@@ -12,6 +12,7 @@ interface SponsorCardProps {
 export default function SponsorCard({ sponsor, language = 'en' }: SponsorCardProps) {
   const slug = sponsor.slug;
   const hasProfile = hasFullProfile(slug);
+  const colors = categoryColors[sponsor.incentiveType];
 
   // Build the link path based on language and profile availability
   const linkPath = hasProfile
@@ -58,12 +59,13 @@ export default function SponsorCard({ sponsor, language = 'en' }: SponsorCardPro
     </>
   );
 
-  // Base card styles with group for hover coordination
+  // Base card styles with group for hover coordination and colored left border
   const cardStyles = `
     group flex flex-col
     bg-lightBlue/40 rounded-xl p-8
-    border-2 border-transparent
-    hover:border-brandBlue hover:shadow-lg
+    border-2 border-transparent border-l-4 ${colors.border}
+    hover:border-brandBlue hover:border-l-4 hover:${colors.border}
+    hover:shadow-lg
     transition-all duration-300
     min-h-[280px]
     ${hasProfile ? 'cursor-pointer' : 'cursor-default'}
