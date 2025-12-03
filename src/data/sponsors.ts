@@ -1,6 +1,7 @@
 export interface Sponsor {
   id: string;
   name: string;
+  slug: string;
   logo: string; // URL or path to logo
   incentiveType: 'activity' | 'completion' | 'educator' | 'school';
   contribution: string;
@@ -77,6 +78,7 @@ export const sponsors: Sponsor[] = [
   {
     id: '1',
     name: 'Mining Industry Human Resources Council (MiHR)',
+    slug: 'mihr',
     logo: '/images/iis-placeholder.png',
     incentiveType: 'activity',
     contribution: 'Activity: October 2025',
@@ -84,6 +86,7 @@ export const sponsors: Sponsor[] = [
   {
     id: '2',
     name: 'Skills/Compétences Canada',
+    slug: 'skills-canada',
     logo: '/images/skillscanada-hand.png',
     incentiveType: 'activity',
     contribution: 'Activity: November 2025',
@@ -91,6 +94,7 @@ export const sponsors: Sponsor[] = [
   {
     id: '3',
     name: 'thinkAG',
+    slug: 'thinkag',
     logo: '/images/thinkag-favicon.png',
     incentiveType: 'activity',
     contribution: 'Activity: December 2025',
@@ -98,6 +102,7 @@ export const sponsors: Sponsor[] = [
   {
     id: '4',
     name: 'NAV CANADA',
+    slug: 'nav-canada',
     logo: '/images/nav-canada.png',
     incentiveType: 'activity',
     contribution: 'Activity: January 2026',
@@ -105,6 +110,7 @@ export const sponsors: Sponsor[] = [
   {
     id: '5',
     name: 'Zurich Canada',
+    slug: 'zurich-canada',
     logo: '/images/iis-placeholder.png',
     incentiveType: 'activity',
     contribution: 'Activity: February 2026',
@@ -112,6 +118,7 @@ export const sponsors: Sponsor[] = [
   {
     id: '6',
     name: 'H&R Block Canada',
+    slug: 'hrblock-canada',
     logo: '/images/iis-placeholder.png',
     incentiveType: 'activity',
     contribution: 'Activity: March 2026',
@@ -119,6 +126,7 @@ export const sponsors: Sponsor[] = [
   {
     id: '7',
     name: 'Tourism HR Canada',
+    slug: 'tourism-hr',
     logo: '/images/iis-placeholder.png',
     incentiveType: 'activity',
     contribution: 'Activity: April 2026',
@@ -126,6 +134,7 @@ export const sponsors: Sponsor[] = [
   {
     id: '8',
     name: 'HVACR Career Connections powered by HRAI',
+    slug: 'hrai',
     logo: '/images/iis-placeholder.png',
     incentiveType: 'activity',
     contribution: 'Activity: May 2026',
@@ -133,6 +142,7 @@ export const sponsors: Sponsor[] = [
   {
     id: '9',
     name: 'Jack.org',
+    slug: 'jack-org',
     logo: '/images/jack-org-faviconV2.png',
     incentiveType: 'activity',
     contribution: 'Activity: May 2026',
@@ -141,7 +151,8 @@ export const sponsors: Sponsor[] = [
   // Series Completion Partners
   {
     id: '24',
-    name: 'Shad Canada',
+    name: 'Shad',
+    slug: 'shad',
     logo: '/images/sponsor-profiles/shad-canada.png',
     incentiveType: 'completion',
     contribution: '5x Entrance Scholarships to the 2026 (or beyond) Shad program',
@@ -149,13 +160,15 @@ export const sponsors: Sponsor[] = [
   {
     id: '10',
     name: 'JobSpark',
-    logo: '/images/iis-placeholder.png',
+    slug: 'job-spark',
+    logo: '/images/jobspark-logo.png',
     incentiveType: 'completion',
     contribution: '30 individual student codes to access the JobSpark program',
   },
   {
     id: '11',
     name: 'Straight Up Health',
+    slug: 'straight-up-health',
     logo: '/images/yolo-logo.png',
     incentiveType: 'completion',
     contribution: 'Young Opportunity Leaders Organization program (3 available)',
@@ -163,6 +176,7 @@ export const sponsors: Sponsor[] = [
   {
     id: '12',
     name: 'AdmissionPrep',
+    slug: 'admission-prep',
     logo: '/images/admissionprep-logo.png',
     incentiveType: 'completion',
     contribution: '5x full ride Program Sponsorships',
@@ -170,6 +184,7 @@ export const sponsors: Sponsor[] = [
   {
     id: '13',
     name: 'Your Company',
+    slug: 'your-company',
     logo: '/images/your-company.png',
     incentiveType: 'completion',
     contribution: 'Want to support career awareness and student skill development within a program that will reach up to +1 million grade 7-12 students?',
@@ -179,6 +194,7 @@ export const sponsors: Sponsor[] = [
   {
     id: '14',
     name: 'SparkPath',
+    slug: 'sparkpath',
     logo: '/images/sparkpath-logo.png',
     incentiveType: 'educator',
     contribution: 'Monthly physical Challenge Cards (single deck) for educators',
@@ -186,6 +202,7 @@ export const sponsors: Sponsor[] = [
   {
     id: '15',
     name: 'Your Company',
+    slug: 'your-company',
     logo: '/images/your-company.png',
     incentiveType: 'educator',
     contribution: 'Want to support career awareness and student skill development within a program that will reach up to +1 million grade 7-12 students?',
@@ -195,13 +212,15 @@ export const sponsors: Sponsor[] = [
   {
     id: '16',
     name: 'Milwaukee Tools',
-    logo: '/images/milwaukee-tools-logo.png',
+    slug: 'milwaukee',
+    logo: '/images/milwaukee-logo.png',
     incentiveType: 'school',
     contribution: '$10,000 CAD worth of Milwaukee Tools for a school',
   },
   {
     id: '17',
     name: 'Trade-Finder',
+    slug: 'trade-finder',
     logo: '/images/trade-finder-logo.png',
     incentiveType: 'school',
     contribution: 'School access to the Trade-Finder program for one year (10 available; Ontario only)',
@@ -209,6 +228,7 @@ export const sponsors: Sponsor[] = [
   {
     id: '18',
     name: 'SpacesEDU by myBlueprint',
+    slug: 'spaces-edu',
     logo: '/images/spacesEDU-logo.png',
     incentiveType: 'school',
     contribution: 'Free SpacesEDU Pro school-wide license (2 available)',
@@ -216,6 +236,7 @@ export const sponsors: Sponsor[] = [
   {
     id: '19',
     name: 'Your Company',
+    slug: 'your-company',
     logo: '/images/your-company.png',
     incentiveType: 'school',
     contribution: 'Want to support career awareness and student skill development within a program that will reach up to +1 million grade 7-12 students?',
@@ -252,7 +273,7 @@ export function generateSlug(name: string): string {
 // Get sponsor by slug
 export function getSponsorBySlug(slug: string): Sponsor | null {
   return sponsors.find(
-    sponsor => generateSlug(sponsor.name) === slug.toLowerCase()
+    sponsor => sponsor.slug === slug.toLowerCase()
   ) ?? null;
 }
 

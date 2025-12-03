@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Sponsor, generateSlug, hasFullProfile } from '@/data/sponsors';
+import { Sponsor, hasFullProfile } from '@/data/sponsors';
 
 interface SponsorCardProps {
   sponsor: Sponsor;
@@ -10,7 +10,7 @@ interface SponsorCardProps {
 }
 
 export default function SponsorCard({ sponsor, language = 'en' }: SponsorCardProps) {
-  const slug = generateSlug(sponsor.name);
+  const slug = sponsor.slug;
   const hasProfile = hasFullProfile(slug);
 
   // Build the link path based on language and profile availability
@@ -42,14 +42,31 @@ export default function SponsorCard({ sponsor, language = 'en' }: SponsorCardPro
       <p className="brand-body2 text-neutral-500 line-clamp-3">
         {sponsor.contribution}
       </p>
+
+      {/* Button - appears on hover */}
+      <div className="mt-auto pt-4">
+        {hasProfile ? (
+          <span className="block w-full text-center bg-brandBlue text-white py-3 px-4 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-semibold">
+            Learn more →
+          </span>
+        ) : (
+          <span className="block w-full text-center bg-neutral-300 text-neutral-500 py-3 px-4 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-semibold cursor-not-allowed">
+            Coming soon
+          </span>
+        )}
+      </div>
     </>
   );
 
-  // Base card styles
+  // Base card styles with group for hover coordination
   const cardStyles = `
-    block bg-lightBlue/40 rounded-xl p-6
+    group flex flex-col
+    bg-lightBlue/40 rounded-xl p-8
+    border-2 border-transparent
+    hover:border-brandBlue hover:shadow-lg
     transition-all duration-300
-    ${hasProfile ? 'hover:shadow-lg hover:-translate-y-1 cursor-pointer' : 'cursor-default'}
+    min-h-[280px]
+    ${hasProfile ? 'cursor-pointer' : 'cursor-default'}
   `;
 
   if (linkPath) {
