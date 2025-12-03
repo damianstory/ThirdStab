@@ -160,7 +160,7 @@ export const sponsors: Sponsor[] = [
     id: '6',
     name: 'H&R Block Canada',
     slug: 'hrblock-canada',
-    logo: '/images/iis-placeholder.png',
+    logo: '/images/hrblock-logo.png',
     incentiveType: 'activity',
     contribution: 'Activity: March 2026',
   },
@@ -184,7 +184,7 @@ export const sponsors: Sponsor[] = [
     id: '9',
     name: 'Jack.org',
     slug: 'jack-org',
-    logo: '/images/jack-org-faviconV2.png',
+    logo: '/images/jack-org-logo.png',
     incentiveType: 'activity',
     contribution: 'Activity: May 2026',
   },
@@ -223,15 +223,7 @@ export const sponsors: Sponsor[] = [
     incentiveType: 'completion',
     contribution: '5x full ride Program Sponsorships',
   },
-  {
-    id: '13',
-    name: 'Your Company',
-    slug: 'your-company',
-    logo: '/images/your-company.png',
-    incentiveType: 'completion',
-    contribution: 'Want to support career awareness and student skill development within a program that will reach up to +1 million grade 7-12 students?',
-  },
-
+  
   // Educator Prize Partners
   {
     id: '14',
@@ -241,15 +233,7 @@ export const sponsors: Sponsor[] = [
     incentiveType: 'educator',
     contribution: 'Monthly physical Challenge Cards (single deck) for educators',
   },
-  {
-    id: '15',
-    name: 'Your Company',
-    slug: 'your-company',
-    logo: '/images/your-company.png',
-    incentiveType: 'educator',
-    contribution: 'Want to support career awareness and student skill development within a program that will reach up to +1 million grade 7-12 students?',
-  },
-
+  
   // School Recognition Partners
   {
     id: '16',
@@ -275,15 +259,7 @@ export const sponsors: Sponsor[] = [
     incentiveType: 'school',
     contribution: 'Free SpacesEDU Pro school-wide license (2 available)',
   },
-  {
-    id: '19',
-    name: 'Your Company',
-    slug: 'your-company',
-    logo: '/images/your-company.png',
-    incentiveType: 'school',
-    contribution: 'Want to support career awareness and student skill development within a program that will reach up to +1 million grade 7-12 students?',
-  }
-];
+  ];
 
 // Helper function to get sponsors by incentive type
 export function getSponsorsByType(type: 'activity' | 'completion' | 'educator' | 'school'): Sponsor[] {

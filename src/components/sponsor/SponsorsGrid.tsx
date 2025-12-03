@@ -25,6 +25,12 @@ const incentiveExplainers: Record<Sponsor['incentiveType'], { title: string; des
   },
 };
 
+// "Get involved" explainer shown at the bottom
+const getInvolvedExplainer = {
+  title: 'Want your company to get involved?',
+  description: 'Want to support career awareness and student skill development within a program that will reach up to +1 million grade 7-12 students? Email Damian (damian.matheson@myblueprint.ca) to learn more.',
+};
+
 interface SponsorsGridProps {
   language?: 'en' | 'fr';
 }
@@ -162,6 +168,17 @@ export default function SponsorsGrid({ language = 'en' }: SponsorsGridProps) {
               </div>
             );
           })()
+        )}
+
+        {/* Get Involved CTA - only shown when "All" filter is active */}
+        {activeFilter === 'all' && (
+          <div
+            className="rounded-xl p-6 border-l-4 border-l-navy"
+            style={{ background: 'linear-gradient(to bottom right, #E8E8F0, #F4F4F8)' }}
+          >
+            <h3 className="brand-h4 text-navy font-bold mb-2">{getInvolvedExplainer.title}</h3>
+            <p className="brand-body2 text-neutral-600">{getInvolvedExplainer.description}</p>
+          </div>
         )}
       </div>
     </div>

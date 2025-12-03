@@ -10,7 +10,7 @@ interface SponsorCardProps {
 }
 
 // Sponsors that should have larger logos filling the container
-const largeLogoSlugs = ['milwaukee'];
+const largeLogoSlugs = ['milwaukee', 'hrblock-canada', 'jack-org'];
 // Sponsors with slightly smaller full-container logos (90% size)
 const mediumLogoSlugs = ['job-spark'];
 
