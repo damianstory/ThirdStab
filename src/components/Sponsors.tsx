@@ -65,9 +65,7 @@ export default function Sponsors({ language = 'en' }: SponsorsProps) {
         {/* View All Sponsors CTA */}
         <div className="flex justify-center mt-8 sm:mt-10 md:mt-12">
           <a
-            href="https://www.notion.so/Industry-Immersion-Series-Sponsors-23af4a4d79df801ba06eebcd7035537d?source=copy_link"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/sponsors"
             onClick={handleViewAllClick}
             className="bg-[#0092ff] text-white font-semibold py-3 px-6 sm:py-4 sm:px-8 rounded-xl hover:bg-[#0082e6] transition-colors text-center shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-200 text-sm sm:text-base"
           >

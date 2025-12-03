@@ -148,7 +148,7 @@ export const sponsors: Sponsor[] = [
     id: '4',
     name: 'NAV CANADA',
     slug: 'nav-canada',
-    logo: '/images/nav-canada-logo.png',
+    logo: '/logo4.png',
     incentiveType: 'activity',
     contribution: 'Activity: January 2026',
   },

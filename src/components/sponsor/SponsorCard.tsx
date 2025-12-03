@@ -16,7 +16,9 @@ const mediumLogoSlugs = ['job-spark', 'trade-finder'];
 // Sponsors with 25% larger logos (70px instead of 56px default)
 const slightlyLargerLogoSlugs = ['thinkag'];
 // Sponsors with ~56% larger logos (fills container)
-const largerLogoSlugs = ['mihr', 'nav-canada', 'zurich-canada', 'hrai'];
+const largerLogoSlugs = ['mihr', 'zurich-canada', 'hrai'];
+// Sponsors with 80% container size
+const eightyPercentLogoSlugs = ['nav-canada'];
 
 export default function SponsorCard({ sponsor, language = 'en' }: SponsorCardProps) {
   const slug = sponsor.slug;
@@ -26,6 +28,7 @@ export default function SponsorCard({ sponsor, language = 'en' }: SponsorCardPro
   const hasMediumLogo = mediumLogoSlugs.includes(slug);
   const hasSlightlyLargerLogo = slightlyLargerLogoSlugs.includes(slug);
   const hasLargerLogo = largerLogoSlugs.includes(slug);
+  const hasEightyPercentLogo = eightyPercentLogoSlugs.includes(slug);
 
   // Build the link path based on language, profile availability, or activity page
   const linkPath = hasProfile
@@ -45,9 +48,9 @@ export default function SponsorCard({ sponsor, language = 'en' }: SponsorCardPro
         <Image
           src={sponsor.logo}
           alt={`${sponsor.name} logo`}
-          width={hasLargeLogo || hasLargerLogo ? 80 : hasMediumLogo ? 72 : hasSlightlyLargerLogo ? 70 : 64}
-          height={hasLargeLogo || hasLargerLogo ? 80 : hasMediumLogo ? 72 : hasSlightlyLargerLogo ? 70 : 64}
-          className={hasLargeLogo ? "object-cover w-full h-full" : hasLargerLogo ? "object-contain w-full h-full" : hasMediumLogo ? "object-contain w-[90%] h-[90%]" : hasSlightlyLargerLogo ? "object-contain max-w-[70px] max-h-[70px]" : "object-contain max-w-[56px] max-h-[56px]"}
+          width={hasLargeLogo || hasLargerLogo ? 80 : hasMediumLogo ? 72 : hasSlightlyLargerLogo ? 70 : hasEightyPercentLogo ? 64 : 64}
+          height={hasLargeLogo || hasLargerLogo ? 80 : hasMediumLogo ? 72 : hasSlightlyLargerLogo ? 70 : hasEightyPercentLogo ? 64 : 64}
+          className={hasLargeLogo ? "object-cover w-full h-full" : hasLargerLogo ? "object-contain w-full h-full" : hasMediumLogo ? "object-contain w-[90%] h-[90%]" : hasEightyPercentLogo ? "object-contain w-[80%] h-[80%]" : hasSlightlyLargerLogo ? "object-contain max-w-[70px] max-h-[70px]" : "object-contain max-w-[56px] max-h-[56px]"}
         />
       </div>
 

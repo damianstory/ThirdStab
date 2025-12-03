@@ -228,8 +228,8 @@ export const CircularSponsorCarousel = ({
       `Carousel - ${sponsor.type} - ${sponsor.month || 'No Month'}`
     );
 
-    // Navigate to the Notion page
-    window.open('https://www.notion.so/Industry-Immersion-Series-Sponsors-23af4a4d79df801ba06eebcd7035537d?source=copy_link', '_blank', 'noopener,noreferrer');
+    // Navigate to the sponsors page
+    window.location.href = '/sponsors';
   };
 
   return (

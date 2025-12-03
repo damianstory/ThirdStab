@@ -117,6 +117,17 @@ export default function SponsorsGrid({ language = 'en' }: SponsorsGridProps) {
         ))}
       </div>
 
+      {/* Single Explainer - shown above cards when individual filter is selected */}
+      {activeFilter !== 'all' && (
+        <div
+          className={`rounded-xl p-6 border-l-4 ${categoryColors[activeFilter].border}`}
+          style={categoryColors[activeFilter].gradientStyle}
+        >
+          <h3 className="brand-h4 text-navy font-bold mb-2">{incentiveExplainers[activeFilter].title}</h3>
+          <p className="brand-body2 text-neutral-600">{incentiveExplainers[activeFilter].description}</p>
+        </div>
+      )}
+
       {/* Unified Sponsor Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredSponsors.map((sponsor) => (
@@ -135,11 +146,10 @@ export default function SponsorsGrid({ language = 'en' }: SponsorsGridProps) {
         </div>
       )}
 
-      {/* Incentive Type Explainer Section */}
-      <div className="mt-12 space-y-4">
-        {activeFilter === 'all' ? (
-          // Show all explainers when "All" is selected
-          categoryOrder.map((type) => {
+      {/* Incentive Type Explainer Section - only shown when "All" filter is active */}
+      {activeFilter === 'all' && (
+        <div className="mt-12 space-y-4">
+          {categoryOrder.map((type) => {
             const colors = categoryColors[type];
             const explainer = incentiveExplainers[type];
             return (
@@ -152,26 +162,9 @@ export default function SponsorsGrid({ language = 'en' }: SponsorsGridProps) {
                 <p className="brand-body2 text-neutral-600">{explainer.description}</p>
               </div>
             );
-          })
-        ) : (
-          // Show only the selected filter's explainer
-          (() => {
-            const colors = categoryColors[activeFilter];
-            const explainer = incentiveExplainers[activeFilter];
-            return (
-              <div
-                className={`rounded-xl p-6 border-l-4 ${colors.border}`}
-                style={colors.gradientStyle}
-              >
-                <h3 className="brand-h4 text-navy font-bold mb-2">{explainer.title}</h3>
-                <p className="brand-body2 text-neutral-600">{explainer.description}</p>
-              </div>
-            );
-          })()
-        )}
+          })}
 
-        {/* Get Involved CTA - only shown when "All" filter is active */}
-        {activeFilter === 'all' && (
+          {/* Get Involved CTA */}
           <div
             className="rounded-xl p-6 border-l-4 border-l-navy"
             style={{ background: 'linear-gradient(to bottom right, #E8E8F0, #F4F4F8)' }}
@@ -179,8 +172,8 @@ export default function SponsorsGrid({ language = 'en' }: SponsorsGridProps) {
             <h3 className="brand-h4 text-navy font-bold mb-2">{getInvolvedExplainer.title}</h3>
             <p className="brand-body2 text-neutral-600">{getInvolvedExplainer.description}</p>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }
