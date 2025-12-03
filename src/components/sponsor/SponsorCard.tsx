@@ -9,10 +9,17 @@ interface SponsorCardProps {
   language?: 'en' | 'fr';
 }
 
+// Sponsors that should have larger logos filling the container
+const largeLogoSlugs = ['milwaukee'];
+// Sponsors with slightly smaller full-container logos (90% size)
+const mediumLogoSlugs = ['job-spark'];
+
 export default function SponsorCard({ sponsor, language = 'en' }: SponsorCardProps) {
   const slug = sponsor.slug;
   const hasProfile = hasFullProfile(slug);
   const colors = categoryColors[sponsor.incentiveType];
+  const hasLargeLogo = largeLogoSlugs.includes(slug);
+  const hasMediumLogo = mediumLogoSlugs.includes(slug);
 
   // Build the link path based on language and profile availability
   const linkPath = hasProfile
@@ -24,13 +31,13 @@ export default function SponsorCard({ sponsor, language = 'en' }: SponsorCardPro
   const cardContent = (
     <>
       {/* Logo Container */}
-      <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center mb-4 shadow-sm">
+      <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center mb-4 shadow-sm overflow-hidden">
         <Image
           src={sponsor.logo}
           alt={`${sponsor.name} logo`}
-          width={64}
-          height={64}
-          className="object-contain max-w-[56px] max-h-[56px]"
+          width={hasLargeLogo ? 80 : hasMediumLogo ? 72 : 64}
+          height={hasLargeLogo ? 80 : hasMediumLogo ? 72 : 64}
+          className={hasLargeLogo ? "object-cover w-full h-full" : hasMediumLogo ? "object-contain w-[90%] h-[90%]" : "object-contain max-w-[56px] max-h-[56px]"}
         />
       </div>
 
