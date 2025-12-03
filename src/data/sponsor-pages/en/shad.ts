@@ -34,7 +34,7 @@ export const shadSponsor: SponsorPageData = {
       'Submit all 9 Industry Immersion activities **before May 30, 2026**',
       'Your participation is tracked automatically. If you are in grade 7, 8, 9 and you complete all 9 monthly Industry Immersion Series activities, you will be automatically entered to win an Entrance Scholarship to a future Shad program',
       'In June 2026, one winner per grade will be selected',
-      'Your scholarship covers a future Shad program, not 2026.'
+      'Your scholarship covers a future Shad program when you are age eligible (grade 10 or 11), not 2026.'
     ]
   },
 
