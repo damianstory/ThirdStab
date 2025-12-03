@@ -82,7 +82,7 @@ export const shadSponsor: SponsorPageData = {
     },
     {
       question: 'What is an Entrance Scholarship to Shad?',
-      answer: 'An Entrance Scholarship is equivalent to a full-ride scholarship. So, with an Entrance Scholarship you will be able to attend either an in-person or virtual summer program at no cost to you.\n\nNote that any travel required for you to get to/from a Live-in campus is not included in the scholarship.'
+      answer: 'An Entrance Scholarship is equivalent to a full-ride scholarship. So, with an Entrance Scholarship you will be able to attend either an in-person or virtual summer program at no cost to you.\n\nNote that any travel expenses required for you to get to/from a Live-in campus are not included as part of the scholarship.'
     },
     {
       question: 'What is a day at Shad like?',
