@@ -17,20 +17,19 @@ export default function SponsorsGrid({ language = 'en' }: SponsorsGridProps) {
   const searchParams = useSearchParams();
   const filterParam = searchParams.get('filter');
 
-  // Validate and set initial filter from URL param
-  const getInitialFilter = (): FilterType => {
-    if (filterParam && validFilters.includes(filterParam as FilterType)) {
-      return filterParam as FilterType;
+  // Validate filter param
+  const getValidFilter = (param: string | null): FilterType => {
+    if (param && validFilters.includes(param as FilterType)) {
+      return param as FilterType;
     }
     return 'all';
   };
 
-  const [activeFilter, setActiveFilter] = useState<FilterType>(getInitialFilter());
+  const [activeFilter, setActiveFilter] = useState<FilterType>(() => getValidFilter(filterParam));
 
   // Update filter when URL param changes
   useEffect(() => {
-    const newFilter = getInitialFilter();
-    setActiveFilter(newFilter);
+    setActiveFilter(getValidFilter(filterParam));
   }, [filterParam]);
 
   // Sort sponsors: featured first, then by category order

@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -42,7 +43,9 @@ export default function SponsorsPage() {
         {/* Sponsors Grid */}
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <SponsorsGrid language="en" />
+            <Suspense fallback={<div className="text-center py-12">Loading sponsors...</div>}>
+              <SponsorsGrid language="en" />
+            </Suspense>
           </div>
         </section>
       </main>
