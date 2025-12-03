@@ -12,7 +12,11 @@ interface SponsorCardProps {
 // Sponsors that should have larger logos filling the container
 const largeLogoSlugs = ['milwaukee', 'hrblock-canada', 'jack-org'];
 // Sponsors with slightly smaller full-container logos (90% size)
-const mediumLogoSlugs = ['job-spark'];
+const mediumLogoSlugs = ['job-spark', 'trade-finder'];
+// Sponsors with 25% larger logos (70px instead of 56px default)
+const slightlyLargerLogoSlugs = ['thinkag'];
+// Sponsors with ~56% larger logos (fills container)
+const largerLogoSlugs = ['mihr', 'nav-canada', 'zurich-canada', 'hrai'];
 
 export default function SponsorCard({ sponsor, language = 'en' }: SponsorCardProps) {
   const slug = sponsor.slug;
@@ -20,13 +24,19 @@ export default function SponsorCard({ sponsor, language = 'en' }: SponsorCardPro
   const colors = categoryColors[sponsor.incentiveType];
   const hasLargeLogo = largeLogoSlugs.includes(slug);
   const hasMediumLogo = mediumLogoSlugs.includes(slug);
+  const hasSlightlyLargerLogo = slightlyLargerLogoSlugs.includes(slug);
+  const hasLargerLogo = largerLogoSlugs.includes(slug);
 
-  // Build the link path based on language and profile availability
+  // Build the link path based on language, profile availability, or activity page
   const linkPath = hasProfile
     ? language === 'fr'
       ? `/sponsors/${slug}/fr`
       : `/sponsors/${slug}`
+    : sponsor.activityPage
+    ? sponsor.activityPage
     : null;
+
+  const hasActivityPage = !!sponsor.activityPage;
 
   const cardContent = (
     <>
@@ -35,9 +45,9 @@ export default function SponsorCard({ sponsor, language = 'en' }: SponsorCardPro
         <Image
           src={sponsor.logo}
           alt={`${sponsor.name} logo`}
-          width={hasLargeLogo ? 80 : hasMediumLogo ? 72 : 64}
-          height={hasLargeLogo ? 80 : hasMediumLogo ? 72 : 64}
-          className={hasLargeLogo ? "object-cover w-full h-full" : hasMediumLogo ? "object-contain w-[90%] h-[90%]" : "object-contain max-w-[56px] max-h-[56px]"}
+          width={hasLargeLogo || hasLargerLogo ? 80 : hasMediumLogo ? 72 : hasSlightlyLargerLogo ? 70 : 64}
+          height={hasLargeLogo || hasLargerLogo ? 80 : hasMediumLogo ? 72 : hasSlightlyLargerLogo ? 70 : 64}
+          className={hasLargeLogo ? "object-cover w-full h-full" : hasLargerLogo ? "object-contain w-full h-full" : hasMediumLogo ? "object-contain w-[90%] h-[90%]" : hasSlightlyLargerLogo ? "object-contain max-w-[70px] max-h-[70px]" : "object-contain max-w-[56px] max-h-[56px]"}
         />
       </div>
 
@@ -57,6 +67,10 @@ export default function SponsorCard({ sponsor, language = 'en' }: SponsorCardPro
           <span className="block w-full text-center bg-brandBlue text-white py-3 px-4 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-semibold">
             Learn more →
           </span>
+        ) : hasActivityPage ? (
+          <span className="block w-full text-center bg-brandBlue text-white py-3 px-4 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-semibold">
+            View Activity →
+          </span>
         ) : (
           <span className="block w-full text-center bg-neutral-300 text-neutral-500 py-3 px-4 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-semibold cursor-not-allowed">
             Coming soon
@@ -75,7 +89,7 @@ export default function SponsorCard({ sponsor, language = 'en' }: SponsorCardPro
     hover:shadow-lg
     transition-all duration-300
     min-h-[280px]
-    ${hasProfile ? 'cursor-pointer' : 'cursor-default'}
+    ${hasProfile || hasActivityPage ? 'cursor-pointer' : 'cursor-default'}
   `;
 
   if (linkPath) {

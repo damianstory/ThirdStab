@@ -7,6 +7,7 @@ export interface Sponsor {
   contribution: string;
   amount?: string;
   featured?: boolean;
+  activityPage?: string; // Link to activity page (e.g., '/october')
 }
 
 // Extended interface for sponsor profile pages (similar to ActivityPageData)
@@ -120,9 +121,10 @@ export const sponsors: Sponsor[] = [
     id: '1',
     name: 'Mining Industry Human Resources Council (MiHR)',
     slug: 'mihr',
-    logo: '/images/iis-placeholder.png',
+    logo: '/images/mihr-logo.png',
     incentiveType: 'activity',
     contribution: 'Activity: October 2025',
+    activityPage: '/october',
   },
   {
     id: '2',
@@ -131,20 +133,22 @@ export const sponsors: Sponsor[] = [
     logo: '/images/skillscanada-hand.png',
     incentiveType: 'activity',
     contribution: 'Activity: November 2025',
+    activityPage: '/november',
   },
   {
     id: '3',
     name: 'thinkAG',
     slug: 'thinkag',
-    logo: '/images/thinkag-favicon.png',
+    logo: '/images/thinkag-logo.jpg',
     incentiveType: 'activity',
     contribution: 'Activity: December 2025',
+    activityPage: '/december',
   },
   {
     id: '4',
     name: 'NAV CANADA',
     slug: 'nav-canada',
-    logo: '/images/nav-canada.png',
+    logo: '/images/nav-canada-logo.png',
     incentiveType: 'activity',
     contribution: 'Activity: January 2026',
   },
@@ -152,7 +156,7 @@ export const sponsors: Sponsor[] = [
     id: '5',
     name: 'Zurich Canada',
     slug: 'zurich-canada',
-    logo: '/images/iis-placeholder.png',
+    logo: '/images/zurich-logo.png',
     incentiveType: 'activity',
     contribution: 'Activity: February 2026',
   },
@@ -168,15 +172,15 @@ export const sponsors: Sponsor[] = [
     id: '7',
     name: 'Tourism HR Canada',
     slug: 'tourism-hr',
-    logo: '/images/iis-placeholder.png',
+    logo: '/images/tourism-hr-logo.jpeg',
     incentiveType: 'activity',
     contribution: 'Activity: April 2026',
   },
   {
     id: '8',
-    name: 'HVACR Career Connections powered by HRAI',
+    name: 'Heating, Refrigeration and Air Conditioning Institute of Canada',
     slug: 'hrai',
-    logo: '/images/iis-placeholder.png',
+    logo: '/images/hrai-logo.png',
     incentiveType: 'activity',
     contribution: 'Activity: May 2026',
   },

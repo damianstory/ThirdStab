@@ -93,7 +93,7 @@ export const shadSponsor: SponsorPageData = {
       answer: 'Shad accepts applications from students in grades 10 and 11 from across Canada. The program looks for curious, engaged students who want to make a difference in their communities and beyond.\n\nWith a limited number of spots available every year, there is a selection process in place to determine participants. Our selection process examines more than academics. We look for potential: the spark of leadership, a willingness to collaborate, and the courage to think differently.'
     },
     {
-      question: 'Can I apply now?',
+      question: 'Can I apply to Shad now?',
       answer: 'Yes, applications are open now. You can apply now at: https://www.shad.ca/apply/\n\nYou can indicate in your application that you\'re also participating in the Industry Immersion Series incentive opportunity.\n\nApply before Dec. 15 for a chance to win a lunch with Shad CEO, Tim Jackson.'
     },
     {
