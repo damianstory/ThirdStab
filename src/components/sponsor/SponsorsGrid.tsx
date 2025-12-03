@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { sponsors, categoryColors, categoryLabels, categoryOrder, Sponsor } from '@/data/sponsors';
 import SponsorCard from './SponsorCard';
 
@@ -10,8 +11,27 @@ interface SponsorsGridProps {
 
 type FilterType = 'all' | Sponsor['incentiveType'];
 
+const validFilters: FilterType[] = ['all', 'activity', 'completion', 'educator', 'school'];
+
 export default function SponsorsGrid({ language = 'en' }: SponsorsGridProps) {
-  const [activeFilter, setActiveFilter] = useState<FilterType>('all');
+  const searchParams = useSearchParams();
+  const filterParam = searchParams.get('filter');
+
+  // Validate and set initial filter from URL param
+  const getInitialFilter = (): FilterType => {
+    if (filterParam && validFilters.includes(filterParam as FilterType)) {
+      return filterParam as FilterType;
+    }
+    return 'all';
+  };
+
+  const [activeFilter, setActiveFilter] = useState<FilterType>(getInitialFilter());
+
+  // Update filter when URL param changes
+  useEffect(() => {
+    const newFilter = getInitialFilter();
+    setActiveFilter(newFilter);
+  }, [filterParam]);
 
   // Sort sponsors: featured first, then by category order
   const sortedSponsors = [...sponsors].sort((a, b) => {

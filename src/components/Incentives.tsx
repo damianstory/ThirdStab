@@ -1,15 +1,14 @@
 "use client";
 
-import { DollarSign, Trophy, User, GraduationCap } from 'lucide-react';
-import { getLimitedSponsorsByType } from '../data/sponsors';
-import SponsorAvatarGroup from './SponsorAvatarGroup';
+import Link from 'next/link';
+import { DollarSign, Trophy, User, GraduationCap, ArrowRight } from 'lucide-react';
 
 // Localized text content
 const text = {
   en: {
     heading: "Incentives",
     subheading: "Not just for students. Educators and schools are eligible for incentives too 👏",
-    sponsoredBy: "Sponsored by",
+    viewIncentives: "View Incentives",
     cards: {
       student: {
         title: "Monthly Student Microgrants",
@@ -60,7 +59,7 @@ const text = {
   fr: {
     heading: "Récompenses",
     subheading: "Pas seulement pour les élèves. Les enseignants et les écoles peuvent aussi recevoir des récompenses 👏",
-    sponsoredBy: "Commandité par",
+    viewIncentives: "Voir les récompenses",
     cards: {
       student: {
         title: "Microbourses mensuelles pour les élèves",
@@ -116,10 +115,6 @@ interface IncentivesProps {
 
 export default function Incentives({ language = 'en' }: IncentivesProps) {
   const t = text[language];
-  const activitySponsors = getLimitedSponsorsByType('activity', 9);
-  const completionSponsors = getLimitedSponsorsByType('completion', 4);
-  const educatorSponsors = getLimitedSponsorsByType('educator', 2);
-  const schoolSponsors = getLimitedSponsorsByType('school', 4);
 
   return (
     <section id="incentives" className="pt-24 pb-16 px-4 md:px-12 bg-gray-50">
@@ -164,17 +159,15 @@ export default function Incentives({ language = 'en' }: IncentivesProps) {
               </ul>
             </div>
 
-            {/* Sponsor Section */}
+            {/* View Incentives Link */}
             <div className="mt-6 pt-6 border-t border-gray-200">
-              <p className="text-sm text-gray-500 mb-3">{t.sponsoredBy}</p>
-              <div className="flex justify-start">
-                <SponsorAvatarGroup
-                  sponsors={activitySponsors.sponsors}
-                  maxVisible={9}
-                  size="sm"
-                  isStudentSponsors={true}
-                />
-              </div>
+              <Link
+                href="/sponsors?filter=activity"
+                className="inline-flex items-center gap-2 text-navy hover:text-brandBlue transition-colors font-semibold"
+              >
+                {t.viewIncentives}
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
 
@@ -206,17 +199,15 @@ export default function Incentives({ language = 'en' }: IncentivesProps) {
               </ul>
             </div>
 
-            {/* Sponsor Section */}
+            {/* View Incentives Link */}
             <div className="mt-6 pt-6 border-t border-gray-200">
-              <p className="text-sm text-gray-500 mb-3">{t.sponsoredBy}</p>
-              <div className="flex justify-start">
-                <SponsorAvatarGroup
-                  sponsors={completionSponsors.sponsors}
-                  maxVisible={4}
-                  size="sm"
-                  isCompletionSponsors={true}
-                />
-              </div>
+              <Link
+                href="/sponsors?filter=completion"
+                className="inline-flex items-center gap-2 text-navy hover:text-brandBlue transition-colors font-semibold"
+              >
+                {t.viewIncentives}
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
 
@@ -248,17 +239,15 @@ export default function Incentives({ language = 'en' }: IncentivesProps) {
               </ul>
             </div>
 
-            {/* Sponsor Section */}
+            {/* View Incentives Link */}
             <div className="mt-6 pt-6 border-t border-gray-200">
-              <p className="text-sm text-gray-500 mb-3">{t.sponsoredBy}</p>
-              <div className="flex justify-start">
-                <SponsorAvatarGroup
-                  sponsors={educatorSponsors.sponsors}
-                  maxVisible={2}
-                  size="sm"
-                  isEducatorSponsors={true}
-                />
-              </div>
+              <Link
+                href="/sponsors?filter=educator"
+                className="inline-flex items-center gap-2 text-navy hover:text-brandBlue transition-colors font-semibold"
+              >
+                {t.viewIncentives}
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
 
@@ -290,17 +279,15 @@ export default function Incentives({ language = 'en' }: IncentivesProps) {
               </ul>
             </div>
 
-            {/* Sponsor Section */}
+            {/* View Incentives Link */}
             <div className="mt-6 pt-6 border-t border-gray-200">
-              <p className="text-sm text-gray-500 mb-3">{t.sponsoredBy}</p>
-              <div className="flex justify-start">
-                <SponsorAvatarGroup
-                  sponsors={schoolSponsors.sponsors}
-                  maxVisible={4}
-                  size="sm"
-                  isSchoolSponsors={true}
-                />
-              </div>
+              <Link
+                href="/sponsors?filter=school"
+                className="inline-flex items-center gap-2 text-navy hover:text-brandBlue transition-colors font-semibold"
+              >
+                {t.viewIncentives}
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
         </div>
