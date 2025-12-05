@@ -201,7 +201,7 @@ export const decemberActivity: ActivityPageData = {
     {
       title: 'Explorateur de carrières thinkAG',
       description: 'Outil interactif d\'exploration de carrières comprenant plus de 100 métiers en agriculture, filtrables selon vos intérêts et votre province.',
-      url: 'https://thinkag.ca/en-ca/explore-careers',
+      url: 'https://pensezagri.ca/fr-ca/explorez-les-carrieres',
       type: 'link',
       borderColor: '#F9862B'
     },
@@ -215,7 +215,7 @@ export const decemberActivity: ActivityPageData = {
     {
       title: 'Rapport sur l\'information du marché du travail',
       description: 'Rapport complet de 2024 portant sur les tendances de la main-d\'œuvre en agriculture et les projections d\'emploi.',
-      url: 'https://cahrc-ccrha.ca/sites/default/files/2024-02/CAHRC_LMI-Report_FEB_2024_EN%20%281%29.pdf',
+      url: 'https://cahrc-ccrha.ca/sites/default/files/2024-02/CAHRC_LMI-Report_FEB_2024_FRv2_0.pdf',
       type: 'pdf',
       buttonText: 'Visit',
       borderColor: '#90BC32'
@@ -230,14 +230,14 @@ export const decemberActivity: ActivityPageData = {
     {
       title: 'Matrice de ressources en éducation agricole',
       description: 'Base de données nationale comprenant plus de 743 ressources pédagogiques liées à l\'agriculture pour tous les niveaux scolaires.',
-      url: 'https://aitcdashboard.ca/resource_matrix/NATIONAL/',
+      url: 'https://fr.aitcdashboard.ca/resource_matrix/NATIONAL/',
       type: 'link',
       borderColor: '#3640B3'
     },
     {
       title: 'Bourses et opportunités thinkAG',
       description: 'Guide complet des bourses, programmes collégiaux et possibilités de carrières en agriculture à travers le Canada.',
-      url: 'https://thinkag.ca/en-ca/scholarships',
+      url: 'https://pensezagri.ca/fr-ca/bourses-detudes',
       type: 'link',
       borderColor: '#01A9AB'
     }
