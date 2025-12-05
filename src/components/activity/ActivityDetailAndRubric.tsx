@@ -122,7 +122,7 @@ export default function ActivityDetailAndRubric({ activity, language = 'en' }: A
                               onClick={handleSubmissionClick}
                               className="gradient-submit-button"
                             >
-                              🚀 {language === 'en' ? 'Submit Your Video' : 'Soumettez votre vidéo'}
+                              🚀 {language === 'en' ? 'Submit Your Video' : 'Soumettre votre vidéo'}
                             </button>
                           </div>
                         </div>
@@ -154,7 +154,7 @@ export default function ActivityDetailAndRubric({ activity, language = 'en' }: A
             {/* Rubric */}
             <div className="bg-white border border-neutral2 rounded-xl overflow-hidden mt-8 lg:mt-8">
               <div className="bg-[#0092ff] text-white px-4 py-3">
-                <h3 className="font-semibold text-lg">{language === 'en' ? 'Evaluation Rubric Summary' : 'Résumé de la grille d\'évaluation'}</h3>
+                <h3 className="font-semibold text-lg">{language === 'en' ? 'Evaluation Rubric Summary' : 'Sommaire de la grille d\'évaluation'}</h3>
                 <p className="text-sm opacity-90">{language === 'en' ? `Total: ${activity.rubric.totalPoints} points` : `Total : ${activity.rubric.totalPoints} points`}</p>
               </div>
 

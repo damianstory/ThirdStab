@@ -5,7 +5,7 @@ export const decemberActivity: ActivityPageData = {
   id: '3',
   month: 'December',
   year: '2025',
-  title: 'Agriculture Career<br>Exploration Challenge',
+  title: 'Défi d\'exploration de carrières<br>en agriculture',
   description: `Explore career opportunities in agriculture, food production, and sustainable food systems with thinkAG.`,
   sponsor: {
     name: 'thinkAG',
@@ -23,73 +23,73 @@ export const decemberActivity: ActivityPageData = {
   // Extended page content
   hero: {
     backgroundImage: '/december-hero.jpg',
-    tagline: 'Discover Your Future in Agriculture',
-    introText: `From farm to table, the agriculture and food systems sector offers diverse career paths that feed our communities and sustain our planet. Explore Canada's agriculture sector in this challenge as you increase your awareness and cultivate curiosity in agriculture and food careers across the country.`
+    tagline: 'Découvrez votre avenir en agriculture',
+    introText: `De la ferme à la table, le secteur de l'agriculture et des systèmes alimentaires offre une multitude de parcours professionnels qui nourrissent nos communautés et soutiennent notre planète. Explorez le secteur agricole du Canada dans ce défi tout en développant votre compréhension du domaine et en cultivant votre curiosité pour les carrières en agriculture et dans l'alimentation partout au pays.`
   },
 
   video: {
-    embedUrl: 'https://www.youtube.com/embed/0F4sfXzSw0Y',
-    title: 'Whatever the career you want, you can do it in agriculture!',
-    description: `Agriculture and food systems are essential to our communities and economy. With careers in farming, food science, agribusiness, research, technology, and sustainability – there's a place for you in agriculture.`
+    embedUrl: 'https://www.youtube.com/embed/1tw7wHX1VLQ?list=PLv48Uir6JVgodGWN7aOGukL5C8Sn91fpi',
+    title: 'Quelle que soit la carrière qui vous intéresse, vous pouvez la réaliser en agriculture.',
+    description: `L'agriculture et les systèmes alimentaires sont essentiels à nos communautés et à notre économie. Avec des carrières en agriculture, en sciences alimentaires, en agroentreprise, en recherche, en technologie et en développement durable, il y a une place pour vous dans le secteur agricole.`
   },
 
   howThisWorksVideo: {
     embedUrl: 'https://www.youtube.com/embed/o_hTLLYSi1g',
-    title: 'December Industry Immersion Series Activity | How this Works'
+    title: 'Regarder : Comment ça fonctionne'
   },
 
   explainer: {
-    title: 'Challenge Overview',
+    title: 'Aperçu du défi',
     rows: [
       {
-        label: 'Active Submission Period',
-        content: 'December 1-31, 2025'
+        label: 'Période de soumission active',
+        content: '1er au 31 décembre 2025'
       },
       {
-        label: 'Eligibility',
-        content: 'Grades 7-12 students across Canada'
+        label: 'Admissibilité',
+        content: 'Élèves de la 7e à la 12e année partout au Canada'
       },
       {
-        label: 'Total Incentives',
-        content: '$10,000 in micro grants'
+        label: 'Incitatifs totaux',
+        content: '10 000 $ en microbourses'
       },
       {
-        label: 'Individual Awards',
-        content: '20 winners × $500 each'
+        label: 'Récompenses individuelles',
+        content: '20 gagnants × 500 $ chacun'
       },
       {
-        label: 'Submission Deadline',
-        content: 'December 31, 2025 at 11:59 PM EST'
+        label: 'Date limite de soumission',
+        content: '31 décembre 2025 à 23 h 59 (HNE)'
       },
     ]
   },
 
   activityDetail: {
-    description: 'The agriculture and food systems sector is at the forefront of innovation, sustainability, and community development.<br/><br/><strong>This challenge invites students to explore the diverse career pathways in agriculture</strong>, from traditional farming practices to modern food technology and environmental stewardship.',
+    description: 'Le secteur de l\'agriculture et des systèmes alimentaires est à l\'avant-garde de l\'innovation, de la durabilité et du développement communautaire.<br/><br/><strong>Ce défi invite les élèves à découvrir la diversité des parcours professionnels en agriculture</strong>, des pratiques agricoles traditionnelles aux technologies alimentaires modernes et aux initiatives de gestion environnementale.',
     steps: [
       {
-        title: "Step 1 - Career Spotlight",
-        details: "Start by identifying a specific role within the agriculture and food systems sector, for example: Agricultural Scientist, Food Technologist, Farm Manager, Sustainability Coordinator, etc. There are MANY to choose from.\n\nYou can use the thinkAG Resources below, and/or do your own research, but you need to be able to cite your sources.\n\nImportant: Select one specific role. Research it.\n\n<strong>Research what it's really like to work in this role.</strong>\n\nFor example:\n• What does someone in this job do all day?\n• What are their main tasks and responsibilities?\n• Do they work regular 9 to 5 hours, or do they work shifts, weekends, or seasonal schedules?\n• Where do they work? Is it indoors, outdoors, in a lab, in the field, or a combination?\n• What types of projects or challenges do they work on?"
+        title: "Étape 1 – Coup d'œil sur une carrière",
+        details: "Commencez par choisir un rôle précis dans le secteur de l'agriculture et des systèmes alimentaires, par exemple : scientifique agricole, technologue alimentaire, gestionnaire de ferme, coordonnateur en durabilité, etc. Il y en a beaucoup parmi lesquels choisir.\n\nVous pouvez utiliser les ressources thinkAG ci-dessous ou faire vos propres recherches, mais vous devez être en mesure de citer vos sources.\n\nImportant : Choisissez un rôle précis. Faites vos recherches.\n\n<strong>Cherchez ce que signifie réellement travailler dans ce rôle.</strong>\n\nPar exemple :\n• Que fait une personne dans cet emploi chaque jour?\n• Quelles sont ses principales tâches et responsabilités?\n• Travaille-t-elle de 9 h à 17 h ou selon des quarts, la fin de semaine, ou durant les saisons occupées?\n• Où travaille-t-elle? À l'intérieur, à l'extérieur, en laboratoire, sur le terrain ou une combinaison?\n• Sur quels types de projets ou défis travaille-t-elle?"
       },
       {
-        title: "Step 2 - Skills Focus",
-        details: "<strong>Identify 2-3 skills or competencies that are required in that role.</strong>\n\nThese could be transferable or durable skills like problem-solving and communication, and/or more specific technical skills that are unique to the role.\n\n<strong>IMPORTANT: Don't just name them. Give specific examples of how someone actually uses each skill on the job.</strong>\n\nFor example, if you identified problem-solving as a key skill, describe a specific work task or responsibility in this role where someone would apply problem-solving. What kind of problems do they solve? How do they approach them?\n\nBe specific about how each skill connects to the daily work tasks and responsibilities you identified in Step 1."
+        title: "Étape 2 – Compétences ciblées",
+        details: "<strong>Identifiez 2 ou 3 compétences nécessaires pour ce rôle.</strong>\n\nIl peut s'agir de compétences transférables ou durables comme la résolution de problèmes ou la communication, et/ou de compétences techniques propres au rôle.\n\n<strong>IMPORTANT: Ne vous contentez pas de les nommer. Donnez des exemples précis de la façon dont ces compétences sont utilisées dans le travail.</strong>\n\nPar exemple, si vous avez identifié la résolution de problèmes comme compétence clé, décrivez une tâche ou responsabilité concrète où cette compétence est appliquée. Quels types de problèmes la personne doit-elle résoudre? Comment les aborde-t-elle?\n\nExpliquez clairement comment chaque compétence se rattache aux tâches quotidiennes identifiées à l'Étape 1."
       },
       {
-        title: "Step 3 - Pathways to Work",
-        details: "<strong>Research the education and training required for this role.</strong>\n\n• How do you actually get into this career?\n• Is it an apprenticeship where you learn while working?\n• What college or university programs exist for this career?\n• How long does training take?\n• Where can you get this training in Canada?\n• Are there specific certifications or licenses required?\n• What courses should you take in high school to prepare?\n\n<strong>Pro tip: Be specific.</strong> For example, instead of just saying 'a college program', mention a specific program and institution."
+        title: "Étape 3 – Chemins vers l'emploi",
+        details: "<strong>Faites des recherches sur la formation et l'éducation nécessaires pour accéder à ce rôle.</strong>\n\n• Comment entre-t-on dans cette carrière?\n• S'agit-il d'un apprentissage où l'on apprend en travaillant?\n• Quels programmes de collège ou d'université existent pour ce métier?\n• Combien de temps dure la formation?\n• Où peut-on suivre cette formation au Canada?\n• Y a-t-il des certifications ou permis particuliers?\n• Quels cours au secondaire peuvent aider à se préparer?\n\n<strong>Conseil : Soyez précis.</strong> Au lieu de simplement dire « un programme collégial », mentionnez un programme et un établissement précis."
       },
       {
-        title: "Step 4 - Innovation & Sustainability",
-        details: "<strong>Research and describe specific innovations or sustainable practices being implemented in the agriculture sector and their importance to Canada's food security and environmental goals.</strong>\n\nDon't just give general examples. Be specific:\n• Name actual technologies, methods, or initiatives being used\n• Identify specific organizations, farms, or companies implementing these practices\n• Explain how these innovations connect to the career role you've been researching\n\nFor example, if you're researching precision agriculture technology, name the specific tools or platforms being used. If you're discussing sustainable farming methods, identify farms or regions in Canada where these are being implemented.\n\nCite your sources when speaking to this."
+        title: "Étape 4 – Innovation et durabilité",
+        details: "<strong>Recherchez et décrivez des innovations ou des pratiques durables précises utilisées dans le secteur agricole, et leur importance pour la sécurité alimentaire et les objectifs environnementaux du Canada.</strong>\n\n• Nommez des technologies, méthodes ou initiatives réelles\n• Identifiez des organisations, fermes ou entreprises qui les utilisent\n• Expliquez le lien entre ces innovations et le rôle professionnel que vous avez étudié\n\nPar exemple, si vous recherchez des technologies d'agriculture de précision, nommez les outils ou plateformes utilisés. Si vous parlez de pratiques agricoles durables, identifiez les fermes ou régions du Canada qui les appliquent.\n\nCitez vos sources lorsque vous en parlez."
       },
       {
-        title: "Step 5 - Future Outlook",
-        details: "<strong>Research the job outlook for the role you have been researching.</strong>\n\n• Is this career in-demand?\n• How many of these jobs are projected to be needed in your province/territory?\n• What's causing the demand (like people retiring, industry growth, or new technology creating jobs)?\n\nWhere are the jobs in Canada? Is there a higher demand for it in one part of the country than another?\n\n<strong>Cite your sources when speaking to this.</strong> You don't need to submit anything extra - just mention them in your video.\n\nFor example, saying/showing something like any of the below would work great:\n\n• \"according to Job Bank...\"\n• \"the Agriculture and Agri-Food Canada website says...\"\n• \"StatsCan projects...\"\n• \"this report from Indeed says...\"\n• \"the myBlueprint occupation profile for this occupation mentions...\""
+        title: "Étape 5 – Perspectives d'avenir",
+        details: "<strong>Faites des recherches sur les perspectives d'emploi liées au rôle que vous avez étudié.</strong>\n\n• Cette carrière est-elle en demande?\n• Combien d'emplois de ce type sont prévus dans votre province ou territoire?\n• Qu'est-ce qui crée cette demande (retraite des travailleurs, croissance du secteur, nouvelles technologies qui créent des emplois)?\n\nOù se trouvent ces emplois au Canada? La demande est-elle plus forte dans certaines régions que dans d'autres?\n\n<strong>Citez vos sources lorsque vous en parlez.</strong> Vous n'avez rien d'autre à soumettre : il suffit de les mentionner dans votre vidéo.\n\nPar exemple, ce type de mention fonctionne très bien :\n\n• « selon le Guichet-Emplois… »\n• « le site d'Agriculture et Agroalimentaire Canada indique que… »\n• « Statistique Canada prévoit que… »\n• « ce rapport d'Indeed montre que… »\n• « le profil de carrière dans myBlueprint pour cette occupation mentionne que… »"
       },
       {
-        title: "Step 6: Submit Your Activity Video",
-        details: "<strong>Create a 60-90 second video showing what you did in the activity and what you learned from the research across Steps 1-5.</strong>\n\nHow you choose to structure your video is up to you.\n\n• Vertical vs. horizontal? Up to you.\n• Talking head vs. all animations? Up to you.\n• Documentary style vs. tiktok style? Up to you.\n\nThe only requirements are that it addresses each of the 5 steps above (including evidence of your completed activity), and we're able to click a link to watch it. Everything else is up to you.\n\n<strong>IMPORTANT: Make sure the video link has the proper sharing settings in place.</strong>\n\nFor example:\n• If you're using Google Drive, make sure someone outside of your organization can watch it.\n• If you're using Youtube, make sure it's not listed as Private. Unlisted works great though.\n• Make sure it's not something that requires us to log in.\n\n<strong>A great way to test this is by pasting your link into a Chrome Incognito window.</strong> If it works in there without requiring login, it should work for us too.\n\nIt's your responsibility to make sure we can view your work."
+        title: "Étape 6 – Soumettre votre vidéo d'activité",
+        details: "<strong>Créez une vidéo de 60 à 90 secondes montrant ce que vous avez fait dans l'activité et ce que vous avez appris à travers les étapes 1 à 5.</strong>\n\nLa façon de structurer votre vidéo vous appartient entièrement.\n\n• Format vertical ou horizontal? À vous de choisir.\n• Caméra face à vous ou animation? À vous de choisir.\n• Style documentaire ou style TikTok? À vous de choisir.\n\nLes seules exigences sont que votre vidéo couvre les cinq étapes ci-dessus, qu'elle présente une preuve que vous avez complété l'activité et que nous puissions cliquer sur un lien pour la regarder. Tout le reste est à votre discrétion.\n\n<strong>IMPORTANT : assurez-vous que les paramètres de partage de votre vidéo sont correctement configurés.</strong>\n\nPar exemple :\n• Si vous utilisez Google Drive, assurez-vous que la vidéo peut être regardée par quelqu'un à l'extérieur de votre organisation.\n• Si vous utilisez YouTube, elle ne doit pas être définie sur « Privée ». Le mode « Non répertoriée » fonctionne très bien.\n• Assurez-vous que le lien ne demande pas de connexion.\n\n<strong>Une bonne façon de vérifier est de coller votre lien dans une fenêtre Chrome en mode incognito.</strong> Si la vidéo fonctionne sans connexion, elle devrait fonctionner pour nous aussi.\n\nIl vous revient de vous assurer que nous pouvons voir votre travail."
       }
     ]
   },
@@ -97,27 +97,27 @@ export const decemberActivity: ActivityPageData = {
   rubric: {
     criteria: [
       {
-        category: 'Content & Accuracy',
+        category: 'Contenu et exactitude',
         weight: 25,
-        description: 'Comprehensive coverage of all 5 required steps with accurate, detailed information'
+        description: 'Couverture complète des 5 étapes requises, avec des renseignements précis et détaillés.'
       },
       {
-        category: 'Research & Citations',
+        category: 'Recherche et citations',
         weight: 25,
-        description: 'Quality sources properly cited throughout the video presentation'
+        description: 'Sources de qualité correctement citées tout au long de la présentation vidéo.'
       },
       {
-        category: 'Engagement & Creativity',
+        category: 'Engagement et créativité',
         weight: 25,
-        description: 'Compelling delivery that maintains viewer interest through creative presentation'
+        description: 'Présentation dynamique et captivante qui maintient l\'intérêt du spectateur grâce à une approche créative.'
       },
       {
-        category: 'Communication & Clarity',
+        category: 'Communication et clarté',
         weight: 25,
-        description: 'Clear audio/visuals with logical organization, smooth flow, and meets 60-90 second requirement'
+        description: 'Qualité audio et visuelle claire, organisation logique, enchaînement fluide et respect du format de 60 à 90 secondes.'
       },
       {
-        category: 'View Detailed Evaluation Rubric Here',
+        category: 'Consultez la grille d\'évaluation détaillée ici',
         weight: 0,
         description: '',
         isLink: true,
@@ -136,120 +136,114 @@ export const decemberActivity: ActivityPageData = {
 
   faqs: [
     {
-      question: 'How does this December Activity challenge work?',
-      answer: 'Carefully read the Activity Details steps 1-5 to understand what is being asked of you in this activity. You can also watch the How this Works video for a detailed overview.'
+      question: 'En quoi consiste le Défi d\'activité de décembre?',
+      answer: 'Lisez attentivement les étapes des Détails du défi pour comprendre ce qui vous est demandé dans le cadre de cette activité. Vous pouvez visionner la vidéo <em>Visionner : Comment cela fonctionne</em> pour obtenir un aperçu détaillé du Défi d\'exploration de carrières en agriculture.'
     },
     {
-      question: 'What am I actually being asked to submit?',
-      answer: `You're being asked to submit a 60 to 90 second video highlighting the research you did from steps 1 through 5 in this specific activity. It's important that the video you create is shared as a clickable link, not something that we need to download, and that you've made sure that the sharing settings are set up in a way that we have access to view the video. It's a good idea to test this before submitting.`
+      question: 'Qu\'est-ce que je dois soumettre exactement?',
+      answer: `Il vous est demandé de soumettre une vidéo de 60 à 90 secondes qui montre ce que vous avez fait dans le cadre de l\'activité et ce que vous avez appris de votre recherche à travers les étapes 1 à 5. Assurez-vous que la vidéo est partagée en tant que lien cliquable avec les paramètres de partage appropriés afin que nous puissions la visionner. Testez-la dans une fenêtre de navigateur de navigation privée avant de la soumettre.`
     },
     {
-      question: 'Can I submit more than one video?',
-      answer: `Yes, you can complete the activity multiple times for different roles within the agriculture sector, though students can only win one micro grant per activity. We'd encourage you to focus on quality, not quantity.`
+      question: 'Puis-je soumettre plus d\'une vidéo?',
+      answer: `Oui, vous pouvez faire plusieurs soumissions pour différents rôles dans le secteur agricole, mais les élèves ne peuvent gagner qu\'une seule micro-subvention par mois. Nous vous encourageons à privilégier la qualité, et non la quantité.`
     },
     {
-      question: 'Is there a preferred style for the video?',
-      answer: `No, it's whatever feels authentic and engaging to you. It can be a Tik Tok style video with lots of different cuts and background music or more documentary style - whatever you will enjoy making more, and clearly communicates the requested information from steps 1-5.`
+      question: 'Y a-t-il un style de vidéo privilégié?',
+      answer: `Non, peu importe tant que c\'est authentique et captivant pour vous. La vidéo peut adopter le style de TikTok, avec beaucoup de montages différents et de la musique de fond, ou adopter un style plus documentaire. Peu importe ce que vous préférez faire. Assurez-vous simplement de respecter les exigences énumérées dans chacune des étapes.`
     },
     {
-      question: 'Does it matter what tool I use to make the video?',
-      answer: `Nope, it doesn't matter at all what tool you use. There are lots of free tools available to make videos today. Check with your school to see what they already have access to. For example, Canva is a great tool to be able to create videos with.`
+      question: 'L\'outil utilisé pour réaliser la vidéo a-t-il de l\'importance?',
+      answer: `Non, l\'outil que vous utilisez n\'a aucune importance. De nombreux outils gratuits permettent de faire des vidéos aujourd\'hui. Vérifiez auprès de votre école à quels outils vous avez déjà accès. Par exemple, Canva est un excellent outil pour créer des vidéos.`
     },
     {
-      question: 'What skills will I be developing by doing this activity?',
-      answer: `Lots of skills like research, critical thinking, communication, content creation, and many others. It would be a good idea to add the completed video to your myBlueprint portfolio and reflect on what skills you feel like you've developed as part of completing this activity.`
+      question: 'Quelles compétences vais-je développer en réalisant cette activité?',
+      answer: `De nombreuses compétences, comme la recherche, la pensée critique, la communication, la création de contenu et bien d\'autres. Ce serait une bonne idée d\'ajouter la vidéo terminée à votre portfolio dans myBlueprint et de réfléchir aux compétences que vous avez le sentiment d\'avoir développées dans le cadre de cette activité.`
     },
     {
-      question: 'Who is reviewing the submissions?',
-      answer: `Submissions will be reviewed by a team of representatives from myBlueprint. We may, if needed, collaborate with representatives from thinkAG.`
+      question: 'Qui examine les soumissions?',
+      answer: `Les soumissions seront examinées par une équipe de représentants de myBlueprint. Nous pourrions, si besoin, collaborer avec des représentants de thinkAG.`
     },
     {
-      question: 'Can students submit their videos in French?',
-      answer: `Yes, videos will be accepted in either English or French.`
+      question: 'Les élèves peuvent-ils soumettre des vidéos en français?',
+      answer: `Oui, les vidéos seront acceptées en anglais ou en français.`
     },
     {
-      question: 'How (and when) are the twenty monthly successful submissions selected?',
-      answer: `Depending on the volume of submissions, we plan to have selected, and be able to announce winners by the midpoint of the following month. So for example, with this activity, we hope to be able to announce the December winners by mid-January.`
+      question: 'Comment (et quand) les vingt meilleures soumissions mensuelles sont-elles sélectionnées?',
+      answer: `En fonction du volume de soumissions, nous prévoyons avoir sélectionné et être en mesure d\'annoncer les gagnants d\'ici le milieu du mois suivant. Par exemple, pour cette activité, nous espérons être en mesure d\'annoncer les gagnants de décembre d\'ici la mi-janvier.`
     },
     {
-      question: 'Should I add these submissions to my portfolio in myBlueprint?',
-      answer: `Yeah, that's a great idea, along with a reflection of what you learned from doing this activity and what you found interesting. As a heads up, we'll also be asking students to submit evidence of their completed activities through a myBlueprint portfolio if you plan on applying for one of the Series Completion incentives at the end of the year.`
+      question: 'Devrais-je ajouter ces soumissions à mon portfolio dans myBlueprint?',
+      answer: `Oui, c\'est une excellente idée, accompagnée d\'une réflexion sur ce que vous avez appris en faisant cette activité et ce que vous avez trouvé intéressant. À titre indicatif, nous demanderons également aux élèves de soumettre une preuve de leurs activités terminées dans un portfolio de myBlueprint s\'ils prévoient postuler pour l\'un des avantages incitatifs liés à la Réalisation de la série à la fin de l\'année.`
     },
     {
-      question: 'Do I need to do this in class, or can I just do this on my own?',
-      answer: `You can absolutely complete this activity on your own. That being said, you should absolutely communicate with your teachers (and parents) that you're doing this and see if you can potentially earn credit for the work that you're doing for this activity.`
+      question: 'Dois-je faire cette activité en classe, ou puis-je la faire par moi-même?',
+      answer: `Vous pouvez tout à fait réaliser cette activité par vous-même. Cela étant dit, vous devriez absolument informer vos enseignants (et vos parents) que vous faites cela et voir s\'il est possible d\'obtenir des crédits pour le travail que vous faites pour cette activité.`
     },
     {
-      question: 'Can I do this as a group project?',
-      answer: `The December challenge has been designed as an individual activity.`
+      question: 'Puis-je faire cette activité en tant que projet de groupe?',
+      answer: `Le Défi d\'exploration de carrières en agriculture a été conçu comme une activité individuelle.`
     },
     {
-      question: 'Can I still submit the activity after the December 31st deadline?',
-      answer: `Yes, you can still submit monthly activities after the deadline. However, any activity submitted after the deadline is not eligible for that month's pool of micro grants. It still makes sense to complete them even after the deadline so that you can potentially earn one of the Series Completion incentives. Those only require all activities to be completed, not necessarily completed within the month of the activity.`
+      question: 'Puis-je quand même soumettre l\'activité après la date limite du 31 décembre?',
+      answer: `Oui, vous pouvez quand même soumettre des activités mensuelles après la date limite. Toutefois, toute activité soumise après la date limite n\'est pas admissible à la réserve de micro-subventions de ce mois-là. Il est tout de même logique de les réaliser, même après la date limite, afin de pouvoir obtenir l\'un des avantages incitatifs liés à la Réalisation de la série. Ceux-ci requièrent uniquement que toutes les activités soient terminées, pas nécessairement qu\'elles soient terminées dans le mois de l\'activité.`
     },
     {
-      question: 'Will teachers be able to see who has submitted an entry?',
-      answer: `Teachers won't be able to see through myBlueprint which students have submitted activities or not. However, we will create reports that will be shared with your myBlueprint lead at the school board level who can share specifics with you upon request.`
+      question: 'Les enseignants pourront-ils voir qui a soumis une inscription?',
+      answer: `Les enseignants ne pourront pas voir dans myBlueprint quels élèves ont soumis des activités ou pas. Cependant, nous créerons des rapports qui seront partagés avec votre responsable de myBlueprint au niveau du conseil scolaire qui pourra partager des détails précis avec vous sur demande.`
     },
     {
-      question: 'What data is being collected and by who?',
-      answer: `myBlueprint is solely responsible for running the Industry Immersion Series.
-
-Meaning that only myBlueprint is collecting any information related to this Series. No personally identifiable information is being shared with any 3rd parties.
-
-We will publish de-identified (anonymous summary data) information to provide updates on how the Series is going. For example, the number of activity submissions received for each month, which province they're coming from, and communicate with our school board partners about school-specific participation.
-
-<a href="https://docs.google.com/document/d/1rHxZ4QntHN0fo7rqi7uKeDQakupNtE3KtT8p3lFPur4/edit?tab=t.0" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Click here to see the questions students are being asked</a> to answer when they submit their completed activity.`
+      question: 'Quelles données sont collectées et par qui?',
+      answer: `myBlueprint est l\'unique responsable de la réalisation de la Série d\'immersion industrielle, ce qui signifie que seul myBlueprint collecte toute information relative à cette série. Aucune information personnelle identifiable n\'est partagée avec des tiers. Nous publierons des informations sous forme de données synthétiques anonymisées pour fournir des mises à jour sur la façon dont la série se déroule. Par exemple, le nombre de soumissions d\'activités reçues pour chaque mois, leur province d\'origine, et nous communiquerons avec nos partenaires des conseils scolaires sur la participation spécifique à l\'école. <a href="https://docs.google.com/document/d/1rHxZ4QntHN0fo7rqi7uKeDQakupNtE3KtT8p3lFPur4/edit?tab=t.0" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">[Cliquez ici pour voir les questions auxquelles les élèves doivent répondre]</a> lorsqu\'ils soumettent leur activité terminée.`
     }
   ],
 
   resources: [
     {
-      title: 'thinkAG Career Explorer',
-      description: 'Interactive career exploration tool with 100+ agriculture careers filterable by interest and province.',
+      title: 'Explorateur de carrières thinkAG',
+      description: 'Outil interactif d\'exploration de carrières comprenant plus de 100 métiers en agriculture, filtrables selon vos intérêts et votre province.',
       url: 'https://thinkag.ca/en-ca/explore-careers',
       type: 'link',
       borderColor: '#F9862B'
     },
     {
-      title: 'Kareero Interest Assessment Game',
-      description: 'Interactive interest assessment that tracks your choices in a school gardening program.',
+      title: 'Kareero – Jeu d\'évaluation des intérêts',
+      description: 'Évaluation interactive de vos intérêts qui suit vos choix dans un programme scolaire de jardinage pour révéler votre profil.',
       url: 'https://kareero.vrts.ca/webgl/',
       type: 'link',
       borderColor: '#FCDE3F'
     },
     {
-      title: 'Labour Market Information Report',
-      description: 'Comprehensive 2024 report on agriculture workforce trends and employment projections.',
+      title: 'Rapport sur l\'information du marché du travail',
+      description: 'Rapport complet de 2024 portant sur les tendances de la main-d\'œuvre en agriculture et les projections d\'emploi.',
       url: 'https://cahrc-ccrha.ca/sites/default/files/2024-02/CAHRC_LMI-Report_FEB_2024_EN%20%281%29.pdf',
       type: 'pdf',
       buttonText: 'Visit',
       borderColor: '#90BC32'
     },
     {
-      title: 'Agriculture Career Video Playlist',
-      description: 'YouTube playlist featuring diverse agriculture career profiles and industry insights.',
+      title: 'Liste de vidéos de carrières en agriculture',
+      description: 'Liste YouTube présentant divers profils de carrières agricoles et des témoignages de l\'industrie.',
       url: 'https://www.youtube.com/watch?v=mNvyfSGi1O4&list=PLsTAeu1pJ5ZwO4rJqjxIUTiHlE8--s0_j',
       type: 'video',
       borderColor: '#488E14'
     },
     {
-      title: 'Agriculture Education Resource Matrix',
-      description: 'National database of 743+ curriculum resources for agriculture education across all grades.',
+      title: 'Matrice de ressources en éducation agricole',
+      description: 'Base de données nationale comprenant plus de 743 ressources pédagogiques liées à l\'agriculture pour tous les niveaux scolaires.',
       url: 'https://aitcdashboard.ca/resource_matrix/NATIONAL/',
       type: 'link',
       borderColor: '#3640B3'
     },
     {
       title: 'Bourses et opportunités thinkAG',
-      description: 'Guide complet des bourses agricoles, collèges et opportunités de carrière à travers le Canada.',
+      description: 'Guide complet des bourses, programmes collégiaux et possibilités de carrières en agriculture à travers le Canada.',
       url: 'https://thinkag.ca/en-ca/scholarships',
       type: 'link',
       borderColor: '#01A9AB'
     }
   ],
-  resourcesTitle: 'thinkAG Resources',
-  resourcesSubtitle: 'Explore these resources to support your activity research',
+  resourcesTitle: 'Ressources thinkAG',
+  resourcesSubtitle: 'Explorez ces ressources pour soutenir vos recherches dans l\'activité.',
 
   meta: {
     title: 'Agriculture & Food Systems Challenge - December 2025',

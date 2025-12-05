@@ -44,15 +44,15 @@ export default async function DecemberActivityFrenchPage() {
         <ActivityHero activity={decemberActivity} />
         <VideoAndExplainer activity={decemberActivity} />
         <div id="activity-details">
-          <ActivityDetailAndRubric activity={decemberActivity} />
+          <ActivityDetailAndRubric activity={decemberActivity} language="fr" />
         </div>
         <div id="sponsor-resources">
-          <SponsorResources activity={decemberActivity} />
+          <SponsorResources activity={decemberActivity} language="fr" />
         </div>
         <div id="activity-faq">
-          <ActivityFAQ activity={decemberActivity} />
+          <ActivityFAQ activity={decemberActivity} language="fr" />
         </div>
-        <IncentivesAndNavigation currentActivity={decemberActivity} />
+        <IncentivesAndNavigation currentActivity={decemberActivity} language="fr" />
       </main>
       <Footer />
     </>
