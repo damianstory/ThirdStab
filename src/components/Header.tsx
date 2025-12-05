@@ -209,7 +209,9 @@ export default function Header({ variant = 'default' }: HeaderProps) {
           <div className="flex items-center justify-center overflow-visible">
             {variant === 'sponsor' ? (
               <span className="absolute left-1/2 -translate-x-1/2 text-gray-700 text-xs xl:text-sm font-medium whitespace-nowrap">
-                Industry Immersion Series Sponsor Profile
+                {language === 'fr'
+                  ? "Série d'immersion dans l'industrie Profil du commanditaire"
+                  : 'Industry Immersion Series Sponsor Profile'}
               </span>
             ) : (
               <div className="flex items-baseline space-x-1 xl:space-x-2">
@@ -258,7 +260,7 @@ export default function Header({ variant = 'default' }: HeaderProps) {
           <div className="flex-shrink-0">
             {variant === 'sponsor' ? (
               <span className="text-gray-700 text-xs sm:text-sm font-medium text-center">
-                Sponsor Profile
+                {language === 'fr' ? 'Profil du commanditaire' : 'Sponsor Profile'}
               </span>
             ) : (
               <button
