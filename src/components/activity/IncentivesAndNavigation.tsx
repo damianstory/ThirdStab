@@ -17,10 +17,10 @@ export default function IncentivesAndNavigation({ currentActivity, language = 'e
         {/* Activity Navigation Section */}
         <div className="text-center mb-12">
           <h2 className="brand-h2 text-[#22224C] mb-6">
-            {language === 'en' ? 'Explore Other Activities' : 'Découvrez d\'autres activités'}
+            {language === 'en' ? 'Explore Other Activities' : 'Explorez les autres activités'}
           </h2>
           <p className="brand-body1 text-neutral-500">
-            {language === 'en' ? 'Navigate to other monthly challenges' : 'Accédez aux autres défis mensuels'}
+            {language === 'en' ? 'Navigate to other monthly challenges' : 'Accédez aux défis mensuels précédents ou à venir.'}
           </p>
         </div>
         {/* Activity Grid */}

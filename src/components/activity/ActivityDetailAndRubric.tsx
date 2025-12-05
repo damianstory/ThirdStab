@@ -147,7 +147,7 @@ export default function ActivityDetailAndRubric({ activity, language = 'en' }: A
                 onClick={() => setShowVideoModal(true)}
                 className="w-full px-6 py-4 rounded-lg font-semibold text-lg text-center leading-tight transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200 hover:-translate-y-1 hover:shadow-lg active:scale-95"
               >
-                {language === 'en' ? 'Watch: How this Works' : 'Visionner : Comment cela fonctionne'}
+                {language === 'en' ? 'Watch: How this Works' : 'Regardez : Comment ça fonctionne'}
               </button>
             </div>
 

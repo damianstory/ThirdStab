@@ -36,7 +36,7 @@ export default function ActivityFAQ({ activity, language = 'en' }: ActivityFAQPr
           <p className="brand-body1 text-neutral-500">
             {language === 'en'
               ? 'Get answers to common questions about this activity'
-              : 'Obtenez des réponses à des questions courantes sur cette activité'}
+              : 'Obtenez des réponses aux questions les plus fréquentes à propos de cette activité.'}
           </p>
         </div>
 
