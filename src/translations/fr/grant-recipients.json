@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "title": "Boursiers",
+    "subtitle": "Célébrons les élèves qui ont donné vie à leur exploration de carrière par la vidéo"
+  },
+  "filter": {
+    "all": "Tous"
+  },
+  "card": {
+    "grade": "Année"
+  },
+  "section": {
+    "viewActivity": "Voir l'activité",
+    "winnersCount": "gagnants"
+  },
+  "meta": {
+    "title": "Boursiers | Série Immersion industrie",
+    "description": "Découvrez les élèves qui ont reçu des microbourses de 500 $ pour leurs excellentes soumissions vidéo d'exploration de carrière dans la Série Immersion industrie."
+  }
+}

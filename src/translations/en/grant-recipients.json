@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "title": "Grant Recipients",
+    "subtitle": "Celebrating the students who brought their career exploration to life through video"
+  },
+  "filter": {
+    "all": "All"
+  },
+  "card": {
+    "grade": "Grade"
+  },
+  "section": {
+    "viewActivity": "View Activity",
+    "winnersCount": "winners"
+  },
+  "meta": {
+    "title": "Grant Recipients | Industry Immersion Series",
+    "description": "Meet the students who received $500 microgrants for their outstanding career exploration video submissions in the Industry Immersion Series."
+  }
+}
