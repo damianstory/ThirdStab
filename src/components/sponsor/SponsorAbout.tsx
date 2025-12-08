@@ -12,7 +12,7 @@ const text = {
     title: 'About'
   },
   fr: {
-    title: 'A propos'
+    title: 'À propos'
   }
 };
 
