@@ -87,7 +87,8 @@
       "WebFetch(domain:github.com)",
       "WebSearch",
       "WebFetch(domain:lucide.dev)",
-      "WebFetch(domain:www.navcanada.ca)"
+      "WebFetch(domain:www.navcanada.ca)",
+      "Bash(git config:*)"
     ],
     "deny": []
   }
