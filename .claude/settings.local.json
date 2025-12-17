@@ -88,7 +88,9 @@
       "WebSearch",
       "WebFetch(domain:lucide.dev)",
       "WebFetch(domain:www.navcanada.ca)",
-      "Bash(git config:*)"
+      "Bash(git config:*)",
+      "Bash(brew upgrade:*)",
+      "Bash(brew list:*)"
     ],
     "deny": []
   }

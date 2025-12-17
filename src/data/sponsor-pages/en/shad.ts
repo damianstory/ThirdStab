@@ -117,6 +117,10 @@ export const shadSponsor: SponsorPageData = {
       answer: '• Each month, a new industry partner releases a skill-building challenge designed to introduce students to occupations and opportunities in their industry.\n\n• Students individually work on the challenge, developing awareness of industry opportunities, relevant skills, post-secondary pathways, and more.\n\n• Completed work is submitted and assessed against a rubric for review by the selection committee. Twenty submissions will be selected each month.\n\n• Outstanding submissions receive micro grants and recognition from industry partners. $10,000 in micro grants are awarded EACH month, with extra participation incentives available for students, educators, and schools.\n\nClick the myBlueprint logo in the top left of this page to learn more.'
     },
     {
+      question: 'What if I didn\'t complete the October or November activities in those months?',
+      answer: 'That\'s fine. Once an activity opens, it stays open for the rest of the school year. So even if a student didn\'t complete the activity in that sponsored month (e.g. completing the October activity in October), you can still complete it to be eligible for things like the Series Completion incentives, which the Shad Canada Entrance Scholarships is a part of.\n\nImportant to note that once the month ends, the micro grants for that month are no longer available, but the activity remains open for anyone to complete.\n\nYou can learn more about other Series Completion incentives here: <a href="https://industryimmersionseries.myblueprint.ca/sponsors" target="_blank" rel="noopener noreferrer" class="text-brandBlue hover:underline">https://industryimmersionseries.myblueprint.ca/sponsors</a>'
+    },
+    {
       question: 'What if my school isn\'t using myBlueprint?',
       answer: 'That\'s okay. The Industry Immersion Series is open to any Grade 7-12 student across Canada. You don\'t need to be using myBlueprint to participate in the Industry Immersion Series or this incentive collaboration with Shad Canada.'
     }
