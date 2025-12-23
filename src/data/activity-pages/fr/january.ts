@@ -25,7 +25,7 @@ export const januaryActivity: ActivityPageData = {
   hero: {
     backgroundImage: '/january-hero.jpg',
     tagline: 'Discover Your Future in Aviation',
-    introText: `At NAV CANADA, we're transforming the way our skies operate. Explore how air traffic control and flight service professionals are keeping air travel safe, efficient, and enjoyable for millions. From tower controllers guiding aircraft through busy airports to technical services technologists maintaining critical systems — discover your path to a career that keeps Canada's skies safe.`
+    introText: `At NAV CANADA, we're transforming the way our skies operate. Explore how air traffic control and flight service professionals are keeping air travel safe, efficient, and enjoyable for millions. From tower controllers guiding aircraft through busy airports to — discover your path to a career that keeps Canada's skies safe.`
   },
 
   video: {

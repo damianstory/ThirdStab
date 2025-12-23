@@ -24,7 +24,7 @@ export const januaryActivity: ActivityPageData = {
   hero: {
     backgroundImage: '/january-hero.jpg',
     tagline: 'Discover Your Future in Aviation',
-    introText: `At NAV CANADA, we're transforming the way our skies operate. Explore how air traffic control and flight service professionals are keeping air travel safe, efficient, and enjoyable for millions. From tower controllers guiding aircraft through busy airports to technical services technologists maintaining critical systems — discover your path to a career that keeps Canada's skies safe.`
+    introText: `At NAV CANADA, we're transforming the way our skies operate. Explore how air traffic control and flight service professionals are keeping air travel safe, efficient, and enjoyable for millions. From tower controllers guiding aircraft through busy airports to flight service specialists advising on weather at flight information centres — discover your path to a career that keeps Canada's skies safe.`
   },
 
   video: {
@@ -65,7 +65,7 @@ export const januaryActivity: ActivityPageData = {
   },
 
   activityDetail: {
-    description: 'NAV CANADA keeps Canada\'s skies safe, guiding over 18 million flights per year across 18 million square kilometers of airspace.<br/><br/><strong>This challenge invites students to explore aviation careers at NAV CANADA</strong>, from air traffic controllers who guide aircrafts, to technologists who maintain critical navigation systems — all united by a culture where safety is everyone\'s job.',
+    description: 'NAV CANADA keeps Canada\'s skies safe, guiding over 18 million flights per year across 18 million square kilometers of airspace.<br/><br/><strong>This challenge invites students to explore aviation careers at NAV CANADA</strong>, from air traffic controllers who guide aircrafts, to flight service specialists who advise pilots — all united by a culture where safety is everyone\'s job.',
     steps: [
       {
         title: "Step 1 - Choose Your Career Path",
