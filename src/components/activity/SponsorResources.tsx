@@ -84,60 +84,86 @@ export default function SponsorResources({
 
         {/* NAV Canada Style Grid (January - blue overlay, sharp corners) */}
         {isNAVCanadaStyle ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
-            {activity.resources.map((resource, index) => (
-              <div
-                key={index}
-                onClick={() => handleResourceClick(resource.url, resource.title, resource.type)}
-                className="relative cursor-pointer transition-all duration-300 hover:shadow-2xl group overflow-hidden"
-                style={{ aspectRatio: '4/3' }}
-              >
-                {/* Background Image */}
-                <div className="absolute inset-0 overflow-hidden">
-                  {resource.image ? (
-                    <img
-                      src={resource.image}
-                      alt={resource.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  ) : (
-                    <div className="w-full h-full bg-gradient-to-br from-[#0047BB] to-[#003399]" />
-                  )}
-                </div>
-
-                {/* Blue Overlay - disappears on hover */}
+          <div className="max-w-4xl mx-auto">
+            {/* Image cards (occupation links) */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              {activity.resources.filter(r => !r.vimeoId).map((resource, index) => (
                 <div
-                  className="absolute inset-0 bg-[#0047BB] opacity-70 group-hover:opacity-0 transition-opacity duration-300"
-                />
-
-                {/* Content */}
-                <div className="relative h-full flex flex-col justify-end p-4 md:p-6">
-                  <h3 className="text-white font-bold text-base md:text-lg leading-tight">
-                    {resource.title}
-                  </h3>
-                </div>
-
-                {/* Arrow Button - appears on hover, bottom right */}
-                <div
-                  className="absolute bottom-0 right-0 w-12 h-12 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  style={{ backgroundColor: '#00529CCC' }}
+                  key={index}
+                  onClick={() => handleResourceClick(resource.url, resource.title, resource.type)}
+                  className="relative cursor-pointer transition-all duration-300 hover:shadow-2xl group overflow-hidden"
+                  style={{ aspectRatio: '4/3' }}
                 >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="white"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+                  {/* Background Image */}
+                  <div className="absolute inset-0 overflow-hidden">
+                    {resource.image ? (
+                      <img
+                        src={resource.image}
+                        alt={resource.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-[#0047BB] to-[#003399]" />
+                    )}
+                  </div>
+
+                  {/* Blue Overlay - disappears on hover */}
+                  <div
+                    className="absolute inset-0 bg-[#0047BB] opacity-70 group-hover:opacity-0 transition-opacity duration-300"
+                  />
+
+                  {/* Content */}
+                  <div className="relative h-full flex flex-col justify-end p-4 md:p-6">
+                    <h3 className="text-white font-bold text-base md:text-lg leading-tight">
+                      {resource.title}
+                    </h3>
+                  </div>
+
+                  {/* Arrow Button - appears on hover, bottom right */}
+                  <div
+                    className="absolute bottom-0 right-0 w-12 h-12 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    style={{ backgroundColor: '#00529CCC' }}
                   >
-                    <line x1="5" y1="12" x2="19" y2="12" />
-                    <polyline points="12 5 19 12 12 19" />
-                  </svg>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="white"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                      <polyline points="12 5 19 12 12 19" />
+                    </svg>
+                  </div>
                 </div>
+              ))}
+            </div>
+
+            {/* Video cards (Vimeo embeds) */}
+            {activity.resources.some(r => r.vimeoId) && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {activity.resources.filter(r => r.vimeoId).map((resource, index) => (
+                  <div
+                    key={`video-${index}`}
+                    className="relative overflow-hidden"
+                    style={{ aspectRatio: '4/3' }}
+                  >
+                    {/* Vimeo Embed */}
+                    <iframe
+                      src={`https://player.vimeo.com/video/${resource.vimeoId}?badge=0&autopause=0&player_id=0&app_id=58479`}
+                      frameBorder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      className="absolute top-0 left-0 w-full h-full"
+                      title={resource.title}
+                    />
+                  </div>
+                ))}
               </div>
-            ))}
+            )}
           </div>
         ) : hasImages ? (
           /* Image-based Grid (November activities) */

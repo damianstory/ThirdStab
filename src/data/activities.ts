@@ -329,6 +329,7 @@ export interface ActivityPageData extends Activity {
     image?: string;
     buttonText?: string; // Optional custom button text
     borderColor?: string; // Optional custom border color for branding
+    vimeoId?: string; // Optional Vimeo video ID for embedded videos
   }>;
   resourcesTitle?: string; // Optional custom title for Resources section
   resourcesSubtitle?: string; // Optional custom subtitle for Resources section

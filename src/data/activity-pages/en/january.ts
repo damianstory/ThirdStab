@@ -69,12 +69,10 @@ export const januaryActivity: ActivityPageData = {
     steps: [
       {
         title: "Step 1 - Choose Your Career Path",
-        details: `Start by selecting ONE of the four NAV CANADA occupations below:
+        details: `Start by selecting ONE of the two NAV CANADA occupations below:
 
-• <strong>Tower Controller / Area Controller</strong> – Guide aircraft safely through takeoff, flight, and landing using advanced radar and communication systems
+• <strong>Air Traffic Controller</strong> – Guide aircraft safely through takeoff, flight, and landing using advanced radar and communication systems
 • <strong>Flight Service Specialist</strong> – Provide critical weather briefings, flight information, and airport advisory services
-• <strong>Technical Services Technologist</strong> – Maintain and service the sophisticated systems that keep Canada's skies safe
-• <strong>Business and Operational Support</strong> – Support aviation operations through roles in finance, HR, technology, safety, and more
 
 Click on the occupation card in the Resources section below to visit the official NAV CANADA career page and learn more about that role.
 
@@ -107,7 +105,6 @@ These could include:
 • Communication and teamwork
 • Problem-solving and decision-making
 • Attention to detail and situational awareness
-• Technical aptitude and systems thinking
 • Stress management and composure
 • Spatial reasoning and visualization
 
@@ -325,20 +322,20 @@ We will publish de-identified (anonymous summary data) information to provide up
       borderColor: '#0047BB'
     },
     {
-      title: 'Technical Services Technologist',
-      description: 'Maintain and service the sophisticated navigation and communication systems that keep our skies safe.',
-      url: 'https://www.navcanada.ca/en/careers/technical-services-technologist.aspx',
-      type: 'link',
-      image: '/january-occupations/tech-services.jpg',
-      borderColor: '#0047BB'
+      title: 'Air Traffic Controller - Employee Story',
+      description: 'Hear from Eric Schmidt about his career as an Air Traffic Controller at NAV CANADA.',
+      url: 'https://vimeo.com/1131306121',
+      type: 'video',
+      borderColor: '#0047BB',
+      vimeoId: '1131306121'
     },
     {
-      title: 'Business and Operational Support',
-      description: 'Support aviation operations through roles in finance, HR, technology, safety, and corporate functions.',
-      url: 'https://www.navcanada.ca/en/careers/business-and-operational-support.aspx',
-      type: 'link',
-      image: '/january-occupations/business-support.jpg',
-      borderColor: '#0047BB'
+      title: 'Flight Service Specialist - Employee Story',
+      description: 'Hear from Omar Madane about his career as a Flight Service Specialist at NAV CANADA.',
+      url: 'https://vimeo.com/1128006905',
+      type: 'video',
+      borderColor: '#0047BB',
+      vimeoId: '1128006905'
     }
   ],
   resourcesTitle: 'Choose Your NAV CANADA Career Path',
