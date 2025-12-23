@@ -339,7 +339,7 @@ We will publish de-identified (anonymous summary data) information to provide up
     }
   ],
   resourcesTitle: 'Choose Your NAV CANADA Career Path',
-  resourcesSubtitle: 'Select one occupation to research for this challenge',
+  resourcesSubtitle: 'Select (and click on) one occupation to research for this challenge',
 
   meta: {
     title: 'Beyond the Skies Challenge | myBlueprint Industry Immersion Series | January 2026',
