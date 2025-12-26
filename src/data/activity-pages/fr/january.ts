@@ -225,15 +225,15 @@ It's your responsibility to make sure we can view your work.`
         weight: 0,
         description: '',
         isLink: true,
-        url: 'https://PLACEHOLDER-RUBRIC-URL'
+        url: 'https://claude.ai/public/artifacts/f278e1a7-12cc-40d5-98e7-98974ff4a28f'
       }
     ],
     totalPoints: 100,
-    detailedRubricUrl: 'https://PLACEHOLDER-RUBRIC-URL'
+    detailedRubricUrl: 'https://claude.ai/public/artifacts/f278e1a7-12cc-40d5-98e7-98974ff4a28f'
   },
 
   submission: {
-    url: 'https://PLACEHOLDER-SUBMISSION-FORM-URL',
+    url: 'https://questionnaire.simplesurvey.com/f/s/january-activity',
     deadline: new Date('2026-01-31T23:59:59-05:00'),
     instructions: 'Submit your completed video presentation through the form. Ensure your video link is properly shared with viewing permissions enabled.'
   },
