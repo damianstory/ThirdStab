@@ -18,8 +18,9 @@ export default function GrantRecipientsPage() {
   };
 
   // Get months to display based on filter
+  // When showing "All", reverse order so most recent month appears first
   const monthsToDisplay = activeFilter === 'all'
-    ? enabledMonths
+    ? [...enabledMonths].reverse()
     : enabledMonths.filter(m => m.slug === activeFilter);
 
   return (

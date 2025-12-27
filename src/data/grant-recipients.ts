@@ -82,8 +82,35 @@ export const allMonths: MonthRecipients[] = [
     activitySlug: 'november',
     description: 'Congratulations to these 20 students who explored Canada\'s Skills for Success and received $500 microgrants for their outstanding video submissions.',
     descriptionFr: 'Félicitations à ces 20 élèves qui ont exploré les Compétences pour réussir du Canada et qui ont reçu des microbourses de 500 $ pour leurs excellentes soumissions vidéo.',
-    enabled: false,
-    winners: []
+    enabled: true,
+    winners: [
+      // Grade 7
+      { id: 'nov-1', youtubeId: 'V9RKNSzGqug', grade: 7, schoolBoard: 'Toronto District School Board', schoolName: 'Cook/Chef', province: 'Ontario' },
+      // Grade 8
+      { id: 'nov-2', youtubeId: 'wiLJxqmSj40', grade: 8, schoolBoard: 'York Region District School Board', schoolName: 'Car Painting', province: 'Ontario' },
+      { id: 'nov-3', youtubeId: 'rbhz3yIQ2gU', grade: 8, schoolBoard: 'York Region District School Board', schoolName: 'Carpenter', province: 'Ontario' },
+      // Grade 10
+      { id: 'nov-4', youtubeId: '4luAGXO0Nw4', grade: 10, schoolBoard: 'Strait Regional Centre of Education', schoolName: 'Cook/Chef', province: 'Nova Scotia' },
+      { id: 'nov-5', youtubeId: 'nSYDSz4bg8U', grade: 10, schoolBoard: 'Brant Haldimand Norfolk Catholic', schoolName: 'CNC Machining', province: 'Ontario' },
+      { id: 'nov-6', youtubeId: 'Zf9fD1GFs8I', grade: 10, schoolBoard: 'North East School Division', schoolName: 'Cook/Chef', province: 'Saskatchewan' },
+      { id: 'nov-7', youtubeId: 'NnfdBAyZfy8', grade: 10, schoolBoard: 'SD36 Surrey', schoolName: 'Cook/Chef', province: 'British Columbia' },
+      { id: 'nov-8', youtubeId: 'bsCtDhJpV1g', grade: 10, schoolBoard: 'Conseil scolaire public du grand nord', schoolName: 'Cook/Chef', province: 'Ontario' },
+      { id: 'nov-9', youtubeId: '1rG3xg_kpfE', grade: 10, schoolBoard: 'St. Thomas Aquinas Roman Catholic Schools (STAR Catholic)', schoolName: 'Carpenter', province: 'Alberta' },
+      // Grade 11
+      { id: 'nov-10', youtubeId: 'dXqE1kHJ0qw', grade: 11, schoolBoard: 'Edmonton Public School Board', schoolName: 'Carpenter', province: 'Alberta' },
+      { id: 'nov-11', youtubeId: 'h7IYX4s7sqI', grade: 11, schoolBoard: 'York Region District School Board', schoolName: 'CNC Machining', province: 'Ontario' },
+      { id: 'nov-12', youtubeId: '8x-MAfBAqvA', grade: 11, schoolBoard: 'Halton DSB', schoolName: 'Graphic Design', province: 'Ontario' },
+      // Grade 12
+      { id: 'nov-13', youtubeId: 'flPzoyOgVBU', grade: 12, schoolBoard: 'Toronto DSB', schoolName: 'Graphic Design', province: 'Ontario' },
+      { id: 'nov-14', youtubeId: '9Pz9CkiFmrg', grade: 12, schoolBoard: 'York Region District School Board', schoolName: 'Carpenter', province: 'Ontario' },
+      { id: 'nov-15', youtubeId: 'kTd7vlQhwak', grade: 12, schoolBoard: 'Yellowknife Education District No. 1', schoolName: 'Cook/Chef', province: 'Northwest Territories' },
+      { id: 'nov-16', youtubeId: 'vZrkUIPAUuM', grade: 12, schoolBoard: 'NL Schools', schoolName: 'Cook/Chef', province: 'Newfoundland and Labrador' },
+      { id: 'nov-17', youtubeId: 'suALX0yVpc8', grade: 12, schoolBoard: 'Independent', schoolName: 'Carpenter', province: 'Alberta' },
+      { id: 'nov-18', youtubeId: '2L4Ifp8MBwc', grade: 12, schoolBoard: 'Edmonton Public School Board', schoolName: 'Carpenter', province: 'Alberta' },
+      // Placeholders
+      { id: 'nov-19', youtubeId: 'X2emIiPoRP4', grade: 12, schoolBoard: 'Coming Soon', schoolName: 'Coming Soon', province: 'Coming Soon' },
+      { id: 'nov-20', youtubeId: 'X2emIiPoRP4', grade: 12, schoolBoard: 'Coming Soon', schoolName: 'Coming Soon', province: 'Coming Soon' },
+    ]
   },
   {
     month: 'December',
