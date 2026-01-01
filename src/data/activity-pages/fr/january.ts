@@ -1,13 +1,12 @@
 import { ActivityPageData } from '../../activities';
 
-// French version - initially a copy of English, to be translated later
 export const januaryActivity: ActivityPageData = {
-  // Base activity information (from activities.ts)
+  // Base activity information
   id: '4',
-  month: 'January',
+  month: 'janvier',
   year: '2026',
-  title: 'Beyond the Skies Challenge',
-  description: `At NAV CANADA, we're transforming the way our skies operate. Explore how air traffic control and flight service professionals are keeping air travel safe, efficient, and enjoyable for millions.`,
+  title: 'Défi Au-delà des cieux',
+  description: `Chez NAV CANADA, nous transformons la façon dont notre ciel fonctionne. Découvrez comment les professionnels du contrôle de la circulation aérienne et des services de vol assurent la sécurité, l'efficacité et le plaisir du transport aérien pour des millions de personnes.`,
   sponsor: {
     name: 'NAV CANADA',
     logo: '/logo4.png',
@@ -24,176 +23,173 @@ export const januaryActivity: ActivityPageData = {
   // Extended page content
   hero: {
     backgroundImage: '/january-hero.jpg',
-    tagline: 'Discover Your Future in Aviation',
-    introText: `At NAV CANADA, we're transforming the way our skies operate. Explore how air traffic control and flight service professionals are keeping air travel safe, efficient, and enjoyable for millions. From tower controllers guiding aircraft through busy airports to — discover your path to a career that keeps Canada's skies safe.`
+    tagline: 'Découvrez votre avenir dans l\'aviation',
+    introText: `Chez NAV CANADA, nous transformons la façon dont notre ciel fonctionne. Découvrez comment les professionnels du contrôle de la circulation aérienne et des services de vol assurent la sécurité, l'efficacité et le plaisir du transport aérien pour des millions de personnes. Des contrôleurs de tour guidant les aéronefs dans les aéroports achalandés aux spécialistes des services de vol conseillant sur la météo dans les centres d'information de vol — découvrez votre chemin vers une carrière qui assure la sécurité du ciel canadien.`
   },
 
   video: {
     embedUrl: 'https://www.youtube.com/embed/ffyv6de2uoM',
-    title: 'Working at NAV CANADA',
-    description: `Discover what it's like to work at NAV CANADA, Canada's air navigation service provider. Meet the people who keep our skies safe and learn about the diverse career opportunities available.`
+    title: 'Travailler chez NAV CANADA',
+    description: `Découvrez ce que c'est que de travailler chez NAV CANADA, le fournisseur de services de navigation aérienne du Canada. Rencontrez les personnes qui assurent la sécurité de notre ciel et découvrez les diverses possibilités de carrière offertes.`
   },
 
   howThisWorksVideo: {
     embedUrl: 'https://www.youtube.com/embed/PLACEHOLDER',
-    title: 'January Industry Immersion Series Activity | How this Works'
+    title: 'Activité de la Série d\'immersion industrielle de janvier | Comment ça fonctionne'
   },
 
   explainer: {
-    title: 'Challenge Overview',
+    title: 'Aperçu du défi',
     rows: [
       {
-        label: 'Active Submission Period',
-        content: 'January 1-31, 2026'
+        label: 'Période de soumission active',
+        content: '1er au 31 janvier 2026'
       },
       {
-        label: 'Eligibility',
-        content: 'Grades 7-12 students across Canada'
+        label: 'Admissibilité',
+        content: 'Élèves de la 7e à la 12e année partout au Canada'
       },
       {
-        label: 'Total Incentives',
-        content: '$10,000 in micro grants'
+        label: 'Incitatifs totaux',
+        content: '10 000 $ en microbourses'
       },
       {
-        label: 'Individual Awards',
-        content: '20 winners × $500 each'
+        label: 'Récompenses individuelles',
+        content: '20 gagnants × 500 $ chacun'
       },
       {
-        label: 'Submission Deadline',
-        content: 'January 31, 2026 at 11:59 PM EST'
+        label: 'Date limite de soumission',
+        content: '31 janvier 2026 à 23 h 59 (HNE)'
       },
     ]
   },
 
   activityDetail: {
-    description: 'NAV CANADA keeps Canada\'s skies safe, guiding over 18 million flights per year across 18 million square kilometers of airspace.<br/><br/><strong>This challenge invites students to explore aviation careers at NAV CANADA</strong>, from air traffic controllers who guide aircraft, to technologists who maintain critical navigation systems — all united by a culture where safety is everyone\'s job.',
+    description: 'NAV CANADA assure la sécurité du ciel canadien, guidant plus de 18 millions de vols par année à travers 18 millions de kilomètres carrés d\'espace aérien.<br/><br/><strong>Ce défi invite les élèves à explorer les carrières en aviation chez NAV CANADA</strong>, des contrôleurs de la circulation aérienne qui guident les aéronefs aux spécialistes des services de vol qui conseillent les pilotes — tous unis par une culture où la sécurité est l\'affaire de tous.',
     steps: [
       {
-        title: "Step 1 - Choose Your Career Path",
-        details: `Start by selecting ONE of the four NAV CANADA occupations below:
+        title: "Étape 1 – Choisissez votre parcours professionnel",
+        details: `Commencez par sélectionner UN des deux métiers NAV CANADA ci-dessous :
 
-• <strong>Tower Controller / Area Controller</strong> – Guide aircraft safely through takeoff, flight, and landing using advanced radar and communication systems
-• <strong>Flight Service Specialist</strong> – Provide critical weather briefings, flight information, and airport advisory services
-• <strong>Technical Services Technologist</strong> – Maintain and service the sophisticated systems that keep Canada's skies safe
-• <strong>Business and Operational Support</strong> – Support aviation operations through roles in finance, HR, technology, safety, and more
+• <strong>Contrôleur de la circulation aérienne</strong> – Guidez les aéronefs en toute sécurité lors du décollage, du vol et de l'atterrissage à l'aide de systèmes radar et de communication avancés
+• <strong>Spécialiste des services de vol</strong> – Fournissez des exposés météorologiques essentiels, des renseignements de vol et des services consultatifs d'aéroport
 
-Click on the occupation card in the Resources section below to visit the official NAV CANADA career page and learn more about that role.
+Cliquez sur la carte de métier dans la section Ressources ci-dessous pour visiter la page officielle des carrières de NAV CANADA et en apprendre davantage sur ce rôle.
 
-<strong>IMPORTANT: Choose ONE occupation to focus on for the rest of this challenge.</strong>`
+<strong>IMPORTANT : Choisissez UN métier sur lequel vous concentrer pour le reste de ce défi.</strong>`
       },
       {
-        title: "Step 2 - Research the Occupation",
-        details: `Now that you've selected your occupation, research what it's really like to work in this role.
+        title: "Étape 2 – Faites des recherches sur le métier",
+        details: `Maintenant que vous avez sélectionné votre métier, faites des recherches sur ce que c'est vraiment de travailler dans ce rôle.
 
-Use the NAV CANADA career page you visited in Step 1, plus myBlueprint's occupation profiles, and other reliable sources.
+Utilisez la page des carrières de NAV CANADA que vous avez visitée à l'Étape 1, ainsi que les profils de métiers de myBlueprint et d'autres sources fiables.
 
-<strong>Address these questions in your research:</strong>
+<strong>Répondez à ces questions dans vos recherches :</strong>
 
-• What does someone in this role do day-to-day?
-• What are their main tasks and responsibilities?
-• What are their working hours? (Regular shifts? 24/7 operations? Shift work?)
-• Where do they work? (Control tower? Office? Flight service station? Remote locations?)
-• What types of projects or situations do they handle?
-• What makes this role unique at NAV CANADA?
+• Que fait une personne dans ce rôle au quotidien?
+• Quelles sont ses principales tâches et responsabilités?
+• Quelles sont ses heures de travail? (Quarts réguliers? Opérations 24/7? Travail par quarts?)
+• Où travaille-t-elle? (Tour de contrôle? Bureau? Station de services de vol? Emplacements éloignés?)
+• Quels types de projets ou de situations gère-t-elle?
+• Qu'est-ce qui rend ce rôle unique chez NAV CANADA?
 
-<strong>Cite your sources.</strong> Mention where you found this information (NAV CANADA website, myBlueprint, Job Bank, etc.)`
+<strong>Citez vos sources.</strong> Mentionnez où vous avez trouvé ces informations (site Web de NAV CANADA, myBlueprint, Guichet-Emplois, etc.)`
       },
       {
-        title: "Step 3 - Identify Skills & Pathway",
-        details: `<strong>Part A: Key Skills and Qualities</strong>
+        title: "Étape 3 – Identifiez les compétences et le parcours",
+        details: `<strong>Partie A : Compétences et qualités clés</strong>
 
-Identify 2-3 skills or qualities that are essential for this role. Look at what NAV CANADA emphasizes in their career descriptions.
+Identifiez 2 ou 3 compétences ou qualités essentielles pour ce rôle. Regardez ce que NAV CANADA met en avant dans ses descriptions de carrières.
 
-These could include:
-• Communication and teamwork
-• Problem-solving and decision-making
-• Attention to detail and situational awareness
-• Technical aptitude and systems thinking
-• Stress management and composure
-• Spatial reasoning and visualization
+Cela pourrait inclure :
+• Communication et travail d'équipe
+• Résolution de problèmes et prise de décision
+• Souci du détail et conscience situationnelle
+• Gestion du stress et sang-froid
+• Raisonnement spatial et visualisation
 
-<strong>IMPORTANT: Don't just list them. Give specific examples of how someone in your chosen occupation uses each skill in their daily work.</strong>
+<strong>IMPORTANT : Ne vous contentez pas de les énumérer. Donnez des exemples précis de la façon dont une personne dans le métier que vous avez choisi utilise chaque compétence dans son travail quotidien.</strong>
 
-<strong>Part B: Training Pathway</strong>
+<strong>Partie B : Parcours de formation</strong>
 
-Research and describe the pathway to this career at NAV CANADA:
+Faites des recherches et décrivez le parcours vers cette carrière chez NAV CANADA :
 
-• What are the basic requirements? (age, education, citizenship, etc.)
-• What is NAV CANADA's in-house training program like for this role?
-• How long does training take?
-• Where does training happen?
-• What is the selection process?
-• What can students do NOW in high school to prepare?
+• Quelles sont les exigences de base? (âge, éducation, citoyenneté, etc.)
+• À quoi ressemble le programme de formation interne de NAV CANADA pour ce rôle?
+• Combien de temps dure la formation?
+• Où se déroule la formation?
+• Quel est le processus de sélection?
+• Que peuvent faire les élèves MAINTENANT au secondaire pour se préparer?
 
-NAV CANADA provides specialized training for most operational roles — describe what that training involves for your chosen occupation.`
+NAV CANADA offre une formation spécialisée pour la plupart des rôles opérationnels — décrivez ce que cette formation implique pour le métier que vous avez choisi.`
       },
       {
-        title: "Step 4 - Address Safety Culture",
-        details: `Safety is at the core of everything NAV CANADA does. Their philosophy is: <strong>"Safety is a part of everyone's job."</strong>
+        title: "Étape 4 – Abordez la culture de sécurité",
+        details: `La sécurité est au cœur de tout ce que fait NAV CANADA. Sa philosophie est : <strong>« La sécurité fait partie du travail de chacun. »</strong>
 
-<strong>Read about NAV CANADA's safety culture:</strong>
-Visit: <a href="https://www.navcanada.ca/en/air-traffic/safety.aspx" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">https://www.navcanada.ca/en/air-traffic/safety.aspx</a>
+<strong>Lisez sur la culture de sécurité de NAV CANADA :</strong>
+Visitez : <a href="https://www.navcanada.ca/fr/circulation-aerienne/securite.aspx" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">https://www.navcanada.ca/fr/circulation-aerienne/securite.aspx</a>
 
-<strong>In your research, address:</strong>
+<strong>Dans vos recherches, abordez :</strong>
 
-• Why is safety so critical in aviation and air traffic management?
-• How does NAV CANADA's safety culture work? (Just Culture, Safety Management System, etc.)
-• How does safety culture specifically apply to the occupation you're researching?
-• What does "Just Culture" mean and why is it important?
-• How do employees at NAV CANADA report safety concerns?
+• Pourquoi la sécurité est-elle si critique dans l'aviation et la gestion de la circulation aérienne?
+• Comment fonctionne la culture de sécurité de NAV CANADA? (Culture juste, Système de gestion de la sécurité, etc.)
+• Comment la culture de sécurité s'applique-t-elle spécifiquement au métier que vous recherchez?
+• Que signifie la « Culture juste » et pourquoi est-elle importante?
+• Comment les employés de NAV CANADA signalent-ils les préoccupations en matière de sécurité?
 
-NAV CANADA was one of the first air navigation service providers in the world to implement a comprehensive Safety Management System (SMS) in 1997. Their "Just Culture" encourages employees to openly report safety concerns without fear of reprisal.
+NAV CANADA a été l'un des premiers fournisseurs de services de navigation aérienne au monde à mettre en œuvre un système de gestion de la sécurité (SGS) complet en 1997. Sa « Culture juste » encourage les employés à signaler ouvertement les préoccupations en matière de sécurité sans crainte de représailles.
 
-<strong>Connect this back to your chosen occupation</strong> — how does this role contribute to keeping Canada's skies safe?`
+<strong>Reliez cela au métier que vous avez choisi</strong> — comment ce rôle contribue-t-il à assurer la sécurité du ciel canadien?`
       },
       {
-        title: "Step 5 - Future Outlook",
-        details: `<strong>Research the career outlook for your chosen occupation.</strong>
+        title: "Étape 5 – Perspectives d'avenir",
+        details: `<strong>Faites des recherches sur les perspectives de carrière pour le métier que vous avez choisi.</strong>
 
-Use resources like:
-• Job Bank (jobbank.gc.ca)
-• Statistics Canada
-• NAV CANADA's career information
-• myBlueprint occupation profiles
-• Industry reports and labour market information
+Utilisez des ressources comme :
+• Guichet-Emplois (guichetemplois.gc.ca)
+• Statistique Canada
+• Information sur les carrières de NAV CANADA
+• Profils de métiers de myBlueprint
+• Rapports sur l'industrie et information sur le marché du travail
 
-<strong>Address these questions:</strong>
+<strong>Répondez à ces questions :</strong>
 
-• Is this career in-demand in Canada?
-• How many of these jobs exist across Canada?
-• Where are most of these jobs located? (Which provinces/cities?)
-• What's driving demand? (Retirements? Growth in air traffic? Technology?)
-• What is the salary range for this occupation?
-• What are the career advancement opportunities?
+• Cette carrière est-elle en demande au Canada?
+• Combien de ces emplois existent à travers le Canada?
+• Où se trouvent la plupart de ces emplois? (Quelles provinces/villes?)
+• Qu'est-ce qui stimule la demande? (Retraites? Croissance du trafic aérien? Technologie?)
+• Quelle est la fourchette salariale pour ce métier?
+• Quelles sont les possibilités d'avancement professionnel?
 
-<strong>Cite your sources when speaking to this.</strong> For example:
-• "according to Job Bank..."
-• "NAV CANADA operates X control towers across Canada..."
-• "Statistics Canada reports..."
-• "the myBlueprint occupation profile shows..."`
+<strong>Citez vos sources lorsque vous en parlez.</strong> Par exemple :
+• « selon le Guichet-Emplois... »
+• « NAV CANADA exploite X tours de contrôle à travers le Canada... »
+• « Statistique Canada rapporte que... »
+• « le profil de métier dans myBlueprint montre que... »`
       },
       {
-        title: "Step 6: Submit Your Activity Video",
-        details: `<strong>Create a 60-90 second video showing what you did in the activity and what you learned from the research across Steps 1-5.</strong>
+        title: "Étape 6 – Soumettez votre vidéo d'activité",
+        details: `<strong>Créez une vidéo de 60 à 90 secondes montrant ce que vous avez fait dans l'activité et ce que vous avez appris à travers les étapes 1 à 5.</strong>
 
-How you choose to structure your video is up to you.
+La façon de structurer votre vidéo vous appartient entièrement.
 
-• Vertical vs. horizontal? Up to you.
-• Talking head vs. all animations? Up to you.
-• Documentary style vs. tiktok style? Up to you.
+• Format vertical ou horizontal? À vous de choisir.
+• Caméra face à vous ou animation? À vous de choisir.
+• Style documentaire ou style TikTok? À vous de choisir.
 
-The only requirements are that it addresses each of the 5 steps above (including evidence of your completed activity), and we're able to click a link to watch it. Everything else is up to you.
+Les seules exigences sont que votre vidéo couvre les cinq étapes ci-dessus, qu'elle présente une preuve que vous avez complété l'activité et que nous puissions cliquer sur un lien pour la regarder. Tout le reste est à votre discrétion.
 
-<strong>IMPORTANT: Make sure the video link has the proper sharing settings in place.</strong>
+<strong>IMPORTANT : assurez-vous que les paramètres de partage de votre vidéo sont correctement configurés.</strong>
 
-For example:
-• If you're using Google Drive, make sure someone outside of your organization can watch it.
-• If you're using Youtube, make sure it's not listed as Private. Unlisted works great though.
-• Make sure it's not something that requires us to log in.
+Par exemple :
+• Si vous utilisez Google Drive, assurez-vous que la vidéo peut être regardée par quelqu'un à l'extérieur de votre organisation.
+• Si vous utilisez YouTube, elle ne doit pas être définie sur « Privée ». Le mode « Non répertoriée » fonctionne très bien.
+• Assurez-vous que le lien ne demande pas de connexion.
 
-<strong>A great way to test this is by pasting your link into a Chrome Incognito window.</strong> If it works in there without requiring login, it should work for us too.
+<strong>Une bonne façon de vérifier est de coller votre lien dans une fenêtre Chrome en mode incognito.</strong> Si la vidéo fonctionne sans connexion, elle devrait fonctionner pour nous aussi.
 
-It's your responsibility to make sure we can view your work.`
+Il vous revient de vous assurer que nous pouvons voir votre travail.`
       }
     ]
   },
@@ -201,27 +197,27 @@ It's your responsibility to make sure we can view your work.`
   rubric: {
     criteria: [
       {
-        category: 'Content & Accuracy',
+        category: 'Contenu et exactitude',
         weight: 25,
-        description: 'Comprehensive coverage of all 5 required steps with accurate, detailed information'
+        description: 'Couverture complète des 5 étapes requises, avec des renseignements précis et détaillés.'
       },
       {
-        category: 'Research & Citations',
+        category: 'Recherche et citations',
         weight: 25,
-        description: 'Quality sources properly cited throughout the video presentation'
+        description: 'Sources de qualité correctement citées tout au long de la présentation vidéo.'
       },
       {
-        category: 'Engagement & Creativity',
+        category: 'Engagement et créativité',
         weight: 25,
-        description: 'Compelling delivery that maintains viewer interest through creative presentation'
+        description: 'Présentation dynamique et captivante qui maintient l\'intérêt du spectateur grâce à une approche créative.'
       },
       {
-        category: 'Communication & Clarity',
+        category: 'Communication et clarté',
         weight: 25,
-        description: 'Clear audio/visuals with logical organization, smooth flow, and meets 60-90 second requirement'
+        description: 'Qualité audio et visuelle claire, organisation logique, enchaînement fluide et respect du format de 60 à 90 secondes.'
       },
       {
-        category: 'View Detailed Evaluation Rubric Here',
+        category: 'Consultez la grille d\'évaluation détaillée ici',
         weight: 0,
         description: '',
         isLink: true,
@@ -235,119 +231,113 @@ It's your responsibility to make sure we can view your work.`
   submission: {
     url: 'https://questionnaire.simplesurvey.com/f/s/january-activity',
     deadline: new Date('2026-01-31T23:59:59-05:00'),
-    instructions: 'Submit your completed video presentation through the form. Ensure your video link is properly shared with viewing permissions enabled.'
+    instructions: 'Soumettez votre présentation vidéo complétée via le formulaire. Assurez-vous que le lien de votre vidéo est correctement partagé avec les autorisations de visionnage activées.'
   },
 
   faqs: [
     {
-      question: 'How does this January Activity challenge work?',
-      answer: 'Carefully read the Activity Details steps 1-5 to understand what is being asked of you in this activity. You can also watch the How this Works video for a detailed overview.'
+      question: 'En quoi consiste le Défi d\'activité de janvier?',
+      answer: 'Lisez attentivement les étapes des Détails du défi pour comprendre ce qui vous est demandé dans le cadre de cette activité. Vous pouvez visionner la vidéo <em>Visionner : Comment cela fonctionne</em> pour obtenir un aperçu détaillé du Défi Au-delà des cieux.'
     },
     {
-      question: 'What am I actually being asked to submit?',
-      answer: `You're being asked to submit a 60 to 90 second video highlighting the research you did from steps 1 through 5 in this specific activity. It's important that the video you create is shared as a clickable link, not something that we need to download, and that you've made sure that the sharing settings are set up in a way that we have access to view the video. It's a good idea to test this before submitting.`
+      question: 'Qu\'est-ce que je dois soumettre exactement?',
+      answer: `Il vous est demandé de soumettre une vidéo de 60 à 90 secondes qui montre ce que vous avez fait dans le cadre de l'activité et ce que vous avez appris de votre recherche à travers les étapes 1 à 5. Assurez-vous que la vidéo est partagée en tant que lien cliquable avec les paramètres de partage appropriés afin que nous puissions la visionner. Testez-la dans une fenêtre de navigateur de navigation privée avant de la soumettre.`
     },
     {
-      question: 'Can I submit more than one video?',
-      answer: `Yes, you can complete the activity multiple times for different NAV CANADA occupations, though students can only win one micro grant per activity. We'd encourage you to focus on quality, not quantity.`
+      question: 'Puis-je soumettre plus d\'une vidéo?',
+      answer: `Oui, vous pouvez faire l'activité plusieurs fois pour différents métiers de NAV CANADA, mais les élèves ne peuvent gagner qu'une seule micro-subvention par activité. Nous vous encourageons à privilégier la qualité, et non la quantité.`
     },
     {
-      question: 'Is there a preferred style for the video?',
-      answer: `No, it's whatever feels authentic and engaging to you. It can be a Tik Tok style video with lots of different cuts and background music or more documentary style - whatever you will enjoy making more, and clearly communicates the requested information from steps 1-5.`
+      question: 'Y a-t-il un style de vidéo privilégié?',
+      answer: `Non, peu importe tant que c'est authentique et captivant pour vous. La vidéo peut adopter le style de TikTok, avec beaucoup de montages différents et de la musique de fond, ou adopter un style plus documentaire. Peu importe ce que vous préférez faire. Assurez-vous simplement de respecter les exigences énumérées dans chacune des étapes.`
     },
     {
-      question: 'Does it matter what tool I use to make the video?',
-      answer: `Nope, it doesn't matter at all what tool you use. There are lots of free tools available to make videos today. Check with your school to see what they already have access to. For example, Canva is a great tool to be able to create videos with.`
+      question: 'L\'outil utilisé pour réaliser la vidéo a-t-il de l\'importance?',
+      answer: `Non, l'outil que vous utilisez n'a aucune importance. De nombreux outils gratuits permettent de faire des vidéos aujourd'hui. Vérifiez auprès de votre école à quels outils vous avez déjà accès. Par exemple, Canva est un excellent outil pour créer des vidéos.`
     },
     {
-      question: 'What skills will I be developing by doing this activity?',
-      answer: `Lots of skills like research, critical thinking, communication, content creation, and many others. It would be a good idea to add the completed video to your myBlueprint portfolio and reflect on what skills you feel like you've developed as part of completing this activity.`
+      question: 'Quelles compétences vais-je développer en réalisant cette activité?',
+      answer: `De nombreuses compétences, comme la recherche, la pensée critique, la communication, la création de contenu et bien d'autres. Ce serait une bonne idée d'ajouter la vidéo terminée à votre portfolio dans myBlueprint et de réfléchir aux compétences que vous avez le sentiment d'avoir développées dans le cadre de cette activité.`
     },
     {
-      question: 'Who is reviewing the submissions?',
-      answer: `Submissions will be reviewed by a team of representatives from myBlueprint. We may, if needed, collaborate with representatives from NAV CANADA.`
+      question: 'Qui examine les soumissions?',
+      answer: `Les soumissions seront examinées par une équipe de représentants de myBlueprint. Nous pourrions, si besoin, collaborer avec des représentants de NAV CANADA.`
     },
     {
-      question: 'Can students submit their videos in French?',
-      answer: `Yes, videos will be accepted in either English or French.`
+      question: 'Les élèves peuvent-ils soumettre des vidéos en français?',
+      answer: `Oui, les vidéos seront acceptées en anglais ou en français.`
     },
     {
-      question: 'How (and when) are the twenty monthly successful submissions selected?',
-      answer: `Depending on the volume of submissions, we plan to have selected, and be able to announce winners by the midpoint of the following month. So for example, with this activity, we hope to be able to announce the January winners by mid-February.`
+      question: 'Comment (et quand) les vingt meilleures soumissions mensuelles sont-elles sélectionnées?',
+      answer: `En fonction du volume de soumissions, nous prévoyons avoir sélectionné et être en mesure d'annoncer les gagnants d'ici le milieu du mois suivant. Par exemple, pour cette activité, nous espérons être en mesure d'annoncer les gagnants de janvier d'ici la mi-février.`
     },
     {
-      question: 'Should I add these submissions to my portfolio in myBlueprint?',
-      answer: `Yeah, that's a great idea, along with a reflection of what you learned from doing this activity and what you found interesting. As a heads up, we'll also be asking students to submit evidence of their completed activities through a myBlueprint portfolio if you plan on applying for one of the Series Completion incentives at the end of the year.`
+      question: 'Devrais-je ajouter ces soumissions à mon portfolio dans myBlueprint?',
+      answer: `Oui, c'est une excellente idée, accompagnée d'une réflexion sur ce que vous avez appris en faisant cette activité et ce que vous avez trouvé intéressant. À titre indicatif, nous demanderons également aux élèves de soumettre une preuve de leurs activités terminées dans un portfolio de myBlueprint s'ils prévoient postuler pour l'un des avantages incitatifs liés à la Réalisation de la série à la fin de l'année.`
     },
     {
-      question: 'Do I need to do this in class, or can I just do this on my own?',
-      answer: `You can absolutely complete this activity on your own. That being said, you should absolutely communicate with your teachers (and parents) that you're doing this and see if you can potentially earn credit for the work that you're doing for this activity.`
+      question: 'Dois-je faire cette activité en classe, ou puis-je la faire par moi-même?',
+      answer: `Vous pouvez tout à fait réaliser cette activité par vous-même. Cela étant dit, vous devriez absolument informer vos enseignants (et vos parents) que vous faites cela et voir s'il est possible d'obtenir des crédits pour le travail que vous faites pour cette activité.`
     },
     {
-      question: 'Can I do this as a group project?',
-      answer: `The January challenge has been designed as an individual activity.`
+      question: 'Puis-je faire cette activité en tant que projet de groupe?',
+      answer: `Le défi de janvier a été conçu comme une activité individuelle.`
     },
     {
-      question: 'Can I still submit the activity after the January 31st deadline?',
-      answer: `Yes, you can still submit monthly activities after the deadline. However, any activity submitted after the deadline is not eligible for that month's pool of micro grants. It still makes sense to complete them even after the deadline so that you can potentially earn one of the Series Completion incentives. Those only require all activities to be completed, not necessarily completed within the month of the activity.`
+      question: 'Puis-je quand même soumettre l\'activité après la date limite du 31 janvier?',
+      answer: `Oui, vous pouvez quand même soumettre des activités mensuelles après la date limite. Toutefois, toute activité soumise après la date limite n'est pas admissible à la réserve de micro-subventions de ce mois-là. Il est tout de même logique de les réaliser, même après la date limite, afin de pouvoir obtenir l'un des avantages incitatifs liés à la Réalisation de la série. Ceux-ci requièrent uniquement que toutes les activités soient terminées, pas nécessairement qu'elles soient terminées dans le mois de l'activité.`
     },
     {
-      question: 'Will teachers be able to see who has submitted an entry?',
-      answer: `Teachers won't be able to see through myBlueprint which students have submitted activities or not. However, we will create reports that will be shared with your myBlueprint lead at the school board level who can share specifics with you upon request.`
+      question: 'Les enseignants pourront-ils voir qui a soumis une inscription?',
+      answer: `Les enseignants ne pourront pas voir dans myBlueprint quels élèves ont soumis des activités ou pas. Cependant, nous créerons des rapports qui seront partagés avec votre responsable de myBlueprint au niveau du conseil scolaire qui pourra partager des détails précis avec vous sur demande.`
     },
     {
-      question: 'What data is being collected and by who?',
-      answer: `myBlueprint is solely responsible for running the Industry Immersion Series.
-
-Meaning that only myBlueprint is collecting any information related to this Series. No personally identifiable information is being shared with any 3rd parties.
-
-We will publish de-identified (anonymous summary data) information to provide updates on how the Series is going. For example, the number of activity submissions received for each month, which province they're coming from, and communicate with our school board partners about school-specific participation.
-
-<a href="https://docs.google.com/document/d/1rHxZ4QntHN0fo7rqi7uKeDQakupNtE3KtT8p3lFPur4/edit?tab=t.0" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Click here to see the questions students are being asked</a> to answer when they submit their completed activity.`
+      question: 'Quelles données sont collectées et par qui?',
+      answer: `myBlueprint est l'unique responsable de la réalisation de la Série d'immersion industrielle, ce qui signifie que seul myBlueprint collecte toute information relative à cette série. Aucune information personnelle identifiable n'est partagée avec des tiers. Nous publierons des informations sous forme de données synthétiques anonymisées pour fournir des mises à jour sur la façon dont la série se déroule. Par exemple, le nombre de soumissions d'activités reçues pour chaque mois, leur province d'origine, et nous communiquerons avec nos partenaires des conseils scolaires sur la participation spécifique à l'école. <a href="https://docs.google.com/document/d/1rHxZ4QntHN0fo7rqi7uKeDQakupNtE3KtT8p3lFPur4/edit?tab=t.0" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">[Cliquez ici pour voir les questions auxquelles les élèves doivent répondre]</a> lorsqu'ils soumettent leur activité terminée.`
     }
   ],
 
-  // NAV Canada occupation resources with custom styling flag
+  // NAV Canada occupation resources with French URLs
   resources: [
     {
-      title: 'Air Traffic Controller',
-      description: 'Guide aircraft safely through takeoff, flight, and landing using advanced radar and communication systems.',
-      url: 'https://www.navcanada.ca/en/careers/air-traffic-controller.aspx#tower',
+      title: 'Contrôleur de la circulation aérienne',
+      description: 'Guidez les aéronefs en toute sécurité lors du décollage, du vol et de l\'atterrissage à l\'aide de systèmes radar et de communication avancés.',
+      url: 'https://www.navcanada.ca/fr/carrieres/controleur-de-la-circulation-aerienne.aspx',
       type: 'link',
       image: '/january-occupations/tower-controller.jpg',
       borderColor: '#0047BB'
     },
     {
-      title: 'Flight Service Specialist',
-      description: 'Provide critical weather briefings, flight information, and airport advisory services to pilots.',
-      url: 'https://www.navcanada.ca/en/careers/flight-service-specialist.aspx',
+      title: 'Spécialiste des services de vol',
+      description: 'Fournissez des exposés météorologiques essentiels, des renseignements de vol et des services consultatifs d\'aéroport aux pilotes.',
+      url: 'https://www.navcanada.ca/fr/carrieres/specialiste-des-services-de-vol.aspx',
       type: 'link',
       image: '/january-occupations/flight-service.jpg',
       borderColor: '#0047BB'
     },
     {
-      title: 'Technical Services Technologist',
-      description: 'Maintain and service the sophisticated navigation and communication systems that keep our skies safe.',
-      url: 'https://www.navcanada.ca/en/careers/technical-services-technologist.aspx',
-      type: 'link',
-      image: '/january-occupations/tech-services.jpg',
-      borderColor: '#0047BB'
+      title: 'Contrôleuse de la circulation aérienne - Témoignage',
+      description: 'Écoutez Émilie Lacombe parler de sa carrière de contrôleuse de la circulation aérienne chez NAV CANADA.',
+      url: 'https://vimeo.com/1131070560',
+      type: 'video',
+      borderColor: '#0047BB',
+      vimeoId: '1131070560?h=27c717396c'
     },
     {
-      title: 'Business and Operational Support',
-      description: 'Support aviation operations through roles in finance, HR, technology, safety, and corporate functions.',
-      url: 'https://www.navcanada.ca/en/careers/business-and-operational-support.aspx',
-      type: 'link',
-      image: '/january-occupations/business-support.jpg',
-      borderColor: '#0047BB'
+      title: 'Spécialiste des services de vol - Témoignage',
+      description: 'Écoutez Omar Madane parler de sa carrière de spécialiste des services de vol chez NAV CANADA.',
+      url: 'https://vimeo.com/1131057676',
+      type: 'video',
+      borderColor: '#0047BB',
+      vimeoId: '1131057676?h=3ff355f36c'
     }
   ],
-  resourcesTitle: 'Choose Your NAV CANADA Career Path',
-  resourcesSubtitle: 'Select one occupation to research for this challenge',
+  resourcesTitle: 'Choisissez votre parcours professionnel chez NAV CANADA',
+  resourcesSubtitle: 'Sélectionnez (et cliquez sur) un métier à rechercher pour ce défi',
 
   meta: {
-    title: 'Beyond the Skies Challenge | myBlueprint Industry Immersion Series | January 2026',
-    description: 'Explore aviation careers with NAV CANADA. Research air traffic control, flight service, and technical careers while learning about aviation safety culture. Win micro grants.',
+    title: 'Défi Au-delà des cieux | Série d\'immersion industrielle myBlueprint | Janvier 2026',
+    description: 'Explorez les carrières en aviation avec NAV CANADA. Faites des recherches sur le contrôle de la circulation aérienne, les services de vol et les carrières techniques tout en découvrant la culture de sécurité en aviation. Gagnez des microbourses.',
     ogImage: '/images/meta-preview.png'
   }
 };

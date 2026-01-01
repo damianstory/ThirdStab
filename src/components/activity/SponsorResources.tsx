@@ -153,7 +153,7 @@ export default function SponsorResources({
                   >
                     {/* Vimeo Embed */}
                     <iframe
-                      src={`https://player.vimeo.com/video/${resource.vimeoId}?badge=0&autopause=0&player_id=0&app_id=58479`}
+                      src={`https://player.vimeo.com/video/${resource.vimeoId}${resource.vimeoId?.includes('?') ? '&' : '?'}badge=0&autopause=0&player_id=0&app_id=58479`}
                       frameBorder="0"
                       allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                       referrerPolicy="strict-origin-when-cross-origin"
