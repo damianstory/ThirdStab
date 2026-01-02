@@ -107,9 +107,7 @@ export const allMonths: MonthRecipients[] = [
       { id: 'nov-16', youtubeId: 'vZrkUIPAUuM', grade: 12, schoolBoard: 'NL Schools', schoolName: 'Cook/Chef', province: 'Newfoundland and Labrador' },
       { id: 'nov-17', youtubeId: 'suALX0yVpc8', grade: 12, schoolBoard: 'Independent', schoolName: 'Carpenter', province: 'Alberta' },
       { id: 'nov-18', youtubeId: '2L4Ifp8MBwc', grade: 12, schoolBoard: 'Edmonton Public School Board', schoolName: 'Carpenter', province: 'Alberta' },
-      // Placeholders
-      { id: 'nov-19', youtubeId: 'X2emIiPoRP4', grade: 12, schoolBoard: 'Coming Soon', schoolName: 'Coming Soon', province: 'Coming Soon' },
-      { id: 'nov-20', youtubeId: 'X2emIiPoRP4', grade: 12, schoolBoard: 'Coming Soon', schoolName: 'Coming Soon', province: 'Coming Soon' },
+      { id: 'nov-19', youtubeId: 'b0IjCt8bjAM', grade: 12, schoolBoard: 'London District Catholic School Board', schoolName: 'Cook/Chef', province: 'Ontario' },
     ]
   },
   {
