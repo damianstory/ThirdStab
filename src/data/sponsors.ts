@@ -21,6 +21,7 @@ export interface SponsorPageData extends Sponsor {
   };
 
   about: {
+    title?: string; // Override default "About {sponsor.name}" title
     description: string;
     industry: string;
     website: string;
@@ -32,6 +33,7 @@ export interface SponsorPageData extends Sponsor {
     incentiveDescription?: string;
     steps?: string[];
     incentiveSteps?: string[];
+    hideIcon?: boolean; // Hide the icon next to the steps card title
   };
 
   careerResources?: Array<{
@@ -58,6 +60,12 @@ export interface SponsorPageData extends Sponsor {
     date: string;
   }>;
 
+  // Info card for longer paragraph descriptions (alternative to incentiveCard)
+  infoCard?: {
+    title: string;
+    description: string;
+  };
+
   cta: {
     primaryLabel: string;
     primaryUrl: string;
@@ -73,7 +81,7 @@ export interface SponsorPageData extends Sponsor {
 }
 
 // Valid sponsor slugs for routing (sponsors with full profile pages)
-export const validSponsorSlugs: string[] = ['shad'];
+export const validSponsorSlugs: string[] = ['shad', 'jack-org'];
 
 // Category colors for visual differentiation
 // Gradients match the filter button colors in SponsorsGrid

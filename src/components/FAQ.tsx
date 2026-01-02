@@ -65,6 +65,10 @@ const text = {
         answer: "Individual monthly activities are assessed against a rubric specific to that month's challenge. Our goal is to be able to announce the successful submissions by the midpoint of the following month."
       },
       {
+        question: "Can students win more than one micro grant?",
+        answer: "You can't earn more than one micro grant within the same month; however, you can earn multiple micro grants across different months. For example, you could earn a micro grant in November and again in March. There's no maximum amount of micro grants you can earn."
+      },
+      {
         question: "How will students receive the funds?",
         answer: "The easiest method is by e-transfer, whether to a student's account or their parent/guardian. However, other methods may be needed and can be explored on a case-by-case basis."
       },
@@ -134,6 +138,10 @@ const text = {
       {
         question: "Comment (et quand) les vingt meilleures soumissions mensuelles sont-elles sélectionnées?",
         answer: "Chaque activité mensuelle est évaluée selon une grille de critères propre au défi du mois.\nNotre objectif est d'annoncer les soumissions retenues vers le milieu du mois suivant."
+      },
+      {
+        question: "Les élèves peuvent-ils gagner plus d'une microbourse?",
+        answer: "Vous ne pouvez pas recevoir plus d'une microbourse au cours du même mois; cependant, vous pouvez en recevoir plusieurs au fil des différents mois. Par exemple, vous pourriez gagner une microbourse en novembre et une autre en mars. Il n'y a pas de limite au nombre de microbourses que vous pouvez recevoir."
       },
       {
         question: "Comment les élèves recevront-ils les fonds?",

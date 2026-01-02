@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { SponsorPageData } from '@/data/sponsors';
-import { Gift, Calendar } from 'lucide-react';
+import { Gift, Calendar, Info } from 'lucide-react';
 
 interface SponsorAboutProps {
   sponsor: SponsorPageData;
@@ -24,17 +24,17 @@ export default function SponsorAbout({ sponsor, language = 'en' }: SponsorAboutP
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Logo and Title Row */}
         <div className="flex items-center gap-6 mb-8">
-          <div className="w-20 h-20 bg-lightBlue/30 rounded-xl flex items-center justify-center flex-shrink-0">
+          <div className="w-20 h-20 rounded-xl flex items-center justify-center flex-shrink-0 overflow-hidden">
             <Image
               src={sponsor.logo}
               alt={`${sponsor.name} logo`}
-              width={64}
-              height={64}
-              className="object-contain max-w-[56px] max-h-[56px]"
+              width={80}
+              height={80}
+              className="object-cover w-full h-full rounded-xl"
             />
           </div>
           <h2 className="brand-h2 text-navy">
-            {t.title} {sponsor.name}
+            {sponsor.about.title || `${t.title} ${sponsor.name}`}
           </h2>
         </div>
 
@@ -62,6 +62,22 @@ export default function SponsorAbout({ sponsor, language = 'en' }: SponsorAboutP
                 <p className="brand-body1 text-navy font-semibold">
                   {sponsor.incentiveCard.value}
                 </p>
+              </div>
+            )}
+
+            {/* Info Card - For longer paragraph descriptions */}
+            {sponsor.infoCard && (
+              <div className="bg-white border-2 border-brandBlue rounded-xl p-6 lg:py-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <Info className="w-5 h-5 text-brandBlue flex-shrink-0" />
+                  <span className="brand-body1 text-navy font-semibold">
+                    {sponsor.infoCard.title}
+                  </span>
+                </div>
+                <p
+                  className="brand-body2 text-neutral-600 leading-relaxed whitespace-pre-line"
+                  dangerouslySetInnerHTML={{ __html: sponsor.infoCard.description }}
+                />
               </div>
             )}
 
