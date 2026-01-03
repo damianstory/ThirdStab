@@ -81,7 +81,7 @@ export interface SponsorPageData extends Sponsor {
 }
 
 // Valid sponsor slugs for routing (sponsors with full profile pages)
-export const validSponsorSlugs: string[] = ['shad', 'jack-org'];
+export const validSponsorSlugs: string[] = ['shad', 'jack-org', 'zurich-canada'];
 
 // Category colors for visual differentiation
 // Gradients match the filter button colors in SponsorsGrid

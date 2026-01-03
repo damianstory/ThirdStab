@@ -19,18 +19,21 @@ const text = {
 export default function SponsorAbout({ sponsor, language = 'en' }: SponsorAboutProps) {
   const t = text[language];
 
+  // Check if there's any sidebar content
+  const hasSidebar = sponsor.incentiveCard || sponsor.infoCard || (sponsor.deadlines && sponsor.deadlines.length > 0);
+
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Logo and Title Row */}
         <div className="flex items-center gap-6 mb-8">
-          <div className="w-20 h-20 rounded-xl flex items-center justify-center flex-shrink-0 overflow-hidden">
+          <div className="w-20 h-20 rounded-xl flex items-center justify-center flex-shrink-0">
             <Image
               src={sponsor.logo}
               alt={`${sponsor.name} logo`}
               width={80}
               height={80}
-              className="object-cover w-full h-full rounded-xl"
+              className="object-contain max-w-full max-h-full"
             />
           </div>
           <h2 className="brand-h2 text-navy">
@@ -38,9 +41,9 @@ export default function SponsorAbout({ sponsor, language = 'en' }: SponsorAboutP
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className={hasSidebar ? "grid grid-cols-1 lg:grid-cols-3 gap-8" : ""}>
           {/* Main Description */}
-          <div className="lg:col-span-2">
+          <div className={hasSidebar ? "lg:col-span-2" : ""}>
             <div
               className="brand-body1 text-neutral-600 whitespace-pre-line leading-relaxed"
             >
@@ -48,8 +51,8 @@ export default function SponsorAbout({ sponsor, language = 'en' }: SponsorAboutP
             </div>
           </div>
 
-          {/* Quick Info Sidebar */}
-          <div className="space-y-6">
+          {/* Quick Info Sidebar - only render if there's content */}
+          {hasSidebar && <div className="space-y-6">
             {/* Incentive Card - Featured Style */}
             {sponsor.incentiveCard && (
               <div className="bg-white border-2 border-brandBlue rounded-xl p-6">
@@ -95,7 +98,7 @@ export default function SponsorAbout({ sponsor, language = 'en' }: SponsorAboutP
                 </p>
               </div>
             ))}
-          </div>
+          </div>}
         </div>
       </div>
     </section>
