@@ -53,7 +53,7 @@ export default function SponsorAvatarGroup({
         'Zurich Canada',
         'H&R Block Canada',
         'Tourism HR Canada',
-        'Heating, Refrigeration and Air Conditioning Institute of Canada',
+        'HVACR Career Connections powered by HRAI',
         'Jack.org'
       ];
 

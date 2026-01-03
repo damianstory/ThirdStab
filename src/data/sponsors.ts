@@ -81,7 +81,7 @@ export interface SponsorPageData extends Sponsor {
 }
 
 // Valid sponsor slugs for routing (sponsors with full profile pages)
-export const validSponsorSlugs: string[] = ['shad', 'jack-org', 'zurich-canada'];
+export const validSponsorSlugs: string[] = ['shad', 'jack-org', 'zurich-canada', 'hrblock-canada', 'tourism-hr', 'hrai'];
 
 // Category colors for visual differentiation
 // Gradients match the filter button colors in SponsorsGrid
@@ -187,7 +187,7 @@ export const sponsors: Sponsor[] = [
   },
   {
     id: '8',
-    name: 'Heating, Refrigeration and Air Conditioning Institute of Canada',
+    name: 'HVACR Career Connections powered by HRAI',
     slug: 'hrai',
     logo: '/images/hrai-logo.png',
     incentiveType: 'activity',
