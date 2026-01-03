@@ -31,7 +31,7 @@ Whether you're into science, tech, helping people, or protecting the planet, the
   },
 
   partnership: {
-    description: `In February 2026, Zurich Canada is sponsoring a skill-building activity where you'll explore careers in their industry, develop relevant skills, and create content that showcases what you've learned.
+    description: `In February 2026, Zurich Canada is sponsoring an activity where you'll learn how climate insurance works, why it's important, and discover the people involved in protecting Canadian infrastructure and communities from climate-related risks.
 
 **Starting February 1st, 2026**, complete the activity and submit your work for a chance to be one of 20 students selected to receive a $500 micro grant.
 

@@ -33,7 +33,7 @@ We're actually kinda cool on social. Hit us up on IG or TikTok @hrblockcanada fo
   },
 
   partnership: {
-    description: `In March 2026, H&R Block Canada is sponsoring a skill-building activity where you'll explore careers in tax services and financial literacy, develop relevant skills, and create content that showcases what you've learned.
+    description: `In March 2026, H&R Block Canada is sponsoring an activity where you'll learn how taxes work in Canada and create content that shows you understand the basics of filing taxes and financial literacy.
 
 **Starting March 1st, 2026**, complete the activity and submit your work for a chance to be one of 20 students selected to receive a $500 micro grant.
 
