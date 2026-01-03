@@ -159,6 +159,7 @@ export const sponsors: Sponsor[] = [
     logo: '/logo4.png',
     incentiveType: 'activity',
     contribution: 'Activity: January 2026',
+    activityPage: '/january',
   },
   {
     id: '5',

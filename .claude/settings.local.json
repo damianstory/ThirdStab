@@ -90,7 +90,8 @@
       "WebFetch(domain:www.navcanada.ca)",
       "Bash(git config:*)",
       "Bash(brew upgrade:*)",
-      "Bash(brew list:*)"
+      "Bash(brew list:*)",
+      "WebFetch(domain:www.notion.so)"
     ],
     "deny": []
   }
