@@ -129,7 +129,7 @@ export const octoberActivity: ActivityPageData = {
   },
   
   submission: {
-    url: 'https://www.surveymonkey.com/r/K2W32NQ',
+    url: 'https://questionnaire.simplesurvey.com/f/s/october-submissions',
     deadline: new Date('2025-10-31T23:59:59-05:00'),
     instructions: 'Submit your completed presentation or infographic along with your written reflection through the Google Form. Ensure all files are properly named with your name and school.'
   },
