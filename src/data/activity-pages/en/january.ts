@@ -34,7 +34,7 @@ export const januaryActivity: ActivityPageData = {
   },
 
   howThisWorksVideo: {
-    embedUrl: 'https://www.youtube.com/embed/PLACEHOLDER',
+    embedUrl: 'https://www.youtube.com/embed/OduHuMeLM_E',
     title: 'January Industry Immersion Series Activity | How this Works'
   },
 

@@ -34,7 +34,7 @@ export const januaryActivity: ActivityPageData = {
   },
 
   howThisWorksVideo: {
-    embedUrl: 'https://www.youtube.com/embed/PLACEHOLDER',
+    embedUrl: 'https://www.youtube.com/embed/OduHuMeLM_E',
     title: 'Activité de la Série d\'immersion industrielle de janvier | Comment ça fonctionne'
   },
 
