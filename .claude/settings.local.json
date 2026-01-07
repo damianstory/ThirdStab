@@ -91,7 +91,9 @@
       "Bash(git config:*)",
       "Bash(brew upgrade:*)",
       "Bash(brew list:*)",
-      "WebFetch(domain:www.notion.so)"
+      "WebFetch(domain:www.notion.so)",
+      "WebFetch(domain:mapcn.vercel.app)",
+      "Skill(frontend-design:frontend-design)"
     ],
     "deny": []
   }
