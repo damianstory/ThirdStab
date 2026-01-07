@@ -7,7 +7,6 @@ import {
   getAllProvinceStats,
   getTotalSubmissions,
   getTotalSchoolBoards,
-  getTotalProvinces,
 } from '@/data/submission-stats';
 
 export const metadata: Metadata = {
@@ -32,7 +31,6 @@ export default function SubmissionStatsPageFr() {
   const provinceStats = getAllProvinceStats();
   const totalSubmissions = getTotalSubmissions();
   const totalSchoolBoards = getTotalSchoolBoards();
-  const totalProvinces = getTotalProvinces();
 
   return (
     <>
@@ -41,7 +39,6 @@ export default function SubmissionStatsPageFr() {
         <SubmissionStatsHero
           totalSubmissions={totalSubmissions}
           totalSchoolBoards={totalSchoolBoards}
-          totalProvinces={totalProvinces}
           language="fr"
         />
         <CanadaMapSection
