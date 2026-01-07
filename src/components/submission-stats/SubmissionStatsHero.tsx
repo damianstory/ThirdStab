@@ -49,7 +49,19 @@ export function SubmissionStatsHero({
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <h1 className="brand-h1 text-navy mb-4">{t.title}</h1>
         <p className="brand-body1 text-neutral-600 max-w-3xl mb-6">
-          {t.description}
+          {language === 'en' ? (
+            <>
+              Explore student submissions from across Canada so far.
+              <br />
+              <span className="font-bold">Click on a pin</span> to view school board and province activity submission statistics.
+            </>
+          ) : (
+            <>
+              Explorez les soumissions des étudiants à travers le Canada jusqu&apos;à présent.
+              <br />
+              <span className="font-bold">Cliquez sur une épingle</span> pour voir les statistiques de soumission des commissions scolaires et de la province.
+            </>
+          )}
         </p>
 
         {/* Stats Cards */}
