@@ -329,6 +329,7 @@ export interface ActivityPageData extends Activity {
     image?: string;
     buttonText?: string; // Optional custom button text
     borderColor?: string; // Optional custom border color for branding
+    borderOnly?: boolean; // If true, only shows border without gradient background
     vimeoId?: string; // Optional Vimeo video ID for embedded videos
   }>;
   resourcesTitle?: string; // Optional custom title for Resources section
@@ -346,6 +347,18 @@ export interface ActivityPageData extends Activity {
       end: Date;
     };
   };
+
+  // Spotlight Callouts (optional - for featured opportunities like internships)
+  spotlightCallouts?: Array<{
+    id: string;
+    eyebrow: string;
+    headline: string;
+    subhead: string;
+    body: string;
+    badge: string;
+    icon: 'briefcase' | 'sparkles';
+    gradient: 'blue' | 'warm';
+  }>;
 
   // Meta/SEO
   meta: {

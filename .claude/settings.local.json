@@ -93,7 +93,11 @@
       "Bash(brew list:*)",
       "WebFetch(domain:www.notion.so)",
       "WebFetch(domain:mapcn.vercel.app)",
-      "Skill(frontend-design:frontend-design)"
+      "Skill(frontend-design:frontend-design)",
+      "Bash(brew update:*)",
+      "Bash(brew info:*)",
+      "WebFetch(domain:www.zurichcanada.com)",
+      "Bash(textutil:*)"
     ],
     "deny": []
   }

@@ -1,0 +1,366 @@
+import { ActivityPageData } from '../../activities';
+
+// French version - placeholder with English content for now
+// TODO: Translate all content to French
+
+export const februaryActivity: ActivityPageData = {
+  // Base activity information (from activities.ts)
+  id: '5',
+  month: 'February',
+  year: '2026',
+  title: 'Climate Insurance Challenge', // TODO: Translate
+  description: 'Learn how insurance professionals are problem-solvers who tackle big challenges like climate change, extreme weather, and community safety to protect our people and our communities.', // TODO: Translate
+  sponsor: {
+    name: 'Zurich Canada',
+    logo: '/logo5.png',
+    logoType: 'wide'
+  },
+  incentive: {
+    total: 10000,
+    individual: 500,
+    count: 20
+  },
+  status: 'coming-soon',
+  slug: 'february',
+
+  // Extended page content - TODO: Translate all below
+  hero: {
+    backgroundImage: 'https://images.pexels.com/photos/268941/pexels-photo-268941.jpeg',
+    tagline: 'Discover How Insurance Protects Our Communities from Climate Change',
+    introText: `Climate change is creating new challenges for communities across Canada — from wildfires and floods to extreme heat and violent storms. Insurance professionals are on the front lines, helping people prepare for, respond to, and recover from these events. Join Zurich Canada to explore how insurance careers combine problem-solving, data analysis, and community impact.`
+  },
+
+  video: {
+    embedUrl: 'https://www.youtube.com/embed/placeholder',
+    title: 'Protecting What Matters',
+    description: `From coast to coast, Canadians are experiencing the effects of climate change. Insurance professionals play a critical role in helping communities stay resilient. Discover how this industry is adapting to new challenges and why it needs passionate young people like you.`
+  },
+
+  howThisWorksVideo: {
+    embedUrl: 'https://www.youtube.com/embed/placeholder',
+    title: 'How this Works - February Challenge'
+  },
+
+  explainer: {
+    title: 'Challenge Overview',
+    rows: [
+      {
+        label: 'Active Submission Period',
+        content: 'February 1-28, 2026'
+      },
+      {
+        label: 'Eligibility',
+        content: 'Grades 7-12 students across Canada'
+      },
+      {
+        label: 'Total Incentives',
+        content: '$10,000 in micro grants'
+      },
+      {
+        label: 'Individual Awards',
+        content: '20 winners × $500 each'
+      },
+      {
+        label: 'Submission Deadline',
+        content: 'February 28, 2026 at 11:59 PM EST'
+      },
+    ]
+  },
+
+  activityDetail: {
+    description: `Climate risks like flooding, wildfires, and extreme weather are becoming more frequent across Canada. Insurance professionals help communities prepare for these events and recover when disaster strikes.<br/><br/><strong>This challenge invites you to explore</strong> how climate risks affect Canadians, how insurance protects communities, and discover careers where you can make a real difference.`,
+    steps: [
+      {
+        title: "Step 1: Choose Your Climate Risk",
+        details: `<strong>Pick ONE climate risk category to investigate:</strong>
+
+• <strong>Flooding</strong> — Urban flooding, sewer backup, river overflow
+• <strong>Wildfire</strong> — Smoke days, evacuations, property damage
+• <strong>Extreme Weather</strong> — Hail, tornadoes, ice storms
+• <strong>Extreme Heat</strong> — Heat domes, power outages, health impacts
+
+<strong>Briefly explain why you chose this risk</strong> and how it might affect your life or community.`
+      },
+      {
+        title: "Step 2: Research a Real Canadian Example",
+        details: `<strong>Find a documented climate event that happened in Canada connected to the climate risk that you chose in Step 1.</strong>
+
+Research and explain:
+• When and where did it happen?
+• What was the impact on people and communities?
+• What data can you find? (damage costs, people affected, etc.)
+
+<strong>Use the research tools in the Resources section below.</strong> Make sure to cite your sources.
+
+<strong>Some examples to get you started:</strong>
+• Calgary hailstorm (2024) — Nearly $3 billion in damage
+• Toronto floods (2024) — Union Station and Don Valley Parkway flooded
+• Jasper wildfire (2024) — Town evacuated and partially destroyed
+• B.C. heat dome (2021) — Over 600 deaths
+• Nova Scotia floods (2023) — Major infrastructure damage`
+      },
+      {
+        title: "Step 3: How Insurance Protects Communities",
+        details: `<strong>Describe how insurance helps communities prepare for, respond to, and recover from climate risks</strong> — and why insurance companies need to understand climate change.
+
+<strong>Explain how insurance companies interact with each of these four components:</strong>
+
+1. <strong>Prepare:</strong> How does insurance help people get ready before a disaster happens? (e.g., giving discounts for safer homes, helping identify risks in your area)
+2. <strong>Respond:</strong> What happens when disaster strikes? (claims process, getting help quickly)
+3. <strong>Recover:</strong> How does insurance help people rebuild their lives after a climate event?
+4. <strong>Why it matters:</strong> Why do insurance companies need to study and understand climate change?`
+      },
+      {
+        title: "Step 4: Spotlight an Insurance Career",
+        details: `<strong>Research ONE specific insurance role involved in climate risk:</strong>
+
+• <strong>Climate Risk Analyst</strong> — Studies climate data to predict future risks
+• <strong>Underwriter</strong> — Decides what risks to insure and at what price
+• <strong>Claims Adjuster</strong> — Investigates claims and determines payouts after disasters
+• <strong>Actuary</strong> — Uses math and statistics to calculate risk and pricing
+• <strong>Loss Control Specialist</strong> — Helps businesses and homeowners prevent losses
+
+Research what someone in this role does for work. <strong>How does their work contribute to the prepare, respond, recover pieces</strong> that you addressed in the previous step? Give at least one specific example.`
+      },
+      {
+        title: "Step 5: Future Outlook",
+        details: `<strong>Reflect on the labour market outlook in the insurance industry:</strong>
+
+• What kind of demand is there for jobs in the insurance industry?
+• Where are the jobs, and who is hiring?
+• What's an example of a role that Zurich Canada is hiring for right now?
+
+<strong>Helpful resources for labour market research:</strong>
+• Job Bank (jobbank.gc.ca)
+• Statistics Canada
+• Zurich Canada Careers
+• myBlueprint occupation profiles
+• Insurance Institute of Canada
+
+<strong>Cite your sources.</strong> For example: "according to Job Bank..." or "Statistics Canada reports..."`
+      },
+      {
+        title: "Step 6: Submit Your Video",
+        details: `<strong>Create a 60-90 second video covering Steps 1-5.</strong>
+
+Your video should include:
+• Your chosen climate risk and why you picked it
+• Your real Canadian example with data
+• How insurance helps communities (prepare, respond, recover)
+• Your insurance career spotlight
+• Your thoughts on the future outlook
+
+<strong>Format:</strong>
+• Vertical vs. horizontal? Up to you.
+• Talking head vs. animations? Up to you.
+• Documentary style vs. TikTok style? Up to you.
+
+The only requirements are that it addresses each of the 5 steps above, and we're able to click a link to watch it.
+
+<strong>IMPORTANT: Make sure the video link has proper sharing settings.</strong>
+Test your link in an incognito browser window before submitting. If it works there without login, it should work for us too.`
+      }
+    ]
+  },
+
+  rubric: {
+    criteria: [
+      {
+        category: 'Content & Accuracy',
+        weight: 25,
+        description: 'Comprehensive coverage of all 5 required steps with accurate, detailed information'
+      },
+      {
+        category: 'Research & Citations',
+        weight: 25,
+        description: 'Quality sources properly cited throughout the video presentation'
+      },
+      {
+        category: 'Engagement & Creativity',
+        weight: 25,
+        description: 'Compelling delivery that maintains viewer interest through creative presentation'
+      },
+      {
+        category: 'Communication & Clarity',
+        weight: 25,
+        description: 'Clear audio/visuals with logical organization, smooth flow, and meets 60-90 second requirement'
+      },
+      {
+        category: 'View Detailed Evaluation Rubric Here',
+        weight: 0,
+        description: '',
+        isLink: true,
+        url: '#'
+      }
+    ],
+    totalPoints: 100,
+    detailedRubricUrl: '#'
+  },
+
+  submission: {
+    url: '#',
+    deadline: new Date('2026-02-28T23:59:59-05:00'),
+    instructions: 'Submit your completed video through the submission form. Ensure your video link has proper sharing settings so we can view it.'
+  },
+
+  faqs: [
+    {
+      question: 'What is climate insurance?',
+      answer: `Climate insurance refers to insurance products that help protect people, businesses, and communities from the financial impacts of climate-related events like floods, wildfires, storms, and extreme heat. It's how we financially prepare for and recover from climate disasters.`
+    },
+    {
+      question: 'Do I need to understand insurance to do this activity?',
+      answer: `No prior knowledge needed! This activity is designed to help you learn about insurance as you go. The resources section has tools to help you understand both climate risks and how insurance works.`
+    },
+    {
+      question: 'What if there hasn\'t been a major climate event in my area?',
+      answer: `You can research any Canadian climate event — it doesn't have to be in your specific community. The examples we provided (Calgary hailstorm, Toronto floods, Jasper wildfire, etc.) are great starting points.`
+    },
+    {
+      question: 'What insurance careers are there?',
+      answer: `There are many! For this activity, focus on roles related to climate risk: Climate Risk Analyst, Underwriter, Claims Adjuster, Actuary, or Loss Control Specialist. Each plays a different role in helping communities prepare for and recover from climate events.`
+    },
+    {
+      question: 'How does this February Activity challenge work?',
+      answer: 'Carefully read the Activity Details steps 1-6 to understand what is being asked of you in this activity. You can also watch the How this Works video for a detailed overview.'
+    },
+    {
+      question: 'What am I actually being asked to submit?',
+      answer: `You're being asked to submit a 60 to 90 second video highlighting your research from steps 1 through 5. Your video should cover: your chosen climate risk, a real Canadian example with data, how insurance protects communities, an insurance career spotlight, and your thoughts on the future. Make sure your video link has proper sharing settings.`
+    },
+    {
+      question: 'Can I submit more than one video?',
+      answer: `Yes, you can complete the activity multiple times exploring different climate risks or insurance careers, though students can only win one micro grant per activity. We'd encourage you to focus on quality, not quantity.`
+    },
+    {
+      question: 'Is there a preferred style for the video?',
+      answer: `No, it's whatever feels authentic and engaging to you. It can be a TikTok style video with lots of different cuts and background music or more documentary style — whatever you will enjoy making more, and clearly communicates the requested information from steps 1-5.`
+    },
+    {
+      question: 'Does it matter what tool I use to make the video?',
+      answer: `Nope, it doesn't matter at all what tool you use. There are lots of free tools available to make videos today. Check with your school to see what they already have access to. For example, Canva is a great tool to be able to create videos with.`
+    },
+    {
+      question: 'What skills will I be developing by doing this activity?',
+      answer: `Lots of skills like research, critical thinking, communication, content creation, and data literacy. You'll also learn about climate science, risk assessment, and an industry you may not have considered before. It would be a good idea to add the completed video to your myBlueprint portfolio and reflect on what skills you feel like you've developed.`
+    },
+    {
+      question: 'Who is reviewing the submissions?',
+      answer: `Submissions will be reviewed by a team of representatives from myBlueprint. We may, if needed, collaborate with representatives from Zurich Canada.`
+    },
+    {
+      question: 'Can students submit their videos in French?',
+      answer: `Yes, videos will be accepted in either English or French.`
+    },
+    {
+      question: 'How (and when) are the twenty monthly successful submissions selected?',
+      answer: `Depending on the volume of submissions, we plan to have selected and be able to announce winners by the midpoint of the following month. So for example, with this activity, we hope to be able to announce the February winners by mid-March.`
+    },
+    {
+      question: 'Should I add these submissions to my portfolio in myBlueprint?',
+      answer: `Yeah, that's a great idea, along with a reflection of what you learned from doing this activity and what you found interesting. As a heads up, we'll also be asking students to submit evidence of their completed activities through a myBlueprint portfolio if you plan on applying for one of the Series Completion incentives at the end of the year.`
+    },
+    {
+      question: 'Do I need to do this in class, or can I just do this on my own?',
+      answer: `You can absolutely complete this activity on your own. That being said, you should absolutely communicate with your teachers (and parents) that you're doing this and see if you can potentially earn credit for the work that you're doing for this activity.`
+    },
+    {
+      question: 'Can I do this as a group project?',
+      answer: `The Climate Insurance Challenge has been designed as an individual activity.`
+    },
+    {
+      question: 'Can I still submit the activity after the February 28th deadline?',
+      answer: `Yes, you can still submit monthly activities after the deadline. However, any activity submitted after the deadline is not eligible for that month's pool of micro grants. It still makes sense to complete them even after the deadline so that you can potentially earn one of the Series Completion incentives. Those only require all activities to be completed, not necessarily completed within the month of the activity.`
+    },
+    {
+      question: 'Will teachers be able to see who has submitted an entry?',
+      answer: `Teachers won't be able to see through myBlueprint which students have submitted activities or not. However, we will create reports that will be shared with your myBlueprint lead at the school board level who can share specifics with you upon request.`
+    },
+    {
+      question: 'What data is being collected and by who?',
+      answer: `myBlueprint is solely responsible for running the Industry Immersion Series. Meaning that only myBlueprint is collecting any information related to this Series. No personally identifiable information is being shared with any third parties. We will publish de-identified (anonymous summary data) information to provide updates on how the series is going. For example, the number of activity submissions received for each month, which province they're coming from, and communicate with our school board partners about school-specific participation. <a href="https://docs.google.com/document/d/1rHxZ4QntHN0fo7rqi7uKeDQakupNtE3KtT8p3lFPur4/edit?tab=t.0" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">[Click here to see the questions students are being asked]</a> to answer when they submit their completed activity.`
+    }
+  ],
+
+  resources: [
+    {
+      title: 'Insurance Bureau of Canada',
+      description: 'Learn how insurance supports communities across Canada.',
+      url: 'https://www.ibc.ca/',
+      type: 'link',
+      borderColor: '#8BB8D9',
+      borderOnly: true
+    },
+    {
+      title: 'Zurich & Sustainability',
+      description: 'Discover how Zurich is addressing climate risk and resilience.',
+      url: 'https://www.zurich.com/sustainability',
+      type: 'link',
+      borderColor: '#8BB8D9',
+      borderOnly: true
+    },
+    {
+      title: 'Government of Canada Climate Data',
+      description: 'Explore climate trends and projections.',
+      url: 'https://climatedata.ca/',
+      type: 'link',
+      borderColor: '#8BB8D9',
+      borderOnly: true
+    },
+    {
+      title: 'Insurance Institute of Canada – P&C Onboarding',
+      description: 'This short, beginner-friendly online resource explains how property and casualty (P&C) insurance works, why it matters, and the types of careers available.',
+      url: 'https://www.insuranceinstitute.ca/',
+      type: 'link',
+      borderColor: '#8BB8D9',
+      borderOnly: true
+    },
+    {
+      title: 'Zurich Canada\nCareers',
+      description: 'Explore career paths in insurance and risk management at one of the world\'s leading insurers.',
+      url: 'https://www.zurichcanada.com/en-ca/careers',
+      type: 'link',
+      borderColor: '#8BB8D9',
+      borderOnly: true
+    },
+    {
+      title: 'Zurich Canada Internships',
+      description: 'Explore internship opportunities at Zurich Canada and kickstart your career in insurance and risk management.',
+      url: 'https://www.zurichcanada.com/en-ca/careers/internships',
+      type: 'link',
+      borderColor: '#8BB8D9',
+      borderOnly: true
+    }
+  ],
+  resourcesTitle: 'Zurich Canada Resources',
+  resourcesSubtitle: 'Explore these resources to support your research',
+
+  spotlightCallouts: [
+    {
+      id: 'internship',
+      eyebrow: 'EXCLUSIVE OPPORTUNITY', // TODO: Translate
+      headline: 'Win a Paid Summer Internship', // TODO: Translate
+      subhead: 'Zurich Canada • Summer 2026',
+      body: 'One exceptional Grade 11 or 12 student will be selected for a paid summer internship at Zurich Canada. This is your chance to get real-world experience in insurance and risk management.', // TODO: Translate
+      badge: '1 SPOT AVAILABLE', // TODO: Translate
+      icon: 'briefcase',
+      gradient: 'blue',
+    },
+    {
+      id: 'indigenous',
+      eyebrow: 'DEDICATED SUPPORT', // TODO: Translate
+      headline: 'Indigenous Student Micro Grants', // TODO: Translate
+      subhead: '5 of 20 Grants Reserved • $500 Each', // TODO: Translate
+      body: 'Zurich Canada is committed to supporting Indigenous youth in their career exploration journey. Five micro grants have been earmarked for students who identify as Indigenous.', // TODO: Translate
+      badge: '5 GRANTS RESERVED', // TODO: Translate
+      icon: 'sparkles',
+      gradient: 'warm',
+    },
+  ],
+
+  meta: {
+    title: 'Climate Insurance Challenge - February 2026',
+    description: 'Explore climate risks in Canada and discover how insurance professionals protect communities. Research insurance careers and win micro grants with Zurich Canada.',
+    ogImage: '/logo5.png'
+  }
+};

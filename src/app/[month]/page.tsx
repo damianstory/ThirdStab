@@ -12,6 +12,7 @@ import ActivityFAQ from '@/components/activity/ActivityFAQ';
 import SponsorResources from '@/components/activity/SponsorResources';
 import SkillsForSuccess from '@/components/activity/SkillsForSuccess';
 import IncentivesAndNavigation from '@/components/activity/IncentivesAndNavigation';
+import SpotlightCallouts from '@/components/activity/SpotlightCallouts';
 
 interface ActivityPageProps {
   params: {
@@ -104,6 +105,9 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
             <PromotionalBanner banner={activityPageData.promotionalBanner} language="en" />
           )}
           <VideoAndExplainer activity={activityPageData} />
+          {activityPageData.spotlightCallouts && activityPageData.spotlightCallouts.length > 0 && (
+            <SpotlightCallouts callouts={activityPageData.spotlightCallouts} />
+          )}
           <div id="activity-details">
             <ActivityDetailAndRubric activity={activityPageData} />
           </div>
