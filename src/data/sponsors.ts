@@ -58,6 +58,7 @@ export interface SponsorPageData extends Sponsor {
   deadlines?: Array<{
     label: string;
     date: string;
+    variant?: 'default' | 'featured';
   }>;
 
   // Info card for longer paragraph descriptions (alternative to incentiveCard)

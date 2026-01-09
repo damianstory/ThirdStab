@@ -66,12 +66,13 @@ export const shadSponsor: SponsorPageData = {
 
   deadlines: [
     {
-      label: 'Deadline 1: Grade 10, 11',
-      date: 'January 5th, 2026'
-    },
-    {
       label: 'Deadline 2: Grade 7, 8, 9',
       date: 'May 30th, 2026'
+    },
+    {
+      label: 'Shad alumni story',
+      date: '<a href="https://blog.myblueprint.ca/one-month-that-changed-everything-what-actually-happens-at-shad-b2bad68ca233" target="_blank" rel="noopener noreferrer" class="text-brandBlue hover:underline">Read: What Happens at Shad</a>',
+      variant: 'featured'
     }
   ],
 

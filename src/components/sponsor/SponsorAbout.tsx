@@ -86,16 +86,24 @@ export default function SponsorAbout({ sponsor, language = 'en' }: SponsorAboutP
 
             {/* Deadline Cards */}
             {sponsor.deadlines?.map((deadline, index) => (
-              <div key={index} className="bg-lightBlue/30 rounded-xl p-6">
+              <div
+                key={index}
+                className={
+                  deadline.variant === 'featured'
+                    ? 'bg-white border-2 border-brandBlue rounded-xl p-6'
+                    : 'bg-lightBlue/30 rounded-xl p-6'
+                }
+              >
                 <div className="flex items-center gap-3 mb-2">
                   <Calendar className="w-5 h-5 text-brandBlue" />
                   <span className="brand-body2 text-neutral-500 font-medium">
                     {deadline.label}
                   </span>
                 </div>
-                <p className="brand-body1 text-navy font-semibold">
-                  {deadline.date}
-                </p>
+                <p
+                  className="brand-body1 text-navy font-semibold"
+                  dangerouslySetInnerHTML={{ __html: deadline.date }}
+                />
               </div>
             ))}
           </div>}
