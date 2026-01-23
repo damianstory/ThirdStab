@@ -23,15 +23,32 @@ export default function VideoCard({ winner, language = 'en' }: VideoCardProps) {
         e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.08)';
       }}
     >
-      {/* YouTube Embed */}
-      <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-        <iframe
-          className="absolute inset-0 w-full h-full"
-          src={`https://www.youtube.com/embed/${winner.youtubeId}`}
-          title={`${winner.schoolName} - ${gradeLabel} ${winner.grade}`}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
+      {/* Video Embed */}
+      <div className="relative w-full bg-black" style={{ paddingBottom: '56.25%' }}>
+        {winner.gumletId ? (
+          // Gumlet embed (portrait video, letterboxed in 16:9 container)
+          <div className="absolute inset-0 flex items-center justify-center">
+            <iframe
+              loading="lazy"
+              className="h-full"
+              style={{ aspectRatio: '9/16' }}
+              src={`https://play.gumlet.io/embed/${winner.gumletId}?background=false&autoplay=false&loop=false&disableControls=false`}
+              title={`${winner.schoolName} - ${gradeLabel} ${winner.grade}`}
+              referrerPolicy="origin"
+              allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen"
+              allowFullScreen
+            />
+          </div>
+        ) : (
+          // YouTube embed (standard 16:9)
+          <iframe
+            className="absolute inset-0 w-full h-full"
+            src={`https://www.youtube.com/embed/${winner.youtubeId}`}
+            title={`${winner.schoolName} - ${gradeLabel} ${winner.grade}`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        )}
       </div>
 
       {/* Card Info */}

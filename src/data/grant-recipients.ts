@@ -3,7 +3,8 @@
 
 export interface VideoWinner {
   id: string;
-  youtubeId: string;
+  youtubeId?: string;    // Optional - for YouTube videos
+  gumletId?: string;     // Optional - for Gumlet videos
   grade: number;
   schoolBoard: string;
   schoolName: string;
@@ -124,8 +125,34 @@ export const allMonths: MonthRecipients[] = [
     activitySlug: 'december',
     description: 'Congratulations to these 20 students who explored careers in Canada\'s agriculture sector and received $500 microgrants for their outstanding video submissions.',
     descriptionFr: 'Félicitations à ces 20 élèves qui ont exploré les carrières dans le secteur agricole canadien et qui ont reçu des microbourses de 500 $ pour leurs excellentes soumissions vidéo.',
-    enabled: false,
-    winners: []
+    enabled: true,
+    winners: [
+      // Grade 9
+      { id: 'dec-1', youtubeId: 'IvREyILWojk', grade: 9, schoolBoard: 'Dufferin Peel Catholic DSB', schoolName: 'Crop Farmer', province: 'Ontario' },
+      // Grade 10
+      { id: 'dec-2', gumletId: '6972c2438836ea1a9614591a', grade: 10, schoolBoard: 'Heritage Christian', schoolName: 'Agricultural Vet', province: 'British Columbia' },
+      { id: 'dec-3', youtubeId: 'CkmlO9mS80k', grade: 10, schoolBoard: 'STEM Innovation Academy', schoolName: 'Agronomist', province: 'Alberta' },
+      { id: 'dec-4', youtubeId: 'Ls-QQr2XZE0', grade: 10, schoolBoard: 'Toronto DSB', schoolName: 'Precision Ag Specialist', province: 'Ontario' },
+      { id: 'dec-5', youtubeId: 'hFm6hAbnm-Q', grade: 10, schoolBoard: 'Anglophone East School District', schoolName: 'Agriculture Technician', province: 'New Brunswick' },
+      { id: 'dec-6', youtubeId: 'jiGpQeS_22Y', grade: 10, schoolBoard: 'York Region DSB', schoolName: 'Agronomist', province: 'Ontario' },
+      // Grade 11
+      { id: 'dec-7', youtubeId: '5QHI9eUmUZs', grade: 11, schoolBoard: 'Hamilton-Wentworth Catholic DSB', schoolName: 'CEA Engineer', province: 'Ontario' },
+      { id: 'dec-8', youtubeId: 'FZdVwHFKrEQ', grade: 11, schoolBoard: 'Toronto DSB', schoolName: 'Food Stylist', province: 'Ontario' },
+      { id: 'dec-9', youtubeId: 'lC7mxjdc-Lw', grade: 11, schoolBoard: 'Edmonton Public', schoolName: 'Sustainability Coordinator', province: 'Alberta' },
+      { id: 'dec-10', youtubeId: '4Pc0bAFcWX8', grade: 11, schoolBoard: 'York Region DSB', schoolName: 'Arborist', province: 'Ontario' },
+      { id: 'dec-11', youtubeId: '5uKzmci6UoA', grade: 11, schoolBoard: 'Anglophone South School District', schoolName: 'Dietician', province: 'New Brunswick' },
+      { id: 'dec-12', youtubeId: '6ra50dzjNWg', grade: 11, schoolBoard: 'Waterloo Region DSB', schoolName: 'Agricultural Lawyer', province: 'Ontario' },
+      { id: 'dec-13', youtubeId: 'SbvVDISik2I', grade: 11, schoolBoard: 'Toronto Catholic DSB', schoolName: 'Horticulturists', province: 'Ontario' },
+      { id: 'dec-14', youtubeId: '-QRUBJ2ANGU', grade: 11, schoolBoard: 'CDSB of Eastern Ontario', schoolName: 'Environmental Technicians', province: 'Ontario' },
+      // Grade 12
+      { id: 'dec-15', youtubeId: 'igjbBhIMujA', grade: 12, schoolBoard: 'Grand Erie DSB', schoolName: 'Landscaped Design', province: 'Ontario' },
+      { id: 'dec-16', youtubeId: 'XQ0m2w98gz4', grade: 12, schoolBoard: 'Toronto Catholic DSB', schoolName: 'Food Safety Specialist', province: 'Ontario' },
+      { id: 'dec-17', youtubeId: 'qy6kqUekI_0', grade: 12, schoolBoard: 'Dufferin Peel Catholic DSB', schoolName: 'Precision Ag Specialist', province: 'Ontario' },
+      { id: 'dec-18', youtubeId: 'G3xnStTxl6k', grade: 12, schoolBoard: 'Toronto DSB', schoolName: 'Agricultural Scientists', province: 'Ontario' },
+      { id: 'dec-19', youtubeId: 'SML2cGW3q4E', grade: 12, schoolBoard: 'DSB1', schoolName: 'Farm Veterinarian', province: 'Ontario' },
+      // Placeholder
+      { id: 'dec-20', youtubeId: 'X2emIiPoRP4', grade: 12, schoolBoard: 'Coming Soon', schoolName: 'Coming Soon', province: 'Coming Soon' },
+    ]
   },
   {
     month: 'January',
