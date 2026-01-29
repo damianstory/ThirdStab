@@ -22,13 +22,14 @@ export const februaryActivity: ActivityPageData = {
 
   // Extended page content
   hero: {
-    backgroundImage: 'https://images.pexels.com/photos/268941/pexels-photo-268941.jpeg',
+    backgroundImage: '/february-hero.jpg',
+    backgroundPosition: 'right top',
     tagline: 'Discover How Insurance Protects Our Communities from Climate Change',
     introText: `Climate change is creating new challenges for communities across Canada — from wildfires and floods to extreme heat and violent storms. Insurance professionals are on the front lines, helping people prepare for, respond to, and recover from these events. Join Zurich Canada to explore how insurance careers combine problem-solving, data analysis, and community impact.`
   },
 
   video: {
-    embedUrl: 'https://www.youtube.com/embed/placeholder',
+    embedUrl: 'https://www.youtube.com/embed/KBXC29O-3Tw',
     title: 'Protecting What Matters',
     description: `From coast to coast, Canadians are experiencing the effects of climate change. Insurance professionals play a critical role in helping communities stay resilient. Discover how this industry is adapting to new challenges and why it needs passionate young people like you.`
   },

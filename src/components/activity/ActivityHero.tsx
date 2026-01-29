@@ -12,8 +12,11 @@ export default function ActivityHero({ activity }: ActivityHeroProps) {
     <section className="relative min-h-[500px] md:min-h-[600px] lg:min-h-[700px] overflow-hidden">
       {/* Background Image Layer */}
       <div
-        className="absolute inset-0 activity-hero-bg-mobile md:activity-hero-bg-desktop bg-cover bg-no-repeat"
-        style={{ backgroundImage: `url('${backgroundImage}')` }}
+        className={`absolute inset-0 ${activity.hero.backgroundPosition ? '' : 'activity-hero-bg-mobile md:activity-hero-bg-desktop'} bg-cover bg-no-repeat`}
+        style={{
+          backgroundImage: `url('${backgroundImage}')`,
+          ...(activity.hero.backgroundPosition ? { backgroundPosition: activity.hero.backgroundPosition } : {}),
+        }}
       />
 
       {/* Gradient Overlay Layer */}

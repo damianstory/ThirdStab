@@ -259,6 +259,7 @@ export interface ActivityPageData extends Activity {
   // Hero Section
   hero: {
     backgroundImage?: string;
+    backgroundPosition?: string;
     tagline: string;
     introText: string;
   };
