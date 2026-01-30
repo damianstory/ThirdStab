@@ -365,7 +365,7 @@ Test your link in an incognito browser window before submitting. If it works the
         <ul style="list-style:disc;padding-left:1.25rem;margin-bottom:1rem;">
           <li style="margin-bottom:0.25rem;">Currently a grade 12 high school student</li>
           <li style="margin-bottom:0.25rem;">Legally eligible to work in Canada</li>
-          <li style="margin-bottom:0.25rem;">Available to work in person at the Toronto office in July and August 2026</li>
+          <li style="margin-bottom:0.25rem;"><strong>Available to work in person at the Toronto office (100 King Street West) in July and August 2026</strong></li>
         </ul>
 
         <h4 style="font-size:1rem;font-weight:700;margin-bottom:0.5rem;color:#22224C;">Preferred Qualifications</h4>
