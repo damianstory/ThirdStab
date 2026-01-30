@@ -17,10 +17,25 @@ export interface SpotlightCallout {
 
 interface SpotlightCalloutsProps {
   callouts: SpotlightCallout[];
+  language?: 'en' | 'fr';
 }
 
-export default function SpotlightCallouts({ callouts }: SpotlightCalloutsProps) {
+const i18n = {
+  en: {
+    sectionTitle: 'Activity-Specific Incentives',
+    sectionSubtitle: 'Special opportunities available for this activity',
+    internshipDetails: 'INTERNSHIP DETAILS',
+  },
+  fr: {
+    sectionTitle: 'Incitatifs propres à l\'activité',
+    sectionSubtitle: 'Occasions spéciales offertes dans le cadre de cette activité',
+    internshipDetails: 'DÉTAILS DU STAGE',
+  },
+};
+
+export default function SpotlightCallouts({ callouts, language = 'en' }: SpotlightCalloutsProps) {
   const [expandedId, setExpandedId] = useState<string | null>(null);
+  const t = i18n[language];
 
   const icons = {
     briefcase: Briefcase,
@@ -49,17 +64,17 @@ export default function SpotlightCallouts({ callouts }: SpotlightCalloutsProps) 
 
   return (
     <section
-      aria-label="Activity-Specific Incentives"
+      aria-label={t.sectionTitle}
       className="py-8 px-4 md:py-12 md:px-8 bg-lightBlue/30"
     >
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-12">
           <h2 className="brand-h2 text-[#22224C] mb-4">
-            Activity-Specific Incentives
+            {t.sectionTitle}
           </h2>
           <p className="brand-body1 text-neutral-500">
-            Special opportunities available for this activity
+            {t.sectionSubtitle}
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -119,7 +134,7 @@ export default function SpotlightCallouts({ callouts }: SpotlightCalloutsProps) 
                                    text-brandBlue bg-white hover:bg-brandBlue/5
                                    cursor-pointer transition-colors duration-200"
                       >
-                        INTERNSHIP DETAILS
+                        {t.internshipDetails}
                         <ChevronDown
                           className={`w-3.5 h-3.5 transition-transform duration-300 ${
                             expandedId === callout.id ? 'rotate-180' : ''

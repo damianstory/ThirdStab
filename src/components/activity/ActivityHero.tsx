@@ -2,9 +2,10 @@ import { ActivityPageData } from '@/data/activities';
 
 interface ActivityHeroProps {
   activity: ActivityPageData;
+  contentClassName?: string;
 }
 
-export default function ActivityHero({ activity }: ActivityHeroProps) {
+export default function ActivityHero({ activity, contentClassName }: ActivityHeroProps) {
   // Determine background image - use activity-specific or fallback to default
   const backgroundImage = activity.hero.backgroundImage || '/activity-hero-mining.webp';
 
@@ -23,7 +24,7 @@ export default function ActivityHero({ activity }: ActivityHeroProps) {
       <div className="absolute inset-0 activity-hero-gradient-mobile md:activity-hero-gradient-desktop" />
       
       {/* Content Layer */}
-      <div className="relative z-10 w-full flex min-h-[500px] md:min-h-[600px] lg:min-h-[700px] flex-col items-center justify-center px-6 lg:px-20">
+      <div className={`relative z-10 w-full flex min-h-[500px] md:min-h-[600px] lg:min-h-[700px] flex-col items-center justify-center px-6 lg:px-20 ${contentClassName || ''}`}>
         <div className="mx-auto max-w-lg text-center lg:mx-0 lg:max-w-2xl lg:text-left lg:mr-auto">
             {/* Month/Year Badge */}
             <div className="inline-block bg-[#0092ff] text-white px-6 py-2 rounded-full text-sm font-medium mb-6 shadow-lg">
