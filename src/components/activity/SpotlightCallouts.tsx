@@ -50,7 +50,7 @@ export default function SpotlightCallouts({ callouts }: SpotlightCalloutsProps) 
   return (
     <section
       aria-label="Activity-Specific Incentives"
-      className="py-8 px-4 md:py-12 md:px-8 bg-gradient-to-b from-lightBlue/30 to-transparent"
+      className="py-8 px-4 md:py-12 md:px-8 bg-lightBlue/30"
     >
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
