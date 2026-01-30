@@ -188,15 +188,15 @@ Test your link in an incognito browser window before submitting. If it works the
         weight: 0,
         description: '',
         isLink: true,
-        url: '#'
+        url: 'https://claude.ai/public/artifacts/8d611e20-e019-4bf6-8869-240148d090e6'
       }
     ],
     totalPoints: 100,
-    detailedRubricUrl: '#'
+    detailedRubricUrl: 'https://claude.ai/public/artifacts/8d611e20-e019-4bf6-8869-240148d090e6'
   },
 
   submission: {
-    url: '#', // Placeholder - will be updated with SimpleSurvey URL
+    url: 'https://questionnaire.simplesurvey.com/f/s.aspx?s=fda0d251-d3fc-4452-bdb1-5567ca5101a4',
     deadline: new Date('2026-02-28T23:59:59-05:00'),
     instructions: 'Submit your completed video through the submission form. Ensure your video link has proper sharing settings so we can view it.'
   },
@@ -339,10 +339,63 @@ Test your link in an incognito browser window before submitting. If it works the
       eyebrow: 'EXCLUSIVE OPPORTUNITY',
       headline: 'Win a Paid Summer Internship',
       subhead: 'Zurich Canada • Summer 2026',
-      body: 'One exceptional Grade 11 or 12 student will be selected for a paid summer internship at Zurich Canada. This is your chance to get real-world experience in insurance and risk management.',
+      body: 'One exceptional Grade 12 student will be selected for a paid internship at Zurich Canada in their <strong>Toronto office</strong>. This is your chance to get real-world experience in insurance and risk management.',
       badge: '1 SPOT AVAILABLE',
       icon: 'briefcase',
       gradient: 'blue',
+      expandableContent: `
+        <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:0.75rem;color:#22224C;">Claims Intern</h3>
+
+        <h4 style="font-size:1rem;font-weight:700;margin-bottom:0.5rem;color:#22224C;">The Opportunity</h4>
+        <p style="margin-bottom:0.75rem;">Are you looking for a caring, collaborative, values-driven workplace with inspiring teammates and leaders? Do you have the ambition and desire to be the best and thrive at the most impactful global insurance provider in the world? Look no further than Zurich Canada.</p>
+        <p style="margin-bottom:0.75rem;">Zurich Canada is currently looking for a grade 12 student to assist our Claims team. Reporting to the Senior Claims Administration Manager, you will gain valuable exposure to claims practices and insurance industry standards, while developing workplace skills in a collaborative environment.</p>
+        <p style="margin-bottom:0.75rem;">This is a unique opportunity to build your knowledge and experience for the future in a supportive environment where your voice matters. This posting is for an existing vacancy.</p>
+        <p style="margin-bottom:1rem;">Zurich follows a hybrid work model requiring three days per week of in-person presence, which may include time in the office or market-facing engagements.</p>
+
+        <h4 style="font-size:1rem;font-weight:700;margin-bottom:0.5rem;color:#22224C;">What You Will Do</h4>
+        <ul style="list-style:disc;padding-left:1.25rem;margin-bottom:1rem;">
+          <li style="margin-bottom:0.25rem;">Provide general project support</li>
+          <li style="margin-bottom:0.25rem;">Support the daily activities of the department</li>
+          <li style="margin-bottom:0.25rem;">Work individually or in a team, and follow directions from your manager/mentor</li>
+          <li style="margin-bottom:0.25rem;">In some cases, field work and interacting with customers or clients will be required</li>
+          <li style="margin-bottom:0.25rem;">Some interns may need to help the company with in-depth research and filing of records</li>
+        </ul>
+
+        <h4 style="font-size:1rem;font-weight:700;margin-bottom:0.5rem;color:#22224C;">Qualifications</h4>
+        <ul style="list-style:disc;padding-left:1.25rem;margin-bottom:1rem;">
+          <li style="margin-bottom:0.25rem;">Currently a grade 12 high school student</li>
+          <li style="margin-bottom:0.25rem;">Legally eligible to work in Canada</li>
+          <li style="margin-bottom:0.25rem;">Available to work in person at the Toronto office in July and August 2026</li>
+        </ul>
+
+        <h4 style="font-size:1rem;font-weight:700;margin-bottom:0.5rem;color:#22224C;">Preferred Qualifications</h4>
+        <ul style="list-style:disc;padding-left:1.25rem;margin-bottom:1rem;">
+          <li style="margin-bottom:0.25rem;">Demonstrated problem solving skills in a customer focused environment</li>
+          <li style="margin-bottom:0.25rem;">Excellent communication skills</li>
+          <li style="margin-bottom:0.25rem;">Analytical skills</li>
+          <li style="margin-bottom:0.25rem;">Excel and PowerPoint experience</li>
+          <li style="margin-bottom:0.25rem;">Strong written and verbal communication skills</li>
+          <li style="margin-bottom:0.25rem;">Self-motivated, punctual, professional and able to work independently</li>
+        </ul>
+        <p style="margin-bottom:1rem;">At Zurich Canada, we are committed to pay equity. We determine compensation based on objective criteria such as skills, experience, and internal equity. The salary for this position is $18.50 per hour.</p>
+
+        <h4 style="font-size:1rem;font-weight:700;margin-bottom:0.5rem;color:#22224C;">Our Culture</h4>
+        <ul style="list-style:disc;padding-left:1.25rem;margin-bottom:1rem;">
+          <li style="margin-bottom:0.25rem;">At Zurich, we are proud of our culture. We are passionate about Diversity, Inclusion, Equity and Belonging (DIEB). We want you to bring your whole self to work, and we want our employees to be reflective of the communities in which we live and work. Our DIEB initiatives are creating an environment where everyone feels welcome.</li>
+          <li style="margin-bottom:0.25rem;">We have a collaborative culture where diversity of thought is valued. We value your input and strive to give our employees the tools they need to make an impact.</li>
+          <li style="margin-bottom:0.25rem;">We are committed to continuous improvement and offer access to a comprehensive range of training and development opportunities.</li>
+          <li style="margin-bottom:0.25rem;">We care about our communities. Our communities are where our customers, people, and shareholders live and work. While we can be proud of the contribution to society Zurich makes through our core business of insurance, we must also give back to our communities through our talent, time and resources.</li>
+          <li style="margin-bottom:0.25rem;">We have won numerous awards for our workplace culture. We are proud to be one of Greater Toronto's Top Employers and to have received Insurance Business Canada's 5-Star Diversity, Equity and Inclusion Award.</li>
+        </ul>
+
+        <h4 style="font-size:1rem;font-weight:700;margin-bottom:0.5rem;color:#22224C;">About Us</h4>
+        <p style="margin-bottom:1rem;">Zurich Canada is part of the Zurich Insurance Group, a multi-line insurer with approximately 55,000 employees worldwide serving customers in global and local markets. Zurich Canada has been a leading insurance provider serving mid-sized and large companies, including multinational corporations, in the Canadian commercial market for 100 years. With over 650 employees in offices across the country, Zurich offers the global strength of a top insurance provider combined with in-depth knowledge of industries and local markets.</p>
+
+        <h4 style="font-size:1rem;font-weight:700;margin-bottom:0.5rem;color:#22224C;">How to Apply</h4>
+        <p style="margin-bottom:0.75rem;">If you're in grade 12, able to work in Toronto this summer, and have read and understood the internship overview above and want to apply, you will need to submit the February Industry Immersion Series activity before February 28th, 2026.</p>
+        <p style="margin-bottom:0.75rem;">Whether or not your video is selected to receive one of the monthly micro grants has nothing to do with who receives the internship.</p>
+        <p>If you submit your Industry Immersion Series video by February 28th and you're in grade 12, myBlueprint will email you in March and ask for your resume, cover letter, and why you're interested specifically in this role. That information will be shared with the Zurich Canada team, and they will be making a decision shortly afterwards about who they want to interview and potentially bring on for the summer internship.</p>
+      `,
     },
     {
       id: 'indigenous',

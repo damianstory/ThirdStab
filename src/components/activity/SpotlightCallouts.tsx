@@ -1,6 +1,7 @@
 'use client';
 
-import { Briefcase, Sparkles } from 'lucide-react';
+import { useState } from 'react';
+import { Briefcase, Sparkles, ChevronDown } from 'lucide-react';
 
 export interface SpotlightCallout {
   id: string;
@@ -11,6 +12,7 @@ export interface SpotlightCallout {
   badge: string;
   icon: 'briefcase' | 'sparkles';
   gradient: 'blue' | 'warm';
+  expandableContent?: string;
 }
 
 interface SpotlightCalloutsProps {
@@ -18,6 +20,8 @@ interface SpotlightCalloutsProps {
 }
 
 export default function SpotlightCallouts({ callouts }: SpotlightCalloutsProps) {
+  const [expandedId, setExpandedId] = useState<string | null>(null);
+
   const icons = {
     briefcase: Briefcase,
     sparkles: Sparkles,
@@ -39,6 +43,9 @@ export default function SpotlightCallouts({ callouts }: SpotlightCalloutsProps) 
   if (!callouts || callouts.length === 0) {
     return null;
   }
+
+  const expandableCallout = callouts.find(c => c.expandableContent);
+  const isExpanded = expandableCallout ? expandedId === expandableCallout.id : false;
 
   return (
     <section
@@ -93,20 +100,61 @@ export default function SpotlightCallouts({ callouts }: SpotlightCalloutsProps) 
                   </p>
 
                   {/* Body */}
-                  <p className="text-neutral5 text-sm leading-relaxed mb-5">
-                    {callout.body}
-                  </p>
+                  <p className="text-neutral5 text-sm leading-relaxed mb-5"
+                     dangerouslySetInnerHTML={{ __html: callout.body }}
+                  />
 
-                  {/* Badge */}
-                  <span className={`inline-flex items-center px-3 py-1.5 rounded-full
-                                   text-xs font-bold tracking-wide ${colors.badge}`}>
-                    {callout.badge}
-                  </span>
+                  {/* Badge + Expandable Pill */}
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className={`inline-flex items-center px-3 py-1.5 rounded-full
+                                     text-xs font-bold tracking-wide ${colors.badge}`}>
+                      {callout.badge}
+                    </span>
+
+                    {callout.expandableContent && (
+                      <button
+                        onClick={() => setExpandedId(expandedId === callout.id ? null : callout.id)}
+                        className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full
+                                   text-xs font-bold tracking-wide border border-brandBlue/30
+                                   text-brandBlue bg-white hover:bg-brandBlue/5
+                                   cursor-pointer transition-colors duration-200"
+                      >
+                        INTERNSHIP DETAILS
+                        <ChevronDown
+                          className={`w-3.5 h-3.5 transition-transform duration-300 ${
+                            expandedId === callout.id ? 'rotate-180' : ''
+                          }`}
+                          strokeWidth={2.5}
+                        />
+                      </button>
+                    )}
+                  </div>
                 </div>
               </article>
             );
           })}
         </div>
+
+        {/* Expandable Panel — full width below both cards */}
+        {expandableCallout && (
+          <div
+            className={`overflow-hidden transition-all duration-300 ease-in-out ${
+              isExpanded
+                ? 'max-h-[4000px] opacity-100 mt-6'
+                : 'max-h-0 opacity-0 mt-0'
+            }`}
+          >
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+              <div className="h-1.5 bg-gradient-to-r from-brandBlue to-navy" />
+              <div className="p-6 md:p-8">
+                <div
+                  className="text-sm text-neutral5 leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: expandableCallout.expandableContent! }}
+                />
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

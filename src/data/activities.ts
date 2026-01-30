@@ -359,6 +359,7 @@ export interface ActivityPageData extends Activity {
     badge: string;
     icon: 'briefcase' | 'sparkles';
     gradient: 'blue' | 'warm';
+    expandableContent?: string;
   }>;
 
   // Meta/SEO
