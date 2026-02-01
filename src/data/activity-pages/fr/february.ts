@@ -139,7 +139,7 @@ Expliquez en quoi consiste le travail de cette personne. <strong>Comment ce rôl
       },
       {
         title: "Étape 6 : Soumettez votre vidéo",
-        details: `<strong>Créez une vidéo de 60 à 90 secondes qui couvre les étapes 1 à 5.</strong>
+        details: `<strong>Créez une vidéo de deux minutes ou moins qui couvre les étapes 1 à 5.</strong>
 
 Votre vidéo devrait inclure :
 • Le risque climatique que vous avez choisi et pourquoi
@@ -181,18 +181,18 @@ Testez votre lien dans une fenêtre de navigation privée avant de le soumettre.
       {
         category: 'Communication et clarté',
         weight: 25,
-        description: 'Qualité audio et visuelle claire, organisation logique, enchaînement fluide et respect du format de 60 à 90 secondes.'
+        description: 'Qualité audio et visuelle claire, organisation logique, enchaînement fluide et respect du format de deux minutes maximum.'
       },
       {
         category: 'Consultez la grille d\'évaluation détaillée ici',
         weight: 0,
         description: '',
         isLink: true,
-        url: 'https://claude.ai/public/artifacts/8d611e20-e019-4bf6-8869-240148d090e6'
+        url: 'https://claude.ai/public/artifacts/c075b26b-8b1e-49b0-8094-9639a06e7ee7'
       }
     ],
     totalPoints: 100,
-    detailedRubricUrl: 'https://claude.ai/public/artifacts/8d611e20-e019-4bf6-8869-240148d090e6'
+    detailedRubricUrl: 'https://claude.ai/public/artifacts/c075b26b-8b1e-49b0-8094-9639a06e7ee7'
   },
 
   submission: {
@@ -224,7 +224,7 @@ Testez votre lien dans une fenêtre de navigation privée avant de le soumettre.
     },
     {
       question: 'Qu\'est-ce que je dois soumettre exactement?',
-      answer: `Il vous est demandé de soumettre une vidéo de 60 à 90 secondes qui met en valeur vos recherches des étapes 1 à 5. Votre vidéo devrait couvrir : le risque climatique que vous avez choisi, un exemple canadien réel appuyé par des données, la façon dont l'assurance protège les communautés, une carrière en assurance mise en lumière et vos réflexions sur les perspectives d'avenir. Assurez-vous que le lien de votre vidéo dispose des paramètres de partage appropriés.`
+      answer: `Il vous est demandé de soumettre une vidéo de deux minutes ou moins qui met en valeur vos recherches des étapes 1 à 5. Votre vidéo devrait couvrir : le risque climatique que vous avez choisi, un exemple canadien réel appuyé par des données, la façon dont l'assurance protège les communautés, une carrière en assurance mise en lumière et vos réflexions sur les perspectives d'avenir. Assurez-vous que le lien de votre vidéo dispose des paramètres de partage appropriés.`
     },
     {
       question: 'Puis-je soumettre plus d\'une vidéo?',

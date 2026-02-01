@@ -139,7 +139,7 @@ Research what someone in this role does for work. <strong>How does their work co
       },
       {
         title: "Step 6: Submit Your Video",
-        details: `<strong>Create a 60-90 second video covering Steps 1-5.</strong>
+        details: `<strong>Create a video that is two minutes or less, covering Steps 1-5.</strong>
 
 Your video should include:
 • Your chosen climate risk and why you picked it
@@ -181,18 +181,18 @@ Test your link in an incognito browser window before submitting. If it works the
       {
         category: 'Communication & Clarity',
         weight: 25,
-        description: 'Clear audio/visuals with logical organization, smooth flow, and meets 60-90 second requirement'
+        description: 'Clear audio/visuals with logical organization, smooth flow, and meets two-minute maximum requirement'
       },
       {
         category: 'View Detailed Evaluation Rubric Here',
         weight: 0,
         description: '',
         isLink: true,
-        url: 'https://claude.ai/public/artifacts/8d611e20-e019-4bf6-8869-240148d090e6'
+        url: 'https://claude.ai/public/artifacts/c075b26b-8b1e-49b0-8094-9639a06e7ee7'
       }
     ],
     totalPoints: 100,
-    detailedRubricUrl: 'https://claude.ai/public/artifacts/8d611e20-e019-4bf6-8869-240148d090e6'
+    detailedRubricUrl: 'https://claude.ai/public/artifacts/c075b26b-8b1e-49b0-8094-9639a06e7ee7'
   },
 
   submission: {
@@ -224,7 +224,7 @@ Test your link in an incognito browser window before submitting. If it works the
     },
     {
       question: 'What am I actually being asked to submit?',
-      answer: `You're being asked to submit a 60 to 90 second video highlighting your research from steps 1 through 5. Your video should cover: your chosen climate risk, a real Canadian example with data, how insurance protects communities, an insurance career spotlight, and your thoughts on the future. Make sure your video link has proper sharing settings.`
+      answer: `You're being asked to submit a video that is two minutes or less highlighting your research from steps 1 through 5. Your video should cover: your chosen climate risk, a real Canadian example with data, how insurance protects communities, an insurance career spotlight, and your thoughts on the future. Make sure your video link has proper sharing settings.`
     },
     {
       question: 'Can I submit more than one video?',
