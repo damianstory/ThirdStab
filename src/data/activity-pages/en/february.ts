@@ -337,7 +337,7 @@ Test your link in an incognito browser window before submitting. If it works the
     {
       id: 'internship',
       eyebrow: 'EXCLUSIVE OPPORTUNITY',
-      headline: 'Win a Paid Summer Internship',
+      headline: 'Earn a Paid Summer Internship',
       subhead: 'Zurich Canada • Summer 2026',
       body: 'One exceptional Grade 12 student will be selected for a paid internship at Zurich Canada in their <strong>Toronto office</strong>. This is your chance to get real-world experience in insurance and risk management.',
       badge: '1 SPOT AVAILABLE',
@@ -393,7 +393,7 @@ Test your link in an incognito browser window before submitting. If it works the
 
         <h4 style="font-size:1rem;font-weight:700;margin-bottom:0.5rem;color:#22224C;">How to Apply</h4>
         <p style="margin-bottom:0.75rem;">If you're in grade 12, able to work in Toronto this summer, and have read and understood the internship overview above and want to apply, you will need to submit the February Industry Immersion Series activity before February 28th, 2026.</p>
-        <p style="margin-bottom:0.75rem;">Whether or not your video is selected to receive one of the monthly micro grants has nothing to do with who receives the internship.</p>
+        <p style="margin-bottom:0.75rem;">Whether or not your video is selected to receive one of the monthly micro grants has nothing to do with who receives the internship. However, if you don't submit the February activity in February, you will not be eligible to apply for the internship.</p>
         <p>If you submit your Industry Immersion Series video by February 28th and you're in grade 12, myBlueprint will email you in March and ask for your resume, cover letter, and why you're interested specifically in this role. That information will be shared with the Zurich Canada team, and they will be making a decision shortly afterwards about who they want to interview and potentially bring on for the summer internship.</p>
       `,
     },
