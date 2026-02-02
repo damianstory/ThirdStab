@@ -35,7 +35,7 @@ export const februaryActivity: ActivityPageData = {
   },
 
   howThisWorksVideo: {
-    embedUrl: 'https://www.youtube.com/embed/placeholder',
+    embedUrl: 'https://www.youtube.com/embed/C8vCl6AaGCs',
     title: 'How this Works - February Challenge'
   },
 
