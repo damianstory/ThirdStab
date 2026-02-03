@@ -381,7 +381,7 @@ Testez votre lien dans une fenêtre de navigation privée avant de le soumettre.
           <li style="margin-bottom:0.25rem;">Strong written and verbal communication skills</li>
           <li style="margin-bottom:0.25rem;">Self-motivated, punctual, professional and able to work independently</li>
         </ul>
-        <p style="margin-bottom:1rem;">At Zurich Canada, we are committed to pay equity. We determine compensation based on objective criteria such as skills, experience, and internal equity. The salary for this position is $18.50 per hour.</p>
+        <p style="margin-bottom:1rem;">At Zurich Canada, we are committed to pay equity. We determine compensation based on objective criteria such as skills, experience, and internal equity. The salary for this position is $18.50 per hour, for a 37.5-hour work week.</p>
 
         <h4 style="font-size:1rem;font-weight:700;margin-bottom:0.5rem;color:#22224C;">Our Culture</h4>
         <ul style="list-style:disc;padding-left:1.25rem;margin-bottom:1rem;">
