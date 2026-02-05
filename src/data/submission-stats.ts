@@ -103,8 +103,18 @@ export const cityCoordinates: Record<string, { lat: number; lng: number }> = {
   'Melfort': { lat: 52.8564, lng: -104.6108 },
   'Kenaston': { lat: 51.5167, lng: -106.7833 },
   'Moose Jaw': { lat: 50.3934, lng: -105.5519 },
+  'Regina': { lat: 50.4452, lng: -104.6189 },
+  // Manitoba
+  'Winnipeg': { lat: 49.8951, lng: -97.1384 },
   // Northwest Territories
   'Yellowknife': { lat: 62.4540, lng: -114.3718 },
+  // Additional Ontario cities
+  'Welland': { lat: 42.9923, lng: -79.2482 },
+  'Fergus': { lat: 43.7001, lng: -80.3765 },
+  'Napanee': { lat: 44.2515, lng: -76.9510 },
+  // Additional Alberta cities
+  'Grande Prairie': { lat: 55.1707, lng: -118.7946 },
+  'Lethbridge': { lat: 49.6956, lng: -112.8451 },
 };
 
 // Province name to code mapping
@@ -528,6 +538,191 @@ const rawSubmissionData: Array<{ schoolBoard: string; city: string; province: st
   { schoolBoard: 'York Region District School Board', city: 'Aurora', province: 'Ontario' },
   { schoolBoard: 'Hamilton-Wentworth District School Board', city: 'Hamilton', province: 'Ontario' },
   { schoolBoard: 'Dufferin-Peel Catholic District School Board', city: 'Mississauga', province: 'Ontario' },
+  // January 2026 submissions (153 entries)
+  // Toronto District School Board - 25 entries
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto District School Board', city: 'Toronto', province: 'Ontario' },
+  // York Region District School Board - 13 entries
+  { schoolBoard: 'York Region District School Board', city: 'Aurora', province: 'Ontario' },
+  { schoolBoard: 'York Region District School Board', city: 'Aurora', province: 'Ontario' },
+  { schoolBoard: 'York Region District School Board', city: 'Aurora', province: 'Ontario' },
+  { schoolBoard: 'York Region District School Board', city: 'Aurora', province: 'Ontario' },
+  { schoolBoard: 'York Region District School Board', city: 'Aurora', province: 'Ontario' },
+  { schoolBoard: 'York Region District School Board', city: 'Aurora', province: 'Ontario' },
+  { schoolBoard: 'York Region District School Board', city: 'Aurora', province: 'Ontario' },
+  { schoolBoard: 'York Region District School Board', city: 'Aurora', province: 'Ontario' },
+  { schoolBoard: 'York Region District School Board', city: 'Aurora', province: 'Ontario' },
+  { schoolBoard: 'York Region District School Board', city: 'Aurora', province: 'Ontario' },
+  { schoolBoard: 'York Region District School Board', city: 'Aurora', province: 'Ontario' },
+  { schoolBoard: 'York Region District School Board', city: 'Aurora', province: 'Ontario' },
+  { schoolBoard: 'York Region District School Board', city: 'Aurora', province: 'Ontario' },
+  // Peel District School Board - 11 entries
+  { schoolBoard: 'Peel District School Board', city: 'Mississauga', province: 'Ontario' },
+  { schoolBoard: 'Peel District School Board', city: 'Mississauga', province: 'Ontario' },
+  { schoolBoard: 'Peel District School Board', city: 'Mississauga', province: 'Ontario' },
+  { schoolBoard: 'Peel District School Board', city: 'Mississauga', province: 'Ontario' },
+  { schoolBoard: 'Peel District School Board', city: 'Mississauga', province: 'Ontario' },
+  { schoolBoard: 'Peel District School Board', city: 'Mississauga', province: 'Ontario' },
+  { schoolBoard: 'Peel District School Board', city: 'Mississauga', province: 'Ontario' },
+  { schoolBoard: 'Peel District School Board', city: 'Mississauga', province: 'Ontario' },
+  { schoolBoard: 'Peel District School Board', city: 'Mississauga', province: 'Ontario' },
+  { schoolBoard: 'Peel District School Board', city: 'Mississauga', province: 'Ontario' },
+  { schoolBoard: 'Peel District School Board', city: 'Mississauga', province: 'Ontario' },
+  // NL Schools - 8 entries
+  { schoolBoard: 'NLSchools', city: "St. John's", province: 'Newfoundland and Labrador' },
+  { schoolBoard: 'NLSchools', city: "St. John's", province: 'Newfoundland and Labrador' },
+  { schoolBoard: 'NLSchools', city: "St. John's", province: 'Newfoundland and Labrador' },
+  { schoolBoard: 'NLSchools', city: "St. John's", province: 'Newfoundland and Labrador' },
+  { schoolBoard: 'NLSchools', city: "St. John's", province: 'Newfoundland and Labrador' },
+  { schoolBoard: 'NLSchools', city: "St. John's", province: 'Newfoundland and Labrador' },
+  { schoolBoard: 'NLSchools', city: "St. John's", province: 'Newfoundland and Labrador' },
+  { schoolBoard: 'NLSchools', city: "St. John's", province: 'Newfoundland and Labrador' },
+  // Dufferin-Peel Catholic District School Board - 6 entries
+  { schoolBoard: 'Dufferin-Peel Catholic District School Board', city: 'Mississauga', province: 'Ontario' },
+  { schoolBoard: 'Dufferin-Peel Catholic District School Board', city: 'Mississauga', province: 'Ontario' },
+  { schoolBoard: 'Dufferin-Peel Catholic District School Board', city: 'Mississauga', province: 'Ontario' },
+  { schoolBoard: 'Dufferin-Peel Catholic District School Board', city: 'Mississauga', province: 'Ontario' },
+  { schoolBoard: 'Dufferin-Peel Catholic District School Board', city: 'Mississauga', province: 'Ontario' },
+  { schoolBoard: 'Dufferin-Peel Catholic District School Board', city: 'Mississauga', province: 'Ontario' },
+  // Toronto Catholic District School Board - 7 entries
+  { schoolBoard: 'Toronto Catholic District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto Catholic District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto Catholic District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto Catholic District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto Catholic District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto Catholic District School Board', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Toronto Catholic District School Board', city: 'Toronto', province: 'Ontario' },
+  // Edmonton Public Schools - 6 entries
+  { schoolBoard: 'Edmonton Public Schools', city: 'Edmonton', province: 'Alberta' },
+  { schoolBoard: 'Edmonton Public Schools', city: 'Edmonton', province: 'Alberta' },
+  { schoolBoard: 'Edmonton Public Schools', city: 'Edmonton', province: 'Alberta' },
+  { schoolBoard: 'Edmonton Public Schools', city: 'Edmonton', province: 'Alberta' },
+  { schoolBoard: 'Edmonton Public Schools', city: 'Edmonton', province: 'Alberta' },
+  { schoolBoard: 'Edmonton Public Schools', city: 'Edmonton', province: 'Alberta' },
+  // Durham District School Board - 7 entries
+  { schoolBoard: 'Durham District School Board', city: 'Whitby', province: 'Ontario' },
+  { schoolBoard: 'Durham District School Board', city: 'Whitby', province: 'Ontario' },
+  { schoolBoard: 'Durham District School Board', city: 'Whitby', province: 'Ontario' },
+  { schoolBoard: 'Durham District School Board', city: 'Whitby', province: 'Ontario' },
+  { schoolBoard: 'Durham District School Board', city: 'Whitby', province: 'Ontario' },
+  { schoolBoard: 'Durham District School Board', city: 'Whitby', province: 'Ontario' },
+  { schoolBoard: 'Durham District School Board', city: 'Whitby', province: 'Ontario' },
+  // Halton District School Board - 5 entries
+  { schoolBoard: 'Halton District School Board', city: 'Burlington', province: 'Ontario' },
+  { schoolBoard: 'Halton District School Board', city: 'Burlington', province: 'Ontario' },
+  { schoolBoard: 'Halton District School Board', city: 'Burlington', province: 'Ontario' },
+  { schoolBoard: 'Halton District School Board', city: 'Burlington', province: 'Ontario' },
+  { schoolBoard: 'Halton District School Board', city: 'Burlington', province: 'Ontario' },
+  // Winnipeg School Division - 3 entries
+  { schoolBoard: 'Winnipeg School Division', city: 'Winnipeg', province: 'Manitoba' },
+  { schoolBoard: 'Winnipeg School Division', city: 'Winnipeg', province: 'Manitoba' },
+  { schoolBoard: 'Winnipeg School Division', city: 'Winnipeg', province: 'Manitoba' },
+  // Waterloo Region District School Board - 3 entries
+  { schoolBoard: 'Waterloo Region District School Board', city: 'Kitchener', province: 'Ontario' },
+  { schoolBoard: 'Waterloo Region District School Board', city: 'Kitchener', province: 'Ontario' },
+  { schoolBoard: 'Waterloo Region District School Board', city: 'Kitchener', province: 'Ontario' },
+  // Surrey School District - 3 entries
+  { schoolBoard: 'Surrey School District', city: 'Surrey', province: 'British Columbia' },
+  { schoolBoard: 'Surrey School District', city: 'Surrey', province: 'British Columbia' },
+  { schoolBoard: 'Surrey School District', city: 'Surrey', province: 'British Columbia' },
+  // Hamilton-Wentworth Catholic District School Board - 2 entries
+  { schoolBoard: 'Hamilton-Wentworth Catholic District School Board', city: 'Hamilton', province: 'Ontario' },
+  { schoolBoard: 'Hamilton-Wentworth Catholic District School Board', city: 'Hamilton', province: 'Ontario' },
+  // Grand Erie District School Board - 3 entries
+  { schoolBoard: 'Grand Erie District School Board', city: 'Brantford', province: 'Ontario' },
+  { schoolBoard: 'Grand Erie District School Board', city: 'Brantford', province: 'Ontario' },
+  { schoolBoard: 'Grand Erie District School Board', city: 'Brantford', province: 'Ontario' },
+  // Ottawa Catholic School Board - 3 entries
+  { schoolBoard: 'Ottawa Catholic School Board', city: 'Ottawa', province: 'Ontario' },
+  { schoolBoard: 'Ottawa Catholic School Board', city: 'Ottawa', province: 'Ontario' },
+  { schoolBoard: 'Ottawa Catholic School Board', city: 'Ottawa', province: 'Ontario' },
+  // Conseil scolaire catholique MonAvenir - 3 entries
+  { schoolBoard: 'Conseil scolaire catholique MonAvenir', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Conseil scolaire catholique MonAvenir', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Conseil scolaire catholique MonAvenir', city: 'Toronto', province: 'Ontario' },
+  // Calgary Board of Education - 2 entries
+  { schoolBoard: 'Calgary Board of Education', city: 'Calgary', province: 'Alberta' },
+  { schoolBoard: 'Calgary Board of Education', city: 'Calgary', province: 'Alberta' },
+  // Hamilton-Wentworth District School Board - 2 entries
+  { schoolBoard: 'Hamilton-Wentworth District School Board', city: 'Hamilton', province: 'Ontario' },
+  { schoolBoard: 'Hamilton-Wentworth District School Board', city: 'Hamilton', province: 'Ontario' },
+  // London District Catholic School Board - 2 entries
+  { schoolBoard: 'London District Catholic School Board', city: 'London', province: 'Ontario' },
+  { schoolBoard: 'London District Catholic School Board', city: 'London', province: 'Ontario' },
+  // Thames Valley District School Board - 2 entries
+  { schoolBoard: 'Thames Valley District School Board', city: 'London', province: 'Ontario' },
+  { schoolBoard: 'Thames Valley District School Board', city: 'London', province: 'Ontario' },
+  // Heritage Christian Online School - 2 entries
+  { schoolBoard: 'Heritage Christian Online School', city: 'Kelowna', province: 'British Columbia' },
+  { schoolBoard: 'Heritage Christian Online School', city: 'Kelowna', province: 'British Columbia' },
+  // Niagara Catholic District School Board - 2 entries
+  { schoolBoard: 'Niagara Catholic District School Board', city: 'Welland', province: 'Ontario' },
+  { schoolBoard: 'Niagara Catholic District School Board', city: 'Welland', province: 'Ontario' },
+  // Brant Haldimand Norfolk Catholic District School Board - 2 entries
+  { schoolBoard: 'Brant Haldimand Norfolk Catholic District School Board', city: 'Brantford', province: 'Ontario' },
+  { schoolBoard: 'Brant Haldimand Norfolk Catholic District School Board', city: 'Brantford', province: 'Ontario' },
+  // Upper Grand District School Board - 2 entries
+  { schoolBoard: 'Upper Grand District School Board', city: 'Fergus', province: 'Ontario' },
+  { schoolBoard: 'Upper Grand District School Board', city: 'Fergus', province: 'Ontario' },
+  // Foundations for the Future Charter Academy - 2 entries
+  { schoolBoard: 'Foundations for the Future Charter Academy', city: 'Calgary', province: 'Alberta' },
+  { schoolBoard: 'Foundations for the Future Charter Academy', city: 'Calgary', province: 'Alberta' },
+  // Anglophone East School District - 2 entries
+  { schoolBoard: 'Anglophone East School District', city: 'Moncton', province: 'New Brunswick' },
+  { schoolBoard: 'Anglophone East School District', city: 'Moncton', province: 'New Brunswick' },
+  // York Catholic District School Board - 2 entries
+  { schoolBoard: 'York Catholic District School Board', city: 'Aurora', province: 'Ontario' },
+  { schoolBoard: 'York Catholic District School Board', city: 'Aurora', province: 'Ontario' },
+  // Algonquin and Lakeshore Catholic District School Board - 2 entries
+  { schoolBoard: 'Algonquin and Lakeshore Catholic District School Board', city: 'Napanee', province: 'Ontario' },
+  { schoolBoard: 'Algonquin and Lakeshore Catholic District School Board', city: 'Napanee', province: 'Ontario' },
+  // District School Board Ontario North East - 2 entries
+  { schoolBoard: 'District School Board Ontario North East', city: 'Timmins', province: 'Ontario' },
+  { schoolBoard: 'District School Board Ontario North East', city: 'Timmins', province: 'Ontario' },
+  // Greater Essex County District School Board - 2 entries
+  { schoolBoard: 'Greater Essex County District School Board', city: 'Windsor', province: 'Ontario' },
+  { schoolBoard: 'Greater Essex County District School Board', city: 'Windsor', province: 'Ontario' },
+  // Single entry boards (1 each)
+  { schoolBoard: 'Durham Catholic District School Board', city: 'Oshawa', province: 'Ontario' },
+  { schoolBoard: 'Waterloo Catholic District School Board', city: 'Kitchener', province: 'Ontario' },
+  { schoolBoard: 'Edmonton Catholic Schools', city: 'Edmonton', province: 'Alberta' },
+  { schoolBoard: 'School District 81 Fort Nelson', city: 'Fort Nelson', province: 'British Columbia' },
+  { schoolBoard: 'Grande Prairie Public School Division', city: 'Grande Prairie', province: 'Alberta' },
+  { schoolBoard: 'St. Thomas Aquinas Roman Catholic Schools', city: 'Leduc', province: 'Alberta' },
+  { schoolBoard: 'STEM Innovation Academy', city: 'Calgary', province: 'Alberta' },
+  { schoolBoard: "St. Jude's Academy", city: 'Mississauga', province: 'Ontario' },
+  { schoolBoard: 'Conseil scolaire Viamonde', city: 'Toronto', province: 'Ontario' },
+  { schoolBoard: 'Strait Regional Centre for Education', city: 'Port Hawkesbury', province: 'Nova Scotia' },
+  { schoolBoard: 'Palliser Regional Schools', city: 'Lethbridge', province: 'Alberta' },
+  { schoolBoard: 'Catholic District School Board of Eastern Ontario', city: 'Kemptville', province: 'Ontario' },
+  { schoolBoard: 'Regina Catholic School Division', city: 'Regina', province: 'Saskatchewan' },
+  { schoolBoard: 'Simcoe County District School Board', city: 'Midhurst', province: 'Ontario' },
+  { schoolBoard: 'Upper Canada District School Board', city: 'Brockville', province: 'Ontario' },
+  { schoolBoard: 'Kawartha Pine Ridge District School Board', city: 'Peterborough', province: 'Ontario' },
+  { schoolBoard: "Conseil scolaire de district catholique de l'Est ontarien", city: "L'Orignal", province: 'Ontario' },
 ];
 
 // Parse raw data into typed submissions

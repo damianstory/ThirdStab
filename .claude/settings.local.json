@@ -97,7 +97,8 @@
       "Bash(brew update:*)",
       "Bash(brew info:*)",
       "WebFetch(domain:www.zurichcanada.com)",
-      "Bash(textutil:*)"
+      "Bash(textutil:*)",
+      "Bash(lsof:*)"
     ],
     "deny": []
   }

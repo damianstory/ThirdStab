@@ -15,14 +15,14 @@ const content = {
   },
 };
 
-// Grade distribution data
+// Grade distribution data (original 386 + January 153 = 539 total)
 const gradeData = [
-  { grade: 7, count: 45 },
-  { grade: 8, count: 95 },
-  { grade: 9, count: 20 },
-  { grade: 10, count: 89 },
-  { grade: 11, count: 85 },
-  { grade: 12, count: 96 },
+  { grade: 7, count: 55 },   // 45 + 10
+  { grade: 8, count: 111 },  // 95 + 16
+  { grade: 9, count: 35 },   // 20 + 15
+  { grade: 10, count: 135 }, // 89 + 46
+  { grade: 11, count: 115 }, // 85 + 30
+  { grade: 12, count: 132 }, // 96 + 36
 ];
 
 export function GradeDistribution({ language }: GradeDistributionProps) {
