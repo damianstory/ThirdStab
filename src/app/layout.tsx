@@ -4,6 +4,7 @@ import "./globals.css";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { Suspense } from "react";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import { Agentation } from "agentation";
 
 const openSans = Open_Sans({ subsets: ["latin"] });
 
@@ -41,6 +42,7 @@ export default function RootLayout({
           </Suspense>
           {children}
         </LanguageProvider>
+        {process.env.NODE_ENV === "development" && <Agentation />}
       </body>
     </html>
   );

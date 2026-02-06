@@ -336,6 +336,15 @@ export interface ActivityPageData extends Activity {
   resourcesTitle?: string; // Optional custom title for Resources section
   resourcesSubtitle?: string; // Optional custom subtitle for Resources section
 
+  // Topic Clusters (optional - for activities with grouped concept exploration)
+  topicClusters?: Array<{
+    id: string;
+    number: number;
+    title: string;
+    concepts: string;
+    detailedContent: string; // HTML content with guidance on what to cover
+  }>;
+
   // Promotional Banner (optional - for time-sensitive campaigns)
   promotionalBanner?: {
     imageEn: string;

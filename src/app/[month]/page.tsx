@@ -13,6 +13,7 @@ import SponsorResources from '@/components/activity/SponsorResources';
 import SkillsForSuccess from '@/components/activity/SkillsForSuccess';
 import IncentivesAndNavigation from '@/components/activity/IncentivesAndNavigation';
 import SpotlightCallouts from '@/components/activity/SpotlightCallouts';
+import TopicClusters from '@/components/activity/TopicClusters';
 
 interface ActivityPageProps {
   params: {
@@ -111,6 +112,9 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
           <div id="activity-details">
             <ActivityDetailAndRubric activity={activityPageData} />
           </div>
+          {activityPageData.topicClusters && activityPageData.topicClusters.length > 0 && (
+            <TopicClusters clusters={activityPageData.topicClusters} />
+          )}
           <div id="sponsor-resources">
             <SponsorResources
               activity={activityPageData}

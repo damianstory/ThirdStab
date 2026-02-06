@@ -98,7 +98,9 @@
       "Bash(brew info:*)",
       "WebFetch(domain:www.zurichcanada.com)",
       "Bash(textutil:*)",
-      "Bash(lsof:*)"
+      "Bash(lsof:*)",
+      "WebFetch(domain:www.hrblock.ca)",
+      "Bash(pgrep:*)"
     ],
     "deny": []
   }

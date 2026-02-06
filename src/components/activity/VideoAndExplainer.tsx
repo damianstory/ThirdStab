@@ -11,7 +11,7 @@ export default function VideoAndExplainer({ activity }: VideoAndExplainerProps) 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Video Section - Left Column */}
           <div className="order-1">
-            <h3 className="brand-h3 text-[#22224C] mb-4">
+            <h3 className="brand-h3 text-[#22224C] mb-4 whitespace-pre-line">
               {activity.video.title}
             </h3>
             <p className="brand-body2 text-neutral-500 mb-6">
