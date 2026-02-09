@@ -132,32 +132,70 @@ export const marchActivity: ActivityPageData = {
 
   faqs: [
     {
-      question: 'Do I need to be a tax expert to participate?',
-      answer: `Not at all! This challenge is about learning alongside creating. You'll use H&R Block's expert resources to learn about your chosen topic, then teach what you learned. You're not expected to know this stuff already — that's the whole point.`
+      question: 'How does this March Activity challenge work?',
+      answer: 'Carefully read the Activity Details steps 1-5 to understand what is being asked of you in this activity. You can also watch the How this Works video for a detailed overview.'
     },
     {
-      question: 'Do I have to cover all concepts in my cluster?',
-      answer: `Yes — each cluster has 2-3 related concepts, and your video should cover all of them. More importantly, you should explain how the concepts connect to each other. That's what makes a cluster different from just random tax facts.`
+      question: 'What am I actually being asked to submit?',
+      answer: `You're being asked to submit a 60 to 90 second video highlighting the research you did from steps 1 through 5 in this specific activity. It's important that the video you create is shared as a clickable link, not something that we need to download, and that you've made sure that the sharing settings are set up in a way that we have access to view the video. It's a good idea to test this before submitting.`
     },
     {
-      question: 'Can I use props, diagrams, or visual aids?',
-      answer: `Absolutely! In fact, we encourage it. Visual aids can make tax concepts much easier to understand. Whiteboard drawings, screen recordings, animations, props — whatever helps you explain clearly.`
+      question: 'Can I submit more than one video?',
+      answer: `Yes, you can complete the activity multiple times for different roles within the agriculture sector, though students can only win one micro grant per activity. We'd encourage you to focus on quality, not quantity.`
     },
     {
-      question: 'What if I make a mistake about tax information?',
-      answer: `Focus on the key concepts from the H&R Block resources provided. These are written by tax experts and are your source of truth. If you stick close to what those articles say, you'll be accurate. When in doubt, keep it simple and stick to the basics.`
+      question: 'Is there a preferred style for the video?',
+      answer: `No, it's whatever feels authentic and engaging to you. It can be a Tik Tok style video with lots of different cuts and background music or more documentary style - whatever you will enjoy making more, and clearly communicates the requested information from steps 1-5.`
     },
     {
-      question: 'Can I work with a partner?',
-      answer: `This is designed as an individual challenge. Each student should submit their own video. However, you can definitely practice explaining concepts to friends or family before recording — that's actually great preparation!`
+      question: 'Does it matter what tool I use to make the video?',
+      answer: `Nope, it doesn't matter at all what tool you use. There are lots of free tools available to make videos today. Check with your school to see what they already have access to. For example, Canva is a great tool to be able to create videos with.`
     },
     {
-      question: 'Do I need to show my face in the video?',
-      answer: `No, you don't have to show your face. Voice-over with visuals, animations, or screen recordings are perfectly acceptable. The important thing is that your explanation is clear and engaging, not how you present yourself on camera.`
+      question: 'What skills will I be developing by doing this activity?',
+      answer: `Lots of skills like research, critical thinking, communication, content creation, and many others. It would be a good idea to add the completed video to your myBlueprint portfolio and reflect on what skills you feel like you've developed as part of completing this activity.`
     },
     {
-      question: 'What makes a good tax education video?',
-      answer: `A good video clearly explains the concepts, uses relatable examples, shows how the concepts connect, and leaves the viewer actually understanding something they didn't before. Think about what would have helped YOU understand this topic — then make that video.`
+      question: 'Who is reviewing the submissions?',
+      answer: `Submissions will be reviewed by a team of representatives from myBlueprint. We may, if needed, collaborate with representatives from H&R Block Canada.`
+    },
+    {
+      question: 'Can students submit their videos in French?',
+      answer: `Yes, videos will be accepted in either English or French.`
+    },
+    {
+      question: 'How (and when) are the twenty monthly successful submissions selected?',
+      answer: `Depending on the volume of submissions, we plan to have selected, and be able to announce winners by the midpoint of the following month. So for example, with this activity, we hope to be able to announce the March winners by mid-April.`
+    },
+    {
+      question: 'Should I add these submissions to my portfolio in myBlueprint?',
+      answer: `Yeah, that's a great idea, along with a reflection of what you learned from doing this activity and what you found interesting. As a heads up, we'll also be asking students to submit evidence of their completed activities through a myBlueprint portfolio if you plan on applying for one of the Series Completion incentives at the end of the year.`
+    },
+    {
+      question: 'Do I need to do this in class, or can I just do this on my own?',
+      answer: `You can absolutely complete this activity on your own. That being said, you should absolutely communicate with your teachers (and parents) that you're doing this and see if you can potentially earn credit for the work that you're doing for this activity.`
+    },
+    {
+      question: 'Can I do this as a group project?',
+      answer: `The March challenge has been designed as an individual activity.`
+    },
+    {
+      question: 'Can I still submit the activity after the March 31st deadline?',
+      answer: `Yes, you can still submit monthly activities after the deadline. However, any activity submitted after the deadline is not eligible for that month's pool of micro grants. It still makes sense to complete them even after the deadline so that you can potentially earn one of the Series Completion incentives. Those only require all activities to be completed, not necessarily completed within the month of the activity.`
+    },
+    {
+      question: 'Will teachers be able to see who has submitted an entry?',
+      answer: `Teachers won't be able to see through myBlueprint which students have submitted activities or not. However, we will create reports that will be shared with your myBlueprint lead at the school board level who can share specifics with you upon request.`
+    },
+    {
+      question: 'What data is being collected and by who?',
+      answer: `myBlueprint is solely responsible for running the Industry Immersion Series.
+
+Meaning that only myBlueprint is collecting any information related to this Series. No personally identifiable information is being shared with any 3rd parties.
+
+We will publish de-identified (anonymous summary data) information to provide updates on how the Series is going. For example, the number of activity submissions received for each month, which province they're coming from, and communicate with our school board partners about school-specific participation.
+
+<a href="https://docs.google.com/document/d/1rHxZ4QntHN0fo7rqi7uKeDQakupNtE3KtT8p3lFPur4/edit?tab=t.0" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Click here to see the questions students are being asked</a> to answer when they submit their completed activity.`
     }
   ],
 
