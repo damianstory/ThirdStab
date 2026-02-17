@@ -99,7 +99,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
   if (activityPageData) {
     return (
       <>
-        <ActivityHeader />
+        <ActivityHeader sponsor={activityPageData.sponsor} />
         <main className="pt-16">
           <ActivityHero activity={activityPageData} />
           {activityPageData.promotionalBanner && (

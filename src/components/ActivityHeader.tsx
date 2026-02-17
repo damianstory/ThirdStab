@@ -4,7 +4,17 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useLanguageContext } from '@/contexts/LanguageContext';
 
-export default function ActivityHeader() {
+interface SponsorInfo {
+  name: string;
+  logo: string;
+  logoType?: string;
+}
+
+interface ActivityHeaderProps {
+  sponsor?: SponsorInfo;
+}
+
+export default function ActivityHeader({ sponsor }: ActivityHeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const { language, toggleLanguage, t, isLoading } = useLanguageContext();
@@ -169,7 +179,7 @@ export default function ActivityHeader() {
     <header className="fixed top-0 w-full bg-white shadow-md z-50">
       <nav className="w-full px-4 sm:px-6 lg:px-8">
         {/* Desktop Layout - Three Sections */}
-        <div className="hidden xl:grid xl:grid-cols-[auto_1fr_auto] items-center h-16 pt-1">
+        <div className="hidden xl:grid xl:grid-cols-[auto_1fr_auto] items-center h-16">
           {/* Left Section - myBlueprint Logo */}
           <div className="flex items-center">
             <Link href={homePath} className="inline-block">
@@ -199,20 +209,30 @@ export default function ActivityHeader() {
             </div>
           </div>
 
-          {/* Right Section - Industry Immersion Series Logo */}
-          <div className="flex items-center justify-end">
+          {/* Right Section - Sponsor Logo (if present) + Industry Immersion Series Logo */}
+          <div className="flex items-center justify-end pb-1">
+            {sponsor && (
+              <>
+                <img
+                  src="/hrblock-logo-square.png"
+                  alt={sponsor.name}
+                  className="h-10"
+                />
+                <span className="text-gray-400 text-base font-light ml-6 -mr-1">×</span>
+              </>
+            )}
             <Link href={homePath} className="inline-block">
               <img
                 src="/industry-immersion-logo.png"
                 alt="Industry Immersion Series"
-                className="h-11 -mt-1"
+                className="h-[61px]"
               />
             </Link>
           </div>
         </div>
 
         {/* Mobile Layout - Three Sections */}
-        <div className="xl:hidden flex items-center justify-between h-14 sm:h-16 pt-1">
+        <div className="xl:hidden flex items-center justify-between h-14 sm:h-16">
           {/* Left - myBlueprint Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link href={homePath} className="inline-block">
@@ -265,13 +285,23 @@ export default function ActivityHeader() {
             </button>
           </div>
 
-          {/* Right - Industry Immersion Series Logo */}
-          <div className="flex-shrink-0 flex items-center">
+          {/* Right - Sponsor Logo (if present) + Industry Immersion Series Logo */}
+          <div className="flex-shrink-0 flex items-center pb-1">
+            {sponsor && (
+              <>
+                <img
+                  src="/hrblock-logo-square.png"
+                  alt={sponsor.name}
+                  className="h-8"
+                />
+                <span className="text-gray-400 text-sm font-light ml-5 -mr-0.5">×</span>
+              </>
+            )}
             <Link href={homePath} className="inline-block">
               <img
                 src="/industry-immersion-logo.png"
                 alt="Industry Immersion Series"
-                className="h-9 -mt-1"
+                className="h-[49px]"
               />
             </Link>
           </div>

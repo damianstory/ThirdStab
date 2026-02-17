@@ -23,14 +23,15 @@ export const marchActivity: ActivityPageData = {
   // Extended page content
   hero: {
     backgroundImage: '/march-hero.jpg',
+    backgroundPosition: 'center top',
     tagline: 'Learn the life skill everyone wishes they\'d learned in school',
-    introText: `Everyone loves to complain that schools don't teach real life skills — like how to do your taxes. Well, here's your chance to actually learn it. And get paid for it.\n\nIn this challenge, you'll pick a cluster of related tax concepts, research them using H&R Block's expert resources, and create a short video teaching what you learned. You'll walk away actually understanding how Canadian taxes work — something most adults still struggle with.`
+    introText: `A lot of us wish school had spent a little more time on real life skills – like, how to do your taxes. So, here's your chance to finally learn it… and get paid for it.\n\nIn this challenge, you'll pick a cluster of related tax concepts, explore them using H&R Block Canada's expert resources, and create a short video teaching what you learned. By the end, you'll have a clear, confident understanding of how Canadian taxes work – a valuable skill most adults wish they had.`
   },
 
   video: {
-    embedUrl: 'https://www.youtube.com/embed/aqHf3D6BILk',
+    embedUrl: 'https://hrblockca.sharepoint.com/sites/Marketing2/_layouts/15/embed.aspx?UniqueId=93881628-6b11-442a-9a71-bb65b42247db&embed=%7B%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create',
     title: 'Teach Me Taxes\nChallenge Overview',
-    description: `Watch this video to understand what the Teach Me Taxes Challenge is all about and how you can participate to learn valuable tax literacy skills while earning micro grants.`
+    description: `Watch this video to learn what the Teach Me Taxes Challenge is all about and how H&R Block Canada is helping young people build real financial skills. You'll see how you can take part, learn the basics of income tax, and even earn micro grants while boosting your financial confidence.`
   },
 
   howThisWorksVideo: {
@@ -69,11 +70,11 @@ export const marchActivity: ActivityPageData = {
     steps: [
       {
         title: "Step 1: Choose Your Tax Topic Cluster",
-        details: "Look at the 6 topic clusters below and <strong>pick the one that interests you most</strong>.\n\nEach cluster contains 2-3 related tax concepts that connect to each other. Your job will be to understand all the concepts in your chosen cluster and explain how they relate.\n\nTip: Pick a topic that feels relevant to your life right now or your near future. If you have a part-time job, Cluster 1 might click. Planning for college? Cluster 6 could be perfect."
+        details: "Look at the 6 topic clusters below and <strong>pick the one that interests you most</strong>.\n\nEach cluster contains 2-3 related tax concepts that connect to each other. Your job will be to understand all the concepts in your chosen cluster and explain how they relate.\n\nTip: Pick a topic that feels relevant to your life right now or your near future. If you have a part-time job, Cluster 1 might interest you. If you're planning for college, Cluster 6 could be perfect."
       },
       {
-        title: "Step 2: Research Using H&R Block Resources",
-        details: "Use the <strong>H&R Block articles in the Resources section below</strong> to learn about your chosen cluster's concepts.\n\nThese articles are written by tax experts and are specifically designed to help students and young adults understand taxes. Take notes as you read — you'll need to explain these concepts clearly in your video.\n\nPro tip: Don't just skim. Really try to understand WHY these concepts matter and HOW they connect to each other within your cluster."
+        title: "Step 2: Research Using H&R Block Canada Resources",
+        details: "Use the <strong>H&R Block Canada articles in the Resources section below</strong> to learn about your chosen cluster's concepts.\n\nThese articles are written by Tax Experts and are specifically designed to help students and young adults understand taxes. Take notes as you read — you'll need to explain these concepts clearly in your video.\n\nPro tip: Don't just skim. Really try to understand WHY these concepts matter and HOW they connect to each other within your cluster."
       },
       {
         title: "Step 3: Plan Your Explanation",
@@ -85,7 +86,7 @@ export const marchActivity: ActivityPageData = {
       },
       {
         title: "Step 5: Review & Submit",
-        details: "Before submitting, review your video:\n\n✓ Is the information accurate? (Double-check against H&R Block resources)\n✓ Did you cover all concepts in your cluster?\n✓ Did you explain how the concepts connect?\n✓ Would someone watching actually learn from this?\n✓ Is your video between 90-120 seconds?\n\n<strong>Make sure your video link has proper sharing settings</strong> — test it in an incognito browser window before submitting.\n\n<em>Note: Submissions are not yet open. Check back when the March challenge goes live!</em>"
+        details: "Before submitting, review your video:\n\n✓ Is the information accurate? (Double-check against H&R Block Canada resources)\n✓ Did you cover all concepts in your cluster?\n✓ Did you explain how the concepts connect?\n✓ Would someone watching actually learn from this?\n✓ Is your video between 90-120 seconds?\n\n<strong>Make sure your video link has proper sharing settings</strong> — test it in an incognito browser window before submitting.\n\n<em>Note: Submissions are not yet open. Check back when the March challenge goes live!</em>"
       }
     ]
   },
@@ -141,7 +142,7 @@ export const marchActivity: ActivityPageData = {
     },
     {
       question: 'Can I submit more than one video?',
-      answer: `Yes, you can complete the activity multiple times for different roles within the agriculture sector, though students can only win one micro grant per activity. We'd encourage you to focus on quality, not quantity.`
+      answer: `Yes, you can complete the activity multiple times for different tax topics, though students can only win one micro grant per activity. We'd encourage you to focus on quality, not quantity.`
     },
     {
       question: 'Is there a preferred style for the video?',
@@ -243,7 +244,7 @@ We will publish de-identified (anonymous summary data) information to provide up
       buttonText: 'Visit Site'
     }
   ],
-  resourcesTitle: 'H&R Block Learning Resources',
+  resourcesTitle: 'H&R Block Canada Learning Resources',
   resourcesSubtitle: 'Use these expert resources to research your chosen tax topic cluster',
 
   topicClusters: [
@@ -290,7 +291,7 @@ We will publish de-identified (anonymous summary data) information to provide up
       concepts: 'Purpose of taxes, where the money goes, public services funded',
       detailedContent: `
         <h4>What to Cover in Your Video</h4>
-        <p>This cluster is about the big picture — why taxation exists and what it funds. Help viewers understand taxes as a social contract, not just money taken from them.</p>
+        <p>This cluster is about the big picture — why taxation exists and what it funds.</p>
 
         <h4>Purpose of Taxes</h4>
         <ul>
@@ -323,11 +324,11 @@ We will publish de-identified (anonymous summary data) information to provide up
     {
       id: 'cluster-3',
       number: 3,
-      title: '"Filing Your First Tax Return"',
+      title: '"Why file a tax return"',
       concepts: 'What a T4 is, why file even with low income, key deadlines',
       detailedContent: `
         <h4>What to Cover in Your Video</h4>
-        <p>This cluster is practical — help viewers understand the basics of filing their first tax return. Focus on demystifying the process for someone who's never done it.</p>
+        <p>This cluster is practical — help viewers understand the basics of filing their tax return. Focus on demystifying the process for someone who's never done it.</p>
 
         <h4>What a T4 Is</h4>
         <ul>
@@ -340,8 +341,8 @@ We will publish de-identified (anonymous summary data) information to provide up
 
         <h4>Why File Even with Low Income</h4>
         <ul>
-          <li><strong>Get a refund:</strong> If taxes were deducted from your pay but you earned under the basic personal amount (~$15,000), you'll likely get that money back</li>
-          <li><strong>Unlock benefits:</strong> You can't receive GST/HST credits or other benefits without filing</li>
+          <li><strong>Get a refund:</strong> If taxes were deducted from your pay but you earned under the basic personal amount ($16,129), you'll likely get that money back</li>
+          <li><strong>Unlock benefits:</strong> You can't receive benefits or credits without filing</li>
           <li><strong>Build contribution room:</strong> Filing builds your RRSP contribution room for later</li>
           <li><strong>Establish a tax history:</strong> Some loans and applications ask for proof of income</li>
         </ul>
@@ -355,34 +356,29 @@ We will publish de-identified (anonymous summary data) information to provide up
         </ul>
 
         <h4>How These Connect</h4>
-        <p>The T4 is your starting point, the reasons to file explain the "why," and the deadlines tell the "when." Together, they give someone everything they need to know to file their first return.</p>
+        <p>The T4 is your starting point, the reasons to file explain the "why," and the deadlines tell the "when." Together, they give someone everything they need to know to file their tax return.</p>
       `
     },
     {
       id: 'cluster-4',
       number: 4,
       title: '"Free Money You Might Be Missing"',
-      concepts: 'GST/HST credit, Canada Carbon Rebate, why filing unlocks benefits',
+      concepts: 'Why filing unlocks benefits (i.e., Canada Groceries and Essentials Benefit)',
       detailedContent: `
         <h4>What to Cover in Your Video</h4>
         <p>This cluster is about benefits many young Canadians don't know they qualify for. Help viewers understand that filing their taxes can literally put money in their pocket.</p>
 
-        <h4>GST/HST Credit</h4>
+        <h4>Canada Groceries and Essentials Benefit (formerly the GST/HST credit)</h4>
         <ul>
-          <li>A tax-free quarterly payment to help offset sales taxes</li>
-          <li><strong>Who qualifies:</strong> Anyone 19+ with low-to-moderate income (most students!)</li>
-          <li><strong>How much:</strong> Up to ~$500/year depending on income and family situation</li>
+          <li>A tax-free quarterly payment to help offset rising food and basic living costs.</li>
+          <li><strong>Who qualifies:</strong> Depends on income and family situation.
+            <ul>
+              <li><strong>Single person:</strong> up to $950 this year.</li>
+              <li><strong>Family of four:</strong> up to $1,890 this year.</li>
+            </ul>
+          </li>
           <li>Payments come automatically every 3 months (Jan, Apr, Jul, Oct)</li>
           <li>You MUST file a tax return to receive it — even if you had no income</li>
-        </ul>
-
-        <h4>Canada Carbon Rebate (formerly Climate Action Incentive)</h4>
-        <ul>
-          <li>A payment to offset the cost of federal carbon pricing</li>
-          <li>Amount varies by province (some provinces don't participate)</li>
-          <li>Paid quarterly along with the GST/HST credit</li>
-          <li>Based on where you lived on December 31st</li>
-          <li>Again, you MUST file to receive it</li>
         </ul>
 
         <h4>Why Filing Unlocks Benefits</h4>
@@ -395,7 +391,7 @@ We will publish de-identified (anonymous summary data) information to provide up
         </ul>
 
         <h4>How These Connect</h4>
-        <p>Both credits are examples of benefits you can only receive by filing. The key message: filing your taxes isn't just about paying — it's often about getting money back that you're entitled to.</p>
+        <p>The Canada Groceries & Essentials Benefit is an example of a benefit you can only receive by filing. The key message: filing your taxes isn't just about paying — it's often about getting money back that you're entitled to.</p>
       `
     },
     {
@@ -410,7 +406,7 @@ We will publish de-identified (anonymous summary data) information to provide up
         <h4>TFSA (Tax-Free Savings Account) Basics</h4>
         <ul>
           <li>Money goes in after tax, but growth and withdrawals are completely tax-free</li>
-          <li><strong>Contribution room:</strong> Starts building when you turn 18 (~$6,500/year currently)</li>
+          <li><strong>Contribution room:</strong> Starts building when you turn 18 (~$7,000/year currently)</li>
           <li><strong>Flexible:</strong> Withdraw anytime without penalty, room gets added back next year</li>
           <li><strong>Great for:</strong> Short-to-medium term savings, emergency fund, any goal</li>
           <li>Unused room carries forward — if you're 20, you might have $20,000+ in room already</li>
