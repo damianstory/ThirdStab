@@ -35,7 +35,7 @@ export const marchActivity: ActivityPageData = {
 
   video: {
     embedUrl: 'https://hrblockca.sharepoint.com/sites/Marketing2/_layouts/15/embed.aspx?UniqueId=93881628-6b11-442a-9a71-bb65b42247db&embed=%7B%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create',
-    title: 'Teach Me Taxes',
+    title: 'Teach Me Taxes Challenge',
     description: `Watch this video to learn what the Teach Me Taxes Challenge is all about and how H&R Block Canada is helping young people build real financial skills. You'll see how you can take part, learn the basics of income tax, and even earn micro grants while boosting your financial confidence.`
   },
 
@@ -45,7 +45,7 @@ export const marchActivity: ActivityPageData = {
   },
 
   explainer: {
-    title: 'Challenge Overview',
+    title: 'Overview',
     rows: [
       {
         label: 'Active Submission Period',
