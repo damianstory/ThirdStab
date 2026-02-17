@@ -99,7 +99,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
   if (activityPageData) {
     return (
       <div className={activityPageData.sponsorFontClass || ''}>
-        <ActivityHeader sponsor={activityPageData.sponsor} />
+        <ActivityHeader sponsor={activityPageData.showSponsorInHeader ? activityPageData.sponsor : undefined} />
         <main className="pt-16">
           <ActivityHero activity={activityPageData} accentColor={activityPageData.accentColor} />
           {activityPageData.promotionalBanner && (

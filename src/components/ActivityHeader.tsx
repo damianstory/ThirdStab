@@ -214,7 +214,7 @@ export default function ActivityHeader({ sponsor }: ActivityHeaderProps) {
             {sponsor && (
               <>
                 <img
-                  src="/hrblock-logo-square.png"
+                  src={sponsor.logo}
                   alt={sponsor.name}
                   className="h-10"
                 />
@@ -290,7 +290,7 @@ export default function ActivityHeader({ sponsor }: ActivityHeaderProps) {
             {sponsor && (
               <>
                 <img
-                  src="/hrblock-logo-square.png"
+                  src={sponsor.logo}
                   alt={sponsor.name}
                   className="h-8"
                 />

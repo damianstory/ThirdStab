@@ -375,6 +375,7 @@ export interface ActivityPageData extends Activity {
   accentColor?: string; // Primary sponsor accent (replaces brandBlue where used)
   secondaryAccentColor?: string; // Secondary sponsor accent (for labels, subheadings)
   sponsorFontClass?: string; // CSS class for sponsor font (e.g., 'font-graphik')
+  showSponsorInHeader?: boolean; // Show sponsor logo alongside IIS logo in nav bar
 
   // Meta/SEO
   meta: {

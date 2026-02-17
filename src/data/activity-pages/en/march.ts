@@ -24,6 +24,7 @@ export const marchActivity: ActivityPageData = {
   accentColor: '#14aa40',
   secondaryAccentColor: '#005d1f',
   sponsorFontClass: 'font-graphik',
+  showSponsorInHeader: true,
 
   // Extended page content
   hero: {
