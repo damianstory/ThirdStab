@@ -98,41 +98,42 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
   // If we have full page data, render the complete template
   if (activityPageData) {
     return (
-      <>
+      <div className={activityPageData.sponsorFontClass || ''}>
         <ActivityHeader sponsor={activityPageData.sponsor} />
         <main className="pt-16">
-          <ActivityHero activity={activityPageData} />
+          <ActivityHero activity={activityPageData} accentColor={activityPageData.accentColor} />
           {activityPageData.promotionalBanner && (
             <PromotionalBanner banner={activityPageData.promotionalBanner} language="en" />
           )}
-          <VideoAndExplainer activity={activityPageData} />
+          <VideoAndExplainer activity={activityPageData} secondaryAccentColor={activityPageData.secondaryAccentColor} />
           {activityPageData.spotlightCallouts && activityPageData.spotlightCallouts.length > 0 && (
             <SpotlightCallouts callouts={activityPageData.spotlightCallouts} />
           )}
           <div id="activity-details">
-            <ActivityDetailAndRubric activity={activityPageData} />
+            <ActivityDetailAndRubric activity={activityPageData} accentColor={activityPageData.accentColor} />
           </div>
           {activityPageData.topicClusters && activityPageData.topicClusters.length > 0 && (
-            <TopicClusters clusters={activityPageData.topicClusters} />
+            <TopicClusters clusters={activityPageData.topicClusters} accentColor={activityPageData.accentColor} secondaryAccentColor={activityPageData.secondaryAccentColor} />
           )}
           <div id="sponsor-resources">
             <SponsorResources
               activity={activityPageData}
               resourcesTitle={activityPageData.resourcesTitle}
               resourcesSubtitle={activityPageData.resourcesSubtitle}
+              accentColor={activityPageData.accentColor}
             />
           </div>
           {activityPageData.month === 'November' && <SkillsForSuccess activity={activityPageData} language="en" />}
           <div id="activity-faq">
-            <ActivityFAQ activity={activityPageData} />
+            <ActivityFAQ activity={activityPageData} accentColor={activityPageData.accentColor} />
           </div>
           <IncentivesAndNavigation currentActivity={activityPageData} />
         </main>
         <Footer />
-      </>
+      </div>
     );
   }
-  
+
   // Fallback for activities without full page data
   return (
     <>

@@ -371,6 +371,11 @@ export interface ActivityPageData extends Activity {
     expandableContent?: string;
   }>;
 
+  // Sponsor Branding (optional - for co-branded pages)
+  accentColor?: string; // Primary sponsor accent (replaces brandBlue where used)
+  secondaryAccentColor?: string; // Secondary sponsor accent (for labels, subheadings)
+  sponsorFontClass?: string; // CSS class for sponsor font (e.g., 'font-graphik')
+
   // Meta/SEO
   meta: {
     title: string;

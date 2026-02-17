@@ -9,6 +9,7 @@ interface SponsorResourcesProps {
   resourcesTitle?: string;
   resourcesSubtitle?: string;
   language?: 'en' | 'fr';
+  accentColor?: string;
 }
 
 // Resource type icons and colors
@@ -35,8 +36,10 @@ export default function SponsorResources({
   activity,
   resourcesTitle,
   resourcesSubtitle,
-  language = 'en'
+  language = 'en',
+  accentColor
 }: SponsorResourcesProps) {
+  const accent = accentColor || '#0092ff';
   const defaultTitle = language === 'en' ? "Choose Your Activity" : "Choisissez votre activité";
   const defaultSubtitle = language === 'en'
     ? "You can complete multiple activities if you want. But one per submission."
@@ -290,8 +293,8 @@ export default function SponsorResources({
 
                   {/* Resource Link */}
                   <div
-                    className={`flex items-center font-medium text-sm group-hover:underline ${resource.borderColor && !resource.borderOnly ? 'text-white' : 'text-[#0092ff]'}`}
-                    style={resource.borderOnly && resource.borderColor ? { color: resource.borderColor } : undefined}
+                    className={`flex items-center font-medium text-sm group-hover:underline ${resource.borderColor && !resource.borderOnly ? 'text-white' : ''}`}
+                    style={resource.borderOnly && resource.borderColor ? { color: resource.borderColor } : (!resource.borderColor || resource.borderOnly) ? { color: accent } : undefined}
                   >
                     <span className="mr-2">
                       {resource.buttonText ||

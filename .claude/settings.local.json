@@ -100,7 +100,10 @@
       "Bash(textutil:*)",
       "Bash(lsof:*)",
       "WebFetch(domain:www.hrblock.ca)",
-      "Bash(pgrep:*)"
+      "Bash(pgrep:*)",
+      "Bash(brew install:*)",
+      "Bash(pdftotext:*)",
+      "Bash(pip3 install:*)"
     ],
     "deny": []
   }

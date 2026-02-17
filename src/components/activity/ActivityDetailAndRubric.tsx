@@ -9,9 +9,11 @@ import { trackExternalLink } from '@/lib/analytics';
 interface ActivityDetailAndRubricProps {
   activity: ActivityPageData;
   language?: 'en' | 'fr';
+  accentColor?: string;
 }
 
-export default function ActivityDetailAndRubric({ activity, language = 'en' }: ActivityDetailAndRubricProps) {
+export default function ActivityDetailAndRubric({ activity, language = 'en', accentColor }: ActivityDetailAndRubricProps) {
+  const accent = accentColor || '#0092ff';
   const currentStatus = getCurrentStatus(activity.month, activity.year);
   const isActive = currentStatus === 'active';
   const [openStep, setOpenStep] = useState<number | null>(null);
@@ -142,7 +144,7 @@ export default function ActivityDetailAndRubric({ activity, language = 'en' }: A
           {/* How this Works and Rubric - Right Column (1/3 width) */}
           <div className="lg:col-span-1">
             {/* How this Works */}
-            <div className="bg-gradient-to-b from-[#F8FAFB] to-white border-2 border-[#0092ff] rounded-2xl p-6 lg:p-8 mb-8 lg:mt-20">
+            <div className="bg-gradient-to-b from-[#F8FAFB] to-white border-2 rounded-2xl p-6 lg:p-8 mb-8 lg:mt-20" style={{ borderColor: accent }}>
               <button
                 onClick={() => setShowVideoModal(true)}
                 className="w-full px-6 py-4 rounded-lg font-semibold text-lg text-center leading-tight transition-all duration-200 bg-gray-100 text-gray-700 hover:bg-gray-200 hover:-translate-y-1 hover:shadow-lg active:scale-95"
@@ -153,7 +155,7 @@ export default function ActivityDetailAndRubric({ activity, language = 'en' }: A
 
             {/* Rubric */}
             <div className="bg-white border border-neutral2 rounded-xl overflow-hidden mt-8 lg:mt-8">
-              <div className="bg-[#0092ff] text-white px-4 py-3">
+              <div className="text-white px-4 py-3" style={{ backgroundColor: accent }}>
                 <h3 className="font-semibold text-lg">{language === 'en' ? 'Evaluation Rubric Summary' : 'Sommaire de la grille d\'évaluation'}</h3>
                 <p className="text-sm opacity-90">{language === 'en' ? `Total: ${activity.rubric.totalPoints} points` : `Total : ${activity.rubric.totalPoints} points`}</p>
               </div>
@@ -168,7 +170,8 @@ export default function ActivityDetailAndRubric({ activity, language = 'en' }: A
                           target="_blank"
                           rel="noopener noreferrer"
                           onClick={(e) => handleRubricClick('Rubric Card', e)}
-                          className="text-[#0092ff] hover:text-blue-700 font-medium text-sm underline"
+                          className="font-medium text-sm underline"
+                          style={{ color: accent }}
                         >
                           {criterion.category}
                         </a>
@@ -179,7 +182,7 @@ export default function ActivityDetailAndRubric({ activity, language = 'en' }: A
                           <h4 className="font-medium text-[#22224C] text-sm">
                             {criterion.category}
                           </h4>
-                          <span className="text-[#0092ff] font-semibold text-sm ml-2">
+                          <span className="font-semibold text-sm ml-2" style={{ color: accent }}>
                             {criterion.weight}%
                           </span>
                         </div>

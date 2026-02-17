@@ -3,9 +3,10 @@ import { ActivityPageData } from '@/data/activities';
 interface ActivityHeroProps {
   activity: ActivityPageData;
   contentClassName?: string;
+  accentColor?: string;
 }
 
-export default function ActivityHero({ activity, contentClassName }: ActivityHeroProps) {
+export default function ActivityHero({ activity, contentClassName, accentColor }: ActivityHeroProps) {
   // Determine background image - use activity-specific or fallback to default
   const backgroundImage = activity.hero.backgroundImage || '/activity-hero-mining.webp';
 
@@ -27,7 +28,10 @@ export default function ActivityHero({ activity, contentClassName }: ActivityHer
       <div className={`relative z-10 w-full flex min-h-[500px] md:min-h-[600px] lg:min-h-[700px] flex-col items-center justify-center px-6 lg:px-20 ${contentClassName || ''}`}>
         <div className="mx-auto max-w-lg text-center lg:mx-0 lg:max-w-2xl lg:text-left lg:mr-auto">
             {/* Month/Year Badge */}
-            <div className="inline-block bg-[#0092ff] text-white px-6 py-2 rounded-full text-sm font-medium mb-6 shadow-lg">
+            <div
+              className="inline-block text-white px-6 py-2 rounded-full text-sm font-medium mb-6 shadow-lg"
+              style={{ backgroundColor: accentColor || '#0092ff' }}
+            >
               {activity.month} {activity.year}
             </div>
 

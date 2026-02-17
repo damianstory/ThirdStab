@@ -2,13 +2,15 @@ import { ActivityPageData } from '@/data/activities';
 
 interface VideoAndExplainerProps {
   activity: ActivityPageData;
+  secondaryAccentColor?: string;
 }
 
-export default function VideoAndExplainer({ activity }: VideoAndExplainerProps) {
+export default function VideoAndExplainer({ activity, secondaryAccentColor }: VideoAndExplainerProps) {
+  const labelColor = secondaryAccentColor || '#22224C';
   return (
     <section className="py-16 lg:py-20 px-4 md:px-12 bg-[#F8FAFB]">
       <div className="container mx-auto max-w-6xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 lg:items-end">
           {/* Video Section - Left Column */}
           <div className="order-1">
             <h3 className="brand-h3 text-[#22224C] mb-4 whitespace-pre-line">
@@ -45,7 +47,7 @@ export default function VideoAndExplainer({ activity }: VideoAndExplainerProps) 
                     index !== activity.explainer.rows.length - 1 ? 'border-b border-neutral2' : ''
                   }`}
                 >
-                  <div className="font-semibold text-[#22224C] text-sm uppercase tracking-wide mb-1">
+                  <div className="font-semibold text-sm uppercase tracking-wide mb-1" style={{ color: labelColor }}>
                     {row.label}
                   </div>
                   <div className="text-neutral-500 brand-body2">

@@ -7,9 +7,11 @@ import { trackFAQ } from '@/lib/analytics';
 interface ActivityFAQProps {
   activity: ActivityPageData;
   language?: 'en' | 'fr';
+  accentColor?: string;
 }
 
-export default function ActivityFAQ({ activity, language = 'en' }: ActivityFAQProps) {
+export default function ActivityFAQ({ activity, language = 'en', accentColor }: ActivityFAQProps) {
+  const accent = accentColor || '#0092ff';
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
@@ -55,9 +57,12 @@ export default function ActivityFAQ({ activity, language = 'en' }: ActivityFAQPr
                 <span className="brand-body1 font-medium text-[#22224C] pr-4">
                   {faq.question}
                 </span>
-                <span className={`text-[#0092ff] transition-transform duration-300 flex-shrink-0 ${
-                  openIndex === index ? 'rotate-180' : 'rotate-0'
-                }`}>
+                <span
+                  className={`transition-transform duration-300 flex-shrink-0 ${
+                    openIndex === index ? 'rotate-180' : 'rotate-0'
+                  }`}
+                  style={{ color: accent }}
+                >
                   <svg
                     width="20"
                     height="20"

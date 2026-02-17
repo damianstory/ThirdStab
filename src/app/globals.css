@@ -2,6 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Graphik font family - H&R Block brand font (March activity page) */
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/graphik/GraphikRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/graphik/GraphikMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/graphik/GraphikSemibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/graphik/GraphikBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Scoped Graphik font for sponsor-branded pages */
+.font-graphik,
+.font-graphik * {
+  font-family: 'Graphik', 'Open Sans', sans-serif;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -292,6 +331,11 @@
     .gradient-submit-button {
       animation: gradient-shift 3s ease-in-out infinite;
     }
+  }
+
+  /* Topic Cluster heading color via CSS custom property */
+  .topic-cluster-content h4 {
+    color: var(--topic-heading-color, #22224C);
   }
 
   /* Respect reduced motion preferences */
