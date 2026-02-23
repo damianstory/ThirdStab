@@ -262,6 +262,13 @@ We will publish de-identified (anonymous summary data) information to provide up
       url: '#',
       type: 'article',
       buttonText: 'Coming Soon'
+    },
+    {
+      title: '$30,000 in Scholarship Awards',
+      description: 'Apply for a $3,000 H&R Block Scholarship to support you in post-secondary',
+      url: 'https://education.myblueprint.ca/hrblock',
+      type: 'link',
+      buttonText: 'Learn More'
     }
   ],
   resourcesTitle: 'H&R Block Canada Learning Resources',
