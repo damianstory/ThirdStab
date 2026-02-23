@@ -35,7 +35,7 @@ export const marchActivity: ActivityPageData = {
   },
 
   video: {
-    embedUrl: 'https://hrblockca.sharepoint.com/sites/Marketing2/_layouts/15/embed.aspx?UniqueId=93881628-6b11-442a-9a71-bb65b42247db&embed=%7B%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create',
+    embedUrl: 'https://play.gumlet.io/embed/699c368626981d8913997731?background=false&autoplay=false&loop=false&disable_player_controls=false',
     title: 'About H&R Block Canada',
     description: `Watch this video to learn what the Teach Me Taxes Challenge is all about and how H&R Block Canada is helping young people build real financial skills. You'll see how you can take part, learn the basics of income tax, and even earn micro grants while boosting your financial confidence.`
   },
@@ -124,11 +124,11 @@ export const marchActivity: ActivityPageData = {
         weight: 0,
         description: '',
         isLink: true,
-        url: '#'
+        url: 'https://claude.ai/public/artifacts/3d9a4e4f-8d0e-4e96-9158-97f70533274e'
       }
     ],
     totalPoints: 100,
-    detailedRubricUrl: '#'
+    detailedRubricUrl: 'https://claude.ai/public/artifacts/3d9a4e4f-8d0e-4e96-9158-97f70533274e'
   },
 
   submission: {
@@ -236,18 +236,32 @@ We will publish de-identified (anonymous summary data) information to provide up
       buttonText: 'Read Article'
     },
     {
-      title: 'Purpose of Taxes – Canada.ca',
-      description: 'Official government resource on why we pay taxes and where the money goes',
-      url: 'https://www.canada.ca/en/revenue-agency/services/tax/individuals/educational-programs/purpose-taxes.html',
-      type: 'link',
-      buttonText: 'Visit Site'
+      title: 'When Can I File My 2025 Taxes in 2026? Key Dates & Deadlines',
+      description: 'Key dates and deadlines for filing your 2025 taxes in Canada',
+      url: 'https://www.hrblock.ca/blog/when-can-i-file-my-taxes-your-complete-guide',
+      type: 'article',
+      buttonText: 'Read Article'
     },
     {
-      title: 'Understanding Tax Deductions on Your Pay Stub',
-      description: 'Learn what CPP, EI, and other deductions mean on your paycheck',
-      url: 'https://www.getsmarteraboutmoney.ca/learning-path/understanding-tax/understanding-the-tax-deductions-on-your-pay-stub/',
-      type: 'link',
-      buttonText: 'Visit Site'
+      title: 'Canada Groceries & Essentials Benefit: 2026 Updates & Payments',
+      description: 'How the Canada Groceries & Essentials Benefit works, who qualifies, and payment dates',
+      url: 'https://www.hrblock.ca/blog/introducing-the-canada-groceries-and-essentials-benefit-formerly-the-gst-hst-credit',
+      type: 'article',
+      buttonText: 'Read Article'
+    },
+    {
+      title: 'RRSP Deadline 2026: Limits, Rules & The First 60 Days Explained',
+      description: 'RRSP contribution limits, rules, and the first 60 days for tax-deductible contributions',
+      url: 'https://www.hrblock.ca/en/blog/rrsp-deadline-contribution-limits-rules-and-the-first-60-days-explained',
+      type: 'article',
+      buttonText: 'Read Article'
+    },
+    {
+      title: 'Pay Stub Placeholder',
+      description: 'Coming soon',
+      url: '#',
+      type: 'article',
+      buttonText: 'Coming Soon'
     }
   ],
   resourcesTitle: 'H&R Block Canada Learning Resources',
