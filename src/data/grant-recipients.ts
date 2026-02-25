@@ -166,8 +166,33 @@ export const allMonths: MonthRecipients[] = [
     activitySlug: 'january',
     description: 'Congratulations to these 20 students who explored careers in air traffic control and received $500 microgrants for their outstanding video submissions.',
     descriptionFr: 'Félicitations à ces 20 élèves qui ont exploré les carrières en contrôle de la circulation aérienne et qui ont reçu des microbourses de 500 $ pour leurs excellentes soumissions vidéo.',
-    enabled: false,
-    winners: []
+    enabled: true,
+    winners: [
+      // Grade 9
+      { id: 'jan-1', youtubeId: 'yKvJqjiVE1I', grade: 9, schoolBoard: 'Toronto District School Board', schoolName: 'Air Traffic Controller', province: 'Ontario' },
+      { id: 'jan-2', youtubeId: 'io6IcqOfLl0', grade: 9, schoolBoard: 'Toronto District School Board', schoolName: 'Flight Service Specialist', province: 'Ontario' },
+      // Grade 10
+      { id: 'jan-3', youtubeId: 'Bvt7u4r9YEk', grade: 10, schoolBoard: 'STAR Catholic', schoolName: 'Air Traffic Controller', province: 'Alberta' },
+      { id: 'jan-4', youtubeId: 'd_w169V_e4E', grade: 10, schoolBoard: 'Heritage Christian Online School', schoolName: 'Air Traffic Controller', province: 'British Columbia' },
+      { id: 'jan-5', youtubeId: 'TQUWzRS5TVo', grade: 10, schoolBoard: 'Heritage Christian Online School', schoolName: 'Air Traffic Controller', province: 'British Columbia' },
+      { id: 'jan-6', youtubeId: 'FJNNzNZG6QA', grade: 10, schoolBoard: 'Anglophone East School District', schoolName: 'Air Traffic Controller', province: 'New Brunswick' },
+      { id: 'jan-7', youtubeId: 'UffGnS2-jqo', grade: 10, schoolBoard: 'Toronto District School Board', schoolName: 'Air Traffic Controller', province: 'Ontario' },
+      { id: 'jan-8', youtubeId: 'ieqHZ0W5RKs', grade: 10, schoolBoard: 'Toronto District School Board', schoolName: 'Air Traffic Controller', province: 'Ontario' },
+      { id: 'jan-9', youtubeId: 'wNncMtakBbk', grade: 10, schoolBoard: 'York Region District School Board', schoolName: 'Air Traffic Controller', province: 'Ontario' },
+      // Grade 11
+      { id: 'jan-10', youtubeId: 'mP9RjSgDuDA', grade: 11, schoolBoard: 'Edmonton Public School Board', schoolName: 'Flight Service Specialist', province: 'Alberta' },
+      { id: 'jan-11', youtubeId: 'aFXpBH-dQFo', grade: 11, schoolBoard: 'Grand Erie District School Board', schoolName: 'Air Traffic Controller', province: 'Ontario' },
+      { id: 'jan-12', youtubeId: 'KjT4dolAXgw', grade: 11, schoolBoard: 'Halton District School Board', schoolName: 'Air Traffic Controller', province: 'Ontario' },
+      { id: 'jan-13', youtubeId: '69BeQjL5gno', grade: 11, schoolBoard: 'Hamilton-Wentworth Catholic District School Board', schoolName: 'Air Traffic Controller', province: 'Ontario' },
+      { id: 'jan-14', youtubeId: 'OpdRIoxovbs', grade: 11, schoolBoard: 'York Region District School Board', schoolName: 'Flight Service Specialist', province: 'Ontario' },
+      // Grade 12
+      { id: 'jan-15', youtubeId: 'nzEiTa2ncFI', grade: 12, schoolBoard: 'Foundations for the Future Charter Academy', schoolName: 'Flight Service Specialist', province: 'Alberta' },
+      { id: 'jan-16', youtubeId: 'ezm3jiNR_0E', grade: 12, schoolBoard: 'Palliser Regional Schools', schoolName: 'Air Traffic Controller', province: 'Alberta' },
+      { id: 'jan-17', youtubeId: 'B--OYVUJlRM', grade: 12, schoolBoard: 'Anglophone East School District', schoolName: 'Air Traffic Controller', province: 'New Brunswick' },
+      { id: 'jan-18', youtubeId: 'JsIFeQvThK0', grade: 12, schoolBoard: 'NLESD', schoolName: 'Air Traffic Controller', province: 'Newfoundland and Labrador' },
+      { id: 'jan-19', youtubeId: 'K1yEt_3P1Tw', grade: 12, schoolBoard: 'District School Board Ontario North East', schoolName: 'Air Traffic Controller', province: 'Ontario' },
+      { id: 'jan-20', youtubeId: 'HU98J1aWn5Q', grade: 12, schoolBoard: 'York Region District School Board', schoolName: 'Air Traffic Controller', province: 'Ontario' },
+    ]
   },
   {
     month: 'February',

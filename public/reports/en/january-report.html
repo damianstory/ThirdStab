@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAV CANADA January 2026 Sponsor Report | Industry Immersion Series</title>
+    <meta name="description" content="Sponsor report for Beyond the Skies Challenge - NAV CANADA partnership with Industry Immersion Series">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700;6..72,800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --nav-blue: #0047BB;
+            --nav-blue-light: #3A7BD5;
+            --nav-sky: #87CEEB;
+            --nav-sky-light: #C5E8F7;
+            --navy: #0A1628;
+            --white: #FFFFFF;
+            --gray-light: #F4F7FA;
+            --gray: #6c757d;
+            --accent-orange: #FF6B35;
+            --accent-gold: #FFB627;
+        }
+
+        body {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            background: var(--gray-light);
+            color: var(--navy);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--nav-blue) 100%);
+            padding: 80px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--accent-orange) 0%, var(--accent-gold) 50%, var(--nav-sky) 100%);
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            right: -5%;
+            width: 500px;
+            height: 500px;
+            border: 2px solid rgba(135,206,235,0.1);
+            border-radius: 50%;
+        }
+
+        /* Radar decorative circles */
+        .hero .radar-ring-1 {
+            position: absolute;
+            bottom: -20%;
+            right: 0%;
+            width: 400px;
+            height: 400px;
+            border: 1px solid rgba(135,206,235,0.08);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero .radar-ring-2 {
+            position: absolute;
+            bottom: -10%;
+            right: 5%;
+            width: 300px;
+            height: 300px;
+            border: 1px solid rgba(135,206,235,0.06);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .brand-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .nav-canada-logo {
+            height: 48px;
+            object-fit: contain;
+        }
+
+        .report-badge {
+            font-family: 'Space Mono', monospace;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--white);
+            background: rgba(255,255,255,0.2);
+            padding: 6px 12px;
+            border-radius: 4px;
+        }
+
+        .hero-title {
+            font-family: 'Newsreader', serif;
+            font-size: clamp(42px, 6vw, 80px);
+            font-weight: 800;
+            color: var(--white);
+            line-height: 0.95;
+            letter-spacing: -2px;
+            margin-bottom: 16px;
+        }
+
+        .hero-subtitle {
+            font-family: 'Space Mono', monospace;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--nav-sky);
+            margin-bottom: 50px;
+        }
+
+        .hero-stat-card {
+            display: inline-block;
+            background: var(--white);
+            padding: 40px 60px;
+            border-radius: 16px;
+            border: 3px solid var(--nav-blue);
+            transform: rotate(-1deg);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .hero-stat-card:hover {
+            transform: rotate(0deg) scale(1.02);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+        }
+
+        .hero-stat-number {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: clamp(60px, 10vw, 100px);
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--nav-blue) 0%, var(--nav-blue-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+        }
+
+        .hero-stat-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--navy);
+            margin-top: 8px;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-family: 'Newsreader', serif;
+            font-size: clamp(32px, 5vw, 52px);
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 12px;
+        }
+
+        .section-subtitle {
+            font-family: 'Space Mono', monospace;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--nav-blue);
+        }
+
+        /* Metrics Cards */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .metric-card {
+            background: var(--white);
+            padding: 28px 24px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            transform: rotate(0.3deg);
+            border: 2px solid transparent;
+            position: relative;
+        }
+
+        .metric-card:nth-child(even) {
+            transform: rotate(-0.3deg);
+        }
+
+        .metric-card:hover {
+            transform: rotate(0deg) translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+            border-color: var(--nav-sky);
+        }
+
+        .metric-card.featured {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--nav-blue) 100%);
+            color: var(--white);
+        }
+
+        .metric-card.featured .metric-value {
+            color: var(--accent-gold);
+        }
+
+        .metric-card.featured .metric-label {
+            color: var(--nav-sky);
+        }
+
+        /* Tooltip Styles */
+        .metric-tooltip {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 20px;
+            height: 20px;
+            background: var(--gray-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: help;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--gray);
+            transition: all 0.2s ease;
+        }
+
+        .metric-card.featured .metric-tooltip {
+            background: rgba(255,255,255,0.2);
+            color: var(--white);
+        }
+
+        .metric-tooltip:hover {
+            background: var(--nav-blue);
+            color: var(--white);
+        }
+
+        .metric-card.featured .metric-tooltip:hover {
+            background: var(--accent-gold);
+            color: var(--navy);
+        }
+
+        .metric-tooltip .tooltip-text {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            bottom: calc(100% + 10px);
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            background: var(--navy);
+            color: var(--white);
+            padding: 12px 14px;
+            border-radius: 8px;
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 1.4;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            z-index: 100;
+            transition: all 0.2s ease;
+        }
+
+        .metric-tooltip .tooltip-text::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 6px solid transparent;
+            border-top-color: var(--navy);
+        }
+
+        .metric-tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .metric-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--nav-sky) 0%, var(--nav-blue) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .metric-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--white);
+        }
+
+        .metric-value {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--navy);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .metric-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--gray);
+        }
+
+        /* Career Path Split */
+        .career-path-section {
+            background: var(--white);
+        }
+
+        .career-path-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .career-path-card {
+            background: var(--gray-light);
+            border-radius: 20px;
+            padding: 48px 40px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .career-path-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+        }
+
+        .career-path-card.atc::before {
+            background: linear-gradient(90deg, var(--nav-blue), var(--nav-blue-light));
+        }
+
+        .career-path-card.fss::before {
+            background: linear-gradient(90deg, var(--accent-orange), var(--accent-gold));
+        }
+
+        .career-path-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        }
+
+        .career-path-card.atc:hover {
+            border-color: var(--nav-blue);
+        }
+
+        .career-path-card.fss:hover {
+            border-color: var(--accent-orange);
+        }
+
+        .career-path-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+        }
+
+        .career-path-card.atc .career-path-icon {
+            background: linear-gradient(135deg, var(--nav-blue), var(--nav-blue-light));
+        }
+
+        .career-path-card.fss .career-path-icon {
+            background: linear-gradient(135deg, var(--accent-orange), var(--accent-gold));
+        }
+
+        .career-path-icon svg {
+            width: 32px;
+            height: 32px;
+            fill: var(--white);
+        }
+
+        .career-path-title {
+            font-family: 'Newsreader', serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 20px;
+        }
+
+        .career-path-number {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 64px;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .career-path-card.atc .career-path-number {
+            color: var(--nav-blue);
+        }
+
+        .career-path-card.fss .career-path-number {
+            color: var(--accent-orange);
+        }
+
+        .career-path-pct {
+            font-family: 'Space Mono', monospace;
+            font-size: 14px;
+            color: var(--gray);
+        }
+
+        /* Bar Chart Section */
+        .chart-section {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 50px;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+        }
+
+        .chart-container {
+            margin-top: 40px;
+        }
+
+        .bar-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .bar-item {
+            display: grid;
+            grid-template-columns: 260px 1fr 80px;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .bar-label {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--navy);
+            text-align: right;
+        }
+
+        .bar-wrapper {
+            height: 40px;
+            background: var(--gray-light);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--nav-blue) 0%, var(--nav-blue-light) 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 12px;
+            transition: width 0.8s ease;
+        }
+
+        .bar-value {
+            font-family: 'Space Mono', monospace;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--navy);
+        }
+
+        /* Resource Clicks Display */
+        .resource-clicks-display {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .resource-clicks-number {
+            font-family: 'Newsreader', serif;
+            font-size: 96px;
+            font-weight: 800;
+            color: var(--nav-blue);
+            line-height: 1;
+            letter-spacing: -2px;
+        }
+
+        .resource-clicks-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 13px;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-top: 12px;
+            margin-bottom: 36px;
+        }
+
+        .resource-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .resource-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: var(--gray-light);
+            border: 1px solid rgba(0, 71, 187, 0.12);
+            border-radius: 100px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--navy);
+        }
+
+        .resource-tag svg {
+            color: var(--nav-blue);
+            flex-shrink: 0;
+        }
+
+        /* Donut Chart */
+        .donut-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .donut-chart-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .province-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            background: var(--white);
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .legend-item:hover {
+            transform: translateX(4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+        }
+
+        .legend-text {
+            flex: 1;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .legend-value {
+            font-family: 'Space Mono', monospace;
+            font-size: 12px;
+            color: var(--gray);
+        }
+
+        /* Submissions Section */
+        .submissions-section {
+            background: var(--gray-light);
+        }
+
+        .submissions-chart {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .submissions-bars {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .submission-bar {
+            display: grid;
+            grid-template-columns: 200px 1fr 60px;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .submission-bar .bar-label {
+            font-size: 13px;
+        }
+
+        .submission-bar .bar-wrapper {
+            height: 32px;
+        }
+
+        .submission-bar .bar-fill {
+            background: linear-gradient(90deg, var(--accent-orange) 0%, var(--accent-gold) 100%);
+        }
+
+        .total-submissions {
+            text-align: center;
+            background: var(--white);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .total-number {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 100px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--nav-blue) 0%, var(--accent-orange) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+        }
+
+        .total-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--navy);
+            margin-top: 12px;
+        }
+
+        /* Careers Pills Section */
+        .careers-section {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--nav-blue) 100%);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .careers-section::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            border: 1px solid rgba(135,206,235,0.08);
+            border-radius: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+        .careers-section .section-title {
+            color: var(--white);
+        }
+
+        .careers-section .section-subtitle {
+            color: var(--nav-sky);
+        }
+
+        .careers-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .career-pill {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px 20px;
+            border-radius: 30px;
+            color: var(--white);
+            font-size: 14px;
+            font-weight: 500;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .career-pill:hover {
+            background: rgba(255,107,53,0.2);
+            border-color: var(--accent-orange);
+            transform: translateY(-2px);
+        }
+
+        /* Top 20 Videos */
+        .videos-section {
+            background: var(--white);
+        }
+
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .video-card {
+            background: var(--gray-light);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .video-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+            border-color: var(--nav-blue);
+        }
+
+        .video-card a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .video-embed {
+            position: relative;
+            aspect-ratio: 16/9;
+            cursor: pointer;
+            border-radius: 12px 12px 0 0;
+            overflow: hidden;
+        }
+
+        .video-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .video-thumbnail {
+            aspect-ratio: 16/9;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--nav-blue) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .video-thumbnail .play-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--nav-blue) 60%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .video-card:hover .play-icon {
+            transform: scale(1.1);
+            background: var(--accent-gold);
+        }
+
+        .play-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--white);
+            margin-left: 2px;
+        }
+
+        .video-thumbnail .video-number {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            font-family: 'Space Mono', monospace;
+            font-size: 10px;
+            font-weight: 700;
+            color: var(--white);
+            background: rgba(0,0,0,0.4);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .video-info {
+            padding: 16px;
+        }
+
+        .video-student {
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--navy);
+            margin-bottom: 4px;
+        }
+
+        .video-meta {
+            font-family: 'Space Mono', monospace;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--gray);
+        }
+
+        .video-career {
+            font-size: 13px;
+            color: var(--nav-blue);
+            font-weight: 600;
+            margin-top: 6px;
+        }
+
+        /* Winners Section */
+        .winners-section {
+            background: linear-gradient(135deg, var(--navy) 0%, #0a1a3b 100%);
+            padding: 100px 0;
+        }
+
+        .winners-section .section-title {
+            color: var(--white);
+        }
+
+        .winners-section .section-subtitle {
+            color: var(--nav-sky);
+        }
+
+        .prize-highlight {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .prize-amount {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: clamp(48px, 8vw, 80px);
+            font-weight: 800;
+            color: var(--accent-gold);
+            line-height: 1;
+        }
+
+        .prize-breakdown {
+            font-family: 'Space Mono', monospace;
+            font-size: 14px;
+            color: var(--nav-sky);
+            margin-top: 12px;
+        }
+
+        .winners-by-province {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin-bottom: 60px;
+        }
+
+        .province-winners {
+            background: rgba(255,255,255,0.05);
+            padding: 24px;
+            border-radius: 16px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .province-name {
+            font-size: 14px;
+            color: var(--nav-sky);
+            margin-bottom: 8px;
+        }
+
+        .province-count {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--accent-gold);
+        }
+
+        .province-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: rgba(255,255,255,0.85);
+        }
+
+        .winners-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .winner-card {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 3px solid var(--accent-orange);
+            transition: all 0.3s ease;
+        }
+
+        .winner-card:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateX(4px);
+        }
+
+        .winner-province {
+            font-family: 'Space Mono', monospace;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--nav-sky);
+            margin-bottom: 4px;
+        }
+
+        .winner-career {
+            color: var(--white);
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .winner-school {
+            font-size: 12px;
+            color: var(--nav-sky-light);
+            margin-top: 2px;
+        }
+
+        /* Overall Program Reach */
+        .program-reach {
+            background: linear-gradient(135deg, var(--nav-blue-light) 0%, var(--nav-blue) 100%);
+            border-radius: 24px;
+            padding: 60px;
+            color: var(--white);
+        }
+
+        .program-reach .section-title {
+            color: var(--white);
+        }
+
+        .program-reach .section-subtitle {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .reach-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .reach-stat {
+            text-align: center;
+        }
+
+        .reach-stat-value {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 56px;
+            font-weight: 800;
+            color: var(--accent-gold);
+            line-height: 1;
+        }
+
+        .reach-stat-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgba(255,255,255,0.9);
+            margin-top: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--navy);
+            padding: 60px 0;
+            border-top: 4px solid var(--nav-blue);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .footer-brands {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .footer-logo {
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--white);
+        }
+
+        .footer-logo.nav-canada {
+            background: linear-gradient(135deg, var(--nav-sky) 0%, var(--nav-blue-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-divider {
+            color: var(--gray);
+            font-size: 24px;
+        }
+
+        .footer-text {
+            font-family: 'Space Mono', monospace;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #b8bdc5;
+        }
+
+        .view-all-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 30px;
+            padding: 16px 32px;
+            background: var(--accent-orange);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .view-all-link:hover {
+            background: var(--nav-blue);
+            transform: translateY(-2px);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .metrics-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .donut-section,
+            .submissions-chart {
+                grid-template-columns: 1fr;
+            }
+
+            .donut-chart-wrapper {
+                order: -1;
+            }
+
+            .bar-item {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .bar-label {
+                text-align: left;
+            }
+
+            .videos-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .career-path-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .hero {
+                padding: 60px 0 80px;
+            }
+
+            .hero-stat-card {
+                padding: 30px 40px;
+            }
+
+            .chart-section {
+                padding: 30px 20px;
+            }
+
+            .program-reach {
+                padding: 40px 30px;
+            }
+
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .career-path-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .videos-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .submission-bar {
+                grid-template-columns: 1fr;
+                gap: 4px;
+            }
+
+            .submission-bar .bar-label {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="radar-ring-1"></div>
+        <div class="radar-ring-2"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="brand-header">
+                    <img src="/logo4.png" alt="NAV CANADA" class="nav-canada-logo">
+                    <span class="report-badge">January 2026 Sponsor Report</span>
+                </div>
+                <h1 class="hero-title">Beyond the Skies<br>Challenge</h1>
+                <p class="hero-subtitle">Industry Immersion Series Collaboration</p>
+                <div class="hero-stat-card">
+                    <div class="hero-stat-number">24,001</div>
+                    <div class="hero-stat-label">Students Reached</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Activity Page Performance Section -->
+    <section class="activity-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">January NAV CANADA Activity</h2>
+                <p class="section-subtitle">Activity Page Performance Metrics</p>
+            </div>
+            <div class="metrics-grid">
+                <div class="metric-card featured">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Total number of times the January activity page was viewed by students</span></div>
+                    <div class="metric-icon">
+                        <svg viewBox="0 0 24 24" role="img" aria-label="Page views"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                    </div>
+                    <div class="metric-value">60,740</div>
+                    <div class="metric-label">Page Views</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Total unique students who visited the January activity page</span></div>
+                    <div class="metric-icon">
+                        <svg viewBox="0 0 24 24" role="img" aria-label="Students reached"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                    </div>
+                    <div class="metric-value">24,001</div>
+                    <div class="metric-label">Students Reached</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Estimated number of students who visited the page more than once</span></div>
+                    <div class="metric-icon">
+                        <svg viewBox="0 0 24 24" role="img" aria-label="Return visits"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                    </div>
+                    <div class="metric-value">~36,739</div>
+                    <div class="metric-label">Return Visits</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Percentage of visits where students actively interacted with the page content</span></div>
+                    <div class="metric-icon">
+                        <svg viewBox="0 0 24 24" role="img" aria-label="Engagement rate"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+                    </div>
+                    <div class="metric-value">90.3%</div>
+                    <div class="metric-label">Engagement Rate</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Number of students who created and submitted a video exploring NAV CANADA occupations</span></div>
+                    <div class="metric-icon">
+                        <svg viewBox="0 0 24 24" role="img" aria-label="Submissions"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg>
+                    </div>
+                    <div class="metric-value">153</div>
+                    <div class="metric-label">Submissions</div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 16px; font-family: 'Space Mono', monospace; font-size: 12px; color: var(--gray); letter-spacing: 0.5px;">French activity page (/january/fr): +589 views, +202 unique users</p>
+        </div>
+    </section>
+
+    <!-- Career Path Split Section -->
+    <section class="career-path-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Career Path Split</h2>
+                <p class="section-subtitle">Which NAV CANADA Career Did Students Choose?</p>
+            </div>
+            <div class="career-path-grid">
+                <div class="career-path-card atc">
+                    <div class="career-path-icon">
+                        <svg viewBox="0 0 24 24" role="img" aria-label="Air Traffic Controller"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+                    </div>
+                    <div class="career-path-title">Air Traffic Controller</div>
+                    <div class="career-path-number">124</div>
+                    <div class="career-path-pct">80.9% of submissions</div>
+                </div>
+                <div class="career-path-card fss">
+                    <div class="career-path-icon">
+                        <svg viewBox="0 0 24 24" role="img" aria-label="Flight Service Specialist"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zM7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/></svg>
+                    </div>
+                    <div class="career-path-title">Flight Service Specialist</div>
+                    <div class="career-path-number">29</div>
+                    <div class="career-path-pct">19.1% of submissions</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- National Reach Section -->
+    <section class="reach-section">
+        <div class="container">
+            <div class="chart-section">
+                <div class="section-header">
+                    <h2 class="section-title">National Reach</h2>
+                    <p class="section-subtitle">Student Engagement Across Canada</p>
+                </div>
+                <div class="donut-section">
+                    <div class="donut-chart-wrapper">
+                        <svg width="350" height="350" viewBox="0 0 350 350" role="img" aria-label="Donut chart showing national reach: Ontario 81.5% with 19,573 users, Alberta 6.9% with 1,653 users, British Columbia 3.7% with 890 users, Quebec 3.5% with 850 users, New Brunswick 1.4% with 346 users, Other Provinces 3.3% with 794 users. Total: 24,001 users.">
+                            <!-- Ontario - 81.5% -->
+                            <circle cx="175" cy="175" r="120" fill="none" stroke="#0047BB" stroke-width="50"
+                                    stroke-dasharray="611.86 142.12" stroke-dashoffset="187.5" transform="rotate(-90 175 175)"/>
+                            <!-- Alberta - 6.9% -->
+                            <circle cx="175" cy="175" r="120" fill="none" stroke="#3A7BD5" stroke-width="50"
+                                    stroke-dasharray="51.72 702.26" stroke-dashoffset="-424.36" transform="rotate(-90 175 175)"/>
+                            <!-- BC - 3.7% -->
+                            <circle cx="175" cy="175" r="120" fill="none" stroke="#87CEEB" stroke-width="50"
+                                    stroke-dasharray="27.82 726.16" stroke-dashoffset="-476.08" transform="rotate(-90 175 175)"/>
+                            <!-- Quebec - 3.5% -->
+                            <circle cx="175" cy="175" r="120" fill="none" stroke="#FF6B35" stroke-width="50"
+                                    stroke-dasharray="26.62 727.36" stroke-dashoffset="-503.90" transform="rotate(-90 175 175)"/>
+                            <!-- New Brunswick - 1.4% -->
+                            <circle cx="175" cy="175" r="120" fill="none" stroke="#FFB627" stroke-width="50"
+                                    stroke-dasharray="10.86 743.12" stroke-dashoffset="-530.52" transform="rotate(-90 175 175)"/>
+                            <!-- Other provinces - 3.3% -->
+                            <circle cx="175" cy="175" r="120" fill="none" stroke="#C5E8F7" stroke-width="50"
+                                    stroke-dasharray="24.81 729.17" stroke-dashoffset="-541.38" transform="rotate(-90 175 175)"/>
+                            <!-- Center circle -->
+                            <circle cx="175" cy="175" r="95" fill="white"/>
+                            <text x="175" y="165" text-anchor="middle" font-family="Bricolage Grotesque" font-size="36" font-weight="800" fill="#0A1628">24,001</text>
+                            <text x="175" y="195" text-anchor="middle" font-family="Space Mono" font-size="11" fill="#6c757d" text-transform="uppercase" letter-spacing="1">TOTAL USERS</text>
+                        </svg>
+                    </div>
+                    <div class="province-legend">
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #0047BB"></div>
+                            <span class="legend-text">Ontario</span>
+                            <span class="legend-value">19,573 users (81.5%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #3A7BD5"></div>
+                            <span class="legend-text">Alberta</span>
+                            <span class="legend-value">1,653 users (6.9%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #87CEEB"></div>
+                            <span class="legend-text">British Columbia</span>
+                            <span class="legend-value">890 users (3.7%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #FF6B35"></div>
+                            <span class="legend-text">Quebec</span>
+                            <span class="legend-value">850 users (3.5%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #FFB627"></div>
+                            <span class="legend-text">New Brunswick</span>
+                            <span class="legend-value">346 users (1.4%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #C5E8F7"></div>
+                            <span class="legend-text">Other Provinces</span>
+                            <span class="legend-value">794 users (3.3%)</span>
+                        </div>
+                        <p style="margin-top: 8px; font-family: 'Space Mono', monospace; font-size: 11px; color: var(--gray); letter-spacing: 1px;">12 PROVINCES &amp; TERRITORIES REACHED</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Engagement -->
+    <section class="engagement-section">
+        <div class="container">
+            <div class="chart-section">
+                <div class="section-header">
+                    <h2 class="section-title">NAV CANADA Resource Clicks</h2>
+                    <p class="section-subtitle">Student Interactions with Sponsor Career Resources</p>
+                </div>
+                <div class="resource-clicks-display">
+                    <div class="resource-clicks-number">2,638</div>
+                    <div class="resource-clicks-label">Total Clicks Across 4 Career Resources</div>
+                    <div class="resource-tags">
+                        <div class="resource-tag">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+                            Air Traffic Controller Career Page
+                        </div>
+                        <div class="resource-tag">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"/></svg>
+                            Flight Service Specialist Career Page
+                        </div>
+                        <div class="resource-tag">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"/></svg>
+                            ATC Employee Story Video
+                        </div>
+                        <div class="resource-tag">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"/></svg>
+                            FSS Employee Story Video
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submissions Breakdown -->
+    <section class="submissions-section">
+        <div class="container">
+            <div class="chart-section">
+                <div class="section-header">
+                    <h2 class="section-title">Submissions Breakdown</h2>
+                    <p class="section-subtitle">Challenge Submissions by Province</p>
+                </div>
+                <div class="submissions-chart">
+                    <div class="submissions-bars">
+                        <div class="submission-bar">
+                            <span class="bar-label">Ontario</span>
+                            <div class="bar-wrapper">
+                                <div class="bar-fill" style="width: 100%"></div>
+                            </div>
+                            <span class="bar-value">116</span>
+                        </div>
+                        <div class="submission-bar">
+                            <span class="bar-label">Alberta</span>
+                            <div class="bar-wrapper">
+                                <div class="bar-fill" style="width: 13.8%"></div>
+                            </div>
+                            <span class="bar-value">16</span>
+                        </div>
+                        <div class="submission-bar">
+                            <span class="bar-label">Newfoundland &amp; Labrador</span>
+                            <div class="bar-wrapper">
+                                <div class="bar-fill" style="width: 6.9%"></div>
+                            </div>
+                            <span class="bar-value">8</span>
+                        </div>
+                        <div class="submission-bar">
+                            <span class="bar-label">British Columbia</span>
+                            <div class="bar-wrapper">
+                                <div class="bar-fill" style="width: 5.2%"></div>
+                            </div>
+                            <span class="bar-value">6</span>
+                        </div>
+                        <div class="submission-bar">
+                            <span class="bar-label">Manitoba</span>
+                            <div class="bar-wrapper">
+                                <div class="bar-fill" style="width: 2.6%"></div>
+                            </div>
+                            <span class="bar-value">3</span>
+                        </div>
+                        <div class="submission-bar">
+                            <span class="bar-label">New Brunswick</span>
+                            <div class="bar-wrapper">
+                                <div class="bar-fill" style="width: 1.7%"></div>
+                            </div>
+                            <span class="bar-value">2</span>
+                        </div>
+                        <div class="submission-bar">
+                            <span class="bar-label">Nova Scotia</span>
+                            <div class="bar-wrapper">
+                                <div class="bar-fill" style="width: 0.9%"></div>
+                            </div>
+                            <span class="bar-value">1</span>
+                        </div>
+                        <div class="submission-bar">
+                            <span class="bar-label">Saskatchewan</span>
+                            <div class="bar-wrapper">
+                                <div class="bar-fill" style="width: 0.9%"></div>
+                            </div>
+                            <span class="bar-value">1</span>
+                        </div>
+                    </div>
+                    <div class="total-submissions">
+                        <div class="total-number">153</div>
+                        <div class="total-label">Total Submissions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Explored Section -->
+    <section class="careers-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Top 20 Student Videos</h2>
+                <p class="section-subtitle">Outstanding Submissions from Across Canada</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top 20 Videos -->
+    <section class="videos-section">
+        <div class="container">
+            <div class="videos-grid">
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/mP9RjSgDuDA?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/mP9RjSgDuDA/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">Alberta</div>
+                        <div class="video-career">Flight Service Specialist</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/nzEiTa2ncFI?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/nzEiTa2ncFI/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">Alberta</div>
+                        <div class="video-career">Flight Service Specialist</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/ezm3jiNR_0E?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/ezm3jiNR_0E/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">Alberta</div>
+                        <div class="video-career">Air Traffic Controller</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/Bvt7u4r9YEk?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/Bvt7u4r9YEk/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">Alberta</div>
+                        <div class="video-career">Air Traffic Controller</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/d_w169V_e4E?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/d_w169V_e4E/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">British Columbia</div>
+                        <div class="video-career">Air Traffic Controller</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/TQUWzRS5TVo?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/TQUWzRS5TVo/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">British Columbia</div>
+                        <div class="video-career">Air Traffic Controller</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/B--OYVUJlRM?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/B--OYVUJlRM/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">New Brunswick</div>
+                        <div class="video-career">Air Traffic Controller</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/FJNNzNZG6QA?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/FJNNzNZG6QA/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">New Brunswick</div>
+                        <div class="video-career">Air Traffic Controller</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/JsIFeQvThK0?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/JsIFeQvThK0/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">Newfoundland and Labrador</div>
+                        <div class="video-career">Air Traffic Controller</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/K1yEt_3P1Tw?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/K1yEt_3P1Tw/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">Ontario</div>
+                        <div class="video-career">Air Traffic Controller</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/aFXpBH-dQFo?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/aFXpBH-dQFo/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">Ontario</div>
+                        <div class="video-career">Air Traffic Controller</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/KjT4dolAXgw?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/KjT4dolAXgw/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">Ontario</div>
+                        <div class="video-career">Air Traffic Controller</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/69BeQjL5gno?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/69BeQjL5gno/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">Ontario</div>
+                        <div class="video-career">Air Traffic Controller</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/yKvJqjiVE1I?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/yKvJqjiVE1I/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">Ontario</div>
+                        <div class="video-career">Air Traffic Controller</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/UffGnS2-jqo?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/UffGnS2-jqo/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">Ontario</div>
+                        <div class="video-career">Air Traffic Controller</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/io6IcqOfLl0?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/io6IcqOfLl0/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">Ontario</div>
+                        <div class="video-career">Flight Service Specialist</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/ieqHZ0W5RKs?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/ieqHZ0W5RKs/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">Ontario</div>
+                        <div class="video-career">Air Traffic Controller</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/wNncMtakBbk?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/wNncMtakBbk/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">Ontario</div>
+                        <div class="video-career">Air Traffic Controller</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/HU98J1aWn5Q?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/HU98J1aWn5Q/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">Ontario</div>
+                        <div class="video-career">Air Traffic Controller</div>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-embed" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/OpdRIoxovbs?autoplay=1\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>'">
+                        <div class="video-thumbnail" style="background: url('https://img.youtube.com/vi/OpdRIoxovbs/hqdefault.jpg') center/cover no-repeat;">
+                            <div class="play-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-meta">Ontario</div>
+                        <div class="video-career">Flight Service Specialist</div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://industryimmersionseries.myblueprint.ca/grant-recipients" class="view-all-link" target="_blank">
+                    <span>View All Top 20 Videos</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="Arrow right"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Micro Grant Winners Section -->
+    <section class="winners-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Micro Grant Recipients</h2>
+                <p class="section-subtitle">20 Students Awarded for Outstanding Career Exploration</p>
+            </div>
+            <div class="prize-highlight">
+                <div class="prize-amount">$10,000</div>
+                <div class="prize-breakdown">20 x $500 Micro Grants Awarded</div>
+            </div>
+            <div class="winners-by-province">
+                <div class="province-winners">
+                    <div class="province-name">Ontario</div>
+                    <div class="province-count">11</div>
+                    <div class="province-label">Winners</div>
+                </div>
+                <div class="province-winners">
+                    <div class="province-name">Alberta</div>
+                    <div class="province-count">4</div>
+                    <div class="province-label">Winners</div>
+                </div>
+                <div class="province-winners">
+                    <div class="province-name">British Columbia</div>
+                    <div class="province-count">2</div>
+                    <div class="province-label">Winners</div>
+                </div>
+                <div class="province-winners">
+                    <div class="province-name">New Brunswick</div>
+                    <div class="province-count">2</div>
+                    <div class="province-label">Winners</div>
+                </div>
+                <div class="province-winners">
+                    <div class="province-name">Newfoundland and Labrador</div>
+                    <div class="province-count">1</div>
+                    <div class="province-label">Winner</div>
+                </div>
+            </div>
+            <div class="winners-list">
+                <div class="winner-card">
+                    <div class="winner-province">Alberta · Grade 11</div>
+                    <div class="winner-career">Edmonton Public School Board</div>
+                </div>
+                <div class="winner-card">
+                    <div class="winner-province">Alberta · Grade 12</div>
+                    <div class="winner-career">Foundations for the Future Charter Academy</div>
+                </div>
+                <div class="winner-card">
+                    <div class="winner-province">Alberta · Grade 12</div>
+                    <div class="winner-career">Palliser Regional Schools</div>
+                </div>
+                <div class="winner-card">
+                    <div class="winner-province">Alberta · Grade 10</div>
+                    <div class="winner-career">STAR Catholic</div>
+                </div>
+                <div class="winner-card">
+                    <div class="winner-province">British Columbia · Grade 10</div>
+                    <div class="winner-career">Heritage Christian Online School</div>
+                </div>
+                <div class="winner-card">
+                    <div class="winner-province">British Columbia · Grade 10</div>
+                    <div class="winner-career">Heritage Christian Online School</div>
+                </div>
+                <div class="winner-card">
+                    <div class="winner-province">New Brunswick · Grade 12</div>
+                    <div class="winner-career">Anglophone East School District</div>
+                </div>
+                <div class="winner-card">
+                    <div class="winner-province">New Brunswick · Grade 10</div>
+                    <div class="winner-career">Anglophone East School District</div>
+                </div>
+                <div class="winner-card">
+                    <div class="winner-province">Newfoundland and Labrador · Grade 12</div>
+                    <div class="winner-career">NLESD</div>
+                </div>
+                <div class="winner-card">
+                    <div class="winner-province">Ontario · Grade 12</div>
+                    <div class="winner-career">District School Board Ontario North East</div>
+                </div>
+                <div class="winner-card">
+                    <div class="winner-province">Ontario · Grade 11</div>
+                    <div class="winner-career">Grand Erie District School Board</div>
+                </div>
+                <div class="winner-card">
+                    <div class="winner-province">Ontario · Grade 11</div>
+                    <div class="winner-career">Halton District School Board</div>
+                </div>
+                <div class="winner-card">
+                    <div class="winner-province">Ontario · Grade 11</div>
+                    <div class="winner-career">Hamilton-Wentworth Catholic District School Board</div>
+                </div>
+                <div class="winner-card">
+                    <div class="winner-province">Ontario · Grade 9</div>
+                    <div class="winner-career">Toronto District School Board</div>
+                </div>
+                <div class="winner-card">
+                    <div class="winner-province">Ontario · Grade 10</div>
+                    <div class="winner-career">Toronto District School Board</div>
+                </div>
+                <div class="winner-card">
+                    <div class="winner-province">Ontario · Grade 9</div>
+                    <div class="winner-career">Toronto District School Board</div>
+                </div>
+                <div class="winner-card">
+                    <div class="winner-province">Ontario · Grade 10</div>
+                    <div class="winner-career">Toronto District School Board</div>
+                </div>
+                <div class="winner-card">
+                    <div class="winner-province">Ontario · Grade 10</div>
+                    <div class="winner-career">York Region District School Board</div>
+                </div>
+                <div class="winner-card">
+                    <div class="winner-province">Ontario · Grade 12</div>
+                    <div class="winner-career">York Region District School Board</div>
+                </div>
+                <div class="winner-card">
+                    <div class="winner-province">Ontario · Grade 11</div>
+                    <div class="winner-career">York Region District School Board</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overall Program Reach -->
+    <section>
+        <div class="container">
+            <div class="program-reach" style="display: flex; align-items: center; justify-content: center; padding: 80px 60px;">
+                <h2 class="section-title" style="color: var(--white); margin: 0;">Thank you, NAV CANADA.</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brands">
+                    <span class="footer-logo nav-canada">NAV CANADA</span>
+                    <span class="footer-divider">&times;</span>
+                    <span class="footer-logo">myBlueprint</span>
+                </div>
+                <p class="footer-text">Industry Immersion Series | January 2026</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
