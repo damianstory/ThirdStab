@@ -257,11 +257,11 @@ We will publish de-identified (anonymous summary data) information to provide up
       buttonText: 'Read Article'
     },
     {
-      title: 'Pay Stub Placeholder',
-      description: 'Coming soon',
-      url: '#',
+      title: 'Explaining Tax Deductions on Your Pay Stub',
+      description: 'Understand how tax deductions appear on your pay stub and what each withholding means',
+      url: 'https://www.hrblock.ca/blog/student-guide-explaining-tax-deductions-on-your-pay-stub',
       type: 'article',
-      buttonText: 'Coming Soon'
+      buttonText: 'Read Article'
     },
     {
       title: '$30,000 in Scholarship Awards',
