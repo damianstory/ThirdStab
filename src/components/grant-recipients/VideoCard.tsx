@@ -26,19 +26,17 @@ export default function VideoCard({ winner, language = 'en' }: VideoCardProps) {
       {/* Video Embed */}
       <div className="relative w-full bg-black" style={{ paddingBottom: '56.25%' }}>
         {winner.gumletId ? (
-          // Gumlet embed (portrait video, letterboxed in 16:9 container)
-          <div className="absolute inset-0 flex items-center justify-center">
-            <iframe
-              loading="lazy"
-              className="h-full"
-              style={{ aspectRatio: '9/16' }}
-              src={`https://play.gumlet.io/embed/${winner.gumletId}?background=false&autoplay=false&loop=false&disableControls=false`}
-              title={`${winner.schoolName} - ${gradeLabel} ${winner.grade}`}
-              referrerPolicy="origin"
-              allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen"
-              allowFullScreen
-            />
-          </div>
+          // Gumlet embed (responsive 16:9)
+          <iframe
+            loading="lazy"
+            className="absolute inset-0 w-full h-full"
+            style={{ border: 'none' }}
+            src={`https://play.gumlet.io/embed/${winner.gumletId}?background=false&autoplay=false&loop=false&disable_player_controls=false`}
+            title={`${winner.schoolName} - ${gradeLabel} ${winner.grade}`}
+            referrerPolicy="origin"
+            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen"
+            allowFullScreen
+          />
         ) : (
           // YouTube embed (standard 16:9)
           <iframe
