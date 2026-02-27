@@ -132,7 +132,7 @@ export const marchActivity: ActivityPageData = {
   },
 
   submission: {
-    url: '#', // Placeholder - submissions not open yet
+    url: 'https://questionnaire.simplesurvey.com/f/s.aspx?s=9ed368f1-b05e-44b4-a7b2-2f7ea044f088',
     deadline: new Date('2026-03-31T23:59:59-04:00'),
     instructions: 'Les soumissions ne sont pas encore ouvertes pour le défi de mars. Revenez lorsque le défi sera lancé pour soumettre votre vidéo sur les concepts fiscaux. Assurez-vous que le lien de votre vidéo est accessible (testez-le en mode navigation privée) avant de le soumettre.'
   },

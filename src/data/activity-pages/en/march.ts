@@ -132,7 +132,7 @@ export const marchActivity: ActivityPageData = {
   },
 
   submission: {
-    url: '#', // Placeholder - submissions not open yet
+    url: 'https://questionnaire.simplesurvey.com/f/s.aspx?s=9ed368f1-b05e-44b4-a7b2-2f7ea044f088',
     deadline: new Date('2026-03-31T23:59:59-04:00'),
     instructions: 'Submissions are not yet open for the March challenge. Check back when the challenge goes live to submit your tax education video. Make sure your video link is accessible (test in incognito mode) before submitting.'
   },
