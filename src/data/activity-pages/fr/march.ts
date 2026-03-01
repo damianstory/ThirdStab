@@ -92,7 +92,7 @@ export const marchActivity: ActivityPageData = {
       },
       {
         title: "Étape 5 : Révisez et soumettez",
-        details: "Avant de soumettre votre vidéo, vérifiez les points suivants :\n\n✓ L'information est-elle exacte? (Vérifiez à nouveau les ressources de H&R Block Canada.)\n✓ Avez-vous couvert tous les concepts de votre section?\n✓ Avez-vous expliqué comment ils sont liés entre eux?\n✓ Une personne qui regarde la vidéo apprend-elle réellement quelque chose?\n✓ La durée est-elle entre 90 et 120 secondes?\n\n<strong>Assurez-vous que le lien de votre vidéo est correctement partagé.</strong> Testez-le dans une fenêtre de navigation privée avant de le soumettre.\n\n<em>Remarque : Les soumissions ne sont pas encore ouvertes. Revenez lorsque le défi de mars sera lancé.</em>"
+        details: "Avant de soumettre votre vidéo, vérifiez les points suivants :\n\n✓ L'information est-elle exacte? (Vérifiez à nouveau les ressources de H&R Block Canada.)\n✓ Avez-vous couvert tous les concepts de votre section?\n✓ Avez-vous expliqué comment ils sont liés entre eux?\n✓ Une personne qui regarde la vidéo apprend-elle réellement quelque chose?\n✓ La durée est-elle entre 90 et 120 secondes?\n\n<strong>Assurez-vous que le lien de votre vidéo est correctement partagé.</strong> Testez-le dans une fenêtre de navigation privée avant de le soumettre."
       }
     ]
   },
@@ -134,7 +134,7 @@ export const marchActivity: ActivityPageData = {
   submission: {
     url: 'https://questionnaire.simplesurvey.com/f/s.aspx?s=9ed368f1-b05e-44b4-a7b2-2f7ea044f088',
     deadline: new Date('2026-03-31T23:59:59-04:00'),
-    instructions: 'Les soumissions ne sont pas encore ouvertes pour le défi de mars. Revenez lorsque le défi sera lancé pour soumettre votre vidéo sur les concepts fiscaux. Assurez-vous que le lien de votre vidéo est accessible (testez-le en mode navigation privée) avant de le soumettre.'
+    instructions: 'Soumettez votre vidéo sur les concepts fiscaux pour le défi de mars. Assurez-vous que le lien de votre vidéo est accessible (testez-le en mode navigation privée) avant de le soumettre.'
   },
 
   faqs: [

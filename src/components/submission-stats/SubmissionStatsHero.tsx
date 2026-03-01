@@ -12,28 +12,26 @@ const content = {
   en: {
     title: 'Submission Statistics',
     description: 'Explore student submissions from across Canada so far. Click on a pin to view school board and province activity submission statistics.',
-    sponsoredActivities: 'Sponsored Activities',
+    sponsoredActivities: 'Completed Activities',
     totalSubmissions: 'Total Submissions',
     uniqueSiteVisitors: 'Unique Site Visitors',
     microGrantRecipients: 'Micro Grant Recipients',
     schoolBoards: 'School Boards',
     thisMonthActivity: "This Month's Activity",
     remainingActivities: 'Remaining Activities',
-    additionalIncentives: 'Additional Incentives',
-    recipientVideos: 'Recipient Videos',
+    recipientVideos: 'Watch Previous Recipient Videos',
   },
   fr: {
     title: 'Statistiques de soumission',
     description: "Explorez les soumissions des étudiants à travers le Canada jusqu'à présent. Cliquez sur une épingle pour voir les statistiques de soumission des commissions scolaires et de la province.",
-    sponsoredActivities: 'Activités commanditées',
+    sponsoredActivities: 'Activités complétées',
     totalSubmissions: 'Total des soumissions',
     uniqueSiteVisitors: 'Visiteurs uniques',
     microGrantRecipients: 'Boursiers de microbourses',
     schoolBoards: 'Commissions scolaires',
     thisMonthActivity: 'Activité du mois',
     remainingActivities: 'Activités restantes',
-    additionalIncentives: 'Incitatifs supplémentaires',
-    recipientVideos: 'Vidéos des lauréats',
+    recipientVideos: 'Regarder les vidéos des lauréats précédents',
   },
 };
 
@@ -67,7 +65,7 @@ export function SubmissionStatsHero({
         {/* Stats Cards */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
           <div className="bg-white rounded-xl p-6 shadow-sm border border-neutral-100">
-            <div className="text-4xl font-black text-brandBlue mb-1">4</div>
+            <div className="text-4xl font-black text-brandBlue mb-1">5</div>
             <div className="text-sm text-neutral-500 font-medium">
               {t.sponsoredActivities}
             </div>
@@ -115,12 +113,12 @@ export function SubmissionStatsHero({
           <div className="grid grid-cols-2 gap-4 auto-rows-fr">
             {/* This Month's Activity */}
             <Link
-              href="/february"
+              href="/march"
               className="bg-white rounded-xl p-5 shadow-sm border border-neutral-100 flex flex-col items-center justify-center text-center hover:border-brandBlue/30 hover:shadow-md transition-all"
             >
               <Image
-                src="/logo5.png"
-                alt="Zurich Canada"
+                src="/logo6.jpeg"
+                alt="H&R Block Canada"
                 width={80}
                 height={32}
                 className="object-contain mb-1"
@@ -135,27 +133,16 @@ export function SubmissionStatsHero({
               href="/#timeline"
               className="bg-white rounded-xl p-5 shadow-sm border border-neutral-100 flex flex-col items-center justify-center text-center hover:border-brandBlue/30 hover:shadow-md transition-all"
             >
-              <div className="text-4xl font-black text-brandBlue mb-1">5</div>
+              <div className="text-4xl font-black text-brandBlue mb-1">4</div>
               <div className="text-sm text-neutral-500 font-medium">
                 {t.remainingActivities}
               </div>
             </Link>
 
-            {/* Additional Incentives */}
-            <Link
-              href="/sponsors"
-              className="bg-white rounded-xl p-5 shadow-sm border border-neutral-100 flex flex-col items-center justify-center text-center hover:border-brandBlue/30 hover:shadow-md transition-all"
-            >
-              <div className="text-4xl font-black text-brandBlue mb-1">7</div>
-              <div className="text-sm text-neutral-500 font-medium">
-                {t.additionalIncentives}
-              </div>
-            </Link>
-
-            {/* Recipient Videos */}
+            {/* Recipient Videos - spans full width on desktop */}
             <Link
               href="/grant-recipients"
-              className="bg-white rounded-xl p-5 shadow-sm border border-neutral-100 flex flex-col items-center justify-center text-center hover:border-brandBlue/30 hover:shadow-md transition-all"
+              className="col-span-2 bg-white rounded-xl p-5 shadow-sm border border-neutral-100 flex flex-col items-center justify-center text-center hover:border-brandBlue/30 hover:shadow-md transition-all"
             >
               <div className="text-3xl mb-1">🎉</div>
               <div className="text-sm text-neutral-500 font-medium">

@@ -92,7 +92,7 @@ export const marchActivity: ActivityPageData = {
       },
       {
         title: "Step 5: Review & Submit",
-        details: "Before submitting, review your video:\n\n✓ Is the information accurate? (Double-check against H&R Block Canada resources)\n✓ Did you cover all concepts in your cluster?\n✓ Did you explain how the concepts connect?\n✓ Would someone watching actually learn from this?\n✓ Is your video between 90-120 seconds?\n\n<strong>Make sure your video link has proper sharing settings</strong> — test it in an incognito browser window before submitting.\n\n<em>Note: Submissions are not yet open. Check back when the March challenge goes live!</em>"
+        details: "Before submitting, review your video:\n\n✓ Is the information accurate? (Double-check against H&R Block Canada resources)\n✓ Did you cover all concepts in your cluster?\n✓ Did you explain how the concepts connect?\n✓ Would someone watching actually learn from this?\n✓ Is your video between 90-120 seconds?\n\n<strong>Make sure your video link has proper sharing settings</strong> — test it in an incognito browser window before submitting."
       }
     ]
   },
@@ -134,7 +134,7 @@ export const marchActivity: ActivityPageData = {
   submission: {
     url: 'https://questionnaire.simplesurvey.com/f/s.aspx?s=9ed368f1-b05e-44b4-a7b2-2f7ea044f088',
     deadline: new Date('2026-03-31T23:59:59-04:00'),
-    instructions: 'Submissions are not yet open for the March challenge. Check back when the challenge goes live to submit your tax education video. Make sure your video link is accessible (test in incognito mode) before submitting.'
+    instructions: 'Submit your tax education video for the March challenge. Make sure your video link is accessible (test in incognito mode) before submitting.'
   },
 
   faqs: [
