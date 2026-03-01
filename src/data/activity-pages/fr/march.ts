@@ -41,7 +41,7 @@ export const marchActivity: ActivityPageData = {
   },
 
   howThisWorksVideo: {
-    embedUrl: 'https://www.youtube.com/embed/placeholder',
+    embedUrl: 'https://www.youtube.com/embed/6O6TPwLm5Gg',
     title: 'Activité de la Série d\'immersion industrielle de mars | Comment ça fonctionne'
   },
 
