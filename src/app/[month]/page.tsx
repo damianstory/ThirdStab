@@ -113,7 +113,7 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
             <ActivityDetailAndRubric activity={activityPageData} accentColor={activityPageData.accentColor} />
           </div>
           {activityPageData.topicClusters && activityPageData.topicClusters.length > 0 && (
-            <TopicClusters clusters={activityPageData.topicClusters} accentColor={activityPageData.accentColor} secondaryAccentColor={activityPageData.secondaryAccentColor} />
+            <TopicClusters clusters={activityPageData.topicClusters} accentColor={activityPageData.accentColor} secondaryAccentColor={activityPageData.secondaryAccentColor} month={activityPageData.month} />
           )}
           <div id="sponsor-resources">
             <SponsorResources

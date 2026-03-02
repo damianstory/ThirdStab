@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { trackActivitySelection } from '@/lib/analytics';
 
 export interface TopicCluster {
   id: string;
@@ -15,9 +16,10 @@ interface TopicClustersProps {
   clusters: TopicCluster[];
   accentColor?: string;
   secondaryAccentColor?: string;
+  month?: string;
 }
 
-export default function TopicClusters({ clusters, accentColor, secondaryAccentColor }: TopicClustersProps) {
+export default function TopicClusters({ clusters, accentColor, secondaryAccentColor, month }: TopicClustersProps) {
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
 
@@ -28,8 +30,13 @@ export default function TopicClusters({ clusters, accentColor, secondaryAccentCo
     return null;
   }
 
-  const handleToggle = (id: string) => {
-    setExpandedId(expandedId === id ? null : id);
+  const handleToggle = (id: string, title: string) => {
+    const isExpanding = expandedId !== id;
+    setExpandedId(isExpanding ? id : null);
+
+    if (isExpanding) {
+      trackActivitySelection(`Topic Cluster - ${title}`, month || 'Unknown');
+    }
   };
 
   return (
@@ -58,7 +65,7 @@ export default function TopicClusters({ clusters, accentColor, secondaryAccentCo
               <div key={cluster.id} className="flex flex-col">
                 {/* Clickable Card */}
                 <button
-                  onClick={() => handleToggle(cluster.id)}
+                  onClick={() => handleToggle(cluster.id, cluster.title)}
                   onMouseEnter={() => setHoveredId(cluster.id)}
                   onMouseLeave={() => setHoveredId(null)}
                   className={`group relative bg-gradient-to-br from-slate-50 to-slate-100

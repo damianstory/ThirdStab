@@ -48,7 +48,7 @@ export default async function MarchActivityFrenchPage() {
           <ActivityDetailAndRubric activity={marchActivity} accentColor={marchActivity.accentColor} language="fr" />
         </div>
         {marchActivity.topicClusters && marchActivity.topicClusters.length > 0 && (
-          <TopicClusters clusters={marchActivity.topicClusters} accentColor={marchActivity.accentColor} secondaryAccentColor={marchActivity.secondaryAccentColor} />
+          <TopicClusters clusters={marchActivity.topicClusters} accentColor={marchActivity.accentColor} secondaryAccentColor={marchActivity.secondaryAccentColor} month={marchActivity.month} />
         )}
         <div id="sponsor-resources">
           <SponsorResources
