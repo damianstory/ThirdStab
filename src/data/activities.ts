@@ -138,7 +138,7 @@ export const activities: Activity[] = [
     id: '7',
     month: 'April',
     year: '2026',
-    title: 'Tourism & Hospitality Challenge',
+    title: 'Tourism Itinerary Challenge',
     description: 'Explore one of the world’s fastest-growing industries. From unique local businesses to influential global brands, find your perfect career destination and map out how to get there.',
     sponsor: {
       name: 'Tourism HR Canada',
@@ -518,7 +518,7 @@ const activitiesFr: Activity[] = [
     id: '7',
     month: 'avril',
     year: '2026',
-    title: "Défi Tourisme et hospitalité",
+    title: "Défi tourisme local : Expériences réinventées",
     description: "Explorez l'une des industries qui connaît la plus forte croissance au monde. Des entreprises locales uniques aux marques mondiales influentes, trouvez la carrière qui vous correspond et planifiez votre parcours pour y arriver.",
     sponsor: {
       name: 'Tourism HR Canada',
