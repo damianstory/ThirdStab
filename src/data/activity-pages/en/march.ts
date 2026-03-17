@@ -88,7 +88,7 @@ export const marchActivity: ActivityPageData = {
       },
       {
         title: "Step 4: Create Your Video",
-        details: "<strong>Record a 90-120 second video</strong> teaching your cluster's concepts clearly.\n\nYour video should:\n• Introduce your topic cluster\n• Explain each concept in the cluster\n• Show how the concepts connect to each other\n• Help the viewer actually understand and remember the information\n\nFormat is flexible:\n• Talking head, animation, whiteboard explanation — whatever works for you\n• Vertical or horizontal — your choice\n• Props, diagrams, or screen recordings are encouraged\n• You don't have to show your face if you prefer voice-over with visuals\n\n<strong>Video length: 90-120 seconds (1.5-2 minutes)</strong>"
+        details: "<strong>Record a 90-120 second video</strong> teaching your cluster's concepts clearly.\n\nYour video should:\n• Introduce your topic cluster\n• Explain each concept in the cluster\n• Show how the concepts connect to each other\n• Help the viewer actually understand and remember the information\n\nFormat is flexible:\n• Talking head, animation, whiteboard explanation — whatever works for you\n• Vertical or horizontal — your choice\n• Try to avoid making a video that is just slides and a voiceover; it will be very hard to stand out\n• Think about what would make your video unique, for example, filiming the opening outside your local H&R Block\n\n<strong>Video length: 90-120 seconds (1.5-2 minutes)</strong>"
       },
       {
         title: "Step 5: Review & Submit",
