@@ -177,11 +177,11 @@ Your video should walk through:
         weight: 0,
         description: '',
         isLink: true,
-        url: '#'
+        url: 'https://claude.ai/public/artifacts/165da92c-9757-4b52-98ae-c31ab5a9e3f1'
       }
     ],
     totalPoints: 100,
-    detailedRubricUrl: '#'
+    detailedRubricUrl: 'https://claude.ai/public/artifacts/165da92c-9757-4b52-98ae-c31ab5a9e3f1'
   },
 
   submission: {
@@ -259,7 +259,7 @@ Your video should walk through:
       description: 'Key facts and labour market data about Canada\'s tourism industry.',
       url: 'https://tourismhr.ca/labour-market-information/tourism-facts/',
       type: 'link',
-      borderColor: '#8BB8D9',
+      borderColor: '#03333d',
       borderOnly: true
     },
     {
@@ -267,7 +267,7 @@ Your video should walk through:
       description: 'Explore career pathways and opportunities in Canada\'s tourism sector.',
       url: 'https://discovertourism.ca/guidebook/career-pathways/',
       type: 'link',
-      borderColor: '#8BB8D9',
+      borderColor: '#03333d',
       borderOnly: true
     },
     {
@@ -275,7 +275,7 @@ Your video should walk through:
       description: 'Interactive career map to explore roles across the tourism industry.',
       url: 'https://discovertourism.ca/tool/interactive-career-map/',
       type: 'link',
-      borderColor: '#8BB8D9',
+      borderColor: '#03333d',
       borderOnly: true
     },
     {
@@ -283,7 +283,7 @@ Your video should walk through:
       description: 'Learn about the economic value and impact of tourism across Canada.',
       url: 'https://www.destinationcanada.com/en-ca/value-of-tourism',
       type: 'link',
-      borderColor: '#8BB8D9',
+      borderColor: '#03333d',
       borderOnly: true
     },
     {
@@ -291,7 +291,7 @@ Your video should walk through:
       description: 'Discover tourism experiences and destinations across Canada for inspiration.',
       url: 'https://travel.destinationcanada.com/en-ca',
       type: 'link',
-      borderColor: '#8BB8D9',
+      borderColor: '#03333d',
       borderOnly: true
     },
     {
@@ -299,7 +299,7 @@ Your video should walk through:
       description: 'Placeholder',
       url: '#',
       type: 'link',
-      borderColor: '#8BB8D9',
+      borderColor: '#03333d',
       borderOnly: true
     }
   ],
