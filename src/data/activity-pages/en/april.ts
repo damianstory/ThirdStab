@@ -8,8 +8,8 @@ export const aprilActivity: ActivityPageData = {
   title: 'Tourism Itinerary Challenge',
   description: 'Explore one of the world\'s fastest-growing industries. Design a unique local tourism experience that puts your community on the map and discover career opportunities in tourism.',
   sponsor: {
-    name: 'Tourism HR Canada',
-    logo: '/logo7.png',
+    name: 'Discover Tourism',
+    logo: '/images/discover-tourism-logo.png',
     logoType: 'wide'
   },
   incentive: {
@@ -30,8 +30,8 @@ export const aprilActivity: ActivityPageData = {
 
   video: {
     embedUrl: 'https://www.youtube.com/embed/PLACEHOLDER',
-    title: 'About Tourism HR Canada',
-    description: `Watch this video to learn what the Local Tourism Challenge is all about and how Tourism HR Canada is helping young people explore career opportunities in one of the world's fastest-growing industries. You'll see how you can take part, design a unique tourism experience, and even earn micro grants while building real-world skills.`
+    title: 'About Discover Tourism',
+    description: `Watch this video to learn what the Local Tourism Challenge is all about and how Discover Tourism is helping young people explore career opportunities in one of the world's fastest-growing industries. You'll see how you can take part, design a unique tourism experience, and even earn micro grants while building real-world skills.`
   },
 
   howThisWorksVideo: {
@@ -232,7 +232,7 @@ Your video should walk through:
     },
     {
       question: 'Who is reviewing the submissions?',
-      answer: `Submissions will be reviewed by a team of representatives from myBlueprint. We may, if needed, collaborate with representatives from Tourism HR Canada.`
+      answer: `Submissions will be reviewed by a team of representatives from myBlueprint. We may, if needed, collaborate with representatives from Discover Tourism.`
     },
     {
       question: 'Can students submit their videos in French?',
@@ -270,7 +270,7 @@ Your video should walk through:
 
   resources: [
     {
-      title: 'Tourism HR Canada',
+      title: 'Discover Tourism',
       description: 'Explore Canada\'s tourism workforce — labour market data, career resources, and industry research.',
       url: '#',
       type: 'link',
@@ -278,7 +278,7 @@ Your video should walk through:
       borderOnly: true
     },
     {
-      title: 'Tourism HR Canada — Career Profiles',
+      title: 'Discover Tourism — Career Profiles',
       description: 'Browse detailed profiles of tourism careers including skills, education, and job outlook.',
       url: '#',
       type: 'link',
@@ -318,12 +318,12 @@ Your video should walk through:
       borderOnly: true
     }
   ],
-  resourcesTitle: 'Tourism HR Canada Resources',
+  resourcesTitle: 'Discover Tourism Resources',
   resourcesSubtitle: 'Explore these resources to support your research',
 
   meta: {
     title: 'Tourism Itinerary Challenge - April 2026 | Industry Immersion Series',
-    description: 'Design a unique local tourism itinerary, explore career opportunities in Canada\'s tourism industry, and win up to $500 in micro grants with Tourism HR Canada.',
-    ogImage: '/logo7.png'
+    description: 'Design a unique local tourism itinerary, explore career opportunities in Canada\'s tourism industry, and win up to $500 in micro grants with Discover Tourism.',
+    ogImage: '/images/discover-tourism-logo.png'
   }
 };

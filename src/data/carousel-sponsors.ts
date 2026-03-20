@@ -57,7 +57,7 @@ export const carouselSponsors: CarouselSponsor[] = [
   {
     id: 'a7',
     name: 'Green Energy Partners',
-    logo: '/logo7.png',
+    logo: '/images/discover-tourism-logo.png',
     type: 'activity',
     month: 'April 2026'
   },

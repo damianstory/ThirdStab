@@ -204,7 +204,7 @@ const activitySponsors = [
   { month: 'January', logo: '/logo4.png', name: 'NAV CANADA' },
   { month: 'February', logo: '/logo5.png', name: 'Zurich Canada' },
   { month: 'March', logo: '/logo6.jpeg', name: 'H&R Block Canada' },
-  { month: 'April', logo: '/logo7.png', name: 'Tourism HR Canada' },
+  { month: 'April', logo: '/images/discover-tourism-logo.png', name: 'Discover Tourism' },
   { month: 'May', logo: '/hvacr-career-connections.png', name: 'HRAI' }
 ];
 ```

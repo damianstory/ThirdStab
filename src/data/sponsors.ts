@@ -82,7 +82,7 @@ export interface SponsorPageData extends Sponsor {
 }
 
 // Valid sponsor slugs for routing (sponsors with full profile pages)
-export const validSponsorSlugs: string[] = ['shad', 'jack-org', 'zurich-canada', 'hrblock-canada', 'tourism-hr', 'hrai'];
+export const validSponsorSlugs: string[] = ['shad', 'jack-org', 'zurich-canada', 'hrblock-canada', 'discover-tourism', 'hrai'];
 
 // Category colors for visual differentiation
 // Gradients match the filter button colors in SponsorsGrid
@@ -180,9 +180,9 @@ export const sponsors: Sponsor[] = [
   },
   {
     id: '7',
-    name: 'Tourism HR Canada',
-    slug: 'tourism-hr',
-    logo: '/images/tourism-hr-logo.jpeg',
+    name: 'Discover Tourism',
+    slug: 'discover-tourism',
+    logo: '/images/discover-tourism-logo.png',
     incentiveType: 'activity',
     contribution: 'Activity: April 2026',
   },

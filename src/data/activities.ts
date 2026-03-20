@@ -141,8 +141,8 @@ export const activities: Activity[] = [
     title: 'Tourism Itinerary Challenge',
     description: 'Explore one of the world’s fastest-growing industries. From unique local businesses to influential global brands, find your perfect career destination and map out how to get there.',
     sponsor: {
-      name: 'Tourism HR Canada',
-      logo: '/logo7.png',
+      name: 'Discover Tourism',
+      logo: '/images/discover-tourism-logo.png',
       logoType: 'wide'
     },
     incentive: {
@@ -521,8 +521,8 @@ const activitiesFr: Activity[] = [
     title: "Défi tourisme local : Expériences réinventées",
     description: "Explorez l'une des industries qui connaît la plus forte croissance au monde. Des entreprises locales uniques aux marques mondiales influentes, trouvez la carrière qui vous correspond et planifiez votre parcours pour y arriver.",
     sponsor: {
-      name: 'Tourism HR Canada',
-      logo: '/logo7.png',
+      name: 'Discover Tourism',
+      logo: '/images/discover-tourism-logo.png',
       logoType: 'wide'
     },
     incentive: {

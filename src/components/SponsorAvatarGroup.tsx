@@ -52,7 +52,7 @@ export default function SponsorAvatarGroup({
         sponsor.name, // Avatar 4 - keep original
         'Zurich Canada',
         'H&R Block Canada',
-        'Tourism HR Canada',
+        'Discover Tourism',
         'HVACR Career Connections powered by HRAI',
         'Jack.org'
       ];

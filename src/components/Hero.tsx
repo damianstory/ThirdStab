@@ -13,7 +13,7 @@ const companies = [
   { name: 'Logo 4', logo: '/logo4.png' },
   { name: 'Logo 5', logo: '/logo5.png' },
   { name: 'Logo 6', logo: '/logo6.jpeg' },
-  { name: 'Logo 7', logo: '/logo7.png' },
+  { name: 'Discover Tourism', logo: '/images/discover-tourism-logo.png' },
   { name: 'HVACR Career Connections', logo: '/hvacr-career-connections.png' },
   { name: 'Jack', logo: '/jack-logo.png' },
 ];
@@ -185,7 +185,7 @@ export default function Hero({ language = 'en' }: HeroProps) {
                       company.logo === '/logo2.png' ? 'h-[2.768rem] lg:h-[3.322rem]' :
                       company.logo === '/thinkag-logo.png' ? 'h-[2.1rem] lg:h-[2.55rem]' :
                       company.logo === '/logo5.png' ? 'h-[3.85rem] lg:h-[4.675rem]' :
-                      company.logo === '/logo7.png' ? 'h-[2.41rem] lg:h-[2.75rem]' :
+                      company.logo === '/images/discover-tourism-logo.png' ? 'h-[2.41rem] lg:h-[2.75rem]' :
                       company.logo === '/hvacr-career-connections.png' ? 'h-[1.97rem] lg:h-[2.39rem]' :
                       company.logo === '/jack-logo.png' ? 'h-[2.36rem] lg:h-[2.84rem]' : 'h-full'
                     }`}

@@ -1,23 +1,23 @@
 import { SponsorPageData } from '../../sponsors';
 
-export const tourismHrSponsor: SponsorPageData = {
+export const discoverTourismSponsor: SponsorPageData = {
   // Base sponsor information
   id: '7',
-  name: 'Tourism HR Canada',
-  logo: '/images/tourism-hr-logo.jpeg',
+  name: 'Discover Tourism',
+  logo: '/images/discover-tourism-logo.png',
   incentiveType: 'activity',
   contribution: 'Activity: April 2026',
-  slug: 'tourism-hr',
+  slug: 'discover-tourism',
 
   // Extended page content
   hero: {
     tagline: 'Explore Careers in Tourism & Hospitality',
-    introText: 'Tourism HR Canada and the Industry Immersion Series are partnering to help students discover careers in one of the world\'s fastest-growing industries. Complete the April activity and you could earn a $500 micro grant.'
+    introText: 'Discover Tourism and the Industry Immersion Series are partnering to help students discover careers in one of the world\'s fastest-growing industries. Complete the April activity and you could earn a $500 micro grant.'
   },
 
   about: {
-    title: 'About Tourism HR Canada',
-    description: `Create your own path with a career in tourism: explore one of the world's fastest-growing industries with Tourism HR Canada and Discover Tourism.
+    title: 'About Discover Tourism',
+    description: `Create your own path with a career in tourism: explore one of the world's fastest-growing industries with Discover Tourism.
 
 From unique local businesses to influential global brands to endless entrepreneurial adventures, find your perfect career destination and map out how to get there.`,
     industry: 'Tourism & Hospitality',
@@ -25,7 +25,7 @@ From unique local businesses to influential global brands to endless entrepreneu
   },
 
   partnership: {
-    description: `In April 2026, Tourism HR Canada is sponsoring a skill-building activity where you'll explore careers in tourism and hospitality, develop relevant skills, and create content that showcases what you've learned.
+    description: `In April 2026, Discover Tourism is sponsoring a skill-building activity where you'll explore careers in tourism and hospitality, develop relevant skills, and create content that showcases what you've learned.
 
 **Starting April 1st, 2026**, complete the activity and submit your work for a chance to be one of 20 students selected to receive a $500 micro grant.
 
@@ -94,8 +94,8 @@ Each monthly activity is assessed against a rubric specific to that challenge. O
   },
 
   meta: {
-    title: 'Tourism HR Canada | Industry Immersion Series Sponsor',
-    description: 'Explore careers in tourism and hospitality with Tourism HR Canada. Complete the April activity for a chance to earn a $500 micro grant.',
+    title: 'Discover Tourism | Industry Immersion Series Sponsor',
+    description: 'Explore careers in tourism and hospitality with Discover Tourism. Complete the April activity for a chance to earn a $500 micro grant.',
     ogImage: '/images/meta-preview.png'
   }
 };
