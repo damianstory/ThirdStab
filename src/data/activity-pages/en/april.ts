@@ -142,6 +142,7 @@ Your video should walk through:
 ✓ Did you include environmentally and community-conscious choices?
 ✓ Did you identify a clear target audience?
 ✓ Did you list the actual businesses and services a visitor would use?
+✓ Did you list some actual roles/careers people might interact with, e.g. tour guide, chef, hotel staff, etc.?
 ✓ Is your video between 90-120 seconds?
 
 <strong>Make sure your video link has proper sharing settings</strong> — test it in an incognito browser window before submitting.`
