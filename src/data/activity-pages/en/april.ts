@@ -295,10 +295,10 @@ Your video should walk through:
       borderOnly: true
     },
     {
-      title: 'Placeholder',
-      description: 'Placeholder',
-      url: '#',
-      type: 'link',
+      title: 'Canadian Academy of Travel & Tourism: Student Resources',
+      description: 'Student resources from the Canadian Academy of Travel & Tourism to support your tourism challenge.',
+      url: 'https://discovertourism.ca/wp-content/uploads/2026/03/myBlueprint-Discover-Tourism-Student-Resources.pdf',
+      type: 'pdf',
       borderColor: '#03333d',
       borderOnly: true
     }
