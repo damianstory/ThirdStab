@@ -73,17 +73,18 @@ export const aprilActivity: ActivityPageData = {
         details: `<strong>Create a detailed weekend itinerary for a unique tourism experience in your hometown or region.</strong>
 
 Your experience should:
-• Showcase <strong>non-traditional or distinctive local features</strong> — not the obvious tourist spots everyone already knows about
+• Showcase less-explored or distinctive local features — not the obvious tourist spots everyone already knows about
 • Include specific stops, activities, or highlights that make your itinerary stand out
-• Show that you're thinking about <strong>environmentally and community-conscious choices</strong> in your itinerary
+• Show that you're thinking about environmentally and community-conscious choices in your itinerary
 
-<strong>Think about choices like:</strong>
+Think about choices like:
 • Eco-friendly ways to get around (walking tours, bike routes, public transit)
 • Supporting local businesses and artisans instead of big chains
 • Keeping your environmental footprint low
 • Highlighting Indigenous culture or local heritage (with respect and authenticity)
+• Who the tourist will interact with, what their role is, and how they contribute to the experience
 
-Think about what makes your community special — the places, people, stories, and traditions that visitors would never discover on their own.`
+Think about what makes your community special — the places, people, stories, and traditions that visitors may not discover on their own.`
       },
       {
         title: "Step 2: Know Your Audience",
@@ -117,29 +118,13 @@ Think about every stop on your itinerary:
 <strong>Pro tip:</strong> Think about the full end-to-end journey of a visitor — from the moment they arrive (airport, train station, highway) to the moment they leave. Every step of that journey involves a local business or service. The more of these you can identify, the stronger your impact statement will be.`
       },
       {
-        title: "Step 4: Career Connections",
-        details: `<strong>Identify the different tourism roles needed to bring your experience to life.</strong>
-
-Think about all the people working behind the scenes to make your itinerary happen — from the tour guide leading the group to the hotel front desk staff to the chef at the local restaurant.
-
-<strong>Then pick one role and go deep:</strong>
-• What does someone in this role actually do day-to-day?
-• What skills are needed to be great at it?
-• What training or education pathway would you follow to get into this career?
-
-<strong>Use the resources below to research these careers.</strong> The Resources section below has links to career profiles and industry information.
-
-<strong>Examples of tourism careers:</strong> Tour guide, event planner, hotel manager, marketing coordinator, travel advisor, heritage interpreter, park ranger, restaurant manager, transportation coordinator, tourism development officer.`
-      },
-      {
-        title: "Step 5: Create Your Video",
-        details: `<strong>Record a 90-120 second video covering Steps 1-4.</strong>
+        title: "Step 4: Create Your Video",
+        details: `<strong>Record a 90-120 second video covering Steps 1-3.</strong>
 
 Your video should walk through:
 • Your experience concept and what makes it unique
 • Your target audience and why they'd love it
 • The local economic impact and businesses involved
-• The tourism careers connected to your experience — and the one you went deep on
 
 <strong>Format is flexible:</strong>
 • Talking head, animation, documentary style, vlog — whatever works for you
@@ -150,14 +135,13 @@ Your video should walk through:
 <strong>Video length: 90-120 seconds (1.5-2 minutes)</strong>`
       },
       {
-        title: "Step 6: Review & Submit",
+        title: "Step 5: Review & Submit",
         details: `Before submitting, review your video:
 
-✓ Does your experience showcase non-traditional, distinctive local features?
+✓ Does your experience showcase less-explored, distinctive local features?
 ✓ Did you include environmentally and community-conscious choices?
 ✓ Did you identify a clear target audience?
 ✓ Did you list the actual businesses and services a visitor would use?
-✓ Did you identify tourism roles and go deep on one career?
 ✓ Is your video between 90-120 seconds?
 
 <strong>Make sure your video link has proper sharing settings</strong> — test it in an incognito browser window before submitting.`
@@ -208,11 +192,11 @@ Your video should walk through:
   faqs: [
     {
       question: 'How does this April Activity challenge work?',
-      answer: 'Carefully read the Activity Details steps 1-6 to understand what is being asked of you in this activity. You can also watch the How this Works video for a detailed overview.'
+      answer: 'Carefully read the Activity Details steps 1-5 to understand what is being asked of you in this activity. You can also watch the How this Works video for a detailed overview.'
     },
     {
       question: 'What am I actually being asked to submit?',
-      answer: `You're being asked to submit a 90-120 second video highlighting the research and planning you did from steps 1 through 4. Your video should cover: your tourism experience concept, your target audience, the local businesses and economic impact, and the tourism careers involved — including the one you went deep on. Make sure your video link has proper sharing settings — test it in an incognito browser window before submitting.`
+      answer: `You're being asked to submit a 90-120 second video highlighting the research and planning you did from steps 1 through 3. Your video should cover: your tourism experience concept, your target audience, and the local businesses and economic impact. Make sure your video link has proper sharing settings — test it in an incognito browser window before submitting.`
     },
     {
       question: 'Can I submit more than one video?',
@@ -220,7 +204,7 @@ Your video should walk through:
     },
     {
       question: 'Is there a preferred style for the video?',
-      answer: `No, it's whatever feels authentic and engaging to you. It can be a TikTok style video with lots of different cuts and background music or more documentary style — whatever you will enjoy making more, and clearly communicates the requested information from steps 1-4.`
+      answer: `No, it's whatever feels authentic and engaging to you. It can be a TikTok style video with lots of different cuts and background music or more documentary style — whatever you will enjoy making more, and clearly communicates the requested information from steps 1-3.`
     },
     {
       question: 'Does it matter what tool I use to make the video?',
