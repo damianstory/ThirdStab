@@ -22,14 +22,14 @@ export const aprilActivity: ActivityPageData = {
 
   // Extended page content
   hero: {
-    backgroundImage: '/april-hero.jpg',
+    backgroundImage: '/images/april-hero.jpg',
     backgroundPosition: 'center center',
     tagline: 'Design a Tourism Experience That Puts Your Community on the Map',
     introText: `Canada's tourism industry is one of the fastest-growing sectors in the country, supporting hundreds of thousands of jobs and connecting communities from coast to coast to coast. In this challenge, you'll design a unique local itinerary showcasing the non-traditional, distinctive features of your hometown or region — the hidden gems that most visitors would never find on their own.`
   },
 
   video: {
-    embedUrl: 'https://www.youtube.com/embed/PLACEHOLDER',
+    embedUrl: 'https://drive.google.com/file/d/1cHeffAI5X8HLdV6irDpV-6tVopkCeoEv/preview',
     title: 'About Discover Tourism',
     description: `Watch this video to learn what the Local Tourism Challenge is all about and how Discover Tourism is helping young people explore career opportunities in one of the world's fastest-growing industries. You'll see how you can take part, design a unique tourism experience, and even earn micro grants while building real-world skills.`
   },
