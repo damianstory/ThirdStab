@@ -270,48 +270,48 @@ Your video should walk through:
 
   resources: [
     {
-      title: 'Discover Tourism',
-      description: 'Explore Canada\'s tourism workforce — labour market data, career resources, and industry research.',
-      url: '#',
+      title: 'Tourism HR Canada: Tourism Facts',
+      description: 'Key facts and labour market data about Canada\'s tourism industry.',
+      url: 'https://tourismhr.ca/labour-market-information/tourism-facts/',
       type: 'link',
       borderColor: '#8BB8D9',
       borderOnly: true
     },
     {
-      title: 'Discover Tourism — Career Profiles',
-      description: 'Browse detailed profiles of tourism careers including skills, education, and job outlook.',
-      url: '#',
+      title: 'Discover Tourism: Career Pathways',
+      description: 'Explore career pathways and opportunities in Canada\'s tourism sector.',
+      url: 'https://discovertourism.ca/guidebook/career-pathways/',
       type: 'link',
       borderColor: '#8BB8D9',
       borderOnly: true
     },
     {
-      title: 'Destination Canada — Explore Canada',
+      title: 'Discover Tourism: Career Map',
+      description: 'Interactive career map to explore roles across the tourism industry.',
+      url: 'https://discovertourism.ca/tool/interactive-career-map/',
+      type: 'link',
+      borderColor: '#8BB8D9',
+      borderOnly: true
+    },
+    {
+      title: 'Destination Canada: Value of Tourism',
+      description: 'Learn about the economic value and impact of tourism across Canada.',
+      url: 'https://www.destinationcanada.com/en-ca/value-of-tourism',
+      type: 'link',
+      borderColor: '#8BB8D9',
+      borderOnly: true
+    },
+    {
+      title: 'Destination Canada: Traveller Website',
       description: 'Discover tourism experiences and destinations across Canada for inspiration.',
-      url: '#',
+      url: 'https://travel.destinationcanada.com/en-ca',
       type: 'link',
       borderColor: '#8BB8D9',
       borderOnly: true
     },
     {
-      title: 'Sustainable Tourism Resources',
-      description: 'Learn about sustainable tourism practices and how the industry is going green.',
-      url: '#',
-      type: 'link',
-      borderColor: '#8BB8D9',
-      borderOnly: true
-    },
-    {
-      title: 'Tourism Industry Association of Canada',
-      description: 'Canada\'s national tourism industry association — advocacy, research, and industry news.',
-      url: '#',
-      type: 'link',
-      borderColor: '#8BB8D9',
-      borderOnly: true
-    },
-    {
-      title: 'Job Bank — Tourism Careers',
-      description: 'Search tourism job postings and explore labour market information across Canada.',
+      title: 'Placeholder',
+      description: 'Placeholder',
       url: '#',
       type: 'link',
       borderColor: '#8BB8D9',
