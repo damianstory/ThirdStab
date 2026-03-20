@@ -11,10 +11,10 @@ export default function ActivityHero({ activity, contentClassName, accentColor }
   const backgroundImage = activity.hero.backgroundImage || '/activity-hero-mining.webp';
 
   return (
-    <section className="relative min-h-[500px] md:min-h-[600px] lg:min-h-[700px] overflow-hidden">
-      {/* Background Image Layer */}
+    <section className="relative min-h-[560px] md:min-h-[660px] lg:min-h-[780px] overflow-hidden">
+      {/* Background Image Layer - starts below fixed header */}
       <div
-        className={`absolute inset-0 ${activity.hero.backgroundPosition ? '' : 'activity-hero-bg-mobile md:activity-hero-bg-desktop'} bg-cover bg-no-repeat`}
+        className={`absolute inset-0 top-16 ${activity.hero.backgroundPosition ? '' : 'activity-hero-bg-mobile md:activity-hero-bg-desktop'} bg-cover bg-no-repeat`}
         style={{
           backgroundImage: `url('${backgroundImage}')`,
           ...(activity.hero.backgroundPosition ? { backgroundPosition: activity.hero.backgroundPosition } : {}),
@@ -22,10 +22,10 @@ export default function ActivityHero({ activity, contentClassName, accentColor }
       />
 
       {/* Gradient Overlay Layer */}
-      <div className="absolute inset-0 activity-hero-gradient-mobile md:activity-hero-gradient-desktop" />
+      <div className="absolute inset-0 top-16 activity-hero-gradient-mobile md:activity-hero-gradient-desktop" />
       
       {/* Content Layer */}
-      <div className={`relative z-10 w-full flex min-h-[500px] md:min-h-[600px] lg:min-h-[700px] flex-col items-center justify-center px-6 lg:px-20 ${contentClassName || ''}`}>
+      <div className={`relative z-10 w-full flex min-h-[560px] md:min-h-[660px] lg:min-h-[780px] flex-col items-center justify-center pt-16 px-6 lg:px-20 ${contentClassName || ''}`}>
         <div className="mx-auto max-w-lg text-center lg:mx-0 lg:max-w-2xl lg:text-left lg:mr-auto">
             {/* Month/Year Badge */}
             <div
