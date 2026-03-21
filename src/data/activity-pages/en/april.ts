@@ -25,13 +25,13 @@ export const aprilActivity: ActivityPageData = {
     backgroundImage: '/images/april-hero.png',
     backgroundPosition: 'top center',
     tagline: 'Design a Tourism Experience That Puts Your Community on the Map',
-    introText: `Canada's tourism industry is one of the fastest-growing sectors in the country, supporting hundreds of thousands of jobs and connecting communities from coast to coast to coast. In this challenge, you'll design a unique local itinerary showcasing the non-traditional, distinctive features of your hometown or region — the hidden gems that most visitors would never find on their own.`
+    introText: `Tourism is one of the fastest-growing industries in Canada, supporting over two million jobs and connecting communities from coast to coast to coast. In this challenge, you'll design a unique local itinerary showcasing the less-explored, distinctive features of your hometown or region — the hidden gems that visitors may not find on their own.`
   },
 
   video: {
     embedUrl: 'https://drive.google.com/file/d/1cHeffAI5X8HLdV6irDpV-6tVopkCeoEv/preview',
     title: 'About Discover Tourism',
-    description: `Watch this video to learn what the Local Tourism Challenge is all about and how Discover Tourism is helping young people explore career opportunities in one of the world's fastest-growing industries. You'll see how you can take part, design a unique tourism experience, and even earn micro grants while building real-world skills.`
+    description: `Watch this video to explore how Discover Tourism is helping young people explore career opportunities in one of the world's fastest-growing industries. Then read on to see how you can take part in the Tourism Itinerary Challenge, design a unique tourism experience, and earn micro grants while building real-world skills.`
   },
 
   howThisWorksVideo: {
@@ -77,10 +77,9 @@ Your experience should:
 • Include specific stops, activities, or highlights that make your itinerary stand out
 • Show that you're thinking about environmentally and community-conscious choices in your itinerary
 
-Think about choices like:
-• Eco-friendly ways to get around (walking tours, bike routes, public transit)
+Think about details like:
 • Supporting local businesses and artisans instead of big chains
-• Keeping your environmental footprint low
+• Keeping your environmental footprint low, such as eco-friendly ways to get around (walking tours, bike routes, public transit)
 • Highlighting Indigenous culture or local heritage (with respect and authenticity)
 • Who the tourist will interact with, what their role is, and how they contribute to the experience
 
@@ -94,7 +93,7 @@ Consider who would be most interested:
 • Families with young kids?
 • Adventure seekers?
 • Foodies and culinary tourists?
-• Cultural tourists interested in history and heritage?
+• Cultural tourists interested in history or the arts?
 • Eco-tourists and nature lovers?
 • Young travellers looking for unique experiences?
 
@@ -110,6 +109,8 @@ Consider who would be most interested:
 Think about every stop on your itinerary:
 • Where would they stay? (hotel, B&B, campground)
 • Where would they eat? (restaurants, cafés, food trucks)
+• What attractions would they visit? (museums, parks, zoos)
+• What experiences would they take part in? (sports, concerts, festivals)
 • What services would they use? (bike rental, guided tour, shuttle)
 • Where would they shop? (local artisans, gift shops, markets)
 
@@ -124,7 +125,8 @@ Think about every stop on your itinerary:
 Your video should walk through:
 • Your experience concept and what makes it unique
 • Your target audience and why they'd love it
-• The local economic impact and businesses involved
+• The local impact and businesses involved
+• The tourism roles connected to your experience
 
 <strong>Format is flexible:</strong>
 • Talking head, animation, documentary style, vlog — whatever works for you
