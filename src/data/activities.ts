@@ -377,6 +377,12 @@ export interface ActivityPageData extends Activity {
   sponsorFontClass?: string; // CSS class for sponsor font (e.g., 'font-graphik')
   showSponsorInHeader?: boolean; // Show sponsor logo alongside IIS logo in nav bar
 
+  // Funding Attribution (optional - for government-funded activities)
+  fundingAttribution?: {
+    imageSrc: string;
+    altText: string;
+  };
+
   // Meta/SEO
   meta: {
     title: string;

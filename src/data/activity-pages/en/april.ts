@@ -308,6 +308,10 @@ Your video should walk through:
   resourcesTitle: 'Discover Tourism Resources',
   resourcesSubtitle: 'Explore these resources to support your research',
 
+  fundingAttribution: {
+    imageSrc: '/images/activities/april/funded-by-canada-wordmark.png',
+    altText: 'Funded in part by the Government of Canada\'s Sectoral Workforce Solutions Program'
+  },
   meta: {
     title: 'Tourism Itinerary Challenge - April 2026 | Industry Immersion Series',
     description: 'Design a unique local tourism itinerary, explore career opportunities in Canada\'s tourism industry, and win up to $500 in micro grants with Discover Tourism.',

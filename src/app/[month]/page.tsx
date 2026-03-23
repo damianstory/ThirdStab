@@ -14,6 +14,7 @@ import SkillsForSuccess from '@/components/activity/SkillsForSuccess';
 import IncentivesAndNavigation from '@/components/activity/IncentivesAndNavigation';
 import SpotlightCallouts from '@/components/activity/SpotlightCallouts';
 import TopicClusters from '@/components/activity/TopicClusters';
+import FundingAttribution from '@/components/activity/FundingAttribution';
 
 interface ActivityPageProps {
   params: {
@@ -124,6 +125,9 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
             />
           </div>
           {activityPageData.month === 'November' && <SkillsForSuccess activity={activityPageData} language="en" />}
+          {activityPageData.fundingAttribution && (
+            <FundingAttribution attribution={activityPageData.fundingAttribution} />
+          )}
           <div id="activity-faq">
             <ActivityFAQ activity={activityPageData} accentColor={activityPageData.accentColor} />
           </div>
