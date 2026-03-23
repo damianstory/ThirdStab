@@ -160,9 +160,9 @@ Your video should walk through:
         description: 'Comprehensive coverage of all required elements with accurate, detailed information'
       },
       {
-        category: 'Research & Citations',
+        category: 'Local Impact & Community Connection',
         weight: 25,
-        description: 'Quality sources properly cited throughout the video presentation'
+        description: 'Real local businesses and careers referenced to demonstrate community connection'
       },
       {
         category: 'Engagement & Creativity',
