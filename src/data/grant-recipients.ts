@@ -206,8 +206,30 @@ export const allMonths: MonthRecipients[] = [
     activitySlug: 'february',
     description: 'Congratulations to these 20 students who explored careers in insurance and received $500 microgrants for their outstanding video submissions.',
     descriptionFr: 'Félicitations à ces 20 élèves qui ont exploré les carrières en assurance et qui ont reçu des microbourses de 500 $ pour leurs excellentes soumissions vidéo.',
-    enabled: false,
-    winners: []
+    enabled: true,
+    winners: [
+      { id: 'feb-1', gumletId: '69c6d3571f1dc34da84c8b60', grade: 11, schoolBoard: 'York Catholic District School Board', schoolName: 'Father Michael McGivney Catholic Academy', province: 'Ontario' },
+      { id: 'feb-2', gumletId: '69c6d356f7bf88d62b0b09f4', grade: 11, schoolBoard: 'CEPEO', schoolName: 'De La Salle High School', province: 'Ontario' },
+      { id: 'feb-3', gumletId: '69c6d356f7bf88d62b0b09ef', grade: 11, schoolBoard: 'York Region District School Board', schoolName: 'Thornhill Secondary School', province: 'Ontario' },
+      { id: 'feb-4', gumletId: '69c6d3557a8212fa5f8e5a6d', grade: 11, schoolBoard: 'Grand Erie District School Board', schoolName: 'Brantford Collegiate Institute And Vocational School', province: 'Ontario' },
+      { id: 'feb-5', gumletId: '69c6d3551f1dc34da84c8b26', grade: 10, schoolBoard: 'Toronto District School Board', schoolName: 'North Albion Collegiate Institute', province: 'Ontario' },
+      { id: 'feb-6', gumletId: '69c6d3551f1dc34da84c8b10', grade: 12, schoolBoard: 'Durham District School Board', schoolName: 'Pine Ridge Secondary School', province: 'Ontario' },
+      { id: 'feb-7', gumletId: '69c6d3557a8212fa5f8e5a61', grade: 11, schoolBoard: 'Toronto District School Board', schoolName: 'North Albion Collegiate Institute', province: 'Ontario' },
+      { id: 'feb-8', gumletId: '69c6d355f7bf88d62b0b09a5', grade: 11, schoolBoard: 'Hamilton-Wentworth Catholic District School Board', schoolName: 'St. Mary CSS', province: 'Ontario' },
+      { id: 'feb-9', gumletId: '69c6d3451f1dc34da84c88ac', grade: 10, schoolBoard: 'Independent', schoolName: 'Heritage Christian Online School', province: 'British Columbia' },
+      { id: 'feb-10', gumletId: '69c6d345f7bf88d62b0b076a', grade: 8, schoolBoard: 'Deer Lake First Nation', schoolName: 'Deer Lake First Nation School', province: 'Ontario' },
+      { id: 'feb-11', gumletId: '69c6d345f7bf88d62b0b076c', grade: 11, schoolBoard: 'Halton District School Board', schoolName: 'Aldershot High School', province: 'Ontario' },
+      { id: 'feb-12', gumletId: '69c6d3451f1dc34da84c8881', grade: 10, schoolBoard: 'Waterloo Region District School Board', schoolName: 'Kitchener Waterloo Collegiate and Vocational School', province: 'Ontario' },
+      { id: 'feb-13', gumletId: '69c6d345f7bf88d62b0b0760', grade: 12, schoolBoard: 'Halton District School Board', schoolName: 'White Oaks Secondary School', province: 'Ontario' },
+      { id: 'feb-14', gumletId: '69c6d3451f1dc34da84c8892', grade: 12, schoolBoard: 'Peel District School Board', schoolName: 'Harold M. Brathwaite Secondary School', province: 'Ontario' },
+      { id: 'feb-15', gumletId: '69c6d3457a8212fa5f8e5869', grade: 8, schoolBoard: 'Conseil scolaire catholique MonAvenir', schoolName: 'École Secondaire Catholique Monseigneur de Charbonnel', province: 'Ontario' },
+      { id: 'feb-16', gumletId: '69c6d3457a8212fa5f8e586b', grade: 9, schoolBoard: 'Deer Lake First Nation', schoolName: 'Deer Lake First Nation School', province: 'Ontario' },
+      { id: 'feb-17', gumletId: '69c6d345f7bf88d62b0b075b', grade: 11, schoolBoard: 'Edmonton Public School Board', schoolName: 'Dr. Anne Anderson High School', province: 'Alberta' },
+      { id: 'feb-18', gumletId: '69c6d3451f1dc34da84c887f', grade: 12, schoolBoard: 'Toronto District School Board', schoolName: 'Northview Heights Secondary School', province: 'Ontario' },
+      { id: 'feb-19', gumletId: '69c6d345f7bf88d62b0b0758', grade: 12, schoolBoard: 'Dufferin Peel Catholic District School Board', schoolName: 'St. Thomas Aquinas CSS', province: 'Ontario' },
+      // Placeholder
+      { id: 'feb-20', youtubeId: 'X2emIiPoRP4', grade: 12, schoolBoard: 'Coming Soon', schoolName: 'Coming Soon', province: 'Coming Soon' },
+    ]
   },
   {
     month: 'March',
