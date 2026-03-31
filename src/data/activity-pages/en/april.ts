@@ -187,7 +187,7 @@ Your video should walk through:
   },
 
   submission: {
-    url: '#',
+    url: 'https://questionnaire.simplesurvey.com/f/s.aspx?s=e94f39ac-832c-4d94-ad30-bf27170b7e4c',
     deadline: new Date('2026-04-30T23:59:59-04:00'),
     instructions: 'Submit your local tourism experience video for the April challenge. Make sure your video link is accessible (test in incognito mode) before submitting.'
   },
