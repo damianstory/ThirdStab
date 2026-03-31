@@ -227,8 +227,7 @@ export const allMonths: MonthRecipients[] = [
       { id: 'feb-17', gumletId: '69c6d345f7bf88d62b0b075b', grade: 11, schoolBoard: 'Edmonton Public School Board', schoolName: 'Dr. Anne Anderson High School', province: 'Alberta' },
       { id: 'feb-18', gumletId: '69c6d3451f1dc34da84c887f', grade: 12, schoolBoard: 'Toronto District School Board', schoolName: 'Northview Heights Secondary School', province: 'Ontario' },
       { id: 'feb-19', gumletId: '69c6d345f7bf88d62b0b0758', grade: 12, schoolBoard: 'Dufferin Peel Catholic District School Board', schoolName: 'St. Thomas Aquinas CSS', province: 'Ontario' },
-      // Placeholder
-      { id: 'feb-20', youtubeId: 'X2emIiPoRP4', grade: 12, schoolBoard: 'Coming Soon', schoolName: 'Coming Soon', province: 'Coming Soon' },
+      { id: 'feb-20', gumletId: '69cbcbe43c661f324e982992', grade: 10, schoolBoard: 'Anglophone East School District', schoolName: 'Harrison Trimble High School', province: 'New Brunswick' },
     ]
   },
   {
