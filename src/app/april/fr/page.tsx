@@ -40,7 +40,7 @@ export default async function AprilActivityFrenchPage() {
   return (
     <div>
       <ActivityHeader />
-      <main className="pt-16">
+      <main>
         <ActivityHero activity={aprilActivity} />
         <VideoAndExplainer activity={aprilActivity} />
         <div id="activity-details">
