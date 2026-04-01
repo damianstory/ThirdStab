@@ -35,7 +35,7 @@ export const aprilActivity: ActivityPageData = {
   },
 
   howThisWorksVideo: {
-    embedUrl: 'https://www.youtube.com/embed/PLACEHOLDER',
+    embedUrl: 'https://www.youtube.com/embed/lHtlfTFcsdA',
     title: 'How this Works - April Challenge'
   },
 
