@@ -65,7 +65,7 @@ export function SubmissionStatsHero({
         {/* Stats Cards */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
           <div className="bg-white rounded-xl p-6 shadow-sm border border-neutral-100">
-            <div className="text-4xl font-black text-brandBlue mb-1">5</div>
+            <div className="text-4xl font-black text-brandBlue mb-1">6</div>
             <div className="text-sm text-neutral-500 font-medium">
               {t.sponsoredActivities}
             </div>
@@ -113,12 +113,12 @@ export function SubmissionStatsHero({
           <div className="grid grid-cols-2 gap-4 auto-rows-fr">
             {/* This Month's Activity */}
             <Link
-              href="/march"
+              href="/april"
               className="bg-white rounded-xl p-5 shadow-sm border border-neutral-100 flex flex-col items-center justify-center text-center hover:border-brandBlue/30 hover:shadow-md transition-all"
             >
               <Image
-                src="/logo6.jpeg"
-                alt="H&R Block Canada"
+                src="/images/discover-tourism-logo.png"
+                alt="Discover Tourism"
                 width={80}
                 height={32}
                 className="object-contain mb-1"
@@ -133,7 +133,7 @@ export function SubmissionStatsHero({
               href="/#timeline"
               className="bg-white rounded-xl p-5 shadow-sm border border-neutral-100 flex flex-col items-center justify-center text-center hover:border-brandBlue/30 hover:shadow-md transition-all"
             >
-              <div className="text-4xl font-black text-brandBlue mb-1">4</div>
+              <div className="text-4xl font-black text-brandBlue mb-1">3</div>
               <div className="text-sm text-neutral-500 font-medium">
                 {t.remainingActivities}
               </div>

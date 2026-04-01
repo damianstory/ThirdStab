@@ -42,10 +42,10 @@ export default function Timeline({ language = 'en' }: TimelineProps) {
       title: activity.title,
       industry: t.incentive,
       description: activity.description,
-      status: activity.month === "October" || activity.month === "octobre" || activity.month === "November" || activity.month === "novembre" || activity.month === "December" || activity.month === "décembre" || activity.month === "January" || activity.month === "janvier" || activity.month === "February" || activity.month === "février" || activity.month === "March" || activity.month === "mars" ? "confirmed" : "tba",
+      status: activity.month === "October" || activity.month === "octobre" || activity.month === "November" || activity.month === "novembre" || activity.month === "December" || activity.month === "décembre" || activity.month === "January" || activity.month === "janvier" || activity.month === "February" || activity.month === "février" || activity.month === "March" || activity.month === "mars" || activity.month === "April" || activity.month === "avril" ? "confirmed" : "tba",
       sponsor: activity.sponsor,
       slug: activity.slug, // Pass through the slug for navigation
-      strikethroughIndustry: activity.month === "October" || activity.month === "octobre" || activity.month === "November" || activity.month === "novembre" || activity.month === "December" || activity.month === "décembre" || activity.month === "January" || activity.month === "janvier" || activity.month === "February" || activity.month === "février" // Cross out micro grants for October through February
+      strikethroughIndustry: activity.month === "October" || activity.month === "octobre" || activity.month === "November" || activity.month === "novembre" || activity.month === "December" || activity.month === "décembre" || activity.month === "January" || activity.month === "janvier" || activity.month === "February" || activity.month === "février" || activity.month === "March" || activity.month === "mars" // Cross out micro grants for October through March
     })),
     // Incentive distribution month (no sponsor)
     {
@@ -80,7 +80,7 @@ export default function Timeline({ language = 'en' }: TimelineProps) {
           {timelineData.map((item, index) => (
             <div
               key={index}
-              id={(item.month === "March" || item.month === "mars") && item.year === "2026" ? "march-activity-card" : undefined}
+              id={(item.month === "April" || item.month === "avril") && item.year === "2026" ? "april-activity-card" : undefined}
               className="animate-fade-in-up"
               style={{
                 animationDelay: `${index * 0.1}s`
