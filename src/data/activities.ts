@@ -170,7 +170,7 @@ export const activities: Activity[] = [
       count: 20
     },
     status: 'coming-soon',
-    slug: 'may'
+    slug: 'may-1'
   },
   {
     id: '9',
@@ -392,7 +392,7 @@ export interface ActivityPageData extends Activity {
 }
 
 // Valid activity months for routing
-export const validActivityMonths = ['october', 'november', 'december', 'january', 'february', 'march', 'april', 'may', 'may-2'];
+export const validActivityMonths = ['october', 'november', 'december', 'january', 'february', 'march', 'april']; // Add 'may-1' and 'may-2' when ready to go live
 
 // Helper function to get activity by slug
 export function getActivityBySlug(slug: string): Activity | null {
@@ -556,7 +556,7 @@ const activitiesFr: Activity[] = [
       count: 20
     },
     status: 'coming-soon',
-    slug: 'may'
+    slug: 'may-1'
   },
   {
     id: '9',

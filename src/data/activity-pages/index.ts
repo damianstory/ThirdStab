@@ -20,7 +20,9 @@ export async function getActivityPageData(
 
     // Return the activity data from the module
     // Convention: each file exports an activity named `${month}Activity`
-    const activityKey = `${monthLower}Activity`;
+    // For hyphenated months (e.g., 'may-1'), convert to camelCase (e.g., 'may1Activity')
+    const camelMonth = monthLower.replace(/-(\w)/g, (_: string, c: string) => c.toUpperCase()).replace(/-/g, '');
+    const activityKey = `${camelMonth}Activity`;
     return activityModule[activityKey] || null;
   } catch (error) {
     console.warn(`Activity data not found for month: ${monthLower}, language: ${language}`);
