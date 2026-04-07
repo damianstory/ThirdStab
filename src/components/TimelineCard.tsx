@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { validActivityMonths } from '@/data/activities';
+import { liveActivityMonths } from '@/data/activities';
 import { useState } from 'react';
 import Modal from '@/components/Modal';
 import { X } from 'lucide-react';
@@ -56,7 +56,7 @@ export default function TimelineCard({ item, onComingSoonClick, language = 'en' 
 
   // Check if this activity has a dedicated page
   // Use slug if available (for localization support), otherwise fall back to month
-  const hasActivityPage = item.sponsor && validActivityMonths.includes(item.slug || item.month.toLowerCase());
+  const hasActivityPage = item.sponsor && liveActivityMonths.includes(item.slug || item.month.toLowerCase());
 
   // Check if this is the September promotional card that should show video
   const isSeptemberPromo = item.isPromotional && item.month === 'September' && item.year === '2025';
