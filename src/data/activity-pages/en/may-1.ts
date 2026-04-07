@@ -98,7 +98,7 @@ Your career spotlight should include:
 
 <strong>Bonus points:</strong> If you can connect with and interview an actual HVACR professional — even a brief conversation — it will make your video stand out.
 
-Examples of HVACR roles to explore: service technician, refrigeration mechanic, HVAC designer, energy auditor, sales representative, building automation specialist, sheet metal worker, project manager, business owner.`
+Examples of HVACR roles to explore: air-conditioning technician, pipefitter, air-conditioning engineer, fabricator, service manager, refrigeration technician, HVAC installer, estimator, systems engineer.`
       },
       {
         title: "Step 3: Technology & Environmental Impact",
@@ -108,7 +108,6 @@ Choose a technology like:
 • <strong>Heat pumps</strong> — How do they work? Why are they seen as key to reducing carbon emissions?
 • <strong>Smart HVAC systems</strong> — How does automation and IoT improve energy efficiency in buildings?
 • <strong>Modern refrigerants</strong> — Why is the industry moving away from older refrigerants? What's replacing them?
-• <strong>Geothermal systems</strong> — How do they use the earth's natural temperature for heating and cooling?
 
 Then connect it to the bigger picture:
 • How is the HVACR industry contributing to Canada's climate goals?
@@ -261,27 +260,50 @@ Before submitting, review your video:
   ],
 
   resources: [
-    // TODO: Replace/update these resources once Andrew sends the final links
     {
-      title: 'HRAI: HVACR Career Connections',
-      description: 'Explore careers in heating, ventilation, air conditioning, and refrigeration across Canada.',
-      url: 'https://www.hrai.ca/hvacr-career-connections', // TODO: Confirm exact URL
+      title: 'HVACR Careers',
+      description: 'Explore career paths, job roles, and opportunities in the HVACR industry across Canada.',
+      url: 'https://www.hvacrcareers.ca/',
       type: 'link',
       borderColor: '#003366',
       borderOnly: true
     },
     {
-      title: 'HVACR Career Quiz', // TODO: Replace with actual MS Forms quiz link from Andrew
-      description: 'Take this interactive quiz to discover which HVACR career might be the right fit for you.',
-      url: '', // TODO: Replace with MS Forms quiz URL from Andrew
+      title: 'HRAI',
+      description: 'Learn about the Heating, Refrigeration and Air Conditioning Institute of Canada and the HVACR industry.',
+      url: 'https://www.hrai.ca/',
       type: 'link',
       borderColor: '#003366',
       borderOnly: true
     },
     {
-      title: 'Job Bank: HVACR Technician Outlook',
-      description: 'See job prospects, wages, and labour market trends for HVACR professionals across Canada.',
-      url: 'https://www.jobbank.gc.ca/marketreport/outlook-occupation/17548/ca', // TODO: Confirm Job Bank URL
+      title: 'HRAI Contractor Locator',
+      description: 'Find HVACR contractors and companies in your local area using HRAI\'s directory.',
+      url: 'https://portal.hrai.ca/contractorlocator',
+      type: 'link',
+      borderColor: '#003366',
+      borderOnly: true
+    },
+    {
+      title: 'HRAI Climate Statement',
+      description: 'Read about HRAI\'s climate commitments and the HVACR industry\'s role in Canada\'s environmental goals.',
+      url: 'https://www.hrai.ca/Climate%20Statement',
+      type: 'link',
+      borderColor: '#003366',
+      borderOnly: true
+    },
+    {
+      title: 'Heat Pump Basics — Natural Resources Canada',
+      description: 'Understand how heat pumps work, their benefits, and why they\'re key to energy-efficient buildings.',
+      url: 'https://natural-resources.canada.ca/energy-efficiency/electric-heat-pumps/heat-pump-basics',
+      type: 'link',
+      borderColor: '#003366',
+      borderOnly: true
+    },
+    {
+      title: 'Job Bank: HVACR Mechanic Outlook',
+      description: 'See job prospects, wages, and labour market trends for HVACR mechanics across Canada.',
+      url: 'https://www.jobbank.gc.ca/outlookreport/occupation/7516',
       type: 'link',
       borderColor: '#003366',
       borderOnly: true
