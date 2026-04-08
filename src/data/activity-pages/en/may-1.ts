@@ -270,54 +270,6 @@ Make sure your video link is accessible. Test it in an incognito browser before 
 
   resources: [
     {
-      title: 'HVACR Careers',
-      description: 'Explore career paths, job roles, and opportunities in the HVACR industry across Canada.',
-      url: 'https://www.hvacrcareers.ca/',
-      type: 'link',
-      borderColor: '#003366',
-      borderOnly: true
-    },
-    {
-      title: 'HRAI',
-      description: 'Learn about the Heating, Refrigeration and Air Conditioning Institute of Canada and the HVACR industry.',
-      url: 'https://www.hrai.ca/',
-      type: 'link',
-      borderColor: '#003366',
-      borderOnly: true
-    },
-    {
-      title: 'HRAI Contractor Locator',
-      description: 'Find HVACR contractors and companies in your local area using HRAI\'s directory.',
-      url: 'https://portal.hrai.ca/contractorlocator',
-      type: 'link',
-      borderColor: '#003366',
-      borderOnly: true
-    },
-    {
-      title: 'HRAI Climate Statement',
-      description: 'Read about HRAI\'s climate commitments and the HVACR industry\'s role in Canada\'s environmental goals.',
-      url: 'https://www.hrai.ca/Climate%20Statement',
-      type: 'link',
-      borderColor: '#003366',
-      borderOnly: true
-    },
-    {
-      title: 'Heat Pump Basics — Natural Resources Canada',
-      description: 'Understand how heat pumps work, their benefits, and why they\'re key to energy-efficient buildings.',
-      url: 'https://natural-resources.canada.ca/energy-efficiency/electric-heat-pumps/heat-pump-basics',
-      type: 'link',
-      borderColor: '#003366',
-      borderOnly: true
-    },
-    {
-      title: 'Job Bank: HVACR Mechanic Outlook',
-      description: 'See job prospects, wages, and labour market trends for HVACR mechanics across Canada.',
-      url: 'https://www.jobbank.gc.ca/outlookreport/occupation/7516',
-      type: 'link',
-      borderColor: '#003366',
-      borderOnly: true
-    },
-    {
       title: 'HVACR Career Discovery Quiz',
       description: 'Take this quiz to discover which HVACR career path might be right for you.',
       url: 'https://forms.cloud.microsoft/pages/responsepage.aspx?id=6XlFeONDEkClCYLi98eIhNySyCQfGVlLgERmUl35JghURVBES0NMTExMWktBSkhSQlFYWEZLMVNSQS4u&route=shorturl',
