@@ -25,14 +25,14 @@ export const may1Activity: ActivityPageData = {
   hero: {
     backgroundImage: '/images/may-hero.jpg', // TODO: Replace with hero image from HRAI (without text overlay blocks)
     backgroundPosition: 'center top',
-    tagline: 'Discover the High-Demand Careers Powering Canada\'s Buildings and Climate Future',
-    introText: `Heating, ventilation, air conditioning, and refrigeration (HVACR) is one of the fastest-growing trades in Canada — and it's about much more than fixing furnaces. From designing energy-efficient buildings to installing heat pumps that fight climate change, HVACR professionals are at the forefront of Canada's green transition.\n\nIn this challenge, you'll research a real HVACR company in your community, spotlight a specific career in the industry, and explore how HVACR technology is shaping a more sustainable future. Along the way, you'll discover a high-demand career path you may not have known existed.`
+    tagline: 'Explore Real Careers Behind Comfortable, Efficient Buildings',
+    introText: `Heating, ventilation, air conditioning, and refrigeration (HVACR) keeps homes, schools, hospitals, and businesses running safely and efficiently. It's a growing and AI resistant field, with strong demand across Canada for skilled workers over a wide range of roles.\n\nIn this challenge, you'll explore a real HVACR company in your community, learn about a specific career in the field, and examine how HVACR technologies are improving energy efficiency and reducing environmental impact.\n\nFocus on clear, accurate information from trusted sources. Avoid copying general definitions—show what you've learned in your own words.\n\nAlong the way, you'll discover practical, in-demand career pathways you may not have considered.`
   },
 
   video: {
     embedUrl: 'https://www.youtube.com/embed/IBeLJ33OCoc',
     title: 'About HVACR Careers',
-    description: `Watch this video to discover why the HVACR sector is an essential, $4 billion industry offering flexible, hands-on, and high-paying career paths. Whether you aspire to be a technician, engineer, or even your own boss, explore how you can quickly enter the workforce and solve real-world problems.`
+    description: `Watch this video to learn how HVACR careers combine hands-on work, problem-solving, and evolving technology. From skilled trades like gas heating, refrigeration and air conditioning mechanics to system design, sales, and business ownership, HVACR offers a wide range of career paths.\n\nMany roles involve apprenticeship training, allowing you to earn while you learn and build in-demand skills that are needed in every community.`
   },
 
   howThisWorksVideo: {
@@ -67,91 +67,100 @@ export const may1Activity: ActivityPageData = {
   },
 
   activityDetail: {
-    description: `Canada needs tens of thousands more HVACR professionals in the coming years — and the career opportunities go far beyond what most people imagine. <strong>In this challenge, you'll research a real HVACR company in your community, spotlight a specific career role, and explore how HVACR technology is driving environmental progress.</strong>`,
+    description: `Canada needs more skilled HVACR professionals to support growing construction, maintenance, and energy efficiency needs. For example, it is estimated that the need for air conditioning & refrigeration mechanics will grow by 400% over the next 10 years.\n\n<strong>In this challenge, you will:</strong>\n• Research a real HVACR company in your community\n• Explore a specific career role within that company or the industry\n• Learn how HVACR technologies contribute to energy efficiency and building performance\n• Understand future career opportunities and demand in the field`,
     steps: [
       {
         title: "Step 1: Research a Local HVACR Company",
         details: `<strong>Find and feature at least one HVACR company in your community.</strong>
 
 Your research should cover:
-• What does this company do? (installation, service, manufacturing, design, etc.)
-• What types of HVACR systems do they work with?
-• How long have they been in your area?
+• What does the company do? (installation, service, maintenance, design, manufacturing, etc.)
+• What types of systems do they work with? (heating, cooling, heat pumps, refrigeration, residential, commercial, industrial)
+• How long have they been operating in your area?
 • What kinds of roles do they hire for?
 
 <strong>Where to look:</strong>
 • Search online for HVACR, heating, cooling, or refrigeration companies in your city or town
-• Ask family, friends, or neighbours if they know a local HVACR company
-• Check the HRAI resources below for directories and career information
+• Ask family, friends, or neighbours if they know a local company
+• Use the HRAI resources below to find companies and learn more about the industry
 
-The goal is to show that real HVACR companies exist in communities across Canada — maybe even right down the street from you.`
+<strong>Goal:</strong>
+Show that HVACR is a local industry with real businesses and job opportunities in communities across Canada, including your own.`
       },
       {
         title: "Step 2: Spotlight an HVACR Career",
-        details: `<strong>Choose a specific HVACR role and go deep on what it involves.</strong>
+        details: `<strong>Choose one HVACR role and explore what it's really like.</strong>
 
 Your career spotlight should include:
-• <strong>What they do day-to-day</strong> — What does a typical workday look like in this role?
-• <strong>Skills required</strong> — What technical and interpersonal skills are needed?
-• <strong>Training & education pathway</strong> — What certifications, apprenticeships, or schooling does it take to get there?
-• <strong>Earning potential</strong> — What can someone expect to earn in this role?
+• <strong>Day-to-day work</strong> — What does a typical day look like in this role?
+• <strong>Skills required</strong> — What technical and interpersonal skills are important?
+• <strong>Training & education</strong> — What pathway is required (apprenticeship, college, certifications)?
+• <strong>Earning potential</strong> — What can someone expect to earn as they gain experience?
 
-<strong>Bonus points:</strong> If you can connect with and interview an actual HVACR professional — even a brief conversation — it will make your video stand out.
+<strong>Bonus:</strong>
+If you can speak with someone in the industry, even briefly, include what you learned. First-hand insight makes your project stronger.
 
-Examples of HVACR roles to explore: air-conditioning technician, pipefitter, air-conditioning engineer, fabricator, service manager, refrigeration technician, HVAC installer, estimator, systems engineer.`
+<strong>Example roles to explore:</strong>
+Residential or commercial HVACR install/service technician, sheet metal worker, estimator, service manager, systems designer, or sales specialist.`
       },
       {
         title: "Step 3: Technology & Environmental Impact",
-        details: `<strong>Explain one piece of HVACR technology and how it connects to environmental and climate goals.</strong>
+        details: `<strong>Explain one HVACR technology and why it matters.</strong>
 
-Choose a technology like:
-• <strong>Heat pumps</strong> — How do they work? Why are they seen as key to reducing carbon emissions?
-• <strong>Smart HVAC systems</strong> — How does automation and IoT improve energy efficiency in buildings?
-• <strong>Modern refrigerants</strong> — Why is the industry moving away from older refrigerants? What's replacing them?
+Choose a technology such as:
+• Heat pumps
+• Smart or automated HVAC systems
+• Refrigeration systems and modern refrigerants
+• Ventilation systems for indoor air quality
 
-Then connect it to the bigger picture:
-• How is the HVACR industry contributing to Canada's climate goals?
-• What role does HVACR play in making buildings more energy efficient?
-• Why does this create even more demand for skilled HVACR professionals?`
+Then explain:
+• How the technology works (in simple terms)
+• How it improves comfort, efficiency, or building performance
+• How it connects to energy use or environmental goals
+
+<strong>Big picture:</strong>
+How does the transition to heat pumps in HVACR make buildings more efficient?
+Why does this transition increase the need for skilled workers?`
       },
       {
         title: "Step 4: Future Outlook",
-        details: `<strong>Show where the demand is for HVACR professionals in your region.</strong>
+        details: `<strong>Explore job demand and career opportunities in HVACR.</strong>
 
-Use the resources below (Job Bank, HRAI website, and others) to answer:
-• Is there a projected labour shortage in HVACR? How many professionals are needed?
-• Where are the jobs? Are there openings in your province or city?
-• What's driving the demand? (aging workforce, new construction, green retrofits, climate policy)
+Use resources like Job Bank and HRAI to find out:
+• Is there demand for HVACR workers in your region?
+• What types of jobs are available locally or provincially?
+• What's driving demand? (new construction, maintenance needs, retiring workers, energy upgrades)
 
-The goal is to demonstrate that HVACR isn't just a good career — it's an in-demand career with real job opportunities available right now and into the future.`
+<strong>Goal:</strong>
+Show that HVACR offers real, in-demand career opportunities now and in the future.`
       },
       {
         title: "Step 5: Create Your Video & Submit",
-        details: `<strong>Record a 90-120 second video covering Steps 1-4.</strong>
+        details: `<strong>Record a 90–120 second video covering Steps 1–4.</strong>
 
-Your video should walk through:
-• The local HVACR company you researched
-• The career role you're spotlighting
-• The technology and its environmental impact
-• The future outlook and demand for HVACR professionals
+Your video should include:
+• The HVACR company you researched
+• The career role you explored
+• One technology and its impact
+• Future demand for HVACR careers
 
-<strong>Format is flexible:</strong>
-• Talking head, animation, documentary style, vlog — whatever works for you
-• Vertical or horizontal — your choice
-• Props, photos, or footage of your local HVACR company are encouraged
-• You don't have to show your face if you prefer voice-over with visuals
+<strong>Format options:</strong>
+• Talking head, documentary, animation, or voice-over
+• Vertical or horizontal
+• Use photos, diagrams, or examples where helpful
+• You do not need to appear on camera
 
-<strong>Video length: 90-120 seconds (1.5-2 minutes)</strong>
+<strong>Video length: 90–120 seconds</strong>
 
-Before submitting, review your video:
+Before submitting, check:
 
-✓ Did you feature a real local HVACR company?
-✓ Did you spotlight a specific career role with real detail?
-✓ Did you explain an HVACR technology and its environmental connection?
-✓ Did you address the future demand for HVACR professionals?
-✓ Is your video between 90-120 seconds?
+✓ Did you feature a real local company?
+✓ Did you clearly explain a specific career?
+✓ Did you describe a technology and its impact?
+✓ Did you show future demand for the role?
+✓ Is your video within the time limit?
 
-<strong>Make sure your video link has proper sharing settings</strong> — test it in an incognito browser window before submitting.`
+Make sure your video link is accessible. Test it in an incognito browser before submitting.`
       }
     ]
   },
@@ -305,6 +314,54 @@ Before submitting, review your video:
       description: 'See job prospects, wages, and labour market trends for HVACR mechanics across Canada.',
       url: 'https://www.jobbank.gc.ca/outlookreport/occupation/7516',
       type: 'link',
+      borderColor: '#003366',
+      borderOnly: true
+    },
+    {
+      title: 'HVACR Career Discovery Quiz',
+      description: 'Take this quiz to discover which HVACR career path might be right for you.',
+      url: 'https://forms.cloud.microsoft/pages/responsepage.aspx?id=6XlFeONDEkClCYLi98eIhNySyCQfGVlLgERmUl35JghURVBES0NMTExMWktBSkhSQlFYWEZLMVNSQS4u&route=shorturl',
+      type: 'link',
+      borderColor: '#003366',
+      borderOnly: true
+    },
+    {
+      title: 'Canadian Apprenticeship Registrations and Certifications',
+      description: 'Statistics Canada data on apprenticeship registrations and certifications across Canada.',
+      url: 'https://www150.statcan.gc.ca/n1/pub/71-607-x/71-607-x2020016-eng.htm',
+      type: 'link',
+      borderColor: '#003366',
+      borderOnly: true
+    },
+    {
+      title: 'NRCan - Heating and Cooling with a Heat Pump',
+      description: 'Natural Resources Canada guide on how heat pumps work for heating and cooling.',
+      url: 'https://natural-resources.canada.ca/energy-efficiency/energy-star/heating-cooling-heat-pump',
+      type: 'link',
+      borderColor: '#003366',
+      borderOnly: true
+    },
+    {
+      title: 'How Do Heat Pumps Work?',
+      description: 'Video explainer on how heat pumps work and why they matter for energy efficiency.',
+      url: 'https://www.youtube.com/watch?v=iQaycSD5GWE',
+      type: 'video',
+      borderColor: '#003366',
+      borderOnly: true
+    },
+    {
+      title: 'Day in the Life of an HVAC Technician',
+      description: 'A short video showing what a typical day looks like for an HVAC technician.',
+      url: 'https://www.youtube.com/shorts/c8CrrC0YbBo',
+      type: 'video',
+      borderColor: '#003366',
+      borderOnly: true
+    },
+    {
+      title: 'HVACJess – The HVAC Diaries',
+      description: 'Follow HVACJess for real-world insights into life as an HVAC professional.',
+      url: 'https://www.youtube.com/@hvacjess',
+      type: 'video',
       borderColor: '#003366',
       borderOnly: true
     }
