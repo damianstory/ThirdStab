@@ -64,7 +64,7 @@ export default function ActivityDetailAndRubric({ activity, language = 'en', acc
 
             {/* Description */}
             <div className="mb-8">
-              <p
+              <div
                 className="brand-body1 text-neutral-500 leading-relaxed mb-6"
                 dangerouslySetInnerHTML={{ __html: activity.activityDetail.description }}
               />

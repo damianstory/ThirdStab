@@ -67,7 +67,7 @@ export const may1Activity: ActivityPageData = {
   },
 
   activityDetail: {
-    description: `Canada needs more skilled HVACR professionals to support growing construction, maintenance, and energy efficiency needs. For example, it is estimated that the need for air conditioning & refrigeration mechanics will grow by 400% over the next 10 years.\n\n<strong>In this challenge, you will:</strong>\n• Research a real HVACR company in your community\n• Explore a specific career role within that company or the industry\n• Learn how HVACR technologies contribute to energy efficiency and building performance\n• Understand future career opportunities and demand in the field`,
+    description: `Canada needs more skilled HVACR professionals to support growing construction, maintenance, and energy efficiency needs. For example, it is estimated that the need for air conditioning & refrigeration mechanics will grow by 400% over the next 10 years.\n\n<strong>In this challenge, you will:</strong>\n<ul style="list-style-type: disc; padding-left: 1.5rem; margin-top: 0.5rem;"><li>Research a real HVACR company in your community</li><li>Explore a specific career role within that company or the industry</li><li>Learn how HVACR technologies contribute to energy efficiency and building performance</li><li>Understand future career opportunities and demand in the field</li></ul>`,
     steps: [
       {
         title: "Step 1: Research a Local HVACR Company",
