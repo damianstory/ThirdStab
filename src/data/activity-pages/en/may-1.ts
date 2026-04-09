@@ -26,7 +26,7 @@ export const may1Activity: ActivityPageData = {
     backgroundImage: '/images/may-hero.jpg', // TODO: Replace with hero image from HRAI (without text overlay blocks)
     backgroundPosition: 'center top',
     tagline: 'Explore Real Careers Behind Comfortable, Efficient Buildings',
-    introText: `Heating, ventilation, air conditioning, and refrigeration (HVACR) keeps homes, schools, hospitals, and businesses running safely and efficiently. It's a growing and AI resistant field, with strong demand across Canada for skilled workers over a wide range of roles.\n\nIn this challenge, you'll explore a real HVACR company in your community, learn about a specific career in the field, and examine how HVACR technologies are improving energy efficiency and reducing environmental impact.\n\nFocus on clear, accurate information from trusted sources. Avoid copying general definitions—show what you've learned in your own words.\n\nAlong the way, you'll discover practical, in-demand career pathways you may not have considered.`
+    introText: `Heating, ventilation, air conditioning, and refrigeration (HVACR) keeps homes, schools, hospitals, and businesses running safely and efficiently. It's a growing and AI resistant field, with strong demand across Canada for skilled workers over a wide range of roles.\n\nIn this challenge, you'll explore a real HVACR company in your community, learn about a specific career in the field, and examine how HVACR technologies are improving energy efficiency and reducing environmental impact.\n\nAlong the way, you'll discover practical, in-demand career pathways you may not have considered.`
   },
 
   video: {
@@ -67,7 +67,7 @@ export const may1Activity: ActivityPageData = {
   },
 
   activityDetail: {
-    description: `Canada needs more skilled HVACR professionals to support growing construction, maintenance, and energy efficiency needs. For example, it is estimated that the need for air conditioning & refrigeration mechanics will grow by 400% over the next 10 years.\n\n<strong>In this challenge, you will:</strong>\n<ul style="list-style-type: disc; padding-left: 1.5rem; margin-top: 0.5rem;"><li>Research a real HVACR company in your community</li><li>Explore a specific career role within that company or the industry</li><li>Learn how HVACR technologies contribute to energy efficiency and building performance</li><li>Understand future career opportunities and demand in the field</li></ul>`,
+    description: `Canada needs more skilled HVACR professionals to support growing construction, maintenance, and energy efficiency needs. For example, it is estimated that the need for air conditioning & refrigeration mechanics will grow by 400% over the next 10 years.\n\n<strong>In this challenge, you will:</strong>\n<ul style="list-style-type: disc; padding-left: 1.5rem; margin-top: 0.5rem;"><li>Research a real HVACR company in your community</li><li>Explore a specific career role within that company or the industry</li><li>Learn how HVACR technologies contribute to energy efficiency and building performance</li><li>Understand future career opportunities and demand in the field</li></ul><p style="margin-top: 1rem;">Focus on clear, accurate information from trusted sources. Avoid copying general definitions—show what you've learned in your own words.</p>`,
     steps: [
       {
         title: "Step 1: Research a Local HVACR Company",
@@ -314,6 +314,54 @@ Make sure your video link is accessible. Test it in an incognito browser before 
       description: 'Follow HVACJess for real-world insights into life as an HVAC professional.',
       url: 'https://www.youtube.com/@hvacjess',
       type: 'video',
+      borderColor: '#003366',
+      borderOnly: true
+    },
+    {
+      title: 'HVACR Careers',
+      description: 'Explore career paths, job roles, and opportunities in the HVACR industry across Canada.',
+      url: 'https://www.hvacrcareers.ca/',
+      type: 'link',
+      borderColor: '#003366',
+      borderOnly: true
+    },
+    {
+      title: 'HRAI',
+      description: 'Learn about the Heating, Refrigeration and Air Conditioning Institute of Canada and the HVACR industry.',
+      url: 'https://www.hrai.ca/',
+      type: 'link',
+      borderColor: '#003366',
+      borderOnly: true
+    },
+    {
+      title: 'HRAI Contractor Locator',
+      description: 'Find HVACR contractors and companies in your local area using HRAI\'s directory.',
+      url: 'https://portal.hrai.ca/contractorlocator',
+      type: 'link',
+      borderColor: '#003366',
+      borderOnly: true
+    },
+    {
+      title: 'HRAI Climate Statement',
+      description: 'Read about HRAI\'s climate commitments and the HVACR industry\'s role in Canada\'s environmental goals.',
+      url: 'https://www.hrai.ca/Climate%20Statement',
+      type: 'link',
+      borderColor: '#003366',
+      borderOnly: true
+    },
+    {
+      title: 'Heat Pump Basics — Natural Resources Canada',
+      description: 'Understand how heat pumps work, their benefits, and why they\'re key to energy-efficient buildings.',
+      url: 'https://natural-resources.canada.ca/energy-efficiency/electric-heat-pumps/heat-pump-basics',
+      type: 'link',
+      borderColor: '#003366',
+      borderOnly: true
+    },
+    {
+      title: 'Job Bank: HVACR Mechanic Outlook',
+      description: 'See job prospects, wages, and labour market trends for HVACR mechanics across Canada.',
+      url: 'https://www.jobbank.gc.ca/outlookreport/occupation/7516',
+      type: 'link',
       borderColor: '#003366',
       borderOnly: true
     }
