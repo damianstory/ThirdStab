@@ -278,6 +278,22 @@ Make sure your video link is accessible. Test it in an incognito browser before 
       borderOnly: true
     },
     {
+      title: 'HVACR Careers',
+      description: 'Explore career paths, job roles, and opportunities in the HVACR industry across Canada.',
+      url: 'https://www.hvacrcareers.ca/',
+      type: 'link',
+      borderColor: '#003366',
+      borderOnly: true
+    },
+    {
+      title: 'HRAI Contractor Locator',
+      description: 'Find HVACR contractors and companies in your local area using HRAI\'s directory.',
+      url: 'https://portal.hrai.ca/contractorlocator',
+      type: 'link',
+      borderColor: '#003366',
+      borderOnly: true
+    },
+    {
       title: 'Canadian Apprenticeship Registrations and Certifications',
       description: 'Statistics Canada data on apprenticeship registrations and certifications across Canada.',
       url: 'https://www150.statcan.gc.ca/n1/pub/71-607-x/71-607-x2020016-eng.htm',
@@ -318,25 +334,9 @@ Make sure your video link is accessible. Test it in an incognito browser before 
       borderOnly: true
     },
     {
-      title: 'HVACR Careers',
-      description: 'Explore career paths, job roles, and opportunities in the HVACR industry across Canada.',
-      url: 'https://www.hvacrcareers.ca/',
-      type: 'link',
-      borderColor: '#003366',
-      borderOnly: true
-    },
-    {
       title: 'HRAI',
       description: 'Learn about the Heating, Refrigeration and Air Conditioning Institute of Canada and the HVACR industry.',
       url: 'https://www.hrai.ca/',
-      type: 'link',
-      borderColor: '#003366',
-      borderOnly: true
-    },
-    {
-      title: 'HRAI Contractor Locator',
-      description: 'Find HVACR contractors and companies in your local area using HRAI\'s directory.',
-      url: 'https://portal.hrai.ca/contractorlocator',
       type: 'link',
       borderColor: '#003366',
       borderOnly: true
