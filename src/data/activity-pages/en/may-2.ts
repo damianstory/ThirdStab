@@ -32,7 +32,7 @@ export const may2Activity: ActivityPageData = {
   video: {
     embedUrl: 'https://www.youtube.com/embed/A8ZcIgS3NS8',
     title: 'About the Be There Certificate',
-    description: `Watch this video to learn how the Be There Certificate helps young people build the confidence and skills to support a peer facing a mental health struggle. The course walks through the 5 Golden Rules — active listening, recognizing the signs, setting boundaries, and knowing when to connect someone with further help.\n\nThese skills matter in school, at work, and in every future career. Employers, teammates, and friends all benefit when people know how to be there for one another.`
+    description: `Watch this video to learn how the Be There Certificate helps young people build the confidence and skills to support a peer facing a mental health struggle.\n\nThese skills matter in school, at work, and in every future career.`
   },
 
   howThisWorksVideo: {
