@@ -67,7 +67,7 @@ export const may2Activity: ActivityPageData = {
   },
 
   activityDetail: {
-    description: `This is a two-part challenge: complete the free <a href="https://www.betherecertificate.org/?referral=myblueprintcareerlaunch&utm_source=myblueprint&utm_medium=contest&utm_campaign=immersion" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Be There Certificate</a> from Jack.org and Born This Way Foundation, then submit a 90–120 second reflection video showing what you learned and how you'd apply it.\n\n<strong>In this challenge, you will:</strong>\n<ul style="list-style-type: disc; padding-left: 1.5rem; margin-top: 0.5rem;"><li>Complete the Be There Certificate (approximately 2 hours, self-paced, online)</li><li>Reflect on the 5 Golden Rules and what resonated most with you</li><li>Share how you'd use these skills to support a peer</li><li>Connect mental wellness to your future education and career journey</li></ul><p style="margin-top: 1rem;">Mental wellness is a career and life skill. This challenge recognizes students who are willing to build it and encourage others to do the same.</p>`,
+    description: `This is a two-part challenge: complete the free <a href="https://www.betherecertificate.org/?referral=myblueprintcareerlaunch&utm_source=myblueprint&utm_medium=contest&utm_campaign=immersion" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Be There Certificate</a> from Jack.org and Born This Way Foundation, then submit a short 30–60 second reflection video sharing your biggest takeaway.\n\n<strong>In this challenge, you will:</strong>\n<ul style="list-style-type: disc; padding-left: 1.5rem; margin-top: 0.5rem;"><li>Complete the Be There Certificate (approximately 2 hours, self-paced, online)</li><li>Reflect on what resonated most with you from the course</li><li>Share one authentic takeaway in a short video</li></ul><p style="margin-top: 1rem;">Mental wellness is a career and life skill. This challenge recognizes students who are willing to build it and encourage others to do the same.</p>`,
     steps: [
       {
         title: "Step 1: Complete the Be There Certificate",
@@ -87,18 +87,17 @@ The certificate teaches the 5 Golden Rules — practical, research-backed ways t
 You'll need to complete the certificate before you can record your reflection video in Step 2.`
       },
       {
-        title: "Step 2: Record Your Reflection Video (90–120 seconds)",
-        details: `<strong>Your video must include all 5 of the following elements:</strong>
+        title: "Step 2: Record Your Reflection Video (30–60 seconds)",
+        details: `<strong>What your video needs to cover:</strong>
 
-<strong>1. Certificate Completion:</strong> Successfully complete the Be There Certificate (approximately 2 hours of self-paced online learning).
+Share one clear, authentic takeaway from completing the Be There Certificate and how you can see yourself applying something you learned from the course in your day-to-day life.
 
-<strong>2. Personal Reflection:</strong> Share 2–3 key takeaways from the certificate that resonated most with you.
+<strong>Optional prompts</strong> — pick any that resonate (you don't need to cover all of them):
+• Was there a <strong>golden rule</strong> that stuck out to you? Why?
+• How could you see yourself using what you learned in day-to-day life or a future career?
+• Was there a specific moment, story, or lesson from the course that really landed for you?
 
-<strong>3. Peer Support Example:</strong> Describe one specific way you could use the 5 Golden Rules to support a friend, classmate, or future colleague.
-
-<strong>4. Future Application:</strong> Explain how the skills learned (like active listening, setting boundaries, and recognizing signs of struggle) will help you in your future education or career/life journey.
-
-<strong>5. Call to Action:</strong> Encourage other students to prioritize mental wellness as part of their career and life planning journey.
+If you want to, you can also end the video with a call to action encouraging other young people to complete the course.
 
 <strong>Format options:</strong>
 • Talking head, documentary, animation, or voice-over
@@ -106,19 +105,29 @@ You'll need to complete the certificate before you can record your reflection vi
 • Use photos, graphics, or examples where helpful
 • You do not need to appear on camera
 
-<strong>Video length: 90–120 seconds</strong>
+<strong>Video length: 30–60 seconds</strong>
 
 Make sure your video link is accessible. Test it in an incognito browser before submitting.`
       },
       {
         title: "Step 3: Submit Your Video",
-        details: `<strong>Before submitting, check:</strong>
+        details: `<strong>How to host your video:</strong>
+
+You need to submit a <strong>shareable link</strong> we can click on — <strong>not</strong> an uploaded <code>.mp4</code> file. Upload your finished video to one of these free options and then share the link:
+
+• <strong>Google Drive</strong> — upload the file, right-click → Share → set access to "Anyone with the link"
+• <strong>OneDrive</strong> — upload the file, click Share → copy a link with "Anyone with the link can view"
+• <strong>YouTube (Unlisted)</strong> — upload the video and set visibility to "Unlisted" so only people with the link can see it
+
+<strong>Important:</strong> before you submit, open your link in an incognito/private browser window to make sure it actually plays without requiring sign-in. If we can't open it, we can't review it.
+
+<strong>Before submitting, check:</strong>
 
 ✓ Did you complete the Be There Certificate?
-✓ Did you cover all 5 required elements in your video?
-✓ Is your video between 90 and 120 seconds?
+✓ Did you share a clear, authentic takeaway from the course?
+✓ Is your video between 30 and 60 seconds?
+✓ Is your video hosted on Google Drive, OneDrive, or YouTube (Unlisted) — not an <code>.mp4</code> file?
 ✓ Is your video link public and accessible in an incognito browser?
-✓ Did you include a clear call to action at the end?
 
 When you're ready, use the submission button below to share your video link and a few short details about your entry.`
       }
@@ -128,24 +137,24 @@ When you're ready, use the submission button below to share your video link and 
   rubric: {
     criteria: [
       {
-        category: 'Certificate Completion & Reflection Depth',
-        weight: 25,
-        description: 'Be There Certificate completed and 2–3 personal takeaways shared with thoughtful, specific detail'
+        category: 'Reflection Depth',
+        weight: 40,
+        description: 'Clear, specific personal takeaway from the Be There Certificate, referencing a golden rule, course moment, or idea that genuinely landed'
       },
       {
-        category: 'Peer Support Application (5 Golden Rules)',
-        weight: 25,
-        description: 'Concrete, realistic example of using the 5 Golden Rules to support a friend, classmate, or future colleague'
+        category: 'Personal Application',
+        weight: 20,
+        description: 'Authentic example of how the student sees themselves using what they learned in everyday life, school, or a future career'
       },
       {
         category: 'Engagement & Creativity',
-        weight: 25,
-        description: 'Compelling delivery that maintains viewer interest through creative presentation and a clear call to action'
+        weight: 20,
+        description: 'Compelling, authentic delivery that holds viewer interest'
       },
       {
         category: 'Communication & Clarity',
-        weight: 25,
-        description: 'Clear audio/visuals with logical organization, smooth flow, and meets 90-120 second requirement'
+        weight: 20,
+        description: 'Clear audio/visuals with logical flow, and meets the 30–60 second length'
       },
       {
         category: 'View Detailed Evaluation Rubric Here',
@@ -172,7 +181,7 @@ When you're ready, use the submission button below to share your video link and 
     },
     {
       question: 'What am I actually being asked to submit?',
-      answer: `You're being asked to submit a 90–120 second reflection video after completing the free Be There Certificate from Jack.org. Your video must include all 5 required elements: certificate completion, a personal reflection (2–3 key takeaways), a peer support example using the 5 Golden Rules, how you'll apply the skills in your future education or career, and a call to action for other students. Make sure your video link has proper sharing settings — test it in an incognito browser window before submitting.`
+      answer: `You're being asked to submit a short 30–60 second reflection video after completing the free Be There Certificate from Jack.org. The only requirement is that you share one clear, authentic takeaway from the course. You can optionally talk about a golden rule that stuck out to you, how you see yourself using what you learned, or a specific moment from the course that landed for you. Make sure your video link has proper sharing settings — test it in an incognito browser window before submitting.`
     },
     {
       question: 'Is proof of certificate completion required in the video?',
@@ -189,7 +198,7 @@ When you're ready, use the submission button below to share your video link and 
     },
     {
       question: 'Is there a preferred style for the video?',
-      answer: `No, it's whatever feels authentic and engaging to you. It can be a TikTok style video with lots of different cuts and background music or more documentary style — whatever you will enjoy making more, and clearly communicates all 5 required elements.`
+      answer: `No, it's whatever feels authentic and engaging to you. It can be a TikTok style video with lots of different cuts and background music or more documentary style — whatever you will enjoy making more, as long as your takeaway comes through clearly.`
     },
     {
       question: 'Does it matter what tool I use to make the video?',
