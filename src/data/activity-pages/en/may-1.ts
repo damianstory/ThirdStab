@@ -192,11 +192,11 @@ Make sure your video link is accessible. Test it in an incognito browser before 
         weight: 0,
         description: '',
         isLink: true,
-        url: '' // TODO: Replace with detailed rubric URL once created
+        url: '#' // TODO: Replace with detailed rubric URL once created
       }
     ],
     totalPoints: 100,
-    detailedRubricUrl: '' // TODO: Replace with detailed rubric URL once created
+    detailedRubricUrl: '#' // TODO: Replace with detailed rubric URL once created
   },
 
   submission: {
