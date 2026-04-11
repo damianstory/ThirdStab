@@ -23,7 +23,7 @@ export const may2Activity: ActivityPageData = {
 
   // Extended page content
   hero: {
-    backgroundImage: '/images/may-hero.jpg', // TODO: Replace with Be There / Jack.org hero image
+    backgroundImage: '/images/be-there-certificate-hero.png',
     backgroundPosition: 'center top',
     tagline: 'Support a Friend. Build a Life Skill.',
     introText: `Students: complete the free Be There Certificate and submit a short reflection video for your chance to win one of twenty $500 micro grants this May.\n\nThe Be There Certificate is a free, self-paced online course (about 2 hours) created by Jack.org in partnership with the Born This Way Foundation. It teaches the 5 Golden Rules — practical, research-backed ways to safely support a peer who's struggling with their mental health.`
@@ -293,7 +293,7 @@ When you're ready, use the submission button below to share your video link and 
     altTextEn: 'Jack Intersections on edHUB — six classroom-ready lessons for educators',
     altTextFr: 'Jack Intersections sur edHUB — six leçons prêtes à enseigner pour les éducateurs',
     link: 'https://edhub.jack.org/intersections',
-    attributionTextEn: 'Educators: the activity below and micro-grants are for students, but if you download any of these Jack Intersection resources before May 31st, you\'ll be entered for a chance to win a $100 gift card of your choice courtesy of Jack.org',
+    attributionTextEn: 'Educators: we didn\'t forget about you! The activity below and micro-grants are for students, but if you download any of these <a href="https://edhub.jack.org/intersections" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Jack Intersection resources</a> before May 31st, you\'ll be entered for a chance to win a $100 gift card of your choice courtesy of Jack.org',
     attributionTextFr: 'Éducateurs : découvrez Jack Intersections sur edHUB — six leçons gratuites, éclairées par les traumatismes, prêtes à enseigner. Téléchargez une ressource en mai 2026 pour courir la chance de gagner une carte-cadeau de 100 $ de votre choix offerte par Jack.org.'
   },
 

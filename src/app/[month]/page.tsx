@@ -104,7 +104,19 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
         <main>
           <ActivityHero activity={activityPageData} accentColor={activityPageData.accentColor} />
           {activityPageData.promotionalBanner && (
-            <PromotionalBanner banner={activityPageData.promotionalBanner} language="en" />
+            <PromotionalBanner
+              banner={activityPageData.promotionalBanner}
+              language="en"
+              collapsible={activityPageData.slug === 'may-2'}
+              collapsibleLabel={
+                <>
+                  <span className="md:hidden">Educator Incentive</span>
+                  <span className="hidden md:inline">
+                    Educators - click this learn how you can win a $100 gift card in May.
+                  </span>
+                </>
+              }
+            />
           )}
           <VideoAndExplainer activity={activityPageData} secondaryAccentColor={activityPageData.secondaryAccentColor} />
           {activityPageData.spotlightCallouts && activityPageData.spotlightCallouts.length > 0 && (
