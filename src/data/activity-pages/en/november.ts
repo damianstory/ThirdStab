@@ -251,6 +251,8 @@ Followed then by the research components in steps 2-5.`
     altTextEn: 'National Skilled Trades and Technology Week - November 2 to 8, 2025',
     altTextFr: 'Semaine nationale des métiers spécialisés et des technologies - 2 au 8 novembre 2025',
     link: 'https://www.skillscompetencescanada.com/en/program/national-skilled-trade-and-technology-week/',
+    attributionTextEn: 'Complete November\'s Industry Immersion Series Activity as part of National Skilled Trade and Technology Week presented by Skills/Compétences Canada',
+    attributionTextFr: 'Participez à l\'activité de novembre de la série Immersion dans l\'industrie dans le cadre de la Semaine nationale des métiers spécialisés et des technologies présentée par Skills/Compétences Canada',
     displayDates: {
       start: new Date('2025-10-01T00:00:00-05:00'),
       end: new Date('2025-11-08T23:59:59-05:00') // Banner hidden after Nov 8 - change back to Nov 30 to restore

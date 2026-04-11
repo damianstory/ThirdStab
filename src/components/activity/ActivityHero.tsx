@@ -35,6 +35,18 @@ export default function ActivityHero({ activity, contentClassName, accentColor }
               {activity.month} {activity.year}
             </div>
 
+            {/* Educator anchor pill (renders only when the activity has an educatorPromo) */}
+            {activity.educatorPromo?.heroPillLabel && (
+              <div className="mb-6 lg:-mt-2">
+                <a
+                  href="#educator-promo"
+                  className="inline-flex items-center rounded-full border border-amber-300 bg-warmSurface px-4 py-1.5 text-xs font-semibold text-navy shadow-sm transition-colors duration-200 hover:bg-amber-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 sm:text-sm"
+                >
+                  {activity.educatorPromo.heroPillLabel}
+                </a>
+              </div>
+            )}
+
             {/* Activity Title */}
             <h1
               className="brand-h1 text-[#22224C] mb-4 lg:mb-6 drop-shadow-sm max-w-[600px]"

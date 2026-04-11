@@ -21,6 +21,7 @@ export default function PromotionalBanner({ banner, language }: PromotionalBanne
 
   const image = language === 'en' ? banner.imageEn : banner.imageFr;
   const altText = language === 'en' ? banner.altTextEn : banner.altTextFr;
+  const attributionText = language === 'en' ? banner.attributionTextEn : banner.attributionTextFr;
 
   return (
     <section className="py-8 px-8 md:py-12 md:px-12">
@@ -60,17 +61,19 @@ export default function PromotionalBanner({ banner, language }: PromotionalBanne
             />
           )}
 
-          {/* Subtle Divider */}
-          <div className="border-t border-neutral1" />
+          {attributionText && (
+            <>
+              {/* Subtle Divider */}
+              <div className="border-t border-neutral1" />
 
-          {/* Attribution Section */}
-          <div className="bg-[#F8FAFB] px-4 py-4 md:px-6 md:py-5 lg:px-8 lg:py-6">
-            <p className="text-center text-neutral4 text-sm md:text-base leading-relaxed font-bold">
-              {language === 'en'
-                ? 'Complete November\'s Industry Immersion Series Activity as part of National Skilled Trade and Technology Week presented by Skills/Compétences Canada'
-                : 'Participez à l\'activité de novembre de la série Immersion dans l\'industrie dans le cadre de la Semaine nationale des métiers spécialisés et des technologies présentée par Skills/Compétences Canada'}
-            </p>
-          </div>
+              {/* Attribution Section */}
+              <div className="bg-[#F8FAFB] px-4 py-4 md:px-6 md:py-5 lg:px-8 lg:py-6">
+                <p className="text-center text-neutral4 text-sm md:text-base leading-relaxed font-bold">
+                  {attributionText}
+                </p>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </section>

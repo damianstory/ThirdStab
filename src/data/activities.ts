@@ -254,6 +254,39 @@ export function formatIncentive(incentive: Activity['incentive']): string {
   return `${incentive.count} x $${incentive.individual} microgrants`;
 }
 
+// Educator Promo — secondary-audience callout that runs alongside a student activity.
+// Keeps audience (EducatorPromo), incentive (optional sub-object), and visual (discriminated
+// union) concerns separate so future secondary-audience promos can reuse the shape.
+export interface EducatorPromo {
+  id: string;
+  heroPillLabel?: string;
+  eyebrow: string;
+  title: string;
+  body: string[];
+  cta: {
+    label: string;
+    href: string;
+    external?: boolean;
+  };
+  incentive?: {
+    label: string;
+    copy: string;
+    rulesNote?: string;
+  };
+  visual:
+    | {
+        kind: 'panel';
+        label: string;
+        topics: string[];
+        meta?: string;
+      }
+    | {
+        kind: 'image';
+        src: string;
+        alt: string;
+      };
+}
+
 // Extended interface for full activity page content
 export interface ActivityPageData extends Activity {
   // Hero Section
@@ -289,6 +322,10 @@ export interface ActivityPageData extends Activity {
   // Activity Detail & Rubric
   activityDetail: {
     description: string;
+    // Optional overrides for the section heading. When omitted, component defaults to
+    // "Challenge Details" / "Détails du défi".
+    titleEn?: string;
+    titleFr?: string;
     steps: Array<{
       title: string;
       details: string;
@@ -352,6 +389,10 @@ export interface ActivityPageData extends Activity {
     altTextEn: string;
     altTextFr: string;
     link?: string;
+    // Optional attribution caption shown below the banner image. When omitted, the
+    // attribution bar is not rendered.
+    attributionTextEn?: string;
+    attributionTextFr?: string;
     displayDates?: {
       start: Date;
       end: Date;
@@ -370,6 +411,9 @@ export interface ActivityPageData extends Activity {
     gradient: 'blue' | 'warm';
     expandableContent?: string;
   }>;
+
+  // Educator Promo (optional - secondary-audience section for promoting sponsor resources to educators)
+  educatorPromo?: EducatorPromo;
 
   // Sponsor Branding (optional - for co-branded pages)
   accentColor?: string; // Primary sponsor accent (replaces brandBlue where used)

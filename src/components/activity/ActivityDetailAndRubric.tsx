@@ -59,7 +59,9 @@ export default function ActivityDetailAndRubric({ activity, language = 'en', acc
           {/* Activity Detail - Left Column (2/3 width) */}
           <div className="lg:col-span-2">
             <h2 className="brand-h2 text-[#22224C] mb-6">
-              {language === 'en' ? 'Challenge Details' : 'Détails du défi'}
+              {language === 'en'
+                ? (activity.activityDetail.titleEn || 'Challenge Details')
+                : (activity.activityDetail.titleFr || 'Détails du défi')}
             </h2>
 
             {/* Description */}

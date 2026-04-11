@@ -45,6 +45,7 @@ const config: Config = {
         brandBlue: '#0092ff',
         lightBlue: '#C6E7FF',
         offWhite: '#F6F6FF',
+        warmSurface: '#FBF8F2',
         neutral1: '#E5E9F1',
         neutral2: '#D9DFEA',
         neutral3: '#AAB7CB',

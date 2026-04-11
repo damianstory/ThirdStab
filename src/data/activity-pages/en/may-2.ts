@@ -41,7 +41,7 @@ export const may2Activity: ActivityPageData = {
   },
 
   explainer: {
-    title: 'Challenge Overview',
+    title: 'Student Activity Overview',
     rows: [
       {
         label: 'Active Submission Period',
@@ -67,6 +67,7 @@ export const may2Activity: ActivityPageData = {
   },
 
   activityDetail: {
+    titleEn: 'Student Activity Details',
     description: `This is a two-part challenge: complete the free <a href="https://www.betherecertificate.org/?referral=myblueprintcareerlaunch&utm_source=myblueprint&utm_medium=contest&utm_campaign=immersion" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Be There Certificate</a> from Jack.org and Born This Way Foundation, then submit a short 30–60 second reflection video sharing your biggest takeaway.\n\n<strong>In this challenge, you will:</strong>\n<ul style="list-style-type: disc; padding-left: 1.5rem; margin-top: 0.5rem;"><li>Complete the Be There Certificate (approximately 2 hours, self-paced, online)</li><li>Reflect on what resonated most with you from the course</li><li>Share one authentic takeaway in a short video</li></ul><p style="margin-top: 1rem;">Mental wellness is a career and life skill. This challenge recognizes students who are willing to build it and encourage others to do the same.</p>`,
     steps: [
       {
@@ -283,6 +284,18 @@ When you're ready, use the submission button below to share your video link and 
   ],
   resourcesTitle: 'Be There & Mental Wellness Resources',
   resourcesSubtitle: 'Complete the certificate and explore more mental wellness support',
+
+  // edHUB Jack Intersections educator promo banner. Attribution text is still placeholder —
+  // swap once Jack.org confirms final copy.
+  promotionalBanner: {
+    imageEn: '/promotional-banners/jack-intersections-may-2026-en.png',
+    imageFr: '/promotional-banners/jack-intersections-may-2026-en.png',
+    altTextEn: 'Jack Intersections on edHUB — six classroom-ready lessons for educators',
+    altTextFr: 'Jack Intersections sur edHUB — six leçons prêtes à enseigner pour les éducateurs',
+    link: 'https://edhub.jack.org/intersections',
+    attributionTextEn: 'Educators: the activity below and micro-grants are for students, but if you download any of these Jack Intersection resources before May 31st, you\'ll be entered for a chance to win a $100 gift card of your choice courtesy of Jack.org',
+    attributionTextFr: 'Éducateurs : découvrez Jack Intersections sur edHUB — six leçons gratuites, éclairées par les traumatismes, prêtes à enseigner. Téléchargez une ressource en mai 2026 pour courir la chance de gagner une carte-cadeau de 100 $ de votre choix offerte par Jack.org.'
+  },
 
   meta: {
     title: 'Be There Certificate Challenge - May 2026 | Industry Immersion Series',
