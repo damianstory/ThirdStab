@@ -26,7 +26,7 @@ export const may2Activity: ActivityPageData = {
     backgroundImage: '/images/may-hero.jpg', // TODO: Replace with Be There / Jack.org hero image
     backgroundPosition: 'center top',
     tagline: 'Support a Friend. Build a Life Skill.',
-    introText: `Complete the free Be There Certificate and submit a short reflection video for your chance to win one of twenty $500 micro grants this May.\n\nThe Be There Certificate is a free, self-paced online course (about 2 hours) created by Jack.org in partnership with the Born This Way Foundation. It teaches the 5 Golden Rules — practical, research-backed ways to safely support a peer who's struggling with their mental health.\n\nKnowing how to show up for the people around you is a life skill, a leadership skill, and a skill every career needs. This month, we're rewarding the students who build it.`
+    introText: `Students: complete the free Be There Certificate and submit a short reflection video for your chance to win one of twenty $500 micro grants this May.\n\nThe Be There Certificate is a free, self-paced online course (about 2 hours) created by Jack.org in partnership with the Born This Way Foundation. It teaches the 5 Golden Rules — practical, research-backed ways to safely support a peer who's struggling with their mental health.`
   },
 
   video: {
