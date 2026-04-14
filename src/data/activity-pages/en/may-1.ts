@@ -23,7 +23,7 @@ export const may1Activity: ActivityPageData = {
 
   // Extended page content
   hero: {
-    backgroundImage: '/images/may-hero.jpg', // TODO: Replace with hero image from HRAI (without text overlay blocks)
+    backgroundImage: '/images/may-1-hero.jpg',
     backgroundPosition: 'center top',
     tagline: 'Explore Real Careers Behind Comfortable, Efficient Buildings',
     introText: `Heating, ventilation, air conditioning, and refrigeration (HVACR) keeps homes, schools, hospitals, and businesses running safely and efficiently. It's a growing and AI resistant field, with strong demand across Canada for skilled workers over a wide range of roles.\n\nIn this challenge, you'll explore a real HVACR company in your community, learn about a specific career in the field, and examine how HVACR technologies are improving energy efficiency and reducing environmental impact.\n\nAlong the way, you'll discover practical, in-demand career pathways you may not have considered.`
