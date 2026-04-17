@@ -110,9 +110,9 @@ export default async function ActivityPage({ params }: ActivityPageProps) {
               collapsible={activityPageData.slug === 'may-2'}
               collapsibleLabel={
                 <>
-                  <span className="md:hidden">Educator Incentive</span>
+                  <span className="md:hidden">Educators: Here&apos;s how you can better mental health in the classroom</span>
                   <span className="hidden md:inline">
-                    Educators - click this learn how you can win a $100 gift card in May.
+                    Educators: Here&apos;s how you can better mental health in the classroom
                   </span>
                 </>
               }

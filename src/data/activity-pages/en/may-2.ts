@@ -25,14 +25,14 @@ export const may2Activity: ActivityPageData = {
   hero: {
     backgroundImage: '/images/be-there-certificate-hero.png',
     backgroundPosition: 'center top',
-    tagline: 'Support a Friend. Build a Life Skill.',
-    introText: `Students: complete the free Be There Certificate and submit a short reflection video for your chance to win one of twenty $500 micro grants this May.\n\nThe Be There Certificate is a free, self-paced online course (about 2 hours) created by Jack.org in partnership with the Born This Way Foundation. It teaches the 5 Golden Rules — practical, research-backed ways to safely support a peer who's struggling with their mental health.`
+    tagline: 'Real Skills for Real Life.',
+    introText: `Students: complete Jack.org's free Be There Certificate and submit a short reflection video for your chance to win one of twenty $500 micro grants this May.\n\nEver wish you knew exactly what to say when a friend opens up about something tough? The Be There Certificate can show you how. The self-paced, 2-hour online course teaches you five simple, but powerful "Golden Rules" to effectively Be There for someone struggling with their mental health.`
   },
 
   video: {
     embedUrl: 'https://www.youtube.com/embed/A8ZcIgS3NS8',
     title: 'About the Be There Certificate',
-    description: `Watch this video to learn how the Be There Certificate helps young people build the confidence and skills to support a peer facing a mental health struggle.\n\nThese skills matter in school, at work, and in every future career.`
+    description: `The Be There Certificate helps young people build the confidence and skills to provide support to someone who may be struggling.\n\nThese are skills you can use every day for the rest of your life, to show up for the people you care about — and yourself!`
   },
 
   howThisWorksVideo: {
@@ -68,10 +68,10 @@ export const may2Activity: ActivityPageData = {
 
   activityDetail: {
     titleEn: 'Student Activity Details',
-    description: `This is a two-part challenge: complete the free <a href="https://www.betherecertificate.org/?referral=myblueprintcareerlaunch&utm_source=myblueprint&utm_medium=contest&utm_campaign=immersion" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Be There Certificate</a> from Jack.org and Born This Way Foundation, then submit a short 30–60 second reflection video sharing your biggest takeaway.\n\n<strong>In this challenge, you will:</strong>\n<ul style="list-style-type: disc; padding-left: 1.5rem; margin-top: 0.5rem;"><li>Complete the Be There Certificate (approximately 2 hours, self-paced, online)</li><li>Reflect on what resonated most with you from the course</li><li>Share one authentic takeaway in a short video</li></ul><p style="margin-top: 1rem;">Mental wellness is a career and life skill. This challenge recognizes students who are willing to build it and encourage others to do the same.</p>`,
+    description: `This is a two-part challenge:\n<ul style="list-style-type: disc; padding-left: 1.5rem; margin-top: 0.5rem;"><li>Complete the free <a href="https://www.betherecertificate.org/?referral=myblueprintcareerlaunch&utm_source=myblueprint&utm_medium=contest&utm_campaign=immersion" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Be There Certificate</a> course</li><li>Submit a short 30–60 second reflection video sharing your biggest takeaway from completing the course</li></ul><p style="margin-top: 1rem;">Mental wellness is a life skill that requires continuous learning. This challenge aims to recognize students' commitment to building inclusive, mentally safe spaces and encourages others to do the same.</p>`,
     steps: [
       {
-        title: "Step 1: Complete the Be There Certificate",
+        title: "Step 1: Get Be There Certified",
         details: `<strong>Complete the free Be There Certificate from Jack.org and Born This Way Foundation.</strong>
 
 <a href="https://www.betherecertificate.org/?referral=myblueprintcareerlaunch&utm_source=myblueprint&utm_medium=contest&utm_campaign=immersion" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Start the Be There Certificate here →</a>
@@ -85,26 +85,24 @@ What to expect:
 <strong>What you'll learn:</strong>
 The certificate teaches the 5 Golden Rules — practical, research-backed ways to safely support a peer who is struggling with their mental health. You'll learn how to recognize signs of struggle, listen actively, set healthy boundaries, and know when to connect someone with further help.
 
-You'll need to complete the certificate before you can record your reflection video in Step 2.`
+<strong>You'll need to complete the certificate before you can record your reflection video in Step 2.</strong>`
       },
       {
         title: "Step 2: Record Your Reflection Video (30–60 seconds)",
-        details: `<strong>What your video needs to cover:</strong>
+        details: `Once you've earned your Be There Certificate, take a moment to reflect on how you've levelled up your support skills by recording a <strong>short video</strong> about your experience. Submit your video and you'll be entered to win 1 of 20 micro grants of $500.
 
-Share one clear, authentic takeaway from completing the Be There Certificate and how you can see yourself applying something you learned from the course in your day-to-day life.
+<strong>Make your video shine:</strong>
+• Film in good lighting and with clear audio.
+• Film horizontally (landscape) so we can easily share your message on social media.
+• Try to keep it short and sweet — 30–60 seconds.
 
-<strong>Optional prompts</strong> — pick any that resonate (you don't need to cover all of them):
-• Was there a <strong>golden rule</strong> that stuck out to you? Why?
-• How could you see yourself using what you learned in day-to-day life or a future career?
-• Was there a specific moment, story, or lesson from the course that really landed for you?
+<strong>Some thought starters to help you shape your winning video reflection:</strong>
 
-If you want to, you can also end the video with a call to action encouraging other young people to complete the course.
-
-<strong>Format options:</strong>
-• Talking head, documentary, animation, or voice-over
-• Vertical or horizontal
-• Use photos, graphics, or examples where helpful
-• You do not need to appear on camera
+You don't need to answer all of these questions, or any of them directly, but this should help get the ideas flowing!
+• Which of the Five Golden Rules felt most important to you, and why? What stood out?
+• How do you think the Be There Certificate will change the way you show up for friends, family, or people in your community?
+• What's one thing you learned that you think everyone should know?
+• If you could describe the Be There Certificate to a friend in one sentence, what would it be?
 
 <strong>Video length: 30–60 seconds</strong>
 
@@ -308,7 +306,7 @@ When you're ready, use the submission button below to share your video link and 
     altTextEn: 'Jack Intersections on edHUB — six classroom-ready lessons for educators',
     altTextFr: 'Jack Intersections sur edHUB — six leçons prêtes à enseigner pour les éducateurs',
     link: 'https://edhub.jack.org/intersections',
-    attributionTextEn: 'Educators: we didn\'t forget about you! The activity below and micro-grants are for students, but if you download any of these <a href="https://edhub.jack.org/intersections" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Jack Intersection resources</a> before May 31st, you\'ll be entered for a chance to win a $100 gift card of your choice courtesy of Jack.org',
+    attributionTextEn: 'Educators: we didn\'t forget about you! You could win a $100 gift card of your choosing courtesy of Jack.org when you download any <a href="https://edhub.jack.org/intersections" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Jack Intersections resource</a> by May 31st.',
     attributionTextFr: 'Éducateurs : découvrez Jack Intersections sur edHUB — six leçons gratuites, éclairées par les traumatismes, prêtes à enseigner. Téléchargez une ressource en mai 2026 pour courir la chance de gagner une carte-cadeau de 100 $ de votre choix offerte par Jack.org.'
   },
 
