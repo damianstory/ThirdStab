@@ -265,6 +265,14 @@ When you're ready, use the submission button below to share your video link and 
       borderOnly: true
     },
     {
+      title: 'Educator HUB',
+      description: 'Explore Jack.org\'s edHUB for classroom-ready mental health lessons and educator resources.',
+      url: 'https://edhub.jack.org/',
+      type: 'link',
+      borderColor: '#003366',
+      borderOnly: true
+    },
+    {
       title: 'Born This Way Foundation',
       description: 'Learn about the Born This Way Foundation, co-founded by Lady Gaga and Cynthia Germanotta to support youth mental wellness.',
       url: 'https://bornthisway.foundation/',
@@ -273,14 +281,21 @@ When you're ready, use the submission button below to share your video link and 
       borderOnly: true
     },
     {
-      title: 'Kids Help Phone',
-      description: 'Canada\'s 24/7 e-mental health service offering free, confidential support to young people in English and French.',
-      url: 'https://kidshelpphone.ca/',
+      title: 'Jack Talks',
+      description: 'Peer-to-peer presentations delivered by trained young leaders to educate, inspire, and empower youth on mental health.',
+      url: 'https://jack.org/talks',
+      type: 'link',
+      borderColor: '#003366',
+      borderOnly: true
+    },
+    {
+      title: 'Jack Communities',
+      description: 'Join a network of young leaders taking action to improve mental health in their communities across Canada.',
+      url: 'https://jack.org/communities',
       type: 'link',
       borderColor: '#003366',
       borderOnly: true
     }
-    // TODO: Add additional Jack.org resources (5 Golden Rules page, talks, articles) once client confirms list
   ],
   resourcesTitle: 'Be There & Mental Wellness Resources',
   resourcesSubtitle: 'Complete the certificate and explore more mental wellness support',
