@@ -306,7 +306,7 @@ When you're ready, use the submission button below to share your video link and 
     altTextEn: 'Jack Intersections on edHUB — six classroom-ready lessons for educators',
     altTextFr: 'Jack Intersections sur edHUB — six leçons prêtes à enseigner pour les éducateurs',
     link: 'https://edhub.jack.org/intersections',
-    attributionTextEn: 'Educators: we didn\'t forget about you! You could win a $100 gift card of your choosing courtesy of Jack.org when you download any <a href="https://edhub.jack.org/intersections" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Jack Intersections resource</a> by May 31st.',
+    attributionTextEn: 'Educators: we didn\'t forget about you! You could win a $100 gift card of your choosing courtesy of Jack.org when you download any <a href="https://edhub.jack.org/intersections" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Jack Intersections resource</a> by May 31st. Simply download one of the 6 resources with your school email and you\'ll be automatically entered.',
     attributionTextFr: 'Éducateurs : découvrez Jack Intersections sur edHUB — six leçons gratuites, éclairées par les traumatismes, prêtes à enseigner. Téléchargez une ressource en mai 2026 pour courir la chance de gagner une carte-cadeau de 100 $ de votre choix offerte par Jack.org.'
   },
 
