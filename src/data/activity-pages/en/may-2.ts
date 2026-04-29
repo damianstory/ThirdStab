@@ -23,7 +23,7 @@ export const may2Activity: ActivityPageData = {
 
   // Extended page content
   hero: {
-    backgroundImage: '/images/be-there-certificate-hero.png',
+    backgroundImage: '/images/phac-btc-graphics-01.png',
     backgroundPosition: 'center top',
     tagline: 'Real Skills for Real Life.',
     introText: `Students: complete Jack.org's free Be There Certificate and submit a short reflection video for your chance to win one of twenty $500 micro grants this May.\n\nEver wish you knew exactly what to say when a friend opens up about something tough? The Be There Certificate can show you how. The self-paced, 2-hour online course teaches you five simple, but powerful "Golden Rules" to effectively Be There for someone struggling with their mental health.`
@@ -301,10 +301,10 @@ When you're ready, use the submission button below to share your video link and 
   // edHUB Jack Intersections educator promo banner. Attribution text is still placeholder —
   // swap once Jack.org confirms final copy.
   promotionalBanner: {
-    imageEn: '/promotional-banners/jack-intersections-may-2026-en.png',
-    imageFr: '/promotional-banners/jack-intersections-may-2026-en.png',
-    altTextEn: 'Jack Intersections on edHUB — six classroom-ready lessons for educators',
-    altTextFr: 'Jack Intersections sur edHUB — six leçons prêtes à enseigner pour les éducateurs',
+    imageEn: '/promotional-banners/phac-btc-graphics-02.png',
+    imageFr: '/promotional-banners/phac-btc-graphics-02.png',
+    altTextEn: 'Together in Change Series educator incentive for Jack Intersection resources',
+    altTextFr: 'Incitatif pour les éducateurs de la série Together in Change pour les ressources Jack Intersections',
     link: 'https://edhub.jack.org/intersections',
     attributionTextEn: 'Educators: we didn\'t forget about you! You could win a $100 gift card of your choosing courtesy of Jack.org when you download any <a href="https://edhub.jack.org/intersections" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Jack Intersections resource</a> by May 31st. Simply download one of the 6 resources with your school email and you\'ll be automatically entered.',
     attributionTextFr: 'Éducateurs : découvrez Jack Intersections sur edHUB — six leçons gratuites, éclairées par les traumatismes, prêtes à enseigner. Téléchargez une ressource en mai 2026 pour courir la chance de gagner une carte-cadeau de 100 $ de votre choix offerte par Jack.org.'
