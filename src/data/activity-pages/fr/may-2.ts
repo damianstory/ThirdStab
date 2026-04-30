@@ -160,11 +160,11 @@ Lorsque vous êtes prêt, utilisez le bouton ci-dessous pour soumettre votre lie
         weight: 0,
         description: '',
         isLink: true,
-        url: '#' // TODO: Replace with detailed rubric URL once created
+        url: 'https://claude.ai/public/artifacts/f6c9552c-1dda-47e1-b8bb-2b8b8057f988'
       }
     ],
     totalPoints: 100,
-    detailedRubricUrl: '#' // TODO: Replace with detailed rubric URL once created
+    detailedRubricUrl: 'https://claude.ai/public/artifacts/f6c9552c-1dda-47e1-b8bb-2b8b8057f988'
   },
 
   submission: {
