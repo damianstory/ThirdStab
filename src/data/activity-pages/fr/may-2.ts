@@ -72,7 +72,7 @@ export const may2Activity: ActivityPageData = {
     steps: [
       {
         title: "Étape 1 : Obtenir le certificat Être là™",
-        details: `<strong>Complétez gratuitement le certificat Être là™ offert par Jack.org et la Born This Way Foundation.</strong>
+        details: `<strong>Complétez gratuitement le certificat Être là™ offert par Jack.org et Born This Way Foundation.</strong>
 
 <a href="https://www.betherecertificate.org/?referral=myblueprintcareerlaunch&utm_source=myblueprint&utm_medium=contest&utm_campaign=immersion" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Commencez le certificat ici →</a>
 
