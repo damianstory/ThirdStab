@@ -192,11 +192,11 @@ Make sure your video link is accessible. Test it in an incognito browser before 
         weight: 0,
         description: '',
         isLink: true,
-        url: '#' // TODO: Replace with detailed rubric URL once created
+        url: 'https://claude.ai/public/artifacts/ab084eb2-c475-418a-9d01-50b1974a8ac2'
       }
     ],
     totalPoints: 100,
-    detailedRubricUrl: '#' // TODO: Replace with detailed rubric URL once created
+    detailedRubricUrl: 'https://claude.ai/public/artifacts/ab084eb2-c475-418a-9d01-50b1974a8ac2'
   },
 
   submission: {
