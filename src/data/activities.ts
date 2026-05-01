@@ -444,8 +444,8 @@ export interface ActivityPageData extends Activity {
 // Valid activity months for routing
 export const validActivityMonths = ['october', 'november', 'december', 'january', 'february', 'march', 'april', 'may-1', 'may-2'];
 
-// Months that are live and navigable from the timeline (add 'may-1' and 'may-2' when ready to go live)
-export const liveActivityMonths = ['october', 'november', 'december', 'january', 'february', 'march', 'april'];
+// Months that are live and navigable from the timeline
+export const liveActivityMonths = ['october', 'november', 'december', 'january', 'february', 'march', 'april', 'may-1', 'may-2'];
 
 // Helper function to get activity by slug
 export function getActivityBySlug(slug: string): Activity | null {
