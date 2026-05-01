@@ -4,6 +4,13 @@ import EmailForm from './EmailForm';
 import { InfiniteSlider } from './ui/infinite-slider';
 import AnimatedBackground from './AnimatedBackground';
 import { ActivityBadge } from '@/components/ui/activity-badge';
+import { getActiveActivity, getActivities } from '@/data/activities';
+
+// Capitalize and strip suffixes like "May-1" → "May", "mai" → "Mai"
+function displayMonth(rawMonth: string): string {
+  const base = rawMonth.split('-')[0];
+  return base.charAt(0).toUpperCase() + base.slice(1).toLowerCase();
+}
 
 // Company logos data
 const companies = [
@@ -18,31 +25,60 @@ const companies = [
   { name: 'Jack', logo: '/jack-logo.png' },
 ];
 
-// Localized text content
+// French elision: "de avril" → "d'avril", but "de mars" stays as "de mars".
+function frMonthPhrase(month: string): string {
+  const lower = month.toLowerCase();
+  const startsWithVowel = /^[aeiouéèêh]/.test(lower);
+  return startsWithVowel ? `d'${lower}` : `de ${lower}`;
+}
+
+// Localized text content (functions take the active month name in the right language)
 const text = {
-  en: {
+  en: (month: string) => ({
     title: 'Industry Immersion Series',
     subtitle1: '$100,000+ in micro grants and incentives available to grade 7-12 students (and their educators) across Canada.',
     subtitle2: {
-      bold: 'The April activity is now live! Scroll down ',
+      bold: `The ${month} activity is now live! Scroll down `,
       regular: 'to learn how the program works, and view open activities.'
     },
     subtitle3: 'And join the mailing list so you and your students are the first to know how to get involved.',
     emailPlaceholder: 'Enter your email address',
     signUpButton: 'Sign Up',
-    badge: 'April Activity Live'
-  },
-  fr: {
+    badge: `${month} Activity Live`
+  }),
+  fr: (month: string) => ({
     title: <>Série <br className="hidden md:block" />d&apos;immersion <br className="hidden md:block" />dans l&apos;industrie</>,
     subtitle1: "Plus de 100 000 $ en microbourses et incitatifs offerts aux élèves de la 7e à la 12e année (et à leurs éducateurs) partout au Canada.",
     subtitle2: {
-      bold: "L'activité d'avril est maintenant en ligne ! Faites défiler la page ",
+      bold: `L'activité ${frMonthPhrase(month)} est maintenant en ligne ! Faites défiler la page `,
       regular: "pour découvrir comment le fonctionnement du programme et consulter les activités offertes."
     },
     subtitle3: "Inscrivez-vous à la liste d'envoi pour être les premiers, vous et vos élèves, à savoir comment participer.",
     emailPlaceholder: "Entrez votre adresse courriel",
     signUpButton: "S'inscrire",
-    badge: "Activité d'avril en ligne"
+    badge: `Activité ${frMonthPhrase(month)} en ligne`
+  })
+};
+
+// Off-season fallback (no activity active — e.g. June onward)
+const offSeasonText = {
+  en: {
+    title: 'Industry Immersion Series',
+    subtitle1: '$100,000+ in micro grants and incentives available to grade 7-12 students (and their educators) across Canada.',
+    subtitle2: { bold: '', regular: 'Scroll down to learn how the program works.' },
+    subtitle3: 'And join the mailing list so you and your students are the first to know how to get involved.',
+    emailPlaceholder: 'Enter your email address',
+    signUpButton: 'Sign Up',
+    badge: ''
+  },
+  fr: {
+    title: <>Série <br className="hidden md:block" />d&apos;immersion <br className="hidden md:block" />dans l&apos;industrie</>,
+    subtitle1: "Plus de 100 000 $ en microbourses et incitatifs offerts aux élèves de la 7e à la 12e année (et à leurs éducateurs) partout au Canada.",
+    subtitle2: { bold: '', regular: "Faites défiler la page pour découvrir le fonctionnement du programme." },
+    subtitle3: "Inscrivez-vous à la liste d'envoi pour être les premiers, vous et vos élèves, à savoir comment participer.",
+    emailPlaceholder: "Entrez votre adresse courriel",
+    signUpButton: "S'inscrire",
+    badge: ''
   }
 };
 
@@ -51,13 +87,26 @@ interface HeroProps {
 }
 
 export default function Hero({ language = 'en' }: HeroProps) {
-  const t = text[language];
-  const handleScrollToApril = () => {
-    const marchCard = document.getElementById('april-activity-card');
-    if (marchCard) {
+  // Find the currently active activity (status driven by getCurrentStatus, ET-based).
+  // For the localized month name, look up the same id in the FR/EN list.
+  const activeEn = getActiveActivity();
+  const activeLocalized = activeEn
+    ? getActivities(language).find(a => a.id === activeEn.id) ?? activeEn
+    : null;
+  const activeMonthLabel = activeLocalized ? displayMonth(activeLocalized.month) : '';
+  const activeSlug = activeEn?.slug ?? '';
+
+  const t = activeLocalized
+    ? text[language](activeMonthLabel)
+    : offSeasonText[language];
+
+  const handleScrollToActive = () => {
+    if (!activeSlug) return;
+    const targetCard = document.getElementById(`${activeSlug}-activity-card`);
+    if (targetCard) {
       const headerHeight = 64; // Height of fixed header
       const extraOffset = 250; // Extra offset to show cards below
-      const elementPosition = marchCard.getBoundingClientRect().top;
+      const elementPosition = targetCard.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerHeight - extraOffset;
 
       // Custom smooth scroll with easing
@@ -154,15 +203,17 @@ export default function Hero({ language = 'en' }: HeroProps) {
               />
             </div>
 
-            {/* Activity Badge */}
-            <div className="mt-8 mb-24 md:mb-12 lg:mb-24 flex justify-center lg:justify-start animate-fade-in-up animation-delay-400">
-              <ActivityBadge
-                expandedText={t.badge}
-                emoji="🎉"
-                onClick={handleScrollToApril}
-                collapseDelay={6000}
-              />
-            </div>
+            {/* Activity Badge — only render when an activity is active */}
+            {activeLocalized && t.badge ? (
+              <div className="mt-8 mb-24 md:mb-12 lg:mb-24 flex justify-center lg:justify-start animate-fade-in-up animation-delay-400">
+                <ActivityBadge
+                  expandedText={t.badge}
+                  emoji="🎉"
+                  onClick={handleScrollToActive}
+                  collapseDelay={6000}
+                />
+              </div>
+            ) : null}
           </div>
         </div>
       </div>

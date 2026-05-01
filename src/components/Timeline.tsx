@@ -1,7 +1,7 @@
 'use client';
 
 import TimelineCard from './TimelineCard';
-import { getActivities } from '@/data/activities';
+import { getActivities, getCurrentStatus, getActiveActivity } from '@/data/activities';
 
 // Localized text content
 const text = {
@@ -32,21 +32,30 @@ interface TimelineProps {
 export default function Timeline({ language = 'en' }: TimelineProps) {
   const t = text[language];
   const localizedActivities = getActivities(language);
+  // Status comes from the English month names (FR labels won't match getMonthNumber).
+  // We pair localized activities to EN by id to derive status.
+  const enById = new Map(getActivities('en').map(a => [a.id, a]));
+  const activeSlug = getActiveActivity()?.slug ?? null;
 
   // Create enhanced timeline data with sponsor information from activities
   const timelineData = [
     // Activities with sponsors (mapped from localized activities)
-    ...localizedActivities.map(activity => ({
-      year: activity.year,
-      month: activity.month,
-      title: activity.title,
-      industry: t.incentive,
-      description: activity.description,
-      status: activity.month === "October" || activity.month === "octobre" || activity.month === "November" || activity.month === "novembre" || activity.month === "December" || activity.month === "décembre" || activity.month === "January" || activity.month === "janvier" || activity.month === "February" || activity.month === "février" || activity.month === "March" || activity.month === "mars" || activity.month === "April" || activity.month === "avril" ? "confirmed" : "tba",
-      sponsor: activity.sponsor,
-      slug: activity.slug, // Pass through the slug for navigation
-      strikethroughIndustry: activity.month === "October" || activity.month === "octobre" || activity.month === "November" || activity.month === "novembre" || activity.month === "December" || activity.month === "décembre" || activity.month === "January" || activity.month === "janvier" || activity.month === "February" || activity.month === "février" || activity.month === "March" || activity.month === "mars" // Cross out micro grants for October through March
-    })),
+    ...localizedActivities.map(activity => {
+      const en = enById.get(activity.id) ?? activity;
+      const status = getCurrentStatus(en.month, en.year);
+      const isPast = status === 'ongoing'; // month already over → confirmed + struck through
+      return {
+        year: activity.year,
+        month: activity.month,
+        title: activity.title,
+        industry: t.incentive,
+        description: activity.description,
+        status: (isPast || status === 'active') ? 'confirmed' : 'tba',
+        sponsor: activity.sponsor,
+        slug: activity.slug,
+        strikethroughIndustry: isPast,
+      };
+    }),
     // Incentive distribution month (no sponsor)
     {
       year: "2026",
@@ -80,7 +89,7 @@ export default function Timeline({ language = 'en' }: TimelineProps) {
           {timelineData.map((item, index) => (
             <div
               key={index}
-              id={(item.month === "April" || item.month === "avril") && item.year === "2026" ? "april-activity-card" : undefined}
+              id={'slug' in item && item.slug === activeSlug && activeSlug ? `${item.slug}-activity-card` : undefined}
               className="animate-fade-in-up"
               style={{
                 animationDelay: `${index * 0.1}s`

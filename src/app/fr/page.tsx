@@ -10,6 +10,10 @@ import FAQ from '@/components/FAQ';
 import StayInformed from '@/components/StayInformed';
 import Footer from '@/components/Footer';
 
+// ISR: regenerate at most once per minute so the 1st-of-month flips
+// (active activity copy, strikethrough) reach users without a deploy.
+export const revalidate = 60;
+
 export const metadata: Metadata = {
   title: "Série d'immersion industrielle par myBlueprint",
   description: "Découvrez des opportunités de carrière grâce à des partenariats industriels. Micro-subventions, mentorat et expérience du monde réel pour les étudiants canadiens de la 7e à la 12e année.",

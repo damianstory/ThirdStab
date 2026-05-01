@@ -16,6 +16,10 @@ import SpotlightCallouts from '@/components/activity/SpotlightCallouts';
 import TopicClusters from '@/components/activity/TopicClusters';
 import FundingAttribution from '@/components/activity/FundingAttribution';
 
+// ISR: regenerate at most once per minute so per-activity status badges
+// (driven by getCurrentStatus) flip on the 1st of the month without a deploy.
+export const revalidate = 60;
+
 interface ActivityPageProps {
   params: {
     month: string;

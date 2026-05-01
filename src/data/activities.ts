@@ -206,12 +206,18 @@ function getMonthNumber(monthName: string): number {
   return months[cleanMonthName as keyof typeof months] ?? 0;
 }
 
-// Helper function to determine activity status based on current date
+// Helper function to determine activity status based on current date.
+// Uses America/Toronto so the 1st-of-month flip lands at midnight ET regardless
+// of where the code runs (Vercel serverless defaults to UTC).
 export function getCurrentStatus(activityMonth: string, activityYear: string): 'coming-soon' | 'active' | 'ongoing' {
-  const now = new Date();
-  const currentMonth = now.getMonth();
-  const currentYear = now.getFullYear();
-  
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'America/Toronto',
+    year: 'numeric',
+    month: 'numeric',
+  }).formatToParts(new Date());
+  const currentMonth = Number(parts.find(p => p.type === 'month')!.value) - 1;
+  const currentYear = Number(parts.find(p => p.type === 'year')!.value);
+
   const activityMonthNumber = getMonthNumber(activityMonth);
   const activityYearNumber = parseInt(activityYear);
   
