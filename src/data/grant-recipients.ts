@@ -262,7 +262,7 @@ export const allMonths: MonthRecipients[] = [
       { id: 'mar-16', gumletId: '69f8b33bc3d879bf572d07d2', grade: 10, schoolBoard: 'Toronto Catholic District School Board', schoolName: '', province: 'Ontario' },
       { id: 'mar-17', gumletId: '69f8b33bb73ee3afb29e1cee', grade: 10, schoolBoard: 'Waterloo Region District School Board', schoolName: '', province: 'Ontario' },
       { id: 'mar-18', gumletId: '69f8f231b73ee3afb2a4ea24', grade: 10, schoolBoard: 'Garden Valley School Division', schoolName: '', province: 'Manitoba' },
-      { id: 'mar-19', youtubeId: 'X2emIiPoRP4', grade: 12, schoolBoard: 'Coming Soon', schoolName: 'Coming Soon', province: 'Coming Soon' },
+      { id: 'mar-19', gumletId: '69f8b331c3d879bf572d05a2', grade: 10, schoolBoard: 'Shawnigan Lake', schoolName: '', province: 'British Columbia' },
       { id: 'mar-20', youtubeId: 'X2emIiPoRP4', grade: 12, schoolBoard: 'Coming Soon', schoolName: 'Coming Soon', province: 'Coming Soon' }
     ]
   },
