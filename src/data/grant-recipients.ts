@@ -245,7 +245,7 @@ export const allMonths: MonthRecipients[] = [
     enabled: true,
     winners: [
       { id: 'mar-1', gumletId: '69f8b33b8835595b0e9afc85', grade: 11, schoolBoard: 'SD68 Nanaimo', schoolName: '', province: 'British Columbia' },
-      { id: 'mar-2', gumletId: '69f8b331b73ee3afb29e1b3d', grade: 11, schoolBoard: 'Foundations For The Future Charter Academy North Highschool', schoolName: '', province: 'Alberta' },
+      { id: 'mar-2', gumletId: '69f8c04db73ee3afb29fc4ff', grade: 11, schoolBoard: 'Foundations For The Future Charter Academy North Highschool', schoolName: '', province: 'Alberta' },
       { id: 'mar-3', gumletId: '69f8b331c3d879bf572d059e', grade: 12, schoolBoard: 'Halton District School Board', schoolName: '', province: 'Ontario' },
       { id: 'mar-4', gumletId: '69f8b331c3d879bf572d05a0', grade: 12, schoolBoard: 'Toronto District School Board', schoolName: '', province: 'Ontario' },
       { id: 'mar-5', gumletId: '69f8b331c3d879bf572d05a2', grade: 10, schoolBoard: 'Shawnigan Lake Private School', schoolName: '', province: 'British Columbia' },
