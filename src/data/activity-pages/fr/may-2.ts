@@ -23,7 +23,7 @@ export const may2Activity: ActivityPageData = {
 
   // Extended page content
   hero: {
-    backgroundImage: '/images/phac-btc-graphics-01.png',
+    backgroundImage: '/images/phac-btc-graphics-03-fr.png',
     backgroundPosition: 'center top',
     tagline: 'Des compétences concrètes pour la vie de tous les jours.',
     introText: `Élèves : complétez gratuitement le certificat Être là™ de Jack.org et soumettez une courte vidéo de réflexion pour avoir la chance de remporter l'une des vingt microbourses de 500 $ en mai.\n\nVous êtes-vous déjà demandé quoi dire lorsqu'un ami se confie à vous sur une situation difficile? Le certificat Être là™ peut vous guider. Cette formation en ligne gratuite, d'environ deux heures et offerte à votre rythme, vous présente cinq « règles d'or » simples mais efficaces pour soutenir une personne en difficulté sur le plan de la santé mentale.`
@@ -300,7 +300,7 @@ Lorsque vous êtes prêt, utilisez le bouton ci-dessous pour soumettre votre lie
   // edHUB Jack Intersections educator promo banner.
   promotionalBanner: {
     imageEn: '/promotional-banners/phac-btc-graphics-02.png',
-    imageFr: '/promotional-banners/phac-btc-graphics-02.png',
+    imageFr: '/promotional-banners/phac-btc-graphics-04-fr.png',
     altTextEn: 'Together in Change Series educator incentive for Jack Intersection resources',
     altTextFr: 'Incitatif pour les éducateurs de la série Together in Change pour les ressources Jack Intersections',
     link: 'https://edhub.jack.org/intersections',
