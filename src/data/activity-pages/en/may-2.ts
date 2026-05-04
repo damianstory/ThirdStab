@@ -168,7 +168,7 @@ When you're ready, use the submission button below to share your video link and 
   },
 
   submission: {
-    url: '', // TODO: Replace with SimpleSurvey submission form URL
+    url: 'https://questionnaire.simplesurvey.com/f/s.aspx?s=bb8a23d2-335b-494f-b1d0-7aa31762fe77',
     deadline: new Date('2026-05-31T23:59:59-04:00'),
     instructions: 'Submit your Be There Certificate Challenge video for the May challenge. Make sure your video link is accessible (test in incognito mode) before submitting.'
   },

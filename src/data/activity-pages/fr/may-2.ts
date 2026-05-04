@@ -168,7 +168,7 @@ Lorsque vous êtes prêt, utilisez le bouton ci-dessous pour soumettre votre lie
   },
 
   submission: {
-    url: '', // TODO: Replace with SimpleSurvey submission form URL
+    url: 'https://questionnaire.simplesurvey.com/f/s.aspx?s=bb8a23d2-335b-494f-b1d0-7aa31762fe77',
     deadline: new Date('2026-05-31T23:59:59-04:00'),
     instructions: 'Soumettez votre vidéo pour le défi du certificat Être là™ du mois de mai. Assurez-vous que votre lien est accessible avant de l\'envoyer.'
   },

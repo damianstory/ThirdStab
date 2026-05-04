@@ -200,7 +200,7 @@ Make sure your video link is accessible. Test it in an incognito browser before 
   },
 
   submission: {
-    url: '', // TODO: Replace with SimpleSurvey submission form URL
+    url: 'https://questionnaire.simplesurvey.com/f/s.aspx?s=8b3908f3-4e15-405e-9034-07171866bdb8',
     deadline: new Date('2026-05-31T23:59:59-04:00'),
     instructions: 'Submit your HVACR Industry Challenge video for the May challenge. Make sure your video link is accessible (test in incognito mode) before submitting.'
   },

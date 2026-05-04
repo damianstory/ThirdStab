@@ -200,7 +200,7 @@ Assurez-vous que votre lien est accessible (testez-le en mode navigation privée
   },
 
   submission: {
-    url: '', // TODO: Replace with SimpleSurvey submission form URL
+    url: 'https://questionnaire.simplesurvey.com/f/s.aspx?s=8b3908f3-4e15-405e-9034-07171866bdb8',
     deadline: new Date('2026-05-31T23:59:59-04:00'),
     instructions: 'Soumettez votre vidéo pour le défi de mai sur le CVAC-R. Assurez-vous que votre lien est accessible (testez-le en mode navigation privée) avant de l\'envoyer.'
   },
