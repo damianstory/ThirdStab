@@ -36,7 +36,7 @@ export const may1Activity: ActivityPageData = {
   },
 
   howThisWorksVideo: {
-    embedUrl: '', // TODO: Replace with How This Works video once created
+    embedUrl: 'https://www.youtube.com/embed/UEw7A3XIMa8',
     title: 'How this Works - May Challenge'
   },
 
@@ -135,7 +135,7 @@ Use resources like Job Bank and HRAI to find out:
 Show that HVACR offers real, in-demand career opportunities now and in the future.`
       },
       {
-        title: "Step 5: Create Your Video & Submit",
+        title: "Step 5: Create Your Video",
         details: `<strong>Record a 90–120 second video covering Steps 1–4.</strong>
 
 Your video should include:
@@ -146,21 +146,40 @@ Your video should include:
 
 <strong>Format options:</strong>
 • Talking head, documentary, animation, or voice-over
-• Vertical or horizontal
+• Vertical or horizontal both work
 • Use photos, diagrams, or examples where helpful
 • You do not need to appear on camera
 
-<strong>Video length: 90–120 seconds</strong>
+<strong>Make your video shine:</strong>
+• Film in good lighting and with clear audio.
+• Keep it focused — aim for the 90–120 second window so every point earns its place.
+• Lean on visuals (photos of the company, role footage, simple diagrams of the technology) to reinforce what you're saying.
 
-Before submitting, check:
+<strong>Video length: 90–120 seconds</strong>`
+      },
+      {
+        title: "Step 6: Submit Your Video",
+        details: `<strong>How to host your video:</strong>
+
+You need to submit a <strong>shareable link</strong> we can click on — <strong>not</strong> an uploaded <code>.mp4</code> file. Upload your finished video to one of these free options and then share the link:
+
+• <strong>Google Drive</strong> — upload the file, right-click → Share → set access to "Anyone with the link"
+• <strong>OneDrive</strong> — upload the file, click Share → copy a link with "Anyone with the link can view"
+• <strong>YouTube (Unlisted)</strong> — upload the video and set visibility to "Unlisted" so only people with the link can see it
+
+<strong>Important:</strong> before you submit, open your link in an incognito/private browser window to make sure it actually plays without requiring sign-in. If we can't open it, we can't review it.
+
+<strong>Before submitting, check:</strong>
 
 ✓ Did you feature a real local company?
 ✓ Did you clearly explain a specific career?
 ✓ Did you describe a technology and its impact?
 ✓ Did you show future demand for the role?
-✓ Is your video within the time limit?
+✓ Is your video within the 90–120 second time limit?
+✓ Is your video hosted on Google Drive, OneDrive, or YouTube (Unlisted) — not an <code>.mp4</code> file?
+✓ Is your video link public and accessible in an incognito browser?
 
-Make sure your video link is accessible. Test it in an incognito browser before submitting.`
+When you're ready, use the submission button below to share your video link and a few short details about your entry.`
       }
     ]
   },
@@ -208,7 +227,7 @@ Make sure your video link is accessible. Test it in an incognito browser before 
   faqs: [
     {
       question: 'How does this May Activity challenge work?',
-      answer: 'Carefully read the Activity Details steps 1-5 to understand what is being asked of you in this activity. You can also watch the How this Works video for a detailed overview.'
+      answer: 'Carefully read the Activity Details steps 1-6 to understand what is being asked of you in this activity. You can also watch the How this Works video for a detailed overview.'
     },
     {
       question: 'What am I actually being asked to submit?',

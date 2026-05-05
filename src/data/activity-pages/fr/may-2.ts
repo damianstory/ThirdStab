@@ -36,7 +36,7 @@ export const may2Activity: ActivityPageData = {
   },
 
   howThisWorksVideo: {
-    embedUrl: '', // TODO: Replace with How This Works video once created
+    embedUrl: 'https://www.youtube.com/embed/9aMhao9yh_E',
     title: 'Fonctionnement du défi de mai'
   },
 
