@@ -13,7 +13,7 @@ interface ReportPageProps {
 }
 
 // Reports available for these months
-const availableReports = ['january', 'december', 'november', 'october'];
+const availableReports = ['march', 'january', 'december', 'november', 'october'];
 
 // Generate static params for all valid months
 export async function generateStaticParams() {

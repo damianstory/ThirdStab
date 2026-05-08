@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&R Block Canada March 2026 Sponsor Report | Industry Immersion Series</title>
+    <meta name="description" content="Sponsor report for the Teach Me Taxes Challenge — H&R Block Canada partnership with Industry Immersion Series">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* H&R Block brand font — self-hosted */
+        @font-face {
+            font-family: 'Graphik';
+            src: url('/fonts/graphik/GraphikRegular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Graphik';
+            src: url('/fonts/graphik/GraphikMedium.woff2') format('woff2');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Graphik';
+            src: url('/fonts/graphik/GraphikSemibold.woff2') format('woff2');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Graphik';
+            src: url('/fonts/graphik/GraphikBold.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* H&R Block Canada brand palette (locked) */
+            --hrb-green: #14aa40;
+            --hrb-dark-green: #005d1f;
+            --hrb-global-dark: #013512;
+            --hrb-spruce: #d2fa52;
+            --hrb-yellow: #f5cc02;
+            --hrb-blue: #3bc0f8;
+            --hrb-light-gray: #f1f2f2;
+            --hrb-gray: #6e6e6e;
+            --hrb-black: #231f20;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Graphik', Arial, sans-serif;
+            background: var(--hrb-light-gray);
+            color: var(--hrb-black);
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Hero Section — white bg w/ generous negative space, green block motif */
+        .hero {
+            background: var(--white);
+            padding: 80px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: var(--hrb-green);
+        }
+
+        .hero .block-1 {
+            position: absolute;
+            top: 80px;
+            right: 8%;
+            width: 120px;
+            height: 120px;
+            background: var(--hrb-green);
+            opacity: 0.08;
+            pointer-events: none;
+        }
+
+        .hero .block-2 {
+            position: absolute;
+            bottom: 60px;
+            right: 22%;
+            width: 60px;
+            height: 60px;
+            background: var(--hrb-yellow);
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .hero .block-3 {
+            position: absolute;
+            bottom: -40px;
+            right: -40px;
+            width: 240px;
+            height: 240px;
+            background: var(--hrb-green);
+            opacity: 0.06;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .brand-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .hrb-logo {
+            height: 56px;
+            width: 56px;
+            object-fit: contain;
+        }
+
+        .report-badge {
+            font-family: 'Space Mono', monospace;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--hrb-dark-green);
+            background: var(--hrb-light-gray);
+            padding: 6px 12px;
+            border-radius: 4px;
+        }
+
+        .hero-title {
+            font-family: 'Graphik', Arial, sans-serif;
+            font-size: clamp(42px, 6vw, 80px);
+            font-weight: 700;
+            color: var(--hrb-green);
+            line-height: 0.95;
+            letter-spacing: -2px;
+            margin-bottom: 16px;
+        }
+
+        .hero-subtitle {
+            font-family: 'Space Mono', monospace;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--hrb-gray);
+            margin-bottom: 50px;
+        }
+
+        .hero-stat-card {
+            display: inline-block;
+            background: var(--white);
+            padding: 40px 60px;
+            border-radius: 0;
+            border: 3px solid var(--hrb-green);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .hero-stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.12);
+        }
+
+        .hero-stat-number {
+            font-family: 'Graphik', Arial, sans-serif;
+            font-size: clamp(60px, 10vw, 100px);
+            font-weight: 700;
+            color: var(--hrb-green);
+            line-height: 1;
+        }
+
+        .hero-stat-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--hrb-black);
+            margin-top: 8px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-family: 'Graphik', Arial, sans-serif;
+            font-size: clamp(32px, 5vw, 52px);
+            font-weight: 700;
+            color: var(--hrb-dark-green);
+            margin-bottom: 12px;
+            letter-spacing: -1px;
+        }
+
+        .section-subtitle {
+            font-family: 'Space Mono', monospace;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--hrb-green);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .metric-card {
+            background: var(--white);
+            padding: 28px 24px;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+            border-color: var(--hrb-green);
+        }
+
+        .metric-card.featured {
+            background: var(--hrb-green);
+            color: var(--white);
+        }
+
+        .metric-card.featured .metric-value {
+            color: var(--white);
+        }
+
+        .metric-card.featured .metric-label {
+            color: rgba(255,255,255,0.9);
+        }
+
+        .metric-tooltip {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 20px;
+            height: 20px;
+            background: var(--hrb-light-gray);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: help;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--hrb-gray);
+            transition: all 0.2s ease;
+        }
+
+        .metric-card.featured .metric-tooltip {
+            background: rgba(255,255,255,0.2);
+            color: var(--white);
+        }
+
+        .metric-tooltip:hover {
+            background: var(--hrb-green);
+            color: var(--white);
+        }
+
+        .metric-card.featured .metric-tooltip:hover {
+            background: var(--hrb-yellow);
+            color: var(--hrb-black);
+        }
+
+        .metric-tooltip .tooltip-text {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            bottom: calc(100% + 10px);
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            background: var(--hrb-black);
+            color: var(--white);
+            padding: 12px 14px;
+            border-radius: 4px;
+            font-family: 'Graphik', Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 1.4;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            z-index: 100;
+            transition: all 0.2s ease;
+        }
+
+        .metric-tooltip .tooltip-text::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 6px solid transparent;
+            border-top-color: var(--hrb-black);
+        }
+
+        .metric-tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .metric-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--hrb-green);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .metric-card.featured .metric-icon {
+            background: var(--white);
+        }
+
+        .metric-card.featured .metric-icon svg {
+            fill: var(--hrb-green);
+        }
+
+        .metric-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--white);
+        }
+
+        .metric-value {
+            font-family: 'Graphik', Arial, sans-serif;
+            font-size: 42px;
+            font-weight: 700;
+            color: var(--hrb-dark-green);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .metric-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--hrb-gray);
+        }
+
+        .metric-tbd {
+            color: var(--hrb-gray);
+            font-style: normal;
+            font-size: 36px;
+            letter-spacing: 1px;
+        }
+
+        .metric-card.featured .metric-tbd {
+            color: rgba(255,255,255,0.85);
+        }
+
+        /* Topic Cluster Split */
+        .clusters-section {
+            background: var(--white);
+        }
+
+        .clusters-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .cluster-card {
+            background: var(--hrb-light-gray);
+            border-radius: 4px;
+            padding: 36px 28px;
+            text-align: left;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cluster-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--hrb-green);
+        }
+
+        .cluster-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.10);
+            border-color: var(--hrb-green);
+            background: var(--white);
+        }
+
+        .cluster-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--hrb-green);
+            color: var(--white);
+            font-family: 'Graphik', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .cluster-title {
+            font-family: 'Graphik', Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--hrb-dark-green);
+            margin-bottom: 12px;
+            line-height: 1.25;
+        }
+
+        .cluster-concepts {
+            font-family: 'Graphik', Arial, sans-serif;
+            font-size: 13px;
+            color: var(--hrb-gray);
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+
+        .cluster-stat {
+            border-top: 1px solid rgba(0,0,0,0.08);
+            padding-top: 20px;
+        }
+
+        .cluster-number-large {
+            font-family: 'Graphik', Arial, sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--hrb-green);
+            line-height: 1;
+        }
+
+        .cluster-pct {
+            font-family: 'Space Mono', monospace;
+            font-size: 12px;
+            color: var(--hrb-gray);
+            margin-top: 4px;
+        }
+
+        .chart-section {
+            background: var(--white);
+            border-radius: 4px;
+            padding: 50px;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.06);
+        }
+
+        .donut-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .donut-chart-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .province-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            background: var(--hrb-light-gray);
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .legend-item:hover {
+            transform: translateX(4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 2px;
+        }
+
+        .legend-text {
+            flex: 1;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--hrb-black);
+        }
+
+        .legend-value {
+            font-family: 'Space Mono', monospace;
+            font-size: 12px;
+            color: var(--hrb-gray);
+        }
+
+        /* Resource Clicks */
+        .resource-clicks-display {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .resource-clicks-number {
+            font-family: 'Graphik', Arial, sans-serif;
+            font-size: 96px;
+            font-weight: 700;
+            color: var(--hrb-green);
+            line-height: 1;
+            letter-spacing: -2px;
+        }
+
+        .resource-clicks-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 13px;
+            color: var(--hrb-gray);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-top: 12px;
+            margin-bottom: 36px;
+        }
+
+        .resource-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .resource-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: var(--hrb-light-gray);
+            border: 1px solid rgba(20, 170, 64, 0.15);
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--hrb-dark-green);
+        }
+
+        .resource-tag svg {
+            color: var(--hrb-green);
+            flex-shrink: 0;
+        }
+
+        /* Submissions */
+        .submissions-section {
+            background: var(--hrb-light-gray);
+        }
+
+        .submissions-chart {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .submissions-bars {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .submission-bar {
+            display: grid;
+            grid-template-columns: 200px 1fr 60px;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .submission-bar .bar-label {
+            font-size: 13px;
+            color: var(--hrb-black);
+            font-weight: 500;
+            text-align: right;
+        }
+
+        .submission-bar .bar-wrapper {
+            height: 32px;
+            background: var(--hrb-light-gray);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .submission-bar .bar-fill {
+            height: 100%;
+            background: var(--hrb-green);
+            border-radius: 2px;
+            transition: width 0.8s ease;
+        }
+
+        .bar-value {
+            font-family: 'Space Mono', monospace;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--hrb-dark-green);
+        }
+
+        .total-submissions {
+            text-align: center;
+            background: var(--hrb-green);
+            padding: 50px;
+            border-radius: 4px;
+            box-shadow: 0 10px 40px rgba(20,170,64,0.18);
+            color: var(--white);
+        }
+
+        .total-number {
+            font-family: 'Graphik', Arial, sans-serif;
+            font-size: 100px;
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1;
+        }
+
+        .total-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgba(255,255,255,0.9);
+            margin-top: 12px;
+        }
+
+        .careers-section {
+            background: var(--hrb-dark-green);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .careers-section::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: rgba(20,170,64,0.06);
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+        .careers-section .section-title {
+            color: var(--white);
+        }
+
+        .careers-section .section-subtitle {
+            color: var(--hrb-spruce);
+        }
+
+        .videos-section {
+            background: var(--white);
+        }
+
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .video-card {
+            background: var(--hrb-light-gray);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .video-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+            border-color: var(--hrb-green);
+        }
+
+        .video-embed {
+            position: relative;
+            aspect-ratio: 16/9;
+            cursor: pointer;
+            overflow: hidden;
+            background: var(--hrb-dark-green);
+        }
+
+        .video-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .video-thumbnail {
+            aspect-ratio: 16/9;
+            background: var(--hrb-dark-green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .video-thumbnail .play-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--hrb-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .video-card:hover .play-icon {
+            transform: scale(1.1);
+            background: var(--hrb-yellow);
+        }
+
+        .video-card:hover .play-icon svg {
+            fill: var(--hrb-black);
+        }
+
+        .play-icon svg {
+            width: 22px;
+            height: 22px;
+            fill: var(--white);
+            margin-left: 3px;
+            transition: fill 0.3s ease;
+        }
+
+        .video-thumbnail .video-number {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            font-family: 'Space Mono', monospace;
+            font-size: 10px;
+            font-weight: 700;
+            color: var(--white);
+            background: rgba(0,0,0,0.4);
+            padding: 2px 8px;
+            border-radius: 2px;
+        }
+
+        .video-info {
+            padding: 16px;
+        }
+
+        .video-meta {
+            font-family: 'Space Mono', monospace;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--hrb-gray);
+            margin-bottom: 4px;
+        }
+
+        .video-school {
+            font-size: 13px;
+            color: var(--hrb-dark-green);
+            font-weight: 600;
+            line-height: 1.35;
+        }
+
+        .winners-section {
+            background: var(--hrb-green);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .winners-section::before {
+            content: '';
+            position: absolute;
+            top: -80px;
+            left: -80px;
+            width: 240px;
+            height: 240px;
+            background: rgba(255,255,255,0.06);
+            pointer-events: none;
+        }
+
+        .winners-section::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            right: -100px;
+            width: 320px;
+            height: 320px;
+            background: rgba(0,93,31,0.18);
+            pointer-events: none;
+        }
+
+        .winners-section .section-title {
+            color: var(--white);
+        }
+
+        .winners-section .section-subtitle {
+            color: rgba(255,255,255,0.85);
+        }
+
+        .winners-section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .prize-highlight {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .prize-amount {
+            font-family: 'Graphik', Arial, sans-serif;
+            font-size: clamp(48px, 8vw, 80px);
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1;
+        }
+
+        .prize-amount sup {
+            font-size: 0.55em;
+            top: -0.45em;
+            position: relative;
+            font-weight: 700;
+        }
+
+        .prize-breakdown {
+            font-family: 'Space Mono', monospace;
+            font-size: 14px;
+            color: rgba(255,255,255,0.9);
+            margin-top: 12px;
+        }
+
+        .winners-by-province {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin-bottom: 60px;
+        }
+
+        .province-winners {
+            background: rgba(255,255,255,0.12);
+            padding: 24px;
+            border-radius: 4px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.18);
+        }
+
+        .province-name {
+            font-size: 14px;
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .province-count {
+            font-family: 'Graphik', Arial, sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--hrb-yellow);
+        }
+
+        .province-label {
+            font-family: 'Space Mono', monospace;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: rgba(255,255,255,0.85);
+        }
+
+        .winners-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .winner-card {
+            background: rgba(255,255,255,0.12);
+            padding: 20px;
+            border-radius: 4px;
+            border-left: 3px solid var(--hrb-yellow);
+            transition: all 0.3s ease;
+        }
+
+        .winner-card:hover {
+            background: rgba(255,255,255,0.18);
+            transform: translateX(4px);
+        }
+
+        .winner-province {
+            font-family: 'Space Mono', monospace;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 4px;
+        }
+
+        .winner-school {
+            color: var(--white);
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .program-reach {
+            background: var(--hrb-dark-green);
+            border-radius: 4px;
+            padding: 80px 60px;
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+
+        .program-reach .section-title {
+            color: var(--white);
+            margin: 0;
+        }
+
+        .program-reach img {
+            height: 80px;
+            width: 80px;
+            object-fit: contain;
+        }
+
+        .view-all-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 30px;
+            padding: 16px 32px;
+            background: var(--hrb-yellow);
+            color: var(--hrb-black);
+            text-decoration: none;
+            border-radius: 2px;
+            font-weight: 600;
+            font-family: 'Graphik', Arial, sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .view-all-link:hover {
+            background: var(--hrb-dark-green);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: var(--hrb-black);
+            padding: 60px 0;
+            border-top: 4px solid var(--hrb-green);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .footer-brands {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .footer-logo-img {
+            height: 36px;
+            width: 36px;
+            object-fit: contain;
+        }
+
+        .footer-logo {
+            font-family: 'Graphik', Arial, sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .footer-divider {
+            color: var(--hrb-gray);
+            font-size: 22px;
+        }
+
+        .footer-text {
+            font-family: 'Space Mono', monospace;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #b8bdc5;
+        }
+
+        @media (max-width: 1024px) {
+            .metrics-grid { grid-template-columns: repeat(3, 1fr); }
+            .clusters-grid { grid-template-columns: repeat(2, 1fr); }
+            .donut-section,
+            .submissions-chart { grid-template-columns: 1fr; }
+            .donut-chart-wrapper { order: -1; }
+            .videos-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 0 20px; }
+            section { padding: 60px 0; }
+            .hero { padding: 60px 0 80px; }
+            .hero-stat-card { padding: 30px 40px; }
+            .chart-section { padding: 30px 20px; }
+            .program-reach { padding: 60px 30px; }
+            .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+            .clusters-grid { grid-template-columns: 1fr; }
+            .videos-grid { grid-template-columns: repeat(2, 1fr); }
+            .submission-bar { grid-template-columns: 1fr; gap: 4px; }
+            .submission-bar .bar-label { text-align: left; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="block-1"></div>
+        <div class="block-2"></div>
+        <div class="block-3"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="brand-header">
+                    <img src="/hrblock-logo-square.png" alt="H&R Block Canada" class="hrb-logo">
+                    <span class="report-badge">March 2026 Sponsor Report</span>
+                </div>
+                <h1 class="hero-title">Teach Me Taxes<br>Challenge</h1>
+                <p class="hero-subtitle">Industry Immersion Series Collaboration</p>
+                <div class="hero-stat-card">
+                    <div class="hero-stat-number">12,268</div>
+                    <div class="hero-stat-label">Students Reached</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Activity Page Performance -->
+    <section class="activity-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">March H&amp;R Block Canada activity</h2>
+                <p class="section-subtitle">Activity Page Performance Metrics</p>
+            </div>
+            <div class="metrics-grid">
+                <div class="metric-card featured">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Total number of times the March activity page was viewed by students</span></div>
+                    <div class="metric-icon"><svg viewBox="0 0 24 24" role="img" aria-label="Page views"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
+                    <div class="metric-value">35,409</div>
+                    <div class="metric-label">Page Views</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Total unique students who visited the March activity page</span></div>
+                    <div class="metric-icon"><svg viewBox="0 0 24 24" role="img" aria-label="Students reached"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+                    <div class="metric-value">12,268</div>
+                    <div class="metric-label">Students Reached</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Estimated number of repeat visits to the March activity page</span></div>
+                    <div class="metric-icon"><svg viewBox="0 0 24 24" role="img" aria-label="Return visits"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg></div>
+                    <div class="metric-value">5,388</div>
+                    <div class="metric-label">Return Visits</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Percentage of visits where students actively interacted with the page content</span></div>
+                    <div class="metric-icon"><svg viewBox="0 0 24 24" role="img" aria-label="Engagement rate"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg></div>
+                    <div class="metric-value">87.3%</div>
+                    <div class="metric-label">Engagement Rate</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Number of students who created and submitted a tax-education video</span></div>
+                    <div class="metric-icon"><svg viewBox="0 0 24 24" role="img" aria-label="Submissions"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg></div>
+                    <div class="metric-value">256</div>
+                    <div class="metric-label">Submissions</div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 16px; font-family: 'Space Mono', monospace; font-size: 12px; color: var(--hrb-gray); letter-spacing: 0.5px;">French activity page (/march/fr): +439 views, +118 unique users</p>
+        </div>
+    </section>
+
+    <!-- Topic Cluster Split -->
+    <section class="clusters-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Topic cluster split</h2>
+                <p class="section-subtitle">Which Tax Topic Did Students Choose?</p>
+            </div>
+            <div class="clusters-grid">
+                <div class="cluster-card">
+                    <div class="cluster-number">1</div>
+                    <div class="cluster-title">Where does my paycheque go?</div>
+                    <div class="cluster-concepts">Pay stub basics · CPP deduction · EI deduction</div>
+                    <div class="cluster-stat">
+                        <div class="cluster-number-large">~76</div>
+                        <div class="cluster-pct">30% of submissions</div>
+                    </div>
+                </div>
+                <div class="cluster-card">
+                    <div class="cluster-number">2</div>
+                    <div class="cluster-title">Why we pay taxes</div>
+                    <div class="cluster-concepts">Purpose of taxes · Where the money goes · Public services funded</div>
+                    <div class="cluster-stat">
+                        <div class="cluster-number-large">~76</div>
+                        <div class="cluster-pct">30% of submissions</div>
+                    </div>
+                </div>
+                <div class="cluster-card">
+                    <div class="cluster-number">3</div>
+                    <div class="cluster-title">Why file a tax return</div>
+                    <div class="cluster-concepts">What a T4 is · Why file even with low income · Key deadlines</div>
+                    <div class="cluster-stat">
+                        <div class="cluster-number-large">~29</div>
+                        <div class="cluster-pct">11% of submissions</div>
+                    </div>
+                </div>
+                <div class="cluster-card">
+                    <div class="cluster-number">4</div>
+                    <div class="cluster-title">Free money you might be missing</div>
+                    <div class="cluster-concepts">Why filing unlocks benefits like the Canada Groceries &amp; Essentials Benefit</div>
+                    <div class="cluster-stat">
+                        <div class="cluster-number-large">~33</div>
+                        <div class="cluster-pct">13% of submissions</div>
+                    </div>
+                </div>
+                <div class="cluster-card">
+                    <div class="cluster-number">5</div>
+                    <div class="cluster-title">Saving smart: tax-advantaged accounts</div>
+                    <div class="cluster-concepts">TFSA basics · RRSP basics · Why starting young matters</div>
+                    <div class="cluster-stat">
+                        <div class="cluster-number-large">~24</div>
+                        <div class="cluster-pct">9% of submissions</div>
+                    </div>
+                </div>
+                <div class="cluster-card">
+                    <div class="cluster-number">6</div>
+                    <div class="cluster-title">Taxes &amp; post-secondary education</div>
+                    <div class="cluster-concepts">Tuition credits · How they work · Carrying credits forward</div>
+                    <div class="cluster-stat">
+                        <div class="cluster-number-large">~19</div>
+                        <div class="cluster-pct">7% of submissions</div>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 24px; font-family: 'Space Mono', monospace; font-size: 12px; color: var(--hrb-gray); letter-spacing: 0.5px;">Extrapolated from 203 of 256 submissions that recorded a topic cluster — distribution scaled to total.</p>
+        </div>
+    </section>
+
+    <!-- National Reach -->
+    <section class="reach-section" style="background: var(--white);">
+        <div class="container">
+            <div class="chart-section">
+                <div class="section-header">
+                    <h2 class="section-title">National reach</h2>
+                    <p class="section-subtitle">Student Engagement Across Canada</p>
+                </div>
+                <div class="donut-section">
+                    <div class="donut-chart-wrapper">
+                        <svg width="350" height="350" viewBox="0 0 350 350" role="img" aria-label="Donut chart showing national reach: Ontario 67% with 8,226 users, Alberta 9% with 1,103, British Columbia 4.7% with 571, Nova Scotia 4.6% with 563, other Canadian provinces and territories 10.9% with 1,340, international 3.8% with 465. Total: 12,268 users.">
+                            <!-- Ontario 67.0% -->
+                            <circle cx="175" cy="175" r="120" fill="none" stroke="#14aa40" stroke-width="50" stroke-dasharray="505.17 248.81" transform="rotate(-90 175 175)"/>
+                            <!-- Alberta 9.0% -->
+                            <circle cx="175" cy="175" r="120" fill="none" stroke="#005d1f" stroke-width="50" stroke-dasharray="67.86 686.12" stroke-dashoffset="-505.17" transform="rotate(-90 175 175)"/>
+                            <!-- British Columbia 4.7% -->
+                            <circle cx="175" cy="175" r="120" fill="none" stroke="#d2fa52" stroke-width="50" stroke-dasharray="35.42 718.56" stroke-dashoffset="-573.03" transform="rotate(-90 175 175)"/>
+                            <!-- Nova Scotia 4.6% -->
+                            <circle cx="175" cy="175" r="120" fill="none" stroke="#f5cc02" stroke-width="50" stroke-dasharray="34.69 719.29" stroke-dashoffset="-608.45" transform="rotate(-90 175 175)"/>
+                            <!-- Other provinces &amp; territories 10.9% -->
+                            <circle cx="175" cy="175" r="120" fill="none" stroke="#3bc0f8" stroke-width="50" stroke-dasharray="82.18 671.80" stroke-dashoffset="-643.14" transform="rotate(-90 175 175)"/>
+                            <!-- International 3.8% -->
+                            <circle cx="175" cy="175" r="120" fill="none" stroke="#6e6e6e" stroke-width="50" stroke-dasharray="28.65 725.33" stroke-dashoffset="-725.32" transform="rotate(-90 175 175)"/>
+                            <circle cx="175" cy="175" r="95" fill="white"/>
+                            <text x="175" y="165" text-anchor="middle" font-family="Graphik, Arial, sans-serif" font-size="36" font-weight="700" fill="#005d1f">12,268</text>
+                            <text x="175" y="195" text-anchor="middle" font-family="Space Mono" font-size="11" fill="#6e6e6e" letter-spacing="1">TOTAL USERS</text>
+                        </svg>
+                    </div>
+                    <div class="province-legend">
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #14aa40"></div>
+                            <span class="legend-text">Ontario</span>
+                            <span class="legend-value">8,226 (67.0%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #005d1f"></div>
+                            <span class="legend-text">Alberta</span>
+                            <span class="legend-value">1,103 (9.0%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #d2fa52"></div>
+                            <span class="legend-text">British Columbia</span>
+                            <span class="legend-value">571 (4.7%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #f5cc02"></div>
+                            <span class="legend-text">Nova Scotia</span>
+                            <span class="legend-value">563 (4.6%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #3bc0f8"></div>
+                            <span class="legend-text">Other Provinces &amp; Territories</span>
+                            <span class="legend-value">1,340 (10.9%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #6e6e6e"></div>
+                            <span class="legend-text">International</span>
+                            <span class="legend-value">465 (3.8%)</span>
+                        </div>
+                        <p style="margin-top: 8px; font-family: 'Space Mono', monospace; font-size: 11px; color: var(--hrb-gray); letter-spacing: 1px;">9 PROVINCES &amp; TERRITORIES REACHED</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Engagement -->
+    <section class="engagement-section">
+        <div class="container">
+            <div class="chart-section">
+                <div class="section-header">
+                    <h2 class="section-title">H&amp;R Block Canada resource clicks</h2>
+                    <p class="section-subtitle">Student Interactions with Sponsor Tax Resources</p>
+                </div>
+                <div class="resource-clicks-display">
+                    <div class="resource-clicks-number">2,683</div>
+                    <div class="resource-clicks-label">Total Clicks Across 9 H&amp;R Block Canada Resources</div>
+                    <div class="resource-tags">
+                        <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>5 Things You Should Know About Taxes <strong style="color: var(--hrb-green); margin-left: 4px;">492</strong></div>
+                        <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>A Beginner's Guide on Taxes for Teenagers <strong style="color: var(--hrb-green); margin-left: 4px;">414</strong></div>
+                        <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>Life After High School Through a Tax Lens <strong style="color: var(--hrb-green); margin-left: 4px;">331</strong></div>
+                        <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>Tax Deductions on Your Pay Stub <strong style="color: var(--hrb-green); margin-left: 4px;">324</strong></div>
+                        <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2L2 7v10l10 5 10-5V7l-10-5zm0 2.18L19.82 8 12 11.82 4.18 8 12 4.18zM4 9.18l7 3.5v7.64l-7-3.5V9.18zm9 11.14v-7.64l7-3.5v7.64l-7 3.5z"/></svg>$30,000 H&amp;R Block Scholarship <strong style="color: var(--hrb-green); margin-left: 4px;">296</strong></div>
+                        <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>Income Taxes in Canada for Students <strong style="color: var(--hrb-green); margin-left: 4px;">266</strong></div>
+                        <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>Canada Groceries &amp; Essentials Benefit <strong style="color: var(--hrb-green); margin-left: 4px;">231</strong></div>
+                        <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>Filing 2025 Taxes: Key Dates &amp; Deadlines <strong style="color: var(--hrb-green); margin-left: 4px;">181</strong></div>
+                        <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>RRSP Deadline 2026 <strong style="color: var(--hrb-green); margin-left: 4px;">148</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submissions Breakdown -->
+    <section class="submissions-section">
+        <div class="container">
+            <div class="chart-section">
+                <div class="section-header">
+                    <h2 class="section-title">Submissions breakdown</h2>
+                    <p class="section-subtitle">Challenge Submissions by Province</p>
+                </div>
+                <div class="submissions-chart">
+                    <div class="submissions-bars">
+                        <div class="submission-bar"><span class="bar-label">Ontario</span><div class="bar-wrapper"><div class="bar-fill" style="width: 100%"></div></div><span class="bar-value">175</span></div>
+                        <div class="submission-bar"><span class="bar-label">Alberta</span><div class="bar-wrapper"><div class="bar-fill" style="width: 14.9%"></div></div><span class="bar-value">26</span></div>
+                        <div class="submission-bar"><span class="bar-label">British Columbia</span><div class="bar-wrapper"><div class="bar-fill" style="width: 10.3%"></div></div><span class="bar-value">18</span></div>
+                        <div class="submission-bar"><span class="bar-label">New Brunswick</span><div class="bar-wrapper"><div class="bar-fill" style="width: 5.7%"></div></div><span class="bar-value">10</span></div>
+                        <div class="submission-bar"><span class="bar-label">Manitoba</span><div class="bar-wrapper"><div class="bar-fill" style="width: 5.1%"></div></div><span class="bar-value">9</span></div>
+                        <div class="submission-bar"><span class="bar-label">Nova Scotia</span><div class="bar-wrapper"><div class="bar-fill" style="width: 3.4%"></div></div><span class="bar-value">6</span></div>
+                        <div class="submission-bar"><span class="bar-label">Newfoundland &amp; Labrador</span><div class="bar-wrapper"><div class="bar-fill" style="width: 3.4%"></div></div><span class="bar-value">6</span></div>
+                        <div class="submission-bar"><span class="bar-label">Saskatchewan</span><div class="bar-wrapper"><div class="bar-fill" style="width: 2.9%"></div></div><span class="bar-value">5</span></div>
+                        <div class="submission-bar"><span class="bar-label">Prince Edward Island</span><div class="bar-wrapper"><div class="bar-fill" style="width: 0.6%"></div></div><span class="bar-value">1</span></div>
+                    </div>
+                    <div class="total-submissions">
+                        <div class="total-number">256</div>
+                        <div class="total-label">Total Submissions</div>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 24px; font-family: 'Space Mono', monospace; font-size: 12px; color: var(--hrb-gray); letter-spacing: 0.5px;">Source: SimpleSurvey form responses, March 2026 — 9 provinces represented.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top 20 Videos Banner -->
+    <section class="careers-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Top 20 student videos</h2>
+                <p class="section-subtitle">Outstanding Submissions from Across Canada</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top 20 Videos -->
+    <section class="videos-section">
+        <div class="container">
+            <div class="videos-grid">
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69f8b33b8835595b0e9afc85?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">British Columbia · Grade 11</div><div class="video-school">SD68 Nanaimo</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69f8c04db73ee3afb29fc4ff?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Alberta · Grade 11</div><div class="video-school">Foundations For The Future Charter Academy</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69f8b331c3d879bf572d059e?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 12</div><div class="video-school">Halton District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69f8b331c3d879bf572d05a0?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 12</div><div class="video-school">Toronto District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69f8b3318835595b0e9afaf6?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 8</div><div class="video-school">Toronto District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69f8b331c3d879bf572d05a6?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 7</div><div class="video-school">Peel District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69f8b331b73ee3afb29e1b3f?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">British Columbia · Grade 11</div><div class="video-school">SD44 North Vancouver</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69f8b331c3d879bf572d05a4?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 10</div><div class="video-school">Waterloo Region District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69f8b3318835595b0e9afafe?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">British Columbia · Grade 10</div><div class="video-school">Heritage Christian Online School</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69f8b3318835595b0e9afaf8?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 7</div><div class="video-school">Peel District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69f8b331c3d879bf572d05ce?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 12</div><div class="video-school">York Region District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69f8b33b8835595b0e9afc63?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 10</div><div class="video-school">Toronto District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69f8b33bc3d879bf572d07c5?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 12</div><div class="video-school">Peel District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69f8b33b8835595b0e9afc73?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 10</div><div class="video-school">Durham District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69f8b33b8835595b0e9afc78?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 9</div><div class="video-school">Peel District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69f8b33bc3d879bf572d07d2?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 10</div><div class="video-school">Toronto Catholic District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69f8b33bb73ee3afb29e1cee?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 10</div><div class="video-school">Waterloo Region District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69f8f231b73ee3afb2a4ea24?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Manitoba · Grade 10</div><div class="video-school">Garden Valley School Division</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69f8b331c3d879bf572d05a2?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">British Columbia · Grade 10</div><div class="video-school">Shawnigan Lake</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://www.youtube.com/embed/X2emIiPoRP4" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Coming soon · Grade 12</div><div class="video-school">Coming soon</div></div></div>
+            </div>
+            <div style="margin-top: 64px; padding-top: 56px; border-top: 1px solid rgba(0,0,0,0.08);">
+                <div style="text-align: center; margin-bottom: 32px;">
+                    <h3 style="font-family: 'Graphik', Arial, sans-serif; font-size: 32px; font-weight: 700; color: var(--hrb-dark-green); margin-bottom: 10px; letter-spacing: -0.5px;">Micro grant recipients</h3>
+                    <p style="font-family: 'Space Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: var(--hrb-green);"><sup style="font-size: 0.7em; top: -0.45em; position: relative;">$</sup>10,000 awarded · 20 × $500 micro grants · 4 provinces</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 800px; margin: 0 auto;">
+                    <div style="background: var(--hrb-light-gray); padding: 24px; border-radius: 4px; text-align: center;">
+                        <div style="font-size: 13px; color: var(--hrb-dark-green); font-weight: 500; margin-bottom: 8px;">Ontario</div>
+                        <div style="font-family: 'Graphik', Arial, sans-serif; font-size: 44px; font-weight: 700; color: var(--hrb-green); line-height: 1;">13</div>
+                        <div style="font-family: 'Space Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--hrb-gray); margin-top: 8px;">Winners</div>
+                    </div>
+                    <div style="background: var(--hrb-light-gray); padding: 24px; border-radius: 4px; text-align: center;">
+                        <div style="font-size: 13px; color: var(--hrb-dark-green); font-weight: 500; margin-bottom: 8px;">British Columbia</div>
+                        <div style="font-family: 'Graphik', Arial, sans-serif; font-size: 44px; font-weight: 700; color: var(--hrb-green); line-height: 1;">4</div>
+                        <div style="font-family: 'Space Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--hrb-gray); margin-top: 8px;">Winners</div>
+                    </div>
+                    <div style="background: var(--hrb-light-gray); padding: 24px; border-radius: 4px; text-align: center;">
+                        <div style="font-size: 13px; color: var(--hrb-dark-green); font-weight: 500; margin-bottom: 8px;">Alberta</div>
+                        <div style="font-family: 'Graphik', Arial, sans-serif; font-size: 44px; font-weight: 700; color: var(--hrb-green); line-height: 1;">1</div>
+                        <div style="font-family: 'Space Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--hrb-gray); margin-top: 8px;">Winner</div>
+                    </div>
+                    <div style="background: var(--hrb-light-gray); padding: 24px; border-radius: 4px; text-align: center;">
+                        <div style="font-size: 13px; color: var(--hrb-dark-green); font-weight: 500; margin-bottom: 8px;">Manitoba</div>
+                        <div style="font-family: 'Graphik', Arial, sans-serif; font-size: 44px; font-weight: 700; color: var(--hrb-green); line-height: 1;">1</div>
+                        <div style="font-family: 'Space Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--hrb-gray); margin-top: 8px;">Winner</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thank-you panel -->
+    <section>
+        <div class="container">
+            <div class="program-reach">
+                <img src="/hrblock-logo-square.png" alt="H&R Block Canada">
+                <h2 class="section-title" style="color: var(--white); margin: 0;">Thank you, H&amp;R Block Canada.</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brands">
+                    <img src="/hrblock-logo-square.png" alt="H&R Block Canada" class="footer-logo-img">
+                    <span class="footer-divider">&times;</span>
+                    <img src="/myblueprint-logo-white.png" alt="myBlueprint" style="height: 32px; width: auto;">
+                </div>
+                <p class="footer-text">Industry Immersion Series | March 2026</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
