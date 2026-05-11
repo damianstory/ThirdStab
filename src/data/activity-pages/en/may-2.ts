@@ -93,7 +93,7 @@ The certificate teaches the 5 Golden Rules — practical, research-backed ways t
 
 <strong>Make your video shine:</strong>
 • Film in good lighting and with clear audio.
-• Film horizontally (landscape) so we can easily share your message on social media.
+• Film horizontally or vertically; your call.
 • Try to keep it short and sweet — 30–60 seconds.
 
 <strong>Some thought starters to help you shape your winning video reflection:</strong>
