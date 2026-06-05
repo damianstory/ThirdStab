@@ -297,7 +297,7 @@ export const allMonths: MonthRecipients[] = [
       { id: 'apr-15', gumletId: '6a22e0a9bc82cd6f1a8944d4', grade: 12, schoolBoard: 'Ottawa Catholic School Board', schoolName: '', province: 'Ontario' }, // 38464760
       { id: 'apr-16', gumletId: '6a22e0a927da16ac8c39d48d', grade: 10, schoolBoard: 'Toronto District School Board', schoolName: '', province: 'Ontario' }, // 38465391
       { id: 'apr-17', gumletId: '6a22e0affc1474699584f675', grade: 11, schoolBoard: 'Halton District School Board', schoolName: '', province: 'Ontario' }, // 38465781
-      { id: 'apr-18', youtubeId: 'X2emIiPoRP4', grade: 10, schoolBoard: 'Algonquin and Lakeshore Catholic District School Board', schoolName: '', province: 'Ontario' }, // 38465794
+      { id: 'apr-18', gumletId: '6a2326e0fc147469958adac6', grade: 10, schoolBoard: 'Algonquin and Lakeshore Catholic District School Board', schoolName: '', province: 'Ontario' }, // 38465794
       { id: 'apr-19', gumletId: '6a22e0affc1474699584f67b', grade: 10, schoolBoard: 'Waterloo Region District School Board', schoolName: '', province: 'Ontario' }, // 38465865
       { id: 'apr-20', gumletId: '6a22e0af27da16ac8c39d534', grade: 11, schoolBoard: 'SD68 Nanaimo', schoolName: '', province: 'British Columbia' } // 38467297
     ]
