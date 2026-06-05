@@ -278,8 +278,29 @@ export const allMonths: MonthRecipients[] = [
     activitySlug: 'april',
     description: 'Congratulations to these 20 students who explored careers in tourism and hospitality and received $500 microgrants for their outstanding video submissions.',
     descriptionFr: 'Félicitations à ces 20 élèves qui ont exploré les carrières en tourisme et hospitalité et qui ont reçu des microbourses de 500 $ pour leurs excellentes soumissions vidéo.',
-    enabled: false,
-    winners: []
+    enabled: true,
+    winners: [
+      { id: 'apr-1', gumletId: '6a22e09efc1474699584f3ee', grade: 8, schoolBoard: 'Conseil scolaire catholique MonAvenir', schoolName: '', province: 'Ontario' }, // 38282757
+      { id: 'apr-2', gumletId: '6a22e09e27da16ac8c39d2e5', grade: 9, schoolBoard: 'Toronto District School Board', schoolName: '', province: 'Ontario' }, // 38303089
+      { id: 'apr-3', gumletId: '6a22e09efc1474699584f3eb', grade: 12, schoolBoard: 'Toronto District School Board', schoolName: '', province: 'Ontario' }, // 38398590
+      { id: 'apr-4', gumletId: '6a22e09ebc82cd6f1a894308', grade: 8, schoolBoard: 'Toronto District School Board', schoolName: '', province: 'Ontario' }, // 38405257
+      { id: 'apr-5', gumletId: '6a22e09ebc82cd6f1a894300', grade: 11, schoolBoard: "Conseil des écoles publiques de l'Est de l'Ontario", schoolName: '', province: 'Ontario' }, // 38406017
+      { id: 'apr-6', gumletId: '6a22e09ebc82cd6f1a8942fb', grade: 9, schoolBoard: 'Waterloo Catholic District School Board', schoolName: '', province: 'Ontario' }, // 38407873
+      { id: 'apr-7', gumletId: '6a22e09e27da16ac8c39d2ed', grade: 12, schoolBoard: 'Halton District School Board', schoolName: '', province: 'Ontario' }, // 38420951
+      { id: 'apr-8', gumletId: '6a22e09efc1474699584f3f3', grade: 7, schoolBoard: 'Peel District School Board', schoolName: '', province: 'Ontario' }, // 38421365
+      { id: 'apr-9', gumletId: '6a22e09ebc82cd6f1a89430a', grade: 12, schoolBoard: 'Windsor Essex Catholic District School Board', schoolName: '', province: 'Ontario' }, // 38428089
+      { id: 'apr-10', gumletId: '6a22e09efc1474699584f3fb', grade: 10, schoolBoard: 'Heritage Christian Online School', schoolName: '', province: 'British Columbia' }, // 38435773
+      { id: 'apr-11', gumletId: '6a22e09efc1474699584f415', grade: 10, schoolBoard: 'Dufferin Peel Catholic District School Board', schoolName: '', province: 'Ontario' }, // 38448629
+      { id: 'apr-12', gumletId: '6a22e0a9fc1474699584f580', grade: 12, schoolBoard: 'Peel District School Board', schoolName: '', province: 'Ontario' }, // 38449139
+      { id: 'apr-13', gumletId: '6a22e0a927da16ac8c39d47a', grade: 11, schoolBoard: 'Toronto District School Board', schoolName: '', province: 'Ontario' }, // 38460766
+      { id: 'apr-14', gumletId: '6a22e0a927da16ac8c39d47f', grade: 10, schoolBoard: 'Catholic District School Board of Eastern Ontario', schoolName: '', province: 'Ontario' }, // 38463979
+      { id: 'apr-15', gumletId: '6a22e0a9bc82cd6f1a8944d4', grade: 12, schoolBoard: 'Ottawa Catholic School Board', schoolName: '', province: 'Ontario' }, // 38464760
+      { id: 'apr-16', gumletId: '6a22e0a927da16ac8c39d48d', grade: 10, schoolBoard: 'Toronto District School Board', schoolName: '', province: 'Ontario' }, // 38465391
+      { id: 'apr-17', gumletId: '6a22e0affc1474699584f675', grade: 11, schoolBoard: 'Halton District School Board', schoolName: '', province: 'Ontario' }, // 38465781
+      { id: 'apr-18', youtubeId: 'X2emIiPoRP4', grade: 10, schoolBoard: 'Algonquin and Lakeshore Catholic District School Board', schoolName: '', province: 'Ontario' }, // 38465794
+      { id: 'apr-19', gumletId: '6a22e0affc1474699584f67b', grade: 10, schoolBoard: 'Waterloo Region District School Board', schoolName: '', province: 'Ontario' }, // 38465865
+      { id: 'apr-20', gumletId: '6a22e0af27da16ac8c39d534', grade: 11, schoolBoard: 'SD68 Nanaimo', schoolName: '', province: 'British Columbia' } // 38467297
+    ]
   },
   {
     month: 'May-1',
