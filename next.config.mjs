@@ -16,6 +16,11 @@ const nextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      { source: '/annual', destination: '/annual.html' },
+    ];
+  },
 };
 
 export default nextConfig;
