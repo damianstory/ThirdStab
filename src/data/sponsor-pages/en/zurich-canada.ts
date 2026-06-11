@@ -60,14 +60,14 @@ Each monthly activity is assessed against a rubric specific to that challenge. O
     },
     {
       question: 'What if I miss the February deadline? Can I still complete the activity?',
-      answer: 'Yes, you can still submit the activity after the deadline has passed. You won\'t be eligible for that month\'s pool of micro grants, but can still complete activities so that you are eligible for the Series Completion incentives at the end of the year.'
+      answer: 'Yes, you can still submit the activity after the deadline has passed. You won\'t be eligible for that month\'s pool of micro grants, but the activity will remain available for learning and exploration.'
     },
     {
       question: 'How will students access these challenges?',
       answer: 'There will be a banner at the top of a student\'s myBlueprint account once logged in where they can click to access the Industry Immersion Series website and access all open challenges. You can also bookmark this page for easy reference.'
     },
     {
-      question: 'Why micro grants as an incentive?',
+      question: 'Why micro grants?',
       answer: 'The majority of education-related money available to young people today is reserved for scholarships. Scholarships are great, but not every student is going to post-secondary and not every role requires it. This money can help students build skills today that will put them in a better position to accomplish their goals, regardless of which direction they\'re interested in pursuing.'
     },
     {

@@ -36,7 +36,7 @@ function frMonthPhrase(month: string): string {
 const text = {
   en: (month: string) => ({
     title: 'Industry Immersion Series',
-    subtitle1: '$100,000+ in micro grants and incentives available to grade 7-12 students (and their educators) across Canada.',
+    subtitle1: 'Monthly micro grants are available to Grade 7-12 students across Canada.',
     subtitle2: {
       bold: `The ${month} activity is now live! Scroll down `,
       regular: 'to learn how the program works, and view open activities.'
@@ -48,7 +48,7 @@ const text = {
   }),
   fr: (month: string) => ({
     title: <>Série <br className="hidden md:block" />d&apos;immersion <br className="hidden md:block" />dans l&apos;industrie</>,
-    subtitle1: "Plus de 100 000 $ en microbourses et incitatifs offerts aux élèves de la 7e à la 12e année (et à leurs éducateurs) partout au Canada.",
+    subtitle1: "Des microbourses mensuelles sont offertes aux élèves de la 7e à la 12e année partout au Canada.",
     subtitle2: {
       bold: `L'activité ${frMonthPhrase(month)} est maintenant en ligne ! Faites défiler la page `,
       regular: "pour découvrir comment le fonctionnement du programme et consulter les activités offertes."
@@ -64,7 +64,7 @@ const text = {
 const offSeasonText = {
   en: {
     title: 'Industry Immersion Series',
-    subtitle1: '$100,000+ in micro grants and incentives available to grade 7-12 students (and their educators) across Canada.',
+    subtitle1: 'Monthly micro grants are available to Grade 7-12 students across Canada.',
     subtitle2: { bold: '', regular: 'Scroll down to learn how the program works.' },
     subtitle3: 'And join the mailing list so you and your students are the first to know how to get involved.',
     emailPlaceholder: 'Enter your email address',
@@ -73,7 +73,7 @@ const offSeasonText = {
   },
   fr: {
     title: <>Série <br className="hidden md:block" />d&apos;immersion <br className="hidden md:block" />dans l&apos;industrie</>,
-    subtitle1: "Plus de 100 000 $ en microbourses et incitatifs offerts aux élèves de la 7e à la 12e année (et à leurs éducateurs) partout au Canada.",
+    subtitle1: "Des microbourses mensuelles sont offertes aux élèves de la 7e à la 12e année partout au Canada.",
     subtitle2: { bold: '', regular: "Faites défiler la page pour découvrir le fonctionnement du programme." },
     subtitle3: "Inscrivez-vous à la liste d'envoi pour être les premiers, vous et vos élèves, à savoir comment participer.",
     emailPlaceholder: "Entrez votre adresse courriel",

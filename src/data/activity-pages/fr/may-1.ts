@@ -52,7 +52,7 @@ export const may1Activity: ActivityPageData = {
         content: 'Élèves de la 7e à la 12e année partout au Canada'
       },
       {
-        label: 'Montant total des incitatifs',
+        label: 'Montant total des microbourses',
         content: '10 000 $ en microbourses'
       },
       {
@@ -244,7 +244,7 @@ Assurez-vous que votre lien est accessible (testez-le en mode navigation privée
     },
     {
       question: 'Devrais-je ajouter ces soumissions à mon portfolio myBlueprint?',
-      answer: `Oui, c'est une excellente idée, accompagnée d'une réflexion sur ce que vous avez appris en réalisant cette activité et ce que vous avez trouvé intéressant. À noter : nous demanderons aussi aux élèves de fournir des preuves de leurs activités complétées via un portfolio myBlueprint s'ils prévoient postuler pour l'un des incitatifs de fin de série.`
+      answer: `Oui, c'est une excellente idée, accompagnée d'une réflexion sur ce que vous avez appris en réalisant cette activité et ce que vous avez trouvé intéressant.`
     },
     {
       question: 'Dois-je faire cette activité en classe ou puis-je la faire seul(e)?',
@@ -256,7 +256,7 @@ Assurez-vous que votre lien est accessible (testez-le en mode navigation privée
     },
     {
       question: 'Puis-je encore soumettre l\'activité après la date limite du 31 mai?',
-      answer: `Oui, vous pouvez encore soumettre des activités mensuelles après la date limite. Cependant, toute soumission reçue après la date limite n'est pas admissible au tirage de microbourses du mois en question. Il est tout de même judicieux de les compléter, même après la date limite, pour pouvoir éventuellement obtenir l'un des incitatifs de fin de série. Ceux-ci exigent seulement que toutes les activités soient complétées, pas nécessairement dans le mois de l'activité.`
+      answer: `Oui, vous pouvez encore soumettre des activités mensuelles après la date limite. Cependant, toute soumission reçue après la date limite n'est pas admissible au tirage de microbourses du mois en question.`
     },
     {
       question: 'Les enseignants pourront-ils voir qui a soumis une participation?',

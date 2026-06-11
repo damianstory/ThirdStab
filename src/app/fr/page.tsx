@@ -4,7 +4,6 @@ import Hero from '@/components/Hero';
 import HowItWorks from '@/components/HowItWorks';
 import WhyMicroGrants from '@/components/WhyMicroGrants';
 import Timeline from '@/components/Timeline';
-import Incentives from '@/components/Incentives';
 import Sponsors from '@/components/Sponsors';
 import FAQ from '@/components/FAQ';
 import StayInformed from '@/components/StayInformed';
@@ -42,7 +41,6 @@ export default function FrenchHome() {
         <HowItWorks language="fr" />
         <WhyMicroGrants language="fr" />
         <Timeline language="fr" />
-        <Incentives language="fr" />
         <Sponsors language="fr" />
         <FAQ language="fr" />
         <StayInformed language="fr" />

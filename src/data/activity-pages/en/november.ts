@@ -50,7 +50,7 @@ export const novemberActivity: ActivityPageData = {
         content: 'Grades 7-12 students across Canada'
       },
       {
-        label: 'Total Incentives',
+        label: 'Total Micro Grants',
         content: '$10,000 in micro grants'
       },
       {
@@ -183,7 +183,7 @@ Followed then by the research components in steps 2-5.`
     },
     {
       question: 'Should I add these submissions to my portfolio in myBlueprint?',
-      answer: `Yeah, that's a great idea, along with a reflection of what you learned from doing this activity and what you found interesting. As a heads up, we'll also be asking students to submit evidence of their completed activities through a myBlueprint portfolio if you plan on applying for one of the Series Completion incentives at the end of the year.`
+      answer: `Yeah, that's a great idea, along with a reflection of what you learned from doing this activity and what you found interesting.`
     },
     {
       question: 'Do I need to do this in class, or can I just do this on my own?',
@@ -195,7 +195,7 @@ Followed then by the research components in steps 2-5.`
     },
     {
       question: 'Can I still submit the activity after the November 30th deadline?',
-      answer: `Yes, you can still submit monthly activities after the deadline. However, any activity submitted after the deadline is not eligible for that month's pool of micro grants. It still makes sense to complete them even after the deadline so that you can potentially earn one of the Series Completion incentives. Those only require all activities to be completed, not necessarily completed within the month of the activity.`
+      answer: `Yes, you can still submit monthly activities after the deadline. However, any activity submitted after the deadline is not eligible for that month's pool of micro grants.`
     },
     {
       question: 'Will teachers be able to see who has submitted an entry?',

@@ -52,8 +52,8 @@ export default function SponsorFAQ({ sponsor, language = 'en' }: SponsorFAQProps
           </h2>
           <p className="brand-body1 text-neutral-500">
             {language === 'en'
-              ? 'Get answers to common questions about this incentive'
-              : 'Obtenez des réponses à des questions courantes sur cet incitatif'}
+              ? 'Get answers to common questions about this activity'
+              : 'Obtenez des réponses à des questions courantes sur cette activité'}
           </p>
         </div>
 

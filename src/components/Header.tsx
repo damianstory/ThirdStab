@@ -20,7 +20,6 @@ export default function Header({ variant = 'default' }: HeaderProps) {
     { name: t('header.navigation.howItWorks'), href: '#how-it-works' },
     { name: t('header.navigation.whyMicroGrants'), href: '#why-micro-grants' },
     { name: t('header.navigation.activities'), href: '#timeline' },
-    { name: t('header.navigation.incentives'), href: '#incentives' },
     { name: t('header.navigation.sponsors'), href: language === 'fr' ? '/sponsors/fr' : '/sponsors' },
     { name: t('header.navigation.submissionStats'), href: language === 'fr' ? '/submission-stats/fr' : '/submission-stats' },
     { name: t('header.navigation.grantRecipients'), href: language === 'fr' ? '/grant-recipients/fr' : '/grant-recipients' },

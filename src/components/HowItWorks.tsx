@@ -7,7 +7,7 @@ const text = {
   en: {
     heading: "How It",
     headingAccent: "Works",
-    subheading: "Connecting students to careers through self-directed, incentive driven skill building and industry awareness activities.",
+    subheading: "Connecting students to careers through self-directed skill-building and industry awareness activities.",
     steps: [
       {
         title: "Monthly Challenges Released",
@@ -23,14 +23,14 @@ const text = {
       },
       {
         title: "Winners Selected & Rewarded",
-        details: "Outstanding submissions receive micro grants and recognition from industry partners. $10,000 in micro grants are awarded EACH month, with extra particpation incentives available for students, educators, and schools."
+        details: "Outstanding submissions receive micro grants and recognition from industry partners. $10,000 in micro grants are awarded each month."
       }
     ]
   },
   fr: {
     heading: "Comment ça",
     headingAccent: "fonctionne",
-    subheading: "Relier les élèves au monde des carrières grâce à des activités autonomes axées sur le développement de compétences, la sensibilisation aux secteurs d'activité et des incitatifs motivants.",
+    subheading: "Relier les élèves au monde des carrières grâce à des activités autonomes axées sur le développement de compétences et la sensibilisation aux secteurs d'activité.",
     steps: [
       {
         title: "Défis mensuels publiés",
@@ -46,7 +46,7 @@ const text = {
       },
       {
         title: "Gagnants sélectionnés et récompensés",
-        details: "Les soumissions exceptionnelles reçoivent des microbourses et une reconnaissance de la part des partenaires de l'industrie. CHAQUE mois, 10 000 $ en microbourses sont attribués, avec des récompenses supplémentaires offertes aux élèves, enseignants et écoles pour encourager la participation."
+        details: "Les soumissions exceptionnelles reçoivent des microbourses et une reconnaissance de la part des partenaires de l'industrie. Chaque mois, 10 000 $ en microbourses sont attribués."
       }
     ]
   }

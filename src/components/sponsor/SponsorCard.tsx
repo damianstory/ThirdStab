@@ -10,9 +10,7 @@ interface SponsorCardProps {
 }
 
 // Sponsors that should have larger logos filling the container
-const largeLogoSlugs = ['milwaukee', 'hrblock-canada', 'jack-org'];
-// Sponsors with slightly smaller full-container logos (90% size)
-const mediumLogoSlugs = ['job-spark', 'trade-finder'];
+const largeLogoSlugs = ['hrblock-canada', 'jack-org'];
 // Sponsors with 25% larger logos (70px instead of 56px default)
 const slightlyLargerLogoSlugs = ['thinkag'];
 // Sponsors with ~56% larger logos (fills container)
@@ -22,10 +20,9 @@ const eightyPercentLogoSlugs = ['nav-canada'];
 
 export default function SponsorCard({ sponsor, language = 'en' }: SponsorCardProps) {
   const slug = sponsor.slug;
-  const hasProfile = hasFullProfile(slug);
+  const hasProfile = hasFullProfile(slug, language);
   const colors = categoryColors[sponsor.incentiveType];
   const hasLargeLogo = largeLogoSlugs.includes(slug);
-  const hasMediumLogo = mediumLogoSlugs.includes(slug);
   const hasSlightlyLargerLogo = slightlyLargerLogoSlugs.includes(slug);
   const hasLargerLogo = largerLogoSlugs.includes(slug);
   const hasEightyPercentLogo = eightyPercentLogoSlugs.includes(slug);
@@ -36,7 +33,9 @@ export default function SponsorCard({ sponsor, language = 'en' }: SponsorCardPro
       ? `/sponsors/${slug}/fr`
       : `/sponsors/${slug}`
     : sponsor.activityPage
-    ? sponsor.activityPage
+    ? language === 'fr'
+      ? `${sponsor.activityPage}/fr`
+      : sponsor.activityPage
     : null;
 
   const hasActivityPage = !!sponsor.activityPage;
@@ -48,9 +47,9 @@ export default function SponsorCard({ sponsor, language = 'en' }: SponsorCardPro
         <Image
           src={sponsor.logo}
           alt={`${sponsor.name} logo`}
-          width={hasLargeLogo || hasLargerLogo ? 80 : hasMediumLogo ? 72 : hasSlightlyLargerLogo ? 70 : hasEightyPercentLogo ? 64 : 64}
-          height={hasLargeLogo || hasLargerLogo ? 80 : hasMediumLogo ? 72 : hasSlightlyLargerLogo ? 70 : hasEightyPercentLogo ? 64 : 64}
-          className={hasLargeLogo ? "object-cover w-full h-full" : hasLargerLogo ? "object-contain w-full h-full" : hasMediumLogo ? "object-contain w-[90%] h-[90%]" : hasEightyPercentLogo ? "object-contain w-[80%] h-[80%]" : hasSlightlyLargerLogo ? "object-contain max-w-[70px] max-h-[70px]" : "object-contain max-w-[56px] max-h-[56px]"}
+          width={hasLargeLogo || hasLargerLogo ? 80 : hasSlightlyLargerLogo ? 70 : hasEightyPercentLogo ? 64 : 64}
+          height={hasLargeLogo || hasLargerLogo ? 80 : hasSlightlyLargerLogo ? 70 : hasEightyPercentLogo ? 64 : 64}
+          className={hasLargeLogo ? "object-cover w-full h-full" : hasLargerLogo ? "object-contain w-full h-full" : hasEightyPercentLogo ? "object-contain w-[80%] h-[80%]" : hasSlightlyLargerLogo ? "object-contain max-w-[70px] max-h-[70px]" : "object-contain max-w-[56px] max-h-[56px]"}
         />
       </div>
 

@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { validSponsorSlugs } from '@/data/sponsors';
+import { getValidSponsorSlugs } from '@/data/sponsors';
 import { getSponsorPageData } from '@/data/sponsor-pages';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -17,7 +17,7 @@ interface SponsorPageProps {
 
 // Generate static params for all valid sponsor slugs
 export async function generateStaticParams() {
-  return validSponsorSlugs.map((slug) => ({
+  return getValidSponsorSlugs('fr').map((slug) => ({
     slug: slug,
   }));
 }
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: SponsorPageProps) {
   const { slug } = params;
 
   // Validate slug parameter
-  if (!validSponsorSlugs.includes(slug.toLowerCase())) {
+  if (!getValidSponsorSlugs('fr').includes(slug.toLowerCase())) {
     return {
       title: 'Commanditaire non trouve',
     };
@@ -65,7 +65,7 @@ export default async function SponsorProfilePageFr({ params }: SponsorPageProps)
   const { slug } = params;
 
   // Validate slug parameter
-  if (!validSponsorSlugs.includes(slug.toLowerCase())) {
+  if (!getValidSponsorSlugs('fr').includes(slug.toLowerCase())) {
     notFound();
   }
 

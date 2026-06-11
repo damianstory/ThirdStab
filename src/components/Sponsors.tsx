@@ -1,7 +1,5 @@
 'use client'
 
-import { useState } from 'react'
-import SecretModal from './SecretModal'
 import CircularSponsorCarousel from './ui/circular-sponsor-carousel'
 import { carouselSponsors } from '@/data/carousel-sponsors'
 import { trackButtonClick } from '@/lib/analytics'
@@ -12,13 +10,13 @@ const text = {
     heading: "Our Participating",
     headingAccent: "Sponsors",
     subheading: "Let's celebrate these industry leaders collaborating with students to help them develop real-world skills 🤝",
-    viewAllButton: "View All Sponsors/Incentives"
+    viewAllButton: "View All Sponsors"
   },
   fr: {
     heading: "Nos",
     headingAccent: "commanditaires participants",
     subheading: "Célébrons ces leaders de l'industrie qui collaborent avec les élèves pour les aider à développer des compétences concrètes 🤝",
-    viewAllButton: "Voir tous les commanditaires et récompenses"
+    viewAllButton: "Voir tous les commanditaires"
   }
 };
 
@@ -28,12 +26,11 @@ interface SponsorsProps {
 
 export default function Sponsors({ language = 'en' }: SponsorsProps) {
   const t = text[language];
-  const [isModalOpen, setIsModalOpen] = useState(false)
 
   // Handle View All Sponsors button click
   const handleViewAllClick = () => {
     trackButtonClick(
-      'View All Sponsors/Incentives',
+      'View All Sponsors',
       'Sponsors Section - CTA Button'
     );
   };
@@ -57,8 +54,6 @@ export default function Sponsors({ language = 'en' }: SponsorsProps) {
             sponsors={carouselSponsors}
             autoplay={true}
             language={language}
-            // Modal functionality disabled - cards now link directly to sponsor page
-            // onCardClick={() => setIsModalOpen(true)}
           />
         </div>
 
@@ -74,11 +69,6 @@ export default function Sponsors({ language = 'en' }: SponsorsProps) {
         </div>
       </div>
 
-      {/* Secret Modal */}
-      <SecretModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
     </section>
   )
 }

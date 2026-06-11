@@ -53,7 +53,7 @@ Avec des carrières souterraines et de surface, sur le terrain, dans les usines 
         content: 'Élèves de la 7e à la 12e année partout au Canada'
       },
       {
-        label: 'Valeur totale des récompenses',
+        label: 'Valeur totale des microbourses',
         content: '10 000 $ en microbourses'
       },
       {
@@ -176,7 +176,7 @@ Avec des carrières souterraines et de surface, sur le terrain, dans les usines 
     },
     {
       question: 'Devrais-je ajouter cette soumission à mon portfolio myBlueprint?',
-      answer: `Oui, excellente idée! Ajoutez-la avec une réflexion sur ce que vous avez appris et trouvé intéressant. À noter : si vous comptez postuler pour les récompenses de fin de Série, nous vous demanderons de soumettre toutes vos activités complétées à travers un portfolio myBlueprint.`
+      answer: `Oui, excellente idée! Ajoutez-la avec une réflexion sur ce que vous avez appris et trouvé intéressant.`
     },
     {
       question: 'Est-ce que je dois faire cette activité en classe ou seul?',
@@ -188,7 +188,7 @@ Avec des carrières souterraines et de surface, sur le terrain, dans les usines 
     },
     {
       question: 'Est-ce que je peux soumettre mon activité après la date limite du 31 octobre?',
-      answer: `Oui, vous pouvez soumettre les activités mensuelles même après la date limite. Cependant, toute activité soumise après la date limite ne sera pas admissible au tirage de microbourses pour ce mois-là. Il reste tout de même avantageux de les compléter après la date limite, puisque vous pourriez être admissible aux récompenses de fin de Série. Pour ces récompenses, il suffit d'avoir terminé toutes les activités, sans nécessairement respecter les dates mensuelles.`
+      answer: `Oui, vous pouvez soumettre les activités mensuelles même après la date limite. Cependant, toute activité soumise après la date limite ne sera pas admissible au tirage de microbourses pour ce mois-là.`
     },
     {
       question: 'Est-ce que les enseignants pourront voir qui a soumis une activité?',

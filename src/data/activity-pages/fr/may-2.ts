@@ -52,7 +52,7 @@ export const may2Activity: ActivityPageData = {
         content: 'Élèves de la 7e à la 12e année partout au Canada'
       },
       {
-        label: 'Montant total des incitatifs',
+        label: 'Montant total des microbourses',
         content: '10 000 $ en microbourses'
       },
       {
@@ -220,7 +220,7 @@ Lorsque vous êtes prêt, utilisez le bouton ci-dessous pour soumettre votre lie
     },
     {
       question: 'Devrais-je ajouter ces soumissions à mon portfolio myBlueprint?',
-      answer: `Oui, c'est une excellente idée, accompagnée d'une réflexion sur ce que vous avez appris en réalisant cette activité et ce que vous avez trouvé intéressant. À noter : nous demanderons aussi aux élèves de fournir des preuves de leurs activités complétées via un portfolio myBlueprint s'ils prévoient postuler pour l'un des incitatifs de fin de série.`
+      answer: `Oui, c'est une excellente idée, accompagnée d'une réflexion sur ce que vous avez appris en réalisant cette activité et ce que vous avez trouvé intéressant.`
     },
     {
       question: 'Dois-je faire cette activité en classe ou puis-je la faire seul(e)?',
@@ -232,7 +232,7 @@ Lorsque vous êtes prêt, utilisez le bouton ci-dessous pour soumettre votre lie
     },
     {
       question: 'Puis-je encore soumettre l\'activité après la date limite du 31 mai?',
-      answer: `Oui, vous pouvez encore soumettre des activités mensuelles après la date limite. Cependant, toute soumission reçue après la date limite n'est pas admissible au tirage de microbourses du mois en question. Il est tout de même judicieux de les compléter, même après la date limite, pour pouvoir éventuellement obtenir l'un des incitatifs de fin de série. Ceux-ci exigent seulement que toutes les activités soient complétées, pas nécessairement dans le mois de l'activité.`
+      answer: `Oui, vous pouvez encore soumettre des activités mensuelles après la date limite. Cependant, toute soumission reçue après la date limite n'est pas admissible au tirage de microbourses du mois en question.`
     },
     {
       question: 'Les enseignants pourront-ils voir qui a soumis une participation?',
@@ -301,7 +301,7 @@ Lorsque vous êtes prêt, utilisez le bouton ci-dessous pour soumettre votre lie
   promotionalBanner: {
     imageEn: '/promotional-banners/phac-btc-graphics-02.png',
     imageFr: '/promotional-banners/phac-btc-graphics-04-fr.png',
-    altTextEn: 'Together in Change Series educator incentive for Jack Intersection resources',
+    altTextEn: 'Together in Change Series educator resources for Jack Intersection resources',
     altTextFr: 'Incitatif pour les éducateurs de la série Together in Change pour les ressources Jack Intersections',
     link: 'https://edhub.jack.org/intersections',
     attributionTextEn: 'Educators: we didn\'t forget about you! You could win a $100 gift card of your choosing courtesy of Jack.org when you download any <a href="https://edhub.jack.org/intersections" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Jack Intersections resource</a> by May 31st. Simply download one of the 6 resources with your school email and you\'ll be automatically entered.',

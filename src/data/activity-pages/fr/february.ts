@@ -256,7 +256,7 @@ Testez votre lien dans une fenêtre de navigation privée avant de le soumettre.
     },
     {
       question: 'Devrais-je ajouter ces soumissions à mon portfolio dans myBlueprint?',
-      answer: `Oui, c'est une excellente idée, accompagnée d'une réflexion sur ce que vous avez appris en faisant cette activité et ce que vous avez trouvé intéressant. À titre indicatif, nous demanderons également aux élèves de soumettre une preuve de leurs activités terminées dans un portfolio de myBlueprint s'ils prévoient postuler pour l'un des avantages incitatifs liés à la Réalisation de la série à la fin de l'année.`
+      answer: `Oui, c'est une excellente idée, accompagnée d'une réflexion sur ce que vous avez appris en faisant cette activité et ce que vous avez trouvé intéressant.`
     },
     {
       question: 'Dois-je faire cette activité en classe, ou puis-je la faire par moi-même?',
@@ -268,7 +268,7 @@ Testez votre lien dans une fenêtre de navigation privée avant de le soumettre.
     },
     {
       question: 'Puis-je quand même soumettre l\'activité après la date limite du 28 février?',
-      answer: `Oui, vous pouvez quand même soumettre des activités mensuelles après la date limite. Toutefois, toute activité soumise après la date limite n'est pas admissible à la réserve de microbourses de ce mois-là. Il est tout de même logique de les réaliser, même après la date limite, afin de pouvoir obtenir l'un des avantages incitatifs liés à la Réalisation de la série. Ceux-ci requièrent uniquement que toutes les activités soient terminées, pas nécessairement qu'elles soient terminées dans le mois de l'activité.`
+      answer: `Oui, vous pouvez quand même soumettre des activités mensuelles après la date limite. Toutefois, toute activité soumise après la date limite n'est pas admissible à la réserve de microbourses de ce mois-là.`
     },
     {
       question: 'Les enseignants pourront-ils voir qui a soumis une inscription?',

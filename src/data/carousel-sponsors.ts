@@ -2,16 +2,11 @@ export interface CarouselSponsor {
   id: string;
   name: string;
   logo: string;
-  type: 'activity' | 'incentive';
+  type: 'activity';
   month?: string;
 }
 
-const logos = [
-  '/images/placeholder-incentive.png', // Placeholder logo for incentive sponsors
-];
-
 export const carouselSponsors: CarouselSponsor[] = [
-  // Activity Sponsors (8)
   {
     id: 'a1',
     name: 'MiHR',
@@ -74,60 +69,5 @@ export const carouselSponsors: CarouselSponsor[] = [
     logo: '/images/jack-logo.png',
     type: 'activity',
     month: 'May 2026'
-  },
-  // Incentive Sponsors (7)
-  {
-    id: 'i1',
-    name: 'Series Completion',
-    logo: '/images/series-completion-1.png',
-    type: 'incentive'
-  },
-  {
-    id: 'i2',
-    name: 'School-Level',
-    logo: '/images/school-level-1.png',
-    type: 'incentive'
-  },
-  {
-    id: 'i3',
-    name: 'Educator-Level',
-    logo: '/images/educator-level.png',
-    type: 'incentive'
-  },
-  {
-    id: 'i4',
-    name: 'Series Completion',
-    logo: '/images/series-completion-2.png',
-    type: 'incentive'
-  },
-  {
-    id: 'i5',
-    name: 'School-Level',
-    logo: '/images/trade-finder-final.png',
-    type: 'incentive'
-  },
-  {
-    id: 'i6',
-    name: 'Your Company',
-    logo: '/images/your-company-carousel.png',
-    type: 'incentive'
-  },
-  {
-    id: 'i7',
-    name: 'School-Level',
-    logo: '/images/spacesEDU-full-logo.png',
-    type: 'incentive'
-  },
-  {
-    id: 'i8',
-    name: 'Series Completion',
-    logo: '/images/straight-up-health-logo.png',
-    type: 'incentive'
-  },
-  {
-    id: 'i9',
-    name: 'Series Completion',
-    logo: '/images/admissionprep-full-logo.png',
-    type: 'incentive'
   }
 ];

@@ -38,7 +38,7 @@ const text = {
       },
       {
         question: "What if a student misses a month? Can they still complete the activity?",
-        answer: "Students can still submit the activity after that month's deadline has passed. They won't be eligible for that month's pool of micro grants, but can still complete activities so that they are eligible for the Series Completion incentives."
+        answer: "Students can still submit the activity after that month's deadline has passed. They won't be eligible for that month's pool of micro grants, but the activity will remain available for learning and exploration."
       },
       {
         question: "How will students access these challenges?",
@@ -50,14 +50,14 @@ const text = {
       },
       {
         question: "What is meant by May-1 and May-2?",
-        answer: "There are two separate activities to complete in May! Students can complete both. All 9 activities will need to be completed to apply for the Series Completion incentives."
+        answer: "There are two separate activities to complete in May! Students can complete both, and each activity has its own monthly micro grant opportunity."
       },
       {
         question: "As a student, can I get credit from my teacher for completing these?",
         answer: "Maybe. You should definitely ask your teachers. Be specific about the activity, what you're being asked to complete, and why you think you should get credit for it."
       },
       {
-        question: "Why micro grants as an incentive?",
+        question: "Why micro grants?",
         answer: "The majority of education related money available to young people today is reserved for scholarships. Scholarships are great, but not every student is going to post-secondary and not every role requires it. This money can help students build skills today that will put them in a better position to accomplish their goals, regardless of which direction they're interested in pursuing, including post-secondary."
       },
       {
@@ -79,10 +79,6 @@ const text = {
       {
         question: "Will teachers be able to see who has submitted an entry?",
         answer: "Teachers won't be able to see through their myBlueprint account which students have submitted activities or not. However, we will create reports that will be shared with your myBlueprint lead at the school board level who can share specifics with you upon request."
-      },
-      {
-        question: "Are there incentives for educators as well, or just students?",
-        answer: "There are definitely incentives for educators as well, both the Educator Level incentive and School Level incentive."
       },
       {
         question: "What data is being collected and by who?",
@@ -113,7 +109,7 @@ const text = {
       },
       {
         question: "Et si un élève manque un mois? Peut-il quand même faire l'activité?",
-        answer: "Oui. Les élèves peuvent soumettre une activité même après la date limite du mois en question. Ils ne seront pas admissibles à la microbourse de ce mois-là, mais pourront quand même compléter les activités pour être admissibles aux récompenses de complétion de la série."
+        answer: "Oui. Les élèves peuvent soumettre une activité même après la date limite du mois en question. Ils ne seront pas admissibles à la microbourse de ce mois-là, mais l'activité restera accessible pour l'apprentissage et l'exploration."
       },
       {
         question: "Comment les élèves peuvent-ils accéder à ces défis?",
@@ -125,14 +121,14 @@ const text = {
       },
       {
         question: "Que signifient « mai-1 » et « mai-2 »?",
-        answer: "Cela signifie qu'il y a deux activités distinctes à réaliser en mai! Les élèves peuvent faire les deux.\nLes 9 activités devront être complétées pour être admissibles aux récompenses de complétion de la série."
+        answer: "Cela signifie qu'il y a deux activités distinctes à réaliser en mai! Les élèves peuvent faire les deux, et chaque activité a sa propre occasion de microbourse mensuelle."
       },
       {
         question: "En tant qu'élève, puis-je obtenir des crédits de mon enseignant pour ces activités?",
         answer: "Peut-être. Vous devriez certainement poser la question à vos enseignants.\nSoyez précis lorsque vous en parlez. Indiquez de quelle activité il s'agit, ce qu'on vous demande de faire et pourquoi vous croyez qu'elle devrait être reconnue dans votre apprentissage."
       },
       {
-        question: "Pourquoi offrir des microbourses comme récompense?",
+        question: "Pourquoi offrir des microbourses?",
         answer: "La majorité des fonds destinés à l'éducation et accessibles aux jeunes aujourd'hui sont réservés aux bourses d'études.\nLes bourses sont excellentes, mais tous les élèves ne poursuivent pas des études postsecondaires, et tous les emplois ne l'exigent pas. Ces microbourses visent à aider les élèves à développer des compétences concrètes dès maintenant, afin qu'ils soient mieux préparés à atteindre leurs objectifs, peu importe la voie qu'ils choisissent."
       },
       {
@@ -154,10 +150,6 @@ const text = {
       {
         question: "Les enseignants pourront-ils voir qui a soumis une participation?",
         answer: "Les enseignants ne pourront pas voir, dans leur compte myBlueprint, quels élèves ont soumis leurs activités.\nToutefois, des rapports seront créés et partagés avec la personne-ressource myBlueprint à l'échelle du conseil scolaire, qui pourra ensuite transmettre ces renseignements sur demande."
-      },
-      {
-        question: "Y a-t-il aussi des récompenses pour les enseignants, ou seulement pour les élèves?",
-        answer: "Absolument! Des récompenses sont également offertes aux enseignants, à l'échelle de l'école et du personnel enseignant."
       },
       {
         question: "Quelles données sont recueillies et par qui?",

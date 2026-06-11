@@ -15,7 +15,7 @@ interface SponsorCard {
   id: string;
   name: string;
   logo: string;
-  type: 'activity' | 'incentive';
+  type: 'activity';
   month?: string;
 }
 
@@ -29,12 +29,10 @@ interface CircularSponsorCarouselProps {
 // Localized pill labels
 const pillLabels = {
   en: {
-    activity: 'Activity Sponsor',
-    incentive: 'Incentive Sponsor'
+    activity: 'Activity Sponsor'
   },
   fr: {
-    activity: "Commanditaire d'activité",
-    incentive: 'Commanditaire de récompense'
+    activity: "Commanditaire d'activité"
   }
 };
 
@@ -212,11 +210,6 @@ export const CircularSponsorCarousel = ({
       pill: 'bg-[#0092ff] text-white',
       border: 'border-[#0092ff]',
       label: pillLabels[language].activity
-    },
-    incentive: {
-      pill: 'bg-green-500 text-white',
-      border: 'border-green-500',
-      label: pillLabels[language].incentive
     }
   };
 
@@ -273,8 +266,7 @@ export const CircularSponsorCarousel = ({
                 {/* Logo Container */}
                 <div className="flex-1 flex items-center justify-center px-4 py-8">
                   {!imageError[sponsor.id] ? (
-                    <div className={`relative w-full ${
-                      sponsor.type === 'activity' ? (() => {
+                    <div className={`relative w-full ${(() => {
                         switch (sponsor.logo) {
                           case '/logo1.gif': return 'h-[131px]'; // 25% bigger
                           case '/logo2.jpeg': return 'h-[131px]'; // 25% bigger
@@ -285,8 +277,7 @@ export const CircularSponsorCarousel = ({
                           case '/logo8.png': return 'h-[79px]'; // 25% smaller
                           default: return 'h-[105px]'; // default size
                         }
-                      })() : 'h-[105px]' // default for incentive sponsors
-                    }`}>
+                      })()}`}>
                       <Image
                         src={sponsor.logo}
                         alt={`${sponsor.name} logo`}
@@ -306,11 +297,8 @@ export const CircularSponsorCarousel = ({
                 {/* Sponsor Info */}
                 <div className="border-t pt-4 mt-auto text-center">
                   <h3 className="font-semibold text-gray-900 text-lg mb-1">
-                    {sponsor.type === 'activity' ? sponsor.month : sponsor.name}
+                    {sponsor.month}
                   </h3>
-                  {sponsor.type === 'incentive' && sponsor.month && (
-                    <p className="text-sm text-gray-600">{sponsor.month}</p>
-                  )}
                 </div>
               </div>
             );

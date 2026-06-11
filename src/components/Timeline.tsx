@@ -9,19 +9,13 @@ const text = {
     heading: "Monthly ",
     headingAccent: "Challenges",
     subheading: "Each month will have a different activity sponsored by a different industry partner. Click the card to view and complete the activity.",
-    incentive: "Incentive: $10,000 in micro grants",
-    juneMonth: "June",
-    juneTitle: "Final Incentive Distribution",
-    juneDescription: "We'll use this time to distribute any final school-level and series completion incentives. Celebrate your achievements and get recognized for participating in the Industry Immersion Series throughout the year."
+    microGrants: "Micro grants: $10,000"
   },
   fr: {
     heading: "Défis ",
     headingAccent: "mensuels",
     subheading: "Chaque mois, une nouvelle activité est proposée par un partenaire de l'industrie différent. Cliquez sur la carte pour voir et réaliser l'activité.",
-    incentive: "Récompense : 10 000 $ en microbourses",
-    juneMonth: "juin",
-    juneTitle: "Distribution finale des récompenses",
-    juneDescription: "Cette période sera consacrée à la distribution des récompenses finales, tant au niveau des écoles que pour la participation à l'ensemble de la série. Célébrez vos réalisations et soyez reconnus pour votre participation à la Série d'immersion dans l'industrie tout au long de l'année."
+    microGrants: "Microbourses : 10 000 $"
   }
 };
 
@@ -38,9 +32,7 @@ export default function Timeline({ language = 'en' }: TimelineProps) {
   const activeSlug = getActiveActivity()?.slug ?? null;
 
   // Create enhanced timeline data with sponsor information from activities
-  const timelineData = [
-    // Activities with sponsors (mapped from localized activities)
-    ...localizedActivities.map(activity => {
+  const timelineData = localizedActivities.map(activity => {
       const en = enById.get(activity.id) ?? activity;
       const status = getCurrentStatus(en.month, en.year);
       const isPast = status === 'ongoing'; // month already over → confirmed + struck through
@@ -48,25 +40,14 @@ export default function Timeline({ language = 'en' }: TimelineProps) {
         year: activity.year,
         month: activity.month,
         title: activity.title,
-        industry: t.incentive,
+        industry: t.microGrants,
         description: activity.description,
         status: (isPast || status === 'active') ? 'confirmed' : 'tba',
         sponsor: activity.sponsor,
         slug: activity.slug,
         strikethroughIndustry: isPast,
       };
-    }),
-    // Incentive distribution month (no sponsor)
-    {
-      year: "2026",
-      month: t.juneMonth,
-      title: t.juneTitle,
-      industry: "",
-      description: t.juneDescription,
-      status: "tba" as const,
-      isPromotional: true
-    }
-  ];
+    });
 
   return (
     <section id="timeline" className="pt-24 pb-16 px-4 md:px-12 bg-white">

@@ -52,7 +52,7 @@ export const may2Activity: ActivityPageData = {
         content: 'Grades 7-12 students across Canada'
       },
       {
-        label: 'Total Incentives',
+        label: 'Total Micro Grants',
         content: '$10,000 in micro grants'
       },
       {
@@ -221,7 +221,7 @@ When you're ready, use the submission button below to share your video link and 
     },
     {
       question: 'Should I add these submissions to my portfolio in myBlueprint?',
-      answer: `Yeah, that's a great idea, along with a reflection of what you learned from doing this activity and what you found interesting. As a heads up, we'll also be asking students to submit evidence of their completed activities through a myBlueprint portfolio if you plan on applying for one of the Series Completion incentives at the end of the year.`
+      answer: `Yeah, that's a great idea, along with a reflection of what you learned from doing this activity and what you found interesting.`
     },
     {
       question: 'Do I need to do this in class, or can I just do this on my own?',
@@ -233,7 +233,7 @@ When you're ready, use the submission button below to share your video link and 
     },
     {
       question: 'Can I still submit the activity after the May 31st deadline?',
-      answer: `Yes, you can still submit monthly activities after the deadline. However, any activity submitted after the deadline is not eligible for that month's pool of micro grants. It still makes sense to complete them even after the deadline so that you can potentially earn one of the Series Completion incentives. Those only require all activities to be completed, not necessarily completed within the month of the activity.`
+      answer: `Yes, you can still submit monthly activities after the deadline. However, any activity submitted after the deadline is not eligible for that month's pool of micro grants.`
     },
     {
       question: 'Will teachers be able to see who has submitted an entry?',
@@ -303,7 +303,7 @@ When you're ready, use the submission button below to share your video link and 
   promotionalBanner: {
     imageEn: '/promotional-banners/phac-btc-graphics-02.png',
     imageFr: '/promotional-banners/phac-btc-graphics-02.png',
-    altTextEn: 'Together in Change Series educator incentive for Jack Intersection resources',
+    altTextEn: 'Together in Change Series educator resources for Jack Intersection resources',
     altTextFr: 'Incitatif pour les éducateurs de la série Together in Change pour les ressources Jack Intersections',
     link: 'https://edhub.jack.org/intersections',
     attributionTextEn: 'Educators: we didn\'t forget about you! You could win a $100 gift card of your choosing courtesy of Jack.org when you download any <a href="https://edhub.jack.org/intersections" target="_blank" rel="noopener noreferrer" style="color: #0092ff; text-decoration: underline;">Jack Intersections resource</a> by May 31st. Simply download one of the 6 resources with your school email and you\'ll be automatically entered.',

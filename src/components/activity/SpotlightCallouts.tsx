@@ -22,12 +22,12 @@ interface SpotlightCalloutsProps {
 
 const i18n = {
   en: {
-    sectionTitle: 'Activity-Specific Incentives',
+    sectionTitle: 'Activity-Specific Opportunities',
     sectionSubtitle: 'Special opportunities available for this activity',
     internshipDetails: 'INTERNSHIP DETAILS',
   },
   fr: {
-    sectionTitle: 'Incitatifs propres à l\'activité',
+    sectionTitle: 'Occasions propres à l\'activité',
     sectionSubtitle: 'Occasions spéciales offertes dans le cadre de cette activité',
     internshipDetails: 'DÉTAILS DU STAGE',
   },
