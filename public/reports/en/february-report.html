@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zurich Canada February 2026 Sponsor Report | Industry Immersion Series</title>
+    <meta name="description" content="Sponsor report for the Climate Insurance Challenge — Zurich Canada partnership with Industry Immersion Series">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Source Sans 3 stands in for Frutiger, Zurich's licensed brand typeface -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Zurich brand palette (zurich-design-system.webflow.io) */
+            --zurich-blue: #003399;
+            --zurich-deep: #02296A;
+            --zurich-navy: #001f5b;
+            --zurich-tan: #D5CEB5;
+            --zurich-tan-soft: rgba(213, 206, 181, 0.28);
+            --zurich-red: #ff5252;
+            --zurich-gray: #575757;
+            --zurich-light-gray: #f3f3f3;
+            --zurich-steel: #4b5c73;
+            --zurich-mist: #b6bfcc;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Source Sans 3', 'Frutiger', Arial, sans-serif;
+            background: var(--white);
+            color: var(--zurich-deep);
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .caps-label {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Hero — white bg, layered tan panel motif from Zurich's design system */
+        .hero {
+            background: var(--white);
+            padding: 80px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: var(--zurich-blue);
+        }
+
+        .hero .panel-1 {
+            position: absolute;
+            top: 60px;
+            right: -60px;
+            width: 380px;
+            height: 260px;
+            background: var(--zurich-tan);
+            opacity: 0.35;
+            pointer-events: none;
+        }
+
+        .hero .panel-2 {
+            position: absolute;
+            top: 140px;
+            right: 120px;
+            width: 220px;
+            height: 260px;
+            background: var(--zurich-blue);
+            opacity: 0.06;
+            pointer-events: none;
+        }
+
+        .hero .panel-3 {
+            position: absolute;
+            bottom: -30px;
+            right: 30%;
+            width: 90px;
+            height: 90px;
+            background: var(--zurich-red);
+            opacity: 0.35;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .brand-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .zurich-logo {
+            height: 44px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .report-badge {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--zurich-deep);
+            background: var(--zurich-tan-soft);
+            padding: 6px 14px;
+            border-radius: 2px;
+        }
+
+        .hero-title {
+            font-size: clamp(42px, 6vw, 80px);
+            font-weight: 700;
+            color: var(--zurich-blue);
+            line-height: 1;
+            letter-spacing: -2px;
+            margin-bottom: 16px;
+        }
+
+        .hero-subtitle {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--zurich-gray);
+            margin-bottom: 50px;
+        }
+
+        .hero-stat-card {
+            display: inline-block;
+            background: var(--white);
+            padding: 40px 60px;
+            border-radius: 0;
+            border: 3px solid var(--zurich-blue);
+            box-shadow: 0 20px 60px rgba(2, 41, 106, 0.10);
+            transition: all 0.3s ease;
+        }
+
+        .hero-stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 30px 80px rgba(2, 41, 106, 0.16);
+        }
+
+        .hero-stat-number {
+            font-size: clamp(60px, 10vw, 100px);
+            font-weight: 700;
+            color: var(--zurich-blue);
+            line-height: 1;
+        }
+
+        .hero-stat-label {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--zurich-gray);
+            margin-top: 12px;
+        }
+
+        /* Shared section scaffolding */
+        section {
+            padding: 90px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        .section-title {
+            font-size: clamp(28px, 4vw, 40px);
+            font-weight: 700;
+            color: var(--zurich-deep);
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
+        }
+
+        .section-subtitle {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: var(--zurich-blue);
+        }
+
+        .footnote {
+            text-align: center;
+            margin-top: 28px;
+            font-size: 13px;
+            color: var(--zurich-gray);
+            letter-spacing: 0.5px;
+        }
+
+        /* Activity metrics — tan layered background per Zurich system */
+        .activity-section {
+            background: var(--zurich-tan-soft);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .metric-card {
+            background: var(--white);
+            padding: 36px 24px 32px;
+            text-align: center;
+            position: relative;
+            border-top: 4px solid var(--zurich-mist);
+            box-shadow: 0 8px 30px rgba(2, 41, 106, 0.06);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(2, 41, 106, 0.12);
+        }
+
+        .metric-card.featured {
+            border-top-color: var(--zurich-blue);
+        }
+
+        .metric-tooltip {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--zurich-light-gray);
+            color: var(--zurich-gray);
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 20px;
+            cursor: help;
+        }
+
+        .metric-tooltip .tooltip-text {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            bottom: 130%;
+            right: -10px;
+            width: 220px;
+            background: var(--zurich-deep);
+            color: var(--white);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.5;
+            padding: 10px 12px;
+            border-radius: 4px;
+            transition: opacity 0.2s ease;
+            z-index: 10;
+        }
+
+        .metric-tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .metric-icon {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 16px;
+        }
+
+        .metric-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: var(--zurich-blue);
+        }
+
+        .metric-value {
+            font-size: clamp(32px, 4vw, 44px);
+            font-weight: 700;
+            color: var(--zurich-deep);
+            line-height: 1.1;
+        }
+
+        .metric-label {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--zurich-gray);
+            margin-top: 8px;
+        }
+
+        /* Submissions by grade — column chart */
+        .grades-chart {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: clamp(16px, 4vw, 56px);
+            height: 300px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .grade-col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100%;
+            flex: 1;
+            max-width: 110px;
+        }
+
+        .grade-count {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--zurich-blue);
+            margin-bottom: 8px;
+        }
+
+        .grade-bar {
+            width: 100%;
+            background: linear-gradient(180deg, var(--zurich-blue), var(--zurich-deep));
+            border-radius: 2px 2px 0 0;
+        }
+
+        .grade-name {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--zurich-gray);
+            margin-top: 12px;
+            white-space: nowrap;
+        }
+
+        .grade-pct {
+            font-size: 12px;
+            color: var(--zurich-gray);
+        }
+
+        /* National reach — donut */
+        .reach-section {
+            background: var(--zurich-tan-soft);
+        }
+
+        .donut-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: clamp(30px, 6vw, 90px);
+            flex-wrap: wrap;
+        }
+
+        .province-legend {
+            min-width: 300px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 9px 0;
+            border-bottom: 1px solid rgba(2, 41, 106, 0.08);
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+
+        .legend-text {
+            flex: 1;
+            font-size: 15px;
+            color: var(--zurich-deep);
+        }
+
+        .legend-value {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--zurich-deep);
+        }
+
+        /* Resource clicks */
+        .resource-clicks-display {
+            text-align: center;
+        }
+
+        .resource-clicks-number {
+            font-size: clamp(70px, 10vw, 120px);
+            font-weight: 700;
+            color: var(--zurich-blue);
+            line-height: 1;
+        }
+
+        .resource-clicks-label {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--zurich-gray);
+            margin: 16px 0 40px;
+        }
+
+        .resource-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        .resource-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--white);
+            border: 1px solid rgba(2, 41, 106, 0.15);
+            padding: 12px 18px;
+            border-radius: 2px;
+            font-size: 14px;
+            color: var(--zurich-deep);
+            box-shadow: 0 4px 16px rgba(2, 41, 106, 0.05);
+        }
+
+        .resource-tag svg {
+            fill: var(--zurich-blue);
+            flex-shrink: 0;
+        }
+
+        /* Submissions by province — horizontal bars */
+        .submissions-section {
+            background: var(--zurich-tan-soft);
+        }
+
+        .submissions-chart {
+            display: flex;
+            align-items: center;
+            gap: clamp(30px, 5vw, 80px);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .submissions-bars {
+            flex: 1;
+            min-width: 320px;
+            max-width: 760px;
+        }
+
+        .submission-bar {
+            display: grid;
+            grid-template-columns: 190px 1fr 48px;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 12px;
+        }
+
+        .bar-label {
+            font-size: 14px;
+            color: var(--zurich-deep);
+            text-align: right;
+        }
+
+        .bar-wrapper {
+            background: rgba(2, 41, 106, 0.07);
+            border-radius: 2px;
+            height: 22px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--zurich-blue), var(--zurich-deep));
+            border-radius: 2px;
+            min-width: 3px;
+        }
+
+        .bar-value {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--zurich-deep);
+        }
+
+        .total-submissions {
+            text-align: center;
+            background: var(--white);
+            border: 3px solid var(--zurich-blue);
+            padding: 40px 56px;
+        }
+
+        .total-number {
+            font-size: clamp(56px, 8vw, 90px);
+            font-weight: 700;
+            color: var(--zurich-blue);
+            line-height: 1;
+        }
+
+        .total-label {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--zurich-gray);
+            margin-top: 10px;
+        }
+
+        /* Top 20 videos */
+        .videos-section {
+            padding-top: 0;
+        }
+
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .video-card {
+            background: var(--white);
+            border: 1px solid rgba(2, 41, 106, 0.10);
+            box-shadow: 0 8px 30px rgba(2, 41, 106, 0.06);
+            overflow: hidden;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(2, 41, 106, 0.12);
+        }
+
+        .video-embed {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            background: var(--zurich-light-gray);
+        }
+
+        .video-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .video-info {
+            padding: 16px 18px;
+        }
+
+        .video-meta {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--zurich-blue);
+            margin-bottom: 4px;
+        }
+
+        .video-school {
+            font-size: 14px;
+            color: var(--zurich-deep);
+        }
+
+        /* Grant recipients summary */
+        .grants-summary {
+            margin-top: 64px;
+            padding-top: 56px;
+            border-top: 1px solid rgba(2, 41, 106, 0.10);
+        }
+
+        .grants-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .grant-card {
+            background: var(--zurich-tan-soft);
+            padding: 24px;
+            border-radius: 2px;
+            text-align: center;
+        }
+
+        .grant-province {
+            font-size: 13px;
+            color: var(--zurich-deep);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .grant-count {
+            font-size: 44px;
+            font-weight: 700;
+            color: var(--zurich-blue);
+            line-height: 1;
+        }
+
+        .grant-label {
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--zurich-gray);
+            margin-top: 8px;
+        }
+
+        /* Thank-you panel */
+        .program-reach {
+            background: var(--zurich-deep);
+            padding: 80px 60px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .program-reach img {
+            height: 48px;
+            width: auto;
+            background: var(--white);
+            padding: 10px 18px;
+            border-radius: 2px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--zurich-navy);
+            padding: 50px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .footer-brands {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .footer-logo-img {
+            height: 36px;
+            width: auto;
+            background: var(--white);
+            padding: 6px 12px;
+            border-radius: 2px;
+        }
+
+        .footer-divider {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 20px;
+        }
+
+        .footer-text {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 1024px) {
+            .metrics-grid { grid-template-columns: repeat(3, 1fr); }
+            .videos-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 0 24px; }
+            section { padding: 64px 0; }
+            .program-reach { padding: 60px 30px; }
+            .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+            .videos-grid { grid-template-columns: repeat(2, 1fr); }
+            .grants-grid { grid-template-columns: repeat(2, 1fr); }
+            .grades-chart { height: 220px; }
+            .grade-name { font-size: 10px; letter-spacing: 1px; }
+            .submission-bar { grid-template-columns: 1fr; gap: 4px; }
+            .submission-bar .bar-label { text-align: left; }
+        }
+
+        @media (max-width: 480px) {
+            .videos-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="panel-1"></div>
+        <div class="panel-2"></div>
+        <div class="panel-3"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="brand-header">
+                    <img src="/logo5.png" alt="Zurich Canada" class="zurich-logo">
+                    <span class="report-badge">February 2026 Sponsor Report</span>
+                </div>
+                <h1 class="hero-title">Climate Insurance<br>Challenge</h1>
+                <p class="hero-subtitle">Industry Immersion Series Collaboration</p>
+                <div class="hero-stat-card">
+                    <div class="hero-stat-number">22,674</div>
+                    <div class="hero-stat-label">Students Reached</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Activity Page Performance -->
+    <section class="activity-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">February Zurich Canada activity</h2>
+                <p class="section-subtitle">Activity Page Performance · February 1&ndash;28, 2026</p>
+            </div>
+            <div class="metrics-grid">
+                <div class="metric-card featured">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Total number of times the February activity page was viewed by students</span></div>
+                    <div class="metric-icon"><svg viewBox="0 0 24 24" role="img" aria-label="Page views"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
+                    <div class="metric-value">58,249</div>
+                    <div class="metric-label">Page Views</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Total unique students who visited the February activity page</span></div>
+                    <div class="metric-icon"><svg viewBox="0 0 24 24" role="img" aria-label="Students reached"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+                    <div class="metric-value">22,674</div>
+                    <div class="metric-label">Students Reached</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Estimated number of repeat visits to the February activity page</span></div>
+                    <div class="metric-icon"><svg viewBox="0 0 24 24" role="img" aria-label="Return visits"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg></div>
+                    <div class="metric-value">7,249</div>
+                    <div class="metric-label">Return Visits</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Percentage of visits where students actively interacted with the page content</span></div>
+                    <div class="metric-icon"><svg viewBox="0 0 24 24" role="img" aria-label="Engagement rate"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg></div>
+                    <div class="metric-value">88.6%</div>
+                    <div class="metric-label">Engagement Rate</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Number of students who created and submitted a Climate Insurance Challenge video</span></div>
+                    <div class="metric-icon"><svg viewBox="0 0 24 24" role="img" aria-label="Submissions"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg></div>
+                    <div class="metric-value">161</div>
+                    <div class="metric-label">Submissions</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submissions by Grade -->
+    <section class="grades-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Submissions by grade</h2>
+                <p class="section-subtitle">The Challenge Reached Every Grade, 7 Through 12</p>
+            </div>
+            <div class="grades-chart">
+                <div class="grade-col">
+                    <div class="grade-count">6</div>
+                    <div class="grade-bar" style="height: 14%"></div>
+                    <div class="grade-name">Grade 7</div>
+                    <div class="grade-pct">3.7%</div>
+                </div>
+                <div class="grade-col">
+                    <div class="grade-count">33</div>
+                    <div class="grade-bar" style="height: 77%"></div>
+                    <div class="grade-name">Grade 8</div>
+                    <div class="grade-pct">20.5%</div>
+                </div>
+                <div class="grade-col">
+                    <div class="grade-count">19</div>
+                    <div class="grade-bar" style="height: 44%"></div>
+                    <div class="grade-name">Grade 9</div>
+                    <div class="grade-pct">11.8%</div>
+                </div>
+                <div class="grade-col">
+                    <div class="grade-count">43</div>
+                    <div class="grade-bar" style="height: 100%"></div>
+                    <div class="grade-name">Grade 10</div>
+                    <div class="grade-pct">26.7%</div>
+                </div>
+                <div class="grade-col">
+                    <div class="grade-count">24</div>
+                    <div class="grade-bar" style="height: 56%"></div>
+                    <div class="grade-name">Grade 11</div>
+                    <div class="grade-pct">14.9%</div>
+                </div>
+                <div class="grade-col">
+                    <div class="grade-count">36</div>
+                    <div class="grade-bar" style="height: 84%"></div>
+                    <div class="grade-name">Grade 12</div>
+                    <div class="grade-pct">22.4%</div>
+                </div>
+            </div>
+            <p class="footnote">Share of 161 total challenge submissions, February 2026.</p>
+        </div>
+    </section>
+
+    <!-- National Reach -->
+    <section class="reach-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">National reach</h2>
+                <p class="section-subtitle">Student Engagement Across Canada</p>
+            </div>
+            <div class="donut-section">
+                <div class="donut-chart-wrapper">
+                    <svg width="350" height="350" viewBox="0 0 350 350" role="img" aria-label="Donut chart showing national reach: Ontario 83.2% with 18,863 users, Alberta 4.7% with 1,074, British Columbia 3.2% with 716, Quebec 2.8% with 627, other Canadian provinces and territories 4.9% with 1,102, international 1.3% with 292. Total: 22,674 users.">
+                        <!-- Ontario 83.2% -->
+                        <circle cx="175" cy="175" r="120" fill="none" stroke="#003399" stroke-width="50" stroke-dasharray="627.25 126.73" transform="rotate(-90 175 175)"/>
+                        <!-- Alberta 4.7% -->
+                        <circle cx="175" cy="175" r="120" fill="none" stroke="#02296A" stroke-width="50" stroke-dasharray="35.71 718.27" stroke-dashoffset="-627.25" transform="rotate(-90 175 175)"/>
+                        <!-- British Columbia 3.2% -->
+                        <circle cx="175" cy="175" r="120" fill="none" stroke="#ff5252" stroke-width="50" stroke-dasharray="23.81 730.17" stroke-dashoffset="-662.97" transform="rotate(-90 175 175)"/>
+                        <!-- Quebec 2.8% -->
+                        <circle cx="175" cy="175" r="120" fill="none" stroke="#D5CEB5" stroke-width="50" stroke-dasharray="20.85 733.13" stroke-dashoffset="-686.78" transform="rotate(-90 175 175)"/>
+                        <!-- Other provinces &amp; territories 4.9% -->
+                        <circle cx="175" cy="175" r="120" fill="none" stroke="#b6bfcc" stroke-width="50" stroke-dasharray="36.64 717.34" stroke-dashoffset="-707.63" transform="rotate(-90 175 175)"/>
+                        <!-- International 1.3% -->
+                        <circle cx="175" cy="175" r="120" fill="none" stroke="#575757" stroke-width="50" stroke-dasharray="9.71 744.27" stroke-dashoffset="-744.27" transform="rotate(-90 175 175)"/>
+                        <circle cx="175" cy="175" r="95" fill="white"/>
+                        <text x="175" y="165" text-anchor="middle" font-family="Source Sans 3, Arial, sans-serif" font-size="36" font-weight="700" fill="#02296A">22,674</text>
+                        <text x="175" y="195" text-anchor="middle" font-family="Source Sans 3, Arial, sans-serif" font-size="11" font-weight="700" fill="#575757" letter-spacing="1">TOTAL USERS</text>
+                    </svg>
+                </div>
+                <div class="province-legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #003399"></div>
+                        <span class="legend-text">Ontario</span>
+                        <span class="legend-value">18,863 (83.2%)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #02296A"></div>
+                        <span class="legend-text">Alberta</span>
+                        <span class="legend-value">1,074 (4.7%)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #ff5252"></div>
+                        <span class="legend-text">British Columbia</span>
+                        <span class="legend-value">716 (3.2%)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #D5CEB5"></div>
+                        <span class="legend-text">Quebec</span>
+                        <span class="legend-value">627 (2.8%)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #b6bfcc"></div>
+                        <span class="legend-text">Other Provinces &amp; Territories</span>
+                        <span class="legend-value">1,102 (4.9%)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #575757"></div>
+                        <span class="legend-text">International</span>
+                        <span class="legend-value">292 (1.3%)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Engagement -->
+    <section class="engagement-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Zurich Canada resource clicks</h2>
+                <p class="section-subtitle">Student Interactions with Sponsor Climate &amp; Insurance Resources</p>
+            </div>
+            <div class="resource-clicks-display">
+                <div class="resource-clicks-number">540</div>
+                <div class="resource-clicks-label">Total Clicks Across 6 Sponsor Resources</div>
+                <div class="resource-tags">
+                    <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>Insurance Bureau of Canada <strong style="color: var(--zurich-blue); margin-left: 4px;">130</strong></div>
+                    <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>Zurich Canada Careers <strong style="color: var(--zurich-blue); margin-left: 4px;">101</strong></div>
+                    <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>Zurich &amp; Sustainability <strong style="color: var(--zurich-blue); margin-left: 4px;">99</strong></div>
+                    <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>Government of Canada Climate Data <strong style="color: var(--zurich-blue); margin-left: 4px;">90</strong></div>
+                    <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>Zurich Canada Internships <strong style="color: var(--zurich-blue); margin-left: 4px;">64</strong></div>
+                    <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>Insurance Institute of Canada &ndash; P&amp;C Onboarding <strong style="color: var(--zurich-blue); margin-left: 4px;">56</strong></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submissions Breakdown -->
+    <section class="submissions-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Submissions breakdown</h2>
+                <p class="section-subtitle">Challenge Submissions by Province</p>
+            </div>
+            <div class="submissions-chart">
+                <div class="submissions-bars">
+                    <div class="submission-bar"><span class="bar-label">Ontario</span><div class="bar-wrapper"><div class="bar-fill" style="width: 100%"></div></div><span class="bar-value">122</span></div>
+                    <div class="submission-bar"><span class="bar-label">Alberta</span><div class="bar-wrapper"><div class="bar-fill" style="width: 9.8%"></div></div><span class="bar-value">12</span></div>
+                    <div class="submission-bar"><span class="bar-label">New Brunswick</span><div class="bar-wrapper"><div class="bar-fill" style="width: 9.0%"></div></div><span class="bar-value">11</span></div>
+                    <div class="submission-bar"><span class="bar-label">British Columbia</span><div class="bar-wrapper"><div class="bar-fill" style="width: 4.9%"></div></div><span class="bar-value">6</span></div>
+                    <div class="submission-bar"><span class="bar-label">Newfoundland &amp; Labrador</span><div class="bar-wrapper"><div class="bar-fill" style="width: 4.1%"></div></div><span class="bar-value">5</span></div>
+                    <div class="submission-bar"><span class="bar-label">Saskatchewan</span><div class="bar-wrapper"><div class="bar-fill" style="width: 2.5%"></div></div><span class="bar-value">3</span></div>
+                    <div class="submission-bar"><span class="bar-label">Quebec</span><div class="bar-wrapper"><div class="bar-fill" style="width: 0.8%"></div></div><span class="bar-value">1</span></div>
+                    <div class="submission-bar"><span class="bar-label">Manitoba</span><div class="bar-wrapper"><div class="bar-fill" style="width: 0.8%"></div></div><span class="bar-value">1</span></div>
+                </div>
+                <div class="total-submissions">
+                    <div class="total-number">161</div>
+                    <div class="total-label">Total Submissions</div>
+                </div>
+            </div>
+            <p class="footnote">Source: SimpleSurvey form responses, February 2026 &mdash; 8 provinces represented.</p>
+        </div>
+    </section>
+
+    <!-- Top 20 Videos -->
+    <section class="videos-section" style="padding-top: 90px;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Top 20 student videos</h2>
+                <p class="section-subtitle">Outstanding Submissions from Across Canada</p>
+            </div>
+            <div class="videos-grid">
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69c6d3571f1dc34da84c8b60?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 11</div><div class="video-school">York Catholic District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69c6d356f7bf88d62b0b09f4?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 11</div><div class="video-school">CEPEO</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69c6d356f7bf88d62b0b09ef?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 11</div><div class="video-school">York Region District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69c6d3557a8212fa5f8e5a6d?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 11</div><div class="video-school">Grand Erie District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69c6d3551f1dc34da84c8b26?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 10</div><div class="video-school">Toronto District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69c6d3551f1dc34da84c8b10?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 12</div><div class="video-school">Durham District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69c6d3557a8212fa5f8e5a61?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 11</div><div class="video-school">Toronto District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69c6d355f7bf88d62b0b09a5?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 11</div><div class="video-school">Hamilton-Wentworth Catholic District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69c6d3451f1dc34da84c88ac?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">British Columbia · Grade 10</div><div class="video-school">Heritage Christian Online School</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69c6d345f7bf88d62b0b076a?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 8</div><div class="video-school">Deer Lake First Nation</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69c6d345f7bf88d62b0b076c?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 11</div><div class="video-school">Halton District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69c6d3451f1dc34da84c8881?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 10</div><div class="video-school">Waterloo Region District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69c6d345f7bf88d62b0b0760?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 12</div><div class="video-school">Halton District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69c6d3451f1dc34da84c8892?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 12</div><div class="video-school">Peel District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69c6d3457a8212fa5f8e5869?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 8</div><div class="video-school">Conseil scolaire catholique MonAvenir</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69c6d3457a8212fa5f8e586b?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 9</div><div class="video-school">Deer Lake First Nation</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69c6d345f7bf88d62b0b075b?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Alberta · Grade 11</div><div class="video-school">Edmonton Public School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69c6d3451f1dc34da84c887f?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 12</div><div class="video-school">Toronto District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69c6d345f7bf88d62b0b0758?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 12</div><div class="video-school">Dufferin Peel Catholic District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/69cbcbe43c661f324e982992?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">New Brunswick · Grade 10</div><div class="video-school">Anglophone East School District</div></div></div>
+            </div>
+            <div class="grants-summary">
+                <div class="section-header" style="margin-bottom: 32px;">
+                    <h3 class="section-title" style="font-size: 32px;">Micro grant recipients</h3>
+                    <p class="section-subtitle"><sup style="font-size: 0.7em; top: -0.45em; position: relative;">$</sup>10,000 awarded · 20 × $500 micro grants · 4 provinces</p>
+                </div>
+                <div class="grants-grid">
+                    <div class="grant-card">
+                        <div class="grant-province">Ontario</div>
+                        <div class="grant-count">17</div>
+                        <div class="grant-label">Winners</div>
+                    </div>
+                    <div class="grant-card">
+                        <div class="grant-province">British Columbia</div>
+                        <div class="grant-count">1</div>
+                        <div class="grant-label">Winner</div>
+                    </div>
+                    <div class="grant-card">
+                        <div class="grant-province">Alberta</div>
+                        <div class="grant-count">1</div>
+                        <div class="grant-label">Winner</div>
+                    </div>
+                    <div class="grant-card">
+                        <div class="grant-province">New Brunswick</div>
+                        <div class="grant-count">1</div>
+                        <div class="grant-label">Winner</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thank-you panel -->
+    <section>
+        <div class="container">
+            <div class="program-reach">
+                <img src="/logo5.png" alt="Zurich Canada">
+                <h2 class="section-title" style="color: var(--white); margin: 0;">Thank you, Zurich Canada.</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brands">
+                    <img src="/logo5.png" alt="Zurich Canada" class="footer-logo-img">
+                    <span class="footer-divider">&times;</span>
+                    <img src="/myblueprint-logo-white.png" alt="myBlueprint" style="height: 32px; width: auto;">
+                </div>
+                <p class="footer-text">Industry Immersion Series | February 2026</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
