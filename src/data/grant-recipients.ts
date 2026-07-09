@@ -5,6 +5,8 @@ export interface VideoWinner {
   id: string;
   youtubeId?: string;    // Optional - for YouTube videos
   gumletId?: string;     // Optional - for Gumlet videos
+  canvaEmbedUrl?: string; // Optional - for Canva video embeds
+  googleDriveEmbedUrl?: string; // Optional - for Google Drive video embeds
   grade: number;
   schoolBoard: string;
   schoolName: string;
@@ -314,8 +316,29 @@ export const allMonths: MonthRecipients[] = [
     activitySlug: 'may-1',
     description: 'Congratulations to these 20 students who explored careers in HVACR and received $500 microgrants for their outstanding video submissions.',
     descriptionFr: 'Félicitations à ces 20 élèves qui ont exploré les carrières en CVC&R et qui ont reçu des microbourses de 500 $ pour leurs excellentes soumissions vidéo.',
-    enabled: false,
-    winners: []
+    enabled: true,
+    winners: [
+      { id: 'may1-1', gumletId: '6a4eb5971c338f62ccc60efe', grade: 11, schoolBoard: "Conseil des écoles publiques de l'Est de l'Ontario", schoolName: '', province: 'Ontario' }, // 38570039
+      { id: 'may1-2', gumletId: '6a4eb5971c338f62ccc60efc', grade: 12, schoolBoard: 'Halton District School Board', schoolName: '', province: 'Ontario' }, // 38622646
+      { id: 'may1-4', gumletId: '6a4eb5973c3a5e1dbd949503', grade: 7, schoolBoard: 'Peel District School Board', schoolName: '', province: 'Ontario' }, // 38743151
+      { id: 'may1-5', gumletId: '6a4eb5973c3a5e1dbd949508', grade: 10, schoolBoard: 'STAR Catholic', schoolName: '', province: 'Alberta' }, // 38752112
+      { id: 'may1-6', gumletId: '6a4eb6ad3c3a5e1dbd94a755', grade: 9, schoolBoard: 'Dufferin Peel Catholic District School Board', schoolName: '', province: 'Ontario' }, // 38769097
+      { id: 'may1-7', canvaEmbedUrl: 'https://www.canva.com/design/DAHKbKGoV54/L2TL5rUDf3ERoo26kvASkg/watch?embed&meta', grade: 8, schoolBoard: 'Upper Grand District School Board', schoolName: '', province: 'Ontario' }, // 38840057
+      { id: 'may1-8', gumletId: '6a4eb6ad3c3a5e1dbd94a759', grade: 8, schoolBoard: 'Edmonton Public Schools', schoolName: '', province: 'Alberta' }, // 38853647
+      { id: 'may1-9', gumletId: '6a4eb6ad1c338f62ccc62158', grade: 10, schoolBoard: 'Ottawa Catholic School Board', schoolName: '', province: 'Ontario' }, // 38860260
+      { id: 'may1-10', gumletId: '6a4eb6ad3c3a5e1dbd94a757', grade: 10, schoolBoard: 'York Region District School Board', schoolName: '', province: 'Ontario' }, // 38860864
+      { id: 'may1-11', gumletId: '6a4eb6ad1c338f62ccc6215a', grade: 12, schoolBoard: 'Durham District School Board', schoolName: '', province: 'Ontario' }, // 38863536
+      { id: 'may1-12', gumletId: '6a4eb72f1c338f62ccc62b27', grade: 11, schoolBoard: 'London District Catholic School Board', schoolName: '', province: 'Ontario' }, // 38864048
+      { id: 'may1-13', gumletId: '6a4eb72f3c3a5e1dbd94b0ee', grade: 10, schoolBoard: 'Toronto Catholic District School Board', schoolName: '', province: 'Ontario' }, // 38864339
+      { id: 'may1-14', gumletId: '6a4eb72f3c3a5e1dbd94b0df', grade: 10, schoolBoard: 'Waterloo Region District School Board (WRDSB)', schoolName: '', province: 'Ontario' }, // 38864705
+      { id: 'may1-15', gumletId: '6a4eb72fe68bdcaeb97ca3ba', grade: 11, schoolBoard: 'Peel District School Board', schoolName: '', province: 'Ontario' }, // 38865068
+      { id: 'may1-16', gumletId: '6a4eb72f3c3a5e1dbd94b0e1', grade: 11, schoolBoard: 'York Catholic District School Board', schoolName: '', province: 'Ontario' }, // 38865072
+      { id: 'may1-17', canvaEmbedUrl: 'https://www.canva.com/design/DAHLSJQ1rAM/gFYND-fYyGqKuYYxRobZ4Q/watch?embed&meta', grade: 10, schoolBoard: 'Algonquin & Lakeshore Catholic District School Board', schoolName: '', province: 'Ontario' }, // 38865092
+      { id: 'may1-18', gumletId: '6a4eb72f3c3a5e1dbd94b0f4', grade: 10, schoolBoard: 'Toronto District School Board', schoolName: '', province: 'Ontario' }, // 38865109
+      { id: 'may1-19', gumletId: '6a4eb72f3c3a5e1dbd94b0dc', grade: 11, schoolBoard: 'Halton District School Board', schoolName: '', province: 'Ontario' }, // 38865144
+      { id: 'may1-20', gumletId: '6a4eb72fe68bdcaeb97ca3b8', grade: 11, schoolBoard: 'Nanaimo-Ladysmith Public Schools', schoolName: '', province: 'British Columbia' }, // 38865662
+      { id: 'may1-3', youtubeId: 'X2emIiPoRP4', grade: 8, schoolBoard: 'York Catholic District School Board', schoolName: '', province: 'Ontario' } // 38665979
+    ]
   },
   {
     month: 'May-2',
@@ -329,8 +352,29 @@ export const allMonths: MonthRecipients[] = [
     activitySlug: 'may-2',
     description: 'Congratulations to these 20 students who learned to support mental health and received $500 microgrants for their outstanding video submissions.',
     descriptionFr: 'Félicitations à ces 20 élèves qui ont appris à soutenir la santé mentale et qui ont reçu des microbourses de 500 $ pour leurs excellentes soumissions vidéo.',
-    enabled: false,
-    winners: []
+    enabled: true,
+    winners: [
+      { id: 'may2-1', gumletId: '6a4edaae1c338f62ccc8851d', grade: 12, schoolBoard: 'Halton District School Board', schoolName: '', province: 'Ontario' }, // 38623053
+      { id: 'may2-2', gumletId: '6a4edaae3c3a5e1dbd97084b', grade: 9, schoolBoard: 'Dufferin Peel Catholic District School Board', schoolName: '', province: 'Ontario' }, // 38660536
+      { id: 'may2-3', gumletId: '6a4f7a4de68bdcaeb98f8aff', grade: 11, schoolBoard: 'Toronto District School Board', schoolName: '', province: 'Ontario' }, // 38661218
+      { id: 'may2-4', gumletId: '6a4edaae3c3a5e1dbd970847', grade: 11, schoolBoard: 'School District No. 22 (Vernon)', schoolName: '', province: 'British Columbia' }, // 38664995
+      { id: 'may2-5', gumletId: '6a4edaae3c3a5e1dbd970845', grade: 10, schoolBoard: 'Heritage Christian Online School', schoolName: '', province: 'British Columbia' }, // 38704732
+      { id: 'may2-6', gumletId: '6a4edaaee68bdcaeb97efb91', grade: 12, schoolBoard: 'Edmonton Public Schools', schoolName: '', province: 'Alberta' }, // 38747945
+      { id: 'may2-7', gumletId: '6a4f7a4de68bdcaeb98f8af7', grade: 10, schoolBoard: 'York Region District School Board', schoolName: '', province: 'Ontario' }, // 38770001
+      { id: 'may2-8', gumletId: '6a4edaae3c3a5e1dbd970849', grade: 7, schoolBoard: 'York Region District School Board', schoolName: '', province: 'Ontario' }, // 38849626
+      { id: 'may2-9', gumletId: '6a4edaae1c338f62ccc88517', grade: 9, schoolBoard: 'Toronto District School Board', schoolName: '', province: 'Ontario' }, // 38851828
+      { id: 'may2-10', gumletId: '6a4edb14e68bdcaeb97f0140', grade: 8, schoolBoard: 'York Region District School Board', schoolName: '', province: 'Ontario' }, // 38855222
+      { id: 'may2-11', gumletId: '6a4f7a4d3c3a5e1dbda78ec0', grade: 11, schoolBoard: 'Surrey Schools', schoolName: '', province: 'British Columbia' }, // 38859572
+      { id: 'may2-12', gumletId: '6a4edb141c338f62ccc88b2c', grade: 10, schoolBoard: 'Durham District School Board', schoolName: '', province: 'Ontario' }, // 38859689
+      { id: 'may2-13', gumletId: '6a4edb143c3a5e1dbd970e57', grade: 8, schoolBoard: 'Halton District School Board', schoolName: '', province: 'Ontario' }, // 38861379
+      { id: 'may2-14', gumletId: '6a4edb141c338f62ccc88b2e', grade: 12, schoolBoard: 'Halton District School Board', schoolName: '', province: 'Ontario' }, // 38861493
+      { id: 'may2-15', gumletId: '6a4f7a4d3c3a5e1dbda78ec5', grade: 11, schoolBoard: 'York Catholic District School Board', schoolName: '', province: 'Ontario' }, // 38862959
+      { id: 'may2-16', gumletId: '6a4f7a4de68bdcaeb98f8b01', grade: 10, schoolBoard: 'Toronto District School Board', schoolName: '', province: 'Ontario' }, // 38863312
+      { id: 'may2-17', gumletId: '6a4edb143c3a5e1dbd970e5a', grade: 11, schoolBoard: 'Edmonton Public Schools', schoolName: '', province: 'Alberta' }, // 38863444
+      { id: 'may2-18', gumletId: '6a4edb143c3a5e1dbd970e51', grade: 12, schoolBoard: 'York Catholic District School Board', schoolName: '', province: 'Ontario' }, // 38864402
+      { id: 'may2-19', googleDriveEmbedUrl: 'https://drive.google.com/file/d/1HhYXMC5r7dQp4Itl_-a4MMFZ49Qiwk-g/preview', grade: 10, schoolBoard: 'Dufferin Peel Catholic District School Board', schoolName: '', province: 'Ontario' }, // 38864828
+      { id: 'may2-20', gumletId: '6a4edb14e68bdcaeb97f0142', grade: 11, schoolBoard: 'Halton District School Board', schoolName: '', province: 'Ontario' } // 38865094
+    ]
   }
 ];
 

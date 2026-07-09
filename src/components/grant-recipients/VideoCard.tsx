@@ -37,6 +37,28 @@ export default function VideoCard({ winner, language = 'en' }: VideoCardProps) {
             allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen"
             allowFullScreen
           />
+        ) : winner.canvaEmbedUrl ? (
+          // Canva embed (responsive 16:9)
+          <iframe
+            loading="lazy"
+            className="absolute inset-0 w-full h-full"
+            style={{ border: 'none' }}
+            src={winner.canvaEmbedUrl}
+            title={`${winner.schoolName} - ${gradeLabel} ${winner.grade}`}
+            allow="fullscreen"
+            allowFullScreen
+          />
+        ) : winner.googleDriveEmbedUrl ? (
+          // Google Drive embed (responsive 16:9)
+          <iframe
+            loading="lazy"
+            className="absolute inset-0 w-full h-full"
+            style={{ border: 'none' }}
+            src={winner.googleDriveEmbedUrl}
+            title={`${winner.schoolName} - ${gradeLabel} ${winner.grade}`}
+            allow="autoplay; fullscreen"
+            allowFullScreen
+          />
         ) : (
           // YouTube embed (standard 16:9)
           <iframe
