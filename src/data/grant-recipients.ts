@@ -372,7 +372,7 @@ export const allMonths: MonthRecipients[] = [
       { id: 'may2-16', gumletId: '6a4f7a4de68bdcaeb98f8b01', grade: 10, schoolBoard: 'Toronto District School Board', schoolName: '', province: 'Ontario' }, // 38863312
       { id: 'may2-17', gumletId: '6a4edb143c3a5e1dbd970e5a', grade: 11, schoolBoard: 'Edmonton Public Schools', schoolName: '', province: 'Alberta' }, // 38863444
       { id: 'may2-18', gumletId: '6a4edb143c3a5e1dbd970e51', grade: 12, schoolBoard: 'York Catholic District School Board', schoolName: '', province: 'Ontario' }, // 38864402
-      { id: 'may2-19', googleDriveEmbedUrl: 'https://drive.google.com/file/d/1HhYXMC5r7dQp4Itl_-a4MMFZ49Qiwk-g/preview', grade: 10, schoolBoard: 'Dufferin Peel Catholic District School Board', schoolName: '', province: 'Ontario' }, // 38864828
+      { id: 'may2-19', gumletId: '6a4fd561e37922e1f596523c', grade: 10, schoolBoard: 'Dufferin Peel Catholic District School Board', schoolName: '', province: 'Ontario' }, // 38864828
       { id: 'may2-20', gumletId: '6a4edb14e68bdcaeb97f0142', grade: 11, schoolBoard: 'Halton District School Board', schoolName: '', province: 'Ontario' } // 38865094
     ]
   }
