@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRAI May 2026 Sponsor Report | Industry Immersion Series</title>
+    <meta name="description" content="Sponsor report for the HVACR Industry Challenge — HRAI partnership with Industry Immersion Series">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* HVACR Career Connections palette (hvacrcareers.ca) */
+            --hvacr-blue: #0075BF;
+            --hvacr-blue-lt: #82C9E0;
+            --hvacr-blue-tint: rgba(130, 201, 224, 0.16);
+            --hvacr-red: #AD002C;
+            --hvacr-green: #3CA536;
+            --hvacr-grey-lt: #e6e6e6;
+            --hvacr-grey-md: #949598;
+            --hvacr-grey-dk: #606163;
+            --hvacr-grey-xdk: #323233;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: var(--white);
+            color: var(--hvacr-grey-xdk);
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Hero */
+        .hero {
+            background: var(--white);
+            padding: 80px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: var(--hvacr-blue);
+        }
+
+        .hero .panel-1 {
+            position: absolute;
+            top: 60px;
+            right: -60px;
+            width: 380px;
+            height: 260px;
+            background: var(--hvacr-blue-lt);
+            opacity: 0.30;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+
+        .hero .panel-2 {
+            position: absolute;
+            top: 150px;
+            right: 130px;
+            width: 210px;
+            height: 250px;
+            background: var(--hvacr-blue);
+            opacity: 0.07;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+
+        .hero .panel-3 {
+            position: absolute;
+            bottom: -30px;
+            right: 30%;
+            width: 90px;
+            height: 90px;
+            background: var(--hvacr-red);
+            opacity: 0.25;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .brand-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .sponsor-logo {
+            height: 52px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .report-badge {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--hvacr-blue);
+            background: var(--hvacr-blue-tint);
+            padding: 6px 14px;
+            border-radius: 9999px;
+        }
+
+        .hero-title {
+            font-size: clamp(42px, 6vw, 78px);
+            font-weight: 700;
+            color: var(--hvacr-blue);
+            line-height: 1.05;
+            letter-spacing: -1.5px;
+            margin-bottom: 16px;
+        }
+
+        .hero-subtitle {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--hvacr-grey-dk);
+            margin-bottom: 50px;
+        }
+
+        .hero-stat-card {
+            display: inline-block;
+            background: var(--white);
+            padding: 40px 60px;
+            border-radius: 12px;
+            border: 3px solid var(--hvacr-blue);
+            box-shadow: 0 20px 60px rgba(0, 117, 191, 0.12);
+            transition: all 0.3s ease;
+        }
+
+        .hero-stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 30px 80px rgba(0, 117, 191, 0.18);
+        }
+
+        .hero-stat-number {
+            font-size: clamp(60px, 10vw, 100px);
+            font-weight: 700;
+            color: var(--hvacr-blue);
+            line-height: 1;
+        }
+
+        .hero-stat-label {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--hvacr-grey-dk);
+            margin-top: 12px;
+        }
+
+        /* Shared section scaffolding */
+        section {
+            padding: 90px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        .section-title {
+            font-size: clamp(28px, 4vw, 40px);
+            font-weight: 700;
+            color: var(--hvacr-grey-xdk);
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
+        }
+
+        .section-subtitle {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: var(--hvacr-blue);
+        }
+
+        .footnote {
+            text-align: center;
+            margin-top: 28px;
+            font-size: 13px;
+            color: var(--hvacr-grey-dk);
+            letter-spacing: 0.5px;
+        }
+
+        /* Activity metrics */
+        .activity-section {
+            background: var(--hvacr-blue-tint);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .metric-card {
+            background: var(--white);
+            padding: 36px 24px 32px;
+            text-align: center;
+            position: relative;
+            border-radius: 12px;
+            border-top: 4px solid var(--hvacr-blue-lt);
+            box-shadow: 0 8px 30px rgba(0, 117, 191, 0.08);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(0, 117, 191, 0.14);
+        }
+
+        .metric-card.featured {
+            border-top-color: var(--hvacr-blue);
+        }
+
+        .metric-tooltip {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--hvacr-grey-lt);
+            color: var(--hvacr-grey-dk);
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 20px;
+            cursor: help;
+        }
+
+        .metric-tooltip .tooltip-text {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            bottom: 130%;
+            right: -10px;
+            width: 220px;
+            background: var(--hvacr-grey-xdk);
+            color: var(--white);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.5;
+            padding: 10px 12px;
+            border-radius: 6px;
+            transition: opacity 0.2s ease;
+            z-index: 10;
+        }
+
+        .metric-tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .metric-icon {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 16px;
+        }
+
+        .metric-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: var(--hvacr-blue);
+        }
+
+        .metric-value {
+            font-size: clamp(32px, 4vw, 44px);
+            font-weight: 700;
+            color: var(--hvacr-grey-xdk);
+            line-height: 1.1;
+        }
+
+        .metric-label {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--hvacr-grey-dk);
+            margin-top: 8px;
+        }
+
+        /* Submissions by grade — column chart */
+        .grades-chart {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: clamp(16px, 4vw, 56px);
+            height: 300px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .grade-col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100%;
+            flex: 1;
+            max-width: 110px;
+        }
+
+        .grade-count {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--hvacr-blue);
+            margin-bottom: 8px;
+        }
+
+        .grade-bar {
+            width: 100%;
+            background: linear-gradient(180deg, var(--hvacr-blue), #005a94);
+            border-radius: 6px 6px 0 0;
+        }
+
+        .grade-name {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--hvacr-grey-dk);
+            margin-top: 12px;
+            white-space: nowrap;
+        }
+
+        .grade-pct {
+            font-size: 12px;
+            color: var(--hvacr-grey-dk);
+        }
+
+        /* National reach — donut */
+        .reach-section {
+            background: var(--hvacr-blue-tint);
+        }
+
+        .donut-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: clamp(30px, 6vw, 90px);
+            flex-wrap: wrap;
+        }
+
+        .province-legend {
+            min-width: 300px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 9px 0;
+            border-bottom: 1px solid rgba(50, 50, 51, 0.10);
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .legend-text {
+            flex: 1;
+            font-size: 15px;
+            color: var(--hvacr-grey-xdk);
+        }
+
+        .legend-value {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--hvacr-grey-xdk);
+        }
+
+        /* Resource clicks */
+        .resource-clicks-display {
+            text-align: center;
+        }
+
+        .resource-clicks-number {
+            font-size: clamp(70px, 10vw, 120px);
+            font-weight: 700;
+            color: var(--hvacr-blue);
+            line-height: 1;
+        }
+
+        .resource-clicks-label {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--hvacr-grey-dk);
+            margin: 16px 0 40px;
+        }
+
+        .resource-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        .resource-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--white);
+            border: 1px solid rgba(0, 117, 191, 0.22);
+            padding: 12px 18px;
+            border-radius: 9999px;
+            font-size: 14px;
+            color: var(--hvacr-grey-xdk);
+            box-shadow: 0 4px 16px rgba(0, 117, 191, 0.06);
+        }
+
+        .resource-tag svg {
+            fill: var(--hvacr-blue);
+            flex-shrink: 0;
+        }
+
+        /* Submissions by province — horizontal bars */
+        .submissions-section {
+            background: var(--hvacr-blue-tint);
+        }
+
+        .submissions-chart {
+            display: flex;
+            align-items: center;
+            gap: clamp(30px, 5vw, 80px);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .submissions-bars {
+            flex: 1;
+            min-width: 320px;
+            max-width: 760px;
+        }
+
+        .submission-bar {
+            display: grid;
+            grid-template-columns: 190px 1fr 48px;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 12px;
+        }
+
+        .bar-label {
+            font-size: 14px;
+            color: var(--hvacr-grey-xdk);
+            text-align: right;
+        }
+
+        .bar-wrapper {
+            background: rgba(0, 117, 191, 0.08);
+            border-radius: 9999px;
+            height: 22px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--hvacr-blue), #005a94);
+            border-radius: 9999px;
+            min-width: 4px;
+        }
+
+        .bar-value {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--hvacr-grey-xdk);
+        }
+
+        .total-submissions {
+            text-align: center;
+            background: var(--white);
+            border: 3px solid var(--hvacr-blue);
+            border-radius: 12px;
+            padding: 40px 56px;
+        }
+
+        .total-number {
+            font-size: clamp(56px, 8vw, 90px);
+            font-weight: 700;
+            color: var(--hvacr-blue);
+            line-height: 1;
+        }
+
+        .total-label {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--hvacr-grey-dk);
+            margin-top: 10px;
+        }
+
+        /* Top 20 videos */
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .video-card {
+            background: var(--white);
+            border: 1px solid rgba(0, 117, 191, 0.14);
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 117, 191, 0.07);
+            overflow: hidden;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(0, 117, 191, 0.14);
+        }
+
+        .video-embed {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            background: var(--hvacr-grey-lt);
+        }
+
+        .video-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .video-info {
+            padding: 16px 18px;
+        }
+
+        .video-meta {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--hvacr-blue);
+            margin-bottom: 4px;
+        }
+
+        .video-school {
+            font-size: 14px;
+            color: var(--hvacr-grey-xdk);
+        }
+
+        /* Grant recipients summary */
+        .grants-summary {
+            margin-top: 64px;
+            padding-top: 56px;
+            border-top: 1px solid rgba(0, 117, 191, 0.14);
+        }
+
+        .grants-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .grant-card {
+            background: var(--hvacr-blue-tint);
+            padding: 24px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .grant-province {
+            font-size: 13px;
+            color: var(--hvacr-grey-xdk);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .grant-count {
+            font-size: 44px;
+            font-weight: 700;
+            color: var(--hvacr-blue);
+            line-height: 1;
+        }
+
+        .grant-label {
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--hvacr-grey-dk);
+            margin-top: 8px;
+        }
+
+        /* Thank-you panel */
+        .program-reach {
+            background: var(--hvacr-blue);
+            border-radius: 16px;
+            padding: 80px 60px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .program-reach img {
+            height: 52px;
+            width: auto;
+            background: var(--white);
+            padding: 10px 18px;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--hvacr-grey-xdk);
+            padding: 50px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .footer-brands {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .footer-logo-img {
+            height: 36px;
+            width: auto;
+            background: var(--white);
+            padding: 6px 12px;
+            border-radius: 6px;
+        }
+
+        .footer-divider {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 20px;
+        }
+
+        .footer-text {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 1024px) {
+            .metrics-grid { grid-template-columns: repeat(3, 1fr); }
+            .videos-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 0 24px; }
+            section { padding: 64px 0; }
+            .program-reach { padding: 60px 30px; }
+            .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+            .videos-grid { grid-template-columns: repeat(2, 1fr); }
+            .grants-grid { grid-template-columns: repeat(3, 1fr); }
+            .grades-chart { height: 220px; }
+            .grade-name { font-size: 10px; letter-spacing: 1px; }
+            .submission-bar { grid-template-columns: 1fr; gap: 4px; }
+            .submission-bar .bar-label { text-align: left; }
+        }
+
+        @media (max-width: 480px) {
+            .videos-grid { grid-template-columns: 1fr; }
+            .grants-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="panel-1"></div>
+        <div class="panel-2"></div>
+        <div class="panel-3"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="brand-header">
+                    <img src="/hvacr-career-connections.png" alt="HVACR Career Connections" class="sponsor-logo">
+                    <span class="report-badge">May 2026 Sponsor Report</span>
+                </div>
+                <h1 class="hero-title">HVACR Industry<br>Challenge</h1>
+                <p class="hero-subtitle">Industry Immersion Series Collaboration</p>
+                <div class="hero-stat-card">
+                    <div class="hero-stat-number">2,574</div>
+                    <div class="hero-stat-label">Students Reached</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Activity Page Performance -->
+    <section class="activity-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">May HRAI activity</h2>
+                <p class="section-subtitle">Activity Page Performance &middot; May 1 &ndash; June 5, 2026</p>
+            </div>
+            <div class="metrics-grid">
+                <div class="metric-card featured">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Total number of times the May HVACR activity page was viewed by students</span></div>
+                    <div class="metric-icon"><svg viewBox="0 0 24 24" role="img" aria-label="Page views"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div>
+                    <div class="metric-value">7,940</div>
+                    <div class="metric-label">Page Views</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Total unique students who visited the May HVACR activity page</span></div>
+                    <div class="metric-icon"><svg viewBox="0 0 24 24" role="img" aria-label="Students reached"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+                    <div class="metric-value">2,574</div>
+                    <div class="metric-label">Students Reached</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Estimated number of repeat visits to the May HVACR activity page</span></div>
+                    <div class="metric-icon"><svg viewBox="0 0 24 24" role="img" aria-label="Return visits"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg></div>
+                    <div class="metric-value">1,385</div>
+                    <div class="metric-label">Return Visits</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Percentage of visits where students actively interacted with the page content</span></div>
+                    <div class="metric-icon"><svg viewBox="0 0 24 24" role="img" aria-label="Engagement rate"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg></div>
+                    <div class="metric-value">88.9%</div>
+                    <div class="metric-label">Engagement Rate</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-tooltip">?<span class="tooltip-text">Number of students who created and submitted an HVACR Industry Challenge video</span></div>
+                    <div class="metric-icon"><svg viewBox="0 0 24 24" role="img" aria-label="Submissions"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg></div>
+                    <div class="metric-value">74</div>
+                    <div class="metric-label">Submissions</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submissions by Grade -->
+    <section class="grades-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Submissions by grade</h2>
+                <p class="section-subtitle">The Challenge Reached Every Grade, 7 Through 12</p>
+            </div>
+            <div class="grades-chart">
+                <div class="grade-col">
+                    <div class="grade-count">8</div>
+                    <div class="grade-bar" style="height: 38%"></div>
+                    <div class="grade-name">Grade 7</div>
+                    <div class="grade-pct">10.8%</div>
+                </div>
+                <div class="grade-col">
+                    <div class="grade-count">8</div>
+                    <div class="grade-bar" style="height: 38%"></div>
+                    <div class="grade-name">Grade 8</div>
+                    <div class="grade-pct">10.8%</div>
+                </div>
+                <div class="grade-col">
+                    <div class="grade-count">9</div>
+                    <div class="grade-bar" style="height: 43%"></div>
+                    <div class="grade-name">Grade 9</div>
+                    <div class="grade-pct">12.2%</div>
+                </div>
+                <div class="grade-col">
+                    <div class="grade-count">19</div>
+                    <div class="grade-bar" style="height: 90%"></div>
+                    <div class="grade-name">Grade 10</div>
+                    <div class="grade-pct">25.7%</div>
+                </div>
+                <div class="grade-col">
+                    <div class="grade-count">21</div>
+                    <div class="grade-bar" style="height: 100%"></div>
+                    <div class="grade-name">Grade 11</div>
+                    <div class="grade-pct">28.4%</div>
+                </div>
+                <div class="grade-col">
+                    <div class="grade-count">9</div>
+                    <div class="grade-bar" style="height: 43%"></div>
+                    <div class="grade-name">Grade 12</div>
+                    <div class="grade-pct">12.2%</div>
+                </div>
+            </div>
+            <p class="footnote">Share of 74 total challenge submissions, May 2026.</p>
+        </div>
+    </section>
+
+    <!-- National Reach -->
+    <section class="reach-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">National reach</h2>
+                <p class="section-subtitle">Student Engagement Across Canada</p>
+            </div>
+            <div class="donut-section">
+                <div class="donut-chart-wrapper">
+                    <svg width="350" height="350" viewBox="0 0 350 350" role="img" aria-label="Donut chart showing national reach: Ontario 73.9% with 1,902 users, Alberta 9.2% with 238, British Columbia 7.0% with 180, other Canadian provinces and territories 8.2% with 210, international 1.7% with 44. Total: 2,574 users.">
+                        <!-- Ontario 73.9% -->
+                        <circle cx="175" cy="175" r="120" fill="none" stroke="#0075BF" stroke-width="50" stroke-dasharray="557.14 196.84" transform="rotate(-90 175 175)"/>
+                        <!-- Alberta 9.2% -->
+                        <circle cx="175" cy="175" r="120" fill="none" stroke="#323233" stroke-width="50" stroke-dasharray="69.72 684.27" stroke-dashoffset="-557.14" transform="rotate(-90 175 175)"/>
+                        <!-- British Columbia 7.0% -->
+                        <circle cx="175" cy="175" r="120" fill="none" stroke="#3CA536" stroke-width="50" stroke-dasharray="52.73 701.26" stroke-dashoffset="-626.85" transform="rotate(-90 175 175)"/>
+                        <!-- Other provinces &amp; territories 8.2% -->
+                        <circle cx="175" cy="175" r="120" fill="none" stroke="#82C9E0" stroke-width="50" stroke-dasharray="61.51 692.47" stroke-dashoffset="-679.58" transform="rotate(-90 175 175)"/>
+                        <!-- International 1.7% -->
+                        <circle cx="175" cy="175" r="120" fill="none" stroke="#949598" stroke-width="50" stroke-dasharray="12.89 741.09" stroke-dashoffset="-741.09" transform="rotate(-90 175 175)"/>
+                        <circle cx="175" cy="175" r="95" fill="white"/>
+                        <text x="175" y="165" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="36" font-weight="700" fill="#0075BF">2,574</text>
+                        <text x="175" y="195" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="11" font-weight="600" fill="#606163" letter-spacing="1">TOTAL USERS</text>
+                    </svg>
+                </div>
+                <div class="province-legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #0075BF"></div>
+                        <span class="legend-text">Ontario</span>
+                        <span class="legend-value">1,902 (73.9%)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #323233"></div>
+                        <span class="legend-text">Alberta</span>
+                        <span class="legend-value">238 (9.2%)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #3CA536"></div>
+                        <span class="legend-text">British Columbia</span>
+                        <span class="legend-value">180 (7.0%)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #82C9E0"></div>
+                        <span class="legend-text">Other Provinces &amp; Territories</span>
+                        <span class="legend-value">210 (8.2%)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #949598"></div>
+                        <span class="legend-text">International</span>
+                        <span class="legend-value">44 (1.7%)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resource Engagement -->
+    <section class="engagement-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">HRAI resource clicks</h2>
+                <p class="section-subtitle">Student Interactions with Sponsor HVACR Resources</p>
+            </div>
+            <div class="resource-clicks-display">
+                <div class="resource-clicks-number">297</div>
+                <div class="resource-clicks-label">Total Clicks Across 12 Sponsor Resources</div>
+                <div class="resource-tags">
+                    <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>HVACR Career Discovery Quiz <strong style="color: var(--hvacr-blue); margin-left: 4px;">61</strong></div>
+                    <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>HVACR Careers <strong style="color: var(--hvacr-blue); margin-left: 4px;">49</strong></div>
+                    <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>HRAI Contractor Locator <strong style="color: var(--hvacr-blue); margin-left: 4px;">34</strong></div>
+                    <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>Job Bank: HVACR Mechanic Outlook <strong style="color: var(--hvacr-blue); margin-left: 4px;">30</strong></div>
+                    <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M8 5v14l11-7z"/></svg>Day in the Life of an HVAC Technician <strong style="color: var(--hvacr-blue); margin-left: 4px;">25</strong></div>
+                    <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M8 5v14l11-7z"/></svg>How Do Heat Pumps Work? <strong style="color: var(--hvacr-blue); margin-left: 4px;">18</strong></div>
+                    <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M8 5v14l11-7z"/></svg>HVACJess &ndash; the HVAC Diaries <strong style="color: var(--hvacr-blue); margin-left: 4px;">17</strong></div>
+                    <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>Canadian Apprenticeship Registrations and Certifications <strong style="color: var(--hvacr-blue); margin-left: 4px;">16</strong></div>
+                    <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>HRAI <strong style="color: var(--hvacr-blue); margin-left: 4px;">15</strong></div>
+                    <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>NRCan &ndash; Heating and Cooling With a Heat Pump <strong style="color: var(--hvacr-blue); margin-left: 4px;">13</strong></div>
+                    <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>Heat Pump Basics &mdash; Natural Resources Canada <strong style="color: var(--hvacr-blue); margin-left: 4px;">10</strong></div>
+                    <div class="resource-tag"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7 17V7h10v10H7z"/></svg>HRAI Climate Statement <strong style="color: var(--hvacr-blue); margin-left: 4px;">9</strong></div>
+                </div>
+                <p class="footnote">Career-exploration resources led the way &mdash; the top four accounted for 174 clicks (59% of total).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submissions Breakdown -->
+    <section class="submissions-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Submissions breakdown</h2>
+                <p class="section-subtitle">Challenge Submissions by Province</p>
+            </div>
+            <div class="submissions-chart">
+                <div class="submissions-bars">
+                    <div class="submission-bar"><span class="bar-label">Ontario</span><div class="bar-wrapper"><div class="bar-fill" style="width: 100%"></div></div><span class="bar-value">55</span></div>
+                    <div class="submission-bar"><span class="bar-label">Alberta</span><div class="bar-wrapper"><div class="bar-fill" style="width: 10.9%"></div></div><span class="bar-value">6</span></div>
+                    <div class="submission-bar"><span class="bar-label">Newfoundland &amp; Labrador</span><div class="bar-wrapper"><div class="bar-fill" style="width: 10.9%"></div></div><span class="bar-value">6</span></div>
+                    <div class="submission-bar"><span class="bar-label">British Columbia</span><div class="bar-wrapper"><div class="bar-fill" style="width: 7.3%"></div></div><span class="bar-value">4</span></div>
+                    <div class="submission-bar"><span class="bar-label">New Brunswick</span><div class="bar-wrapper"><div class="bar-fill" style="width: 5.5%"></div></div><span class="bar-value">3</span></div>
+                </div>
+                <div class="total-submissions">
+                    <div class="total-number">74</div>
+                    <div class="total-label">Total Submissions</div>
+                </div>
+            </div>
+            <p class="footnote">Source: SimpleSurvey form responses, May 2026 &mdash; 5 provinces represented.</p>
+        </div>
+    </section>
+
+    <!-- Top 20 Videos -->
+    <section class="videos-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Top 20 student videos</h2>
+                <p class="section-subtitle">Outstanding Submissions from Across Canada</p>
+            </div>
+            <div class="videos-grid">
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/6a4eb5971c338f62ccc60efe?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 11</div><div class="video-school">Conseil des écoles publiques de l'Est de l'Ontario</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/6a4eb5971c338f62ccc60efc?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 12</div><div class="video-school">Halton District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://www.youtube.com/embed/X2emIiPoRP4" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 8</div><div class="video-school">York Catholic District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/6a4eb5973c3a5e1dbd949503?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 7</div><div class="video-school">Peel District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/6a4eb5973c3a5e1dbd949508?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Alberta · Grade 10</div><div class="video-school">STAR Catholic</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/6a4eb6ad3c3a5e1dbd94a755?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 9</div><div class="video-school">Dufferin Peel Catholic District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://www.canva.com/design/DAHKbKGoV54/L2TL5rUDf3ERoo26kvASkg/watch?embed&amp;meta" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 8</div><div class="video-school">Upper Grand District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/6a4eb6ad3c3a5e1dbd94a759?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Alberta · Grade 8</div><div class="video-school">Edmonton Public Schools</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/6a4eb6ad1c338f62ccc62158?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 10</div><div class="video-school">Ottawa Catholic School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/6a4eb6ad3c3a5e1dbd94a757?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 10</div><div class="video-school">York Region District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/6a4eb6ad1c338f62ccc6215a?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 12</div><div class="video-school">Durham District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/6a4eb72f1c338f62ccc62b27?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 11</div><div class="video-school">London District Catholic School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/6a4eb72f3c3a5e1dbd94b0ee?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 10</div><div class="video-school">Toronto Catholic District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/6a4eb72f3c3a5e1dbd94b0df?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 10</div><div class="video-school">Waterloo Region District School Board (WRDSB)</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/6a4eb72fe68bdcaeb97ca3ba?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 11</div><div class="video-school">Peel District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/6a4eb72f3c3a5e1dbd94b0e1?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 11</div><div class="video-school">York Catholic District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://www.canva.com/design/DAHLSJQ1rAM/gFYND-fYyGqKuYYxRobZ4Q/watch?embed&amp;meta" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 10</div><div class="video-school">Algonquin &amp; Lakeshore Catholic District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/6a4eb72f3c3a5e1dbd94b0f4?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 10</div><div class="video-school">Toronto District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/6a4eb72f3c3a5e1dbd94b0dc?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">Ontario · Grade 11</div><div class="video-school">Halton District School Board</div></div></div>
+                <div class="video-card"><div class="video-embed"><iframe src="https://play.gumlet.io/embed/6a4eb72fe68bdcaeb97ca3b8?preload=false&amp;autoplay=false&amp;loop=false&amp;background=false&amp;disable_player_controls=false" loading="lazy" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div><div class="video-info"><div class="video-meta">British Columbia · Grade 11</div><div class="video-school">Nanaimo-Ladysmith Public Schools</div></div></div>
+            </div>
+            <div class="grants-summary">
+                <div class="section-header" style="margin-bottom: 32px;">
+                    <h3 class="section-title" style="font-size: 32px;">Micro grant recipients</h3>
+                    <p class="section-subtitle"><sup style="font-size: 0.7em; top: -0.45em; position: relative;">$</sup>10,000 awarded · 20 × $500 micro grants · 3 provinces</p>
+                </div>
+                <div class="grants-grid">
+                    <div class="grant-card">
+                        <div class="grant-province">Ontario</div>
+                        <div class="grant-count">17</div>
+                        <div class="grant-label">Winners</div>
+                    </div>
+                    <div class="grant-card">
+                        <div class="grant-province">Alberta</div>
+                        <div class="grant-count">2</div>
+                        <div class="grant-label">Winners</div>
+                    </div>
+                    <div class="grant-card">
+                        <div class="grant-province">British Columbia</div>
+                        <div class="grant-count">1</div>
+                        <div class="grant-label">Winner</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thank-you panel -->
+    <section>
+        <div class="container">
+            <div class="program-reach">
+                <img src="/hvacr-career-connections.png" alt="HVACR Career Connections">
+                <h2 class="section-title" style="color: var(--white); margin: 0;">Thank you, HRAI.</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brands">
+                    <img src="/hvacr-career-connections.png" alt="HVACR Career Connections" class="footer-logo-img">
+                    <span class="footer-divider">&times;</span>
+                    <img src="/myblueprint-logo-white.png" alt="myBlueprint" style="height: 32px; width: auto;">
+                </div>
+                <p class="footer-text">Industry Immersion Series | May 2026</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
